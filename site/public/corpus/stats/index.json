@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-07-07 21:42 UTC",
+  "entries": [
+    {
+      "id": "stats:correlations",
+      "label": "Spearman rank-correlation matrices (all wells)",
+      "path": "data/stats/correlations.json",
+      "type": "stats"
+    },
+    {
+      "id": "stats:jaccard",
+      "label": "Jaccard similarity matrices and Jena analog rankings",
+      "path": "data/stats/jaccard.json",
+      "type": "stats"
+    },
+    {
+      "id": "stats:clusters",
+      "label": "Hierarchical clustering dendrogram and cluster assignments",
+      "path": "data/stats/clusters.json",
+      "type": "stats"
+    },
+    {
+      "id": "stats:ks",
+      "label": "Kolmogorov–Smirnov significance tests (Jena vs analogs)",
+      "path": "data/stats/ks.json",
+      "type": "stats"
+    },
+    {
+      "id": "water_risk:JENA31",
+      "label": "Water-risk flagged zones — JENA 31",
+      "path": "data/water_risk/JENA31.json",
+      "type": "stats",
+      "alias": "JENA31"
+    },
+    {
+      "id": "water_risk:JENA31DW1",
+      "label": "Water-risk flagged zones — JENA 31DW1",
+      "path": "data/water_risk/JENA31DW1.json",
+      "type": "stats",
+      "alias": "JENA31DW1"
+    },
+    {
+      "id": "water_risk:BIALA19",
+      "label": "Water-risk flagged zones — BIALA 19",
+      "path": "data/water_risk/BIALA19.json",
+      "type": "stats",
+      "alias": "BIALA19"
+    },
+    {
+      "id": "water_risk:BIALA20",
+      "label": "Water-risk flagged zones — BIALA 20",
+      "path": "data/water_risk/BIALA20.json",
+      "type": "stats",
+      "alias": "BIALA20"
+    },
+    {
+      "id": "water_risk:BIALA21",
+      "label": "Water-risk flagged zones — BIALA 21",
+      "path": "data/water_risk/BIALA21.json",
+      "type": "stats",
+      "alias": "BIALA21"
+    },
+    {
+      "id": "water_risk:FROSTILLICUS2",
+      "label": "Water-risk flagged zones — FROSTILLICUS 2",
+      "path": "data/water_risk/FROSTILLICUS2.json",
+      "type": "stats",
+      "alias": "FROSTILLICUS2"
+    },
+    {
+      "id": "water_risk:GRANCHIO4",
+      "label": "Water-risk flagged zones — GRANCHIO 4",
+      "path": "data/water_risk/GRANCHIO4.json",
+      "type": "stats",
+      "alias": "GRANCHIO4"
+    },
+    {
+      "id": "water_risk:HOBBES5",
+      "label": "Water-risk flagged zones — HOBBES 5",
+      "path": "data/water_risk/HOBBES5.json",
+      "type": "stats",
+      "alias": "HOBBES5"
+    },
+    {
+      "id": "water_risk:HOBBES6",
+      "label": "Water-risk flagged zones — HOBBES 6",
+      "path": "data/water_risk/HOBBES6.json",
+      "type": "stats",
+      "alias": "HOBBES6"
+    },
+    {
+      "id": "water_risk:MCKINLAY20",
+      "label": "Water-risk flagged zones — MCKINLAY 20",
+      "path": "data/water_risk/MCKINLAY20.json",
+      "type": "stats",
+      "alias": "MCKINLAY20"
+    },
+    {
+      "id": "water_risk:MCKINLAY21",
+      "label": "Water-risk flagged zones — MCKINLAY 21",
+      "path": "data/water_risk/MCKINLAY21.json",
+      "type": "stats",
+      "alias": "MCKINLAY21"
+    },
+    {
+      "id": "water_risk:MCKINLAY22",
+      "label": "Water-risk flagged zones — MCKINLAY 22",
+      "path": "data/water_risk/MCKINLAY22.json",
+      "type": "stats",
+      "alias": "MCKINLAY22"
+    },
+    {
+      "id": "water_risk:MCKINLAY23",
+      "label": "Water-risk flagged zones — MCKINLAY 23",
+      "path": "data/water_risk/MCKINLAY23.json",
+      "type": "stats",
+      "alias": "MCKINLAY23"
+    },
+    {
+      "id": "water_risk:MCKINLAY24",
+      "label": "Water-risk flagged zones — MCKINLAY 24",
+      "path": "data/water_risk/MCKINLAY24.json",
+      "type": "stats",
+      "alias": "MCKINLAY24"
+    },
+    {
+      "id": "water_risk:STIMPEE6",
+      "label": "Water-risk flagged zones — STIMPEE 6",
+      "path": "data/water_risk/STIMPEE6.json",
+      "type": "stats",
+      "alias": "STIMPEE6"
+    },
+    {
+      "id": "water_risk:STIMPEE7",
+      "label": "Water-risk flagged zones — STIMPEE 7",
+      "path": "data/water_risk/STIMPEE7.json",
+      "type": "stats",
+      "alias": "STIMPEE7"
+    },
+    {
+      "id": "water_risk:TERINGIE6",
+      "label": "Water-risk flagged zones — TERINGIE 6",
+      "path": "data/water_risk/TERINGIE6.json",
+      "type": "stats",
+      "alias": "TERINGIE6"
+    }
+  ]
+}

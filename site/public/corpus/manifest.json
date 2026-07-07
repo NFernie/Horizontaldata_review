@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "generated_at": "2026-07-07T21:42:48Z",
+  "wells": [
+    {
+      "alias": "JENA31",
+      "display": "JENA 31",
+      "depth_min": 2255.0,
+      "depth_max": 3390.0,
+      "interval_count": 197,
+      "sources": {
+        "interpretation": "output/JENA31_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/JENA 31/pay-summary.md",
+        "process_summary": "output/JENA31_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "JENA31DW1",
+      "display": "JENA 31DW1",
+      "depth_min": 2070.0,
+      "depth_max": 3658.0,
+      "interval_count": 165,
+      "sources": {
+        "interpretation": "output/JENA31DW1_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/JENA 31DW1/pay-summary.md",
+        "process_summary": "output/JENA31DW1_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "BIALA19",
+      "display": "BIALA 19",
+      "depth_min": 1735.0,
+      "depth_max": 3730.0,
+      "interval_count": 237,
+      "sources": {
+        "interpretation": "output/BIALA19_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/BIALA 19/pay-summary.md",
+        "process_summary": "output/BIALA19_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "BIALA20",
+      "display": "BIALA 20",
+      "depth_min": 1585.0,
+      "depth_max": 3260.0,
+      "interval_count": 156,
+      "sources": {
+        "interpretation": "output/BIALA20_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/BIALA 20/pay-summary.md",
+        "process_summary": "output/BIALA20_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "BIALA21",
+      "display": "BIALA 21",
+      "depth_min": 1925.0,
+      "depth_max": 3278.0,
+      "interval_count": 134,
+      "sources": {
+        "interpretation": "output/BIALA21_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/BIALA 21/pay-summary.md",
+        "process_summary": "output/BIALA21_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "display": "FROSTILLICUS 2",
+      "depth_min": 1617.0,
+      "depth_max": 3685.0,
+      "interval_count": 373,
+      "sources": {
+        "interpretation": "output/FROSTILLICUS2_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/FROSTILLICUS 2/pay-summary.md",
+        "process_summary": "output/FROSTILLICUS2_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "GRANCHIO4",
+      "display": "GRANCHIO 4",
+      "depth_min": 1680.0,
+      "depth_max": 2825.0,
+      "interval_count": 127,
+      "sources": {
+        "interpretation": "output/GRANCHIO4_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/GRANCHIO 4/pay-summary.md",
+        "process_summary": "output/GRANCHIO4_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "display": "HOBBES 5",
+      "depth_min": 1702.0,
+      "depth_max": 2590.0,
+      "interval_count": 96,
+      "sources": {
+        "interpretation": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/HOBBES 5/pay-summary.md",
+        "process_summary": "output/HOBBES5_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "HOBBES6",
+      "display": "HOBBES 6",
+      "depth_min": 1686.0,
+      "depth_max": 2500.0,
+      "interval_count": 78,
+      "sources": {
+        "interpretation": "output/HOBBES6_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/HOBBES 6/pay-summary.md",
+        "process_summary": "output/HOBBES6_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY20",
+      "display": "MCKINLAY 20",
+      "depth_min": 1635.0,
+      "depth_max": 3000.0,
+      "interval_count": 275,
+      "sources": {
+        "interpretation": "output/MCKINLAY20_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 20/pay-summary.md",
+        "process_summary": "output/MCKINLAY20_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY21",
+      "display": "MCKINLAY 21",
+      "depth_min": 1775.0,
+      "depth_max": 2415.0,
+      "interval_count": 124,
+      "sources": {
+        "interpretation": "output/MCKINLAY21_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 21/pay-summary.md",
+        "process_summary": "output/MCKINLAY21_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY22",
+      "display": "MCKINLAY 22",
+      "depth_min": 1675.0,
+      "depth_max": 3205.0,
+      "interval_count": 309,
+      "sources": {
+        "interpretation": "output/MCKINLAY22_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 22/pay-summary.md",
+        "process_summary": "output/MCKINLAY22_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY23",
+      "display": "MCKINLAY 23",
+      "depth_min": 1680.0,
+      "depth_max": 2590.0,
+      "interval_count": 183,
+      "sources": {
+        "interpretation": "output/MCKINLAY23_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 23/pay-summary.md",
+        "process_summary": "output/MCKINLAY23_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY24",
+      "display": "MCKINLAY 24",
+      "depth_min": 1630.0,
+      "depth_max": 2598.0,
+      "interval_count": 164,
+      "sources": {
+        "interpretation": "output/MCKINLAY24_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 24/pay-summary.md",
+        "process_summary": "output/MCKINLAY24_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "STIMPEE6",
+      "display": "STIMPEE 6",
+      "depth_min": 1635.0,
+      "depth_max": 3186.0,
+      "interval_count": 130,
+      "sources": {
+        "interpretation": "output/STIMPEE6_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/STIMPEE 6/pay-summary.md",
+        "process_summary": "output/STIMPEE6_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "display": "STIMPEE 7",
+      "depth_min": 1705.0,
+      "depth_max": 2840.0,
+      "interval_count": 84,
+      "sources": {
+        "interpretation": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/STIMPEE 7/pay-summary.md",
+        "process_summary": "output/STIMPEE7_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "TERINGIE6",
+      "display": "TERINGIE 6",
+      "depth_min": 1670.0,
+      "depth_max": 3441.0,
+      "interval_count": 159,
+      "sources": {
+        "interpretation": "output/TERINGIE6_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/TERINGIE 6/pay-summary.md",
+        "process_summary": "output/TERINGIE6_Process_Summary.md"
+      }
+    }
+  ],
+  "chunk_counts": {
+    "interval": 2991,
+    "method": 5,
+    "summary": 34
+  }
+}

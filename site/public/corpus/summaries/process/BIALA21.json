@@ -1,0 +1,8 @@
+{
+  "alias": "BIALA21",
+  "display": "BIALA 21",
+  "type": "process_summary",
+  "title": "Process Summary — BIALA 21",
+  "markdown": "# BIALA 21 Analysis — Process Summary\n\n**Date:** 2026-07-07\n\n## Objective\n\nIntegrate mudlog, sample descriptions, formation tops, and LAS data for **McKinlay Member** on BIALA 21.\n\n## Data Files Used\n\n| File | Purpose |\n|------|---------|\n| `BIALA 21_ML_Mudlog_Spud-3278_MD_Final.pdf` | Mudlog cuttings |\n| `Biala 21 Hz Section Samples Descriptions_Rev3-fernc.xlsx` → Input Sheet | Sample intervals |\n| `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |\n| `Biala_21` | GR / resistivity |\n\n## Formation Top Results\n\n- DC30: **1920.57 m** | McKinlay start: **1922.00 m** | TD: **3278 m**\n- Overburden entry pairs: **4**\n- Overburden exclusion intervals: **4**\n- Excluded samples: pre-reservoir 9, overburden 25\n- **134** McKinlay intervals retained\n\n## Key Findings\n\n- Depth range: **1925 – 3278 m MD**\n- Average sandstone: **84.5%**\n- Δ Res range: **-4.8 – 39.9 ohm.m** (avg 5.3)\n- Mudlog matched: **133 / 134** intervals\n\n## Limitations\n\nSee interpretation file Section 3 for full list.\n",
+  "source": "output/BIALA21_Process_Summary.md"
+}

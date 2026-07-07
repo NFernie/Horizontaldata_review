@@ -1,0 +1,8 @@
+{
+  "alias": "HOBBES6",
+  "display": "HOBBES 6",
+  "type": "process_summary",
+  "title": "Process Summary — HOBBES 6",
+  "markdown": "# HOBBES 6 Analysis — Process Summary\n\n**Date:** 2026-07-07\n\n## Objective\n\nIntegrate mudlog, sample descriptions, formation tops, and LAS data for **McKinlay Member** on HOBBES 6.\n\n## Data Files Used\n\n| File | Purpose |\n|------|---------|\n| `Hobbes 6_Mudlog_Spud-2500m_TD_Field Final.pdf` | Mudlog cuttings |\n| `Hobbes 6 Hz Section Samples Descriptions_Rev3.xlsx` → Input Sheet | Sample intervals |\n| `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |\n| `Hobbes_6` | GR / resistivity |\n\n## Formation Top Results\n\n- DC30: **1685.47 m** | McKinlay start: **1685.70 m** | TD: **2500 m**\n- Overburden entry pairs: **3**\n- Overburden exclusion intervals: **3**\n- Excluded samples: pre-reservoir 17, overburden 16\n- **78** McKinlay intervals retained\n\n## Key Findings\n\n- Depth range: **1686 – 2500 m MD**\n- Average sandstone: **80.1%**\n- Δ Res range: **-0.8 – 7.5 ohm.m** (avg 2.0)\n- Mudlog matched: **51 / 78** intervals\n\n## Limitations\n\nSee interpretation file Section 3 for full list.\n",
+  "source": "output/HOBBES6_Process_Summary.md"
+}

@@ -1,0 +1,2131 @@
+{
+  "alias": "HOBBES5",
+  "display": "HOBBES 5",
+  "interval_count": 96,
+  "intervals": [
+    {
+      "alias": "HOBBES5",
+      "depth": 1702.0,
+      "top": 1701.0,
+      "bot": 1703.5,
+      "summary": {
+        "pct_ss": 60,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 30.0,
+        "WRCI": 35.0,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1702m: trace siderite in 40% Siltstone, trace siderite in 60% fine to coarse Sandstone, 30% bright FLUOR in SST. TG 21U"
+      },
+      "detail_markdown": "### 1702 m MD — Interval 1701.0 – 1703.5 m\n\n**Sample Description (spreadsheet):** Sample 1702m: trace siderite in 40% Siltstone, trace siderite in 60% fine to coarse Sandstone, 30% bright FLUOR in SST. TG 21U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 60 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 30.0% bri |\n| Total Gas | 21 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1710m: lt gry,trnsl,trnsp,opq, f-med,rr crs,sbrnd,occ sbang,wl- mod srt,wk sil cmt,lt gry arg mtx i/p,fr vis & inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 122.9 | 16 |\n| RES_DEEP (ohm.m) | 32.30 | 16 |\n| RES_SHALLOW (ohm.m) | 23.41 | 16 |\n| **Δ Res (Deep − Shallow)** | **8.89** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1702"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1705.0,
+      "top": 1703.5,
+      "bot": 1707.5,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 30.12,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1705m: 0 siderite in 20% Siltstone, trace siderite in 80% fine to coarse Sandstone, 80% bright FLUOR in SST. TG 140U"
+      },
+      "detail_markdown": "### 1705 m MD — Interval 1703.5 – 1707.5 m\n\n**Sample Description (spreadsheet):** Sample 1705m: 0 siderite in 20% Siltstone, trace siderite in 80% fine to coarse Sandstone, 80% bright FLUOR in SST. TG 140U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 80.0% bri |\n| Total Gas | 140 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1710m: lt gry,trnsl,trnsp,opq, f-med,rr crs,sbrnd,occ sbang,wl- mod srt,wk sil cmt,lt gry arg mtx i/p,fr vis & inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 105.7 | 27 |\n| RES_DEEP (ohm.m) | 36.43 | 27 |\n| RES_SHALLOW (ohm.m) | 27.20 | 27 |\n| **Δ Res (Deep − Shallow)** | **9.23** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1705"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1710.0,
+      "top": 1707.5,
+      "bot": 1712.5,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 90.0,
+        "WRCI": 36.9,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1710m: 0 siderite in 20% Siltstone, trace siderite in 80% fine to coarse Sandstone, 90% bright FLUOR in SST. TG 170U"
+      },
+      "detail_markdown": "### 1710 m MD — Interval 1707.5 – 1712.5 m\n\n**Sample Description (spreadsheet):** Sample 1710m: 0 siderite in 20% Siltstone, trace siderite in 80% fine to coarse Sandstone, 90% bright FLUOR in SST. TG 170U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 90.0% bri |\n| Total Gas | 170 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1710m: lt gry,trnsl,trnsp,opq, f-med,rr crs,sbrnd,occ sbang,wl- mod srt,wk sil cmt,lt gry arg mtx i/p,fr vis & inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 79.1 | 32 |\n| RES_DEEP (ohm.m) | 36.46 | 32 |\n| RES_SHALLOW (ohm.m) | 28.44 | 32 |\n| **Δ Res (Deep − Shallow)** | **8.02** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1710"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1715.0,
+      "top": 1712.5,
+      "bot": 1717.5,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 35.41,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1715m: 0 siderite in 10% Siltstone, trace siderite in 90% fine to medium Sandstone, 100% bright FLUOR in SST. TG 120U"
+      },
+      "detail_markdown": "### 1715 m MD — Interval 1712.5 – 1717.5 m\n\n**Sample Description (spreadsheet):** Sample 1715m: 0 siderite in 10% Siltstone, trace siderite in 90% fine to medium Sandstone, 100% bright FLUOR in SST. TG 120U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100.0% bri |\n| Total Gas | 120 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1710m: lt gry,trnsl,trnsp,opq, f-med,rr crs,sbrnd,occ sbang,wl- mod srt,wk sil cmt,lt gry arg mtx i/p,fr vis & inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 74.1 | 33 |\n| RES_DEEP (ohm.m) | 31.98 | 33 |\n| RES_SHALLOW (ohm.m) | 27.66 | 33 |\n| **Δ Res (Deep − Shallow)** | **4.33** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1715"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1720.0,
+      "top": 1717.5,
+      "bot": 1722.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 35.58,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1720m: 0 siderite in 5% Siltstone, trace siderite in 95% fine to medium Sandstone, 100% bright FLUOR in SST. TG 171U"
+      },
+      "detail_markdown": "### 1720 m MD — Interval 1717.5 – 1722.5 m\n\n**Sample Description (spreadsheet):** Sample 1720m: 0 siderite in 5% Siltstone, trace siderite in 95% fine to medium Sandstone, 100% bright FLUOR in SST. TG 171U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100.0% bri |\n| Total Gas | 171 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1710m: lt gry,trnsl,trnsp,opq, f-med,rr crs,sbrnd,occ sbang,wl- mod srt,wk sil cmt,lt gry arg mtx i/p,fr vis & inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 77.0 | 33 |\n| RES_DEEP (ohm.m) | 32.65 | 33 |\n| RES_SHALLOW (ohm.m) | 28.67 | 33 |\n| **Δ Res (Deep − Shallow)** | **3.98** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1720"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1725.0,
+      "top": 1722.5,
+      "bot": 1727.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 36.54,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1725m: trace siderite in 5% Siltstone, 5 siderite in 95% fine to medium Sandstone, 100% bright FLUOR in SST. TG 175U"
+      },
+      "detail_markdown": "### 1725 m MD — Interval 1722.5 – 1727.5 m\n\n**Sample Description (spreadsheet):** Sample 1725m: trace siderite in 5% Siltstone, 5 siderite in 95% fine to medium Sandstone, 100% bright FLUOR in SST. TG 175U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100.0% bri |\n| Total Gas | 175 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 5 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1710m: lt gry,trnsl,trnsp,opq, f-med,rr crs,sbrnd,occ sbang,wl- mod srt,wk sil cmt,lt gry arg mtx i/p,fr vis & inf por,fluor.\n- **SILTSTONE** @ ~1740m: dk gry,arg,micmic,carb i/p, sft,blky.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 79.2 | 33 |\n| RES_DEEP (ohm.m) | 33.44 | 33 |\n| RES_SHALLOW (ohm.m) | 29.18 | 33 |\n| **Δ Res (Deep − Shallow)** | **4.26** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1725"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1730.0,
+      "top": 1727.5,
+      "bot": 1732.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f-occ med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 30.18,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1730m: 0 siderite in 0% Siltstone, trace siderite in 100% fine to occasional medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 230U"
+      },
+      "detail_markdown": "### 1730 m MD — Interval 1727.5 – 1732.5 m\n\n**Sample Description (spreadsheet):** Sample 1730m: 0 siderite in 0% Siltstone, trace siderite in 100% fine to occasional medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 230U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f-occ med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 230 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~1740m: dk gry,arg,micmic,carb i/p, sft,blky.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 75.7 | 33 |\n| RES_DEEP (ohm.m) | 33.97 | 33 |\n| RES_SHALLOW (ohm.m) | 31.02 | 33 |\n| **Δ Res (Deep − Shallow)** | **2.95** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1730"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1735.0,
+      "top": 1732.5,
+      "bot": 1737.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - r med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 25.88,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1735m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine  to  r medium Sandstone, 100% bright FLUOR in SST. TG 214U"
+      },
+      "detail_markdown": "### 1735 m MD — Interval 1732.5 – 1737.5 m\n\n**Sample Description (spreadsheet):** Sample 1735m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine  to  r medium Sandstone, 100% bright FLUOR in SST. TG 214U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - r med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% bri |\n| Total Gas | 214 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~1740m: dk gry,arg,micmic,carb i/p, sft,blky.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 74.5 | 32 |\n| RES_DEEP (ohm.m) | 33.81 | 32 |\n| RES_SHALLOW (ohm.m) | 31.99 | 32 |\n| **Δ Res (Deep − Shallow)** | **1.81** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1735"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1740.0,
+      "top": 1737.5,
+      "bot": 1745.0,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - med, r crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 36.28,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1740m: 0 siderite in 5% Siltstone, 0 siderite in 95% fine  to  medium, r coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 241U"
+      },
+      "detail_markdown": "### 1740 m MD — Interval 1737.5 – 1745.0 m\n\n**Sample Description (spreadsheet):** Sample 1740m: 0 siderite in 5% Siltstone, 0 siderite in 95% fine  to  medium, r coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 241U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - med, r crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 241 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~1740m: dk gry,arg,micmic,carb i/p, sft,blky.\n- **SANDSTONE** @ ~1760m: trnsl,opq,trnsp,lt gry,f-crs, pr srt,sbrnd-sbang,wk-mod sil cmt,lt gry arg mtx i/p,grd to aren SLTST,occ lse, pr vis & inf por,fluor. SURVEY @ 1767.6m\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 84.7 | 50 |\n| RES_DEEP (ohm.m) | 30.92 | 50 |\n| RES_SHALLOW (ohm.m) | 27.41 | 50 |\n| **Δ Res (Deep − Shallow)** | **3.51** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1740"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1750.0,
+      "top": 1745.0,
+      "bot": 1755.0,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - med, r crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 31.63,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1750m: 0 siderite in 5% Siltstone, 0 siderite in 95% fine  to  medium, r coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 230U"
+      },
+      "detail_markdown": "### 1750 m MD — Interval 1745.0 – 1755.0 m\n\n**Sample Description (spreadsheet):** Sample 1750m: 0 siderite in 5% Siltstone, 0 siderite in 95% fine  to  medium, r coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 230U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - med, r crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 230 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~1740m: dk gry,arg,micmic,carb i/p, sft,blky.\n- **SANDSTONE** @ ~1760m: trnsl,opq,trnsp,lt gry,f-crs, pr srt,sbrnd-sbang,wk-mod sil cmt,lt gry arg mtx i/p,grd to aren SLTST,occ lse, pr vis & inf por,fluor. SURVEY @ 1767.6m\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 110.0 | 65 |\n| RES_DEEP (ohm.m) | 28.62 | 65 |\n| RES_SHALLOW (ohm.m) | 24.64 | 65 |\n| **Δ Res (Deep − Shallow)** | **3.98** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1750"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1850.0,
+      "top": 1845.0,
+      "bot": 1855.0,
+      "summary": {
+        "pct_ss": 50,
+        "grain": "f - crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 20.0,
+        "WRCI": 37.67,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1850m: 10 siderite in 50% Siltstone, 15 siderite in 50% fine  to  coarse Sandstone, 20% bright FLUOR in SST. TG 218U"
+      },
+      "detail_markdown": "### 1850 m MD — Interval 1845.0 – 1855.0 m\n\n**Sample Description (spreadsheet):** Sample 1850m: 10 siderite in 50% Siltstone, 15 siderite in 50% fine  to  coarse Sandstone, 20% bright FLUOR in SST. TG 218U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 50 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 20.0% bri |\n| Total Gas | 218 U |\n| FeCO₃ in Siltstone | 10 |\n| FeCO₃ in Sandstone | 15 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1840m: trnsl,trnsp,lt brn,brn,trnsl brn,mott,f,occ med,wl srt,sbrnd,occ sbang,mod-strg sil-sid cmt,fri-mod hd, pr-ti vis & inf por,fluor.\n- **COAL** @ ~1860m: blk,dll,arg,slty,brit,plty,ang. 78 / 7 / 5 / 5 / 5 245 U 1870 FLUORESCENCE:1870m-1914m 40-80% of SST,mod bri-bri yel wh- yel grn sptd-ptchy fluor,slw diff-\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 110.8 | 65 |\n| RES_DEEP (ohm.m) | 31.67 | 65 |\n| RES_SHALLOW (ohm.m) | 24.47 | 65 |\n| **Δ Res (Deep − Shallow)** | **7.20** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1850"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1860.0,
+      "top": 1855.0,
+      "bot": 1865.0,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "f - crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 60.0,
+        "WRCI": 32.58,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1860m: trace siderite in 20% Siltstone, 5 siderite in 80% fine  to  coarse Sandstone, 60% bright FLUOR in SST. TG 214U"
+      },
+      "detail_markdown": "### 1860 m MD — Interval 1855.0 – 1865.0 m\n\n**Sample Description (spreadsheet):** Sample 1860m: trace siderite in 20% Siltstone, 5 siderite in 80% fine  to  coarse Sandstone, 60% bright FLUOR in SST. TG 214U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 60.0% bri |\n| Total Gas | 214 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 5 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1840m: trnsl,trnsp,lt brn,brn,trnsl brn,mott,f,occ med,wl srt,sbrnd,occ sbang,mod-strg sil-sid cmt,fri-mod hd, pr-ti vis & inf por,fluor.\n- **COAL** @ ~1860m: blk,dll,arg,slty,brit,plty,ang. 78 / 7 / 5 / 5 / 5 245 U 1870 FLUORESCENCE:1870m-1914m 40-80% of SST,mod bri-bri yel wh- yel grn sptd-ptchy fluor,slw diff-\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 80.3 | 66 |\n| RES_DEEP (ohm.m) | 24.77 | 66 |\n| RES_SHALLOW (ohm.m) | 21.35 | 66 |\n| **Δ Res (Deep − Shallow)** | **3.42** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1860"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1870.0,
+      "top": 1865.0,
+      "bot": 1875.0,
+      "summary": {
+        "pct_ss": 85,
+        "grain": "f-med, occ crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 85.0,
+        "WRCI": 20.14,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1870m: trace siderite in 15% Siltstone, 10 siderite in 85% fine to medium, occasional coarse Sandstone, 85% bright FLUOR in SST. TG 120U"
+      },
+      "detail_markdown": "### 1870 m MD — Interval 1865.0 – 1875.0 m\n\n**Sample Description (spreadsheet):** Sample 1870m: trace siderite in 15% Siltstone, 10 siderite in 85% fine to medium, occasional coarse Sandstone, 85% bright FLUOR in SST. TG 120U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 85 |\n| Grain Size | f-med, occ crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 85.0% bri |\n| Total Gas | 120 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 10 |\n\n**Mudlog Cuttings Description (PDF):**\n- **COAL** @ ~1860m: blk,dll,arg,slty,brit,plty,ang. 78 / 7 / 5 / 5 / 5 245 U 1870 FLUORESCENCE:1870m-1914m 40-80% of SST,mod bri-bri yel wh- yel grn sptd-ptchy fluor,slw diff-\n- **SILTSTONE** @ ~1890m: 120 SILTSTONE:lt-med brn gry,lt-med gry, FLW: 234-259 gpm tr micmic,sil i/p,frm-hd,sbblky-sbfiss. 75 / 6 / 4 / 6 / 9\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 77.6 | 66 |\n| RES_DEEP (ohm.m) | 21.74 | 66 |\n| RES_SHALLOW (ohm.m) | 20.25 | 66 |\n| **Δ Res (Deep − Shallow)** | **1.49** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1870"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1880.0,
+      "top": 1875.0,
+      "bot": 1885.0,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "vf-f, mnr med, rr crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 16.12,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1880m: trace siderite in 10% Siltstone, 5 siderite in 90% very fine to fine, minor medium, rare coarse Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 268U"
+      },
+      "detail_markdown": "### 1880 m MD — Interval 1875.0 – 1885.0 m\n\n**Sample Description (spreadsheet):** Sample 1880m: trace siderite in 10% Siltstone, 5 siderite in 90% very fine to fine, minor medium, rare coarse Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 268U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | vf-f, mnr med, rr crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% mod bri - bri |\n| Total Gas | 268 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 5 |\n\n**Mudlog Cuttings Description (PDF):**\n- **COAL** @ ~1860m: blk,dll,arg,slty,brit,plty,ang. 78 / 7 / 5 / 5 / 5 245 U 1870 FLUORESCENCE:1870m-1914m 40-80% of SST,mod bri-bri yel wh- yel grn sptd-ptchy fluor,slw diff-\n- **SILTSTONE** @ ~1890m: 120 SILTSTONE:lt-med brn gry,lt-med gry, FLW: 234-259 gpm tr micmic,sil i/p,frm-hd,sbblky-sbfiss. 75 / 6 / 4 / 6 / 9\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 82.2 | 65 |\n| RES_DEEP (ohm.m) | 21.90 | 65 |\n| RES_SHALLOW (ohm.m) | 21.78 | 65 |\n| **Δ Res (Deep − Shallow)** | **0.12** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1880"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1890.0,
+      "top": 1885.0,
+      "bot": 1895.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "dom f - mnr med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 90.0,
+        "WRCI": 19.17,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1890m: 0 siderite in 0% Siltstone, trace to 5 siderite in 100% dominantly fine  to  minor medium Sandstone, 90% moderately bright  to  bright FLUOR in SST. TG 200U"
+      },
+      "detail_markdown": "### 1890 m MD — Interval 1885.0 – 1895.0 m\n\n**Sample Description (spreadsheet):** Sample 1890m: 0 siderite in 0% Siltstone, trace to 5 siderite in 100% dominantly fine  to  minor medium Sandstone, 90% moderately bright  to  bright FLUOR in SST. TG 200U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | dom f - mnr med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 90.0% mod bri - bri |\n| Total Gas | 200 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | tr-5 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~1890m: 120 SILTSTONE:lt-med brn gry,lt-med gry, FLW: 234-259 gpm tr micmic,sil i/p,frm-hd,sbblky-sbfiss. 75 / 6 / 4 / 6 / 9\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 93.8 | 66 |\n| RES_DEEP (ohm.m) | 21.36 | 66 |\n| RES_SHALLOW (ohm.m) | 20.30 | 66 |\n| **Δ Res (Deep − Shallow)** | **1.06** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1890"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1900.0,
+      "top": 1895.0,
+      "bot": 1905.0,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "dom f - mnr med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 60.0,
+        "WRCI": 20.02,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1900m: 5 siderite in 20% Siltstone, trace   siderite in 80% dominantly fine  to  minor medium Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 140U"
+      },
+      "detail_markdown": "### 1900 m MD — Interval 1895.0 – 1905.0 m\n\n**Sample Description (spreadsheet):** Sample 1900m: 5 siderite in 20% Siltstone, trace   siderite in 80% dominantly fine  to  minor medium Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 140U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | dom f - mnr med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 60.0% mod bri - bri |\n| Total Gas | 140 U |\n| FeCO₃ in Siltstone | 5 |\n| FeCO₃ in Sandstone | tr   |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~1890m: 120 SILTSTONE:lt-med brn gry,lt-med gry, FLW: 234-259 gpm tr micmic,sil i/p,frm-hd,sbblky-sbfiss. 75 / 6 / 4 / 6 / 9\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.5 | 66 |\n| RES_DEEP (ohm.m) | 20.65 | 66 |\n| RES_SHALLOW (ohm.m) | 18.45 | 66 |\n| **Δ Res (Deep − Shallow)** | **2.19** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1900"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1910.0,
+      "top": 1905.0,
+      "bot": 1912.0,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "dom f - tr med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 60.0,
+        "WRCI": 24.68,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1910m: Tr siderite in 10% Siltstone, Tr siderite in 90% dominantly fine  to  trace medium Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 120U"
+      },
+      "detail_markdown": "### 1910 m MD — Interval 1905.0 – 1912.0 m\n\n**Sample Description (spreadsheet):** Sample 1910m: Tr siderite in 10% Siltstone, Tr siderite in 90% dominantly fine  to  trace medium Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 120U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | dom f - tr med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 60.0% mod bri - bri |\n| Total Gas | 120 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~1890m: 120 SILTSTONE:lt-med brn gry,lt-med gry, FLW: 234-259 gpm tr micmic,sil i/p,frm-hd,sbblky-sbfiss. 75 / 6 / 4 / 6 / 9\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 108.8 | 46 |\n| RES_DEEP (ohm.m) | 20.03 | 46 |\n| RES_SHALLOW (ohm.m) | 16.77 | 46 |\n| **Δ Res (Deep − Shallow)** | **3.26** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1910"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1914.0,
+      "top": 1912.0,
+      "bot": 1915.5,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "dom f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 40.0,
+        "WRCI": 41.85,
+        "risk_class": "Elevated",
+        "flags": [],
+        "long_desc": "Sample 1914m: Tr siderite in 10% Siltstone, Tr siderite in 90% dominantly fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 85U"
+      },
+      "detail_markdown": "### 1914 m MD — Interval 1912.0 – 1915.5 m\n\n**Sample Description (spreadsheet):** Sample 1914m: Tr siderite in 10% Siltstone, Tr siderite in 90% dominantly fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 85U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | dom f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 40.0% dull - mod bri |\n| Total Gas | 85 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 107.7 | 23 |\n| RES_DEEP (ohm.m) | 20.13 | 23 |\n| RES_SHALLOW (ohm.m) | 16.46 | 23 |\n| **Δ Res (Deep − Shallow)** | **3.67** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1914"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1917.0,
+      "top": 1915.5,
+      "bot": 1918.5,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "dom f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 40.0,
+        "WRCI": 39.58,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1917m: Tr siderite in 20% Siltstone, Tr siderite in 80% dominantly fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 85U"
+      },
+      "detail_markdown": "### 1917 m MD — Interval 1915.5 – 1918.5 m\n\n**Sample Description (spreadsheet):** Sample 1917m: Tr siderite in 20% Siltstone, Tr siderite in 80% dominantly fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 85U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | dom f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 40.0% dull - mod bri |\n| Total Gas | 85 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 107.3 | 20 |\n| RES_DEEP (ohm.m) | 19.88 | 20 |\n| RES_SHALLOW (ohm.m) | 16.08 | 20 |\n| **Δ Res (Deep − Shallow)** | **3.80** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1917"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1920.0,
+      "top": 1918.5,
+      "bot": 1921.5,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "dom f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 40.0,
+        "WRCI": 39.03,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1920m: Tr siderite in 20% Siltstone, Tr siderite in 80% dominantly fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 75U"
+      },
+      "detail_markdown": "### 1920 m MD — Interval 1918.5 – 1921.5 m\n\n**Sample Description (spreadsheet):** Sample 1920m: Tr siderite in 20% Siltstone, Tr siderite in 80% dominantly fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 75U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | dom f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 40.0% dll - mod bri |\n| Total Gas | 75 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 107.8 | 20 |\n| RES_DEEP (ohm.m) | 20.01 | 20 |\n| RES_SHALLOW (ohm.m) | 16.29 | 20 |\n| **Δ Res (Deep − Shallow)** | **3.72** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1920"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1923.0,
+      "top": 1921.5,
+      "bot": 1924.5,
+      "summary": {
+        "pct_ss": 70,
+        "grain": "f-med ",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 30.0,
+        "WRCI": 28.19,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1923m: Tr siderite in 30% Siltstone, Tr siderite in 70% fine to medium  Sandstone, 30% dull  to  moderately bright FLUOR in SST. TG 78U"
+      },
+      "detail_markdown": "### 1923 m MD — Interval 1921.5 – 1924.5 m\n\n**Sample Description (spreadsheet):** Sample 1923m: Tr siderite in 30% Siltstone, Tr siderite in 70% fine to medium  Sandstone, 30% dull  to  moderately bright FLUOR in SST. TG 78U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70 |\n| Grain Size | f-med  (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 30.0% dll - mod bri |\n| Total Gas | 78 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 106.5 | 19 |\n| RES_DEEP (ohm.m) | 20.67 | 19 |\n| RES_SHALLOW (ohm.m) | 17.16 | 19 |\n| **Δ Res (Deep − Shallow)** | **3.50** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1923"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1926.0,
+      "top": 1924.5,
+      "bot": 1927.5,
+      "summary": {
+        "pct_ss": 70,
+        "grain": "vf-f, tr med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 40.0,
+        "WRCI": 26.59,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1926m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine to fine, trace medium Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 70U"
+      },
+      "detail_markdown": "### 1926 m MD — Interval 1924.5 – 1927.5 m\n\n**Sample Description (spreadsheet):** Sample 1926m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine to fine, trace medium Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 70U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70 |\n| Grain Size | vf-f, tr med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 40.0% dll - mod bri |\n| Total Gas | 70 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 105.0 | 20 |\n| RES_DEEP (ohm.m) | 20.85 | 20 |\n| RES_SHALLOW (ohm.m) | 17.17 | 20 |\n| **Δ Res (Deep − Shallow)** | **3.68** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1926"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1929.0,
+      "top": 1927.5,
+      "bot": 1930.5,
+      "summary": {
+        "pct_ss": 70,
+        "grain": "vf-f, tr med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 40.0,
+        "WRCI": 27.22,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1929m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine to fine, trace medium Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 70U"
+      },
+      "detail_markdown": "### 1929 m MD — Interval 1927.5 – 1930.5 m\n\n**Sample Description (spreadsheet):** Sample 1929m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine to fine, trace medium Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 70U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70 |\n| Grain Size | vf-f, tr med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 40.0% dll - mod bri |\n| Total Gas | 70 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 106.3 | 20 |\n| RES_DEEP (ohm.m) | 21.66 | 20 |\n| RES_SHALLOW (ohm.m) | 17.72 | 20 |\n| **Δ Res (Deep − Shallow)** | **3.94** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1929"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1932.0,
+      "top": 1930.5,
+      "bot": 1933.5,
+      "summary": {
+        "pct_ss": 40,
+        "grain": "vf - f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 40.0,
+        "WRCI": 34.0,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1932m: Tr siderite in 60% Siltstone, Tr siderite in 40% very fine  to  fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 80U"
+      },
+      "detail_markdown": "### 1932 m MD — Interval 1930.5 – 1933.5 m\n\n**Sample Description (spreadsheet):** Sample 1932m: Tr siderite in 60% Siltstone, Tr siderite in 40% very fine  to  fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 80U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 40 |\n| Grain Size | vf - f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 40.0% dll - mod bri |\n| Total Gas | 80 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 104.2 | 20 |\n| RES_DEEP (ohm.m) | 21.01 | 20 |\n| RES_SHALLOW (ohm.m) | 17.28 | 20 |\n| **Δ Res (Deep − Shallow)** | **3.73** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1932"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1935.0,
+      "top": 1933.5,
+      "bot": 1936.5,
+      "summary": {
+        "pct_ss": 60,
+        "grain": "vf - f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 40.0,
+        "WRCI": 35.6,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1935m: Tr siderite in 40% Siltstone, Tr siderite in 60% very fine  to  fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 82U"
+      },
+      "detail_markdown": "### 1935 m MD — Interval 1933.5 – 1936.5 m\n\n**Sample Description (spreadsheet):** Sample 1935m: Tr siderite in 40% Siltstone, Tr siderite in 60% very fine  to  fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 82U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 60 |\n| Grain Size | vf - f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 40.0% dll - mod bri |\n| Total Gas | 82 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 105.5 | 19 |\n| RES_DEEP (ohm.m) | 21.58 | 19 |\n| RES_SHALLOW (ohm.m) | 17.34 | 19 |\n| **Δ Res (Deep − Shallow)** | **4.24** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1935"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1938.0,
+      "top": 1936.5,
+      "bot": 1939.5,
+      "summary": {
+        "pct_ss": 60,
+        "grain": "vf - f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 40.0,
+        "WRCI": 38.12,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1938m: Tr siderite in 40% Siltstone, Tr siderite in 60% very fine  to  fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 70U"
+      },
+      "detail_markdown": "### 1938 m MD — Interval 1936.5 – 1939.5 m\n\n**Sample Description (spreadsheet):** Sample 1938m: Tr siderite in 40% Siltstone, Tr siderite in 60% very fine  to  fine Sandstone, 40% dull  to  moderately bright FLUOR in SST. TG 70U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 60 |\n| Grain Size | vf - f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 40.0% dll - mod bri |\n| Total Gas | 70 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.5 | 20 |\n| RES_DEEP (ohm.m) | 22.91 | 20 |\n| RES_SHALLOW (ohm.m) | 18.41 | 20 |\n| **Δ Res (Deep − Shallow)** | **4.51** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1938"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1941.0,
+      "top": 1939.5,
+      "bot": 1942.5,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "vf - f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 60.0,
+        "WRCI": 38.83,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1941m: Tr siderite in 20% Siltstone, Tr siderite in 80% very fine  to  fine Sandstone, 60% dull  to  moderately bright FLUOR in SST. TG 120U"
+      },
+      "detail_markdown": "### 1941 m MD — Interval 1939.5 – 1942.5 m\n\n**Sample Description (spreadsheet):** Sample 1941m: Tr siderite in 20% Siltstone, Tr siderite in 80% very fine  to  fine Sandstone, 60% dull  to  moderately bright FLUOR in SST. TG 120U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | vf - f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 60.0% dll - mod bri |\n| Total Gas | 120 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 97.7 | 20 |\n| RES_DEEP (ohm.m) | 23.25 | 20 |\n| RES_SHALLOW (ohm.m) | 18.85 | 20 |\n| **Δ Res (Deep − Shallow)** | **4.40** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1941"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1944.0,
+      "top": 1942.5,
+      "bot": 1945.5,
+      "summary": {
+        "pct_ss": 70,
+        "grain": "vf - f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 50.0,
+        "WRCI": 40.89,
+        "risk_class": "Elevated",
+        "flags": [],
+        "long_desc": "Sample 1944m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine  to  fine Sandstone, 50% dull  to  moderately bright FLUOR in SST. TG 90U"
+      },
+      "detail_markdown": "### 1944 m MD — Interval 1942.5 – 1945.5 m\n\n**Sample Description (spreadsheet):** Sample 1944m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine  to  fine Sandstone, 50% dull  to  moderately bright FLUOR in SST. TG 90U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70 |\n| Grain Size | vf - f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 50.0% dll - mod bri |\n| Total Gas | 90 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.0 | 19 |\n| RES_DEEP (ohm.m) | 25.08 | 19 |\n| RES_SHALLOW (ohm.m) | 19.96 | 19 |\n| **Δ Res (Deep − Shallow)** | **5.12** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1944"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1947.0,
+      "top": 1945.5,
+      "bot": 1948.5,
+      "summary": {
+        "pct_ss": 70,
+        "grain": "vf - f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 50.0,
+        "WRCI": 38.38,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1947m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine  to  fine Sandstone, 50% dull  to  moderately bright FLUOR in SST. TG 90U"
+      },
+      "detail_markdown": "### 1947 m MD — Interval 1945.5 – 1948.5 m\n\n**Sample Description (spreadsheet):** Sample 1947m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine  to  fine Sandstone, 50% dull  to  moderately bright FLUOR in SST. TG 90U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70 |\n| Grain Size | vf - f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 50.0% dll - mod bri |\n| Total Gas | 90 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 98.5 | 20 |\n| RES_DEEP (ohm.m) | 24.14 | 20 |\n| RES_SHALLOW (ohm.m) | 19.72 | 20 |\n| **Δ Res (Deep − Shallow)** | **4.42** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1947"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1950.0,
+      "top": 1948.5,
+      "bot": 1951.5,
+      "summary": {
+        "pct_ss": 70,
+        "grain": "vf - f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 60.0,
+        "WRCI": 32.31,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1950m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine  to  fine Sandstone, 60% dull  to  bright FLUOR in SST. TG 96U"
+      },
+      "detail_markdown": "### 1950 m MD — Interval 1948.5 – 1951.5 m\n\n**Sample Description (spreadsheet):** Sample 1950m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine  to  fine Sandstone, 60% dull  to  bright FLUOR in SST. TG 96U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70 |\n| Grain Size | vf - f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 60.0% dll - bri |\n| Total Gas | 96 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 95.1 | 20 |\n| RES_DEEP (ohm.m) | 23.06 | 20 |\n| RES_SHALLOW (ohm.m) | 19.76 | 20 |\n| **Δ Res (Deep − Shallow)** | **3.30** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1950"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1953.0,
+      "top": 1951.5,
+      "bot": 1954.5,
+      "summary": {
+        "pct_ss": 70,
+        "grain": "vf - f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 60.0,
+        "WRCI": 29.97,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1953m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine  to  fine Sandstone, 60% dull  to  bright FLUOR in SST. TG 95U"
+      },
+      "detail_markdown": "### 1953 m MD — Interval 1951.5 – 1954.5 m\n\n**Sample Description (spreadsheet):** Sample 1953m: Tr siderite in 30% Siltstone, Tr siderite in 70% very fine  to  fine Sandstone, 60% dull  to  bright FLUOR in SST. TG 95U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70 |\n| Grain Size | vf - f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 60.0% dll - bri |\n| Total Gas | 95 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.5 | 19 |\n| RES_DEEP (ohm.m) | 22.17 | 19 |\n| RES_SHALLOW (ohm.m) | 19.73 | 19 |\n| **Δ Res (Deep − Shallow)** | **2.44** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1953"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1956.0,
+      "top": 1954.5,
+      "bot": 1957.5,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 15.33,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1956m: Tr siderite in 20% Siltstone, Tr siderite in 80% very fine  to  medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 101U"
+      },
+      "detail_markdown": "### 1956 m MD — Interval 1954.5 – 1957.5 m\n\n**Sample Description (spreadsheet):** Sample 1956m: Tr siderite in 20% Siltstone, Tr siderite in 80% very fine  to  medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 101U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% mod bri - bri |\n| Total Gas | 101 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 96.8 | 20 |\n| RES_DEEP (ohm.m) | 22.38 | 20 |\n| RES_SHALLOW (ohm.m) | 20.55 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.83** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1956"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1959.0,
+      "top": 1957.5,
+      "bot": 1960.5,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 14.51,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1959m: Tr siderite in 20% Siltstone, Tr siderite in 80% very fine  to  medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 105U"
+      },
+      "detail_markdown": "### 1959 m MD — Interval 1957.5 – 1960.5 m\n\n**Sample Description (spreadsheet):** Sample 1959m: Tr siderite in 20% Siltstone, Tr siderite in 80% very fine  to  medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 105U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% mod bri - bri |\n| Total Gas | 105 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.6 | 20 |\n| RES_DEEP (ohm.m) | 22.99 | 20 |\n| RES_SHALLOW (ohm.m) | 21.18 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.81** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1959"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1962.0,
+      "top": 1960.5,
+      "bot": 1963.5,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 21.33,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1962m: Tr siderite in 10% Siltstone, Tr siderite in 90% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 190U"
+      },
+      "detail_markdown": "### 1962 m MD — Interval 1960.5 – 1963.5 m\n\n**Sample Description (spreadsheet):** Sample 1962m: Tr siderite in 10% Siltstone, Tr siderite in 90% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 190U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 190 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 95.8 | 19 |\n| RES_DEEP (ohm.m) | 23.94 | 19 |\n| RES_SHALLOW (ohm.m) | 21.38 | 19 |\n| **Δ Res (Deep − Shallow)** | **2.55** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1962"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1965.0,
+      "top": 1963.5,
+      "bot": 1966.5,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 20.29,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1965m: Tr siderite in 10% Siltstone, Tr siderite in 90% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 114U"
+      },
+      "detail_markdown": "### 1965 m MD — Interval 1963.5 – 1966.5 m\n\n**Sample Description (spreadsheet):** Sample 1965m: Tr siderite in 10% Siltstone, Tr siderite in 90% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 114U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 114 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 89.0 | 20 |\n| RES_DEEP (ohm.m) | 24.03 | 20 |\n| RES_SHALLOW (ohm.m) | 22.21 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.83** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1965"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1968.0,
+      "top": 1966.5,
+      "bot": 1969.5,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 19.87,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1968m: Tr siderite in 10% Siltstone, Tr siderite in 90% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 111U"
+      },
+      "detail_markdown": "### 1968 m MD — Interval 1966.5 – 1969.5 m\n\n**Sample Description (spreadsheet):** Sample 1968m: Tr siderite in 10% Siltstone, Tr siderite in 90% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 111U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 111 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 84.6 | 20 |\n| RES_DEEP (ohm.m) | 26.41 | 20 |\n| RES_SHALLOW (ohm.m) | 25.00 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.42** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1968"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1971.0,
+      "top": 1969.5,
+      "bot": 1972.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 20.7,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1971m: Tr siderite in 5% Siltstone, Tr siderite in 95% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 118U"
+      },
+      "detail_markdown": "### 1971 m MD — Interval 1969.5 – 1972.5 m\n\n**Sample Description (spreadsheet):** Sample 1971m: Tr siderite in 5% Siltstone, Tr siderite in 95% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 118U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 118 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 90.1 | 19 |\n| RES_DEEP (ohm.m) | 26.82 | 19 |\n| RES_SHALLOW (ohm.m) | 25.21 | 19 |\n| **Δ Res (Deep − Shallow)** | **1.61** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1971"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1974.0,
+      "top": 1972.5,
+      "bot": 1975.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 24.97,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1974m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 114U"
+      },
+      "detail_markdown": "### 1974 m MD — Interval 1972.5 – 1975.5 m\n\n**Sample Description (spreadsheet):** Sample 1974m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 114U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 114 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 84.6 | 20 |\n| RES_DEEP (ohm.m) | 25.16 | 20 |\n| RES_SHALLOW (ohm.m) | 22.79 | 20 |\n| **Δ Res (Deep − Shallow)** | **2.37** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1974"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1977.0,
+      "top": 1975.5,
+      "bot": 1978.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 27.01,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1977m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 112U"
+      },
+      "detail_markdown": "### 1977 m MD — Interval 1975.5 – 1978.5 m\n\n**Sample Description (spreadsheet):** Sample 1977m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 112U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 112 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 79.2 | 20 |\n| RES_DEEP (ohm.m) | 26.01 | 20 |\n| RES_SHALLOW (ohm.m) | 23.86 | 20 |\n| **Δ Res (Deep − Shallow)** | **2.14** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1977"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1980.0,
+      "top": 1978.5,
+      "bot": 1981.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 25.39,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1980m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 149U"
+      },
+      "detail_markdown": "### 1980 m MD — Interval 1978.5 – 1981.5 m\n\n**Sample Description (spreadsheet):** Sample 1980m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 149U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 149 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 80.5 | 19 |\n| RES_DEEP (ohm.m) | 24.71 | 19 |\n| RES_SHALLOW (ohm.m) | 22.91 | 19 |\n| **Δ Res (Deep − Shallow)** | **1.81** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1980"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1983.0,
+      "top": 1981.5,
+      "bot": 1984.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 22.06,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1983m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 116U"
+      },
+      "detail_markdown": "### 1983 m MD — Interval 1981.5 – 1984.5 m\n\n**Sample Description (spreadsheet):** Sample 1983m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 116U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 116 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 79.2 | 20 |\n| RES_DEEP (ohm.m) | 23.11 | 20 |\n| RES_SHALLOW (ohm.m) | 22.27 | 20 |\n| **Δ Res (Deep − Shallow)** | **0.84** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1983"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1986.0,
+      "top": 1984.5,
+      "bot": 1987.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 22.11,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1986m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 118U"
+      },
+      "detail_markdown": "### 1986 m MD — Interval 1984.5 – 1987.5 m\n\n**Sample Description (spreadsheet):** Sample 1986m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 118U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 118 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 84.9 | 20 |\n| RES_DEEP (ohm.m) | 24.24 | 20 |\n| RES_SHALLOW (ohm.m) | 23.01 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.23** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1986"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1989.0,
+      "top": 1987.5,
+      "bot": 1990.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 25.09,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1989m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 136U"
+      },
+      "detail_markdown": "### 1989 m MD — Interval 1987.5 – 1990.5 m\n\n**Sample Description (spreadsheet):** Sample 1989m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 136U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 136 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 98.9 | 20 |\n| RES_DEEP (ohm.m) | 26.48 | 20 |\n| RES_SHALLOW (ohm.m) | 23.12 | 20 |\n| **Δ Res (Deep − Shallow)** | **3.36** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1989"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1992.0,
+      "top": 1990.5,
+      "bot": 1993.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 35.19,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1992m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 141U"
+      },
+      "detail_markdown": "### 1992 m MD — Interval 1990.5 – 1993.5 m\n\n**Sample Description (spreadsheet):** Sample 1992m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 141U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 141 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.7 | 19 |\n| RES_DEEP (ohm.m) | 33.49 | 19 |\n| RES_SHALLOW (ohm.m) | 26.97 | 19 |\n| **Δ Res (Deep − Shallow)** | **6.51** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1992"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 1995.0,
+      "top": 1993.5,
+      "bot": 1997.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 25.91,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1995m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 77U"
+      },
+      "detail_markdown": "### 1995 m MD — Interval 1993.5 – 1997.5 m\n\n**Sample Description (spreadsheet):** Sample 1995m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 77U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 77 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 100.5 | 26 |\n| RES_DEEP (ohm.m) | 24.96 | 26 |\n| RES_SHALLOW (ohm.m) | 21.28 | 26 |\n| **Δ Res (Deep − Shallow)** | **3.68** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1995"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2172.0,
+      "top": 2170.5,
+      "bot": 2173.5,
+      "summary": {
+        "pct_ss": 65,
+        "grain": "vf-med, occ crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 60.0,
+        "WRCI": 21.86,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2172m: trace siderite in 35% Siltstone, 5 siderite in 65% very fine to medium, occasional coarse Sandstone, 60% dull  to  bright FLUOR in SST. TG 95U"
+      },
+      "detail_markdown": "### 2172 m MD — Interval 2170.5 – 2173.5 m\n\n**Sample Description (spreadsheet):** Sample 2172m: trace siderite in 35% Siltstone, 5 siderite in 65% very fine to medium, occasional coarse Sandstone, 60% dull  to  bright FLUOR in SST. TG 95U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 65 |\n| Grain Size | vf-med, occ crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 60.0% dll - bri |\n| Total Gas | 95 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 5 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2160m: med-lt gry,gry brn i/p, 85 / 5 / 3 / 2 / 5 arg,micmic,carb,aren grd to vf SST i/p,sft,fri,sbblky. Tr% of SST,mod bri-bri,occ\n- **SANDSTONE** @ ~2180m: clr,trnsl,trnsp,opq,f-med, CHANGE SHAKER SCREEN occ crs,mod srt,sbrnd,occ sbang,wk sil cmt,occ lt gry arg mtx,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.5 | 19 |\n| RES_DEEP (ohm.m) | 18.16 | 19 |\n| RES_SHALLOW (ohm.m) | 17.56 | 19 |\n| **Δ Res (Deep − Shallow)** | **0.60** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2172"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2175.0,
+      "top": 2173.5,
+      "bot": 2176.5,
+      "summary": {
+        "pct_ss": 85,
+        "grain": "f-med, occ crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 85.0,
+        "WRCI": 28.86,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2175m: trace siderite in 15% Siltstone, trace siderite in 85% fine to medium, occasional coarse Sandstone, 85% dull  to  bright FLUOR in SST. TG 100U"
+      },
+      "detail_markdown": "### 2175 m MD — Interval 2173.5 – 2176.5 m\n\n**Sample Description (spreadsheet):** Sample 2175m: trace siderite in 15% Siltstone, trace siderite in 85% fine to medium, occasional coarse Sandstone, 85% dull  to  bright FLUOR in SST. TG 100U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 85 |\n| Grain Size | f-med, occ crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 85.0% dll - bri |\n| Total Gas | 100 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2160m: med-lt gry,gry brn i/p, 85 / 5 / 3 / 2 / 5 arg,micmic,carb,aren grd to vf SST i/p,sft,fri,sbblky. Tr% of SST,mod bri-bri,occ\n- **SANDSTONE** @ ~2180m: clr,trnsl,trnsp,opq,f-med, CHANGE SHAKER SCREEN occ crs,mod srt,sbrnd,occ sbang,wk sil cmt,occ lt gry arg mtx,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 79.2 | 20 |\n| RES_DEEP (ohm.m) | 19.39 | 20 |\n| RES_SHALLOW (ohm.m) | 17.98 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.42** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2175"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2178.0,
+      "top": 2176.5,
+      "bot": 2179.5,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "f, occ med, r crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 26.13,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2178m: 0 siderite in 10% Siltstone, trace siderite in 90% fine, occasional medium, r coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 105U"
+      },
+      "detail_markdown": "### 2178 m MD — Interval 2176.5 – 2179.5 m\n\n**Sample Description (spreadsheet):** Sample 2178m: 0 siderite in 10% Siltstone, trace siderite in 90% fine, occasional medium, r coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 105U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | f, occ med, r crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 105 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2180m: clr,trnsl,trnsp,opq,f-med, CHANGE SHAKER SCREEN occ crs,mod srt,sbrnd,occ sbang,wk sil cmt,occ lt gry arg mtx,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 82.3 | 20 |\n| RES_DEEP (ohm.m) | 20.02 | 20 |\n| RES_SHALLOW (ohm.m) | 19.35 | 20 |\n| **Δ Res (Deep − Shallow)** | **0.67** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2178"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2181.0,
+      "top": 2179.5,
+      "bot": 2182.5,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "f-occ med, r crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 90.0,
+        "WRCI": 25.25,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2181m: 0 siderite in 10% Siltstone, 0 siderite in 90% fine to occasional medium, r coarse Sandstone, 90% dull  to  bright FLUOR in SST. TG 107U"
+      },
+      "detail_markdown": "### 2181 m MD — Interval 2179.5 – 2182.5 m\n\n**Sample Description (spreadsheet):** Sample 2181m: 0 siderite in 10% Siltstone, 0 siderite in 90% fine to occasional medium, r coarse Sandstone, 90% dull  to  bright FLUOR in SST. TG 107U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | f-occ med, r crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 90.0% dll - bri |\n| Total Gas | 107 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2180m: clr,trnsl,trnsp,opq,f-med, CHANGE SHAKER SCREEN occ crs,mod srt,sbrnd,occ sbang,wk sil cmt,occ lt gry arg mtx,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 93.9 | 19 |\n| RES_DEEP (ohm.m) | 19.64 | 19 |\n| RES_SHALLOW (ohm.m) | 18.51 | 19 |\n| **Δ Res (Deep − Shallow)** | **1.13** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2181"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2184.0,
+      "top": 2182.5,
+      "bot": 2185.5,
+      "summary": {
+        "pct_ss": 85,
+        "grain": "f-med, occ crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 60.0,
+        "WRCI": 26.53,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2184m: 0 siderite in 15% Siltstone, 5 siderite in 85% fine to medium, occasional coarse Sandstone, 60% dull  to  moderately bright FLUOR in SST. TG 68U"
+      },
+      "detail_markdown": "### 2184 m MD — Interval 2182.5 – 2185.5 m\n\n**Sample Description (spreadsheet):** Sample 2184m: 0 siderite in 15% Siltstone, 5 siderite in 85% fine to medium, occasional coarse Sandstone, 60% dull  to  moderately bright FLUOR in SST. TG 68U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 85 |\n| Grain Size | f-med, occ crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 60.0% dll - mod bri |\n| Total Gas | 68 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 5 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2180m: clr,trnsl,trnsp,opq,f-med, CHANGE SHAKER SCREEN occ crs,mod srt,sbrnd,occ sbang,wk sil cmt,occ lt gry arg mtx,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 97.0 | 20 |\n| RES_DEEP (ohm.m) | 18.17 | 20 |\n| RES_SHALLOW (ohm.m) | 17.55 | 20 |\n| **Δ Res (Deep − Shallow)** | **0.62** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2184"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2187.0,
+      "top": 2185.5,
+      "bot": 2188.5,
+      "summary": {
+        "pct_ss": 85,
+        "grain": "f-med, occ crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 60.0,
+        "WRCI": 30.4,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2187m: 0 siderite in 15% Siltstone, 5 siderite in 85% fine to medium, occasional coarse Sandstone, 60% dull  to  moderately bright FLUOR in SST. TG 83U"
+      },
+      "detail_markdown": "### 2187 m MD — Interval 2185.5 – 2188.5 m\n\n**Sample Description (spreadsheet):** Sample 2187m: 0 siderite in 15% Siltstone, 5 siderite in 85% fine to medium, occasional coarse Sandstone, 60% dull  to  moderately bright FLUOR in SST. TG 83U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 85 |\n| Grain Size | f-med, occ crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 60.0% dll - mod bri |\n| Total Gas | 83 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 5 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2180m: clr,trnsl,trnsp,opq,f-med, CHANGE SHAKER SCREEN occ crs,mod srt,sbrnd,occ sbang,wk sil cmt,occ lt gry arg mtx,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.4 | 20 |\n| RES_DEEP (ohm.m) | 18.63 | 20 |\n| RES_SHALLOW (ohm.m) | 17.24 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.39** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2187"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2190.0,
+      "top": 2188.5,
+      "bot": 2191.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f, occ med, r crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 85.0,
+        "WRCI": 30.0,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowres"
+        ],
+        "long_desc": "Sample 2190m: 0 siderite in 5% Siltstone, trace siderite in 95% fine, occasional medium, r coarse Sandstone, 85% dull  to  bright FLUOR in SST. TG 97U"
+      },
+      "detail_markdown": "### 2190 m MD — Interval 2188.5 – 2191.5 m\n\n**Sample Description (spreadsheet):** Sample 2190m: 0 siderite in 5% Siltstone, trace siderite in 95% fine, occasional medium, r coarse Sandstone, 85% dull  to  bright FLUOR in SST. TG 97U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f, occ med, r crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 85.0% dll - bri |\n| Total Gas | 97 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2180m: clr,trnsl,trnsp,opq,f-med, CHANGE SHAKER SCREEN occ crs,mod srt,sbrnd,occ sbang,wk sil cmt,occ lt gry arg mtx,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 88.2 | 19 |\n| RES_DEEP (ohm.m) | 18.16 | 19 |\n| RES_SHALLOW (ohm.m) | 16.95 | 19 |\n| **Δ Res (Deep − Shallow)** | **1.21** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2190"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2193.0,
+      "top": 2191.5,
+      "bot": 2194.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f, occ med",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 29.76,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2193m: 0 siderite in 5% Siltstone, 5 siderite in 95% fine, occasional medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 103U"
+      },
+      "detail_markdown": "### 2193 m MD — Interval 2191.5 – 2194.5 m\n\n**Sample Description (spreadsheet):** Sample 2193m: 0 siderite in 5% Siltstone, 5 siderite in 95% fine, occasional medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 103U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f, occ med (max: M) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 103 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 5 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2180m: clr,trnsl,trnsp,opq,f-med, CHANGE SHAKER SCREEN occ crs,mod srt,sbrnd,occ sbang,wk sil cmt,occ lt gry arg mtx,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.1 | 20 |\n| RES_DEEP (ohm.m) | 18.26 | 20 |\n| RES_SHALLOW (ohm.m) | 16.90 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.36** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2193"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2196.0,
+      "top": 2194.5,
+      "bot": 2197.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f, occ med",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 90.0,
+        "WRCI": 29.35,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2196m: 0 siderite in 5% Siltstone, 0 siderite in 95% fine, occasional medium Sandstone, 90% dull  to  bright FLUOR in SST. TG 115U"
+      },
+      "detail_markdown": "### 2196 m MD — Interval 2194.5 – 2197.5 m\n\n**Sample Description (spreadsheet):** Sample 2196m: 0 siderite in 5% Siltstone, 0 siderite in 95% fine, occasional medium Sandstone, 90% dull  to  bright FLUOR in SST. TG 115U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f, occ med (max: M) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 90.0% dll - bri |\n| Total Gas | 115 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2180m: clr,trnsl,trnsp,opq,f-med, CHANGE SHAKER SCREEN occ crs,mod srt,sbrnd,occ sbang,wk sil cmt,occ lt gry arg mtx,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.8 | 20 |\n| RES_DEEP (ohm.m) | 18.00 | 20 |\n| RES_SHALLOW (ohm.m) | 16.56 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.44** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2196"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2199.0,
+      "top": 2197.5,
+      "bot": 2200.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f, occ med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 95.0,
+        "WRCI": 21.26,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2199m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine, occasional medium Sandstone, 95% dull  to  bright FLUOR in SST. TG 99U"
+      },
+      "detail_markdown": "### 2199 m MD — Interval 2197.5 – 2200.5 m\n\n**Sample Description (spreadsheet):** Sample 2199m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine, occasional medium Sandstone, 95% dull  to  bright FLUOR in SST. TG 99U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f, occ med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 95.0% dll - bri |\n| Total Gas | 99 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.1 | 19 |\n| RES_DEEP (ohm.m) | 17.93 | 19 |\n| RES_SHALLOW (ohm.m) | 16.84 | 19 |\n| **Δ Res (Deep − Shallow)** | **1.09** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2199"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2202.0,
+      "top": 2200.5,
+      "bot": 2203.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f, occ med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 23.1,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2202m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine, occasional medium Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 91U"
+      },
+      "detail_markdown": "### 2202 m MD — Interval 2200.5 – 2203.5 m\n\n**Sample Description (spreadsheet):** Sample 2202m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine, occasional medium Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 91U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f, occ med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% dll - mod bri |\n| Total Gas | 91 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 93.2 | 20 |\n| RES_DEEP (ohm.m) | 18.54 | 20 |\n| RES_SHALLOW (ohm.m) | 16.87 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.67** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2202"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2205.0,
+      "top": 2203.5,
+      "bot": 2206.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f, occ med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 90.0,
+        "WRCI": 23.2,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2205m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine, occasional medium Sandstone, 90% dull  to  bright FLUOR in SST. TG 82U"
+      },
+      "detail_markdown": "### 2205 m MD — Interval 2203.5 – 2206.5 m\n\n**Sample Description (spreadsheet):** Sample 2205m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine, occasional medium Sandstone, 90% dull  to  bright FLUOR in SST. TG 82U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f, occ med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 90.0% dll - bri |\n| Total Gas | 82 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.2 | 20 |\n| RES_DEEP (ohm.m) | 19.37 | 20 |\n| RES_SHALLOW (ohm.m) | 17.59 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.78** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2205"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2208.0,
+      "top": 2206.5,
+      "bot": 2209.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "vf-v, occ med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 23.16,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2208m: 0 siderite in 5% Siltstone, 0 siderite in 95% very fine to very, occasional medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 121U"
+      },
+      "detail_markdown": "### 2208 m MD — Interval 2206.5 – 2209.5 m\n\n**Sample Description (spreadsheet):** Sample 2208m: 0 siderite in 5% Siltstone, 0 siderite in 95% very fine to very, occasional medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 121U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | vf-v, occ med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% mod bri - bri |\n| Total Gas | 121 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.3 | 20 |\n| RES_DEEP (ohm.m) | 19.56 | 20 |\n| RES_SHALLOW (ohm.m) | 17.34 | 20 |\n| **Δ Res (Deep − Shallow)** | **2.22** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2208"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2211.0,
+      "top": 2209.5,
+      "bot": 2212.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf-f, occ med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 70.0,
+        "WRCI": 25.57,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2211m: 0 siderite in 0% Siltstone, 0 siderite in 100% very fine to fine, occasional medium Sandstone, 70% dull  to  moderately bright FLUOR in SST. TG 101U"
+      },
+      "detail_markdown": "### 2211 m MD — Interval 2209.5 – 2212.5 m\n\n**Sample Description (spreadsheet):** Sample 2211m: 0 siderite in 0% Siltstone, 0 siderite in 100% very fine to fine, occasional medium Sandstone, 70% dull  to  moderately bright FLUOR in SST. TG 101U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf-f, occ med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 70.0% dll - mod bri |\n| Total Gas | 101 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.7 | 19 |\n| RES_DEEP (ohm.m) | 19.11 | 19 |\n| RES_SHALLOW (ohm.m) | 17.10 | 19 |\n| **Δ Res (Deep − Shallow)** | **2.02** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2211"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2214.0,
+      "top": 2212.5,
+      "bot": 2215.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf-f, occ med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 21.94,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2214m: 0 siderite in 0% Siltstone, trace siderite in 100% very fine to fine, occasional medium Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 93U"
+      },
+      "detail_markdown": "### 2214 m MD — Interval 2212.5 – 2215.5 m\n\n**Sample Description (spreadsheet):** Sample 2214m: 0 siderite in 0% Siltstone, trace siderite in 100% very fine to fine, occasional medium Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 93U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf-f, occ med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% dll - mod bri |\n| Total Gas | 93 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 93.0 | 20 |\n| RES_DEEP (ohm.m) | 19.25 | 20 |\n| RES_SHALLOW (ohm.m) | 17.71 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.54** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2214"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2217.0,
+      "top": 2215.5,
+      "bot": 2218.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf-f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 31.27,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2217m: 0 siderite in 0% Siltstone, 0 siderite in 100% very fine to fine Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 102U"
+      },
+      "detail_markdown": "### 2217 m MD — Interval 2215.5 – 2218.5 m\n\n**Sample Description (spreadsheet):** Sample 2217m: 0 siderite in 0% Siltstone, 0 siderite in 100% very fine to fine Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 102U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% dll - mod bri |\n| Total Gas | 102 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 95.3 | 20 |\n| RES_DEEP (ohm.m) | 20.30 | 20 |\n| RES_SHALLOW (ohm.m) | 18.58 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.72** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2217"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2220.0,
+      "top": 2218.5,
+      "bot": 2221.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf-f, f-med i/p",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 22.06,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2220m: trace siderite in 0% Siltstone, trace siderite in 100% very fine to fine, fine to medium in part Sandstone, 80% moderately bright FLUOR in SST. TG 80U"
+      },
+      "detail_markdown": "### 2220 m MD — Interval 2218.5 – 2221.5 m\n\n**Sample Description (spreadsheet):** Sample 2220m: trace siderite in 0% Siltstone, trace siderite in 100% very fine to fine, fine to medium in part Sandstone, 80% moderately bright FLUOR in SST. TG 80U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf-f, f-med i/p (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% mod bri |\n| Total Gas | 80 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 96.5 | 19 |\n| RES_DEEP (ohm.m) | 19.98 | 19 |\n| RES_SHALLOW (ohm.m) | 17.98 | 19 |\n| **Δ Res (Deep − Shallow)** | **2.00** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2220"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2223.0,
+      "top": 2221.5,
+      "bot": 2224.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf-f, f-med i/p",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 20.93,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2223m: trace siderite in 0% Siltstone, trace siderite in 100% very fine to fine, fine to medium in part Sandstone, 80% moderately bright FLUOR in SST. TG 72U"
+      },
+      "detail_markdown": "### 2223 m MD — Interval 2221.5 – 2224.5 m\n\n**Sample Description (spreadsheet):** Sample 2223m: trace siderite in 0% Siltstone, trace siderite in 100% very fine to fine, fine to medium in part Sandstone, 80% moderately bright FLUOR in SST. TG 72U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf-f, f-med i/p (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% mod bri |\n| Total Gas | 72 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.5 | 20 |\n| RES_DEEP (ohm.m) | 19.34 | 20 |\n| RES_SHALLOW (ohm.m) | 17.61 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.73** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2223"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2226.0,
+      "top": 2224.5,
+      "bot": 2227.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf-v, occ med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 23.09,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2226m: trace siderite in 0% Siltstone, 0 siderite in 100% very fine to very, occasional medium Sandstone, 80% dull  to  bright FLUOR in SST. TG 80U"
+      },
+      "detail_markdown": "### 2226 m MD — Interval 2224.5 – 2227.5 m\n\n**Sample Description (spreadsheet):** Sample 2226m: trace siderite in 0% Siltstone, 0 siderite in 100% very fine to very, occasional medium Sandstone, 80% dull  to  bright FLUOR in SST. TG 80U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf-v, occ med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% dll - bri |\n| Total Gas | 80 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 97.4 | 20 |\n| RES_DEEP (ohm.m) | 18.85 | 20 |\n| RES_SHALLOW (ohm.m) | 16.82 | 20 |\n| **Δ Res (Deep − Shallow)** | **2.03** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2226"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2229.0,
+      "top": 2227.5,
+      "bot": 2230.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf-v, occ med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 22.57,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2229m: 0 siderite in 0% Siltstone, 0 siderite in 100% very fine to very, occasional medium Sandstone, 80% dull  to  bright FLUOR in SST. TG 119U"
+      },
+      "detail_markdown": "### 2229 m MD — Interval 2227.5 – 2230.5 m\n\n**Sample Description (spreadsheet):** Sample 2229m: 0 siderite in 0% Siltstone, 0 siderite in 100% very fine to very, occasional medium Sandstone, 80% dull  to  bright FLUOR in SST. TG 119U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf-v, occ med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% dll - bri |\n| Total Gas | 119 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 97.4 | 19 |\n| RES_DEEP (ohm.m) | 18.88 | 19 |\n| RES_SHALLOW (ohm.m) | 16.98 | 19 |\n| **Δ Res (Deep − Shallow)** | **1.90** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2229"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2232.0,
+      "top": 2230.5,
+      "bot": 2233.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 22.65,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2232m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 107U"
+      },
+      "detail_markdown": "### 2232 m MD — Interval 2230.5 – 2233.5 m\n\n**Sample Description (spreadsheet):** Sample 2232m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 107U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf - med (max: M ) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% dll - mod bri |\n| Total Gas | 107 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.0 | 20 |\n| RES_DEEP (ohm.m) | 19.70 | 20 |\n| RES_SHALLOW (ohm.m) | 17.79 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.91** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2232"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2235.0,
+      "top": 2233.5,
+      "bot": 2236.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 21.98,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2235m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 201U"
+      },
+      "detail_markdown": "### 2235 m MD — Interval 2233.5 – 2236.5 m\n\n**Sample Description (spreadsheet):** Sample 2235m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 201U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf - med (max: M ) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 201 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 96.2 | 20 |\n| RES_DEEP (ohm.m) | 19.48 | 20 |\n| RES_SHALLOW (ohm.m) | 17.66 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.82** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2235"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2238.0,
+      "top": 2236.5,
+      "bot": 2239.5,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 19.47,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2238m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 94U"
+      },
+      "detail_markdown": "### 2238 m MD — Interval 2236.5 – 2239.5 m\n\n**Sample Description (spreadsheet):** Sample 2238m: Tr siderite in 0% Siltstone, Tr siderite in 100% very fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 94U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | vf - med (max: M ) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 94 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 101.6 | 19 |\n| RES_DEEP (ohm.m) | 19.20 | 19 |\n| RES_SHALLOW (ohm.m) | 17.75 | 19 |\n| **Δ Res (Deep − Shallow)** | **1.45** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2238"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2241.0,
+      "top": 2239.5,
+      "bot": 2242.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 90.0,
+        "WRCI": 16.06,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2241m: Tr siderite in 5% Siltstone, Tr siderite in 95% very fine  to  medium Sandstone, 90% moderately bright FLUOR in SST. TG 71U"
+      },
+      "detail_markdown": "### 2241 m MD — Interval 2239.5 – 2242.5 m\n\n**Sample Description (spreadsheet):** Sample 2241m: Tr siderite in 5% Siltstone, Tr siderite in 95% very fine  to  medium Sandstone, 90% moderately bright FLUOR in SST. TG 71U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | vf - med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 90.0% mod bri |\n| Total Gas | 71 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 110.3 | 20 |\n| RES_DEEP (ohm.m) | 20.49 | 20 |\n| RES_SHALLOW (ohm.m) | 18.76 | 20 |\n| **Δ Res (Deep − Shallow)** | **1.73** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2241"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2244.0,
+      "top": 2242.5,
+      "bot": 2245.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 18.27,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2244m: Tr siderite in 5% Siltstone, Tr siderite in 95% very fine  to  medium Sandstone, 80% moderately bright FLUOR in SST. TG 68U"
+      },
+      "detail_markdown": "### 2244 m MD — Interval 2242.5 – 2245.5 m\n\n**Sample Description (spreadsheet):** Sample 2244m: Tr siderite in 5% Siltstone, Tr siderite in 95% very fine  to  medium Sandstone, 80% moderately bright FLUOR in SST. TG 68U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | vf - med (max: M ) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% mod bri |\n| Total Gas | 68 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 108.0 | 20 |\n| RES_DEEP (ohm.m) | 20.47 | 20 |\n| RES_SHALLOW (ohm.m) | 18.30 | 20 |\n| **Δ Res (Deep − Shallow)** | **2.17** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2244"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2247.0,
+      "top": 2245.5,
+      "bot": 2248.5,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 16.22,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2247m: Tr siderite in 5% Siltstone, Tr siderite in 95% very fine  to  medium Sandstone, 80% moderately bright FLUOR in SST. TG 74U"
+      },
+      "detail_markdown": "### 2247 m MD — Interval 2245.5 – 2248.5 m\n\n**Sample Description (spreadsheet):** Sample 2247m: Tr siderite in 5% Siltstone, Tr siderite in 95% very fine  to  medium Sandstone, 80% moderately bright FLUOR in SST. TG 74U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | vf - med (max: M ) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% mod bri |\n| Total Gas | 74 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 106.0 | 19 |\n| RES_DEEP (ohm.m) | 20.26 | 19 |\n| RES_SHALLOW (ohm.m) | 18.76 | 19 |\n| **Δ Res (Deep − Shallow)** | **1.50** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2247"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2250.0,
+      "top": 2248.5,
+      "bot": 2255.0,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "vf - med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80.0,
+        "WRCI": 15.84,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2250m: Tr siderite in 10% Siltstone, Tr siderite in 90% very fine  to  medium Sandstone, 80% moderately bright FLUOR in SST. TG 114U"
+      },
+      "detail_markdown": "### 2250 m MD — Interval 2248.5 – 2255.0 m\n\n**Sample Description (spreadsheet):** Sample 2250m: Tr siderite in 10% Siltstone, Tr siderite in 90% very fine  to  medium Sandstone, 80% moderately bright FLUOR in SST. TG 114U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | vf - med (max: M ) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80.0% mod bri |\n| Total Gas | 114 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.7 | 43 |\n| RES_DEEP (ohm.m) | 21.20 | 43 |\n| RES_SHALLOW (ohm.m) | 19.83 | 43 |\n| **Δ Res (Deep − Shallow)** | **1.37** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2250"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2260.0,
+      "top": 2255.0,
+      "bot": 2265.0,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 17.9,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2260m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 200U"
+      },
+      "detail_markdown": "### 2260 m MD — Interval 2255.0 – 2265.0 m\n\n**Sample Description (spreadsheet):** Sample 2260m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 200U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 200 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 81.8 | 66 |\n| RES_DEEP (ohm.m) | 22.40 | 66 |\n| RES_SHALLOW (ohm.m) | 22.09 | 66 |\n| **Δ Res (Deep − Shallow)** | **0.31** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2260"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2270.0,
+      "top": 2265.0,
+      "bot": 2275.0,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 26.71,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2270m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 300U"
+      },
+      "detail_markdown": "### 2270 m MD — Interval 2265.0 – 2275.0 m\n\n**Sample Description (spreadsheet):** Sample 2270m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 300U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 300 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2290m: clr,trnsl,lt gry,lt brn,f-v crs,pr srt,dom sbang,mnr mod-wk sil cmt,tr mnr lt gry arg mtx,tr sid,tr carb flks,fri-mod hd aggs,com lse,v pr vis- fr inf por,tr fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 104.4 | 65 |\n| RES_DEEP (ohm.m) | 22.68 | 65 |\n| RES_SHALLOW (ohm.m) | 20.37 | 65 |\n| **Δ Res (Deep − Shallow)** | **2.32** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2270"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2320.0,
+      "top": 2315.0,
+      "bot": 2325.0,
+      "summary": {
+        "pct_ss": 70,
+        "grain": "f - crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 60.0,
+        "WRCI": 19.04,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2320m: Tr siderite in 30% Siltstone, Tr siderite in 70% fine  to  coarse Sandstone, 60% dull to  moderately bright FLUOR in SST. TG 141U"
+      },
+      "detail_markdown": "### 2320 m MD — Interval 2315.0 – 2325.0 m\n\n**Sample Description (spreadsheet):** Sample 2320m: Tr siderite in 30% Siltstone, Tr siderite in 70% fine  to  coarse Sandstone, 60% dull to  moderately bright FLUOR in SST. TG 141U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 60.0% dll- mod bri |\n| Total Gas | 141 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2310m: lt-med gry,arg,com aren i/p, grd to vf SST,com lams,tr-mnr carb flks & micrlams,mnr micmic,tr mica,tr-mnr sid, frm,sbblky-sbfiss.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 114.1 | 65 |\n| RES_DEEP (ohm.m) | 24.93 | 65 |\n| RES_SHALLOW (ohm.m) | 21.49 | 65 |\n| **Δ Res (Deep − Shallow)** | **3.44** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2320"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2330.0,
+      "top": 2325.0,
+      "bot": 2335.0,
+      "summary": {
+        "pct_ss": 70,
+        "grain": "f - v crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 70.0,
+        "WRCI": 27.99,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2330m: Tr siderite in 30% Siltstone, Tr siderite in 70% fine  to  very coarse Sandstone, 70% moderately bright  to  bright FLUOR in SST. TG 229U"
+      },
+      "detail_markdown": "### 2330 m MD — Interval 2325.0 – 2335.0 m\n\n**Sample Description (spreadsheet):** Sample 2330m: Tr siderite in 30% Siltstone, Tr siderite in 70% fine  to  very coarse Sandstone, 70% moderately bright  to  bright FLUOR in SST. TG 229U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70 |\n| Grain Size | f - v crs (max: VC) |\n| Grain Ordinal | 5 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 70.0% mod bri - bri |\n| Total Gas | 229 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2310m: lt-med gry,arg,com aren i/p, grd to vf SST,com lams,tr-mnr carb flks & micrlams,mnr micmic,tr mica,tr-mnr sid, frm,sbblky-sbfiss.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 86.2 | 66 |\n| RES_DEEP (ohm.m) | 25.23 | 66 |\n| RES_SHALLOW (ohm.m) | 22.97 | 66 |\n| **Δ Res (Deep − Shallow)** | **2.26** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2330"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2340.0,
+      "top": 2335.0,
+      "bot": 2345.0,
+      "summary": {
+        "pct_ss": 80,
+        "grain": "f - crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 90.0,
+        "WRCI": 15.23,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2340m: Tr siderite in 20% Siltstone, Tr siderite in 80% fine  to  coarse Sandstone, 90% moderately bright  to  bright FLUOR in SST. TG 233U"
+      },
+      "detail_markdown": "### 2340 m MD — Interval 2335.0 – 2345.0 m\n\n**Sample Description (spreadsheet):** Sample 2340m: Tr siderite in 20% Siltstone, Tr siderite in 80% fine  to  coarse Sandstone, 90% moderately bright  to  bright FLUOR in SST. TG 233U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 90.0% mod bri - bri |\n| Total Gas | 233 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 83.7 | 66 |\n| RES_DEEP (ohm.m) | 23.31 | 66 |\n| RES_SHALLOW (ohm.m) | 22.39 | 66 |\n| **Δ Res (Deep − Shallow)** | **0.92** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2340"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2350.0,
+      "top": 2345.0,
+      "bot": 2355.0,
+      "summary": {
+        "pct_ss": 90,
+        "grain": "f - crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 19.5,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2350m: Tr siderite in 10% Siltstone, Tr siderite in 90% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 234U"
+      },
+      "detail_markdown": "### 2350 m MD — Interval 2345.0 – 2355.0 m\n\n**Sample Description (spreadsheet):** Sample 2350m: Tr siderite in 10% Siltstone, Tr siderite in 90% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 234U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 234 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 86.3 | 65 |\n| RES_DEEP (ohm.m) | 22.75 | 65 |\n| RES_SHALLOW (ohm.m) | 21.32 | 65 |\n| **Δ Res (Deep − Shallow)** | **1.43** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2350"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2360.0,
+      "top": 2355.0,
+      "bot": 2365.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 31.33,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2360m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 244U"
+      },
+      "detail_markdown": "### 2360 m MD — Interval 2355.0 – 2365.0 m\n\n**Sample Description (spreadsheet):** Sample 2360m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 244U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 244 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2380m: lt gry,lt brn,trnsl,opq, f-crs,dom med,mod wl srt,dom sbang- sbrnd,mnr wk-mod strg sil cmt,mnr-tr lt gry arg mtx,tr ovgths,tr sid,fri- mod hd aggs,dom lse,pr vis-fr inf por,\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 80.9 | 66 |\n| RES_DEEP (ohm.m) | 23.29 | 66 |\n| RES_SHALLOW (ohm.m) | 21.74 | 66 |\n| **Δ Res (Deep − Shallow)** | **1.55** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2360"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2370.0,
+      "top": 2365.0,
+      "bot": 2375.0,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 24.65,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2370m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 239U"
+      },
+      "detail_markdown": "### 2370 m MD — Interval 2365.0 – 2375.0 m\n\n**Sample Description (spreadsheet):** Sample 2370m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 239U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 239 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2380m: lt gry,lt brn,trnsl,opq, f-crs,dom med,mod wl srt,dom sbang- sbrnd,mnr wk-mod strg sil cmt,mnr-tr lt gry arg mtx,tr ovgths,tr sid,fri- mod hd aggs,dom lse,pr vis-fr inf por,\n- **SILTSTONE** @ ~2390m: lt-med gry,arg,com aren i/p, grd to vf SST,com lams,tr-mnr carb flks 80 / 6 / 4 / 5 / 5 & micrlams,mnr micmic,tr mica,tr-mnr sid, frm,sbblky-sbfiss. 2400 SURVEY @ 2398.6\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 82.1 | 65 |\n| RES_DEEP (ohm.m) | 23.08 | 65 |\n| RES_SHALLOW (ohm.m) | 22.98 | 65 |\n| **Δ Res (Deep − Shallow)** | **0.10** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2370"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2380.0,
+      "top": 2375.0,
+      "bot": 2385.0,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 24.48,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2380m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 275U"
+      },
+      "detail_markdown": "### 2380 m MD — Interval 2375.0 – 2385.0 m\n\n**Sample Description (spreadsheet):** Sample 2380m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 275U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 275 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2380m: lt gry,lt brn,trnsl,opq, f-crs,dom med,mod wl srt,dom sbang- sbrnd,mnr wk-mod strg sil cmt,mnr-tr lt gry arg mtx,tr ovgths,tr sid,fri- mod hd aggs,dom lse,pr vis-fr inf por,\n- **SILTSTONE** @ ~2390m: lt-med gry,arg,com aren i/p, grd to vf SST,com lams,tr-mnr carb flks 80 / 6 / 4 / 5 / 5 & micrlams,mnr micmic,tr mica,tr-mnr sid, frm,sbblky-sbfiss. 2400 SURVEY @ 2398.6\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 82.9 | 66 |\n| RES_DEEP (ohm.m) | 21.13 | 66 |\n| RES_SHALLOW (ohm.m) | 20.86 | 66 |\n| **Δ Res (Deep − Shallow)** | **0.27** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2380"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2390.0,
+      "top": 2385.0,
+      "bot": 2395.0,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 21.47,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2390m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 238U"
+      },
+      "detail_markdown": "### 2390 m MD — Interval 2385.0 – 2395.0 m\n\n**Sample Description (spreadsheet):** Sample 2390m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 238U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - med (max: M ) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 238 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2380m: lt gry,lt brn,trnsl,opq, f-crs,dom med,mod wl srt,dom sbang- sbrnd,mnr wk-mod strg sil cmt,mnr-tr lt gry arg mtx,tr ovgths,tr sid,fri- mod hd aggs,dom lse,pr vis-fr inf por,\n- **SILTSTONE** @ ~2390m: lt-med gry,arg,com aren i/p, grd to vf SST,com lams,tr-mnr carb flks 80 / 6 / 4 / 5 / 5 & micrlams,mnr micmic,tr mica,tr-mnr sid, frm,sbblky-sbfiss. 2400 SURVEY @ 2398.6\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.5 | 66 |\n| RES_DEEP (ohm.m) | 22.30 | 66 |\n| RES_SHALLOW (ohm.m) | 22.04 | 66 |\n| **Δ Res (Deep − Shallow)** | **0.26** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2390"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2400.0,
+      "top": 2395.0,
+      "bot": 2405.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 22.13,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2400m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 174U"
+      },
+      "detail_markdown": "### 2400 m MD — Interval 2395.0 – 2405.0 m\n\n**Sample Description (spreadsheet):** Sample 2400m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 174U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 174 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2380m: lt gry,lt brn,trnsl,opq, f-crs,dom med,mod wl srt,dom sbang- sbrnd,mnr wk-mod strg sil cmt,mnr-tr lt gry arg mtx,tr ovgths,tr sid,fri- mod hd aggs,dom lse,pr vis-fr inf por,\n- **SILTSTONE** @ ~2390m: lt-med gry,arg,com aren i/p, grd to vf SST,com lams,tr-mnr carb flks 80 / 6 / 4 / 5 / 5 & micrlams,mnr micmic,tr mica,tr-mnr sid, frm,sbblky-sbfiss. 2400 SURVEY @ 2398.6\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 102.1 | 65 |\n| RES_DEEP (ohm.m) | 22.24 | 65 |\n| RES_SHALLOW (ohm.m) | 21.68 | 65 |\n| **Δ Res (Deep − Shallow)** | **0.56** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2400"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2410.0,
+      "top": 2405.0,
+      "bot": 2415.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 16.76,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2410m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 252U"
+      },
+      "detail_markdown": "### 2410 m MD — Interval 2405.0 – 2415.0 m\n\n**Sample Description (spreadsheet):** Sample 2410m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 252U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 252 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2390m: lt-med gry,arg,com aren i/p, grd to vf SST,com lams,tr-mnr carb flks 80 / 6 / 4 / 5 / 5 & micrlams,mnr micmic,tr mica,tr-mnr sid, frm,sbblky-sbfiss. 2400 SURVEY @ 2398.6\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 102.9 | 66 |\n| RES_DEEP (ohm.m) | 22.17 | 66 |\n| RES_SHALLOW (ohm.m) | 21.13 | 66 |\n| **Δ Res (Deep − Shallow)** | **1.04** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2410"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2420.0,
+      "top": 2415.0,
+      "bot": 2425.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - v crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 23.66,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2420m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  very coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 189U"
+      },
+      "detail_markdown": "### 2420 m MD — Interval 2415.0 – 2425.0 m\n\n**Sample Description (spreadsheet):** Sample 2420m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  very coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 189U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - v crs (max: VC) |\n| Grain Ordinal | 5 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 189 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 104.3 | 66 |\n| RES_DEEP (ohm.m) | 20.74 | 66 |\n| RES_SHALLOW (ohm.m) | 20.43 | 66 |\n| **Δ Res (Deep − Shallow)** | **0.32** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2420"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2430.0,
+      "top": 2425.0,
+      "bot": 2435.0,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f - v crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 26.4,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowres"
+        ],
+        "long_desc": "Sample 2430m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  very coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 214U"
+      },
+      "detail_markdown": "### 2430 m MD — Interval 2425.0 – 2435.0 m\n\n**Sample Description (spreadsheet):** Sample 2430m: Tr siderite in 5% Siltstone, Tr siderite in 95% fine  to  very coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 214U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f - v crs (max: VC) |\n| Grain Ordinal | 5 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 214 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 88.9 | 65 |\n| RES_DEEP (ohm.m) | 19.50 | 65 |\n| RES_SHALLOW (ohm.m) | 19.45 | 65 |\n| **Δ Res (Deep − Shallow)** | **0.05** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2430"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2440.0,
+      "top": 2435.0,
+      "bot": 2445.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - v crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "WRCI": 28.88,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowres"
+        ],
+        "long_desc": "Sample 2440m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  very coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 203U"
+      },
+      "detail_markdown": "### 2440 m MD — Interval 2435.0 – 2445.0 m\n\n**Sample Description (spreadsheet):** Sample 2440m: Tr siderite in 0% Siltstone, Tr siderite in 100% fine  to  very coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 203U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - v crs (max: VC) |\n| Grain Ordinal | 5 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 203 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2460m: med-dk gry,arg,micmic, sil,carb i/p,frm,sbblky-ang.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 85.3 | 66 |\n| RES_DEEP (ohm.m) | 19.44 | 66 |\n| RES_SHALLOW (ohm.m) | 19.58 | 66 |\n| **Δ Res (Deep − Shallow)** | **-0.14** | — |\n\n**Permeability Proxy:** Low inferred permeability (tight/cemented)\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2440"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2450.0,
+      "top": 2445.0,
+      "bot": 2455.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "dom f - crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 24.07,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2450m: Tr siderite in 0% Siltstone, Tr siderite in 100% dominantly fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 208U"
+      },
+      "detail_markdown": "### 2450 m MD — Interval 2445.0 – 2455.0 m\n\n**Sample Description (spreadsheet):** Sample 2450m: Tr siderite in 0% Siltstone, Tr siderite in 100% dominantly fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 208U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | dom f - crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 208 U |\n| FeCO₃ in Siltstone | Tr |\n| FeCO₃ in Sandstone | Tr |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2460m: med-dk gry,arg,micmic, sil,carb i/p,frm,sbblky-ang.\n- **SANDSTONE** @ ~2470m: clr,opq,trnsl,lt brn, trnsl,f-med,occ crs,mod srt,sbrnd, occ sbang-ang,wk sil cmt,mnr lt gry arg mtx,rr carb spks,fri,com lse,fr 2480 vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 104.1 | 65 |\n| RES_DEEP (ohm.m) | 19.05 | 65 |\n| RES_SHALLOW (ohm.m) | 18.50 | 65 |\n| **Δ Res (Deep − Shallow)** | **0.56** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2450"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2460.0,
+      "top": 2455.0,
+      "bot": 2465.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 23.11,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2460m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 164U"
+      },
+      "detail_markdown": "### 2460 m MD — Interval 2455.0 – 2465.0 m\n\n**Sample Description (spreadsheet):** Sample 2460m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine  to  coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 164U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 164 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2460m: med-dk gry,arg,micmic, sil,carb i/p,frm,sbblky-ang.\n- **SANDSTONE** @ ~2470m: clr,opq,trnsl,lt brn, trnsl,f-med,occ crs,mod srt,sbrnd, occ sbang-ang,wk sil cmt,mnr lt gry arg mtx,rr carb spks,fri,com lse,fr 2480 vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 111.8 | 66 |\n| RES_DEEP (ohm.m) | 19.34 | 66 |\n| RES_SHALLOW (ohm.m) | 18.56 | 66 |\n| **Δ Res (Deep − Shallow)** | **0.78** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2460"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2470.0,
+      "top": 2465.0,
+      "bot": 2475.0,
+      "summary": {
+        "pct_ss": 95,
+        "grain": "f-med, occ crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 80.0,
+        "WRCI": 26.46,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2470m: trace siderite in 5% Siltstone, 0 siderite in 95% fine to medium, occasional coarse Sandstone, 80% moderately bright FLUOR in SST. TG 195U"
+      },
+      "detail_markdown": "### 2470 m MD — Interval 2465.0 – 2475.0 m\n\n**Sample Description (spreadsheet):** Sample 2470m: trace siderite in 5% Siltstone, 0 siderite in 95% fine to medium, occasional coarse Sandstone, 80% moderately bright FLUOR in SST. TG 195U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95 |\n| Grain Size | f-med, occ crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 80.0% mod bri |\n| Total Gas | 195 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2460m: med-dk gry,arg,micmic, sil,carb i/p,frm,sbblky-ang.\n- **SANDSTONE** @ ~2470m: clr,opq,trnsl,lt brn, trnsl,f-med,occ crs,mod srt,sbrnd, occ sbang-ang,wk sil cmt,mnr lt gry arg mtx,rr carb spks,fri,com lse,fr 2480 vis & fr-gd inf por,fluor.\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.8 | 66 |\n| RES_DEEP (ohm.m) | 19.19 | 66 |\n| RES_SHALLOW (ohm.m) | 18.20 | 66 |\n| **Δ Res (Deep − Shallow)** | **0.99** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2470"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2480.0,
+      "top": 2475.0,
+      "bot": 2485.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - occ med",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 26.3,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowres"
+        ],
+        "long_desc": "Sample 2480m: trace siderite in 0% Siltstone, 0 siderite in 100% fine  to  occasional medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 200U"
+      },
+      "detail_markdown": "### 2480 m MD — Interval 2475.0 – 2485.0 m\n\n**Sample Description (spreadsheet):** Sample 2480m: trace siderite in 0% Siltstone, 0 siderite in 100% fine  to  occasional medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 200U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - occ med (max: M) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 200 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2460m: med-dk gry,arg,micmic, sil,carb i/p,frm,sbblky-ang.\n- **SANDSTONE** @ ~2470m: clr,opq,trnsl,lt brn, trnsl,f-med,occ crs,mod srt,sbrnd, occ sbang-ang,wk sil cmt,mnr lt gry arg mtx,rr carb spks,fri,com lse,fr 2480 vis & fr-gd inf por,fluor.\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 95.8 | 65 |\n| RES_DEEP (ohm.m) | 18.72 | 65 |\n| RES_SHALLOW (ohm.m) | 18.23 | 65 |\n| **Δ Res (Deep − Shallow)** | **0.50** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2480"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2490.0,
+      "top": 2485.0,
+      "bot": 2495.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - med",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 26.35,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2490m: trace siderite in 0% Siltstone, 0 siderite in 100% fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 194U"
+      },
+      "detail_markdown": "### 2490 m MD — Interval 2485.0 – 2495.0 m\n\n**Sample Description (spreadsheet):** Sample 2490m: trace siderite in 0% Siltstone, 0 siderite in 100% fine  to  medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 194U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - med (max: M) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 194 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2470m: clr,opq,trnsl,lt brn, trnsl,f-med,occ crs,mod srt,sbrnd, occ sbang-ang,wk sil cmt,mnr lt gry arg mtx,rr carb spks,fri,com lse,fr 2480 vis & fr-gd inf por,fluor.\n- **SANDSTONE** @ ~2490m: clr,opq,trnsl,lt brn, trnsl,f-med,occ crs,mod srt,sbrnd, occ sbang-ang,wk sil cmt,mnr lt gry arg mtx,rr carb spks,fri,com lse,fr vis & fr-gd inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 101.5 | 66 |\n| RES_DEEP (ohm.m) | 19.46 | 66 |\n| RES_SHALLOW (ohm.m) | 18.37 | 66 |\n| **Δ Res (Deep − Shallow)** | **1.09** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2490"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2500.0,
+      "top": 2495.0,
+      "bot": 2505.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - med, occ crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 24.39,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2500m: TR siderite in 0% Siltstone, 0 siderite in 100% fine  to  medium, occasional coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 207U"
+      },
+      "detail_markdown": "### 2500 m MD — Interval 2495.0 – 2505.0 m\n\n**Sample Description (spreadsheet):** Sample 2500m: TR siderite in 0% Siltstone, 0 siderite in 100% fine  to  medium, occasional coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 207U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - med, occ crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 207 U |\n| FeCO₃ in Siltstone | TR |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2490m: clr,opq,trnsl,lt brn, trnsl,f-med,occ crs,mod srt,sbrnd, occ sbang-ang,wk sil cmt,mnr lt gry arg mtx,rr carb spks,fri,com lse,fr vis & fr-gd inf por,fluor.\n- **SANDSTONE** @ ~2520m: clr,trnsl,opq,f-med, mod srt,sbrnd,sbang i/p,wk sil cmt, tr lt gry/brn arg mtx,fri & lse, fr vis por & fr-gd inf por,fluor. 0 0.5 1 4 14 2530 1 10 100 1K\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 98.0 | 66 |\n| RES_DEEP (ohm.m) | 19.60 | 66 |\n| RES_SHALLOW (ohm.m) | 19.23 | 66 |\n| **Δ Res (Deep − Shallow)** | **0.37** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2500"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2510.0,
+      "top": 2505.0,
+      "bot": 2515.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f - med, occ crs",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 26.29,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowres"
+        ],
+        "long_desc": "Sample 2510m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine  to  medium, occasional coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 199U"
+      },
+      "detail_markdown": "### 2510 m MD — Interval 2505.0 – 2515.0 m\n\n**Sample Description (spreadsheet):** Sample 2510m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine  to  medium, occasional coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 199U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f - med, occ crs (max: C) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 199 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2490m: clr,opq,trnsl,lt brn, trnsl,f-med,occ crs,mod srt,sbrnd, occ sbang-ang,wk sil cmt,mnr lt gry arg mtx,rr carb spks,fri,com lse,fr vis & fr-gd inf por,fluor.\n- **SANDSTONE** @ ~2520m: clr,trnsl,opq,f-med, mod srt,sbrnd,sbang i/p,wk sil cmt, tr lt gry/brn arg mtx,fri & lse, fr vis por & fr-gd inf por,fluor. 0 0.5 1 4 14 2530 1 10 100 1K\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.4 | 65 |\n| RES_DEEP (ohm.m) | 18.99 | 65 |\n| RES_SHALLOW (ohm.m) | 18.73 | 65 |\n| **Δ Res (Deep − Shallow)** | **0.27** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2510"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2520.0,
+      "top": 2515.0,
+      "bot": 2525.0,
+      "summary": {
+        "pct_ss": 100,
+        "grain": "f-med",
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "WRCI": 29.68,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowres"
+        ],
+        "long_desc": "Sample 2520m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 286U"
+      },
+      "detail_markdown": "### 2520 m MD — Interval 2515.0 – 2525.0 m\n\n**Sample Description (spreadsheet):** Sample 2520m: 0 siderite in 0% Siltstone, 0 siderite in 100% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 286U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr-gd |\n| Loose Grains | Yes |\n| Fluorescence | 100.0% mod bri - bri |\n| Total Gas | 286 U |\n| FeCO₃ in Siltstone | 0 |\n| FeCO₃ in Sandstone | 0 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2520m: clr,trnsl,opq,f-med, mod srt,sbrnd,sbang i/p,wk sil cmt, tr lt gry/brn arg mtx,fri & lse, fr vis por & fr-gd inf por,fluor. 0 0.5 1 4 14 2530 1 10 100 1K\n- **SANDSTONE** @ ~2540m: clr,trnsl,opq,vf-crs,pr (1248) srt,sbrnd-sbang,tr wk sil cmt,lt gry\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 86.2 | 66 |\n| RES_DEEP (ohm.m) | 17.53 | 66 |\n| RES_SHALLOW (ohm.m) | 17.10 | 66 |\n| **Δ Res (Deep − Shallow)** | **0.43** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2520"
+      }
+    },
+    {
+      "alias": "HOBBES5",
+      "depth": 2590.0,
+      "top": 2585.0,
+      "bot": 2592.5,
+      "summary": {
+        "pct_ss": 20,
+        "grain": "vf-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 0.5,
+        "WRCI": 26.97,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2590m: trace siderite in 80% Siltstone, 25 siderite in 20% very fine to medium Sandstone, 0.5% dull  to  moderately bright FLUOR in SST. TG 90U"
+      },
+      "detail_markdown": "### 2590 m MD — Interval 2585.0 – 2592.5 m\n\n**Sample Description (spreadsheet):** Sample 2590m: trace siderite in 80% Siltstone, 25 siderite in 20% very fine to medium Sandstone, 0.5% dull  to  moderately bright FLUOR in SST. TG 90U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 20 |\n| Grain Size | vf-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 0.5% dll - mod bri |\n| Total Gas | 90 U |\n| FeCO₃ in Siltstone | tr |\n| FeCO₃ in Sandstone | 25 |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2580m: clr,trnsl,opq,lt gry,vf-med, mod srt,sbrnd-occ sbang,wk sil cmt,lt gry arg mtx,occ carb spks,sid i/p,com lse, fri-mod frm i/p,pr vis & inf por,fluor. 4-1/2\" LINER SHOE\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 109.6 | 33 |\n\n**Permeability Proxy:** Insufficient resistivity data\n---\n\n## 5. Summary Statistics (McKinlay Member)\n\n| Metric | Value |\n|--------|-------|\n| Intervals analysed | 96 |\n| Depth range | 1702 – 2590 m |\n| Avg % Sandstone | 88.5% |\n| Avg Δ Res (Deep−Shallow) | 2.30 ohm.m |\n| Max Δ Res | 9.23 ohm.m |\n| Min Δ Res | -0.14 ohm.m |\n| Mudlog matches | 45 / 96 |",
+      "source": {
+        "file": "output/HOBBES5_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2590"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1861 @@
+{
+  "alias": "STIMPEE7",
+  "display": "STIMPEE 7",
+  "interval_count": 84,
+  "intervals": [
+    {
+      "alias": "STIMPEE7",
+      "depth": 1705.0,
+      "top": 1702.5,
+      "bot": 1707.5,
+      "summary": {
+        "pct_ss": 70.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 70,
+        "WRCI": 28.82,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1705m: 30% Siltstone, 70% very fine to fine Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 55U"
+      },
+      "detail_markdown": "### 1705 m MD — Interval 1702.5 – 1707.5 m\n\n**Sample Description (spreadsheet):** Sample 1705m: 30% Siltstone, 70% very fine to fine Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 55U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70.0 |\n| Grain Size | vf-f (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 70% mod bri - bri |\n| Total Gas | 55.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1690m: off wh,pl brn,trnsl,vf-f aggs,occ f-med fri aggs,sbang-sbrnd, mod wl srt,mod sil cmt,mnr-med kaol mtx,mod hd aggs,v pr-pr vis por,fluor. 85 / 6 / 3 / 3 / 3 82 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 81.8 | 33 |\n| RES_DEEP (ohm.m) | 64.38 | 33 |\n| RES_SHALLOW (ohm.m) | 36.42 | 33 |\n| **Δ Res (Deep − Shallow)** | **27.96** | — |\n\n**Permeability Proxy:** Moderate-high inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1705"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1710.0,
+      "top": 1707.5,
+      "bot": 1712.5,
+      "summary": {
+        "pct_ss": 70.0,
+        "grain": "vf-f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 34.59,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1710m: 30% Siltstone, 70% very fine to fine Sandstone, 70% bright FLUOR in SST. TG 145U"
+      },
+      "detail_markdown": "### 1710 m MD — Interval 1707.5 – 1712.5 m\n\n**Sample Description (spreadsheet):** Sample 1710m: 30% Siltstone, 70% very fine to fine Sandstone, 70% bright FLUOR in SST. TG 145U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 70.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 145.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 81.3 | 32 |\n| RES_DEEP (ohm.m) | 61.80 | 32 |\n| RES_SHALLOW (ohm.m) | 41.29 | 32 |\n| **Δ Res (Deep − Shallow)** | **20.51** | — |\n\n**Permeability Proxy:** Moderate-high inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1710"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1715.0,
+      "top": 1712.5,
+      "bot": 1717.5,
+      "summary": {
+        "pct_ss": 85.0,
+        "grain": "vf-f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 37.38,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1715m: 15% Siltstone, 85% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 190U"
+      },
+      "detail_markdown": "### 1715 m MD — Interval 1712.5 – 1717.5 m\n\n**Sample Description (spreadsheet):** Sample 1715m: 15% Siltstone, 85% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 190U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 85.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 190.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 82.3 | 33 |\n| RES_DEEP (ohm.m) | 58.55 | 33 |\n| RES_SHALLOW (ohm.m) | 39.81 | 33 |\n| **Δ Res (Deep − Shallow)** | **18.74** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1715"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1720.0,
+      "top": 1717.5,
+      "bot": 1722.5,
+      "summary": {
+        "pct_ss": 90.0,
+        "grain": "vf-f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 34.67,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1720m: 10% Siltstone, 90% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 230U"
+      },
+      "detail_markdown": "### 1720 m MD — Interval 1717.5 – 1722.5 m\n\n**Sample Description (spreadsheet):** Sample 1720m: 10% Siltstone, 90% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 230U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 230.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.7 | 33 |\n| RES_DEEP (ohm.m) | 50.88 | 33 |\n| RES_SHALLOW (ohm.m) | 34.57 | 33 |\n| **Δ Res (Deep − Shallow)** | **16.31** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1720"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1725.0,
+      "top": 1722.5,
+      "bot": 1727.5,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 46.35,
+        "risk_class": "Elevated",
+        "flags": [
+          "highperm"
+        ],
+        "long_desc": "Sample 1725m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 200U"
+      },
+      "detail_markdown": "### 1725 m MD — Interval 1722.5 – 1727.5 m\n\n**Sample Description (spreadsheet):** Sample 1725m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 200U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 200.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1740m: trnsl,lt brn,clr,wh-off wh,f-occ med,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 95.8 | 33 |\n| RES_DEEP (ohm.m) | 57.23 | 33 |\n| RES_SHALLOW (ohm.m) | 38.11 | 33 |\n| **Δ Res (Deep − Shallow)** | **19.12** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1725"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1730.0,
+      "top": 1727.5,
+      "bot": 1732.5,
+      "summary": {
+        "pct_ss": 95.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 43.12,
+        "risk_class": "Elevated",
+        "flags": [
+          "highperm"
+        ],
+        "long_desc": "Sample 1730m: 5% Siltstone, 95% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 215U"
+      },
+      "detail_markdown": "### 1730 m MD — Interval 1727.5 – 1732.5 m\n\n**Sample Description (spreadsheet):** Sample 1730m: 5% Siltstone, 95% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 215U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 215.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1740m: trnsl,lt brn,clr,wh-off wh,f-occ med,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 86.5 | 33 |\n| RES_DEEP (ohm.m) | 51.66 | 33 |\n| RES_SHALLOW (ohm.m) | 34.90 | 33 |\n| **Δ Res (Deep − Shallow)** | **16.77** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1730"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1735.0,
+      "top": 1732.5,
+      "bot": 1737.5,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 38.4,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1735m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 164U"
+      },
+      "detail_markdown": "### 1735 m MD — Interval 1732.5 – 1737.5 m\n\n**Sample Description (spreadsheet):** Sample 1735m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 164U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 164.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1740m: trnsl,lt brn,clr,wh-off wh,f-occ med,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 77.1 | 32 |\n| RES_DEEP (ohm.m) | 47.23 | 32 |\n| RES_SHALLOW (ohm.m) | 37.98 | 32 |\n| **Δ Res (Deep − Shallow)** | **9.26** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1735"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1740.0,
+      "top": 1737.5,
+      "bot": 1742.5,
+      "summary": {
+        "pct_ss": 95.0,
+        "grain": "f ",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 33.33,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1740m: 5% Siltstone, 95% fine  Sandstone, 100% bright FLUOR in SST. TG 233U"
+      },
+      "detail_markdown": "### 1740 m MD — Interval 1737.5 – 1742.5 m\n\n**Sample Description (spreadsheet):** Sample 1740m: 5% Siltstone, 95% fine  Sandstone, 100% bright FLUOR in SST. TG 233U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | f  (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 233.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1740m: trnsl,lt brn,clr,wh-off wh,f-occ med,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 74.1 | 33 |\n| RES_DEEP (ohm.m) | 48.54 | 33 |\n| RES_SHALLOW (ohm.m) | 41.39 | 33 |\n| **Δ Res (Deep − Shallow)** | **7.15** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1740"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1745.0,
+      "top": 1742.5,
+      "bot": 1747.5,
+      "summary": {
+        "pct_ss": 95.0,
+        "grain": "f",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 31.79,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1745m: 5% Siltstone, 95% fine Sandstone, 100% bright FLUOR in SST. TG 233U"
+      },
+      "detail_markdown": "### 1745 m MD — Interval 1742.5 – 1747.5 m\n\n**Sample Description (spreadsheet):** Sample 1745m: 5% Siltstone, 95% fine Sandstone, 100% bright FLUOR in SST. TG 233U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 233.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1740m: trnsl,lt brn,clr,wh-off wh,f-occ med,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 71.4 | 33 |\n| RES_DEEP (ohm.m) | 48.02 | 33 |\n| RES_SHALLOW (ohm.m) | 42.53 | 33 |\n| **Δ Res (Deep − Shallow)** | **5.50** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1745"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1750.0,
+      "top": 1747.5,
+      "bot": 1752.5,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 24.33,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1750m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 279U"
+      },
+      "detail_markdown": "### 1750 m MD — Interval 1747.5 – 1752.5 m\n\n**Sample Description (spreadsheet):** Sample 1750m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 279U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 279.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1740m: trnsl,lt brn,clr,wh-off wh,f-occ med,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 83.8 | 33 |\n| RES_DEEP (ohm.m) | 45.05 | 33 |\n| RES_SHALLOW (ohm.m) | 37.76 | 33 |\n| **Δ Res (Deep − Shallow)** | **7.29** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1750"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1755.0,
+      "top": 1752.5,
+      "bot": 1757.5,
+      "summary": {
+        "pct_ss": 90.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 17.4,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1755m: 10% Siltstone, 90% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 229U"
+      },
+      "detail_markdown": "### 1755 m MD — Interval 1752.5 – 1757.5 m\n\n**Sample Description (spreadsheet):** Sample 1755m: 10% Siltstone, 90% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 229U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 229.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1740m: trnsl,lt brn,clr,wh-off wh,f-occ med,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor.\n- **SANDSTONE** @ ~1770m: trnsl,lt brn,clr,wh-off wh,f-crs,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor. 81 / 6 / 4 / 4 / 5 238 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 83.7 | 33 |\n| RES_DEEP (ohm.m) | 41.76 | 33 |\n| RES_SHALLOW (ohm.m) | 35.20 | 33 |\n| **Δ Res (Deep − Shallow)** | **6.55** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1755"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1760.0,
+      "top": 1757.5,
+      "bot": 1765.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 19.66,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1760m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 265U"
+      },
+      "detail_markdown": "### 1760 m MD — Interval 1757.5 – 1765.0 m\n\n**Sample Description (spreadsheet):** Sample 1760m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 265U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 265.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1770m: trnsl,lt brn,clr,wh-off wh,f-crs,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor. 81 / 6 / 4 / 4 / 5 238 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.2 | 49 |\n| RES_DEEP (ohm.m) | 41.66 | 49 |\n| RES_SHALLOW (ohm.m) | 35.31 | 49 |\n| **Δ Res (Deep − Shallow)** | **6.35** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1760"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1770.0,
+      "top": 1765.0,
+      "bot": 1775.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 22.41,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1770m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 224U"
+      },
+      "detail_markdown": "### 1770 m MD — Interval 1765.0 – 1775.0 m\n\n**Sample Description (spreadsheet):** Sample 1770m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 224U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 224.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1770m: trnsl,lt brn,clr,wh-off wh,f-crs,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor. 81 / 6 / 4 / 4 / 5 238 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 105.1 | 65 |\n| RES_DEEP (ohm.m) | 39.14 | 65 |\n| RES_SHALLOW (ohm.m) | 30.23 | 65 |\n| **Δ Res (Deep − Shallow)** | **8.91** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1770"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1780.0,
+      "top": 1775.0,
+      "bot": 1785.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 20.78,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1780m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 204U"
+      },
+      "detail_markdown": "### 1780 m MD — Interval 1775.0 – 1785.0 m\n\n**Sample Description (spreadsheet):** Sample 1780m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 204U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 204.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1770m: trnsl,lt brn,clr,wh-off wh,f-crs,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor. 81 / 6 / 4 / 4 / 5 238 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 97.2 | 66 |\n| RES_DEEP (ohm.m) | 30.53 | 66 |\n| RES_SHALLOW (ohm.m) | 23.67 | 66 |\n| **Δ Res (Deep − Shallow)** | **6.86** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1780"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1790.0,
+      "top": 1785.0,
+      "bot": 1795.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 21.11,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1790m: 0% Siltstone, 100% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 237U"
+      },
+      "detail_markdown": "### 1790 m MD — Interval 1785.0 – 1795.0 m\n\n**Sample Description (spreadsheet):** Sample 1790m: 0% Siltstone, 100% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 237U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% mod bri - bri |\n| Total Gas | 237.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1770m: trnsl,lt brn,clr,wh-off wh,f-crs,mod srt,sbang-sbrnd, wk sil cmt,tr wh arg mtx,fri aggs, fr inf por,fluor. 81 / 6 / 4 / 4 / 5 238 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 85.9 | 66 |\n| RES_DEEP (ohm.m) | 25.41 | 66 |\n| RES_SHALLOW (ohm.m) | 20.23 | 66 |\n| **Δ Res (Deep − Shallow)** | **5.18** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1790"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1800.0,
+      "top": 1795.0,
+      "bot": 1805.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 13.94,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1800m: 0% Siltstone, 100% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 258U"
+      },
+      "detail_markdown": "### 1800 m MD — Interval 1795.0 – 1805.0 m\n\n**Sample Description (spreadsheet):** Sample 1800m: 0% Siltstone, 100% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 258U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% mod bri - bri |\n| Total Gas | 258.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 96.9 | 65 |\n| RES_DEEP (ohm.m) | 22.89 | 65 |\n| RES_SHALLOW (ohm.m) | 19.00 | 65 |\n| **Δ Res (Deep − Shallow)** | **3.89** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1800"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1810.0,
+      "top": 1805.0,
+      "bot": 1815.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 13.53,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1810m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 215U"
+      },
+      "detail_markdown": "### 1810 m MD — Interval 1805.0 – 1815.0 m\n\n**Sample Description (spreadsheet):** Sample 1810m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 215U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 215.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.9 | 66 |\n| RES_DEEP (ohm.m) | 22.17 | 66 |\n| RES_SHALLOW (ohm.m) | 19.06 | 66 |\n| **Δ Res (Deep − Shallow)** | **3.11** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1810"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1820.0,
+      "top": 1815.0,
+      "bot": 1825.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 15.52,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1820m: 0% Siltstone, 100% very fine to medium Sandstone, 100% bright FLUOR in SST. TG 259U"
+      },
+      "detail_markdown": "### 1820 m MD — Interval 1815.0 – 1825.0 m\n\n**Sample Description (spreadsheet):** Sample 1820m: 0% Siltstone, 100% very fine to medium Sandstone, 100% bright FLUOR in SST. TG 259U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 259.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 96.0 | 66 |\n| RES_DEEP (ohm.m) | 24.12 | 66 |\n| RES_SHALLOW (ohm.m) | 19.18 | 66 |\n| **Δ Res (Deep − Shallow)** | **4.94** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1820"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1830.0,
+      "top": 1825.0,
+      "bot": 1835.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 18.16,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1830m: 0% Siltstone, 100% very fine to medium Sandstone, 100% bright FLUOR in SST. TG 232U"
+      },
+      "detail_markdown": "### 1830 m MD — Interval 1825.0 – 1835.0 m\n\n**Sample Description (spreadsheet):** Sample 1830m: 0% Siltstone, 100% very fine to medium Sandstone, 100% bright FLUOR in SST. TG 232U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 232.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.0 | 65 |\n| RES_DEEP (ohm.m) | 27.60 | 65 |\n| RES_SHALLOW (ohm.m) | 21.50 | 65 |\n| **Δ Res (Deep − Shallow)** | **6.10** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1830"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1840.0,
+      "top": 1835.0,
+      "bot": 1845.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 23.8,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1840m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 364U"
+      },
+      "detail_markdown": "### 1840 m MD — Interval 1835.0 – 1845.0 m\n\n**Sample Description (spreadsheet):** Sample 1840m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 364U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 364.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1860m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.7 | 66 |\n| RES_DEEP (ohm.m) | 35.12 | 66 |\n| RES_SHALLOW (ohm.m) | 28.56 | 66 |\n| **Δ Res (Deep − Shallow)** | **6.56** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1840"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1850.0,
+      "top": 1845.0,
+      "bot": 1855.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 35.57,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1850m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 362U"
+      },
+      "detail_markdown": "### 1850 m MD — Interval 1845.0 – 1855.0 m\n\n**Sample Description (spreadsheet):** Sample 1850m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 362U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 362.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1860m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 103.3 | 65 |\n| RES_DEEP (ohm.m) | 39.96 | 65 |\n| RES_SHALLOW (ohm.m) | 31.70 | 65 |\n| **Δ Res (Deep − Shallow)** | **8.26** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1850"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1860.0,
+      "top": 1855.0,
+      "bot": 1865.0,
+      "summary": {
+        "pct_ss": 90.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 70,
+        "WRCI": 24.2,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1860m: 10% Siltstone, 90% fine to coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 187U"
+      },
+      "detail_markdown": "### 1860 m MD — Interval 1855.0 – 1865.0 m\n\n**Sample Description (spreadsheet):** Sample 1860m: 10% Siltstone, 90% fine to coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 187U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 70% mod bri - bri |\n| Total Gas | 187.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1860m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n- **SANDSTONE** @ ~1880m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 90.9 | 66 |\n| RES_DEEP (ohm.m) | 44.53 | 66 |\n| RES_SHALLOW (ohm.m) | 35.61 | 66 |\n| **Δ Res (Deep − Shallow)** | **8.92** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1860"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1870.0,
+      "top": 1865.0,
+      "bot": 1875.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 35.02,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1870m: 0% Siltstone, 100% fine to coarse Sandstone, 70% bright FLUOR in SST. TG 343U"
+      },
+      "detail_markdown": "### 1870 m MD — Interval 1865.0 – 1875.0 m\n\n**Sample Description (spreadsheet):** Sample 1870m: 0% Siltstone, 100% fine to coarse Sandstone, 70% bright FLUOR in SST. TG 343U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 343.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1860m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n- **SANDSTONE** @ ~1880m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 66.4 | 66 |\n| RES_DEEP (ohm.m) | 43.68 | 66 |\n| RES_SHALLOW (ohm.m) | 34.26 | 66 |\n| **Δ Res (Deep − Shallow)** | **9.42** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1870"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1880.0,
+      "top": 1875.0,
+      "bot": 1885.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 29.62,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1880m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 272U"
+      },
+      "detail_markdown": "### 1880 m MD — Interval 1875.0 – 1885.0 m\n\n**Sample Description (spreadsheet):** Sample 1880m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 272U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 272.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1860m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n- **SANDSTONE** @ ~1880m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 71.2 | 65 |\n| RES_DEEP (ohm.m) | 40.77 | 65 |\n| RES_SHALLOW (ohm.m) | 34.67 | 65 |\n| **Δ Res (Deep − Shallow)** | **6.10** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1880"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1890.0,
+      "top": 1885.0,
+      "bot": 1895.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 31.44,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1890m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 295U"
+      },
+      "detail_markdown": "### 1890 m MD — Interval 1885.0 – 1895.0 m\n\n**Sample Description (spreadsheet):** Sample 1890m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 295U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 295.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1880m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n- **SILTSTONE** @ ~1890m: med dk gry,rr dk gry blk,carb i/p,occ vf aren,rr micmic, mod hd,sbblky. 81 / 6 / 4 / 4 / 5 423 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 70.2 | 66 |\n| RES_DEEP (ohm.m) | 44.96 | 66 |\n| RES_SHALLOW (ohm.m) | 37.64 | 66 |\n| **Δ Res (Deep − Shallow)** | **7.32** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1890"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1900.0,
+      "top": 1895.0,
+      "bot": 1905.0,
+      "summary": {
+        "pct_ss": 95.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 30.75,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1900m: 5% Siltstone, 95% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 423U"
+      },
+      "detail_markdown": "### 1900 m MD — Interval 1895.0 – 1905.0 m\n\n**Sample Description (spreadsheet):** Sample 1900m: 5% Siltstone, 95% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 423U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 423.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1880m: trnsl,clr,lt brnsh gry,f-crs,pr srt,sbrnd-ang,wk sil cmt in vf-f aggs,com lt brn arg mtx, fri,crs grs pred lse,pr vis-fr inf por,fluor.\n- **SILTSTONE** @ ~1890m: med dk gry,rr dk gry blk,carb i/p,occ vf aren,rr micmic, mod hd,sbblky. 81 / 6 / 4 / 4 / 5 423 U\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 72.6 | 66 |\n| RES_DEEP (ohm.m) | 48.54 | 66 |\n| RES_SHALLOW (ohm.m) | 39.03 | 66 |\n| **Δ Res (Deep − Shallow)** | **9.51** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1900"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1910.0,
+      "top": 1905.0,
+      "bot": 1915.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 28.74,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1910m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 274U"
+      },
+      "detail_markdown": "### 1910 m MD — Interval 1905.0 – 1915.0 m\n\n**Sample Description (spreadsheet):** Sample 1910m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 274U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 274.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~1890m: med dk gry,rr dk gry blk,carb i/p,occ vf aren,rr micmic, mod hd,sbblky. 81 / 6 / 4 / 4 / 5 423 U\n- **SANDSTONE** @ ~1920m: trnsl-clr,wh-off wh, f-crs,pr srt,sbang-sbrnd,tr wk sil cmt,tr lt brn arg mtx,fri-lse,fr inf por,fluor. 82 / 5 / 3 / 4 / 6 305 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.4 | 66 |\n| RES_DEEP (ohm.m) | 40.40 | 66 |\n| RES_SHALLOW (ohm.m) | 30.10 | 66 |\n| **Δ Res (Deep − Shallow)** | **10.30** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1910"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1920.0,
+      "top": 1915.0,
+      "bot": 1925.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 26.5,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1920m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 370U"
+      },
+      "detail_markdown": "### 1920 m MD — Interval 1915.0 – 1925.0 m\n\n**Sample Description (spreadsheet):** Sample 1920m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 370U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 370.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1920m: trnsl-clr,wh-off wh, f-crs,pr srt,sbang-sbrnd,tr wk sil cmt,tr lt brn arg mtx,fri-lse,fr inf por,fluor. 82 / 5 / 3 / 4 / 6 305 U\n- **SANDSTONE** @ ~1940m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, 78 / 6 / 4 / 5 / 7 350 U mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 106.4 | 66 |\n| RES_DEEP (ohm.m) | 37.25 | 66 |\n| RES_SHALLOW (ohm.m) | 28.28 | 66 |\n| **Δ Res (Deep − Shallow)** | **8.97** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1920"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1930.0,
+      "top": 1925.0,
+      "bot": 1935.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 24.72,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1930m: 0% Siltstone, 100% very fine to coarse Sandstone, 100% bright FLUOR in SST. TG 302U"
+      },
+      "detail_markdown": "### 1930 m MD — Interval 1925.0 – 1935.0 m\n\n**Sample Description (spreadsheet):** Sample 1930m: 0% Siltstone, 100% very fine to coarse Sandstone, 100% bright FLUOR in SST. TG 302U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 302.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1920m: trnsl-clr,wh-off wh, f-crs,pr srt,sbang-sbrnd,tr wk sil cmt,tr lt brn arg mtx,fri-lse,fr inf por,fluor. 82 / 5 / 3 / 4 / 6 305 U\n- **SANDSTONE** @ ~1940m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, 78 / 6 / 4 / 5 / 7 350 U mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 100.6 | 65 |\n| RES_DEEP (ohm.m) | 30.66 | 65 |\n| RES_SHALLOW (ohm.m) | 23.25 | 65 |\n| **Δ Res (Deep − Shallow)** | **7.41** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1930"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1940.0,
+      "top": 1935.0,
+      "bot": 1945.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-crs",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 27.31,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1940m: 0% Siltstone, 100% very fine to coarse Sandstone, 100% bright FLUOR in SST. TG 332U"
+      },
+      "detail_markdown": "### 1940 m MD — Interval 1935.0 – 1945.0 m\n\n**Sample Description (spreadsheet):** Sample 1940m: 0% Siltstone, 100% very fine to coarse Sandstone, 100% bright FLUOR in SST. TG 332U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 332.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1920m: trnsl-clr,wh-off wh, f-crs,pr srt,sbang-sbrnd,tr wk sil cmt,tr lt brn arg mtx,fri-lse,fr inf por,fluor. 82 / 5 / 3 / 4 / 6 305 U\n- **SANDSTONE** @ ~1940m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, 78 / 6 / 4 / 5 / 7 350 U mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 89.3 | 66 |\n| RES_DEEP (ohm.m) | 31.42 | 66 |\n| RES_SHALLOW (ohm.m) | 23.97 | 66 |\n| **Δ Res (Deep − Shallow)** | **7.45** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1940"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1950.0,
+      "top": 1945.0,
+      "bot": 1955.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-crs",
+        "poro_class": "none",
+        "loose_grains": true,
+        "fluor": 80,
+        "WRCI": 29.13,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1950m: 0% Siltstone, 100% very fine to coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 241U"
+      },
+      "detail_markdown": "### 1950 m MD — Interval 1945.0 – 1955.0 m\n\n**Sample Description (spreadsheet):** Sample 1950m: 0% Siltstone, 100% very fine to coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 241U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | Yes |\n| Fluorescence | 80% mod bri - bri |\n| Total Gas | 241.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1940m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, 78 / 6 / 4 / 5 / 7 350 U mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n- **SANDSTONE** @ ~1970m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 80.2 | 66 |\n| RES_DEEP (ohm.m) | 35.11 | 66 |\n| RES_SHALLOW (ohm.m) | 25.53 | 66 |\n| **Δ Res (Deep − Shallow)** | **9.58** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1950"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1960.0,
+      "top": 1955.0,
+      "bot": 1965.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-crs",
+        "poro_class": "none",
+        "loose_grains": true,
+        "fluor": 80,
+        "WRCI": 28.36,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1960m: 0% Siltstone, 100% very fine to coarse Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 354U"
+      },
+      "detail_markdown": "### 1960 m MD — Interval 1955.0 – 1965.0 m\n\n**Sample Description (spreadsheet):** Sample 1960m: 0% Siltstone, 100% very fine to coarse Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 354U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | Yes |\n| Fluorescence | 80% mod bri - bri |\n| Total Gas | 354.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1940m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, 78 / 6 / 4 / 5 / 7 350 U mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n- **SANDSTONE** @ ~1970m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 77.0 | 65 |\n| RES_DEEP (ohm.m) | 33.16 | 65 |\n| RES_SHALLOW (ohm.m) | 24.71 | 65 |\n| **Δ Res (Deep − Shallow)** | **8.44** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1960"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1970.0,
+      "top": 1965.0,
+      "bot": 1975.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-crs",
+        "poro_class": "none",
+        "loose_grains": true,
+        "fluor": 70,
+        "WRCI": 26.38,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1970m: 0% Siltstone, 100% very fine to coarse Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 296U"
+      },
+      "detail_markdown": "### 1970 m MD — Interval 1965.0 – 1975.0 m\n\n**Sample Description (spreadsheet):** Sample 1970m: 0% Siltstone, 100% very fine to coarse Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 296U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | Yes |\n| Fluorescence | 70% mod bri - bri |\n| Total Gas | 296.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1970m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 75.9 | 66 |\n| RES_DEEP (ohm.m) | 29.70 | 66 |\n| RES_SHALLOW (ohm.m) | 23.98 | 66 |\n| **Δ Res (Deep − Shallow)** | **5.72** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1970"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1980.0,
+      "top": 1975.0,
+      "bot": 1985.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-crs",
+        "poro_class": "none",
+        "loose_grains": true,
+        "fluor": 90,
+        "WRCI": 26.46,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1980m: 0% Siltstone, 100% very fine to coarse Sandstone, 70% moderately bright  to  bright FLUOR in SST. TG 324U"
+      },
+      "detail_markdown": "### 1980 m MD — Interval 1975.0 – 1985.0 m\n\n**Sample Description (spreadsheet):** Sample 1980m: 0% Siltstone, 100% very fine to coarse Sandstone, 70% moderately bright  to  bright FLUOR in SST. TG 324U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | Yes |\n| Fluorescence | 90% mod bri - bri |\n| Total Gas | 324.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1970m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 77.0 | 65 |\n| RES_DEEP (ohm.m) | 35.93 | 65 |\n| RES_SHALLOW (ohm.m) | 28.95 | 65 |\n| **Δ Res (Deep − Shallow)** | **6.98** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1980"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 1990.0,
+      "top": 1985.0,
+      "bot": 1995.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 29.97,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 1990m: 0% Siltstone, 100% very fine to medium Sandstone, 90% bright FLUOR in SST. TG 386U"
+      },
+      "detail_markdown": "### 1990 m MD — Interval 1985.0 – 1995.0 m\n\n**Sample Description (spreadsheet):** Sample 1990m: 0% Siltstone, 100% very fine to medium Sandstone, 90% bright FLUOR in SST. TG 386U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 386.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1970m: clr-trnsl,pl brn-brn in vf-f aggs,com med-crs,sbang-sbrnd, mod-occ pr srt,mod sil cmt-wk inf sil cmt,tr arg mtx in vf aggs,gen cln,fri vf aggs,com lse med-crs qtz,pr vis-\n- **SANDSTONE** @ ~2010m: pl brn-brn,mnr clr- trnsl,vf-f aggs,rr med lse qtz,gen wl srt,sbang-occ sbrnd,mod strg sil cmt,tr kaol mtx in aggs,fri,v pr-pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 73.1 | 66 |\n| RES_DEEP (ohm.m) | 42.29 | 66 |\n| RES_SHALLOW (ohm.m) | 35.58 | 66 |\n| **Δ Res (Deep − Shallow)** | **6.70** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "1990"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2000.0,
+      "top": 1995.0,
+      "bot": 2005.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 32.39,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2000m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 326U"
+      },
+      "detail_markdown": "### 2000 m MD — Interval 1995.0 – 2005.0 m\n\n**Sample Description (spreadsheet):** Sample 2000m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 326U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 326.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2010m: pl brn-brn,mnr clr- trnsl,vf-f aggs,rr med lse qtz,gen wl srt,sbang-occ sbrnd,mod strg sil cmt,tr kaol mtx in aggs,fri,v pr-pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 68.1 | 66 |\n| RES_DEEP (ohm.m) | 41.60 | 66 |\n| RES_SHALLOW (ohm.m) | 33.91 | 66 |\n| **Δ Res (Deep − Shallow)** | **7.70** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2000"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2010.0,
+      "top": 2005.0,
+      "bot": 2015.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 30.99,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2010m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 405U"
+      },
+      "detail_markdown": "### 2010 m MD — Interval 2005.0 – 2015.0 m\n\n**Sample Description (spreadsheet):** Sample 2010m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 405U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 405.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2010m: pl brn-brn,mnr clr- trnsl,vf-f aggs,rr med lse qtz,gen wl srt,sbang-occ sbrnd,mod strg sil cmt,tr kaol mtx in aggs,fri,v pr-pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 65.1 | 65 |\n| RES_DEEP (ohm.m) | 38.69 | 65 |\n| RES_SHALLOW (ohm.m) | 32.40 | 65 |\n| **Δ Res (Deep − Shallow)** | **6.28** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2010"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2020.0,
+      "top": 2015.0,
+      "bot": 2025.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 28.93,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2020m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 285U"
+      },
+      "detail_markdown": "### 2020 m MD — Interval 2015.0 – 2025.0 m\n\n**Sample Description (spreadsheet):** Sample 2020m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 285U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: C) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 285.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2010m: pl brn-brn,mnr clr- trnsl,vf-f aggs,rr med lse qtz,gen wl srt,sbang-occ sbrnd,mod strg sil cmt,tr kaol mtx in aggs,fri,v pr-pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 62.8 | 66 |\n| RES_DEEP (ohm.m) | 34.56 | 66 |\n| RES_SHALLOW (ohm.m) | 29.85 | 66 |\n| **Δ Res (Deep − Shallow)** | **4.71** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2020"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2030.0,
+      "top": 2025.0,
+      "bot": 2035.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 30.3,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2030m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 419U"
+      },
+      "detail_markdown": "### 2030 m MD — Interval 2025.0 – 2035.0 m\n\n**Sample Description (spreadsheet):** Sample 2030m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 419U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 419.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2010m: pl brn-brn,mnr clr- trnsl,vf-f aggs,rr med lse qtz,gen wl srt,sbang-occ sbrnd,mod strg sil cmt,tr kaol mtx in aggs,fri,v pr-pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 63.0 | 66 |\n| RES_DEEP (ohm.m) | 39.29 | 66 |\n| RES_SHALLOW (ohm.m) | 33.54 | 66 |\n| **Δ Res (Deep − Shallow)** | **5.76** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2030"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2040.0,
+      "top": 2035.0,
+      "bot": 2045.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 23.08,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2040m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 223U"
+      },
+      "detail_markdown": "### 2040 m MD — Interval 2035.0 – 2045.0 m\n\n**Sample Description (spreadsheet):** Sample 2040m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 223U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 223.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2060m: med dk gry,rr dk gry blk,carb i/p,occ vf aren,rr micmic, mod hd,sbblky. SURVEY @ 2064.7m INC: 89.9° AZI: 273.6°G\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 66.9 | 65 |\n| RES_DEEP (ohm.m) | 35.81 | 65 |\n| RES_SHALLOW (ohm.m) | 30.10 | 65 |\n| **Δ Res (Deep − Shallow)** | **5.71** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2040"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2050.0,
+      "top": 2045.0,
+      "bot": 2055.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 25.19,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2050m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 286U"
+      },
+      "detail_markdown": "### 2050 m MD — Interval 2045.0 – 2055.0 m\n\n**Sample Description (spreadsheet):** Sample 2050m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 286U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 286.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2060m: med dk gry,rr dk gry blk,carb i/p,occ vf aren,rr micmic, mod hd,sbblky. SURVEY @ 2064.7m INC: 89.9° AZI: 273.6°G\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 73.7 | 66 |\n| RES_DEEP (ohm.m) | 34.16 | 66 |\n| RES_SHALLOW (ohm.m) | 25.66 | 66 |\n| **Δ Res (Deep − Shallow)** | **8.51** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2050"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2060.0,
+      "top": 2055.0,
+      "bot": 2065.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 30.79,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2060m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 290U"
+      },
+      "detail_markdown": "### 2060 m MD — Interval 2055.0 – 2065.0 m\n\n**Sample Description (spreadsheet):** Sample 2060m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 290U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 290.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2060m: med dk gry,rr dk gry blk,carb i/p,occ vf aren,rr micmic, mod hd,sbblky. SURVEY @ 2064.7m INC: 89.9° AZI: 273.6°G\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 90.8 | 65 |\n| RES_DEEP (ohm.m) | 40.29 | 65 |\n| RES_SHALLOW (ohm.m) | 24.55 | 65 |\n| **Δ Res (Deep − Shallow)** | **15.74** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2060"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2070.0,
+      "top": 2065.0,
+      "bot": 2075.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 32.42,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2070m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 290U"
+      },
+      "detail_markdown": "### 2070 m MD — Interval 2065.0 – 2075.0 m\n\n**Sample Description (spreadsheet):** Sample 2070m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 290U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 290.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2060m: med dk gry,rr dk gry blk,carb i/p,occ vf aren,rr micmic, mod hd,sbblky. SURVEY @ 2064.7m INC: 89.9° AZI: 273.6°G\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 72.7 | 66 |\n| RES_DEEP (ohm.m) | 40.51 | 66 |\n| RES_SHALLOW (ohm.m) | 26.65 | 66 |\n| **Δ Res (Deep − Shallow)** | **13.86** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2070"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2080.0,
+      "top": 2075.0,
+      "bot": 2085.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80,
+        "WRCI": 24.29,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2080m: 0% Siltstone, 100% very fine to coarse Sandstone, 100% bright FLUOR in SST. TG 307U"
+      },
+      "detail_markdown": "### 2080 m MD — Interval 2075.0 – 2085.0 m\n\n**Sample Description (spreadsheet):** Sample 2080m: 0% Siltstone, 100% very fine to coarse Sandstone, 100% bright FLUOR in SST. TG 307U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80% bri |\n| Total Gas | 307.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2060m: med dk gry,rr dk gry blk,carb i/p,occ vf aren,rr micmic, mod hd,sbblky. SURVEY @ 2064.7m INC: 89.9° AZI: 273.6°G\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 66.1 | 66 |\n| RES_DEEP (ohm.m) | 38.69 | 66 |\n| RES_SHALLOW (ohm.m) | 32.18 | 66 |\n| **Δ Res (Deep − Shallow)** | **6.52** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2080"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2090.0,
+      "top": 2085.0,
+      "bot": 2095.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 90,
+        "WRCI": 18.5,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2090m: 0% Siltstone, 100% very fine to coarse Sandstone, 80% bright FLUOR in SST. TG 395U"
+      },
+      "detail_markdown": "### 2090 m MD — Interval 2085.0 – 2095.0 m\n\n**Sample Description (spreadsheet):** Sample 2090m: 0% Siltstone, 100% very fine to coarse Sandstone, 80% bright FLUOR in SST. TG 395U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 90% bri |\n| Total Gas | 395.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 76.2 | 65 |\n| RES_DEEP (ohm.m) | 35.29 | 65 |\n| RES_SHALLOW (ohm.m) | 31.49 | 65 |\n| **Δ Res (Deep − Shallow)** | **3.80** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2090"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2100.0,
+      "top": 2095.0,
+      "bot": 2105.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 90,
+        "WRCI": 27.46,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2100m: 0% Siltstone, 100% very fine to coarse Sandstone, 90% bright FLUOR in SST. TG 410U"
+      },
+      "detail_markdown": "### 2100 m MD — Interval 2095.0 – 2105.0 m\n\n**Sample Description (spreadsheet):** Sample 2100m: 0% Siltstone, 100% very fine to coarse Sandstone, 90% bright FLUOR in SST. TG 410U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 90% bri |\n| Total Gas | 410.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 80.9 | 66 |\n| RES_DEEP (ohm.m) | 44.31 | 66 |\n| RES_SHALLOW (ohm.m) | 32.83 | 66 |\n| **Δ Res (Deep − Shallow)** | **11.48** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2100"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2170.0,
+      "top": 2165.0,
+      "bot": 2175.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80,
+        "WRCI": 35.03,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2170m: 0% Siltstone, 100% fine to coarse Sandstone, 85% moderately bright  to  bright FLUOR in SST. TG 283U"
+      },
+      "detail_markdown": "### 2170 m MD — Interval 2165.0 – 2175.0 m\n\n**Sample Description (spreadsheet):** Sample 2170m: 0% Siltstone, 100% fine to coarse Sandstone, 85% moderately bright  to  bright FLUOR in SST. TG 283U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80% mod bri - bri |\n| Total Gas | 283.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 88.3 | 65 |\n| RES_DEEP (ohm.m) | 55.18 | 65 |\n| RES_SHALLOW (ohm.m) | 34.61 | 65 |\n| **Δ Res (Deep − Shallow)** | **20.58** | — |\n\n**Permeability Proxy:** Moderate-high inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2170"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2180.0,
+      "top": 2175.0,
+      "bot": 2185.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 90,
+        "WRCI": 23.85,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2180m: 0% Siltstone, 100% fine to medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 408U"
+      },
+      "detail_markdown": "### 2180 m MD — Interval 2175.0 – 2185.0 m\n\n**Sample Description (spreadsheet):** Sample 2180m: 0% Siltstone, 100% fine to medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 408U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: C) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 90% mod bri - bri |\n| Total Gas | 408.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 85.5 | 66 |\n| RES_DEEP (ohm.m) | 41.16 | 66 |\n| RES_SHALLOW (ohm.m) | 31.65 | 66 |\n| **Δ Res (Deep − Shallow)** | **9.50** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2180"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2190.0,
+      "top": 2185.0,
+      "bot": 2195.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 24.24,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2190m: 0% Siltstone, 100% very fine to medium Sandstone, 90% bright FLUOR in SST. TG 285U"
+      },
+      "detail_markdown": "### 2190 m MD — Interval 2185.0 – 2195.0 m\n\n**Sample Description (spreadsheet):** Sample 2190m: 0% Siltstone, 100% very fine to medium Sandstone, 90% bright FLUOR in SST. TG 285U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 285.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2210m: trnsl,clr,v lt brn/trnsl, f-crs,tr crs,ang-sbrnd,pred sbang, wk sil cmt,rr lt brn arg mtx,fri, disagg,fr inf por,fluor. 0 0.5 1 4 14 2230 1 10 100 1K\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 70.7 | 65 |\n| RES_DEEP (ohm.m) | 27.59 | 65 |\n| RES_SHALLOW (ohm.m) | 22.62 | 65 |\n| **Δ Res (Deep − Shallow)** | **4.97** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2190"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2200.0,
+      "top": 2195.0,
+      "bot": 2205.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 24.1,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2200m: 0% Siltstone, 100% fine to coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 270U"
+      },
+      "detail_markdown": "### 2200 m MD — Interval 2195.0 – 2205.0 m\n\n**Sample Description (spreadsheet):** Sample 2200m: 0% Siltstone, 100% fine to coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 270U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% mod bri - bri |\n| Total Gas | 270.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2210m: trnsl,clr,v lt brn/trnsl, f-crs,tr crs,ang-sbrnd,pred sbang, wk sil cmt,rr lt brn arg mtx,fri, disagg,fr inf por,fluor. 0 0.5 1 4 14 2230 1 10 100 1K\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 75.9 | 66 |\n| RES_DEEP (ohm.m) | 25.00 | 66 |\n| RES_SHALLOW (ohm.m) | 19.25 | 66 |\n| **Δ Res (Deep − Shallow)** | **5.76** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2200"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2210.0,
+      "top": 2205.0,
+      "bot": 2215.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 21.49,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2210m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 290U"
+      },
+      "detail_markdown": "### 2210 m MD — Interval 2205.0 – 2215.0 m\n\n**Sample Description (spreadsheet):** Sample 2210m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 290U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 290.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2210m: trnsl,clr,v lt brn/trnsl, f-crs,tr crs,ang-sbrnd,pred sbang, wk sil cmt,rr lt brn arg mtx,fri, disagg,fr inf por,fluor. 0 0.5 1 4 14 2230 1 10 100 1K\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 85.6 | 66 |\n| RES_DEEP (ohm.m) | 23.78 | 66 |\n| RES_SHALLOW (ohm.m) | 18.36 | 66 |\n| **Δ Res (Deep − Shallow)** | **5.42** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2210"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2220.0,
+      "top": 2215.0,
+      "bot": 2225.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 20.84,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2220m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 237U"
+      },
+      "detail_markdown": "### 2220 m MD — Interval 2215.0 – 2225.0 m\n\n**Sample Description (spreadsheet):** Sample 2220m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 237U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 237.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2210m: trnsl,clr,v lt brn/trnsl, f-crs,tr crs,ang-sbrnd,pred sbang, wk sil cmt,rr lt brn arg mtx,fri, disagg,fr inf por,fluor. 0 0.5 1 4 14 2230 1 10 100 1K\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 93.4 | 65 |\n| RES_DEEP (ohm.m) | 24.09 | 65 |\n| RES_SHALLOW (ohm.m) | 17.83 | 65 |\n| **Δ Res (Deep − Shallow)** | **6.26** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2220"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2230.0,
+      "top": 2225.0,
+      "bot": 2235.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 23.33,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2230m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 260U"
+      },
+      "detail_markdown": "### 2230 m MD — Interval 2225.0 – 2235.0 m\n\n**Sample Description (spreadsheet):** Sample 2230m: 0% Siltstone, 100% fine to coarse Sandstone, 100% bright FLUOR in SST. TG 260U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 260.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2210m: trnsl,clr,v lt brn/trnsl, f-crs,tr crs,ang-sbrnd,pred sbang, wk sil cmt,rr lt brn arg mtx,fri, disagg,fr inf por,fluor. 0 0.5 1 4 14 2230 1 10 100 1K\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 78.2 | 66 |\n| RES_DEEP (ohm.m) | 24.23 | 66 |\n| RES_SHALLOW (ohm.m) | 18.68 | 66 |\n| **Δ Res (Deep − Shallow)** | **5.56** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2230"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2240.0,
+      "top": 2235.0,
+      "bot": 2245.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 18.33,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2240m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 278U"
+      },
+      "detail_markdown": "### 2240 m MD — Interval 2235.0 – 2245.0 m\n\n**Sample Description (spreadsheet):** Sample 2240m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 278U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 278.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 76.7 | 65 |\n| RES_DEEP (ohm.m) | 27.58 | 65 |\n| RES_SHALLOW (ohm.m) | 23.83 | 65 |\n| **Δ Res (Deep − Shallow)** | **3.75** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2240"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2250.0,
+      "top": 2245.0,
+      "bot": 2255.0,
+      "summary": {
+        "pct_ss": 95.0,
+        "grain": "f-med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 21.62,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2250m: 5% Siltstone, 95% fine to medium Sandstone, 100% bright FLUOR in SST. TG 252U"
+      },
+      "detail_markdown": "### 2250 m MD — Interval 2245.0 – 2255.0 m\n\n**Sample Description (spreadsheet):** Sample 2250m: 5% Siltstone, 95% fine to medium Sandstone, 100% bright FLUOR in SST. TG 252U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 252.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 101.9 | 66 |\n| RES_DEEP (ohm.m) | 39.07 | 66 |\n| RES_SHALLOW (ohm.m) | 26.18 | 66 |\n| **Δ Res (Deep − Shallow)** | **12.90** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2250"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2320.0,
+      "top": 2315.0,
+      "bot": 2325.0,
+      "summary": {
+        "pct_ss": 80.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 60,
+        "WRCI": 32.2,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2320m: 20% Siltstone, 80% fine to medium Sandstone, 30% moderately bright FLUOR in SST. TG 366U"
+      },
+      "detail_markdown": "### 2320 m MD — Interval 2315.0 – 2325.0 m\n\n**Sample Description (spreadsheet):** Sample 2320m: 20% Siltstone, 80% fine to medium Sandstone, 30% moderately bright FLUOR in SST. TG 366U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 60% mod bri |\n| Total Gas | 366.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2340m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 78.9 | 65 |\n| RES_DEEP (ohm.m) | 52.84 | 65 |\n| RES_SHALLOW (ohm.m) | 37.31 | 65 |\n| **Δ Res (Deep − Shallow)** | **15.53** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2320"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2330.0,
+      "top": 2325.0,
+      "bot": 2335.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 38.89,
+        "risk_class": "Elevated",
+        "flags": [
+          "highperm"
+        ],
+        "long_desc": "Sample 2330m: 0% Siltstone, 100% fine to medium Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 292U"
+      },
+      "detail_markdown": "### 2330 m MD — Interval 2325.0 – 2335.0 m\n\n**Sample Description (spreadsheet):** Sample 2330m: 0% Siltstone, 100% fine to medium Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 292U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% mod bri - bri |\n| Total Gas | 292.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2340m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 78.4 | 66 |\n| RES_DEEP (ohm.m) | 49.35 | 66 |\n| RES_SHALLOW (ohm.m) | 34.91 | 66 |\n| **Δ Res (Deep − Shallow)** | **14.44** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2330"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2340.0,
+      "top": 2335.0,
+      "bot": 2345.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 90,
+        "WRCI": 38.14,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2340m: 0% Siltstone, 100% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 333U"
+      },
+      "detail_markdown": "### 2340 m MD — Interval 2335.0 – 2345.0 m\n\n**Sample Description (spreadsheet):** Sample 2340m: 0% Siltstone, 100% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 333U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 90% mod bri - bri |\n| Total Gas | 333.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2340m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n- **SANDSTONE** @ ~2360m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 87.9 | 66 |\n| RES_DEEP (ohm.m) | 52.31 | 66 |\n| RES_SHALLOW (ohm.m) | 36.81 | 66 |\n| **Δ Res (Deep − Shallow)** | **15.50** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2340"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2350.0,
+      "top": 2345.0,
+      "bot": 2355.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 38.64,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2350m: 0% Siltstone, 100% fine to medium Sandstone, 90% bright FLUOR in SST. TG 315U"
+      },
+      "detail_markdown": "### 2350 m MD — Interval 2345.0 – 2355.0 m\n\n**Sample Description (spreadsheet):** Sample 2350m: 0% Siltstone, 100% fine to medium Sandstone, 90% bright FLUOR in SST. TG 315U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 315.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2340m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n- **SANDSTONE** @ ~2360m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 80.6 | 65 |\n| RES_DEEP (ohm.m) | 46.72 | 65 |\n| RES_SHALLOW (ohm.m) | 32.09 | 65 |\n| **Δ Res (Deep − Shallow)** | **14.62** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2350"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2360.0,
+      "top": 2355.0,
+      "bot": 2365.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 90,
+        "WRCI": 32.5,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2360m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 266U"
+      },
+      "detail_markdown": "### 2360 m MD — Interval 2355.0 – 2365.0 m\n\n**Sample Description (spreadsheet):** Sample 2360m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 266U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 90% bri |\n| Total Gas | 266.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2340m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n- **SANDSTONE** @ ~2360m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 85.4 | 66 |\n| RES_DEEP (ohm.m) | 42.77 | 66 |\n| RES_SHALLOW (ohm.m) | 32.02 | 66 |\n| **Δ Res (Deep − Shallow)** | **10.75** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2360"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2370.0,
+      "top": 2365.0,
+      "bot": 2375.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 29.02,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2370m: 0% Siltstone, 100% fine to medium Sandstone, 90% bright FLUOR in SST. TG 263U"
+      },
+      "detail_markdown": "### 2370 m MD — Interval 2365.0 – 2375.0 m\n\n**Sample Description (spreadsheet):** Sample 2370m: 0% Siltstone, 100% fine to medium Sandstone, 90% bright FLUOR in SST. TG 263U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 263.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2360m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n- **SANDSTONE** @ ~2380m: trnsl,clr,v lt gry,lt brnsh gry i/p,f-crs,pr srt,ang-sbrnd, wk sil cmt,mnr off wh/lt brn arg mtx, fri,pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 69.6 | 65 |\n| RES_DEEP (ohm.m) | 37.00 | 65 |\n| RES_SHALLOW (ohm.m) | 31.63 | 65 |\n| **Δ Res (Deep − Shallow)** | **5.37** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2370"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2380.0,
+      "top": 2375.0,
+      "bot": 2385.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 37.42,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2380m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 341U"
+      },
+      "detail_markdown": "### 2380 m MD — Interval 2375.0 – 2385.0 m\n\n**Sample Description (spreadsheet):** Sample 2380m: 0% Siltstone, 100% very fine to fine Sandstone, 100% bright FLUOR in SST. TG 341U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 341.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2360m: trnsl,clr,off wh,f-med, mod srt,ang-sbrnd,wk sil cmt,mnr wh arg mtx,fri-lse,pr inf por,fluor.\n- **SANDSTONE** @ ~2380m: trnsl,clr,v lt gry,lt brnsh gry i/p,f-crs,pr srt,ang-sbrnd, wk sil cmt,mnr off wh/lt brn arg mtx, fri,pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 81.2 | 66 |\n| RES_DEEP (ohm.m) | 31.14 | 66 |\n| RES_SHALLOW (ohm.m) | 25.00 | 66 |\n| **Δ Res (Deep − Shallow)** | **6.14** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2380"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2390.0,
+      "top": 2385.0,
+      "bot": 2395.0,
+      "summary": {
+        "pct_ss": 90.0,
+        "grain": "f-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 12.76,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2390m: 10% Siltstone, 90% fine to coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 212U"
+      },
+      "detail_markdown": "### 2390 m MD — Interval 2385.0 – 2395.0 m\n\n**Sample Description (spreadsheet):** Sample 2390m: 10% Siltstone, 90% fine to coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 212U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | f-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% mod bri - bri |\n| Total Gas | 212.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2380m: trnsl,clr,v lt gry,lt brnsh gry i/p,f-crs,pr srt,ang-sbrnd, wk sil cmt,mnr off wh/lt brn arg mtx, fri,pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 85.0 | 66 |\n| RES_DEEP (ohm.m) | 23.28 | 66 |\n| RES_SHALLOW (ohm.m) | 20.45 | 66 |\n| **Δ Res (Deep − Shallow)** | **2.83** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2390"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2400.0,
+      "top": 2395.0,
+      "bot": 2405.0,
+      "summary": {
+        "pct_ss": 90.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 90,
+        "WRCI": 17.0,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2400m: 10% Siltstone, 90% fine to medium Sandstone, 100% moderately bright FLUOR in SST. TG 250U"
+      },
+      "detail_markdown": "### 2400 m MD — Interval 2395.0 – 2405.0 m\n\n**Sample Description (spreadsheet):** Sample 2400m: 10% Siltstone, 90% fine to medium Sandstone, 100% moderately bright FLUOR in SST. TG 250U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 90% mod bri |\n| Total Gas | 250.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2380m: trnsl,clr,v lt gry,lt brnsh gry i/p,f-crs,pr srt,ang-sbrnd, wk sil cmt,mnr off wh/lt brn arg mtx, fri,pr vis por,fluor.\n- **SANDSTONE** @ ~2420m: trnsl,clr,v lt gry,lt brnsh gry i/p,f-crs,pr srt,ang-sbrnd, wk sil cmt,mnr off wh/lt brn arg mtx, fri,pr vis por,fluor. 79 / 5 / 4 / 5 / 7 277 U SURVEY @ 2429.2m\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 60.1 | 65 |\n| RES_DEEP (ohm.m) | 24.57 | 65 |\n| RES_SHALLOW (ohm.m) | 22.10 | 65 |\n| **Δ Res (Deep − Shallow)** | **2.47** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2400"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2410.0,
+      "top": 2405.0,
+      "bot": 2415.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 21.22,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2410m: 0% Siltstone, 100% fine to medium Sandstone, 90% bright FLUOR in SST. TG 238U"
+      },
+      "detail_markdown": "### 2410 m MD — Interval 2405.0 – 2415.0 m\n\n**Sample Description (spreadsheet):** Sample 2410m: 0% Siltstone, 100% fine to medium Sandstone, 90% bright FLUOR in SST. TG 238U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 238.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2420m: trnsl,clr,v lt gry,lt brnsh gry i/p,f-crs,pr srt,ang-sbrnd, wk sil cmt,mnr off wh/lt brn arg mtx, fri,pr vis por,fluor. 79 / 5 / 4 / 5 / 7 277 U SURVEY @ 2429.2m\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 74.1 | 66 |\n| RES_DEEP (ohm.m) | 24.75 | 66 |\n| RES_SHALLOW (ohm.m) | 21.51 | 66 |\n| **Δ Res (Deep − Shallow)** | **3.24** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2410"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2420.0,
+      "top": 2415.0,
+      "bot": 2425.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 18.97,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2420m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 198U"
+      },
+      "detail_markdown": "### 2420 m MD — Interval 2415.0 – 2425.0 m\n\n**Sample Description (spreadsheet):** Sample 2420m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 198U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 198.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2420m: trnsl,clr,v lt gry,lt brnsh gry i/p,f-crs,pr srt,ang-sbrnd, wk sil cmt,mnr off wh/lt brn arg mtx, fri,pr vis por,fluor. 79 / 5 / 4 / 5 / 7 277 U SURVEY @ 2429.2m\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 84.1 | 66 |\n| RES_DEEP (ohm.m) | 23.46 | 66 |\n| RES_SHALLOW (ohm.m) | 21.06 | 66 |\n| **Δ Res (Deep − Shallow)** | **2.40** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2420"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2430.0,
+      "top": 2425.0,
+      "bot": 2435.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 20.91,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2430m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 275U"
+      },
+      "detail_markdown": "### 2430 m MD — Interval 2425.0 – 2435.0 m\n\n**Sample Description (spreadsheet):** Sample 2430m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 275U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 275.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2420m: trnsl,clr,v lt gry,lt brnsh gry i/p,f-crs,pr srt,ang-sbrnd, wk sil cmt,mnr off wh/lt brn arg mtx, fri,pr vis por,fluor. 79 / 5 / 4 / 5 / 7 277 U SURVEY @ 2429.2m\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 75.5 | 65 |\n| RES_DEEP (ohm.m) | 26.70 | 65 |\n| RES_SHALLOW (ohm.m) | 23.46 | 65 |\n| **Δ Res (Deep − Shallow)** | **3.23** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2430"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2440.0,
+      "top": 2435.0,
+      "bot": 2445.0,
+      "summary": {
+        "pct_ss": 80.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 50,
+        "WRCI": 21.21,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2440m: 20% Siltstone, 80% very fine to fine Sandstone, 100% moderately bright FLUOR in SST. TG 201U"
+      },
+      "detail_markdown": "### 2440 m MD — Interval 2435.0 – 2445.0 m\n\n**Sample Description (spreadsheet):** Sample 2440m: 20% Siltstone, 80% very fine to fine Sandstone, 100% moderately bright FLUOR in SST. TG 201U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 50% mod bri |\n| Total Gas | 201.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2420m: trnsl,clr,v lt gry,lt brnsh gry i/p,f-crs,pr srt,ang-sbrnd, wk sil cmt,mnr off wh/lt brn arg mtx, fri,pr vis por,fluor. 79 / 5 / 4 / 5 / 7 277 U SURVEY @ 2429.2m\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.3 | 66 |\n| RES_DEEP (ohm.m) | 26.06 | 66 |\n| RES_SHALLOW (ohm.m) | 22.08 | 66 |\n| **Δ Res (Deep − Shallow)** | **3.98** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2440"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2450.0,
+      "top": 2445.0,
+      "bot": 2455.0,
+      "summary": {
+        "pct_ss": 80.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 18.16,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2450m: 20% Siltstone, 80% very fine to fine Sandstone, 50% moderately bright to bright FLUOR in SST. TG 219U"
+      },
+      "detail_markdown": "### 2450 m MD — Interval 2445.0 – 2455.0 m\n\n**Sample Description (spreadsheet):** Sample 2450m: 20% Siltstone, 80% very fine to fine Sandstone, 50% moderately bright to bright FLUOR in SST. TG 219U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80.0 |\n| Grain Size | vf-f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% mod bri-bri |\n| Total Gas | 219.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2470m: pl brn,gry brn,off wh,vf-occ f,sbang,wl srt,mod strg sil cmt,mnr kaol mtx,slty i/p,mod hd aggs, pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 103.8 | 65 |\n| RES_DEEP (ohm.m) | 29.74 | 65 |\n| RES_SHALLOW (ohm.m) | 22.56 | 65 |\n| **Δ Res (Deep − Shallow)** | **7.18** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2450"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2460.0,
+      "top": 2455.0,
+      "bot": 2465.0,
+      "summary": {
+        "pct_ss": 90.0,
+        "grain": "vf-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 70,
+        "WRCI": 18.56,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2460m: 10% Siltstone, 90% very fine to medium Sandstone, 100% moderately bright to bright FLUOR in SST. TG 235U"
+      },
+      "detail_markdown": "### 2460 m MD — Interval 2455.0 – 2465.0 m\n\n**Sample Description (spreadsheet):** Sample 2460m: 10% Siltstone, 90% very fine to medium Sandstone, 100% moderately bright to bright FLUOR in SST. TG 235U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | vf-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 70% mod bri-bri |\n| Total Gas | 235.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2470m: pl brn,gry brn,off wh,vf-occ f,sbang,wl srt,mod strg sil cmt,mnr kaol mtx,slty i/p,mod hd aggs, pr vis por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 95.0 | 66 |\n| RES_DEEP (ohm.m) | 32.81 | 66 |\n| RES_SHALLOW (ohm.m) | 24.43 | 66 |\n| **Δ Res (Deep − Shallow)** | **8.37** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2460"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2470.0,
+      "top": 2465.0,
+      "bot": 2475.0,
+      "summary": {
+        "pct_ss": 95.0,
+        "grain": "crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 80,
+        "WRCI": 24.03,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2470m: 5% Siltstone, 95% coarse Sandstone, 70% moderately bright to bright FLUOR in SST. TG 200U"
+      },
+      "detail_markdown": "### 2470 m MD — Interval 2465.0 – 2475.0 m\n\n**Sample Description (spreadsheet):** Sample 2470m: 5% Siltstone, 95% coarse Sandstone, 70% moderately bright to bright FLUOR in SST. TG 200U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 80% mod bri-bri |\n| Total Gas | 200.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2470m: pl brn,gry brn,off wh,vf-occ f,sbang,wl srt,mod strg sil cmt,mnr kaol mtx,slty i/p,mod hd aggs, pr vis por,fluor.\n- **SANDSTONE** @ ~2490m: pl brn,gry brn,off wh,vf-occ f,sbang,wl srt,mod strg sil cmt,mnr kaol mtx,slty i/p,mod hd aggs, pr vis por,fluor. 81 / 6 / 4 / 4 / 5 390 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 76.7 | 66 |\n| RES_DEEP (ohm.m) | 36.29 | 66 |\n| RES_SHALLOW (ohm.m) | 28.15 | 66 |\n| **Δ Res (Deep − Shallow)** | **8.14** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2470"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2480.0,
+      "top": 2475.0,
+      "bot": 2485.0,
+      "summary": {
+        "pct_ss": 95.0,
+        "grain": "vf-crs",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 90,
+        "WRCI": 23.66,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2480m: 5% Siltstone, 95% very fine to coarse Sandstone, 80% moderately bright to bright FLUOR in SST. TG 341U"
+      },
+      "detail_markdown": "### 2480 m MD — Interval 2475.0 – 2485.0 m\n\n**Sample Description (spreadsheet):** Sample 2480m: 5% Siltstone, 95% very fine to coarse Sandstone, 80% moderately bright to bright FLUOR in SST. TG 341U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | vf-crs (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 90% mod bri-bri |\n| Total Gas | 341.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2470m: pl brn,gry brn,off wh,vf-occ f,sbang,wl srt,mod strg sil cmt,mnr kaol mtx,slty i/p,mod hd aggs, pr vis por,fluor.\n- **SANDSTONE** @ ~2490m: pl brn,gry brn,off wh,vf-occ f,sbang,wl srt,mod strg sil cmt,mnr kaol mtx,slty i/p,mod hd aggs, pr vis por,fluor. 81 / 6 / 4 / 4 / 5 390 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 73.0 | 65 |\n| RES_DEEP (ohm.m) | 39.75 | 65 |\n| RES_SHALLOW (ohm.m) | 32.53 | 65 |\n| **Δ Res (Deep − Shallow)** | **7.22** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2480"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2490.0,
+      "top": 2485.0,
+      "bot": 2495.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 20.97,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2490m: 0% Siltstone, 100% very fine to fine Sandstone, 90% moderately bright to bright FLUOR in SST. TG 330U"
+      },
+      "detail_markdown": "### 2490 m MD — Interval 2485.0 – 2495.0 m\n\n**Sample Description (spreadsheet):** Sample 2490m: 0% Siltstone, 100% very fine to fine Sandstone, 90% moderately bright to bright FLUOR in SST. TG 330U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: C) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% mod bri-bri |\n| Total Gas | 330.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2470m: pl brn,gry brn,off wh,vf-occ f,sbang,wl srt,mod strg sil cmt,mnr kaol mtx,slty i/p,mod hd aggs, pr vis por,fluor.\n- **SANDSTONE** @ ~2490m: pl brn,gry brn,off wh,vf-occ f,sbang,wl srt,mod strg sil cmt,mnr kaol mtx,slty i/p,mod hd aggs, pr vis por,fluor. 81 / 6 / 4 / 4 / 5 390 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 76.1 | 66 |\n| RES_DEEP (ohm.m) | 31.76 | 66 |\n| RES_SHALLOW (ohm.m) | 28.36 | 66 |\n| **Δ Res (Deep − Shallow)** | **3.39** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2490"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2500.0,
+      "top": 2495.0,
+      "bot": 2505.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "vf-f",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 20.55,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2500m: 0% Siltstone, 100% very fine to fine Sandstone, 100% moderately bright to bright FLUOR in SST. TG 284U"
+      },
+      "detail_markdown": "### 2500 m MD — Interval 2495.0 – 2505.0 m\n\n**Sample Description (spreadsheet):** Sample 2500m: 0% Siltstone, 100% very fine to fine Sandstone, 100% moderately bright to bright FLUOR in SST. TG 284U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | vf-f (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% mod bri-bri |\n| Total Gas | 284.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2490m: pl brn,gry brn,off wh,vf-occ f,sbang,wl srt,mod strg sil cmt,mnr kaol mtx,slty i/p,mod hd aggs, pr vis por,fluor. 81 / 6 / 4 / 4 / 5 390 U\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 79.1 | 66 |\n| RES_DEEP (ohm.m) | 28.87 | 66 |\n| RES_SHALLOW (ohm.m) | 25.29 | 66 |\n| **Δ Res (Deep − Shallow)** | **3.58** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2500"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2680.0,
+      "top": 2675.0,
+      "bot": 2685.0,
+      "summary": {
+        "pct_ss": 90.0,
+        "grain": "f-med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 60,
+        "WRCI": 32.0,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2680m: 10% Siltstone, 90% fine to medium Sandstone, 45% dull  to  moderately bright FLUOR in SST. TG 228U"
+      },
+      "detail_markdown": "### 2680 m MD — Interval 2675.0 – 2685.0 m\n\n**Sample Description (spreadsheet):** Sample 2680m: 10% Siltstone, 90% fine to medium Sandstone, 45% dull  to  moderately bright FLUOR in SST. TG 228U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 60% dll - mod bri |\n| Total Gas | 228.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 82.2 | 66 |\n| RES_DEEP (ohm.m) | 50.30 | 66 |\n| RES_SHALLOW (ohm.m) | 33.59 | 66 |\n| **Δ Res (Deep − Shallow)** | **16.71** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2680"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2690.0,
+      "top": 2685.0,
+      "bot": 2695.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 80,
+        "WRCI": 25.58,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2690m: 0% Siltstone, 100% fine to medium Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 250U"
+      },
+      "detail_markdown": "### 2690 m MD — Interval 2685.0 – 2695.0 m\n\n**Sample Description (spreadsheet):** Sample 2690m: 0% Siltstone, 100% fine to medium Sandstone, 60% moderately bright  to  bright FLUOR in SST. TG 250U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | 80% mod bri - bri |\n| Total Gas | 250.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2710m: lt-med gry,occ med dk gry, carb i/p,arg,tr micmic,mod hd,sbblky- blky. SURVEY @ 2717.0m INC: 90.3° AZI: 271.8°G\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 80.4 | 65 |\n| RES_DEEP (ohm.m) | 42.55 | 65 |\n| RES_SHALLOW (ohm.m) | 32.60 | 65 |\n| **Δ Res (Deep − Shallow)** | **9.95** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2690"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2700.0,
+      "top": 2695.0,
+      "bot": 2705.0,
+      "summary": {
+        "pct_ss": 90.0,
+        "grain": "f-med",
+        "poro_class": "gd",
+        "loose_grains": true,
+        "fluor": 80,
+        "WRCI": 27.44,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2700m: 10% Siltstone, 90% fine to medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 174U"
+      },
+      "detail_markdown": "### 2700 m MD — Interval 2695.0 – 2705.0 m\n\n**Sample Description (spreadsheet):** Sample 2700m: 10% Siltstone, 90% fine to medium Sandstone, 80% moderately bright  to  bright FLUOR in SST. TG 174U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | gd |\n| Loose Grains | Yes |\n| Fluorescence | 80% mod bri - bri |\n| Total Gas | 174.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2710m: lt-med gry,occ med dk gry, carb i/p,arg,tr micmic,mod hd,sbblky- blky. SURVEY @ 2717.0m INC: 90.3° AZI: 271.8°G\n- **SANDSTONE** @ ~2720m: trnsl,clr,f-pred med, mod wl srt,tr sil cmt,tr lt gry 0 0.5 1 4 14 2730 1 10 100 1K arg mtx,pred lse,gd inf por,fluor. 1K 10K SURVEY @ 2736.2m\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 78.2 | 66 |\n| RES_DEEP (ohm.m) | 40.51 | 66 |\n| RES_SHALLOW (ohm.m) | 32.57 | 66 |\n| **Δ Res (Deep − Shallow)** | **7.94** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2700"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2710.0,
+      "top": 2705.0,
+      "bot": 2715.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "gd",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 33.03,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2710m: 0% Siltstone, 100% fine to medium Sandstone, 80% bright FLUOR in SST. TG 253U"
+      },
+      "detail_markdown": "### 2710 m MD — Interval 2705.0 – 2715.0 m\n\n**Sample Description (spreadsheet):** Sample 2710m: 0% Siltstone, 100% fine to medium Sandstone, 80% bright FLUOR in SST. TG 253U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | gd |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 253.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2710m: lt-med gry,occ med dk gry, carb i/p,arg,tr micmic,mod hd,sbblky- blky. SURVEY @ 2717.0m INC: 90.3° AZI: 271.8°G\n- **SANDSTONE** @ ~2720m: trnsl,clr,f-pred med, mod wl srt,tr sil cmt,tr lt gry 0 0.5 1 4 14 2730 1 10 100 1K arg mtx,pred lse,gd inf por,fluor. 1K 10K SURVEY @ 2736.2m\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 77.9 | 65 |\n| RES_DEEP (ohm.m) | 43.38 | 65 |\n| RES_SHALLOW (ohm.m) | 35.80 | 65 |\n| **Δ Res (Deep − Shallow)** | **7.58** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2710"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2720.0,
+      "top": 2715.0,
+      "bot": 2725.0,
+      "summary": {
+        "pct_ss": 95.0,
+        "grain": "f-med",
+        "poro_class": "gd",
+        "loose_grains": true,
+        "fluor": 80,
+        "WRCI": 26.18,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2720m: 5% Siltstone, 95% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 285U"
+      },
+      "detail_markdown": "### 2720 m MD — Interval 2715.0 – 2725.0 m\n\n**Sample Description (spreadsheet):** Sample 2720m: 5% Siltstone, 95% fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 285U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | gd |\n| Loose Grains | Yes |\n| Fluorescence | 80% mod bri - bri |\n| Total Gas | 285.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2710m: lt-med gry,occ med dk gry, carb i/p,arg,tr micmic,mod hd,sbblky- blky. SURVEY @ 2717.0m INC: 90.3° AZI: 271.8°G\n- **SANDSTONE** @ ~2720m: trnsl,clr,f-pred med, mod wl srt,tr sil cmt,tr lt gry 0 0.5 1 4 14 2730 1 10 100 1K arg mtx,pred lse,gd inf por,fluor. 1K 10K SURVEY @ 2736.2m\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 78.3 | 66 |\n| RES_DEEP (ohm.m) | 40.00 | 66 |\n| RES_SHALLOW (ohm.m) | 35.31 | 66 |\n| **Δ Res (Deep − Shallow)** | **4.69** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2720"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2730.0,
+      "top": 2725.0,
+      "bot": 2735.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "gd",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 30.71,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2730m: 0% Siltstone, 100% fine to medium Sandstone, 80% bright FLUOR in SST. TG 277U"
+      },
+      "detail_markdown": "### 2730 m MD — Interval 2725.0 – 2735.0 m\n\n**Sample Description (spreadsheet):** Sample 2730m: 0% Siltstone, 100% fine to medium Sandstone, 80% bright FLUOR in SST. TG 277U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | gd |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 277.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2710m: lt-med gry,occ med dk gry, carb i/p,arg,tr micmic,mod hd,sbblky- blky. SURVEY @ 2717.0m INC: 90.3° AZI: 271.8°G\n- **SANDSTONE** @ ~2720m: trnsl,clr,f-pred med, mod wl srt,tr sil cmt,tr lt gry 0 0.5 1 4 14 2730 1 10 100 1K arg mtx,pred lse,gd inf por,fluor. 1K 10K SURVEY @ 2736.2m\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 78.3 | 66 |\n| RES_DEEP (ohm.m) | 31.81 | 66 |\n| RES_SHALLOW (ohm.m) | 25.94 | 66 |\n| **Δ Res (Deep − Shallow)** | **5.87** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2730"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2740.0,
+      "top": 2735.0,
+      "bot": 2745.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "gd",
+        "loose_grains": true,
+        "fluor": 100,
+        "WRCI": 26.24,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2740m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 246U"
+      },
+      "detail_markdown": "### 2740 m MD — Interval 2735.0 – 2745.0 m\n\n**Sample Description (spreadsheet):** Sample 2740m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 246U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | gd |\n| Loose Grains | Yes |\n| Fluorescence | 100% bri |\n| Total Gas | 246.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2720m: trnsl,clr,f-pred med, mod wl srt,tr sil cmt,tr lt gry 0 0.5 1 4 14 2730 1 10 100 1K arg mtx,pred lse,gd inf por,fluor. 1K 10K SURVEY @ 2736.2m\n- **SANDSTONE** @ ~2740m: clr,trnsl,lt brn-trnsl, f-med,mod wl srt,sbang-sbrnd,wk sil cmt,mnr off wh arg mtx,fri-dssagg,pr inf por,fluor.\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 89.3 | 65 |\n| RES_DEEP (ohm.m) | 26.46 | 65 |\n| RES_SHALLOW (ohm.m) | 22.13 | 65 |\n| **Δ Res (Deep − Shallow)** | **4.33** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2740"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2750.0,
+      "top": 2745.0,
+      "bot": 2755.0,
+      "summary": {
+        "pct_ss": 100.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "WRCI": 19.03,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2750m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 249U"
+      },
+      "detail_markdown": "### 2750 m MD — Interval 2745.0 – 2755.0 m\n\n**Sample Description (spreadsheet):** Sample 2750m: 0% Siltstone, 100% fine to medium Sandstone, 100% bright FLUOR in SST. TG 249U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 100% bri |\n| Total Gas | 249.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2740m: clr,trnsl,lt brn-trnsl, f-med,mod wl srt,sbang-sbrnd,wk sil cmt,mnr off wh arg mtx,fri-dssagg,pr inf por,fluor.\n- **SANDSTONE** @ ~2760m: v lt brn-trnsl,off wh, trnsl,clr,f-med,mod wl srt,sbang-occ 80 / 5 / 4 / 5 / 6 sbrnd,wk sil cmt,mnr off wh arg mtx, fri,disagg,pr inf por,fluor.\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 93.3 | 66 |\n| RES_DEEP (ohm.m) | 25.56 | 66 |\n| RES_SHALLOW (ohm.m) | 20.69 | 66 |\n| **Δ Res (Deep − Shallow)** | **4.87** | — |\n\n**Permeability Proxy:** Low-moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2750"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2760.0,
+      "top": 2755.0,
+      "bot": 2765.0,
+      "summary": {
+        "pct_ss": 90.0,
+        "grain": "f-med",
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 80,
+        "WRCI": 17.19,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2760m: 10% Siltstone, 90% fine to medium Sandstone, 100% bright FLUOR in SST. TG 190U"
+      },
+      "detail_markdown": "### 2760 m MD — Interval 2755.0 – 2765.0 m\n\n**Sample Description (spreadsheet):** Sample 2760m: 10% Siltstone, 90% fine to medium Sandstone, 100% bright FLUOR in SST. TG 190U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | f-med (max: M) |\n| Porosity Class | fr |\n| Loose Grains | No |\n| Fluorescence | 80% bri |\n| Total Gas | 190.0 U |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2740m: clr,trnsl,lt brn-trnsl, f-med,mod wl srt,sbang-sbrnd,wk sil cmt,mnr off wh arg mtx,fri-dssagg,pr inf por,fluor.\n- **SANDSTONE** @ ~2760m: v lt brn-trnsl,off wh, trnsl,clr,f-med,mod wl srt,sbang-occ 80 / 5 / 4 / 5 / 6 sbrnd,wk sil cmt,mnr off wh arg mtx, fri,disagg,pr inf por,fluor.\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 83.2 | 66 |\n| RES_DEEP (ohm.m) | 28.37 | 66 |\n| RES_SHALLOW (ohm.m) | 22.06 | 66 |\n| **Δ Res (Deep − Shallow)** | **6.31** | — |\n\n**Permeability Proxy:** Moderate inferred permeability\n> Greater deep-shallow resistivity separation → higher inferred permeability.",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2760"
+      }
+    },
+    {
+      "alias": "STIMPEE7",
+      "depth": 2840.0,
+      "top": 2835.0,
+      "bot": 2842.5,
+      "summary": {
+        "pct_ss": 60.0,
+        "grain": "vf - f",
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": "tr",
+        "WRCI": 0.0,
+        "risk_class": "Low",
+        "flags": [],
+        "long_desc": "Sample 2840m: 40% Siltstone, 60% very fine  to  fine Sandstone, tr% dull FLUOR in SST. TG 85U"
+      },
+      "detail_markdown": "### 2840 m MD — Interval 2835.0 – 2842.5 m\n\n**Sample Description (spreadsheet):** Sample 2840m: 40% Siltstone, 60% very fine  to  fine Sandstone, tr% dull FLUOR in SST. TG 85U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 60.0 |\n| Grain Size | vf - f (max: F) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Loose Grains | No |\n| Fluorescence | tr% dll |\n| Total Gas | 85.0 U |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n\n**Permeability Proxy:** Insufficient resistivity data\n---\n\n## 5. Summary Statistics (McKinlay Member)\n\n| Metric | Value |\n|--------|-------|\n| Intervals analysed | 84 |\n| Depth range | 1705 – 2840 m |\n| Avg % Sandstone | 96.4% |\n| Avg Δ Res (Deep−Shallow) | 8.43 ohm.m |\n| Max Δ Res | 27.96 ohm.m |\n| Min Δ Res | 2.40 ohm.m |\n| Mudlog matches | 69 / 84 |",
+      "source": {
+        "file": "output/STIMPEE7_McKinlay_Cuttings_Interpretation.md",
+        "anchor": "2840"
+      }
+    }
+  ]
+}

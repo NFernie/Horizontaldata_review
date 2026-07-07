@@ -1,0 +1,8 @@
+{
+  "alias": "MCKINLAY20",
+  "display": "MCKINLAY 20",
+  "type": "process_summary",
+  "title": "Process Summary — MCKINLAY 20",
+  "markdown": "# MCKINLAY 20 Analysis — Process Summary\n\n**Date:** 2026-07-07\n\n## Objective\n\nIntegrate mudlog, sample descriptions, formation tops, and LAS data for **McKinlay Member** on MCKINLAY 20.\n\n## Data Files Used\n\n| File | Purpose |\n|------|---------|\n| `McKinlay 20_Mudlog_Spud-3000m_TD_Field Final.pdf` | Mudlog cuttings |\n| `McKinlay 20 Hz Section samples descriptions.xlsx` → Sheet1 (cols F=TG, G=%SS, H=%fluoro + col A descriptions) | Sample intervals |\n| `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |\n| `Mck_20` | GR / resistivity |\n\n## Formation Top Results\n\n- DC30: **1633.24 m** | McKinlay start: **1633.50 m** | TD: **3000 m**\n- Overburden entry pairs: **2**\n- Overburden exclusion intervals: **2**\n- Excluded samples: pre-reservoir 28, overburden 25\n- **275** McKinlay intervals retained\n\n## Key Findings\n\n- Depth range: **1635 – 3000 m MD**\n- Average sandstone: **88.5%**\n- Δ Res range: **-1.5 – 17.5 ohm.m** (avg 2.2)\n- Mudlog matched: **204 / 275** intervals\n\n## Limitations\n\nSee interpretation file Section 3 for full list.\n",
+  "source": "output/MCKINLAY20_Process_Summary.md"
+}
