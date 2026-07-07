@@ -1,6 +1,6 @@
 # JENA 31DW1 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:18 UTC  
+**Generated:** 2026-07-07 04:53 UTC  
 **Formation tops name:** JENA 31DW1  
 **McKinlay window:** 2067.5 – 3658.0 m MD  
 **DC30 top:** 2060.75 m MD  

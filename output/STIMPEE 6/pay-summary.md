@@ -1,6 +1,6 @@
 # STIMPEE 6 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:18 UTC  
+**Generated:** 2026-07-07 04:53 UTC  
 **Formation tops name:** STIMPEE 6  
 **McKinlay window:** 1632.4 – 3186.1 m MD  
 **DC30 top:** 1631.04 m MD  
@@ -12,10 +12,9 @@
 
 | Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
 |-------------|-------------|-----------------|------------|
-| 1767.2 | 1765.9 | 1993.0 | 225.8 |
-| 1954.3 | 1956.0 | 2396.9 | 442.6 |
-| 2353.9 | 2352.7 | 2939.3 | 585.4 |
-| 2845.5 | 2844.0 | 2895.5 (assumed) | 50.0 |
+| 1767.2 | 1765.9 | 1993.0 (2 merged entry pairs) | 225.8 |
+| 2353.9 | 2352.7 | 2396.9 | 43.1 |
+| 2845.5 | 2844.0 | 2939.3 | 93.8 |
 
 ## Pay Rules Applied
 
@@ -31,17 +30,22 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 371.0 | 23.9% | 2 |
-| Resistivity only | 372.5 | 24.0% | 2 |
-| Matching both | 365.5 | 23.5% | 2 |
+| Cuttings only | 1111.0 | 71.4% | 7 |
+| Resistivity only | 1181.9 | 76.0% | 4 |
+| Matching both | 1105.5 | 71.1% | 7 |
 
-**Sample intervals in McKinlay Member:** 43
+**Sample intervals in McKinlay Member:** 122
 
 ## Cuttings-Only Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1637.5 | 1765.0 | 127.5 |
+| 2005.0 | 2025.0 | 20.0 |
+| 2035.0 | 2065.0 | 30.0 |
+| 2085.0 | 2345.0 | 260.0 |
+| 2405.0 | 2615.0 | 210.0 |
+| 2625.0 | 2845.0 | 220.0 |
 | 2945.0 | 3188.5 | 243.5 |
 
 ## Resistivity-Only Pay Intervals
@@ -49,6 +53,8 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1632.4 | 1767.2 | 134.7 |
+| 1993.0 | 2353.9 | 360.9 |
+| 2396.9 | 2845.4 | 448.5 |
 | 2939.3 | 3177.0 | 237.7 |
 
 ## Matching Pay Intervals
@@ -56,6 +62,11 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1637.5 | 1765.0 | 127.5 |
+| 2005.0 | 2025.0 | 20.0 |
+| 2035.0 | 2065.0 | 30.0 |
+| 2085.0 | 2345.0 | 260.0 |
+| 2405.0 | 2615.0 | 210.0 |
+| 2625.0 | 2845.0 | 220.0 |
 | 2945.0 | 3183.0 | 238.0 |
 
 ## Data Quality Notes

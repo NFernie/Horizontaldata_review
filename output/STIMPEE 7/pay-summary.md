@@ -1,6 +1,6 @@
 # STIMPEE 7 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:18 UTC  
+**Generated:** 2026-07-07 04:53 UTC  
 **Formation tops name:** STIMPEE 7  
 **McKinlay window:** 1702.5 – 2840.1 m MD  
 **DC30 top:** 1704.52 m MD  

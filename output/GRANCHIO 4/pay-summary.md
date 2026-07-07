@@ -1,6 +1,6 @@
 # GRANCHIO 4 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:18 UTC  
+**Generated:** 2026-07-07 04:53 UTC  
 **Formation tops name:** GRANCHIO 4  
 **McKinlay window:** 1678.1 – 2825.0 m MD  
 **DC30 top:** 1678.34 m MD  
@@ -12,8 +12,7 @@
 
 | Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
 |-------------|-------------|-----------------|------------|
-| 1792.2 | 1793.7 | 2089.0 | 296.8 |
-| 2066.5 | 2068.0 | 2116.5 (assumed) | 50.0 |
+| 1792.2 | 1793.7 | 2089.0 (2 merged entry pairs) | 296.8 |
 
 ## Pay Rules Applied
 
@@ -29,11 +28,11 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 772.5 | 67.4% | 7 |
-| Resistivity only | 769.2 | 67.1% | 3 |
-| Matching both | 737.5 | 64.3% | 6 |
+| Cuttings only | 802.5 | 70.0% | 7 |
+| Resistivity only | 796.7 | 69.5% | 3 |
+| Matching both | 767.5 | 66.9% | 6 |
 
-**Sample intervals in McKinlay Member:** 93
+**Sample intervals in McKinlay Member:** 96
 
 ## Cuttings-Only Pay Intervals
 
@@ -42,7 +41,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1677.5 | 1692.5 | 15.0 |
 | 1697.5 | 1762.5 | 65.0 |
 | 1767.5 | 1787.5 | 20.0 |
-| 2125.0 | 2155.0 | 30.0 |
+| 2095.0 | 2155.0 | 60.0 |
 | 2165.0 | 2175.0 | 10.0 |
 | 2185.0 | 2565.0 | 380.0 |
 | 2575.0 | 2827.5 | 252.5 |
@@ -52,7 +51,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1678.2 | 1792.3 | 114.1 |
-| 2116.6 | 2132.6 | 16.0 |
+| 2089.0 | 2132.6 | 43.6 |
 | 2176.8 | 2815.8 | 639.0 |
 
 ## Matching Pay Intervals
@@ -62,7 +61,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1677.5 | 1692.5 | 15.0 |
 | 1697.5 | 1762.5 | 65.0 |
 | 1767.5 | 1787.5 | 20.0 |
-| 2125.0 | 2135.0 | 10.0 |
+| 2095.0 | 2135.0 | 40.0 |
 | 2185.0 | 2565.0 | 380.0 |
 | 2575.0 | 2822.5 | 247.5 |
 

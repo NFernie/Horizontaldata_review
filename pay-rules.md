@@ -6,7 +6,7 @@
 
 - **Formation:** McKinlay Member only (horizontal target interval)
 - **Lateral reference:** DC30 top to TD (deepest sample or LAS stop)
-- **Exclusions:** Overburden intervals from each Murta/McKinlay entry pair to the next lone McKinlay re-entry below (or entry + 50 m MD if no re-entry is mapped). Initial DC30/McKinlay reservoir entry is not excluded.
+- **Exclusions:** Overburden intervals from the first Murta/McKinlay entry in a sequence to the next lone McKinlay re-entry below (consecutive entry pairs merged). If no re-entry is mapped, assume entry + 50 m MD. Initial DC30/McKinlay reservoir entry is not excluded.
 
 ## Pay Categories
 
