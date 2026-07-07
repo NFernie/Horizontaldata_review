@@ -1,6 +1,6 @@
 # GRANCHIO 4 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:53 UTC  
+**Generated:** 2026-07-07 05:39 UTC  
 **Formation tops name:** GRANCHIO 4  
 **McKinlay window:** 1678.1 – 2825.0 m MD  
 **DC30 top:** 1678.34 m MD  
@@ -12,7 +12,7 @@
 
 | Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
 |-------------|-------------|-----------------|------------|
-| 1792.2 | 1793.7 | 2089.0 (2 merged entry pairs) | 296.8 |
+| 1792.2 | 1793.7 | 2089.0 | 296.8 |
 
 ## Pay Rules Applied
 

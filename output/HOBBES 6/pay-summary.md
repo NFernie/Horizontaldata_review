@@ -1,6 +1,6 @@
 # HOBBES 6 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:53 UTC  
+**Generated:** 2026-07-07 05:39 UTC  
 **Formation tops name:** HOBBES 6  
 **McKinlay window:** 1685.7 – 2500.0 m MD  
 **DC30 top:** 1685.47 m MD  
@@ -12,7 +12,9 @@
 
 | Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
 |-------------|-------------|-----------------|------------|
-| 1935.0 | 1936.5 | 1985.0 (assumed) (3 merged entry pairs) | 50.0 |
+| 1935.0 | 1936.5 | 1985.0 (assumed) | 50.0 |
+| 2041.9 | 2041.9 | 2091.9 (assumed) | 50.0 |
+| 2334.5 | 2332.0 | 2384.5 (assumed) | 50.0 |
 
 ## Pay Rules Applied
 
@@ -28,11 +30,11 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 526.0 | 64.6% | 4 |
-| Resistivity only | 545.9 | 67.0% | 49 |
-| Matching both | 516.0 | 63.3% | 5 |
+| Cuttings only | 456.0 | 56.0% | 5 |
+| Resistivity only | 504.1 | 61.9% | 39 |
+| Matching both | 456.0 | 56.0% | 5 |
 
-**Sample intervals in McKinlay Member:** 88
+**Sample intervals in McKinlay Member:** 76
 
 ## Cuttings-Only Pay Intervals
 
@@ -41,7 +43,8 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1693.5 | 1711.5 | 18.0 |
 | 1737.0 | 1765.0 | 28.0 |
 | 1795.0 | 1925.0 | 130.0 |
-| 1985.0 | 2335.0 | 350.0 |
+| 1985.0 | 2035.0 | 50.0 |
+| 2095.0 | 2325.0 | 230.0 |
 
 ## Resistivity-Only Pay Intervals
 
@@ -63,7 +66,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1851.7 | 1854.5 | 2.7 |
 | 1854.6 | 1854.9 | 0.3 |
 
-_(34 additional intervals omitted)_
+_(24 additional intervals omitted)_
 
 ## Matching Pay Intervals
 
@@ -72,8 +75,8 @@ _(34 additional intervals omitted)_
 | 1693.5 | 1711.5 | 18.0 |
 | 1737.0 | 1765.0 | 28.0 |
 | 1795.0 | 1925.0 | 130.0 |
-| 1985.0 | 2075.0 | 90.0 |
-| 2085.0 | 2335.0 | 250.0 |
+| 1985.0 | 2035.0 | 50.0 |
+| 2095.0 | 2325.0 | 230.0 |
 
 ## Data Quality Notes
 

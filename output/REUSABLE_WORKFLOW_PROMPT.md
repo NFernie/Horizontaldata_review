@@ -45,7 +45,7 @@ WELL IDENTIFICATION:
 MCKINLAY MEMBER FILTERING (horizontal well logic):
 1. Initial reservoir intersection = shallowest McKinlay Member top MD, cross-reference with DC30 top
 2. Overburden entry = Murta + corresponding McKinlay top at similar depth (within 5 m)
-   → EXCLUDE the full MD interval from the first overburden entry in a sequence to the next lone McKinlay re-entry below (merge consecutive entry pairs)
+   → EXCLUDE from entry depth to next lone McKinlay re-entry below (or entry + 50 m). Entry pairs inside an existing exclusion share that zone.
 3. Target re-entry = lone McKinlay top below an overburden entry pair (NOT the initial shallowest McKinlay)
 4. If no re-entry top exists below a pair, assume re-entry at entry + 50 m MD
 5. Only include sample intervals from McKinlay Member start to TD, outside overburden exclusion intervals

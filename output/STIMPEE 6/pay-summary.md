@@ -1,6 +1,6 @@
 # STIMPEE 6 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:53 UTC  
+**Generated:** 2026-07-07 05:39 UTC  
 **Formation tops name:** STIMPEE 6  
 **McKinlay window:** 1632.4 – 3186.1 m MD  
 **DC30 top:** 1631.04 m MD  
@@ -12,7 +12,7 @@
 
 | Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
 |-------------|-------------|-----------------|------------|
-| 1767.2 | 1765.9 | 1993.0 (2 merged entry pairs) | 225.8 |
+| 1767.2 | 1765.9 | 1993.0 | 225.8 |
 | 2353.9 | 2352.7 | 2396.9 | 43.1 |
 | 2845.5 | 2844.0 | 2939.3 | 93.8 |
 

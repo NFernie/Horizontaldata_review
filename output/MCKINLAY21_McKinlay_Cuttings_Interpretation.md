@@ -1,6 +1,6 @@
 # MCKINLAY 21 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 04:51 UTC  
+**Generated:** 2026-07-07 05:37 UTC  
 **Well:** MCKINLAY 21 (MCKINLAY 21)  
 **TD:** 2417 m MD  
 
@@ -54,7 +54,7 @@
 4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
 5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
 6. **NULL LAS values** (-999.25) excluded from averages.
-7. **Exclusion zones** span from the first Murta/McKinlay overburden entry in a sequence to the next lone McKinlay re-entry below (consecutive entry pairs are merged). If no re-entry is mapped, assume entry + 50 m MD. Initial DC30/McKinlay reservoir entry is not excluded.
+7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if none mapped). Later entry pairs inside an existing exclusion interval are treated as the same overburden excursion. Initial DC30/McKinlay reservoir entry is not excluded.
 8. **Input Sheet only** — Calculations Sheet not used.
 9. **McKinlay legacy spreadsheet:** Sheet1 columns F (TG), G (%SS), H (%fluoro) used directly; column A description text parsed for grain size, fluorescence brightness, and siderite.
 

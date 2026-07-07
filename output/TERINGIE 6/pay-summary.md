@@ -1,6 +1,6 @@
 # TERINGIE 6 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:53 UTC  
+**Generated:** 2026-07-07 05:39 UTC  
 **Formation tops name:** TERINGIE 6  
 **McKinlay window:** 1574.3 – 3444.4 m MD  
 **DC30 top:** 1580.02 m MD  
@@ -14,7 +14,8 @@
 |-------------|-------------|-----------------|------------|
 | 2117.2 | 2119.2 | 2179.9 | 62.7 |
 | 2288.0 | 2290.4 | 2318.3 | 30.3 |
-| 2350.4 | 2350.6 | 2400.4 (assumed) (2 merged entry pairs) | 50.0 |
+| 2350.4 | 2350.6 | 2400.4 (assumed) | 50.0 |
+| 2775.1 | 2777.2 | 2825.1 (assumed) | 50.0 |
 
 ## Pay Rules Applied
 
@@ -30,11 +31,11 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 1005.0 | 53.9% | 17 |
-| Resistivity only | 680.3 | 36.5% | 209 |
-| Matching both | 480.0 | 25.7% | 13 |
+| Cuttings only | 945.0 | 50.7% | 18 |
+| Resistivity only | 641.6 | 34.4% | 200 |
+| Matching both | 420.0 | 22.5% | 13 |
 
-**Sample intervals in McKinlay Member:** 167
+**Sample intervals in McKinlay Member:** 161
 
 ## Cuttings-Only Pay Intervals
 
@@ -49,14 +50,14 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 2565.0 | 2595.0 | 30.0 |
 | 2625.0 | 2645.0 | 20.0 |
 | 2675.0 | 2685.0 | 10.0 |
-| 2765.0 | 2875.0 | 110.0 |
+| 2765.0 | 2775.0 | 10.0 |
+| 2835.0 | 2875.0 | 40.0 |
 | 2895.0 | 2975.0 | 80.0 |
 | 2985.0 | 3045.0 | 60.0 |
 | 3065.0 | 3105.0 | 40.0 |
 | 3125.0 | 3145.0 | 20.0 |
-| 3185.0 | 3205.0 | 20.0 |
 
-_(2 additional intervals omitted)_
+_(3 additional intervals omitted)_
 
 ## Resistivity-Only Pay Intervals
 
@@ -78,7 +79,7 @@ _(2 additional intervals omitted)_
 | 1828.6 | 1828.7 | 0.2 |
 | 1828.9 | 1832.4 | 3.5 |
 
-_(194 additional intervals omitted)_
+_(185 additional intervals omitted)_
 
 ## Matching Pay Intervals
 
@@ -93,7 +94,7 @@ _(194 additional intervals omitted)_
 | 2435.0 | 2535.0 | 100.0 |
 | 2545.0 | 2555.0 | 10.0 |
 | 2675.0 | 2685.0 | 10.0 |
-| 2765.0 | 2835.0 | 70.0 |
+| 2765.0 | 2775.0 | 10.0 |
 | 2895.0 | 2935.0 | 40.0 |
 | 3305.0 | 3325.0 | 20.0 |
 | 3385.0 | 3405.0 | 20.0 |

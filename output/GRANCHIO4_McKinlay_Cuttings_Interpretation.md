@@ -1,6 +1,6 @@
 # GRANCHIO 4 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 04:50 UTC  
+**Generated:** 2026-07-07 05:37 UTC  
 **Well:** GRANCHIO 4 (GRANCHIO 4)  
 **TD:** 2825 m MD  
 
@@ -34,7 +34,7 @@
 **Overburden entry (Murta + corresponding McKinlay within 5 m):**
 | McKinlay entry (m MD) | Murta (m MD) | Δ (m) | Re-entry (m MD) | Zone length (m) |
 |-----------------------|-------------|-------|-----------------|-----------------|
-| 1792.24 | 1793.72 | 1.48 | 2089.00 | 296.8 | (2 entry pairs: 1792.24, 2066.54)
+| 1792.24 | 1793.72 | 1.48 | 2089.00 | 296.8 |
 
 **McKinlay Member analysis window:** 1678.1 – 2825.0 m MD
 
@@ -54,7 +54,7 @@
 4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
 5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
 6. **NULL LAS values** (-999.25) excluded from averages.
-7. **Exclusion zones** span from the first Murta/McKinlay overburden entry in a sequence to the next lone McKinlay re-entry below (consecutive entry pairs are merged). If no re-entry is mapped, assume entry + 50 m MD. Initial DC30/McKinlay reservoir entry is not excluded.
+7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if none mapped). Later entry pairs inside an existing exclusion interval are treated as the same overburden excursion. Initial DC30/McKinlay reservoir entry is not excluded.
 8. **Input Sheet only** — Calculations Sheet not used.
 ## 4. McKinlay Member Sample Intervals
 
