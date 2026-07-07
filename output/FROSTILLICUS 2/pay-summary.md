@@ -1,6 +1,6 @@
 # FROSTILLICUS 2 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:53 UTC  
+**Generated:** 2026-07-07 05:39 UTC  
 **Formation tops name:** FROSTILLICUS 2  
 **McKinlay window:** 1614.7 – 3724.0 m MD  
 **DC30 top:** 1614.15 m MD  
