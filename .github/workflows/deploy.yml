@@ -32,6 +32,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Generate well data
+        env:
+          WORKSPACE: ${{ github.workspace }}
         run: |
           python3 scripts/process_mckinlay_wells.py
           python3 scripts/export_web_data.py

@@ -11,7 +11,11 @@ import numpy as np
 import pandas as pd
 import pdfplumber
 
-WORKSPACE = os.environ.get("WORKSPACE", "/workspace")
+WORKSPACE = (
+    os.environ.get("WORKSPACE")
+    or os.environ.get("GITHUB_WORKSPACE")
+    or os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
 OUTPUT_DIR = os.path.join(WORKSPACE, "output")
 NULL = -999.25
 PAIR_TOLERANCE = 5.0

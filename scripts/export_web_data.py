@@ -15,7 +15,11 @@ from scipy.cluster.hierarchy import linkage
 from scipy.spatial.distance import pdist, squareform
 from scipy.stats import ks_2samp, spearmanr
 
-WORKSPACE = os.environ.get("WORKSPACE", "/workspace")
+WORKSPACE = (
+    os.environ.get("WORKSPACE")
+    or os.environ.get("GITHUB_WORKSPACE")
+    or os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+)
 sys.path.insert(0, os.path.join(WORKSPACE, "scripts"))
 
 import config  # noqa: E402
