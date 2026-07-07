@@ -16,6 +16,11 @@ export function AssistantWidget() {
   const [messages, setMessages] = useState<AssistantMessage[]>([]);
   const [loading, setLoading] = useState(false);
 
+  const handleClear = useCallback(() => {
+    if (loading) return;
+    setMessages([]);
+  }, [loading]);
+
   const handleSubmit = useCallback(async (query: string) => {
     const trimmed = query.trim();
     if (!trimmed || loading) return;
@@ -79,6 +84,7 @@ export function AssistantWidget() {
           messages={messages}
           loading={loading}
           onSubmit={handleSubmit}
+          onClear={handleClear}
         />
       </div>
     </>

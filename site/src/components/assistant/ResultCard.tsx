@@ -1,4 +1,4 @@
-import type { AssistantResult } from "@/types/assistant";
+import type { AssistantResult, KeywordHit } from "@/types/assistant";
 import { cn } from "@/lib/utils";
 import { CitationLink } from "./CitationLink";
 import { INTENT_LABELS } from "./constants";
@@ -6,6 +6,29 @@ import { MarkdownContent } from "./MarkdownContent";
 
 interface ResultCardProps {
   result: AssistantResult;
+}
+
+function KeywordHitList({ hits }: { hits: KeywordHit[] }) {
+  return (
+    <ol className="space-y-3">
+      {hits.map((hit, index) => (
+        <li key={`${hit.source}-${index}`} className="rounded-card border border-border bg-surface px-3 py-2.5">
+          <div className="flex items-start justify-between gap-2">
+            <p className="text-sm font-medium text-text">{hit.title}</p>
+            <span className="shrink-0 font-mono text-[10px] text-text-muted">{hit.score.toFixed(3)}</span>
+          </div>
+          <div className="mt-1.5 text-xs leading-relaxed text-text-muted">
+            <MarkdownContent markdown={hit.snippet} />
+          </div>
+          {hit.route ? (
+            <div className="mt-2">
+              <CitationLink citation={{ label: "Open well", source: hit.source, route: hit.route }} />
+            </div>
+          ) : null}
+        </li>
+      ))}
+    </ol>
+  );
 }
 
 function SummaryGrid({ summary }: { summary: Record<string, string | number | boolean | null> }) {
@@ -51,6 +74,13 @@ export function ResultCard({ result }: ResultCardProps) {
         ) : (
           <SummaryGrid summary={result.summary} />
         )}
+
+        {result.keyword_hits?.length ? (
+          <div className="space-y-2">
+            <p className="text-xs font-medium text-text-muted">Top keyword matches</p>
+            <KeywordHitList hits={result.keyword_hits} />
+          </div>
+        ) : null}
 
         {result.detail_markdown ? (
           <details className="group rounded-card border border-border bg-surface">

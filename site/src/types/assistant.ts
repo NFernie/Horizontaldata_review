@@ -14,6 +14,14 @@ export interface AssistantCitation {
 
 export type AssistantSummary = Record<string, string | number | boolean | null>;
 
+export interface KeywordHit {
+  title: string;
+  snippet: string;
+  score: number;
+  source: string;
+  route?: string;
+}
+
 export interface AssistantResult {
   intent: AssistantIntent;
   title: string;
@@ -21,6 +29,7 @@ export interface AssistantResult {
   detail_markdown?: string;
   citations: AssistantCitation[];
   match_note?: string;
+  keyword_hits?: KeywordHit[];
 }
 
 export interface AssistantResponse {

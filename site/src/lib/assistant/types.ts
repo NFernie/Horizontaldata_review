@@ -6,6 +6,8 @@ export interface IntervalFilter {
   looseGrains?: boolean;
   minWrci?: number;
   maxWrci?: number;
+  minRqi?: number;
+  maxRqi?: number;
   riskClass?: "High" | "Elevated" | "Low";
 }
 

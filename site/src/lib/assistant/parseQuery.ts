@@ -1,5 +1,6 @@
 import type { CorpusWellEntry } from "@/types/corpus";
 import { parseDepth } from "./depthResolver";
+import { expandQuery } from "./synonyms";
 import type { IntervalFilter, ParsedQuery } from "./types";
 import { resolveWell } from "./wellResolver";
 
@@ -65,7 +66,7 @@ function detectStatsTopic(
 
 function detectIntervalFilter(query: string): IntervalFilter | undefined {
   const filter: IntervalFilter = {};
-  if (/\bloose\s+grains?\b/i.test(query) || /\blse\b/i.test(query)) {
+  if (/\bloose\s+grains?\b/i.test(query) || /\blse\b/i.test(query) || /\bloose\b/i.test(query)) {
     filter.looseGrains = true;
   }
   if (/\bhigh\s+risk\b/i.test(query)) {
@@ -73,10 +74,25 @@ function detectIntervalFilter(query: string): IntervalFilter | undefined {
   } else if (/\belevated\b/i.test(query)) {
     filter.riskClass = "Elevated";
   }
+
   const wrciMatch = query.match(/\bwrci\s*(?:>|>=|above|over)\s*(\d+(?:\.\d+)?)/i);
   if (wrciMatch) {
     filter.minWrci = Number.parseFloat(wrciMatch[1]);
   }
+  const wrciMaxMatch = query.match(/\bwrci\s*(?:<|<=|below|under)\s*(\d+(?:\.\d+)?)/i);
+  if (wrciMaxMatch) {
+    filter.maxWrci = Number.parseFloat(wrciMaxMatch[1]);
+  }
+
+  const rqiMatch = query.match(/\brqi\s*(?:>|>=|above|over)\s*(\d+(?:\.\d+)?)/i);
+  if (rqiMatch) {
+    filter.minRqi = Number.parseFloat(rqiMatch[1]);
+  }
+  const rqiMaxMatch = query.match(/\brqi\s*(?:<|<=|below|under)\s*(\d+(?:\.\d+)?)/i);
+  if (rqiMaxMatch) {
+    filter.maxRqi = Number.parseFloat(rqiMaxMatch[1]);
+  }
+
   if (Object.keys(filter).length === 0) return undefined;
   return filter;
 }
@@ -90,17 +106,18 @@ function hasIntervalLookupSignals(query: string, depth?: number, alias?: string)
 
 export function parseQuery(query: string, wells: CorpusWellEntry[]): ParsedQuery {
   const rawQuery = query.trim();
-  const normalized = rawQuery.toLowerCase();
+  const searchQuery = expandQuery(rawQuery);
+  const normalized = searchQuery.toLowerCase();
 
   if (!rawQuery) {
     return { intent: "KEYWORD_FALLBACK", rawQuery };
   }
 
-  const well = resolveWell(rawQuery, wells);
+  const well = resolveWell(searchQuery, wells);
   const depth = parseDepth(rawQuery);
-  const methodKey = detectMethodKey(rawQuery);
-  const summaryType = detectSummaryType(rawQuery);
-  const statsTopic = detectStatsTopic(rawQuery);
+  const methodKey = detectMethodKey(searchQuery);
+  const summaryType = detectSummaryType(searchQuery);
+  const statsTopic = detectStatsTopic(searchQuery);
   const filter = detectIntervalFilter(rawQuery);
 
   if (summaryType) {
@@ -138,11 +155,12 @@ export function parseQuery(query: string, wells: CorpusWellEntry[]): ParsedQuery
       intent: "INTERVAL_FILTER",
       rawQuery,
       alias: well.alias,
+      depth,
       filter,
     };
   }
 
-  if (hasIntervalLookupSignals(rawQuery, depth, well?.alias)) {
+  if (hasIntervalLookupSignals(searchQuery, depth, well?.alias)) {
     return {
       intent: "INTERVAL_LOOKUP",
       rawQuery,

@@ -37,6 +37,7 @@ export interface CorpusIntervalSummary {
   poro_class: string | null;
   loose_grains: boolean;
   fluor: number | null;
+  RQI: number | null;
   WRCI: number | null;
   risk_class: RiskClass;
   flags: string[];

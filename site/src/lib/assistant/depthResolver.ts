@@ -6,6 +6,7 @@ const DEPTH_PATTERNS: RegExp[] = [
   /(\d+(?:\.\d+)?)\s*md\b/i,
   /(?:@|at|depth)\s*(\d+(?:\.\d+)?)/i,
   /(\d+(?:\.\d+)?)\s*m\b/i,
+  /\b(\d{3,5}(?:\.\d+)?)\s*$/i,
 ];
 
 export function parseDepth(query: string): number | undefined {

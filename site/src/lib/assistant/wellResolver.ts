@@ -5,12 +5,15 @@ export interface WellMatch {
   display: string;
 }
 
-const ABBREVIATIONS: Record<string, string> = {
-  j31: "JENA31",
-  j31dw1: "JENA31DW1",
-  jena31: "JENA31",
-  jena31dw1: "JENA31DW1",
-};
+const TOKEN_ABBREVIATIONS: Array<{ pattern: RegExp; alias: string }> = [
+  { pattern: /\bjena\s*31\s*dw1\b/i, alias: "JENA31DW1" },
+  { pattern: /\bjena31dw1\b/i, alias: "JENA31DW1" },
+  { pattern: /\bj31dw1\b/i, alias: "JENA31DW1" },
+  { pattern: /\bjena\s*31\b/i, alias: "JENA31" },
+  { pattern: /\bjena31\b/i, alias: "JENA31" },
+  { pattern: /\bj31\b/i, alias: "JENA31" },
+  { pattern: /\bjena\b/i, alias: "JENA31" },
+];
 
 function normalizeToken(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -39,11 +42,8 @@ export function resolveWell(query: string, wells: CorpusWellEntry[]): WellMatch 
     }
   }
 
-  const abbrevEntries = Object.entries(ABBREVIATIONS).sort(
-    (a, b) => b[0].length - a[0].length,
-  );
-  for (const [abbrev, alias] of abbrevEntries) {
-    if (compact.includes(abbrev)) {
+  for (const { pattern, alias } of TOKEN_ABBREVIATIONS) {
+    if (pattern.test(query)) {
       const well = wells.find((w) => w.alias === alias);
       if (well) {
         return { alias: well.alias, display: well.display };

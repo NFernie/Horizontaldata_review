@@ -41,4 +41,8 @@ describe("resolveWell", () => {
   it("resolves alias abbreviations", () => {
     expect(resolveWell("stats for j31", TEST_WELLS)?.alias).toBe("JENA31");
   });
+
+  it("resolves shorthand jena to Jena 31", () => {
+    expect(resolveWell("loose grains jena 2500", TEST_WELLS)?.alias).toBe("JENA31");
+  });
 });

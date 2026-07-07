@@ -10,6 +10,7 @@ interface AssistantPanelProps {
   messages: AssistantMessage[];
   loading: boolean;
   onSubmit: (query: string) => void;
+  onClear: () => void;
 }
 
 export function AssistantPanel({
@@ -18,6 +19,7 @@ export function AssistantPanel({
   messages,
   loading,
   onSubmit,
+  onClear,
 }: AssistantPanelProps) {
   const titleId = useId();
   const panelRef = useRef<HTMLElement>(null);
@@ -81,15 +83,28 @@ export function AssistantPanel({
               Retrieved answers from interpretations, summaries, and statistics.
             </p>
           </div>
-          <button
-            ref={closeButtonRef}
-            type="button"
-            onClick={onClose}
-            className="rounded-card border border-border bg-surface-2 px-3 py-1.5 text-sm text-text-muted transition-colors hover:border-accent/40 hover:text-text"
-            aria-label="Close panel"
-          >
-            Close
-          </button>
+          <div className="flex shrink-0 items-center gap-2">
+            {messages.length > 0 ? (
+              <button
+                type="button"
+                onClick={onClear}
+                disabled={loading}
+                className="rounded-card border border-border bg-surface-2 px-3 py-1.5 text-sm text-text-muted transition-colors hover:border-accent/40 hover:text-text disabled:cursor-not-allowed disabled:opacity-50"
+                aria-label="Clear conversation"
+              >
+                Clear
+              </button>
+            ) : null}
+            <button
+              ref={closeButtonRef}
+              type="button"
+              onClick={onClose}
+              className="rounded-card border border-border bg-surface-2 px-3 py-1.5 text-sm text-text-muted transition-colors hover:border-accent/40 hover:text-text"
+              aria-label="Close panel"
+            >
+              Close
+            </button>
+          </div>
         </header>
 
         <MessageList messages={messages} loading={loading} onPromptSelect={onSubmit} />

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import math
 import os
 import re
 import sys
@@ -107,10 +108,52 @@ def build_interval_summary(interval: dict) -> dict:
         "poro_class": interval.get("poro_class"),
         "loose_grains": bool(interval.get("loose_grains")),
         "fluor": interval.get("fluor"),
+        "RQI": interval.get("RQI"),
         "WRCI": interval.get("WRCI"),
         "risk_class": interval.get("risk_class"),
         "flags": list(interval.get("flags") or []),
         "long_desc": interval.get("long_desc") or "",
+    }
+
+
+TOKEN_RE = re.compile(r"[a-z0-9]{2,}")
+
+
+def tokenize_search_text(text: str) -> list[str]:
+    return TOKEN_RE.findall(text.lower())
+
+
+def build_bm25_index(chunks: list[dict]) -> dict:
+    """Precompute BM25 term frequencies and IDF for client-side hybrid search."""
+    k1 = 1.5
+    b = 0.75
+    documents: list[dict] = []
+    df: dict[str, int] = {}
+
+    for chunk in chunks:
+        tokens = tokenize_search_text(f"{chunk.get('title', '')} {chunk.get('text', '')}")
+        tf: dict[str, int] = {}
+        for token in tokens:
+            tf[token] = tf.get(token, 0) + 1
+        dl = len(tokens)
+        documents.append({"id": chunk["id"], "dl": dl, "tf": tf})
+        for token in set(tokens):
+            df[token] = df.get(token, 0) + 1
+
+    n_docs = len(documents)
+    avg_dl = sum(doc["dl"] for doc in documents) / n_docs if n_docs else 1.0
+    idf = {
+        term: math.log((n_docs - freq + 0.5) / (freq + 0.5) + 1.0)
+        for term, freq in df.items()
+    }
+
+    return {
+        "k1": k1,
+        "b": b,
+        "avg_dl": avg_dl,
+        "document_count": n_docs,
+        "idf": idf,
+        "documents": documents,
     }
 
 
@@ -370,7 +413,8 @@ def prepare_output_dirs() -> None:
 
     chunks_path = os.path.join(CORPUS_ROOT, "chunks.jsonl")
     manifest_path = os.path.join(CORPUS_ROOT, "manifest.json")
-    for path in (chunks_path, manifest_path):
+    search_index_path = os.path.join(CORPUS_ROOT, "search-index.json")
+    for path in (chunks_path, manifest_path, search_index_path):
         if os.path.isfile(path):
             os.remove(path)
 
@@ -517,6 +561,9 @@ def main() -> int:
         "chunk_counts": chunk_counts,
     }
     write_json(os.path.join(CORPUS_ROOT, "manifest.json"), manifest)
+
+    search_index = build_bm25_index(all_chunks)
+    write_json(os.path.join(CORPUS_ROOT, "search-index.json"), search_index)
 
     validate_corpus(wells, interval_payloads, chunk_counts)
 
