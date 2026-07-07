@@ -4,6 +4,7 @@
 import glob
 import os
 import re
+import sys
 from datetime import datetime, timezone
 
 import numpy as np
@@ -367,6 +368,154 @@ def _pct_from_series(series):
     return vals
 
 
+def parse_mckinlay_description(desc):
+    """Extract sample properties from McKinlay legacy column A description text."""
+    if not isinstance(desc, str) or not desc.strip():
+        return {}
+
+    parsed = {"long_desc": desc.strip()}
+
+    depth_m = re.search(r"Sample\s+@?\s*(\d+(?:\.\d+)?)\s*m", desc, re.I)
+    if depth_m:
+        parsed["depth"] = float(depth_m.group(1))
+
+    ss_parts = re.findall(
+        r"(\d+(?:\.\d+)?)%\s+((?:very fine|vf|fine|med|medium|crs|coarse|trace|tr|minor|occ|predominantly)[^.%]*?)\s+sandstone",
+        desc,
+        re.I,
+    )
+    if not ss_parts:
+        ss_parts = re.findall(r"(\d+(?:\.\d+)?)%\s+(.+?)\s+sandstone", desc, re.I)
+    if not ss_parts:
+        simple_ss = re.search(r"(\d+(?:\.\d+)?)%\s+Sandstone", desc, re.I)
+        if simple_ss:
+            parsed["pct_ss_text"] = float(simple_ss.group(1))
+    elif ss_parts:
+        pct, grain = ss_parts[-1]
+        parsed["pct_ss_text"] = float(pct)
+        parsed["grain_size"] = grain.strip().strip("(),")
+
+    tg_m = re.search(r"TG:\s*([\d.]+)\s*(?:U|Units)?", desc, re.I)
+    if tg_m:
+        parsed["gas_u"] = float(tg_m.group(1))
+
+    if re.search(r"\bno fluor", desc, re.I):
+        parsed["pct_fluor_text"] = 0.0
+        parsed["brightness"] = "none"
+    else:
+        tg_fluor = re.search(r"TG:[^.]*?(\d+(?:\.\d+)?)%\s+(.+?)\s+fluor", desc, re.I)
+        end_fluor = re.search(r"(\d+(?:\.\d+)?)%\s+(.+?)\s+fluor\.?\s*$", desc, re.I)
+        fluor_m = tg_fluor or end_fluor
+        if fluor_m:
+            parsed["pct_fluor_text"] = float(fluor_m.group(1))
+            parsed["brightness"] = fluor_m.group(2).strip().rstrip(".")
+        else:
+            trace_m = re.search(r"(?:TRACE|TR)\s+(.+?)\s+fluor", desc, re.I)
+            if trace_m:
+                parsed["brightness"] = trace_m.group(1).strip().rstrip(".")
+            elif re.search(r"fluorescence", desc, re.I):
+                flu_m = re.search(
+                    r"(\d+(?:\.\d+)?)%\s+(.+?)\s+fluorescence|fluorescence[^.]*?((?:bright|dull|mod)[^.]+)",
+                    desc,
+                    re.I,
+                )
+                if flu_m:
+                    parsed["brightness"] = (flu_m.group(2) or flu_m.group(3) or "").strip()
+
+    sid_m = re.search(r"(trace|rare|common|minor|mnr)\s+siderite", desc, re.I)
+    if sid_m:
+        parsed["fec03_sltst"] = sid_m.group(1).lower()
+
+    return parsed
+
+
+def _to_float(val):
+    if pd.isna(val):
+        return np.nan
+    if isinstance(val, (int, float)):
+        return float(val)
+    s = str(val).strip().lower()
+    if s in {"", "nan", "none", "-"}:
+        return np.nan
+    if s in {"tr", "trace", "t"}:
+        return np.nan
+    try:
+        return float(s)
+    except ValueError:
+        return np.nan
+
+
+def _coalesce_numeric(col_val, text_val):
+    val = _to_float(col_val)
+    if not np.isnan(val):
+        if val <= 1.0:
+            return val * 100
+        return val
+    if text_val is not None:
+        return float(text_val)
+    return np.nan
+
+
+def load_legacy_mckinlay_samples(xlsx_path):
+    """Load McKinlay 20-24 Sheet1 with columns F=TG, G=%SS, H=%fluoro and parse column A."""
+    raw = pd.read_excel(xlsx_path, sheet_name="Sheet1", header=3)
+    raw.columns = [str(c).strip() if pd.notna(c) else f"col_{i}" for i, c in enumerate(raw.columns)]
+
+    # Explicit McKinlay layout: E=%SH, F=TG, G=%SS, H=%fluoro (0-based indices 4-7)
+    if len(raw.columns) >= 8:
+        tg_col = raw.columns[5] if str(raw.columns[5]).upper() == "TG" else _find_col(raw.columns, "TG")
+        ss_col = raw.columns[6] if "%SS" in str(raw.columns[6]).upper() else _find_col(raw.columns, "%SS")
+        fluor_col = raw.columns[7] if "FLUOR" in str(raw.columns[7]).upper() else _find_col(raw.columns, "%fluoro", "%fluor")
+    else:
+        tg_col = _find_col(raw.columns, "TG")
+        ss_col = _find_col(raw.columns, "%SS")
+        fluor_col = _find_col(raw.columns, "%fluoro", "%fluor")
+
+    depth_col = _find_col(raw.columns, "MD", "depth") or _find_depth_col(raw)
+    desc_col = _find_col(raw.columns, "description")
+    if depth_col is None:
+        raise ValueError(f"Depth column not found in legacy sheet for {xlsx_path}")
+
+    rows = []
+    long_map = {}
+    for _, row in raw.iterrows():
+        desc = str(row.get(desc_col, "")) if desc_col else ""
+        parsed = parse_mckinlay_description(desc)
+
+        depth = pd.to_numeric(row.get(depth_col), errors="coerce")
+        if pd.isna(depth) and "depth" in parsed:
+            depth = parsed["depth"]
+        if pd.isna(depth):
+            continue
+
+        depth = float(depth)
+        if desc and "Sample" in desc:
+            long_map[depth] = desc
+
+        pct_ss = _coalesce_numeric(row.get(ss_col) if ss_col else np.nan, parsed.get("pct_ss_text"))
+        pct_fluor = _coalesce_numeric(row.get(fluor_col) if fluor_col else np.nan, parsed.get("pct_fluor_text"))
+        gas_u = _to_float(row.get(tg_col)) if tg_col else np.nan
+        if pd.isna(gas_u) and "gas_u" in parsed:
+            gas_u = parsed["gas_u"]
+
+        rows.append(
+            {
+                "Depth_mMD": depth,
+                "Pct_Sandstone": pct_ss,
+                "Grain_Size": parsed.get("grain_size", np.nan),
+                "Max_Grain_Size": np.nan,
+                "Pct_Fluor": pct_fluor,
+                "Brightness": parsed.get("brightness", np.nan),
+                "Gas_U": gas_u,
+                "FeCO3_SLTST": parsed.get("fec03_sltst", np.nan),
+                "FeCO3_SST": np.nan,
+            }
+        )
+
+    samples = pd.DataFrame(rows)
+    return samples, long_map
+
+
 def load_samples(xlsx_path):
     xl = pd.ExcelFile(xlsx_path)
     long_map = {}
@@ -413,34 +562,7 @@ def load_samples(xlsx_path):
                 if m:
                     long_map[float(m.group(1))] = str(row["Description"])
     else:
-        raw = pd.read_excel(xlsx_path, sheet_name="Sheet1", header=3)
-        raw.columns = [str(c).strip() if pd.notna(c) else f"col_{i}" for i, c in enumerate(raw.columns)]
-        depth_col = _find_depth_col(raw)
-        if depth_col is None:
-            raise ValueError(f"Depth column not found in legacy sheet for {xlsx_path}")
-        ss_col = _find_col(raw.columns, "%SS", "% SS", "% Sandstone")
-        desc_col = _find_col(raw.columns, "description")
-        fluor_col = _find_col(raw.columns, "%fluoro", "% Fluor")
-        gas_col = _find_col(raw.columns, "TG", "Gas")
-        samples = pd.DataFrame(
-            {
-                "Depth_mMD": pd.to_numeric(raw[depth_col], errors="coerce"),
-                "Pct_Sandstone": _pct_from_series(raw[ss_col]) if ss_col else np.nan,
-                "Grain_Size": np.nan,
-                "Max_Grain_Size": np.nan,
-                "Pct_Fluor": _pct_from_series(raw[fluor_col]) if fluor_col else np.nan,
-                "Brightness": np.nan,
-                "Gas_U": pd.to_numeric(raw[gas_col], errors="coerce") if gas_col else np.nan,
-                "FeCO3_SLTST": np.nan,
-                "FeCO3_SST": np.nan,
-            }
-        )
-        if desc_col:
-            for _, row in raw.iterrows():
-                desc = str(row.get(desc_col, ""))
-                m = re.match(r"Sample (\d+(?:\.\d+)?)m", desc)
-                if m:
-                    long_map[float(m.group(1))] = desc
+        samples, long_map = load_legacy_mckinlay_samples(xlsx_path)
 
     samples = samples.dropna(subset=["Depth_mMD"]).reset_index(drop=True)
 
@@ -646,11 +768,17 @@ def write_interpretation(meta, path):
         "6. **NULL LAS values** (-999.25) excluded from averages.",
         f"7. **Exclusion zones** use ±{EXCLUSION_BUFFER:.0f} m around paired overburden tops AND McKinlay target re-entry tops without Murta pairs.",
         "8. **Input Sheet only** — Calculations Sheet not used.",
-        "",
     ]
-    if meta["mudlog_mck"] and abs(meta["mudlog_mck"][0] - meta["mck_start"]) > 10:
+    if "McKinlay" in meta["cfg"]["xlsx"]:
         lines.append(
-            f"9. **McKinlay pick discrepancy:** tops file {meta['mck_start']:.2f} m vs mudlog {meta['mudlog_mck'][0]:.1f} m "
+            "9. **McKinlay legacy spreadsheet:** Sheet1 columns F (TG), G (%SS), H (%fluoro) used directly; "
+            "column A description text parsed for grain size, fluorescence brightness, and siderite."
+        )
+        lines.append("")
+    if meta["mudlog_mck"] and abs(meta["mudlog_mck"][0] - meta["mck_start"]) > 10:
+        n = 10 if "McKinlay" in meta["cfg"]["xlsx"] else 9
+        lines.append(
+            f"{n}. **McKinlay pick discrepancy:** tops file {meta['mck_start']:.2f} m vs mudlog {meta['mudlog_mck'][0]:.1f} m "
             f"(Δ ≈ {abs(meta['mudlog_mck'][0] - meta['mck_start']):.0f} m)."
         )
         lines.append("")
@@ -754,7 +882,7 @@ def write_summary(meta, path):
         f"| File | Purpose |",
         f"|------|---------|",
         f"| `{meta['cfg']['pdf']}` | Mudlog cuttings |",
-        f"| `{meta['cfg']['xlsx']}` → Input Sheet | Sample intervals |",
+        f"| `{meta['cfg']['xlsx']}` → {_sample_sheet_label(meta['cfg']['xlsx'])} | Sample intervals |",
         f"| `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |",
         f"| `{meta['cfg']['las']}` | GR / resistivity |",
         "",
@@ -785,13 +913,24 @@ def write_summary(meta, path):
         f.write("\n".join(lines))
 
 
+def _sample_sheet_label(xlsx_name):
+    if "McKinlay" in xlsx_name or "Frostillicus" in xlsx_name:
+        return "Sheet1 (cols F=TG, G=%SS, H=%fluoro + col A descriptions)"
+    return "Input Sheet"
+
+
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     dc30_df = pd.read_excel(os.path.join(WORKSPACE, "DC30.xlsx"))
     mck_murta_df = pd.read_excel(os.path.join(WORKSPACE, "Mck_Murta.xlsx"))
 
+    only = [a.upper() for a in sys.argv[1:]] if len(sys.argv) > 1 else None
+    wells = WELLS
+    if only:
+        wells = [w for w in WELLS if w["alias"] in only or w["display"].upper().replace(" ", "") in only]
+
     summaries = []
-    for cfg in WELLS:
+    for cfg in wells:
         print(f"Processing {cfg['display']}...")
         meta = process_well(cfg, dc30_df, mck_murta_df)
         alias = cfg["alias"]

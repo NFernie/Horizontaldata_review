@@ -11,7 +11,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 | File | Purpose |
 |------|---------|
 | `McKinlay 20_Mudlog_Spud-3000m_TD_Field Final.pdf` | Mudlog cuttings |
-| `McKinlay 20 Hz Section samples descriptions.xlsx` → Input Sheet | Sample intervals |
+| `McKinlay 20 Hz Section samples descriptions.xlsx` → Sheet1 (cols F=TG, G=%SS, H=%fluoro + col A descriptions) | Sample intervals |
 | `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |
 | `Mck_20` | GR / resistivity |
 

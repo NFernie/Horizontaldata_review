@@ -1,6 +1,6 @@
 # MCKINLAY 23 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 02:31 UTC  
+**Generated:** 2026-07-07 03:09 UTC  
 **Well:** MCKINLAY 23 (MCKINLAY 23)  
 **TD:** 2590 m MD  
 
@@ -55,6 +55,7 @@
 6. **NULL LAS values** (-999.25) excluded from averages.
 7. **Exclusion zones** use ±10 m around paired overburden tops AND McKinlay target re-entry tops without Murta pairs.
 8. **Input Sheet only** — Calculations Sheet not used.
+9. **McKinlay legacy spreadsheet:** Sheet1 columns F (TG), G (%SS), H (%fluoro) used directly; column A description text parsed for grain size, fluorescence brightness, and siderite.
 
 ## 4. McKinlay Member Sample Intervals
 
@@ -67,8 +68,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine-very coarse loose grains, (rare localised sid cmt (max: nan) |
+| Fluorescence | 100.0% Siltstone, 95% very fine to fine aggs, minor fine-very coarse loose grains, (rare localised sid cmt) sandstone. TG: 145U. 100% mod bri |
 | Total Gas | 145.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -93,8 +94,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine-very coarse loose grains, (tr localised sid cmt (max: nan) |
+| Fluorescence | 100.0% Siltstone, 95% very fine to fine aggs, minor fine-very coarse loose grains, (tr localised sid cmt) sandstone. TG: 131U. 100% mod bri-bri |
 | Total Gas | 131.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -119,8 +120,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine-very coarse loose grains, (tr localised sid cmt (max: nan) |
+| Fluorescence | 100.0% Siltstone, 95% very fine to fine aggs, minor fine-very coarse loose grains, (tr localised sid cmt) sandstone. TG: 110U. 100% mod bri |
 | Total Gas | 110.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -146,8 +147,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rare medium-very coarse loose grains (max: nan) |
+| Fluorescence | 100.0% Siltstone, 95% very fine to fine aggs, rare medium-very coarse loose grains sandstone. TG: 110U. 100% mod bri |
 | Total Gas | 110.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -168,13 +169,13 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 
 ### 1715 m MD — Interval 1712.5 – 1717.5 m
 
-**Sample Description (spreadsheet):** 5% Siltstone, 95% nan Sandstone, 100% nan FLUOR, TG 118.0U
+**Sample Description (spreadsheet):** Sample 1710m: 5% Siltstone, 95% very fine to fine aggs, rare medium-very coarse loose grains sandstone. TG: 110U. 100% mod bri fluor.
 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rare medium-very coarse loose grains (max: nan) |
+| Fluorescence | 100.0% Siltstone, 95% very fine to fine aggs, rare medium-very coarse loose grains sandstone. TG: 110U. 100% mod bri |
 | Total Gas | 118.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -200,8 +201,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine-coarse loose grained (max: nan) |
+| Fluorescence | 100.0% Siltstone, 95% very fine to fine aggs, minor fine-coarse loose grained sandstone. TG: 115U. 100% mod bri |
 | Total Gas | 115.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -227,8 +228,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine-very coarse loose grained (max: nan) |
+| Fluorescence | 100.0% Siltstone, 90% very fine to fine aggs, minor fine-very coarse loose grained sandstone. TG: 107U. 100% mod bri |
 | Total Gas | 107.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -254,8 +255,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine-very coarse loose grained (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, minor fine-very coarse loose grained sandstone. TG: 209U. 100% mod bri |
 | Total Gas | 209.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -281,8 +282,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rare fine-very coarse loose grained (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, rare fine-very coarse loose grained sandstone. TG: 210U. 100% bri |
 | Total Gas | 210.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -308,8 +309,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rare fine-coarse loose grained (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, rare fine-coarse loose grained sandstone. TG: 217U. 100% bri |
 | Total Gas | 217.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -334,8 +335,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com fine-coarse loose grained (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com fine-coarse loose grained sandstone. TG: 163U. 100% mod bri-bri |
 | Total Gas | 163.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -361,8 +362,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, (g/t siltstone i/p), trace fine-medium loose grained (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, (g/t siltstone i/p), trace fine-medium loose grained sandstone. TG: 132U. 100% mod bri-dll |
 | Total Gas | 132.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -388,8 +389,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, (g/t siltstone i/p), trace fine loose grained (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, (g/t siltstone i/p), trace fine loose grained sandstone. TG: 110U. 100% dll-mod bri |
 | Total Gas | 110.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -415,8 +416,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, (g/t siltstone i/p), trace fine loose grained (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, (g/t siltstone i/p), trace fine loose grained sandstone. TG: 125U. 100% mod bri-dll |
 | Total Gas | 125.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -442,8 +443,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace fine-med loose grained (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, trace fine-med loose grained sandstone. TG: 127U. 100% mod bri |
 | Total Gas | 127.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -470,8 +471,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rare fine-med loose grained (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, rare fine-med loose grained sandstone. TG: 125U. 100% mod bri-dll |
 | Total Gas | 125.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -498,8 +499,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (g/t siltstone i/p), trace fine loose grained (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs (g/t siltstone i/p), trace fine loose grained sandstone. TG: 104U. 100% dll-mod bri |
 | Total Gas | 104.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -526,8 +527,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (g/t siltstone i/p (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs (g/t siltstone i/p) sandstone. TG: 113U. 100% dll-mod bri |
 | Total Gas | 113.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -553,8 +554,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (g/t siltstone i/p (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs (g/t siltstone i/p) sandstone. TG: 123U. 100% mod bri-dll |
 | Total Gas | 123.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -580,8 +581,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine to medium loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, minor fine to medium loose sandstone. TG: 146U. 100% mod bri-dll |
 | Total Gas | 146.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -607,8 +608,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine to medium loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, minor fine to medium loose sandstone. TG: 189U. 100% mod bri-bri |
 | Total Gas | 189.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -634,8 +635,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine to medium loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, minor fine to medium loose sandstone. TG: 184U. 100% mod bri-bri |
 | Total Gas | 184.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -660,8 +661,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine to medium loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, minor fine to medium loose sandstone. TG: 157U. 100% mod bri-bri |
 | Total Gas | 157.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -686,8 +687,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine to medium loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, minor fine to medium loose sandstone. TG: 148U. 100% mod bri |
 | Total Gas | 148.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -712,8 +713,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, minor fine loose sandstone. TG: 127U. 100% mod bri |
 | Total Gas | 127.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -738,8 +739,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor fine loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, minor fine loose sandstone. TG: 130U. 100% mod bri |
 | Total Gas | 130.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -764,8 +765,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace fine loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, trace fine loose sandstone. TG: 132U. 100% mod bri |
 | Total Gas | 132.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -791,8 +792,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rare fine loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, rare fine loose sandstone. TG: 135U. 100% mod bri-bri |
 | Total Gas | 135.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -818,8 +819,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rare fine loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, rare fine loose sandstone. TG: 125U. 100% mod bri-occ dl |
 | Total Gas | 125.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -845,8 +846,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs sandstone. TG: 120U. 100% mod bri-occ dl |
 | Total Gas | 120.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -872,8 +873,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs sandstone. TG: 120U. 100% mod bri-occ dl |
 | Total Gas | 120.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -894,12 +895,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 
 ### 1850 m MD — Interval 1847.5 – 1852.5 m
 
-**Sample Description (spreadsheet):** 0% Siltstone, 100% nan Sandstone, 100% nan FLUOR, TG 125.0U
+**Sample Description (spreadsheet):** Sample 1850: 100% very fine to fine aggs sandstone. TG: 125U. 100% mod bri-occ dl fluor. Fluor has changed in this sample, from a diffuse cut to more slow blooming cut
 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 125.0 U |
 
@@ -926,8 +927,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs sandstone. TG: 134U. 100% mod bri |
 | Total Gas | 134.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -953,8 +954,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs sandstone. TG: 137U. 100% mod bri |
 | Total Gas | 137.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -979,8 +980,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs sandstone. TG: 136U. 100% mod bri |
 | Total Gas | 136.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1005,8 +1006,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor to common loose grains (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, minor to common loose grains sandstone. TG: 137U. 100% mod bri |
 | Total Gas | 137.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1031,8 +1032,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rare loose grains (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, rare loose grains sandstone. TG: 135U. 100% mod bri |
 | Total Gas | 135.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1057,8 +1058,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, sandstone. TG: 139U. 100% mod bri |
 | Total Gas | 139.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1083,7 +1084,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 134.0 U |
 
@@ -1109,7 +1110,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 134.0 U |
 
@@ -1135,7 +1136,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 134.0 U |
 
@@ -1162,7 +1163,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 132.0 U |
 
@@ -1189,9 +1190,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 130.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1910m: lt gry-pl brn,trnsl-clr,vf-f, 1920 tr-med,wl srt,sbang-sbrnd,wk sil cmt,com pl brn slty-arg mtx,tr-mnr micmic,tr carb spks,rr slty lams,fri,mnr disagg,pr-fr vis por,fluor.
@@ -1216,9 +1218,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 129.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1910m: lt gry-pl brn,trnsl-clr,vf-f, 1920 tr-med,wl srt,sbang-sbrnd,wk sil cmt,com pl brn slty-arg mtx,tr-mnr micmic,tr carb spks,rr slty lams,fri,mnr disagg,pr-fr vis por,fluor.
@@ -1243,8 +1246,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace loose (max: nan) |
+| Fluorescence | 100.0% loose sandstone. TG: 140U. 100% mod bri-dl |
 | Total Gas | 140.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1270,8 +1273,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, minor loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, minor loose sandstone. TG: 140U. 100% mod bri-dl |
 | Total Gas | 140.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1297,8 +1300,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr med gns, minor loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr med gns, minor loose sandstone. TG: 160U. 100% mod bri-bri |
 | Total Gas | 160.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1324,8 +1327,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr med gns, minor loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr med gns, minor loose sandstone. TG: 170U. 100% mod bri-bri |
 | Total Gas | 170.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1350,8 +1353,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr med gns, minor loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr med gns, minor loose sandstone. TG: 180U. 100% bri-mod bri |
 | Total Gas | 180.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1376,8 +1379,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr med gns, minor loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr med gns, minor loose sandstone. TG: 188U. 100% bri-mod bri |
 | Total Gas | 188.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1402,8 +1405,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr-rr med gns, minor loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr-rr med gns, minor loose sandstone. TG: 220U. 100% bri-mod bri |
 | Total Gas | 220.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1428,8 +1431,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr-rr med gns, minor-com loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr-rr med gns, minor-com loose sandstone. TG: 225U. 100% bri-mnr mod bri |
 | Total Gas | 225.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1454,8 +1457,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr-rr med gns, minor-com loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr-rr med gns, minor-com loose sandstone. TG: 215U. 100% bri |
 | Total Gas | 215.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1481,8 +1484,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr-rr med gns, minor loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr-rr med gns, minor loose sandstone. TG: 205U. 100% bri |
 | Total Gas | 205.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1508,8 +1511,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rr med gns, tr loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, rr med gns, tr loose sandstone. TG: 190U. 100% mod bri-bri |
 | Total Gas | 190.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1536,8 +1539,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr loose sandstone. TG: 220U. 100% bri |
 | Total Gas | 220.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1564,8 +1567,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr loose sandstone. TG: 210U. 100% bri |
 | Total Gas | 210.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1592,7 +1595,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine aggs, mnr loose (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
 
@@ -1620,8 +1623,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr loose sandstone. TG: 180U. 100% bri |
 | Total Gas | 180.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1648,8 +1651,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr loose sandstone. TG: 190U. 100% bri |
 | Total Gas | 190.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1675,8 +1678,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine pred lse gns, tr medium grains, vf-f aggs (max: nan) |
+| Fluorescence | 100.0% very fine to fine pred lse gns, tr medium grains, vf-f aggs sandstone. TG: 220U. 100% bri |
 | Total Gas | 220.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1703,7 +1706,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine pred lse gns, rr medium grains, vf-f aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 160.0 U |
 
@@ -1730,7 +1733,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine pred lse gns, rr medium grains, vf-f aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
 
@@ -1757,7 +1760,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine pred lse gns, rr medium grains, vf-f aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 240.0 U |
 
@@ -1784,8 +1787,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine pred lse gns, rr medium grains, vf-f aggs (max: nan) |
+| Fluorescence | 100.0% very fine to fine pred lse gns, rr medium grains, vf-f aggs sandstone. TG: 225U. 100% bri |
 | Total Gas | 225.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1811,8 +1814,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine pred lse gns, rr medium grains, vf-f aggs (max: nan) |
+| Fluorescence | 100.0% very fine to fine pred lse gns, rr medium grains, vf-f aggs sandstone. TG: 195U. 100% bri |
 | Total Gas | 195.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1838,8 +1841,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f lse gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f lse gns sandstone. TG: 180U. 100% mod bri |
 | Total Gas | 180.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1865,8 +1868,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f lse gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f lse gns sandstone. TG: 198U. 100% mod bri |
 | Total Gas | 198.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1891,8 +1894,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f lse gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f lse gns sandstone. TG: 204U. 100% mod bri |
 | Total Gas | 204.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1917,8 +1920,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f lse gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f lse gns sandstone. TG: 231U. 100% mod bri |
 | Total Gas | 231.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1943,8 +1946,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f lse gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f lse gns sandstone. TG: 218U. 100% mod bri |
 | Total Gas | 218.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1969,8 +1972,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f lse, tr med-crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f lse, tr med-crs gns sandstone. TG: 208U. 100% mod bri-bri |
 | Total Gas | 208.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1995,8 +1998,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f lse gns (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, vf-f lse gns sandstone. TG: 192U. 100% mod bri |
 | Total Gas | 192.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2021,8 +2024,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f lse gns (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, vf-f lse gns sandstone. TG: 210U. 100% mod bri-bri |
 | Total Gas | 210.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2047,8 +2050,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f, trace med lse gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f, trace med lse gns sandstone. TG: 219U. 100% mod bri-bri |
 | Total Gas | 219.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2073,8 +2076,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f gns sandstone. TG: 225U. 100% mod bri-bri |
 | Total Gas | 225.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2099,8 +2102,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f gns sandstone. TG: 245U. 100% mod bri-bri |
 | Total Gas | 245.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2125,8 +2128,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f, rr med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f, rr med-v crs gns sandstone. TG: 232U. 100% mod bri-bri |
 | Total Gas | 232.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2151,8 +2154,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f, rr med-crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f, rr med-crs gns sandstone. TG: 206U. 100% mod bri-bri |
 | Total Gas | 206.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2177,8 +2180,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f, tr med-crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f, tr med-crs gns sandstone. TG: 216U. 100% mod bri-bri |
 | Total Gas | 216.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2203,8 +2206,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f, tr med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f, tr med-v crs gns sandstone. TG: 202U. 100% mod bri-bri |
 | Total Gas | 202.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2229,8 +2232,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f gns sandstone. TG: 184U. 100% mod bri-bri |
 | Total Gas | 184.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2255,8 +2258,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-f gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-f gns sandstone. TG: 190U. 100% mod bri-bri |
 | Total Gas | 190.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2281,8 +2284,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr vf-f gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr vf-f gns sandstone. TG: 215U. 100% mod bri-bri |
 | Total Gas | 215.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2307,8 +2310,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr vf-f, tr med-crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr vf-f, tr med-crs gns sandstone. TG: 201U. 100% mod bri-bri |
 | Total Gas | 201.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2333,8 +2336,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr vf-f gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr vf-f gns sandstone. TG: 203U. 100% mod bri-bri |
 | Total Gas | 203.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2359,8 +2362,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr vf-f gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr vf-f gns sandstone. TG: 200U. 100% mod bri-bri |
 | Total Gas | 200.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2385,8 +2388,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 60.0% nan |
+| Grain Size | very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns (max: nan) |
+| Fluorescence | 60.0% siltstone, 90% very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns sandstone. TG: 143U. 60% mod bri |
 | Total Gas | 143.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2411,8 +2414,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 40.0% nan |
+| Grain Size | very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns (max: nan) |
+| Fluorescence | 40.0% siltstone, 90% very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns sandstone. TG: 104U. 40% mod bri |
 | Total Gas | 104.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2437,8 +2440,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 40.0% nan |
+| Grain Size | very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns (max: nan) |
+| Fluorescence | 40.0% siltstone, 90% very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns sandstone. TG: 114U. 40% mod bri |
 | Total Gas | 114.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2463,8 +2466,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 50.0% nan |
+| Grain Size | very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns (max: nan) |
+| Fluorescence | 50.0% siltstone, 95% very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns sandstone. TG: 125U. 50% mod bri |
 | Total Gas | 125.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2489,8 +2492,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 60.0% nan |
+| Grain Size | very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns (max: nan) |
+| Fluorescence | 60.0% very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns sandstone. TG: 123U. 60% mod bri |
 | Total Gas | 123.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2515,8 +2518,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 60.0% nan |
+| Grain Size | very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns (max: nan) |
+| Fluorescence | 60.0% very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns sandstone. TG: 122U. 60% mod bri fluor.Sample 2155m: Trace siltstone, 100% very fine to fine (g/t siltstone i/p) aggs, tr vf-f gns sandstone. TG: 122U. 60% mod bri |
 | Total Gas | 122.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2541,8 +2544,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 75.0% nan |
+| Grain Size | very fine to fine aggs, tr vf-f gns (max: nan) |
+| Fluorescence | 75.0% very fine to fine aggs, tr vf-f gns sandstone. TG: 119U. 75% mod bri |
 | Total Gas | 119.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2567,8 +2570,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr vf-med gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr vf-med gns sandstone. TG: 135U. 100% mod bri-dll |
 | Total Gas | 135.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2593,8 +2596,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rr vf-med gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, rr vf-med gns sandstone. TG: 146U. 100% mod bri-dll |
 | Total Gas | 146.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2619,8 +2622,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, rr f-crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, rr f-crs gns sandstone. TG: 199U. 100% mod bri-bri |
 | Total Gas | 199.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2646,8 +2649,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (tr siderite cement), rr f-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs (tr siderite cement), rr f-v crs gns sandstone. TG: 198U. 100% mod bri-bri |
 | Total Gas | 198.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2673,8 +2676,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs (tr siderite cement), tr f-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs (tr siderite cement), tr f-v crs gns sandstone. TG: 240U. 100% mod bri-bri |
 | Total Gas | 240.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2700,8 +2703,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com med-v crs gns sandstone. TG: 200U. 100% mod bri-bri |
 | Total Gas | 200.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2727,8 +2730,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com med-v crs gns sandstone. TG: 210U. 100% mod bri-bri |
 | Total Gas | 210.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2754,8 +2757,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr med-v crs gns sandstone. TG: 209U. 100% mod bri-bri |
 | Total Gas | 209.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2781,8 +2784,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, com med-v crs gns sandstone. TG: 246U. 100% BRI |
 | Total Gas | 246.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2808,8 +2811,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, com med-v crs gns sandstone. TG: 225U. 100% bri |
 | Total Gas | 225.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2834,8 +2837,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr med-v crs gns (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, mnr med-v crs gns sandstone. TG: 182U. 100% mod bri-bri |
 | Total Gas | 182.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2860,8 +2863,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, com med-v crs gns sandstone. TG: 187U. 100% mod bri-bri |
 | Total Gas | 187.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2886,8 +2889,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com med-v crs gns sandstone. TG: 160U. 100% bri |
 | Total Gas | 160.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2912,8 +2915,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com med-v crs gns sandstone. TG: 163U. 100% bri |
 | Total Gas | 163.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2938,8 +2941,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com med-v crs gns sandstone. TG: 163U. 100% bri |
 | Total Gas | 163.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2964,8 +2967,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr-com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr-com med-v crs gns sandstone. TG: 180U. 100% bri |
 | Total Gas | 180.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2990,8 +2993,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr-com med-v crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, mnr-com med-v crs gns sandstone. TG: 230U. 100% bri |
 | Total Gas | 230.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3016,8 +3019,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace med- crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, trace med- crs gns sandstone. TG: 216U. 100% bri |
 | Total Gas | 216.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3042,8 +3045,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace med- crs gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, trace med- crs gns sandstone. TG: 250U. 100% bri |
 | Total Gas | 250.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3069,8 +3072,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace med loose gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, trace med loose gns sandstone. TG: 285U. 100% mod bri-bri |
 | Total Gas | 285.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3096,8 +3099,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace med loose gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, trace med loose gns sandstone. TG: 215U. 100% mod bri-bri |
 | Total Gas | 215.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3123,8 +3126,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace med and rare crs loose gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, trace med and rare crs loose gns sandstone. TG: 217U. 100% mod bri-bri |
 | Total Gas | 217.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3150,8 +3153,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace med and rare crs loose gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, trace med and rare crs loose gns sandstone. TG: 205U. 100% mod bri-bri |
 | Total Gas | 205.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3177,8 +3180,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr-occ med and crs loose gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr-occ med and crs loose gns sandstone. TG: 240U. 100% bri-occ mod bri |
 | Total Gas | 240.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3204,8 +3207,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr-occ med and crs loose gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr-occ med and crs loose gns sandstone. TG: 215U. 100% bri-occ mod bri |
 | Total Gas | 215.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3232,8 +3235,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, tr-occ med loose gns (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, tr-occ med loose gns sandstone. TG: 204U. 100% bri-occ mod bri |
 | Total Gas | 204.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3259,8 +3262,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred vf-crs loose, tr v crs, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% v crs, very fine to fine aggs, sandstone. TG: 280U. 100% bri |
 | Total Gas | 280.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3286,8 +3289,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred vf-crs loose, mnr v crs, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred vf-crs loose, mnr v crs, very fine to fine aggs, sandstone. TG: 226U. 100% bri |
 | Total Gas | 226.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3313,8 +3316,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f-crs loose, mnr v crs, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f-crs loose, mnr v crs, very fine to fine aggs, sandstone. TG: 225U. 100% bri |
 | Total Gas | 225.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3341,7 +3344,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | f-crs loose, mnr v crs, very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 232.0 U |
 
@@ -3369,8 +3372,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | f-crs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% f-crs loose, very fine to fine aggs, sandstone. TG: 180U. 100% mod bri |
 | Total Gas | 180.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3397,8 +3400,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | f-crs, tr v crs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% v crs loose, very fine to fine aggs, sandstone. TG: 290U. 100% bri |
 | Total Gas | 290.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3424,8 +3427,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | f-crs, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% f-crs, very fine to fine aggs, sandstone. TG: 260U. 100% bri |
 | Total Gas | 260.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3451,7 +3454,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | Siltstone, 95% f-crs, very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 245.0 U |
 
@@ -3478,8 +3481,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | Siltstone, 95% f-med, mnr crs, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% Siltstone, 95% f-med, mnr crs, very fine to fine aggs, sandstone. TG: 250U. 100% bri |
 | Total Gas | 250.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3505,8 +3508,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-med, tr crs, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-med, tr crs, very fine to fine aggs, sandstone. TG: 265U. 100% bri |
 | Total Gas | 265.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3531,8 +3534,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-med, tr crs, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-med, tr crs, very fine to fine aggs, sandstone. TG: 254U. 100% bri |
 | Total Gas | 254.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3557,7 +3560,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | vf-crs, very fine to fine aggs (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 257.0 U |
 
@@ -3583,8 +3586,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs, very fine to fine aggs, sandstone. TG: 290U. 100% bri |
 | Total Gas | 290.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3609,8 +3612,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs, mnr v crs, loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs, mnr v crs, loose, very fine to fine aggs, sandstone. TG: 230U. 100% bri |
 | Total Gas | 230.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3635,8 +3638,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs, mnr v crs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs, mnr v crs loose, very fine to fine aggs, sandstone. TG: 237U. 100% bri |
 | Total Gas | 237.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3661,8 +3664,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | f-crs, com v crs and tr vf loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf loose, very fine to fine aggs, sandstone. TG: 242U. 100% mod bri-bri |
 | Total Gas | 242.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3687,8 +3690,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | f-crs, com v crs and tr vf loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% f-crs, com v crs and tr vf loose, very fine to fine aggs, sandstone. TG: 281U. 100% mod bri-bri |
 | Total Gas | 281.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3713,8 +3716,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | f-crs, com v crs and tr vf loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% f-crs, com v crs and tr vf loose, very fine to fine aggs, sandstone. TG: 245U. 100% bri |
 | Total Gas | 245.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3739,8 +3742,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | f-crs, com v crs and rr vf loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% f-crs, com v crs and rr vf loose, very fine to fine aggs, sandstone. TG: 235U. 100% mod bri-bri |
 | Total Gas | 235.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3765,8 +3768,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | f-crs, mnr v crs loose, very fine to pred fine aggs (max: nan) |
+| Fluorescence | 100.0% f-crs, mnr v crs loose, very fine to pred fine aggs, sandstone. TG: 246U. 100% mod bri-bri |
 | Total Gas | 246.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3791,8 +3794,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-med loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-med loose, very fine to fine aggs, sandstone. TG: 274U. 100% mod bri |
 | Total Gas | 274.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3817,8 +3820,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-med loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-med loose, very fine to fine aggs, sandstone. TG: 284U. 100% mod bri |
 | Total Gas | 284.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3843,8 +3846,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-med and tr crs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-med and tr crs loose, very fine to fine aggs, sandstone. TG: 210U. 100% mod bri |
 | Total Gas | 210.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3869,8 +3872,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 95.0% nan |
+| Grain Size | vf-med and tr crs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 95.0% siltstone, 95% vf-med and tr crs loose, very fine to fine aggs, sandstone. TG: 230U. 95% mod bri |
 | Total Gas | 230.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3895,8 +3898,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs and tr vcrs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs and tr vcrs loose, very fine to fine aggs, sandstone. TG: 300U. 100% bri |
 | Total Gas | 300.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3921,8 +3924,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs and tr vcrs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs and tr vcrs loose, very fine to fine aggs, sandstone. TG: 270U. 100% bri |
 | Total Gas | 270.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3947,8 +3950,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs and tr vcrs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs and tr vcrs loose, very fine to fine aggs, sandstone. TG: 272U. 100% bri |
 | Total Gas | 272.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3973,8 +3976,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs and tr vcrs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs and tr vcrs loose, very fine to fine aggs, sandstone. TG: 290U. 100% bri-mod bri |
 | Total Gas | 290.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3999,8 +4002,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs and tr vcrs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs and tr vcrs loose, very fine to fine aggs, sandstone. TG: 300U. 100% bri-mod bri |
 | Total Gas | 300.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4025,8 +4028,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs and tr vcrs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs and tr vcrs loose, very fine to fine aggs, sandstone. TG: 230U. 100% bri-mod bri |
 | Total Gas | 230.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4051,8 +4054,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | vf-crs and tr vcrs loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% vf-crs and tr vcrs loose, very fine to fine aggs, sandstone. TG: 252U. 100% bri-mod bri |
 | Total Gas | 252.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4077,8 +4080,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, vf-v crs loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, vf-v crs loose, sandstone. TG: 250U. 100% bri-mod bri |
 | Total Gas | 250.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4103,8 +4106,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com f-v crs loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com f-v crs loose sandstone. TG: 302U. 100% bri |
 | Total Gas | 302.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4129,8 +4132,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com med-v crs loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com med-v crs loose sandstone. TG: 259U. 100% bri-mod bri |
 | Total Gas | 259.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4155,8 +4158,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com f-crs, mnr v crs loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com f-crs, mnr v crs loose sandstone. TG: 266U. 100% bri-mod bri |
 | Total Gas | 266.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4181,8 +4184,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com f-crs, rr v crs loose (max: nan) |
+| Fluorescence | 100.0% very fine to fine aggs, com f-crs, rr v crs loose sandstone. TG: 268U. 100% bri-mod bri |
 | Total Gas | 268.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4207,8 +4210,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f-crs, rr v crs loose, mnr very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f-crs, rr v crs loose, mnr very fine to fine aggs, sandstone. TG: 318U. 100% mod bri-bri |
 | Total Gas | 318.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4234,8 +4237,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f-v crs loose, mnr very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f-v crs loose, mnr very fine to fine aggs, sandstone. TG: 250U. 100% mod bri-bri |
 | Total Gas | 250.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4261,8 +4264,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f-crs,rr v crs loose, com very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f-crs,rr v crs loose, com very fine to fine aggs, sandstone. TG: 245U. 100% mod bri-bri |
 | Total Gas | 245.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4288,8 +4291,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred very fine to fine aggs, com f-v crs loose (max: nan) |
+| Fluorescence | 100.0% pred very fine to fine aggs, com f-v crs loose, sandstone. TG: 294U. 100% bri-mod bri |
 | Total Gas | 294.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4315,8 +4318,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | siltstone, 90% pred very fine to fine aggs, com f-v crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 90% pred very fine to fine aggs, com f-v crs loose, sandstone. TG: 297U. 100% bri-mod bri |
 | Total Gas | 297.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4342,8 +4345,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | siltstone, 95% pred very fine to fine aggs, com f- crs, rr v crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% pred very fine to fine aggs, com f- crs, rr v crs loose, sandstone. TG: 267U. 100% mod bri-bri |
 | Total Gas | 267.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4369,8 +4372,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f- v crs loose, mnr very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f- v crs loose, mnr very fine to fine aggs, sandstone. TG: 234U. 100% mod bri-bri |
 | Total Gas | 234.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4396,8 +4399,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f- v crs loose, rr very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f- v crs loose, rr very fine to fine aggs, sandstone. TG: 233U. 100% bri-mod bri |
 | Total Gas | 233.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4422,8 +4425,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f- crs, rr v crs loose, trace very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f- crs, rr v crs loose, trace very fine to fine aggs, sandstone. TG: 279U. 100% mod bri-bri |
 | Total Gas | 279.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4448,8 +4451,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f- v crs loose, trace very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f- v crs loose, trace very fine to fine aggs, sandstone. TG: 203U. 100% mod bri-bri |
 | Total Gas | 203.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4474,8 +4477,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f- v crs loose, trace very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f- v crs loose, trace very fine to fine aggs, sandstone. TG: 185U. 100% mod bri-bri |
 | Total Gas | 185.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4500,8 +4503,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f- v crs loose, mnr very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f- v crs loose, mnr very fine to fine aggs, sandstone. TG: 240U. 100% mod bri-bri |
 | Total Gas | 240.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4526,8 +4529,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | siltstone, 95% pred very fine to fine aggs, com f-crs, rr v crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% pred very fine to fine aggs, com f-crs, rr v crs loose, sandstone. TG: 240U. 100% bri-mod bri |
 | Total Gas | 240.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4552,8 +4555,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | siltstone, 90% pred very fine to fine aggs, com f-crs, rr v crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 90% pred very fine to fine aggs, com f-crs, rr v crs loose, sandstone. TG: 239U. 100% bri-mod bri |
 | Total Gas | 239.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4578,8 +4581,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | siltstone, 95% pred very fine to fine aggs, com f-v crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% pred very fine to fine aggs, com f-v crs loose, sandstone. TG: 222U. 100% bri-mod bri |
 | Total Gas | 222.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4604,8 +4607,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, com f-v crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 95% very fine to fine aggs, com f-v crs loose, sandstone. TG: 216U. 100% bri-mod bri |
 | Total Gas | 216.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4630,8 +4633,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f-crs, rr v crs, loose, very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f-crs, rr v crs, loose, very fine to fine aggs, sandstone. TG: 214U. 100% mod bri |
 | Total Gas | 214.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4656,8 +4659,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | pred f-med, tr crs loose, mnr very fine to fine aggs (max: nan) |
+| Fluorescence | 100.0% pred f-med, tr crs loose, mnr very fine to fine aggs, sandstone. TG: 230U. 100% mod bri-bri |
 | Total Gas | 230.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4682,8 +4685,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | siltstone, 90% pred very fine to fine aggs, com f-med loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 90% pred very fine to fine aggs, com f-med loose, sandstone. TG: 233U. 100% mod bri-bri |
 | Total Gas | 233.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4708,8 +4711,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | siltstone, 90% pred very fine to fine aggs, mnr f-crs, tr v crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 90% pred very fine to fine aggs, mnr f-crs, tr v crs loose, sandstone. TG: 268U. 100% mod bri-bri |
 | Total Gas | 268.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4734,8 +4737,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | siltstone, 90% pred very fine to fine aggs, mnr f-med, tr crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 90% pred very fine to fine aggs, mnr f-med, tr crs loose, sandstone. TG: 238U. 100% mod bri |
 | Total Gas | 238.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4760,8 +4763,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | siltstone, 85% pred very fine to fine aggs, rr med to very crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 85% pred very fine to fine aggs, rr med to very crs loose, sandstone. TG: 199U. 100% mod bri |
 | Total Gas | 199.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4786,8 +4789,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, trace med to very crs loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 75% very fine to fine aggs, trace med to very crs loose, sandstone. TG: 187U. 75% mod bri-dll |
 | Total Gas | 187.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4806,8 +4809,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine aggs, mnr fine to medium loose (max: nan) |
+| Fluorescence | 100.0% siltstone, 85% very fine to fine aggs, mnr fine to medium loose, sandstone. TG: 219U. 100% mod bri |
 | Total Gas | 219.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_

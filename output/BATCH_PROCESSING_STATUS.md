@@ -39,9 +39,9 @@ Two sample spreadsheet formats are supported:
 | Format | Wells | Sheet |
 |--------|-------|-------|
 | Standard | Jena, Biala, Granchio, Hobbes, Stimpee, Teringie | `Input Sheet` |
-| Legacy | Frostillicus 2, McKinlay 20–24 | `Sheet1` (header row 4) |
+| McKinlay legacy format | Frostillicus 2, McKinlay 20–24 | `Sheet1` (F=TG, G=%SS, H=%fluoro + col A text) |
 
-Legacy format provides description text and %SS/TG but not grain size or fluorescence brightness fields.
+Legacy format provides description text, **Sheet1 columns F (TG), G (%SS), H (%fluoro)**, plus parsed grain size and fluorescence brightness from column A.
 
 ## Formation Tops Name Mapping
 
