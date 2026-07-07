@@ -1,0 +1,3 @@
+# Corpus Assistant Index
+
+This directory holds a pre-built search index for the McKinlay Water-Risk Corpus Assistant: per-well interval records (cuttings interpretations with full markdown detail), pay and process summaries, statistical method definitions from `New Statistical Methods.md`, and pointers to live JSON statistics. The index is generated automatically by `scripts/build_corpus_index.py` during CI deploy (after `process_mckinlay_wells.py` and `export_web_data.py`), so it always matches the interpretations and data on the site. Until that script runs, this folder may contain only this README.

@@ -37,7 +37,7 @@ The assistant returns **raw retrieved text** with **citations** — no LLM synth
 | **Answer format** | Condensed summary **+** “Show full detail” expand (verbatim MD / full record) |
 | **Depth matching** | Nearest-interval matching acceptable (e.g. 2500 m → 2497.5–2502.5 m sample) |
 | **Access** | Public on GitHub Pages |
-| **Chat placement** | *Not specified in brief* — **Phase 3 default:** dedicated `/assistant` route + sidebar nav item. Floating widget deferred to optional Phase 5. |
+| **Chat placement** | **Floating widget on all pages** (Phase 3) — persistent launcher in `AppShell`; panel/drawer opens over current view. No dedicated `/assistant` route or sidebar nav item. |
 
 ---
 
@@ -58,7 +58,7 @@ build_corpus_index.py  ──► site/public/corpus/   ▼
                               └─ chunks.jsonl     └─ KEYWORD_SEARCH (Fuse.js)
                                         │
                                         ▼
-                              Assistant UI (/assistant)
+                              AssistantPanel (floating widget in AppShell)
                               summary + Show full detail + citations
 ```
 
@@ -92,9 +92,9 @@ build_corpus_index.py  ──► site/public/corpus/   ▼
 | **0** | Scope + corpus schema | Prerequisite |
 | **1** | `build_corpus_index.py` + CI hook | Prerequisite |
 | **2** | Client query router + parsers | Prerequisite |
-| **3** | `/assistant` UI + nav + acceptance tests | **✅ Launch** |
+| **3** | Floating assistant widget + panel UI + acceptance tests | **✅ Launch** |
 | **4** | Client-side semantic / Fuse ranking improvements | Optional |
-| **5** | Floating widget + LLM/backend (if policy changes) | Optional |
+| **5** | LLM synthesis / backend (if policy changes) | Optional |
 
 Phases 4–5 must **not** block Phase 3. The Phase 3 build is complete without them.
 
@@ -298,21 +298,25 @@ Acceptance: router returns typed AssistantResult with { summary, detail_markdown
 
 ---
 
-## 9. Phase 3 — Assistant UI (production launch)
+## 9. Phase 3 — Floating assistant widget (production launch)
 
 ### New files
 
-- `site/src/pages/Assistant.tsx`
+- `site/src/components/assistant/AssistantWidget.tsx` — floating launcher + panel shell (mounted in `AppShell`)
+- `site/src/components/assistant/AssistantPanel.tsx` — slide-over / drawer content area
 - `site/src/components/assistant/MessageList.tsx`
 - `site/src/components/assistant/QueryInput.tsx`
 - `site/src/components/assistant/ResultCard.tsx` — summary + collapsible “Show full detail”
 - `site/src/components/assistant/CitationLink.tsx`
 - `site/src/components/assistant/SuggestedPrompts.tsx`
 
-### Routing & nav
+### Placement (all pages)
 
-- Add route: `/assistant` in `App.tsx`
-- Add nav item **Assistant** in `AppShell.tsx` (after Methodology)
+- Mount `<AssistantWidget />` in `AppShell.tsx` so it appears on **every route** (Portfolio, Well Detail, Water Risk, Compare, Methodology, Intra-well).
+- **Floating launcher button** — fixed bottom-right (or bottom-left on mobile if needed); clear label e.g. “Ask corpus” or search icon + text.
+- **Panel** — opens as a slide-over drawer (desktop) or near full-screen sheet (mobile); does not navigate away from the current page.
+- **No** dedicated `/assistant` route and **no** sidebar nav item (widget is the entry point).
+- Closing the panel returns the user to the same page and scroll position.
 
 ### UI behaviour
 
@@ -325,33 +329,38 @@ Acceptance: router returns typed AssistantResult with { summary, detail_markdown
    - Citations: source file, links to `/well/{alias}`, `/intra/{alias}`, `/water-risk` where relevant
 4. **Nearest-depth note** when applicable.
 5. **No results** — helpful message + keyword fallback results if any.
-6. **Accessibility** — keyboard submit, focus management, `aria-expanded` on detail toggle.
-7. **Mobile** — full-width layout, readable monospace for depths.
+6. **Accessibility** — launcher is keyboard-focusable; `aria-expanded` on panel; focus trap while open; Escape closes panel; `aria-expanded` on detail toggle.
+7. **Mobile** — panel uses most of viewport height; launcher remains reachable; readable monospace for depths.
+8. **Z-index** — panel above sidebar overlay but respects existing `AppShell` stacking.
 
 ### Styling
 
 - Reuse existing design tokens (`tokens.css`), `Card`, `RiskBadge` where applicable.
-- Match dark theme of AppShell.
+- Match dark theme of AppShell; launcher uses accent border/background for discoverability.
 
 ### Composer prompt — Phase 3
 
 ```
 Read chatbot-plan.md §9 (Phase 3). Load ui-ux-pro-max skill for layout polish.
 
-Implement production Assistant page:
-- site/src/pages/Assistant.tsx at route /assistant
-- Components: MessageList, QueryInput, ResultCard (summary + "Show full detail" expand), CitationLink, SuggestedPrompts
-- Wire to Phase 2 router; render markdown detail with a safe markdown component (react-markdown or existing pattern)
-- Add sidebar nav item "Assistant"
-- Suggested prompts must include: "cuttings at 2500 m MD in Jena 31", "how is WRCI calculated", "pay summary Jena 31DW1", "flagged zones Jena 31"
+Implement production floating Corpus Assistant widget (NOT a dedicated /assistant page):
+- site/src/components/assistant/AssistantWidget.tsx + AssistantPanel.tsx
+- Mount AssistantWidget in AppShell.tsx on all pages
+- Floating launcher (fixed position) opens slide-over panel with: MessageList, QueryInput,
+  ResultCard (summary + "Show full detail" expand), CitationLink, SuggestedPrompts
+- Wire to Phase 2 router; render markdown detail with a safe markdown component
+- Do NOT add /assistant route or sidebar nav item
+- Suggested prompts must include: "cuttings at 2500 m MD in Jena 31", "how is WRCI calculated",
+  "pay summary Jena 31DW1", "flagged zones Jena 31"
 
 Acceptance (production gate):
 - npm run build succeeds
-- /assistant loads on GitHub Pages base path /Horizontaldata_review/
+- Floating launcher visible on Portfolio, Well Detail, and Methodology routes
+- Panel opens/closes without route change; Escape and close button work
 - Example query returns condensed summary + expandable full MD for JENA31 @ 2500 m
 - Method query returns section from New Statistical Methods.md
-- No network calls outside site origin (except none needed)
-- Works without JavaScript errors in console
+- No network calls outside site origin
+- No console errors on GitHub Pages base path /Horizontaldata_review/
 
 This phase is the launch milestone. Phases 4–5 are NOT in scope for this prompt.
 ```
@@ -383,7 +392,7 @@ Acceptance: "loose grains jena 2500" still resolves via INTERVAL_FILTER or KEYWO
 
 ---
 
-## 11. Phase 5 — Optional: UX extensions (policy change required)
+## 11. Phase 5 — Optional: LLM / backend extensions (policy change required)
 
 **Not compatible with current “GitHub only / no API” decision unless policy changes.**
 
@@ -391,16 +400,17 @@ Acceptance: "loose grains jena 2500" still resolves via INTERVAL_FILTER or KEYWO
 
 | Option | Requires |
 |--------|----------|
-| Floating assistant widget on all pages | Phase 3 components reused in `AppShell` |
 | LLM synthesis with citations | Serverless backend + API key |
 | Precomputed embeddings in browser | Large download; transformers.js |
+| Dedicated `/assistant` full-page view | Optional route reusing Phase 3 panel components |
 
 ### Composer prompt — Phase 5 (optional)
 
 ```
 Read chatbot-plan.md §11 (Phase 5). Only implement if stakeholder approves backend/API.
 
-If approved: add floating Assistant drawer to AppShell reusing ResultCard components.
+If approved: add optional LLM answer synthesis behind a serverless endpoint, or a dedicated
+/assistant full-page route reusing existing AssistantPanel components.
 If not approved: skip this phase entirely.
 ```
 
@@ -410,7 +420,8 @@ If not approved: skip this phase entirely.
 
 - [ ] `python3 scripts/build_corpus_index.py` runs in CI before `npm run build`
 - [ ] `site/public/corpus/` deployed with dist
-- [ ] `/assistant` reachable from sidebar
+- [ ] Floating assistant launcher visible on all main routes
+- [ ] Panel opens/closes without leaving current page
 - [ ] Interval query: Jena 31 @ 2500 m → summary + full detail expand
 - [ ] Method query: “WRCI” → `New Statistical Methods.md` §1.1 content
 - [ ] Pay summary query: Jena 31 → pay-summary content
@@ -479,7 +490,7 @@ UI:
 | Large `chunks.jsonl` download | Gzip in build; or fetch per-alias interval JSON only |
 | Keyword queries too weak | Phase 4 BM25; Phase 3 still has structured intents |
 | Mudlog only in MD not JSON | Phase 1 copies full MD section into `detail_markdown` |
-| GitHub Pages SPA routing | HashRouter already in use — `/assistant` works |
+| Widget obscures content on small screens | Mobile sheet layout; launcher repositioned if needed |
 
 ---
 
@@ -498,7 +509,8 @@ site/public/corpus/chunks.jsonl
 site/public/corpus/stats/index.json
 site/src/types/corpus.ts
 site/src/lib/assistant/**/*.ts
-site/src/pages/Assistant.tsx
+site/src/components/assistant/AssistantWidget.tsx
+site/src/components/assistant/AssistantPanel.tsx
 site/src/components/assistant/*.tsx
 .github/workflows/deploy.yml           # MODIFIED
 ```
@@ -510,3 +522,4 @@ site/src/components/assistant/*.tsx
 | Date | Change |
 |------|--------|
 | 2026-07-07 | Initial plan — Phase 3 production target; Phases 4–5 optional; stakeholder decisions locked |
+| 2026-07-07 | Chat placement locked: floating widget on all pages in Phase 3 (not /assistant route) |
