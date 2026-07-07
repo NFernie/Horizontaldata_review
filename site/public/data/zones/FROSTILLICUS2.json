@@ -1,0 +1,34 @@
+{
+  "alias": "FROSTILLICUS2",
+  "display": "FROSTILLICUS 2",
+  "zones": [
+    {
+      "entry": 1721.08,
+      "murta": 1719.13,
+      "re_entry": 1757.04,
+      "length": 35.960000000000036,
+      "default_reentry": false
+    },
+    {
+      "entry": 2530.15,
+      "murta": 2527.08,
+      "re_entry": 2675.74,
+      "length": 145.5899999999997,
+      "default_reentry": false
+    },
+    {
+      "entry": 2776.54,
+      "murta": 2774.4,
+      "re_entry": 2806.48,
+      "length": 29.940000000000055,
+      "default_reentry": false
+    },
+    {
+      "entry": 3689.9,
+      "murta": 3688.49,
+      "re_entry": 3739.9,
+      "length": 50.0,
+      "default_reentry": true
+    }
+  ]
+}

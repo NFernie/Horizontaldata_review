@@ -1,0 +1,34 @@
+{
+  "alias": "TERINGIE6",
+  "display": "TERINGIE 6",
+  "zones": [
+    {
+      "entry": 2117.2,
+      "murta": 2119.17,
+      "re_entry": 2179.89,
+      "length": 62.690000000000055,
+      "default_reentry": false
+    },
+    {
+      "entry": 2288.0,
+      "murta": 2290.38,
+      "re_entry": 2318.27,
+      "length": 30.269999999999982,
+      "default_reentry": false
+    },
+    {
+      "entry": 2350.37,
+      "murta": 2350.56,
+      "re_entry": 2401.5,
+      "length": 51.13000000000011,
+      "default_reentry": false
+    },
+    {
+      "entry": 2775.14,
+      "murta": 2777.2,
+      "re_entry": 2814.73,
+      "length": 39.590000000000146,
+      "default_reentry": false
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "alias": "STIMPEE7",
+  "display": "STIMPEE 7",
+  "flagged_zones": [
+    {
+      "depth": 1725.0,
+      "top": 1722.5,
+      "bot": 1727.5,
+      "WRCI": 46.35,
+      "RQI": 0.65869579341036,
+      "risk_class": "Elevated",
+      "flags": [
+        "highperm"
+      ],
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 2,
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "avg_GR": 95.75323000775757,
+        "avg_RES_DEEP": 57.228796641,
+        "res_sep": 19.122314857666673
+      }
+    },
+    {
+      "depth": 1730.0,
+      "top": 1727.5,
+      "bot": 1732.5,
+      "WRCI": 43.12,
+      "RQI": 0.635982313317065,
+      "risk_class": "Elevated",
+      "flags": [
+        "highperm"
+      ],
+      "evidence": {
+        "pct_ss": 95.0,
+        "grain_ordinal": 2,
+        "poro_class": "fr",
+        "loose_grains": false,
+        "fluor": 100,
+        "avg_GR": 86.45386042742425,
+        "avg_RES_DEEP": 51.66420595575758,
+        "res_sep": 16.765914859212124
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "alias": "BIALA19",
+  "display": "BIALA 19",
+  "zones": [
+    {
+      "entry": 2138.77,
+      "murta": 2138.77,
+      "re_entry": 2172.63,
+      "length": 33.86000000000013,
+      "default_reentry": false
+    },
+    {
+      "entry": 2648.49,
+      "murta": 2644.93,
+      "re_entry": 2742.95,
+      "length": 94.46000000000004,
+      "default_reentry": false
+    },
+    {
+      "entry": 3174.25,
+      "murta": 3176.03,
+      "re_entry": 3227.71,
+      "length": 53.460000000000036,
+      "default_reentry": false
+    },
+    {
+      "entry": 3420.2,
+      "murta": 3421.98,
+      "re_entry": 3432.67,
+      "length": 12.470000000000255,
+      "default_reentry": false
+    }
+  ]
+}

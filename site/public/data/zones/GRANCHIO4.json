@@ -1,0 +1,20 @@
+{
+  "alias": "GRANCHIO4",
+  "display": "GRANCHIO 4",
+  "zones": [
+    {
+      "entry": 1792.24,
+      "murta": 1793.72,
+      "re_entry": 1829.45,
+      "length": 37.210000000000036,
+      "default_reentry": false
+    },
+    {
+      "entry": 2066.54,
+      "murta": 2068.0,
+      "re_entry": 2089.0,
+      "length": 22.460000000000036,
+      "default_reentry": false
+    }
+  ]
+}

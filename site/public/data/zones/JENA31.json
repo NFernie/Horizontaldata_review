@@ -1,0 +1,27 @@
+{
+  "alias": "JENA31",
+  "display": "JENA 31",
+  "zones": [
+    {
+      "entry": 2794.81,
+      "murta": 2794.65,
+      "re_entry": 2842.67,
+      "length": 47.86000000000013,
+      "default_reentry": false
+    },
+    {
+      "entry": 3197.73,
+      "murta": 3197.73,
+      "re_entry": 3238.04,
+      "length": 40.309999999999945,
+      "default_reentry": false
+    },
+    {
+      "entry": 3332.41,
+      "murta": 3331.56,
+      "re_entry": 3382.41,
+      "length": 50.0,
+      "default_reentry": true
+    }
+  ]
+}

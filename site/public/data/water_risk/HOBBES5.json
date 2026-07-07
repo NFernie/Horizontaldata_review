@@ -1,0 +1,86 @@
+{
+  "alias": "HOBBES5",
+  "display": "HOBBES 5",
+  "flagged_zones": [
+    {
+      "depth": 1914,
+      "top": 1912.0,
+      "bot": 1915.5,
+      "WRCI": 41.85,
+      "RQI": 0.49018188254755357,
+      "risk_class": "Elevated",
+      "flags": [],
+      "evidence": {
+        "pct_ss": 90,
+        "grain_ordinal": 2,
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 40.0,
+        "avg_GR": 107.66747383391304,
+        "avg_RES_DEEP": 20.12586958517392,
+        "res_sep": 3.6655260168695705
+      }
+    },
+    {
+      "depth": 1944,
+      "top": 1942.5,
+      "bot": 1945.5,
+      "WRCI": 40.89,
+      "RQI": 0.39542011925929965,
+      "risk_class": "Elevated",
+      "flags": [],
+      "evidence": {
+        "pct_ss": 70,
+        "grain_ordinal": 2,
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 50.0,
+        "avg_GR": 99.01878437268422,
+        "avg_RES_DEEP": 25.078289533842103,
+        "res_sep": 5.11578961410526
+      }
+    },
+    {
+      "depth": 2440,
+      "top": 2435.0,
+      "bot": 2445.0,
+      "WRCI": 28.88,
+      "RQI": 0.7079766306092665,
+      "risk_class": "Elevated",
+      "flags": [
+        "lowres"
+      ],
+      "evidence": {
+        "pct_ss": 100,
+        "grain_ordinal": 5,
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "avg_GR": 85.30999998613635,
+        "avg_RES_DEEP": 19.437800089530302,
+        "res_sep": -0.14206499034848363
+      }
+    },
+    {
+      "depth": 2430,
+      "top": 2425.0,
+      "bot": 2435.0,
+      "WRCI": 26.4,
+      "RQI": 0.64748800671242,
+      "risk_class": "Elevated",
+      "flags": [
+        "lowres"
+      ],
+      "evidence": {
+        "pct_ss": 95,
+        "grain_ordinal": 5,
+        "poro_class": "none",
+        "loose_grains": false,
+        "fluor": 100.0,
+        "avg_GR": 88.90934495187692,
+        "avg_RES_DEEP": 19.49560001076923,
+        "res_sep": 0.04681537330769814
+      }
+    }
+  ]
+}

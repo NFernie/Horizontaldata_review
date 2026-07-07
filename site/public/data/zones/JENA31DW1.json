@@ -1,0 +1,27 @@
+{
+  "alias": "JENA31DW1",
+  "display": "JENA 31DW1",
+  "zones": [
+    {
+      "entry": 2377.57,
+      "murta": 2375.43,
+      "re_entry": 2407.51,
+      "length": 29.940000000000055,
+      "default_reentry": false
+    },
+    {
+      "entry": 2965.71,
+      "murta": 2967.84,
+      "re_entry": 3243.73,
+      "length": 278.02,
+      "default_reentry": false
+    },
+    {
+      "entry": 3369.92,
+      "murta": 3365.64,
+      "re_entry": 3410.55,
+      "length": 40.63000000000011,
+      "default_reentry": false
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "alias": "HOBBES6",
+  "display": "HOBBES 6",
+  "zones": [
+    {
+      "entry": 1934.99,
+      "murta": 1936.48,
+      "re_entry": 1967.35,
+      "length": 32.3599999999999,
+      "default_reentry": false
+    },
+    {
+      "entry": 2041.92,
+      "murta": 2041.92,
+      "re_entry": 2077.33,
+      "length": 35.409999999999854,
+      "default_reentry": false
+    },
+    {
+      "entry": 2334.51,
+      "murta": 2332.0,
+      "re_entry": 2384.51,
+      "length": 50.0,
+      "default_reentry": true
+    }
+  ]
+}

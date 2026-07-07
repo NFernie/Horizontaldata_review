@@ -1,0 +1,34 @@
+{
+  "alias": "STIMPEE6",
+  "display": "STIMPEE 6",
+  "zones": [
+    {
+      "entry": 1767.21,
+      "murta": 1765.88,
+      "re_entry": 1894.66,
+      "length": 127.45000000000005,
+      "default_reentry": false
+    },
+    {
+      "entry": 1954.34,
+      "murta": 1956.0,
+      "re_entry": 1993.0,
+      "length": 38.66000000000008,
+      "default_reentry": false
+    },
+    {
+      "entry": 2353.86,
+      "murta": 2352.74,
+      "re_entry": 2396.93,
+      "length": 43.06999999999971,
+      "default_reentry": false
+    },
+    {
+      "entry": 2845.46,
+      "murta": 2844.0,
+      "re_entry": 2939.3,
+      "length": 93.84000000000015,
+      "default_reentry": false
+    }
+  ]
+}
