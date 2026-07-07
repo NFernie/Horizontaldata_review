@@ -1,6 +1,6 @@
 # MCKINLAY 24 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 05:39 UTC  
+**Generated:** 2026-07-07 12:48 UTC  
 **Formation tops name:** MCKINLAY 24  
 **McKinlay window:** 1628.6 – 2598.0 m MD  
 **DC30 top:** 1633.50 m MD  
@@ -13,7 +13,7 @@
 | Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
 |-------------|-------------|-----------------|------------|
 | 1770.6 | 1768.3 | 1837.1 | 66.5 |
-| 2525.7 | 2524.3 | 2532.8 | 7.1 |
+| 2522.4 | 2524.3 | 2572.4 (assumed) | 50.0 |
 
 ## Pay Rules Applied
 
@@ -30,10 +30,10 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 749.5 | 77.7% | 6 |
-| Resistivity only | 582.8 | 60.4% | 54 |
+| Resistivity only | 581.7 | 60.3% | 53 |
 | Matching both | 544.5 | 56.5% | 7 |
 
-**Sample intervals in McKinlay Member:** 172
+**Sample intervals in McKinlay Member:** 164
 
 ## Cuttings-Only Pay Intervals
 
@@ -66,7 +66,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1745.4 | 1745.7 | 0.3 |
 | 1745.8 | 1764.4 | 18.6 |
 
-_(39 additional intervals omitted)_
+_(38 additional intervals omitted)_
 
 ## Matching Pay Intervals
 

@@ -1,6 +1,6 @@
 # MCKINLAY 22 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 07:24 UTC  
+**Generated:** 2026-07-07 12:42 UTC  
 **Well:** MCKINLAY 22 (MCKINLAY 22)  
 **TD:** 3206 m MD  
 
@@ -771,7 +771,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 50.0% nan |
 | Total Gas | 63.0 U |
 
@@ -802,7 +802,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 30.0% nan |
 | Total Gas | 58.0 U |
 
@@ -833,7 +833,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 20.0% nan |
 | Total Gas | 65.0 U |
 
@@ -864,7 +864,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 50.0% nan |
 | Total Gas | 67.0 U |
 
@@ -895,7 +895,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 50.0% nan |
 | Total Gas | 64.0 U |
 
@@ -926,7 +926,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 90.0% nan |
 | Total Gas | 104.0 U |
 
@@ -956,7 +956,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 90.0% nan |
 | Total Gas | 90.0 U |
 
@@ -987,7 +987,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 80.0% nan |
 | Total Gas | 132.0 U |
 
@@ -1017,7 +1017,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to rare medium (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 130.0 U |
 
@@ -1047,7 +1047,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine to med, rare coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 105.0 U |
 
@@ -1077,7 +1077,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine to med, rare coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 126.0 U |
 
@@ -1108,7 +1108,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine to med, minor coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% Siltstone. 100% fine to med, minor coarse Sandstone. 100% bri |
 | Total Gas | 135.0 U |
 
@@ -1139,7 +1139,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine to med, minor coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 130.0 U |
 
@@ -1170,7 +1170,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to minor medium (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 136.0 U |
 
@@ -1200,7 +1200,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to minor coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 100.0 U |
 
@@ -1230,7 +1230,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 163.0 U |
 
@@ -1260,7 +1260,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 151.0 U |
 
@@ -3272,7 +3272,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine to medium, occasional coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 242.0 U |
 
@@ -3302,7 +3302,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, occasional medium to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 240.0 U |
 
@@ -3332,7 +3332,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, occasional medium to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 230.0 U |
 
@@ -3362,7 +3362,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, minor medium to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
 
@@ -3392,7 +3392,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, common medium to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 156.0 U |
 
@@ -3422,7 +3422,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, common medium to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
 
@@ -3452,7 +3452,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, occasional medium to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 170.0 U |
 
@@ -3685,7 +3685,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine to medium, occasional coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
 
@@ -3715,7 +3715,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine to medium, occasional coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 265.0 U |
 
@@ -3745,7 +3745,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, occasional medium (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 273.0 U |
 
@@ -3775,7 +3775,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, occasional medium (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 281.0 U |
 
@@ -3805,7 +3805,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
 
@@ -3835,7 +3835,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 258.0 U |
 
@@ -3865,7 +3865,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 247.0 U |
 
@@ -5445,7 +5445,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 85.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 298.0 U |
 
@@ -5475,7 +5475,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 90.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 287.0 U |
 
@@ -5506,7 +5506,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 90.0% nan |
 | Total Gas | 290.0 U |
 
@@ -5537,7 +5537,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 80.0% nan |
 | Total Gas | 248.0 U |
 
@@ -5568,7 +5568,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine (max: nan) |
 | Grain Ordinal | 1 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 80.0% nan |
 | Total Gas | 271.0 U |
 
@@ -5598,7 +5598,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 90.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 90.0% nan |
 | Total Gas | 220.0 U |
 
@@ -5628,7 +5628,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 90.0% nan |
 | Total Gas | 265.0 U |
 
@@ -8023,7 +8023,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 85.0% nan |
 | Total Gas | 214.0 U |
 
@@ -8054,7 +8054,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 65.0% nan |
 | Total Gas | 190.0 U |
 
@@ -8085,7 +8085,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 70.0% nan |
 | Total Gas | 202.0 U |
 
@@ -8116,7 +8116,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 70.0% nan |
 | Total Gas | 200.0 U |
 
@@ -8146,7 +8146,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 70.0% nan |
 | Total Gas | 234.0 U |
 
@@ -8176,7 +8176,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 248.0 U |
 
@@ -8206,7 +8206,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 253.0 U |
 
@@ -8497,7 +8497,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, occasional medium to coarse (max: nan) |
 | Grain Ordinal | 4 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 268.0 U |
 
@@ -8527,7 +8527,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, rare medium (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 287.0 U |
 
@@ -8557,7 +8557,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, occasionally medium (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 282.0 U |
 
@@ -8587,7 +8587,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, occasionally medium (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 284.0 U |
 
@@ -8617,7 +8617,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr-gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 302.0 U |
 
@@ -8648,7 +8648,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr-gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 294.0 U |
 
@@ -8679,7 +8679,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr-gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 255.0 U |
 
@@ -8711,7 +8711,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr-gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 284.0 U |
 
@@ -8742,7 +8742,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr-gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 257.0 U |
 
@@ -8773,7 +8773,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine, trace medium (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% medium, Sandstone, common loose. 100% bright |
 | Total Gas | 266.0 U |
 
@@ -8804,7 +8804,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | very fine to fine (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr-gd |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% nan |
 | Total Gas | 311.0 U |
 

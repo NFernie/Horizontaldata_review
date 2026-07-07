@@ -439,12 +439,16 @@ def parse_loose_grains(text):
     if not isinstance(text, str) or not text.strip():
         return False
     t = text.lower()
-    return bool(
-        re.search(
-            r"\blse\s+grn\b|\bloose\s+grain\b|\bloose\s+grains\b|\blse\s+med\b.*\bqtz\b",
-            t,
-        )
+    patterns = (
+        r"\bloose\s+grains?\b",
+        r"\blse\s+grn\b",
+        r"\blse\s+med\b",
+        r"\blse[\s\-](?:mod|med|fri|crs|qtz|hd|aggs)",
+        r"\blse\s*(?:&|and)\s*cln\b",
+        # Shorthand "lse" is often comma-attached (e.g. "liths,lse & cln") with no word space.
+        r"\blse\b",
     )
+    return any(re.search(p, t) for p in patterns)
 
 
 def _grain_token_ordinal(token):

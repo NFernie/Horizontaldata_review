@@ -1,6 +1,6 @@
 # JENA 31 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 05:39 UTC  
+**Generated:** 2026-07-07 12:48 UTC  
 **Formation tops name:** JENA 31 OPS  
 **McKinlay window:** 2250.6 – 3394.0 m MD  
 **DC30 top:** 2249.74 m MD  

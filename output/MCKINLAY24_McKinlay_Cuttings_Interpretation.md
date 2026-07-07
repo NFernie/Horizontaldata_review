@@ -1,6 +1,6 @@
 # MCKINLAY 24 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 07:24 UTC  
+**Generated:** 2026-07-07 12:43 UTC  
 **Well:** MCKINLAY 24 (MCKINLAY 24)  
 **TD:** 2598 m MD  
 

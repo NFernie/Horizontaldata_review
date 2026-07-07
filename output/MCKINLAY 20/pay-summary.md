@@ -1,6 +1,6 @@
 # MCKINLAY 20 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 05:39 UTC  
+**Generated:** 2026-07-07 12:48 UTC  
 **Formation tops name:** MCKINLAY 20  
 **McKinlay window:** 1633.5 – 3000.0 m MD  
 **DC30 top:** 1633.24 m MD  
@@ -13,7 +13,7 @@
 | Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
 |-------------|-------------|-----------------|------------|
 | 2342.6 | 2342.6 | 2375.4 | 32.8 |
-| 2693.2 | 2692.2 | 2743.2 (assumed) | 50.0 |
+| 2693.2 | 2692.2 | 2741.0 | 47.8 |
 
 ## Pay Rules Applied
 

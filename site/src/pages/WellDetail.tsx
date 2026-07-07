@@ -132,20 +132,29 @@ export function WellDetail() {
 
   return (
     <div className="space-y-6">
-      <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <h1 className="text-xl font-semibold text-text sm:text-2xl">{intervals.display}</h1>
-          <p className="mt-1 text-sm text-text-muted">
-            McKinlay Member depth tracks — {intervals.interval_count} retained intervals
-          </p>
+      <header className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h1 className="text-xl font-semibold text-text sm:text-2xl">{intervals.display}</h1>
+            <p className="mt-1 text-sm text-text-muted">
+              McKinlay Member depth tracks — {intervals.interval_count} retained intervals
+            </p>
+          </div>
+          <WellSelect
+            wells={activeWells}
+            value={alias}
+            onChange={setAlias}
+            label="Well"
+            className="w-full sm:w-56"
+          />
         </div>
-        <WellSelect
-          wells={activeWells}
-          value={alias}
-          onChange={setAlias}
-          label="Well"
-          className="w-full sm:w-56"
-        />
+        <Link
+          to={`/intra/${alias}`}
+          className="inline-flex w-full items-center justify-center gap-2 rounded-card border border-accent/40 bg-accent/10 px-5 py-3 text-sm font-semibold text-accent transition-colors hover:border-accent hover:bg-accent/20 sm:w-auto sm:self-start"
+        >
+          Intra-well statistics
+          <span aria-hidden="true">→</span>
+        </Link>
       </header>
 
       <DepthTracks intervals={intervals.intervals} zones={zones.zones} />
@@ -170,11 +179,6 @@ export function WellDetail() {
         />
       </Card>
 
-      <p className="text-sm text-text-muted">
-        <Link to={`/intra/${alias}`} className="text-accent hover:underline">
-          View intra-well statistics →
-        </Link>
-      </p>
     </div>
   );
 }

@@ -41,6 +41,48 @@
       }
     },
     {
+      "depth": 2190,
+      "top": 2188.5,
+      "bot": 2191.5,
+      "WRCI": 30.0,
+      "RQI": 0.6144540088010958,
+      "risk_class": "Elevated",
+      "flags": [
+        "lowres"
+      ],
+      "evidence": {
+        "pct_ss": 95,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 85.0,
+        "avg_GR": 88.21009987278947,
+        "avg_RES_DEEP": 18.16107910563158,
+        "res_sep": 1.2096002478947376
+      }
+    },
+    {
+      "depth": 2520,
+      "top": 2515.0,
+      "bot": 2525.0,
+      "WRCI": 29.68,
+      "RQI": 0.6644840253550096,
+      "risk_class": "Elevated",
+      "flags": [
+        "lowres"
+      ],
+      "evidence": {
+        "pct_ss": 100,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "avg_GR": 86.24826639348485,
+        "avg_RES_DEEP": 17.52649246559091,
+        "res_sep": 0.43000156216666596
+      }
+    },
+    {
       "depth": 2440,
       "top": 2435.0,
       "bot": 2445.0,
@@ -80,6 +122,48 @@
         "avg_GR": 88.90934495187692,
         "avg_RES_DEEP": 19.49560001076923,
         "res_sep": 0.04681537330769814
+      }
+    },
+    {
+      "depth": 2480,
+      "top": 2475.0,
+      "bot": 2485.0,
+      "WRCI": 26.3,
+      "RQI": 0.6034779177382977,
+      "risk_class": "Elevated",
+      "flags": [
+        "lowres"
+      ],
+      "evidence": {
+        "pct_ss": 100,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "avg_GR": 95.80003544738463,
+        "avg_RES_DEEP": 18.724816835784615,
+        "res_sep": 0.4977937844153857
+      }
+    },
+    {
+      "depth": 2510,
+      "top": 2505.0,
+      "bot": 2515.0,
+      "WRCI": 26.29,
+      "RQI": 0.6318814512465234,
+      "risk_class": "Elevated",
+      "flags": [
+        "lowres"
+      ],
+      "evidence": {
+        "pct_ss": 100,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "loose_grains": true,
+        "fluor": 100.0,
+        "avg_GR": 91.35287428624615,
+        "avg_RES_DEEP": 18.994260201107693,
+        "res_sep": 0.26676025390769453
       }
     }
   ]

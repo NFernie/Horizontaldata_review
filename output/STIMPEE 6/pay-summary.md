@@ -1,6 +1,6 @@
 # STIMPEE 6 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 05:39 UTC  
+**Generated:** 2026-07-07 12:48 UTC  
 **Formation tops name:** STIMPEE 6  
 **McKinlay window:** 1632.4 – 3186.1 m MD  
 **DC30 top:** 1631.04 m MD  
@@ -12,7 +12,8 @@
 
 | Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
 |-------------|-------------|-----------------|------------|
-| 1767.2 | 1765.9 | 1993.0 | 225.8 |
+| 1767.2 | 1765.9 | 1894.7 | 127.5 |
+| 1954.3 | 1956.0 | 1993.0 | 38.7 |
 | 2353.9 | 2352.7 | 2396.9 | 43.1 |
 | 2845.5 | 2844.0 | 2939.3 | 93.8 |
 
@@ -30,17 +31,18 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 1111.0 | 71.4% | 7 |
-| Resistivity only | 1181.9 | 76.0% | 4 |
-| Matching both | 1105.5 | 71.1% | 7 |
+| Cuttings only | 1158.5 | 74.5% | 8 |
+| Resistivity only | 1241.5 | 79.8% | 5 |
+| Matching both | 1153.0 | 74.1% | 8 |
 
-**Sample intervals in McKinlay Member:** 122
+**Sample intervals in McKinlay Member:** 130
 
 ## Cuttings-Only Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1637.5 | 1765.0 | 127.5 |
+| 1897.5 | 1945.0 | 47.5 |
 | 2005.0 | 2025.0 | 20.0 |
 | 2035.0 | 2065.0 | 30.0 |
 | 2085.0 | 2345.0 | 260.0 |
@@ -53,6 +55,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1632.4 | 1767.2 | 134.7 |
+| 1894.7 | 1954.3 | 59.6 |
 | 1993.0 | 2353.9 | 360.9 |
 | 2396.9 | 2845.4 | 448.5 |
 | 2939.3 | 3177.0 | 237.7 |
@@ -62,6 +65,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1637.5 | 1765.0 | 127.5 |
+| 1897.5 | 1945.0 | 47.5 |
 | 2005.0 | 2025.0 | 20.0 |
 | 2035.0 | 2065.0 | 30.0 |
 | 2085.0 | 2345.0 | 260.0 |

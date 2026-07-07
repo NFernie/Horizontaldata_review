@@ -43,6 +43,27 @@
         "avg_RES_DEEP": 51.66420595575758,
         "res_sep": 16.765914859212124
       }
+    },
+    {
+      "depth": 2330.0,
+      "top": 2325.0,
+      "bot": 2335.0,
+      "WRCI": 38.89,
+      "RQI": 0.6060915318884206,
+      "risk_class": "Elevated",
+      "flags": [
+        "highperm"
+      ],
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr",
+        "loose_grains": true,
+        "fluor": 100,
+        "avg_GR": 78.4310029925909,
+        "avg_RES_DEEP": 49.34864512362121,
+        "res_sep": 14.442613341621204
+      }
     }
   ]
 }

@@ -1,6 +1,6 @@
 # MCKINLAY 21 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 07:24 UTC  
+**Generated:** 2026-07-07 12:42 UTC  
 **Well:** MCKINLAY 21 (MCKINLAY 21)  
 **TD:** 2417 m MD  
 
@@ -3638,7 +3638,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine grained (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 20.0% Siltstone, 80% fine grained Sandstone, BG 110Y |
 | Total Gas | 110.0 U |
 
@@ -3669,7 +3669,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine to medium grained (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 30.0% Siltstone 80% fine to medium grained Sandstone. BG 115U |
 | Total Gas | 115.0 U |
 
@@ -3699,7 +3699,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine grained (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 30.0% Siltstone, 80% fine grained Sandstone, BG 125U |
 | Total Gas | 125.0 U |
 
@@ -3728,7 +3728,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine to occasionally medium grained (max: nan) |
 | Grain Ordinal | 3 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 70.0% Siltstone, 90% fine to occasionally medium grained Sandstone. BG 110U |
 | Total Gas | 110.0 U |
 
@@ -3757,7 +3757,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | fine grained (max: nan) |
 | Grain Ordinal | 2 |
 | Porosity Class | fr |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Fluorescence | 50.0% Siltstone, 95% fine grained Sandstone, BG 130U |
 | Total Gas | 130.0 U |
 

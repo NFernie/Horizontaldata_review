@@ -1,6 +1,6 @@
 # STIMPEE 7 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 05:39 UTC  
+**Generated:** 2026-07-07 12:48 UTC  
 **Formation tops name:** STIMPEE 7  
 **McKinlay window:** 1702.5 – 2840.1 m MD  
 **DC30 top:** 1704.52 m MD  
@@ -15,7 +15,7 @@
 | 2108.0 | 2110.6 | 2163.4 | 55.4 |
 | 2255.1 | 2258.0 | 2306.0 | 50.9 |
 | 2513.5 | 2515.0 | 2675.0 | 161.5 |
-| 2766.0 | 2766.0 | 2840.0 | 74.0 |
+| 2766.0 | 2766.0 | 2825.9 | 60.0 |
 
 ## Pay Rules Applied
 
@@ -35,7 +35,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Resistivity only | 795.5 | 70.1% | 4 |
 | Matching both | 707.5 | 62.3% | 8 |
 
-**Sample intervals in McKinlay Member:** 83
+**Sample intervals in McKinlay Member:** 84
 
 ## Cuttings-Only Pay Intervals
 
@@ -74,4 +74,5 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 ## Data Quality Notes
 
-- No major data quality flags for this well.
+- **1** sample intervals missing %SS or %Fluor — excluded from cuttings/matching pay.
+- **1** intervals lack valid LAS RES_DEEP — excluded from matching pay only.

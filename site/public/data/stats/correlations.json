@@ -131,7 +131,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.2934
+    "decoupling_score": 0.3296
   },
   "JENA31DW1": {
     "n": 165,
@@ -399,7 +399,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.3263
+    "decoupling_score": 0.3285
   },
   "BIALA20": {
     "n": 156,
@@ -533,7 +533,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": -0.2344
+    "decoupling_score": -0.227
   },
   "BIALA21": {
     "n": 134,
@@ -667,7 +667,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": -0.1805
+    "decoupling_score": -0.1796
   },
   "FROSTILLICUS2": {
     "n": 373,
@@ -935,7 +935,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.3345
+    "decoupling_score": 0.3585
   },
   "HOBBES5": {
     "n": 96,
@@ -1069,7 +1069,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": -0.1065
+    "decoupling_score": -0.2216
   },
   "HOBBES6": {
     "n": 78,
@@ -1203,7 +1203,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.2634
+    "decoupling_score": 0.2254
   },
   "MCKINLAY20": {
     "n": 275,
@@ -1337,7 +1337,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.0778
+    "decoupling_score": 0.0458
   },
   "MCKINLAY21": {
     "n": 124,
@@ -1471,7 +1471,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.1768
+    "decoupling_score": 0.1559
   },
   "MCKINLAY22": {
     "n": 309,
@@ -1605,7 +1605,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.1655
+    "decoupling_score": 0.1636
   },
   "MCKINLAY23": {
     "n": 183,
@@ -1739,7 +1739,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.5547
+    "decoupling_score": 0.5673
   },
   "MCKINLAY24": {
     "n": 164,
@@ -2007,7 +2007,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.4731
+    "decoupling_score": 0.3841
   },
   "STIMPEE7": {
     "n": 84,
@@ -2141,7 +2141,7 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.0799
+    "decoupling_score": 0.1764
   },
   "TERINGIE6": {
     "n": 159,
@@ -2275,6 +2275,6 @@
         "gas": 0.0
       }
     },
-    "decoupling_score": 0.0572
+    "decoupling_score": 0.0944
   }
 }

@@ -1,6 +1,6 @@
 # HOBBES 6 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 05:39 UTC  
+**Generated:** 2026-07-07 12:48 UTC  
 **Formation tops name:** HOBBES 6  
 **McKinlay window:** 1685.7 – 2500.0 m MD  
 **DC30 top:** 1685.47 m MD  
@@ -12,8 +12,8 @@
 
 | Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
 |-------------|-------------|-----------------|------------|
-| 1935.0 | 1936.5 | 1985.0 (assumed) | 50.0 |
-| 2041.9 | 2041.9 | 2091.9 (assumed) | 50.0 |
+| 1935.0 | 1936.5 | 1967.3 | 32.4 |
+| 2041.9 | 2041.9 | 2077.3 | 35.4 |
 | 2334.5 | 2332.0 | 2384.5 (assumed) | 50.0 |
 
 ## Pay Rules Applied
@@ -30,11 +30,11 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 456.0 | 56.0% | 5 |
-| Resistivity only | 504.1 | 61.9% | 39 |
-| Matching both | 456.0 | 56.0% | 5 |
+| Cuttings only | 466.0 | 57.2% | 5 |
+| Resistivity only | 580.3 | 71.2% | 5 |
+| Matching both | 466.0 | 57.2% | 5 |
 
-**Sample intervals in McKinlay Member:** 76
+**Sample intervals in McKinlay Member:** 78
 
 ## Cuttings-Only Pay Intervals
 
@@ -44,29 +44,17 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1737.0 | 1765.0 | 28.0 |
 | 1795.0 | 1925.0 | 130.0 |
 | 1985.0 | 2035.0 | 50.0 |
-| 2095.0 | 2325.0 | 230.0 |
+| 2085.0 | 2325.0 | 240.0 |
 
 ## Resistivity-Only Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1685.8 | 1712.3 | 26.5 |
-| 1712.4 | 1713.1 | 0.6 |
-| 1713.2 | 1723.3 | 10.1 |
-| 1723.7 | 1724.0 | 0.3 |
-| 1724.6 | 1725.2 | 0.6 |
-| 1725.4 | 1725.7 | 0.3 |
-| 1725.9 | 1764.0 | 38.1 |
-| 1764.3 | 1764.6 | 0.3 |
-| 1764.9 | 1765.2 | 0.3 |
-| 1779.2 | 1786.8 | 7.6 |
-| 1791.1 | 1827.4 | 36.3 |
-| 1828.0 | 1828.3 | 0.3 |
-| 1828.4 | 1851.1 | 22.7 |
-| 1851.7 | 1854.5 | 2.7 |
-| 1854.6 | 1854.9 | 0.3 |
-
-_(24 additional intervals omitted)_
+| 1685.8 | 1789.1 | 103.3 |
+| 1789.6 | 1934.9 | 145.4 |
+| 1967.4 | 2041.9 | 74.5 |
+| 2077.3 | 2226.6 | 149.4 |
+| 2226.8 | 2334.5 | 107.7 |
 
 ## Matching Pay Intervals
 
@@ -76,7 +64,7 @@ _(24 additional intervals omitted)_
 | 1737.0 | 1765.0 | 28.0 |
 | 1795.0 | 1925.0 | 130.0 |
 | 1985.0 | 2035.0 | 50.0 |
-| 2095.0 | 2325.0 | 230.0 |
+| 2085.0 | 2325.0 | 240.0 |
 
 ## Data Quality Notes
 
