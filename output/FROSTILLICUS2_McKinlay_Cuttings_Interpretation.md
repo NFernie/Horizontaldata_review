@@ -1,6 +1,6 @@
 # FROSTILLICUS 2 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 02:30 UTC  
+**Generated:** 2026-07-07 04:15 UTC  
 **Well:** FROSTILLICUS 2 (FROSTILLICUS 2)  
 **TD:** 3724 m MD  
 
@@ -26,28 +26,28 @@
 
 ### 2.2 McKinlay Member Top Classification
 
-**Target re-entry (McKinlay without paired Murta):**
-- 1614.73 m MD
+**Initial reservoir entry (DC30 + shallowest McKinlay):** 1614.73 m MD
+
+**Target re-entry (lone McKinlay below an overburden entry pair):**
 - 1757.04 m MD
 - 2675.74 m MD
 - 2806.48 m MD
 
-**Overburden intersections (McKinlay ≈ Murta within 5 m):**
-| McKinlay (m MD) | Murta (m MD) | Δ (m) |
-|-----------------|-------------|-------|
-| 1721.08 | 1719.13 | 1.95 |
-| 2530.15 | 2527.08 | 3.07 |
-| 2776.54 | 2774.40 | 2.14 |
-| 3689.90 | 3688.49 | 1.41 |
+**Overburden entry (Murta + corresponding McKinlay within 5 m):**
+| McKinlay entry (m MD) | Murta (m MD) | Δ (m) | Re-entry (m MD) | Zone length (m) |
+|-----------------------|-------------|-------|-----------------|-----------------|
+| 1721.08 | 1719.13 | 1.95 | 1757.04 | 36.0 |
+| 2530.15 | 2527.08 | 3.07 | 2675.74 | 145.6 |
+| 2776.54 | 2774.40 | 2.14 | 2806.48 | 29.9 |
+| 3689.90 | 3688.49 | 1.41 | 3739.90 (assumed +50 m) | 50.0 |
 
 **McKinlay Member analysis window:** 1614.7 – 3724.0 m MD
 
-**Excluded zones (±10 m around overburden & target re-entry tops):** 1711–1731 (overburden), 2520–2540 (overburden), 2767–2787 (overburden), 3680–3700 (overburden), 1605–1625 (target_reentry), 1747–1767 (target_reentry), 2666–2686 (target_reentry), 2796–2816 (target_reentry)
+**Excluded overburden intervals (entry → re-entry, pay resumes at re-entry):** 1721–1757 m (overburden), 2530–2676 m (overburden), 2777–2806 m (overburden), 3690–3740 m (overburden)
 
-**Samples in McKinlay Member:** 370 of 420 total
+**Samples in McKinlay Member:** 373 of 420 total
 - Excluded pre-reservoir: 12
-- Excluded overburden intersections: 20
-- Excluded target re-entry tops: 18
+- Excluded overburden intervals: 35
 
 ## 3. Known Shortcomings
 
@@ -59,12 +59,123 @@
 4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
 5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
 6. **NULL LAS values** (-999.25) excluded from averages.
-7. **Exclusion zones** use ±10 m around paired overburden tops AND McKinlay target re-entry tops without Murta pairs.
+7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if no re-entry is mapped). Initial DC30/McKinlay reservoir entry is not excluded.
 8. **Input Sheet only** — Calculations Sheet not used.
-
 ## 4. McKinlay Member Sample Intervals
 
 Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log averages.
+
+### 1617 m MD — Interval 1615.5 – 1618.5 m
+
+**Sample Description (spreadsheet):** Sample 1617m: trace siderite in 60% Siltstone, minor siderite in 40% very fine to fine Sandstone, Trace pale to moderately bright FLUOR in SST. TG 7U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 40.0 |
+| Grain Size | very fine to fine (max: nan) |
+| Fluorescence | 1.0% siderite in 60% Siltstone, minor siderite in 40% very fine to fine Sandstone, Trace pale to moderately bright |
+| Total Gas | 7.0 U |
+| FeCO₃ in Siltstone | trace |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1630m: lt trnsl brn,tr off wh-lt gry, clr-trnsl,f-med,mnr crs-v crs,pr srt,sbrnd- sbang,mod sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por, fr-gd inf por,fluor.
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 110.2 | 20 |
+| RES_DEEP (ohm.m) | 25.01 | 20 |
+| RES_SHALLOW (ohm.m) | 17.05 | 20 |
+| **Δ Res (Deep − Shallow)** | **7.95** | — |
+
+**Permeability Proxy:** Moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 1620 m MD — Interval 1618.5 – 1621.5 m
+
+**Sample Description (spreadsheet):** Sample 1620m: minor siderite in 70% Siltstone, minor siderite in 30% very fine to fine Sandstone, trace pale to moderately bright FLUOR in SST. TG 7U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 30.000000000000004 |
+| Grain Size | very fine to fine (max: nan) |
+| Fluorescence | 1.0% pale to moderately bright |
+| Total Gas | 7.0 U |
+| FeCO₃ in Siltstone | minor |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1630m: lt trnsl brn,tr off wh-lt gry, clr-trnsl,f-med,mnr crs-v crs,pr srt,sbrnd- sbang,mod sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por, fr-gd inf por,fluor.
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 118.4 | 19 |
+| RES_DEEP (ohm.m) | 36.08 | 19 |
+| RES_SHALLOW (ohm.m) | 23.46 | 19 |
+| **Δ Res (Deep − Shallow)** | **12.62** | — |
+
+**Permeability Proxy:** Moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 1623 m MD — Interval 1621.5 – 1624.5 m
+
+**Sample Description (spreadsheet):** Sample 1623m: minor siderite in 70% Siltstone, trace siderite in 30% very finefine to fine Sandstone, 10% pale to moderately bright FLUOR in SST. TG 5U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 30.000000000000004 |
+| Grain Size | very finefine to fine (max: nan) |
+| Fluorescence | 10.0% siderite in 30% very finefine to fine Sandstone, 10% pale to moderately bright |
+| Total Gas | 5.0 U |
+| FeCO₃ in Siltstone | minor |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1630m: lt trnsl brn,tr off wh-lt gry, clr-trnsl,f-med,mnr crs-v crs,pr srt,sbrnd- sbang,mod sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por, fr-gd inf por,fluor.
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 112.4 | 20 |
+| RES_DEEP (ohm.m) | 36.36 | 20 |
+| RES_SHALLOW (ohm.m) | 24.11 | 20 |
+| **Δ Res (Deep − Shallow)** | **12.25** | — |
+
+**Permeability Proxy:** Moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 1626 m MD — Interval 1624.5 – 1627.5 m
+
+**Sample Description (spreadsheet):** Sample 1626m: trace siderite in 20% Siltstone, 80% very fine to medium, trace coarse to very coarse Sandstone, 80% moderately bright FLUOR in SST. TG 77U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 80.0 |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 80.0% siderite in 20% Siltstone, 80% very fine to medium, trace coarse to very coarse Sandstone, 80% moderately bright |
+| Total Gas | 77.0 U |
+| FeCO₃ in Siltstone | trace |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1630m: lt trnsl brn,tr off wh-lt gry, clr-trnsl,f-med,mnr crs-v crs,pr srt,sbrnd- sbang,mod sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por, fr-gd inf por,fluor.
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 105.4 | 20 |
+| RES_DEEP (ohm.m) | 50.06 | 20 |
+| RES_SHALLOW (ohm.m) | 36.17 | 20 |
+| **Δ Res (Deep − Shallow)** | **13.88** | — |
+
+**Permeability Proxy:** Moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
 
 ### 1629 m MD — Interval 1627.5 – 1630.5 m
 
@@ -73,8 +184,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 9.999999999999998 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 100.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -100,8 +211,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 5.000000000000004 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 94.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -127,8 +238,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | fine to medium,trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 102.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -154,8 +265,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 100.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -181,8 +292,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% pale to moderately bright |
 | Total Gas | 144.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -209,7 +320,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 70.0 U |
 
@@ -236,7 +347,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 40.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 42.0 U |
 
@@ -263,7 +374,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 30.000000000000004 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 52.0 U |
 
@@ -290,7 +401,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 50.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 67.0 U |
 
@@ -317,8 +428,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 19.999999999999996 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 90.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 90.0% medium Sandstone, 90% moderately bright |
 | Total Gas | 75.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -344,8 +455,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 118.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -371,7 +482,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 121.0 U |
 
@@ -397,8 +508,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 140.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -423,7 +534,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | fine to coarse, common very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 148.0 U |
 
@@ -449,7 +560,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | fine to coarse, common very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
 
@@ -476,8 +587,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% bright |
 | Total Gas | 209.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -503,7 +614,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | fine to medium, common coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 239.0 U |
 
@@ -523,52 +634,109 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 
 ---
 
-### 1735 m MD — Interval 1732.5 – 1737.5 m
+### 1710 m MD — Interval 1707.5 – 1712.5 m
 
-**Sample Description (spreadsheet):** Sample 1735m: common siderite in 65% Siltstone, minor siderite in 35% very fine to fine, rare medium to coarse Sandstone, 20% moderately bright FLUOR in SST. TG 82U
+**Sample Description (spreadsheet):** Sample 1710m: 0% Siltstone, 100% fine to coarse, trace very coarse Sandstone, 100% bright FLUOR in SST. TG 221U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 35.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 20.0% nan |
-| Total Gas | 82.0 U |
+| % Sandstone | 100.0 |
+| Grain Size | fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% bright |
+| Total Gas | 221.0 U |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1710m: med gry brn,med-dk gry i/p, aren,tr micmic,tr carb spks,mod hd-frm, sbblky-blky.
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 129.4 | 32 |
-| RES_DEEP (ohm.m) | 23.03 | 32 |
-| RES_SHALLOW (ohm.m) | 15.92 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.12** | — |
+| GR (gAPI) | 111.5 | 32 |
+| RES_DEEP (ohm.m) | 49.20 | 32 |
+| RES_SHALLOW (ohm.m) | 33.39 | 32 |
+| **Δ Res (Deep − Shallow)** | **15.81** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
-### 1740 m MD — Interval 1737.5 – 1742.5 m
+### 1715 m MD — Interval 1712.5 – 1717.5 m
 
-**Sample Description (spreadsheet):** Sample 1740m: common siderite in 55% Siltstone, minor siderite in 45% very fine to fine, trace medium Sandstone, 10% moderately bright to dull FLUOR in SST. TG 85U
+**Sample Description (spreadsheet):** Sample 1715m: 10% Siltstone, 90% fine to coarse, minor very coarse Sandstone, 100% bright FLUOR in SST. TG 199U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 44.99999999999999 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 10.0% nan |
-| Total Gas | 85.0 U |
+| % Sandstone | 90.0 |
+| Grain Size | fine to coarse, minor very coarse (max: nan) |
+| Fluorescence | 100.0% nan |
+| Total Gas | 199.0 U |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1710m: med gry brn,med-dk gry i/p, aren,tr micmic,tr carb spks,mod hd-frm, sbblky-blky.
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 104.8 | 33 |
-| RES_DEEP (ohm.m) | 28.55 | 33 |
-| RES_SHALLOW (ohm.m) | 20.24 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.32** | — |
+| GR (gAPI) | 118.9 | 33 |
+| RES_DEEP (ohm.m) | 37.62 | 33 |
+| RES_SHALLOW (ohm.m) | 25.99 | 33 |
+| **Δ Res (Deep − Shallow)** | **11.63** | — |
+
+**Permeability Proxy:** Moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 1760 m MD — Interval 1757.5 – 1762.5 m
+
+**Sample Description (spreadsheet):** Sample 1760m: 20% Siltstone, 80% very fine to coarse, trace very coarse Sandstone, 100% moderately bright FLUOR in SST. TG 146U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 80.0 |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
+| Total Gas | 146.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1770m: med-dk gry,med gry brn,med brn,aren,rr sid,tr micmic,tr carb spks,mod hd-frm,hd i/p,sbblky-blky.
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 111.4 | 32 |
+| RES_DEEP (ohm.m) | 64.39 | 32 |
+| RES_SHALLOW (ohm.m) | 38.48 | 32 |
+| **Δ Res (Deep − Shallow)** | **25.91** | — |
+
+**Permeability Proxy:** Moderate-high inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 1765 m MD — Interval 1762.5 – 1767.5 m
+
+**Sample Description (spreadsheet):** Sample 1765m: 15% Siltstone, 85% very fine to medium, trace coarse to very coarse Sandstone, 100% moderately bright to bright FLUOR in SST. TG 214U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 85.0 |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
+| Total Gas | 214.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1770m: med-dk gry,med gry brn,med brn,aren,rr sid,tr micmic,tr carb spks,mod hd-frm,hd i/p,sbblky-blky.
+- **SANDSTONE** @ ~1780m: 55 SANDSTONE:v lt gry-wh,pl brn,vf-med, PV: 14 tr crs-v crs,mod-pr srt,sbang-sbrnd,tr YP: 17 ang,wk-mod sil cmt,mnr wh arg mtx,tr Gel: 6/8/9 carb spks,fri,mnr disagg,pr vis por,fr-gd WL: 4.8 inf por,fluor.
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 111.1 | 33 |
+| RES_DEEP (ohm.m) | 49.85 | 33 |
+| RES_SHALLOW (ohm.m) | 33.99 | 33 |
+| **Δ Res (Deep − Shallow)** | **15.85** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -582,9 +750,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 242.0 U |
+| FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1770m: med-dk gry,med gry brn,med brn,aren,rr sid,tr micmic,tr carb spks,mod hd-frm,hd i/p,sbblky-blky.
@@ -610,9 +779,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% bright |
 | Total Gas | 235.0 U |
+| FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1770m: med-dk gry,med gry brn,med brn,aren,rr sid,tr micmic,tr carb spks,mod hd-frm,hd i/p,sbblky-blky.
@@ -638,7 +808,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 288.0 U |
 
@@ -666,9 +836,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 253.0 U |
+| FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1770m: med-dk gry,med gry brn,med brn,aren,rr sid,tr micmic,tr carb spks,mod hd-frm,hd i/p,sbblky-blky.
@@ -694,8 +865,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to fine, rare medium to coarse Sandstone, 100% bright |
 | Total Gas | 262.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -721,8 +892,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 242.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -748,9 +919,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 90.0% nan |
+| Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Fluorescence | 90.0% siderite in 85% very fine to fine, trace medium to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 174.0 U |
+| FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -774,9 +946,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 211.0 U |
+| FeCO₃ in Siltstone | common |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -800,9 +973,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 70.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to coarse (max: nan) |
 | Fluorescence | 60.0% nan |
 | Total Gas | 164.0 U |
+| FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -826,9 +1000,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 10% Siltstone, 90% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 240.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -852,7 +1027,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 299.0 U |
 
@@ -878,7 +1053,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 275.0 U |
 
@@ -905,8 +1080,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 293.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -932,8 +1107,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to fine, rare medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 80.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -959,8 +1134,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 128.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -986,8 +1161,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 50.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 50.0% medium to coarse Sandstone, 50% moderately bright |
 | Total Gas | 61.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1013,8 +1188,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 70.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 45.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 45.0% medium to coarse Sandstone, 45% moderately bright |
 | Total Gas | 60.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1040,8 +1215,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 60.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 60.0% medium to coarse Sandstone, 60% moderately bright |
 | Total Gas | 78.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1068,7 +1243,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 55.00000000000001% nan |
 | Total Gas | 74.0 U |
 
@@ -1095,7 +1270,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 65.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 55.00000000000001% nan |
 | Total Gas | 63.0 U |
 
@@ -1122,8 +1297,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 75.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 75.0% coarse Sandstone, 75% moderately bright |
 | Total Gas | 95.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1149,8 +1324,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 75.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 75.0% coarse Sandstone, 75% moderately bright |
 | Total Gas | 91.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1176,7 +1351,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 116.0 U |
 
@@ -1203,7 +1378,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 118.0 U |
 
@@ -1230,7 +1405,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 119.0 U |
 
@@ -1256,7 +1431,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
 
@@ -1282,7 +1457,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
 
@@ -1308,8 +1483,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 163.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1335,8 +1510,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 201.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1362,7 +1537,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
 
@@ -1389,7 +1564,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 127.0 U |
 
@@ -1416,7 +1591,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 116.0 U |
 
@@ -1443,7 +1618,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 70.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 121.0 U |
 
@@ -1470,8 +1645,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 60.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 60.0% nan |
+| Grain Size | very fine to fine, g/t slty SST, trace medium to coarse (max: nan) |
+| Fluorescence | 60.0% medium to coarse Sandstone, 60% moderately bright |
 | Total Gas | 130.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1497,9 +1672,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 70.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 70.0% nan |
+| Grain Size | very fine to fine, g/t slty SST (max: nan) |
+| Fluorescence | 70.0% siderite in 70% very fine to fine, g/t slty SST Sandstone, 70% moderately bright |
 | Total Gas | 117.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -1523,7 +1699,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 175.0 U |
 
@@ -1549,8 +1725,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 206.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1575,7 +1751,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 242.0 U |
 
@@ -1601,7 +1777,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
 
@@ -1627,7 +1803,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 231.0 U |
 
@@ -1653,7 +1829,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 242.0 U |
 
@@ -1679,7 +1855,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
 
@@ -1706,7 +1882,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, common coarse to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 179.0 U |
 
@@ -1733,7 +1909,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 177.0 U |
 
@@ -1760,8 +1936,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 80.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 80.0% very coarse Sandstone, 80% moderately bright to bright |
 | Total Gas | 172.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1787,7 +1963,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 183.0 U |
 
@@ -1814,8 +1990,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 80.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 80.0% very coarse Sandstone, 80% moderately bright to bright |
 | Total Gas | 160.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1843,8 +2019,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 191.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1871,7 +2047,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
 
@@ -1898,7 +2074,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, common very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 179.0 U |
 
@@ -1925,7 +2101,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 186.0 U |
 
@@ -1952,8 +2128,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 90.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 90.0% coarse to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 155.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1980,8 +2156,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 80.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 80.0% coarse Sandstone, 80% moderately bright to pale |
 | Total Gas | 197.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2008,7 +2184,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
 
@@ -2036,8 +2212,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 186.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2063,7 +2239,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 230.0 U |
 
@@ -2090,7 +2266,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 190.0 U |
 
@@ -2117,7 +2293,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 211.0 U |
 
@@ -2145,7 +2321,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 195.0 U |
 
@@ -2172,7 +2348,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, common coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 219.0 U |
 
@@ -2200,8 +2376,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 172.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2228,7 +2404,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 207.0 U |
 
@@ -2256,7 +2432,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 198.0 U |
 
@@ -2284,8 +2460,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 182.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2312,7 +2488,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 192.0 U |
 
@@ -2339,7 +2515,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 184.0 U |
 
@@ -2366,7 +2542,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | fine to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 212.0 U |
 
@@ -2392,7 +2568,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 206.0 U |
 
@@ -2418,7 +2594,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 227.0 U |
 
@@ -2444,7 +2620,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, common coarse to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 195.0 U |
 
@@ -2470,7 +2646,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 197.0 U |
 
@@ -2496,7 +2672,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to verycoarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 199.0 U |
 
@@ -2522,7 +2698,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 244.0 U |
 
@@ -2548,7 +2724,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | fine to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
 
@@ -2574,7 +2750,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, common medium to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 185.0 U |
 
@@ -2595,12 +2771,12 @@ Looks like we are back in the good sands.
 
 ### 2140 m MD — Interval 2139.5 – 2142.5 m
 
-**Sample Description (spreadsheet):** 0% Siltstone, 100% nan Sandstone, 100% nan FLUOR, TG 133.0U
+**Sample Description (spreadsheet):** Spot Sample 2140m: 100% very fine to fine, rare medium to coarse Sandstone, 100% moderately bright to bright FLUOR in SST. TG 133U
 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 133.0 U |
 
@@ -2626,8 +2802,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 177.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2652,7 +2828,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 179.0 U |
 
@@ -2678,7 +2854,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 142.0 U |
 
@@ -2704,8 +2880,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 90.0% nan |
+| Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Fluorescence | 90.0% medium to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 143.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2730,8 +2906,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 85.0% nan |
+| Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Fluorescence | 85.0% medium to very coarse Sandstone, 85% moderately bright |
 | Total Gas | 151.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2757,8 +2933,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 80.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 80.0% coarse Sandstone, 80% moderately bright |
 | Total Gas | 146.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2784,8 +2960,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 85.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 85.0% coarse to very coarse Sandstone, 85% moderately bright to bright |
 | Total Gas | 150.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2811,8 +2987,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 75.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 75.0% coarse Sandstone, 75% moderately bright to dull |
 | Total Gas | 125.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2838,8 +3014,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 70.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 70.0% medium to coarse Sandstone, 70% moderately bright to dull |
 | Total Gas | 93.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2865,7 +3041,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 103.0 U |
 
@@ -2892,8 +3068,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 75.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 75.0% medium to coarse Sandstone, 75% moderately bright |
 | Total Gas | 110.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2919,8 +3095,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 70.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 65.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 65.0% medium Sandstone, 65% moderately bright to dull |
 | Total Gas | 113.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -2945,7 +3121,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 137.0 U |
 
@@ -2972,7 +3148,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 123.0 U |
 
@@ -2999,7 +3175,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 124.0 U |
 
@@ -3026,8 +3202,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 80.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 80.0% coarse Sandstone, 80% moderately bright |
 | Total Gas | 106.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3053,8 +3229,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 75.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 75.0% coarse to very coarse Sandstone, 75% moderately bright |
 | Total Gas | 95.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3081,8 +3257,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 95.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 95.0% coarse to very coarse Sandstone, 95% moderately bright |
 | Total Gas | 145.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3109,8 +3285,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 95.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 95.0% medium to coarse Sandstone, 95% moderately bright |
 | Total Gas | 149.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3137,8 +3313,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 155.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3164,8 +3340,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 95.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 95.0% coarse to very coarse Sandstone, 95% moderately bright |
 | Total Gas | 160.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3191,8 +3367,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 80.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 80.0% medium Sandstone, 80% moderately bright |
 | Total Gas | 138.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3218,7 +3394,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 116.0 U |
 
@@ -3245,7 +3421,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 149.0 U |
 
@@ -3271,7 +3447,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, rare very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
 
@@ -3297,8 +3473,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Fluorescence | 100.0% medium to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 188.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3323,8 +3499,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 170.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3349,8 +3525,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Fluorescence | 100.0% medium to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 166.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3375,8 +3551,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 225.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3401,7 +3577,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 175.0 U |
 
@@ -3427,7 +3603,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 201.0 U |
 
@@ -3453,7 +3629,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 206.0 U |
 
@@ -3479,8 +3655,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 178.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3505,8 +3681,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine,trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 166.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3531,7 +3707,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 176.0 U |
 
@@ -3557,7 +3733,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
 
@@ -3583,7 +3759,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 174.0 U |
 
@@ -3609,7 +3785,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 176.0 U |
 
@@ -3635,8 +3811,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 175.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3661,7 +3837,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 199.0 U |
 
@@ -3687,7 +3863,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
 
@@ -3713,7 +3889,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
 
@@ -3739,8 +3915,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 206.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -3765,7 +3941,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 243.0 U |
 
@@ -3791,8 +3967,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 230.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3818,7 +3994,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 229.0 U |
 
@@ -3845,8 +4021,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 172.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3872,8 +4048,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine,trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% bright |
 | Total Gas | 224.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3899,7 +4075,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 229.0 U |
 
@@ -3926,8 +4102,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 227.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3953,8 +4129,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 233.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -3980,8 +4156,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% bright |
 | Total Gas | 226.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4006,7 +4182,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
 
@@ -4032,7 +4208,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 218.0 U |
 
@@ -4058,7 +4234,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
 
@@ -4084,7 +4260,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 198.0 U |
 
@@ -4110,7 +4286,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 199.0 U |
 
@@ -4137,7 +4313,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
 
@@ -4164,7 +4340,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 243.0 U |
 
@@ -4191,7 +4367,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 236.0 U |
 
@@ -4218,8 +4394,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 220.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4245,7 +4421,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 237.0 U |
 
@@ -4272,7 +4448,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
 
@@ -4299,7 +4475,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 236.0 U |
 
@@ -4325,8 +4501,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 231.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4352,8 +4528,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 247.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4379,7 +4555,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 254.0 U |
 
@@ -4406,7 +4582,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
 
@@ -4433,7 +4609,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine, occasional fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 238.0 U |
 
@@ -4460,8 +4636,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 251.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4487,8 +4663,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 295.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -4514,8 +4690,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 282.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -4540,7 +4716,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
 
@@ -4566,9 +4742,10 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 10% Siltstone, trace siderite in 90% very fine to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 232.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4592,9 +4769,10 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse, rare very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 10% Siltstone, trace siderite in 90% very fine to coarse, rare very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 301.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4611,216 +4789,114 @@ Looks like we are back in the good sands.
 
 ---
 
-### 2545 m MD — Interval 2542.5 – 2547.5 m
+### 2520 m MD — Interval 2517.5 – 2522.5 m
 
-**Sample Description (spreadsheet):** Sample 2545m: minor siderite in 60% Siltstone, minor to locally common siderite in 40% very fine to fine, rare medium to coarse Sandstone, 10% moderately bright to dull FLUOR in SST. TG 105U
+**Sample Description (spreadsheet):** Sample 2520m: trace siderite in 10% Siltstone, trace siderite in 90% very fine to medium, trace coarse to very coarse Sandstone, 100% bright to moderately bright FLUOR in SST. TG 274U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 40.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 10.0% nan |
-| Total Gas | 105.0 U |
+| % Sandstone | 90.0 |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 10% Siltstone, trace siderite in 90% very fine to medium, trace coarse to very coarse Sandstone, 100% bright to moderately bright |
+| Total Gas | 274.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 108.3 | 32 |
-| RES_DEEP (ohm.m) | 21.45 | 32 |
-| RES_SHALLOW (ohm.m) | 14.60 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.85** | — |
+| GR (gAPI) | 118.4 | 32 |
+| RES_DEEP (ohm.m) | 51.42 | 32 |
+| RES_SHALLOW (ohm.m) | 36.83 | 32 |
+| **Δ Res (Deep − Shallow)** | **14.58** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
-### 2550 m MD — Interval 2547.5 – 2590.0 m
+### 2525 m MD — Interval 2522.5 – 2527.5 m
 
-**Sample Description (spreadsheet):** Sample 2550m: common siderite in 55% Siltstone, minor siderite in 45% very fine to medium, minor coarse Sandstone, 5% moderately bright to dull FLUOR in SST. TG 108U
+**Sample Description (spreadsheet):** Sample 2525m: trace siderite in 15% Siltstone, trace siderite in 85% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright FLUOR in SST. TG 203U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 44.99999999999999 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 5.0% nan |
-| Total Gas | 108.0 U |
+| % Sandstone | 85.0 |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 15% Siltstone, trace siderite in 85% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
+| Total Gas | 203.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 117.9 | 279 |
-| RES_DEEP (ohm.m) | 16.65 | 279 |
-| RES_SHALLOW (ohm.m) | 12.82 | 279 |
-| **Δ Res (Deep − Shallow)** | **3.83** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 2630 m MD — Interval 2590.0 – 2635.0 m
-
-**Sample Description (spreadsheet):** Sample 2630m: minor siderite in 50% Siltstone, trace siderite in 50% very fine to fine, rare medium to  very coarse Sandstone, trace dull to moderately bright FLUOR in SST. TG 69U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 50.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 1.0% nan |
-| Total Gas | 69.0 U |
-
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 116.8 | 296 |
-| RES_DEEP (ohm.m) | 19.54 | 296 |
-| RES_SHALLOW (ohm.m) | 14.22 | 296 |
-| **Δ Res (Deep − Shallow)** | **5.32** | — |
+| GR (gAPI) | 117.4 | 33 |
+| RES_DEEP (ohm.m) | 45.06 | 33 |
+| RES_SHALLOW (ohm.m) | 31.45 | 33 |
+| **Δ Res (Deep − Shallow)** | **13.61** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
-### 2640 m MD — Interval 2635.0 – 2642.5 m
+### 2680 m MD — Interval 2677.5 – 2682.5 m
 
-**Sample Description (spreadsheet):** Sample 2640m: minor siderite in 55% Siltstone, trace siderite in 45% very fine to fine, trace coarse Sandstone, trace % dull to moderately bright FLUOR in SST. TG 65U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 56.00000000000001 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 1.0% nan |
-| Total Gas | 65.0 U |
-
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 116.9 | 49 |
-| RES_DEEP (ohm.m) | 20.61 | 49 |
-| RES_SHALLOW (ohm.m) | 14.40 | 49 |
-| **Δ Res (Deep − Shallow)** | **6.21** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 2645 m MD — Interval 2642.5 – 2647.5 m
-
-**Sample Description (spreadsheet):** Sample 2645m: minor siderite in 60% Siltstone, trace siderite in 40% very fine to fine, rare medium to very coarse Sandstone, trace % dull to moderately bright FLUOR in SST. TG 63U\
+**Sample Description (spreadsheet):** Sample 2680m: rare siderite in 40% Siltstone, trace siderite in 60% very fine to fine, trace coarse to very coarse Sandstone, Trace FLUOR in SST. TG 45U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 40.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 1.0% nan |
-| Total Gas | 63.0 U |
+| % Sandstone | 60.0 |
+| Grain Size | very fine to fine, trace coarse to very coarse (max: nan) |
+| Fluorescence | 1.0% siderite in 60% very fine to fine, trace coarse to very coarse Sandstone, Trace |
+| Total Gas | 45.0 U |
+| FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2660m: v lt gry-wh,lt gry,med brn, clr,trnsl,vf-f,tr crs-v crs,mod-pr srt,sbang- sbrnd,mod-wk sil cmt,tr sid cmt,mnr-loc com wh arg & gry-brn slty mtx,tr slty lams, tr carb spks,fri-mod hd,tr hd,mnr disagg,
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 121.3 | 33 |
-| RES_DEEP (ohm.m) | 21.58 | 33 |
-| RES_SHALLOW (ohm.m) | 14.61 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.97** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 2650 m MD — Interval 2647.5 – 2652.5 m
-
-**Sample Description (spreadsheet):** Sample 2650m: minor siderite in 65% Siltstone, trace siderite in 35% very fine to medium, rare coarse to very coarse Sandstone, trace dull to moderately bright FLUOR in SST. TG 62U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 35.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 1.0% nan |
-| Total Gas | 62.0 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2660m: v lt gry-wh,lt gry,med brn, clr,trnsl,vf-f,tr crs-v crs,mod-pr srt,sbang- sbrnd,mod-wk sil cmt,tr sid cmt,mnr-loc com wh arg & gry-brn slty mtx,tr slty lams, tr carb spks,fri-mod hd,tr hd,mnr disagg,
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 117.2 | 32 |
-| RES_DEEP (ohm.m) | 17.32 | 32 |
-| RES_SHALLOW (ohm.m) | 12.90 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.42** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 2655 m MD — Interval 2652.5 – 2657.5 m
-
-**Sample Description (spreadsheet):** Sample 2655m: minor siderite in 55% Siltstone, trace siderite in 45% very fine to medium, trace coarse to very coarse Sandstone, NO FLUOR in SST. TG 57U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 44.99999999999999 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 0.0% nan |
-| Total Gas | 57.0 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2660m: v lt gry-wh,lt gry,med brn, clr,trnsl,vf-f,tr crs-v crs,mod-pr srt,sbang- sbrnd,mod-wk sil cmt,tr sid cmt,mnr-loc com wh arg & gry-brn slty mtx,tr slty lams, tr carb spks,fri-mod hd,tr hd,mnr disagg,
 - **SILTSTONE** @ ~2670m: med-dk gry brn,med-dk brn, med gry,aren,com sid,tr carb spks,micmic micmic i/p,mod hd-hd,sbblky-blky. MCKINLAY MEMBER (RE-ENTRY): 2675.7mMDRT (-1224.6mTVDSS)
+- **SILTSTONE** @ ~2690m: med-dk brn,med-dk gry brn, med gry,aren,mnr sid,tr carb spks,micmic i/p,mod hd-hd,frm i/p,sbblky-blky.
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 118.6 | 33 |
-| RES_DEEP (ohm.m) | 15.27 | 33 |
-| RES_SHALLOW (ohm.m) | 11.88 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.39** | — |
+| GR (gAPI) | 91.8 | 33 |
+| RES_DEEP (ohm.m) | 41.85 | 33 |
+| RES_SHALLOW (ohm.m) | 25.43 | 33 |
+| **Δ Res (Deep − Shallow)** | **16.42** | — |
 
-**Permeability Proxy:** Low-moderate inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
-### 2660 m MD — Interval 2657.5 – 2665.0 m
+### 2685 m MD — Interval 2682.5 – 2687.5 m
 
-**Sample Description (spreadsheet):** Sample 2660m: minor siderite in 50% Siltstone, trace siderite in 50% very fine to fine, minor medium to very coarse Sandstone, NO FLUOR in SST. TG 53U
+**Sample Description (spreadsheet):** Sample 2685m: common siderite in 60% Siltstone, minor siderite in 40% very fine to fine Sandstone, trace dull to moderately bright FLUOR in SST. TG 56U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 50.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 0.0% nan |
-| Total Gas | 53.0 U |
+| % Sandstone | 70.0 |
+| Grain Size | very fine to fine (max: nan) |
+| Fluorescence | 1.0% dull to moderately bright |
+| Total Gas | 56.0 U |
+| FeCO₃ in Siltstone | common |
 
 **Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2660m: v lt gry-wh,lt gry,med brn, clr,trnsl,vf-f,tr crs-v crs,mod-pr srt,sbang- sbrnd,mod-wk sil cmt,tr sid cmt,mnr-loc com wh arg & gry-brn slty mtx,tr slty lams, tr carb spks,fri-mod hd,tr hd,mnr disagg,
 - **SILTSTONE** @ ~2670m: med-dk gry brn,med-dk brn, med gry,aren,com sid,tr carb spks,micmic micmic i/p,mod hd-hd,sbblky-blky. MCKINLAY MEMBER (RE-ENTRY): 2675.7mMDRT (-1224.6mTVDSS)
+- **SILTSTONE** @ ~2690m: med-dk brn,med-dk gry brn, med gry,aren,mnr sid,tr carb spks,micmic i/p,mod hd-hd,frm i/p,sbblky-blky.
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 117.6 | 49 |
-| RES_DEEP (ohm.m) | 17.20 | 49 |
-| RES_SHALLOW (ohm.m) | 12.46 | 49 |
-| **Δ Res (Deep − Shallow)** | **4.73** | — |
+| GR (gAPI) | 108.9 | 33 |
+| RES_DEEP (ohm.m) | 52.35 | 33 |
+| RES_SHALLOW (ohm.m) | 30.15 | 33 |
+| **Δ Res (Deep − Shallow)** | **22.19** | — |
 
-**Permeability Proxy:** Low-moderate inferred permeability
+**Permeability Proxy:** Moderate-high inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4832,9 +4908,10 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 70.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 75.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 75.0% siderite in 70% very fine to very coarse Sandstone, 75% moderately bright to dull |
 | Total Gas | 111.0 U |
+| FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2690m: med-dk brn,med-dk gry brn, med gry,aren,mnr sid,tr carb spks,micmic i/p,mod hd-hd,frm i/p,sbblky-blky.
@@ -4859,9 +4936,10 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 80.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 80.0% siderite in 80% very fine to very coarse Sandstone, 80% moderately bright |
 | Total Gas | 147.0 U |
+| FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2690m: med-dk brn,med-dk gry brn, med gry,aren,mnr sid,tr carb spks,micmic i/p,mod hd-hd,frm i/p,sbblky-blky.
@@ -4886,9 +4964,10 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 90.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 90.0% siderite in 85% very fine to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 193.0 U |
+| FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2690m: med-dk brn,med-dk gry brn, med gry,aren,mnr sid,tr carb spks,micmic i/p,mod hd-hd,frm i/p,sbblky-blky.
@@ -4913,9 +4992,10 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 90.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 90.0% siderite in 85% very fine to very coarse Sandstone, 90% bright to moderately bright |
 | Total Gas | 232.0 U |
+| FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2690m: med-dk brn,med-dk gry brn, med gry,aren,mnr sid,tr carb spks,micmic i/p,mod hd-hd,frm i/p,sbblky-blky.
@@ -4941,9 +5021,10 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 175.0 U |
+| FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2720m: lt gry,lt trnsl brn,clr- FROM 2720m-2769m trnsl,vf-med,mnr crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,mod hd,pr vis por,fluor.
@@ -4968,9 +5049,10 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 5% Siltstone, 95% very fine to medium, trace coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 184.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2720m: lt gry,lt trnsl brn,clr- FROM 2720m-2769m trnsl,vf-med,mnr crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,mod hd,pr vis por,fluor.
@@ -4996,8 +5078,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 178.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5024,8 +5106,8 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 90.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 90.0% coarse Sandstone, 90% moderately bright |
 | Total Gas | 104.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5052,7 +5134,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 107.0 U |
 
@@ -5080,7 +5162,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 60.0% nan |
 | Total Gas | 90.0 U |
 
@@ -5108,7 +5190,7 @@ Looks like we are back in the good sands.
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 97.0 U |
 
@@ -5137,7 +5219,7 @@ Gas seems to be holding between 130-140U
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
 
@@ -5164,7 +5246,7 @@ Gas seems to be holding between 130-140U
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 133.0 U |
 
@@ -5190,8 +5272,8 @@ Gas seems to be holding between 130-140U
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 125.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5216,8 +5298,8 @@ Gas seems to be holding between 130-140U
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 141.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5235,28 +5317,106 @@ Gas seems to be holding between 130-140U
 
 ---
 
-### 2790 m MD — Interval 2787.5 – 2792.5 m
+### 2765 m MD — Interval 2762.5 – 2767.5 m
 
-**Sample Description (spreadsheet):** Sample 2790m: 20% Siltstone, 80% very fine to coarse, trace very coarse Sandstone, 80% moderately bright FLUOR in SST. TG 153U
-
-Background gas has dropped to approx. 100U and increased silt
+**Sample Description (spreadsheet):** Sample 2765m: 0% Siltstone, 100% very fine to fine Sandstone, 100% moderately bright to bright FLUOR in SST. TG 143U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 80.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 80.0% nan |
-| Total Gas | 153.0 U |
+| % Sandstone | 100.0 |
+| Grain Size | very fine to fine (max: nan) |
+| Fluorescence | 100.0% nan |
+| Total Gas | 143.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 110.1 | 33 |
-| RES_DEEP (ohm.m) | 50.45 | 33 |
-| RES_SHALLOW (ohm.m) | 30.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **19.52** | — |
+| GR (gAPI) | 68.9 | 33 |
+| RES_DEEP (ohm.m) | 39.99 | 33 |
+| RES_SHALLOW (ohm.m) | 33.70 | 33 |
+| **Δ Res (Deep − Shallow)** | **6.28** | — |
+
+**Permeability Proxy:** Moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2770 m MD — Interval 2767.5 – 2772.5 m
+
+**Sample Description (spreadsheet):** Sample 2770m: 0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright FLUOR in SST. TG 136U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 100.0 |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 100.0% nan |
+| Total Gas | 136.0 U |
+
+**Mudlog Cuttings Description (PDF):** _No matching entry found_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 88.2 | 33 |
+| RES_DEEP (ohm.m) | 41.66 | 33 |
+| RES_SHALLOW (ohm.m) | 41.35 | 33 |
+| **Δ Res (Deep − Shallow)** | **0.31** | — |
+
+**Permeability Proxy:** Low-moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2810 m MD — Interval 2807.5 – 2812.5 m
+
+**Sample Description (spreadsheet):** Sample 2810m: 20% Siltstone, trace siderite in 80% very fine to fine, trace coarse Sandstone, 60% pale to moderately bright FLUOR in SST. TG 146U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 80.0 |
+| Grain Size | very fine to fine, trace coarse (max: nan) |
+| Fluorescence | 60.0% siderite in 80% very fine to fine, trace coarse Sandstone, 60% pale to moderately bright |
+| Total Gas | 146.0 U |
+| FeCO₃ in Siltstone | trace |
+
+**Mudlog Cuttings Description (PDF):** _No matching entry found_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 103.3 | 33 |
+| RES_DEEP (ohm.m) | 51.53 | 33 |
+| RES_SHALLOW (ohm.m) | 35.07 | 33 |
+| **Δ Res (Deep − Shallow)** | **16.46** | — |
+
+**Permeability Proxy:** Moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2815 m MD — Interval 2812.5 – 2817.5 m
+
+**Sample Description (spreadsheet):** Sample 2815m: 20% Siltstone, 80% very fine to coarse, trace very coarse Sandstone, 80% moderately bright FLUOR in SST. TG 151U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 80.0 |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 80.0% very coarse Sandstone, 80% moderately bright |
+| Total Gas | 151.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2830m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,wk sil cmt,tr lt gry slty mtx, dom disagg,fri aggs,pr vis,por,fr inf por, fluor. SURVEY @ 2835.5m
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 95.9 | 33 |
+| RES_DEEP (ohm.m) | 55.83 | 33 |
+| RES_SHALLOW (ohm.m) | 38.70 | 33 |
+| **Δ Res (Deep − Shallow)** | **17.13** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -5270,7 +5430,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 154.0 U |
 
@@ -5297,7 +5457,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 149.0 U |
 
@@ -5324,7 +5484,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
 
@@ -5351,7 +5511,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 146.0 U |
 
@@ -5378,7 +5538,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 156.0 U |
 
@@ -5405,8 +5565,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 152.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5433,7 +5593,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 144.0 U |
 
@@ -5460,7 +5620,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 157.0 U |
 
@@ -5487,8 +5647,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 166.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5514,8 +5674,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 151.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5541,8 +5701,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 156.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5568,8 +5728,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 173.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5595,8 +5755,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, rare coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse Sandstone, 100% moderately bright |
 | Total Gas | 186.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5621,7 +5781,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 161.0 U |
 
@@ -5647,7 +5807,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 147.0 U |
 
@@ -5673,8 +5833,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 170.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5699,8 +5859,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 235.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5725,8 +5885,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 204.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5751,8 +5911,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 212.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5777,7 +5937,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 195.0 U |
 
@@ -5804,8 +5964,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 193.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5831,8 +5991,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 195.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5858,8 +6018,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 208.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5885,8 +6045,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, minor coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, minor coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 202.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5912,8 +6072,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 235.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5939,8 +6099,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 203.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5966,7 +6126,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
 
@@ -5992,7 +6152,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 207.0 U |
 
@@ -6019,8 +6179,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 251.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6046,8 +6206,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 209.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6073,7 +6233,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 154.0 U |
 
@@ -6100,7 +6260,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | fine to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 209.0 U |
 
@@ -6128,7 +6288,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | fine to very coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 183.0 U |
 
@@ -6156,7 +6316,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 190.0 U |
 
@@ -6184,7 +6344,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 202.0 U |
 
@@ -6211,8 +6371,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 236.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6238,7 +6398,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
 
@@ -6265,8 +6425,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 151.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6292,8 +6452,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 175.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -6318,8 +6478,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 99.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 215.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -6344,8 +6504,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 99.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 193.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -6370,8 +6530,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 99.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 185.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -6396,8 +6556,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 99.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 175.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -6422,7 +6582,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 173.0 U |
 
@@ -6448,8 +6608,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 190.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -6474,8 +6634,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 198.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -6500,8 +6660,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 187.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -6526,7 +6686,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, rare very coarse (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 214.0 U |
 
@@ -6552,8 +6712,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 90.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 90.0% very coarse Sandstone, 90% moderately bright |
 | Total Gas | 178.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -6578,8 +6738,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 155.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6605,8 +6765,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 204.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6632,7 +6792,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
 
@@ -6660,8 +6820,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 169.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6688,7 +6848,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 190.0 U |
 
@@ -6716,7 +6876,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 187.0 U |
 
@@ -6744,7 +6904,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 205.0 U |
 
@@ -6772,7 +6932,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 194.0 U |
 
@@ -6799,7 +6959,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 183.0 U |
 
@@ -6827,8 +6987,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 199.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6854,7 +7014,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 135.0 U |
 
@@ -6882,8 +7042,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 184.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6910,8 +7070,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 199.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6939,8 +7099,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to fine, trace coarse Sandstone, 100% moderately bright |
 | Total Gas | 174.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6968,8 +7128,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, 100% moderately bright |
 | Total Gas | 158.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6997,7 +7157,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 121.0 U |
 
@@ -7025,7 +7185,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 113.0 U |
 
@@ -7054,7 +7214,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 151.0 U |
 
@@ -7082,8 +7242,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 133.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7110,8 +7270,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 137.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7137,7 +7297,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 119.0 U |
 
@@ -7164,8 +7324,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 147.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7191,7 +7351,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 180.0 U |
 
@@ -7218,7 +7378,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 191.0 U |
 
@@ -7244,7 +7404,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 157.0 U |
 
@@ -7270,7 +7430,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 166.0 U |
 
@@ -7296,7 +7456,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
 
@@ -7323,8 +7483,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 159.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7350,7 +7510,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 134.0 U |
 
@@ -7377,7 +7537,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 170.0 U |
 
@@ -7404,7 +7564,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 175.0 U |
 
@@ -7431,8 +7591,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine,trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 180.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7458,7 +7618,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 155.0 U |
 
@@ -7485,7 +7645,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 170.0 U |
 
@@ -7511,7 +7671,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 137.0 U |
 
@@ -7537,8 +7697,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 151.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -7563,8 +7723,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to dull |
 | Total Gas | 153.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7590,8 +7750,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 163.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7617,8 +7777,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 163.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7644,7 +7804,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to  to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
 
@@ -7671,7 +7831,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 154.0 U |
 
@@ -7698,7 +7858,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, rare very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
 
@@ -7725,7 +7885,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 151.0 U |
 
@@ -7752,7 +7912,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 146.0 U |
 
@@ -7778,7 +7938,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, rare very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 143.0 U |
 
@@ -7804,8 +7964,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 155.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -7830,8 +7990,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 164.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7857,7 +8017,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 166.0 U |
 
@@ -7884,7 +8044,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
 
@@ -7911,7 +8071,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, minor coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 192.0 U |
 
@@ -7938,8 +8098,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 176.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7965,8 +8125,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, minor coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 202.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -7992,8 +8152,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 101% moderately bright to bright |
 | Total Gas | 200.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -8020,8 +8180,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, minor coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, minor coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 196.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -8047,7 +8207,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
 
@@ -8074,8 +8234,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% moderately bright |
 | Total Gas | 136.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -8101,7 +8261,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 132.0 U |
 
@@ -8129,8 +8289,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, minor medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 175.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -8157,7 +8317,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 162.0 U |
 
@@ -8185,8 +8345,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 166.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -8212,9 +8372,10 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 174.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3360m: pl-lt brn,lt gry brn,med brn, clr,trnsl,vf-crs,tr v crs,mod-v pr srt,sbang- sbrnd,tr ang,wk-mod sil cmt,loc strg sil cmt,tr sid cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,mnr disagg,pr-v pr
@@ -8239,9 +8400,10 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 100% very fine to medium, minor coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 195.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3360m: pl-lt brn,lt gry brn,med brn, clr,trnsl,vf-crs,tr v crs,mod-v pr srt,sbang- sbrnd,tr ang,wk-mod sil cmt,loc strg sil cmt,tr sid cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,mnr disagg,pr-v pr
@@ -8266,9 +8428,10 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 202.0 U |
+| FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3360m: pl-lt brn,lt gry brn,med brn, clr,trnsl,vf-crs,tr v crs,mod-v pr srt,sbang- sbrnd,tr ang,wk-mod sil cmt,loc strg sil cmt,tr sid cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,mnr disagg,pr-v pr
@@ -8294,9 +8457,10 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 159.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3390m: pl-lt brn,lt-med gry brn,med brn,clr,trnsl,vf-v crs,v pr srt,sbang-sbrnd, ang i/p,mod-wk sil cmt,loc strg sil cmt,tr sid cmt,mnr-loc com brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,com disagg,
@@ -8321,9 +8485,10 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 80.0% nan |
+| Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Fluorescence | 80.0% siderite in 90% very fine to fine, rare medium to coarse Sandstone, 80% moderately bright |
 | Total Gas | 148.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3390m: pl-lt brn,lt-med gry brn,med brn,clr,trnsl,vf-v crs,v pr srt,sbang-sbrnd, ang i/p,mod-wk sil cmt,loc strg sil cmt,tr sid cmt,mnr-loc com brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,com disagg,
@@ -8348,9 +8513,10 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 75.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 75.0% siderite in 75% very fine to medium, trace coarse Sandstone, 75% moderately bright |
 | Total Gas | 127.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3390m: pl-lt brn,lt-med gry brn,med brn,clr,trnsl,vf-v crs,v pr srt,sbang-sbrnd, ang i/p,mod-wk sil cmt,loc strg sil cmt,tr sid cmt,mnr-loc com brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,com disagg,
@@ -8375,9 +8541,10 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 85.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 85% very fine to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 159.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3390m: pl-lt brn,lt-med gry brn,med brn,clr,trnsl,vf-v crs,v pr srt,sbang-sbrnd, ang i/p,mod-wk sil cmt,loc strg sil cmt,tr sid cmt,mnr-loc com brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,com disagg,
@@ -8402,9 +8569,10 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 95% very fine to medium, minor coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 200.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3390m: pl-lt brn,lt-med gry brn,med brn,clr,trnsl,vf-v crs,v pr srt,sbang-sbrnd, ang i/p,mod-wk sil cmt,loc strg sil cmt,tr sid cmt,mnr-loc com brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,com disagg,
@@ -8429,8 +8597,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 79.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 197.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -8456,8 +8624,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 99.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to fine, rare medium to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 196.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -8482,7 +8650,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 91.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 214.0 U |
 
@@ -8510,8 +8678,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 81.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 188.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -8538,7 +8706,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 71.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 95.0% nan |
 | Total Gas | 172.0 U |
 
@@ -8566,7 +8734,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 65.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, rare very coarse (max: nan) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 137.0 U |
 
@@ -8594,7 +8762,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 75.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
 | Fluorescence | 95.0% nan |
 | Total Gas | 174.0 U |
 
@@ -8622,7 +8790,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 70.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 135.0 U |
 
@@ -8650,7 +8818,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 147.0 U |
 
@@ -8678,7 +8846,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 114.0 U |
 
@@ -8704,8 +8872,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 146.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -8730,8 +8898,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 119.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -8756,7 +8924,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 121.0 U |
 
@@ -8782,7 +8950,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 134.0 U |
 
@@ -8808,8 +8976,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 166.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -8834,8 +9002,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% bright to moderately bright |
 | Total Gas | 177.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -8860,7 +9028,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, minor medium to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 135.0 U |
 
@@ -8886,7 +9054,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 136.0 U |
 
@@ -8912,8 +9080,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 123.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -8938,8 +9106,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 153.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -8964,7 +9132,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse, minor very coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 173.0 U |
 
@@ -8990,7 +9158,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 180.0 U |
 
@@ -9016,7 +9184,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 167.0 U |
 
@@ -9042,8 +9210,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 174.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -9068,7 +9236,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 161.0 U |
 
@@ -9095,8 +9263,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 156.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9122,7 +9290,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
 
@@ -9149,7 +9317,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 196.0 U |
 
@@ -9176,7 +9344,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
 
@@ -9204,8 +9372,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% bright to moderately bright |
 | Total Gas | 191.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9232,7 +9400,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
 
@@ -9260,7 +9428,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 206.0 U |
 
@@ -9287,8 +9455,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% bright to moderately bright |
 | Total Gas | 199.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9314,7 +9482,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 208.0 U |
 
@@ -9341,8 +9509,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 198.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9369,7 +9537,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
 
@@ -9396,8 +9564,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 199.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9423,7 +9591,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 194.0 U |
 
@@ -9450,8 +9618,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, 100% bright to moderately bright |
 | Total Gas | 180.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9478,8 +9646,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright to bright |
 | Total Gas | 201.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9506,7 +9674,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 207.0 U |
 
@@ -9534,8 +9702,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium (max: nan) |
+| Fluorescence | 100.0% medium Sandstone, 100% moderately bright to bright |
 | Total Gas | 143.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9561,7 +9729,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 182.0 U |
 
@@ -9588,8 +9756,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 176.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9615,7 +9783,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine, rare medium to coarse (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 209.0 U |
 
@@ -9643,8 +9811,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 175.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9670,8 +9838,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 166.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9697,8 +9865,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to fine, minor medium (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to fine, minor medium Sandstone, 100% moderately bright |
 | Total Gas | 161.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9724,7 +9892,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 163.0 U |
 
@@ -9751,7 +9919,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to fine (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 177.0 U |
 
@@ -9778,8 +9946,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to medium, trace coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% moderately bright |
 | Total Gas | 159.0 U |
 
 **Mudlog Cuttings Description (PDF):**
@@ -9805,7 +9973,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
 
@@ -9831,7 +9999,7 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
+| Grain Size | very fine to medium (max: nan) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 245.0 U |
 
@@ -9857,8 +10025,8 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 100.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to very coarse (max: nan) |
+| Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 250.0 U |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -9883,9 +10051,10 @@ Background gas has dropped to approx. 100U and increased silt
 | Property | Value |
 |----------|-------|
 | % Sandstone | 95.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 100.0% nan |
+| Grain Size | very fine to coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 5% Siltstone, 95% very fine to coarse Sandstone, 100% moderately bright |
 | Total Gas | 235.0 U |
+| FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9902,101 +10071,57 @@ Background gas has dropped to approx. 100U and increased silt
 
 ---
 
-### 3705 m MD — Interval 3702.5 – 3707.5 m
+### 3680 m MD — Interval 3677.5 – 3682.5 m
 
-**Sample Description (spreadsheet):** Sample 3705m: common siderite in 60% Siltstone, minor siderite in 40% very fine to very coarse Sandstone, 20% dull to moderately bright FLUOR in SST. TG 101U
+**Sample Description (spreadsheet):** Sample 3680m: trace siderite in 20% Siltstone, 80% very fine to coarse, trace very coarse Sandstone, 100% moderately bright FLUOR in SST. TG 240U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 40.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 20.0% nan |
-| Total Gas | 101.0 U |
+| % Sandstone | 80.0 |
+| Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Fluorescence | 100.0% siderite in 20% Siltstone, 80% very fine to coarse, trace very coarse Sandstone, 100% moderately bright |
+| Total Gas | 240.0 U |
+| FeCO₃ in Siltstone | trace |
 
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~3710m: v lt gry-wh,lt-med brn,lt CONTROL DRILL @ 25M/HR gry,clr,trnsl,vf-med,mnr crs-v crs,pr-v 3711m-3724m pr srt,sbang-sbrnd,mnr ang,wk-mod sil cmt,tr sid cmt,mnr wh arg & brn-gry slty mtx,mnr slty lams,fri-mod hd,tr hd,mnr
+**Mudlog Cuttings Description (PDF):** _No matching entry found_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 117.6 | 33 |
-| RES_DEEP (ohm.m) | 28.92 | 33 |
-| RES_SHALLOW (ohm.m) | 19.15 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.77** | — |
+| GR (gAPI) | 114.9 | 33 |
+| RES_DEEP (ohm.m) | 40.58 | 33 |
+| RES_SHALLOW (ohm.m) | 27.58 | 33 |
+| **Δ Res (Deep − Shallow)** | **12.99** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
-### 3710 m MD — Interval 3707.5 – 3712.5 m
+### 3685 m MD — Interval 3682.5 – 3687.5 m
 
-**Sample Description (spreadsheet):** Sample 3710m: common siderite in 60% Siltstone, minor siderite in 40% very fine to fine, minor medium to very coarse Sandstone, 20% dull to moderately bright FLUOR in SST. TG 99U
+**Sample Description (spreadsheet):** Sample 3685m: trace siderite in 15% Siltstone, 85% very fine to medium Sandstone, 100% moderately bright FLUOR in SST. TG 172U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 40.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 20.0% nan |
-| Total Gas | 99.0 U |
+| % Sandstone | 85.0 |
+| Grain Size | very fine to medium (max: nan) |
+| Fluorescence | 100.0% siderite in 15% Siltstone, 85% very fine to medium Sandstone, 100% moderately bright |
+| Total Gas | 172.0 U |
+| FeCO₃ in Siltstone | trace |
 
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~3710m: v lt gry-wh,lt-med brn,lt CONTROL DRILL @ 25M/HR gry,clr,trnsl,vf-med,mnr crs-v crs,pr-v 3711m-3724m pr srt,sbang-sbrnd,mnr ang,wk-mod sil cmt,tr sid cmt,mnr wh arg & brn-gry slty mtx,mnr slty lams,fri-mod hd,tr hd,mnr
+**Mudlog Cuttings Description (PDF):** _No matching entry found_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 123.7 | 29 |
-| RES_DEEP (ohm.m) | 21.75 | 33 |
-| RES_SHALLOW (ohm.m) | 15.41 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.34** | — |
+| GR (gAPI) | 108.8 | 33 |
+| RES_DEEP (ohm.m) | 38.26 | 33 |
+| RES_SHALLOW (ohm.m) | 25.65 | 33 |
+| **Δ Res (Deep − Shallow)** | **12.61** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 3715 m MD — Interval 3712.5 – 3717.5 m
-
-**Sample Description (spreadsheet):** Sample 3715m: minor siderite in 40% Siltstone, trace siderite in 60% very fine to medium, minor coarse to very coarse Sandstone, 15% dull to moderately bright FLUOR in SST. TG 83U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 60.0 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 15.0% nan |
-| Total Gas | 83.0 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~3710m: v lt gry-wh,lt-med brn,lt CONTROL DRILL @ 25M/HR gry,clr,trnsl,vf-med,mnr crs-v crs,pr-v 3711m-3724m pr srt,sbang-sbrnd,mnr ang,wk-mod sil cmt,tr sid cmt,mnr wh arg & brn-gry slty mtx,mnr slty lams,fri-mod hd,tr hd,mnr
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| RES_DEEP (ohm.m) | 17.24 | 16 |
-| RES_SHALLOW (ohm.m) | 12.76 | 16 |
-| **Δ Res (Deep − Shallow)** | **4.48** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 3720 m MD — Interval 3717.5 – 3722.0 m
-
-**Sample Description (spreadsheet):** Sample 3720m: rare siderite in 45% Siltstone, 55% very fine to medium, rare coarse to very coarse Sandstone, 15% dull to moderately bright FLUOR in SST. TG 84U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 55.00000000000001 |
-| Grain Size | nan (max: nan) |
-| Fluorescence | 15.0% nan |
-| Total Gas | 84.0 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~3710m: v lt gry-wh,lt-med brn,lt CONTROL DRILL @ 25M/HR gry,clr,trnsl,vf-med,mnr crs-v crs,pr-v 3711m-3724m pr srt,sbang-sbrnd,mnr ang,wk-mod sil cmt,tr sid cmt,mnr wh arg & brn-gry slty mtx,mnr slty lams,fri-mod hd,tr hd,mnr
-
-**Wireline Log Averages:** _No log data in interval_
 
 ---
 
@@ -10004,10 +10129,10 @@ Background gas has dropped to approx. 100U and increased silt
 
 | Metric | Value |
 |--------|-------|
-| Intervals analysed | 370 |
-| Depth range | 1629 – 3720 m |
-| Avg % Sandstone | 92.0% |
-| Avg Δ Res (Deep−Shallow) | 7.31 ohm.m |
+| Intervals analysed | 373 |
+| Depth range | 1617 – 3685 m |
+| Avg % Sandstone | 93.0% |
+| Avg Δ Res (Deep−Shallow) | 7.64 ohm.m |
 | Max Δ Res | 30.14 ohm.m |
 | Min Δ Res | -3.24 ohm.m |
-| Mudlog matches | 248 / 370 |
+| Mudlog matches | 251 / 373 |

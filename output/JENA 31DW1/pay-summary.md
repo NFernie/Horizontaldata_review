@@ -1,12 +1,20 @@
 # JENA 31DW1 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 03:25 UTC  
+**Generated:** 2026-07-07 04:18 UTC  
 **Formation tops name:** JENA 31DW1  
 **McKinlay window:** 2067.5 – 3658.0 m MD  
 **DC30 top:** 2060.75 m MD  
 **Total lateral length (TD − DC30):** 1597.2 m
 
 ---
+
+### Overburden Exclusion Intervals
+
+| Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
+|-------------|-------------|-----------------|------------|
+| 2377.6 | 2375.4 | 2407.5 | 29.9 |
+| 2965.7 | 2967.8 | 3243.7 | 278.0 |
+| 3369.9 | 3365.6 | 3410.6 | 40.6 |
 
 ## Pay Rules Applied
 
@@ -22,32 +30,29 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 1137.5 | 71.2% | 10 |
-| Resistivity only | 1141.6 | 71.5% | 47 |
-| Matching both | 1082.5 | 67.8% | 6 |
+| Cuttings only | 1180.0 | 73.9% | 7 |
+| Resistivity only | 1176.7 | 73.7% | 40 |
+| Matching both | 1140.0 | 71.4% | 7 |
 
-**Sample intervals in McKinlay Member:** 182
+**Sample intervals in McKinlay Member:** 165
 
 ## Cuttings-Only Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 2085.0 | 2095.0 | 10.0 |
+| 2065.0 | 2095.0 | 30.0 |
 | 2105.0 | 2222.5 | 117.5 |
 | 2227.5 | 2237.5 | 10.0 |
-| 2242.5 | 2365.0 | 122.5 |
-| 2425.0 | 2952.5 | 527.5 |
-| 3155.0 | 3165.0 | 10.0 |
-| 3175.0 | 3185.0 | 10.0 |
-| 3215.0 | 3225.0 | 10.0 |
-| 3255.0 | 3355.0 | 100.0 |
-| 3422.5 | 3642.5 | 220.0 |
+| 2242.5 | 2375.0 | 132.5 |
+| 2415.0 | 2962.5 | 547.5 |
+| 3255.0 | 3367.5 | 112.5 |
+| 3412.5 | 3642.5 | 230.0 |
 
 ## Resistivity-Only Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 2077.4 | 2085.8 | 8.4 |
+| 2076.1 | 2085.8 | 9.8 |
 | 2089.6 | 2090.2 | 0.6 |
 | 2093.3 | 2102.6 | 9.3 |
 | 2102.9 | 2103.2 | 0.3 |
@@ -63,18 +68,19 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 2155.5 | 2161.6 | 6.1 |
 | 2161.7 | 2170.1 | 8.4 |
 
-_(32 additional intervals omitted)_
+_(25 additional intervals omitted)_
 
 ## Matching Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
+| 2075.0 | 2085.0 | 10.0 |
 | 2115.0 | 2222.5 | 107.5 |
 | 2227.5 | 2237.5 | 10.0 |
-| 2242.5 | 2365.0 | 122.5 |
-| 2425.0 | 2952.5 | 527.5 |
-| 3255.0 | 3355.0 | 100.0 |
-| 3422.5 | 3637.5 | 215.0 |
+| 2242.5 | 2375.0 | 132.5 |
+| 2415.0 | 2957.5 | 542.5 |
+| 3255.0 | 3367.5 | 112.5 |
+| 3412.5 | 3637.5 | 225.0 |
 
 ## Data Quality Notes
 

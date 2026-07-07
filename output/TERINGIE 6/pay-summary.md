@@ -1,12 +1,21 @@
 # TERINGIE 6 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 03:25 UTC  
+**Generated:** 2026-07-07 04:18 UTC  
 **Formation tops name:** TERINGIE 6  
 **McKinlay window:** 1574.3 – 3444.4 m MD  
 **DC30 top:** 1580.02 m MD  
 **Total lateral length (TD − DC30):** 1864.4 m
 
 ---
+
+### Overburden Exclusion Intervals
+
+| Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
+|-------------|-------------|-----------------|------------|
+| 2117.2 | 2119.2 | 2179.9 | 62.7 |
+| 2288.0 | 2290.4 | 2318.3 | 30.3 |
+| 2350.4 | 2350.6 | 2400.4 (assumed) | 50.0 |
+| 2775.1 | 2777.2 | 2825.1 (assumed) | 50.0 |
 
 ## Pay Rules Applied
 
@@ -22,11 +31,11 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 945.0 | 50.7% | 16 |
-| Resistivity only | 664.5 | 35.6% | 206 |
-| Matching both | 420.0 | 22.5% | 12 |
+| Cuttings only | 945.0 | 50.7% | 18 |
+| Resistivity only | 641.6 | 34.4% | 200 |
+| Matching both | 420.0 | 22.5% | 13 |
 
-**Sample intervals in McKinlay Member:** 166
+**Sample intervals in McKinlay Member:** 161
 
 ## Cuttings-Only Pay Intervals
 
@@ -35,20 +44,20 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1645.0 | 1655.0 | 10.0 |
 | 1695.0 | 1925.0 | 230.0 |
 | 1935.0 | 1975.0 | 40.0 |
-| 2225.0 | 2275.0 | 50.0 |
+| 2225.0 | 2285.0 | 60.0 |
+| 2325.0 | 2345.0 | 20.0 |
 | 2415.0 | 2555.0 | 140.0 |
 | 2565.0 | 2595.0 | 30.0 |
 | 2625.0 | 2645.0 | 20.0 |
 | 2675.0 | 2685.0 | 10.0 |
-| 2795.0 | 2875.0 | 80.0 |
+| 2765.0 | 2775.0 | 10.0 |
+| 2835.0 | 2875.0 | 40.0 |
 | 2895.0 | 2975.0 | 80.0 |
 | 2985.0 | 3045.0 | 60.0 |
 | 3065.0 | 3105.0 | 40.0 |
 | 3125.0 | 3145.0 | 20.0 |
-| 3185.0 | 3205.0 | 20.0 |
-| 3305.0 | 3355.0 | 50.0 |
 
-_(1 additional intervals omitted)_
+_(3 additional intervals omitted)_
 
 ## Resistivity-Only Pay Intervals
 
@@ -70,7 +79,7 @@ _(1 additional intervals omitted)_
 | 1828.6 | 1828.7 | 0.2 |
 | 1828.9 | 1832.4 | 3.5 |
 
-_(191 additional intervals omitted)_
+_(185 additional intervals omitted)_
 
 ## Matching Pay Intervals
 
@@ -80,11 +89,12 @@ _(191 additional intervals omitted)_
 | 1785.0 | 1885.0 | 100.0 |
 | 1935.0 | 1955.0 | 20.0 |
 | 2225.0 | 2235.0 | 10.0 |
-| 2255.0 | 2275.0 | 20.0 |
+| 2255.0 | 2285.0 | 30.0 |
+| 2325.0 | 2345.0 | 20.0 |
 | 2435.0 | 2535.0 | 100.0 |
 | 2545.0 | 2555.0 | 10.0 |
 | 2675.0 | 2685.0 | 10.0 |
-| 2795.0 | 2835.0 | 40.0 |
+| 2765.0 | 2775.0 | 10.0 |
 | 2895.0 | 2935.0 | 40.0 |
 | 3305.0 | 3325.0 | 20.0 |
 | 3385.0 | 3405.0 | 20.0 |

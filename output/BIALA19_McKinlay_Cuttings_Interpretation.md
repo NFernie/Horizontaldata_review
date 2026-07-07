@@ -1,6 +1,6 @@
 # BIALA 19 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 02:29 UTC  
+**Generated:** 2026-07-07 04:15 UTC  
 **Well:** BIALA 19 (BIALA 19)  
 **TD:** 3730 m MD  
 
@@ -26,33 +26,29 @@
 
 ### 2.2 McKinlay Member Top Classification
 
-**Target re-entry (McKinlay without paired Murta):**
-- 1735.00 m MD
-- 2030.06 m MD
-- 2078.18 m MD
+**Initial reservoir entry (DC30 + shallowest McKinlay):** 1735.00 m MD
+
+**Target re-entry (lone McKinlay below an overburden entry pair):**
 - 2172.63 m MD
-- 2329.47 m MD
-- 2427.49 m MD
 - 2742.95 m MD
 - 3227.71 m MD
 - 3432.67 m MD
 
-**Overburden intersections (McKinlay ≈ Murta within 5 m):**
-| McKinlay (m MD) | Murta (m MD) | Δ (m) |
-|-----------------|-------------|-------|
-| 2138.77 | 2138.77 | 0.00 |
-| 2648.49 | 2644.93 | 3.56 |
-| 3174.25 | 3176.03 | 1.78 |
-| 3420.20 | 3421.98 | 1.78 |
+**Overburden entry (Murta + corresponding McKinlay within 5 m):**
+| McKinlay entry (m MD) | Murta (m MD) | Δ (m) | Re-entry (m MD) | Zone length (m) |
+|-----------------------|-------------|-------|-----------------|-----------------|
+| 2138.77 | 2138.77 | 0.00 | 2172.63 | 33.9 |
+| 2648.49 | 2644.93 | 3.56 | 2742.95 | 94.5 |
+| 3174.25 | 3176.03 | 1.78 | 3227.71 | 53.5 |
+| 3420.20 | 3421.98 | 1.78 | 3432.67 | 12.5 |
 
 **McKinlay Member analysis window:** 1735.0 – 3730.0 m MD
 
-**Excluded zones (±10 m around overburden & target re-entry tops):** 2129–2149 (overburden), 2638–2658 (overburden), 3164–3184 (overburden), 3410–3430 (overburden), 1725–1745 (target_reentry), 2020–2040 (target_reentry), 2068–2088 (target_reentry), 2163–2183 (target_reentry), 2319–2339 (target_reentry), 2417–2437 (target_reentry), 2733–2753 (target_reentry), 3218–3238 (target_reentry), 3423–3443 (target_reentry)
+**Excluded overburden intervals (entry → re-entry, pay resumes at re-entry):** 2139–2173 m (overburden), 2648–2743 m (overburden), 3174–3228 m (overburden), 3420–3433 m (overburden)
 
-**Samples in McKinlay Member:** 219 of 277 total
+**Samples in McKinlay Member:** 237 of 277 total
 - Excluded pre-reservoir: 17
-- Excluded overburden intersections: 12
-- Excluded target re-entry tops: 29
+- Excluded overburden intervals: 23
 
 ## 3. Known Shortcomings
 
@@ -64,12 +60,101 @@
 4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
 5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
 6. **NULL LAS values** (-999.25) excluded from averages.
-7. **Exclusion zones** use ±10 m around paired overburden tops AND McKinlay target re-entry tops without Murta pairs.
+7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if no re-entry is mapped). Initial DC30/McKinlay reservoir entry is not excluded.
 8. **Input Sheet only** — Calculations Sheet not used.
-
 ## 4. McKinlay Member Sample Intervals
 
 Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log averages.
+
+### 1735 m MD — Interval 1732.5 – 1737.5 m
+
+**Sample Description (spreadsheet):** Sample 1735m: 20% Siltstone, moderately to common siderite in 80% very fine to fine, occasional medium to coarse Sandstone, 60% moderately bright FLUOR in SST. TG 11U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 80.0 |
+| Grain Size | vf-f, occ med-crs (max: crs) |
+| Fluorescence | 60.0% mod bri |
+| Total Gas | 11.0 U |
+| FeCO₃ in Sandstone | mod-com |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1720m: med-lt gry,med brn gry,v aren,grd to SST,tr carb spks & micmic,mnr sndy lams,mod hd-frm,sbblky.
+- **SANDSTONE** @ ~1724m: clr,trnsl,lt brn-off wh,occ trnsl pl brn, vf-crs,pred f-med,pr srt,sbang-sbrnd,mod sil cmt, com strg sid cmt,com pl brn-off wh arg mtx,mnr carb spks & micmic,tr slty lams,fri-mod hd,occ-com lse qtz grs,pr vis por,pr-fr inf por,fluor.
+- _(4 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 104.9 | 32 |
+| RES_DEEP (ohm.m) | 32.44 | 32 |
+| RES_SHALLOW (ohm.m) | 50.72 | 32 |
+| **Δ Res (Deep − Shallow)** | **-18.28** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 1740 m MD — Interval 1737.5 – 1742.5 m
+
+**Sample Description (spreadsheet):** Sample 1740m: 15% Siltstone, trace siderite in 85% very fine to coarse, pred fine to medium Sandstone, 80% bright FLUOR in SST. TG 38U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 85.0 |
+| Grain Size | vf-crs, pred f-med (max: crs) |
+| Fluorescence | 80.0% bri |
+| Total Gas | 38.0 U |
+| FeCO₃ in Sandstone | tr |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1724m: clr,trnsl,lt brn-off wh,occ trnsl pl brn, vf-crs,pred f-med,pr srt,sbang-sbrnd,mod sil cmt, com strg sid cmt,com pl brn-off wh arg mtx,mnr carb spks & micmic,tr slty lams,fri-mod hd,occ-com lse qtz grs,pr vis por,pr-fr inf por,fluor.
+- **SANDSTONE** @ ~1730m: clr,trnsl,off wh-pl brn,vf-f,occ med-crs,mod pr srt,sbang-sbrnd,mod sil cmt,com 1732 strg sid cmt,occ-com off wh-pl brn arg mtx,com lse 1236.1 qtz grs,mod hd-fri aggs,pr vis por,gd inf por,fluor. McKINLAY MEMBER:
+- _(4 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 89.7 | 33 |
+| RES_DEEP (ohm.m) | 41.23 | 33 |
+| RES_SHALLOW (ohm.m) | 70.45 | 33 |
+| **Δ Res (Deep − Shallow)** | **-29.22** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 1745 m MD — Interval 1742.5 – 1747.5 m
+
+**Sample Description (spreadsheet):** Sample 1745m: 5% Siltstone, trace siderite in 95% very fine to coarse, pred fine to medium Sandstone, 100% bright FLUOR in SST. TG 39U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 95.0 |
+| Grain Size | vf-crs, pred f-med (max: crs) |
+| Fluorescence | 100.0% bri |
+| Total Gas | 39.0 U |
+| FeCO₃ in Sandstone | tr |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1730m: clr,trnsl,off wh-pl brn,vf-f,occ med-crs,mod pr srt,sbang-sbrnd,mod sil cmt,com 1732 strg sid cmt,occ-com off wh-pl brn arg mtx,com lse 1236.1 qtz grs,mod hd-fri aggs,pr vis por,gd inf por,fluor. McKINLAY MEMBER:
+- **SANDSTONE** @ ~1736m: clr,trnsl,trnsl pl brn,off wh,vf-crs,pred f-med,mod pr srt,sbang-sbrnd,mod sil cmt, 83 / 6 / 4 / 4 / 3 occ-com off wh-pl brn gry arg mtx,com-pred lse qtz grs,mod hd-fri aggs,pr vis por,gd inf por,fluor. FLUOR:1735-1770m;80-100% of SST;
+- _(3 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 85.6 | 33 |
+| RES_DEEP (ohm.m) | 38.46 | 33 |
+| RES_SHALLOW (ohm.m) | 59.94 | 33 |
+| **Δ Res (Deep − Shallow)** | **-21.48** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
 
 ### 1750 m MD — Interval 1747.5 – 1752.5 m
 
@@ -1124,6 +1209,93 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 
 ---
 
+### 2020 m MD — Interval 2015.0 – 2025.0 m
+
+**Sample Description (spreadsheet):** Sample 2020m: 10% Siltstone, 90% very fine to medium, trace coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 34U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 90.0 |
+| Grain Size | vf-med, tr crs (max: crs) |
+| Fluorescence | 100.0% mod bri - bri |
+| Total Gas | 34.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2004m: pl brn,clr,trnsl,vf-med,tr crs,mod wl srt,sbang-sbrnd,occ ang,wk sil cmt,tr off wh-lt gry arg mtx,fri,com lse grs,v pr vis por,pr inf por,fluor.
+- **SILTSTONE** @ ~2012m: med-dk gry,arg,aren i/p,tr micmic,tr carb spks,frm,sbblky.
+- _(3 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 93.5 | 66 |
+| RES_DEEP (ohm.m) | 25.54 | 66 |
+| RES_SHALLOW (ohm.m) | 26.83 | 66 |
+| **Δ Res (Deep − Shallow)** | **-1.29** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2030 m MD — Interval 2025.0 – 2035.0 m
+
+**Sample Description (spreadsheet):** Sample 2030m: 5% Siltstone, 95% very fine to coarse Sandstone, 100% dull  to  moderately bright FLUOR in SST. TG 34U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 95.0 |
+| Grain Size | vf-crs (max: crs) |
+| Fluorescence | 100.0% dll - mod bri |
+| Total Gas | 34.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2012m: med-dk gry,arg,aren i/p,tr micmic,tr carb spks,frm,sbblky.
+- **SANDSTONE** @ ~2016m: clr,trnsl,vf-crs,dom med,sbang-sbrnd, 1239.4 wk sil cmt,tr off wh arg mtx,tr fri aggs,dom cln lse grs,pr vis por,fr-gd inf por,fluor. 78 / 5 / 4 / 6 / 7
+- _(3 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 93.4 | 66 |
+| RES_DEEP (ohm.m) | 22.74 | 66 |
+| RES_SHALLOW (ohm.m) | 24.78 | 66 |
+| **Δ Res (Deep − Shallow)** | **-2.04** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2040 m MD — Interval 2035.0 – 2045.0 m
+
+**Sample Description (spreadsheet):** Sample 2040m: 5% Siltstone, 95% very fine to coarse Sandstone, 100% dull  to  moderately bright FLUOR in SST. TG 36U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 95.0 |
+| Grain Size | vf-crs (max: crs) |
+| Fluorescence | 100.0% dll - mod bri |
+| Total Gas | 36.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2032m: clr,trnsl,lt brn,vf-med,tr crs,mod srt, sbang-sbrnd,tr ang,wk sil cmt,com pl brn-off wh arg mtx,fri aggs,dom cln lse grs,pr vis & inf por,fluor. MW: 9.9 2036 F P V V : : 4 11 5 1239.5 Rmf: 0.057 ohmm @ 75° F
+- **SILTSTONE** @ ~2022m: 1/- SILTSTONE:med-dk gry,arg,aren i/p,tr micmic,tr Cl: 103.5k carb spks & micrlams,frm,sbblky. 20 12 4 3 0 9.6 79 / 5 / 4 / 6 / 6 37 U
+- _(3 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 98.8 | 65 |
+| RES_DEEP (ohm.m) | 18.85 | 65 |
+| RES_SHALLOW (ohm.m) | 21.47 | 65 |
+| **Δ Res (Deep − Shallow)** | **-2.62** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
 ### 2050 m MD — Interval 2045.0 – 2055.0 m
 
 **Sample Description (spreadsheet):** Sample 2050m: 5% Siltstone, 95% very fine to medium, trace coarse Sandstone, 100% dull  to  moderately bright FLUOR in SST. TG 28U
@@ -1176,6 +1348,93 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | RES_DEEP (ohm.m) | 18.10 | 65 |
 | RES_SHALLOW (ohm.m) | 20.58 | 65 |
 | **Δ Res (Deep − Shallow)** | **-2.48** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2070 m MD — Interval 2065.0 – 2075.0 m
+
+**Sample Description (spreadsheet):** Sample 2070m: 0% Siltstone, 100% very fine to medium, dominantly fine Sandstone, 100% dull  to  moderately bright FLUOR in SST. TG 28U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 100.0 |
+| Grain Size | vf-med, dom f (max: crs) |
+| Fluorescence | 100.0% dll - mod bri |
+| Total Gas | 28.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2052m: clr,trnsl,lt brn,vf-med,dom f,mod srt, sbang-sbrnd,wk sil cmt,occ pl brn-off wh arg mtx,fri, dom cln lse grs,pr vis & inf por,fluor.
+- **SANDSTONE** @ ~2060m: clr,trnsl,lt brn,lt gry,vf-med,dom f, 1239.8 mod wl srt,sbang-sbrnd,wk sil cmt,com pl brn-off wh arg mtx,fri aggs,com lse,v pr vis & inf por,fluor.
+- _(2 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 95.8 | 66 |
+| RES_DEEP (ohm.m) | 19.04 | 66 |
+| RES_SHALLOW (ohm.m) | 20.96 | 66 |
+| **Δ Res (Deep − Shallow)** | **-1.92** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2080 m MD — Interval 2075.0 – 2085.0 m
+
+**Sample Description (spreadsheet):** Sample 2080m: 0% Siltstone, 100% very fine to medium, dominantly fine Sandstone, 100% dull  to  moderately bright FLUOR in SST. TG 28U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 100.0 |
+| Grain Size | vf-med, dom f (max: crs) |
+| Fluorescence | 100.0% dll - mod bri |
+| Total Gas | 28.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2060m: clr,trnsl,lt brn,lt gry,vf-med,dom f, 1239.8 mod wl srt,sbang-sbrnd,wk sil cmt,com pl brn-off wh arg mtx,fri aggs,com lse,v pr vis & inf por,fluor.
+- **SANDSTONE** @ ~2068m: clr,trnsl,lt brn,lt gry,vf-med,dom f, 1239.8 mod wl srt,sbang-sbrnd,wk sil cmt,com pl brn-off wh arg mtx,fri aggs,com lse,v pr vis & inf por,fluor. 76 / 5 / 5 / 7 / 7 2076 MD:2076.0 m
+- _(2 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 97.8 | 66 |
+| RES_DEEP (ohm.m) | 22.19 | 66 |
+| RES_SHALLOW (ohm.m) | 25.83 | 66 |
+| **Δ Res (Deep − Shallow)** | **-3.65** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2090 m MD — Interval 2085.0 – 2095.0 m
+
+**Sample Description (spreadsheet):** Sample 2090m: 0% Siltstone, 100% very fine to medium,dominantly fine, rare coarse Sandstone, 100% dull  to  moderately bright FLUOR in SST. TG 30U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 100.0 |
+| Grain Size | vf-med,dom f, rr crs (max: crs) |
+| Fluorescence | 100.0% dll - mod bri |
+| Total Gas | 30.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2080m: clr-trnsl,pl brn gry,vf-med,pred f,occ crs,mod pr srt,sbang-sbrnd,wk sil cmt,com pl brn-off wh arg mtx,fri aggs,com lse qtz grs,pr vis 2084 por,fr inf por,fluor. 1239.8
+- **SANDSTONE** @ ~2092m: clr-trnsl,pl brn gry,vf-med,pred f,occ crs,mod pr srt,sbang-sbrnd,wk sil cmt,com pl brn-off wh arg mtx,fri aggs,com-abdt lse qtz grs,pr 2096 vis por,gd inf por,fluor. 1239.7
+- _(2 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 99.6 | 65 |
+| RES_DEEP (ohm.m) | 31.25 | 65 |
+| RES_SHALLOW (ohm.m) | 37.65 | 65 |
+| **Δ Res (Deep − Shallow)** | **-6.41** | — |
 
 **Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -1263,6 +1522,64 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | RES_DEEP (ohm.m) | 43.69 | 66 |
 | RES_SHALLOW (ohm.m) | 57.54 | 66 |
 | **Δ Res (Deep − Shallow)** | **-13.86** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2130 m MD — Interval 2125.0 – 2135.0 m
+
+**Sample Description (spreadsheet):** Sample 2130m: 0% Siltstone, 100% very fine to medium Sandstone, 100% moderately bright FLUOR in SST. TG 38U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 100.0 |
+| Grain Size | vf-med (max: med) |
+| Fluorescence | 100.0% mod bri |
+| Total Gas | 38.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2124m: clr,trnsl,v pl trnsl brn,vf-med,mod wl srt,sbang-sbrnd,wk sil cmt,mnr pl brn arg mtx,pred lse disagg qtz grs,mnr fri aggs,pr vis por,gd inf por, fluor.
+- **SANDSTONE** @ ~2129m: clr,trnsl,v pl trnsl brn,vf-med,mod wl srt,sbang-sbrnd,wk sil cmt,mnr pl brn arg mtx,pred lse disagg qtz grs,mnr mica sheets,mnr fri aggs,pr vis por,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 80.8 | 66 |
+| RES_DEEP (ohm.m) | 38.51 | 66 |
+| RES_SHALLOW (ohm.m) | 54.61 | 66 |
+| **Δ Res (Deep − Shallow)** | **-16.10** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2180 m MD — Interval 2175.0 – 2185.0 m
+
+**Sample Description (spreadsheet):** Sample 2180m: 0% Siltstone, 100% very fine to coarse, common coarse, dominantly fine Sandstone, 100% moderately bright FLUOR in SST. TG 36U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 100.0 |
+| Grain Size | vf-crs, com crs, dom f (max: crs) |
+| Fluorescence | 100.0% mod bri |
+| Total Gas | 36.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2164m: clr,trnsl,pl brn gry,vf-med,rr crs,pred f,mod srt,sbang-sbrnd,wk sil cmt,com pl brn-off wh arg mtx,com fri aggs,com lse qtz grs,pr vis por,fr inf por,fluor.
+- **SANDSTONE** @ ~2172m: clr,trnsl,pl brn gry,vf-crs,vf-f aggs, com crs,wk sil cmt,com pl brn-off wh arg mtx,com fri aggs,com lse disagg qtz grs,pr vis por,gd inf por, fluor. FLUOR:2170-2190m;100% of SST;
+- _(4 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 90.3 | 66 |
+| RES_DEEP (ohm.m) | 23.97 | 66 |
+| RES_SHALLOW (ohm.m) | 26.00 | 66 |
+| **Δ Res (Deep − Shallow)** | **-2.02** | — |
 
 **Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -1640,6 +1957,96 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | RES_DEEP (ohm.m) | 22.79 | 66 |
 | RES_SHALLOW (ohm.m) | 24.07 | 66 |
 | **Δ Res (Deep − Shallow)** | **-1.29** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2320 m MD — Interval 2315.0 – 2325.0 m
+
+**Sample Description (spreadsheet):** Sample 2320m: 5% Siltstone, Tr siderite in 95% very fine to medium, occasional coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 40U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 95.0 |
+| Grain Size | vf-med, occ crs (max: crs) |
+| Fluorescence | 100.0% mod bri - bri |
+| Total Gas | 40.0 U |
+| FeCO₃ in Sandstone | Tr |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2308m: med-dk gry,aren,grd to vf SST,com micmic,tr carb spks,frm-mod hd,sbblky.
+- **SANDSTONE** @ ~2315m: clr,trnsl,pl brn,vf-med,occ crs,mod srt,sbang-sbrnd,wk sil cmt,tr sid cmt,tr off wh-pl brn arg mtx,fri,dom lse grs,v pr vis por,pr-fr inf por,fluor. 78 / 5 / 4 / 7 / 6 44 U
+- _(3 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 84.9 | 65 |
+| RES_DEEP (ohm.m) | 26.82 | 65 |
+| RES_SHALLOW (ohm.m) | 28.40 | 65 |
+| **Δ Res (Deep − Shallow)** | **-1.58** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2330 m MD — Interval 2325.0 – 2335.0 m
+
+**Sample Description (spreadsheet):** Sample 2330m: 5% Siltstone, Tr siderite in 95% very fine to medium Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 43U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 95.0 |
+| Grain Size | vf-med (max: med) |
+| Fluorescence | 100.0% mod bri - bri |
+| Total Gas | 43.0 U |
+| FeCO₃ in Sandstone | Tr |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2315m: clr,trnsl,pl brn,vf-med,occ crs,mod srt,sbang-sbrnd,wk sil cmt,tr sid cmt,tr off wh-pl brn arg mtx,fri,dom lse grs,v pr vis por,pr-fr inf por,fluor. 78 / 5 / 4 / 7 / 6 44 U
+- **SANDSTONE** @ ~2324m: clr,trnsl,pl brn,vf-med,wl srt, sbang-sbrnd,wk sil cmt,tr sid cmt,occ off wh-lt brn 79 / 5 / 4 / 6 / 6 45 U arg mtx,fri,dom lse,grs,v pr vis por,pr inf por,fluor.
+- _(4 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 122.2 | 66 |
+| RES_DEEP (ohm.m) | 20.54 | 66 |
+| RES_SHALLOW (ohm.m) | 26.41 | 66 |
+| **Δ Res (Deep − Shallow)** | **-5.87** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2340 m MD — Interval 2335.0 – 2345.0 m
+
+**Sample Description (spreadsheet):** Sample 2340m: 5% Siltstone, Tr siderite in 95% very fine to medium, occasional coarse Sandstone, 100% dull FLUOR in SST. TG 44U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 95.0 |
+| Grain Size | vf-med, occ crs (max: crs) |
+| Fluorescence | 100.0% dll |
+| Total Gas | 44.0 U |
+| FeCO₃ in Sandstone | Tr |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2324m: clr,trnsl,pl brn,vf-med,wl srt, sbang-sbrnd,wk sil cmt,tr sid cmt,occ off wh-lt brn 79 / 5 / 4 / 6 / 6 45 U arg mtx,fri,dom lse,grs,v pr vis por,pr inf por,fluor.
+- **SILTSTONE** @ ~2340m: dk-med gry,aren,grd to vf SST,micmic, tr sndy lams,frm,sbblky.
+- _(4 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 120.8 | 66 |
+| RES_DEEP (ohm.m) | 13.93 | 66 |
+| RES_SHALLOW (ohm.m) | 15.76 | 66 |
+| **Δ Res (Deep − Shallow)** | **-1.83** | — |
 
 **Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -2208,6 +2615,216 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | RES_DEEP (ohm.m) | 11.70 | 20 |
 | RES_SHALLOW (ohm.m) | 12.67 | 20 |
 | **Δ Res (Deep − Shallow)** | **-0.98** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2418 m MD — Interval 2416.5 – 2419.5 m
+
+**Sample Description (spreadsheet):** Sample 2418m: 10% Siltstone, Tr siderite in 90% very fine to fine, trace medium to coarse Sandstone, 70% dull  to  moderately bright FLUOR in SST. TG 20U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 90.0 |
+| Grain Size | vf-f, tr med-crs (max: crs) |
+| Fluorescence | 70.0% dll - mod bri |
+| Total Gas | 20.0 U |
+| FeCO₃ in Sandstone | Tr |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2408m: dk-med gry,aren,com micmic,mod hd-frm,sbblky.
+- **SANDSTONE** @ ~2412m: clr,trnsl,lt brn gry,vf-f,mnr med-crs, mod srt,sbang-sbrnd,mod wk sil cmt,occ off wh arg mtx,occ slty lams,fri-mod hd aggs,com lse,pr vis por,pr-fr inf por,fluor.
+- _(7 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 118.7 | 19 |
+| RES_DEEP (ohm.m) | 12.07 | 19 |
+| RES_SHALLOW (ohm.m) | 13.09 | 19 |
+| **Δ Res (Deep − Shallow)** | **-1.02** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2421 m MD — Interval 2419.5 – 2422.5 m
+
+**Sample Description (spreadsheet):** Sample 2421m: 10% Siltstone, Tr siderite in 90% very fine to fine, trace medium to coarse Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 18U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 90.0 |
+| Grain Size | vf-f, tr med-crs (max: crs) |
+| Fluorescence | 80.0% dll - mod bri |
+| Total Gas | 18.0 U |
+| FeCO₃ in Sandstone | Tr |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2408m: dk-med gry,aren,com micmic,mod hd-frm,sbblky.
+- **SANDSTONE** @ ~2412m: clr,trnsl,lt brn gry,vf-f,mnr med-crs, mod srt,sbang-sbrnd,mod wk sil cmt,occ off wh arg mtx,occ slty lams,fri-mod hd aggs,com lse,pr vis por,pr-fr inf por,fluor.
+- _(8 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 124.7 | 20 |
+| RES_DEEP (ohm.m) | 12.26 | 20 |
+| RES_SHALLOW (ohm.m) | 13.88 | 20 |
+| **Δ Res (Deep − Shallow)** | **-1.62** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2424 m MD — Interval 2422.5 – 2425.5 m
+
+**Sample Description (spreadsheet):** Sample 2424m: 20% Siltstone, Tr siderite in 80% very fine to fine, trace medium to coarse Sandstone, 100% moderately bright FLUOR in SST. TG 21U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 80.0 |
+| Grain Size | vf-f, tr med-crs (max: crs) |
+| Fluorescence | 100.0% mod bri |
+| Total Gas | 21.0 U |
+| FeCO₃ in Sandstone | Tr |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2408m: dk-med gry,aren,com micmic,mod hd-frm,sbblky.
+- **SANDSTONE** @ ~2412m: clr,trnsl,lt brn gry,vf-f,mnr med-crs, mod srt,sbang-sbrnd,mod wk sil cmt,occ off wh arg mtx,occ slty lams,fri-mod hd aggs,com lse,pr vis por,pr-fr inf por,fluor.
+- _(8 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 118.9 | 20 |
+| RES_DEEP (ohm.m) | 13.16 | 20 |
+| RES_SHALLOW (ohm.m) | 15.62 | 20 |
+| **Δ Res (Deep − Shallow)** | **-2.46** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2427 m MD — Interval 2425.5 – 2428.5 m
+
+**Sample Description (spreadsheet):** Sample 2427m: 20% Siltstone, Occ siderite in 80% very fine to medium, occasional coarse Sandstone, 90% moderately bright FLUOR in SST. TG 19U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 80.0 |
+| Grain Size | vf-med, occ crs (max: crs) |
+| Fluorescence | 90.0% mod bri |
+| Total Gas | 19.0 U |
+| FeCO₃ in Sandstone | Occ |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2412m: clr,trnsl,lt brn gry,vf-f,mnr med-crs, mod srt,sbang-sbrnd,mod wk sil cmt,occ off wh arg mtx,occ slty lams,fri-mod hd aggs,com lse,pr vis por,pr-fr inf por,fluor.
+- **SILTSTONE** @ ~2416m: dk-med gry,aren,com micmic,mod hd-frm,sbblky. 76 / 4 / 4 / 7 / 9
+- _(7 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 119.8 | 20 |
+| RES_DEEP (ohm.m) | 13.40 | 20 |
+| RES_SHALLOW (ohm.m) | 16.69 | 20 |
+| **Δ Res (Deep − Shallow)** | **-3.30** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2430 m MD — Interval 2428.5 – 2431.5 m
+
+**Sample Description (spreadsheet):** Sample 2430m: 20% Siltstone, Occ siderite in 80% very fine to medium, occasional coarse Sandstone, 90% moderately bright FLUOR in SST. TG 21U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 80.0 |
+| Grain Size | vf-med, occ crs (max: crs) |
+| Fluorescence | 90.0% mod bri |
+| Total Gas | 21.0 U |
+| FeCO₃ in Sandstone | Occ |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2416m: dk-med gry,aren,com micmic,mod hd-frm,sbblky. 76 / 4 / 4 / 7 / 9
+- **SILTSTONE** @ ~2422m: med lt gry brn,aren,grd to SST i/p,com micmic,tr carb flks,frm-mod hd,sbblky.
+- _(6 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 127.2 | 19 |
+| RES_DEEP (ohm.m) | 14.45 | 19 |
+| RES_SHALLOW (ohm.m) | 19.86 | 19 |
+| **Δ Res (Deep − Shallow)** | **-5.41** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2433 m MD — Interval 2431.5 – 2434.5 m
+
+**Sample Description (spreadsheet):** Sample 2433m: 10% Siltstone, Occ siderite in 90% very fine to medium, occasional coarse Sandstone, 90% moderately bright FLUOR in SST. TG 19U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 90.0 |
+| Grain Size | vf-med, occ crs (max: crs) |
+| Fluorescence | 90.0% mod bri |
+| Total Gas | 19.0 U |
+| FeCO₃ in Sandstone | Occ |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2422m: med lt gry brn,aren,grd to SST i/p,com micmic,tr carb flks,frm-mod hd,sbblky.
+- **SANDSTONE** @ ~2422m: clr,trnsl,off wh-pl gry brn,vf-med,occ crs,mod pr srt,sbang-sbrnd,mod wk sil cmt,tr-occ sid cmt,com-occ off wh-pl gry arg mtx,occ slty lams, 24 12 2 4 8 1.7 fri-mod hd aggs,com lse,pr vis por,pr-fr inf por,fluor.
+- _(10 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 126.4 | 20 |
+| RES_DEEP (ohm.m) | 18.00 | 20 |
+| RES_SHALLOW (ohm.m) | 24.69 | 20 |
+| **Δ Res (Deep − Shallow)** | **-6.69** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 2436 m MD — Interval 2434.5 – 2437.5 m
+
+**Sample Description (spreadsheet):** Sample 2436m: 10% Siltstone, Occ siderite in 90% very fine to medium, occasional coarse Sandstone, 90% moderately bright FLUOR in SST. TG 19U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 90.0 |
+| Grain Size | vf-med, occ crs (max: crs) |
+| Fluorescence | 90.0% mod bri |
+| Total Gas | 19.0 U |
+| FeCO₃ in Sandstone | Occ |
+
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2422m: med lt gry brn,aren,grd to SST i/p,com micmic,tr carb flks,frm-mod hd,sbblky.
+- **SANDSTONE** @ ~2422m: clr,trnsl,off wh-pl gry brn,vf-med,occ crs,mod pr srt,sbang-sbrnd,mod wk sil cmt,tr-occ sid cmt,com-occ off wh-pl gry arg mtx,occ slty lams, 24 12 2 4 8 1.7 fri-mod hd aggs,com lse,pr vis por,pr-fr inf por,fluor.
+- _(10 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 110.9 | 20 |
+| RES_DEEP (ohm.m) | 23.67 | 20 |
+| RES_SHALLOW (ohm.m) | 34.04 | 20 |
+| **Δ Res (Deep − Shallow)** | **-10.37** | — |
 
 **Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -3037,180 +3654,59 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 
 ---
 
-### 2670 m MD — Interval 2665.0 – 2675.0 m
+### 2640 m MD — Interval 2635.0 – 2645.0 m
 
-**Sample Description (spreadsheet):** Sample 2670m: 10% Siltstone, common siderite in 90% very fine to coarse, pred fine to medium Sandstone, 60% dull  to  moderately bright FLUOR in SST. TG 47U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 90.0 |
-| Grain Size | vf-crs, pred f-med (max: crs) |
-| Fluorescence | 60.0% dll - mod bri |
-| Total Gas | 47.0 U |
-| FeCO₃ in Sandstone | com |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2664m: clr,trnsl,lt brn,lt-med trnsl gry,vf-crs, pred f-med,pr srt,sbang-sbrnd,tr ang,wk sil cmt, com sid cmt,occ off wh ang mtx,fri,com lse qtz grs, v pr vis por,pr-fr inf por,fluor.
-- **SANDSTONE** @ ~2672m: clr,trnsl,pl brn,vf-med,tr crs,pr srt, sbang-sbrnd,tr ang,wk sil cmt,com sid cmt,com off wh arg mtx,fri aggs,com lse grs,v pr vis por, pr inf por,fluor.
-- _(2 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 120.7 | 66 |
-| RES_DEEP (ohm.m) | 13.20 | 66 |
-| RES_SHALLOW (ohm.m) | 14.54 | 66 |
-| **Δ Res (Deep − Shallow)** | **-1.34** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 2680 m MD — Interval 2675.0 – 2685.0 m
-
-**Sample Description (spreadsheet):** Sample 2680m: 15% Siltstone, common siderite in 85% very fine to medium, trace coarse Sandstone, 70% dull  to  moderately bright FLUOR in SST. TG 45U
+**Sample Description (spreadsheet):** Sample 2640m: 0% Siltstone, 100% very fine to coarse, trace very coarse Sandstone, 100% bright FLUOR in SST. TG 87U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 85.0 |
-| Grain Size | vf-med, tr crs (max: crs) |
-| Fluorescence | 70.0% dll - mod bri |
-| Total Gas | 45.0 U |
-| FeCO₃ in Sandstone | com |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2664m: clr,trnsl,lt brn,lt-med trnsl gry,vf-crs, pred f-med,pr srt,sbang-sbrnd,tr ang,wk sil cmt, com sid cmt,occ off wh ang mtx,fri,com lse qtz grs, v pr vis por,pr-fr inf por,fluor.
-- **SANDSTONE** @ ~2672m: clr,trnsl,pl brn,vf-med,tr crs,pr srt, sbang-sbrnd,tr ang,wk sil cmt,com sid cmt,com off wh arg mtx,fri aggs,com lse grs,v pr vis por, pr inf por,fluor.
-- _(3 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 119.2 | 66 |
-| RES_DEEP (ohm.m) | 12.42 | 66 |
-| RES_SHALLOW (ohm.m) | 13.56 | 66 |
-| **Δ Res (Deep − Shallow)** | **-1.13** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 2690 m MD — Interval 2685.0 – 2695.0 m
-
-**Sample Description (spreadsheet):** Sample 2690m: 15% Siltstone, common siderite in 85% very fine to medium, trace coarse Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 46U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 85.0 |
-| Grain Size | vf-med, tr crs (max: crs) |
-| Fluorescence | 80.0% dll - mod bri |
-| Total Gas | 46.0 U |
-| FeCO₃ in Sandstone | com |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2672m: clr,trnsl,pl brn,vf-med,tr crs,pr srt, sbang-sbrnd,tr ang,wk sil cmt,com sid cmt,com off wh arg mtx,fri aggs,com lse grs,v pr vis por, pr inf por,fluor.
-- **SILTSTONE** @ ~2676m: dk-med gry,dk brnsh gry,aren,g/t vf SST i/p,com carb spks,micmic,frm,sbblky.
-- _(3 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 115.7 | 65 |
-| RES_DEEP (ohm.m) | 11.88 | 65 |
-| RES_SHALLOW (ohm.m) | 12.93 | 65 |
-| **Δ Res (Deep − Shallow)** | **-1.05** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 2700 m MD — Interval 2695.0 – 2705.0 m
-
-**Sample Description (spreadsheet):** Sample 2700m: 10% Siltstone, trace siderite in 90% very fine to coarse, trace very coarse Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 46U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 90.0 |
+| % Sandstone | 100.0 |
 | Grain Size | vf-crs, tr v crs (max: v crs) |
-| Fluorescence | 80.0% dll - mod bri |
-| Total Gas | 46.0 U |
-| FeCO₃ in Sandstone | tr |
+| Fluorescence | 100.0% bri |
+| Total Gas | 87.0 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2680m: clr,trnsl,pl brn,vf-med,tr crs,pr srt, 2684 sbang-sbrnd,tr ang,wk sil cmt,com sid cmt,com 1241.7 63 / 6 / 7 / 12 / 12 off wh arg mtx,fri aggs,com lse grs,v pr vis por, pr inf por,fluor. 2688 MD:2687.9 m
-- **SANDSTONE** @ ~2692m: clr,trnsl,pl brn,vf-med,tr crs-v crs,v pr srt,sbang-sbrnd,tr ang,wk sil cmt,tr sid cmt,com off 2696 wh arg mtx,fri aggs,com lse grs,v pr vis por,pr inf 1242.0 por,fluor. 64 / 6 / 7 / 12 / 11
-- _(2 additional mudlog entries in interval)_
+- **SANDSTONE** @ ~2624m: clr,trnsl,pl trnsl brn,vf-crs,pred f-med, pr srt,sbang-sbrnd,wk sil cmt,occ pl brn-wh arg mtx, fri aggs,pred lse qtz grs,pr vis por,gd inf por,fluor.
+- **SANDSTONE** @ ~2628m: clr,trnsl,pl trnsl brn,vf-crs,tr v crs, 1241.9 pred f-med,pr srt,sbang-sbrnd,wk sil cmt,occ pl brn-off wh arg mtx,fri aggs,com lse qtz grs,pr vis por,gd inf por,fluor.
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 116.6 | 66 |
-| RES_DEEP (ohm.m) | 11.46 | 66 |
-| RES_SHALLOW (ohm.m) | 12.41 | 66 |
-| **Δ Res (Deep − Shallow)** | **-0.96** | — |
+| GR (gAPI) | 73.6 | 65 |
+| RES_DEEP (ohm.m) | 41.23 | 65 |
+| RES_SHALLOW (ohm.m) | 42.14 | 65 |
+| **Δ Res (Deep − Shallow)** | **-0.91** | — |
 
 **Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
-### 2710 m MD — Interval 2705.0 – 2715.0 m
+### 2750 m MD — Interval 2745.0 – 2755.0 m
 
-**Sample Description (spreadsheet):** Sample 2710m: 10% Siltstone, trace siderite in 90% very fine to medium, trace coarse Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 48U
+**Sample Description (spreadsheet):** Sample 2750m: 20% Siltstone, trace siderite in 80% very fine to medium, trace coarse Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 28U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 90.0 |
+| % Sandstone | 80.0 |
 | Grain Size | vf-med, tr crs (max: crs) |
 | Fluorescence | 80.0% dll - mod bri |
-| Total Gas | 48.0 U |
+| Total Gas | 28.0 U |
 | FeCO₃ in Sandstone | tr |
 
 **Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2692m: clr,trnsl,pl brn,vf-med,tr crs-v crs,v pr srt,sbang-sbrnd,tr ang,wk sil cmt,tr sid cmt,com off 2696 wh arg mtx,fri aggs,com lse grs,v pr vis por,pr inf 1242.0 por,fluor. 64 / 6 / 7 / 12 / 11
-- **SANDSTONE** @ ~2704m: clr,trnsl,pl brn,vf-med,tr crs,pr srt, sbang-sbrnd,tr ang,wk sil cmt,tr sid cmt,com off wh arg mtx,fri aggs,com lse grs,v pr vis por,pr inf por, fluor. FLUOR:2700-2750m;80% of SST;
-- _(2 additional mudlog entries in interval)_
+- **SANDSTONE** @ ~2732m: clr,trnsl,lt gry,pl brn,vf-med,tr crs, mod-pr srt,wk sil cmt,occ sid cmt,com off wh arg 2736 mtx,fri,com lse grs,v pr vis por,pr inf por,fluor. 1243.3 Rmf: 0.057 ohmm @ 75° F
+- **SILTSTONE** @ ~2740m: med-dk gry,aren,mnr micmic,frm, sbblky.
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 122.0 | 65 |
-| RES_DEEP (ohm.m) | 12.36 | 65 |
-| RES_SHALLOW (ohm.m) | 13.50 | 65 |
-| **Δ Res (Deep − Shallow)** | **-1.14** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 2720 m MD — Interval 2715.0 – 2725.0 m
-
-**Sample Description (spreadsheet):** Sample 2720m: 10% Siltstone, trace siderite in 90% very fine to medium, trace coarse Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 27U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 90.0 |
-| Grain Size | vf-med, tr crs (max: crs) |
-| Fluorescence | 80.0% dll - mod bri |
-| Total Gas | 27.0 U |
-| FeCO₃ in Sandstone | tr |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2704m: clr,trnsl,pl brn,vf-med,tr crs,pr srt, sbang-sbrnd,tr ang,wk sil cmt,tr sid cmt,com off wh arg mtx,fri aggs,com lse grs,v pr vis por,pr inf por, fluor. FLUOR:2700-2750m;80% of SST;
-- **SANDSTONE** @ ~2716m: clr,trnsl,pl brn,vf-med,tr crs,pr srt, sbang-sbrnd,tr ang,wk sil cmt,tr sid cmt,com off wh arg mtx,fri aggs,com lse grs,v pr vis por,pr inf por, fluor.
-- _(2 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 116.4 | 66 |
-| RES_DEEP (ohm.m) | 13.82 | 66 |
-| RES_SHALLOW (ohm.m) | 15.56 | 66 |
-| **Δ Res (Deep − Shallow)** | **-1.74** | — |
+| GR (gAPI) | 120.2 | 66 |
+| RES_DEEP (ohm.m) | 16.67 | 66 |
+| RES_SHALLOW (ohm.m) | 18.71 | 66 |
+| **Δ Res (Deep − Shallow)** | **-2.04** | — |
 
 **Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -5057,90 +5553,59 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 
 ---
 
-### 3190 m MD — Interval 3185.0 – 3195.0 m
+### 3160 m MD — Interval 3155.0 – 3165.0 m
 
-**Sample Description (spreadsheet):** Sample 3190m: 20% Siltstone,  siderite in 80% very fine to fine Sandstone, 40% dull FLUOR in SST. TG 27U
+**Sample Description (spreadsheet):** Sample 3160m: 5% Siltstone, 95% very fine to coarse Sandstone, 100% bright FLUOR in SST. TG 52U
 
 | Property | Value |
 |----------|-------|
-| % Sandstone | 80.0 |
-| Grain Size | vf-f (max: f) |
-| Fluorescence | 40.0% dll |
-| Total Gas | 27.0 U |
+| % Sandstone | 95.0 |
+| Grain Size | vf-crs (max: crs) |
+| Fluorescence | 100.0% bri |
+| Total Gas | 52.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~3152m: clr,trnsl,v pl trnsl brn,vf-crs,pr srt, 81 / 5 / 4 / 5 / 5 sbang-sbrnd,wk sil cmt,tr sid cmt,com pl rbn-off wh arg mtx,fri,com lse qtz grs,pr vis por,gd inf por,fluor.
+- **SANDSTONE** @ ~3160m: clr,trnsl,vf pl trnsl brn,vf-f,wl srt, sbang-sbrnd,wk sil cmt,abdt sid cmt,occ pl brn-off wh arg mtx,occ fri aggs,pred lse qtz grs,pr vis por, gd inf por,fluor.
+- _(2 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 87.9 | 65 |
+| RES_DEEP (ohm.m) | 36.90 | 65 |
+| RES_SHALLOW (ohm.m) | 52.47 | 65 |
+| **Δ Res (Deep − Shallow)** | **-15.57** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 3240 m MD — Interval 3235.0 – 3245.0 m
+
+**Sample Description (spreadsheet):** Sample 3240m: 10% Siltstone, common siderite in 90% very fine to coarse, pred fine Sandstone, 80% moderately bright FLUOR in SST. TG 44U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 90.0 |
+| Grain Size | vf-crs, pred f (max: crs) |
+| Fluorescence | 80.0% mod bri |
+| Total Gas | 44.0 U |
 | FeCO₃ in Sandstone | com |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~3176m: med-lt gry brn,aren,grd to SST,micmic, frm-sft,sbblky-blky.
-- **SANDSTONE** @ ~3184m: clr,trnsl,vf pl trnsl brn,vf-f,wl srt, sbang-sbrnd,wk sil cmt,abdt sid cmt,occ pl brn-off wh arg mtx,occ fri aggs,pred lse qtz grs,pr vis por, gd inf por,fluor.
-- _(2 additional mudlog entries in interval)_
+- **SANDSTONE** @ ~3232m: clr,trnsl,vf-crs,pred f,pr srt, 73 / 5 / 5 / 8 / 9 44 U sbang-sbrnd,wk sil cmt,com sid cmt,com pl brn-off 32 12 3 3 6 6.3 w po h r , a fl r u g o m r. tx,com fri aggs,com lse,pr vis por,gd inf
+- **SANDSTONE** @ ~3240m: clr,trnsl,vf-crs,pred f,pr srt, sbang-sbrnd,wk sil cmt,com sid cmt,com pl brn-off wh arg mtx,com fri aggs,com lse,pr vis por,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 127.6 | 66 |
-| RES_DEEP (ohm.m) | 17.27 | 66 |
-| RES_SHALLOW (ohm.m) | 23.94 | 66 |
-| **Δ Res (Deep − Shallow)** | **-6.67** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 3200 m MD — Interval 3195.0 – 3205.0 m
-
-**Sample Description (spreadsheet):** Sample 3200m: 10% Siltstone, occasional  to  common siderite in 90% very fine to fine, minor medium Sandstone, 60% dull FLUOR in SST. TG 24U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 90.0 |
-| Grain Size | vf-f, mnr med (max: med) |
-| Fluorescence | 60.0% dll |
-| Total Gas | 24.0 U |
-| FeCO₃ in Sandstone | occ - com |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~3184m: clr,trnsl,vf pl trnsl brn,vf-f,wl srt, sbang-sbrnd,wk sil cmt,abdt sid cmt,occ pl brn-off wh arg mtx,occ fri aggs,pred lse qtz grs,pr vis por, gd inf por,fluor.
-- **SANDSTONE** @ ~3193m: clr,trnsl,vf-f,mnr med,mod pr srt, 3196 70 / 5 / 6 / 9 / 10 sbang-sbrnd,wk sil cmt,com sid cmt,com pl brn-off 1236.2 wh arg mtx,fri aggs,com lse qtz grs,pr vis por,gd inf por,fluor.
-- _(3 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 123.5 | 66 |
-| RES_DEEP (ohm.m) | 15.63 | 66 |
-| RES_SHALLOW (ohm.m) | 20.72 | 66 |
-| **Δ Res (Deep − Shallow)** | **-5.09** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
-
----
-
-### 3210 m MD — Interval 3205.0 – 3215.0 m
-
-**Sample Description (spreadsheet):** Sample 3210m: 10% Siltstone, occasional siderite in 90% very fine to fine, minor medium Sandstone, 80% dull  to  moderately bright FLUOR in SST. TG 24U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 90.0 |
-| Grain Size | vf-f, mnr med (max: med) |
-| Fluorescence | 80.0% dll - mod bri |
-| Total Gas | 24.0 U |
-| FeCO₃ in Sandstone | occ |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~3193m: clr,trnsl,vf-f,mnr med,mod pr srt, 3196 70 / 5 / 6 / 9 / 10 sbang-sbrnd,wk sil cmt,com sid cmt,com pl brn-off 1236.2 wh arg mtx,fri aggs,com lse qtz grs,pr vis por,gd inf por,fluor.
-- **SILTSTONE** @ ~3204m: med-lt gry brn,aren,grd to SST,micmic, frm-sft,sbblky-blky.
-- _(2 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 128.7 | 65 |
-| RES_DEEP (ohm.m) | 17.74 | 65 |
-| RES_SHALLOW (ohm.m) | 25.50 | 65 |
-| **Δ Res (Deep − Shallow)** | **-7.76** | — |
+| GR (gAPI) | 95.4 | 65 |
+| RES_DEEP (ohm.m) | 34.96 | 65 |
+| RES_SHALLOW (ohm.m) | 64.57 | 65 |
+| **Δ Res (Deep − Shallow)** | **-29.61** | — |
 
 **Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -5643,6 +6108,65 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | RES_DEEP (ohm.m) | 54.41 | 66 |
 | RES_SHALLOW (ohm.m) | 63.07 | 66 |
 | **Δ Res (Deep − Shallow)** | **-8.66** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 3410 m MD — Interval 3405.0 – 3415.0 m
+
+**Sample Description (spreadsheet):** Sample 3410m: 0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% bright FLUOR in SST. TG 110U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 100.0 |
+| Grain Size | vf-med, tr crs (max: crs) |
+| Fluorescence | 100.0% bri |
+| Total Gas | 110.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~3403m: clr,trnsl,lt brn,vf-med,tr crs,mod srt, sbang-sbrnd,wk sil cmt,com lt brn-off wh arg mtx,fri, com cln lse qtz grs,pr vis por,pr-fr inf por,fluor.
+- **SANDSTONE** @ ~3412m: clr,trnsl,lt brn,vf-med,tr crs,mod srt, sbang-sbrnd,wk sil cmt,tr sid cmt,com lt brn-off wh arg mtx,fri,com cln lse qtz grs,pr vis por,pr-fr inf por, 3416 fluor. 1237.2
+- _(1 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 87.1 | 66 |
+| RES_DEEP (ohm.m) | 46.68 | 66 |
+| RES_SHALLOW (ohm.m) | 75.13 | 66 |
+| **Δ Res (Deep − Shallow)** | **-28.46** | — |
+
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 3440 m MD — Interval 3435.0 – 3445.0 m
+
+**Sample Description (spreadsheet):** Sample 3440m: 0% Siltstone, common siderite in 100% very fine to coarse, pred fine Sandstone, 80% moderately bright FLUOR in SST. TG 44U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 100.0 |
+| Grain Size | vf-crs, pred f (max: crs) |
+| Fluorescence | 80.0% mod bri |
+| Total Gas | 44.0 U |
+| FeCO₃ in Sandstone | com |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~3420m: clr,trnsl,lt-med trnsl brn,vf-f,tr med, mod wl srt,sbang-sbrnd,wk sil cmt,com sid cmt, com lt brn-off wh arg mtx,fri-mod hd aggs,com lse grs,pr vis por,fr inf por,fluor,
+- **SANDSTONE** @ ~3432m: clr,trnsl,pl trnsl brn,vf-crs,pred f,pr srt, sbang-sbrnd,wk sil cmt,abdt sid cmt,occ lt brn-off wh arg mtx,fri-mod hd aggs,com lse qtz grs,pr vis por,fr-gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 94.7 | 65 |
+| RES_DEEP (ohm.m) | 38.90 | 65 |
+| RES_SHALLOW (ohm.m) | 64.78 | 65 |
+| **Δ Res (Deep − Shallow)** | **-25.88** | — |
 
 **Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -6493,10 +7017,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 
 | Metric | Value |
 |--------|-------|
-| Intervals analysed | 219 |
-| Depth range | 1750 – 3730 m |
-| Avg % Sandstone | 95.2% |
-| Avg Δ Res (Deep−Shallow) | -5.18 ohm.m |
+| Intervals analysed | 237 |
+| Depth range | 1735 – 3730 m |
+| Avg % Sandstone | 95.1% |
+| Avg Δ Res (Deep−Shallow) | -5.72 ohm.m |
 | Max Δ Res | 0.72 ohm.m |
 | Min Δ Res | -46.45 ohm.m |
-| Mudlog matches | 218 / 219 |
+| Mudlog matches | 236 / 237 |

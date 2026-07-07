@@ -55,8 +55,11 @@ Legacy format provides description text, **Sheet1 columns F (TG), G (%SS), H (%f
 ## Exclusion Logic Applied
 
 1. Pre-reservoir samples above shallowest McKinlay top — excluded
-2. Overburden intersections (McKinlay ≈ Murta within 5 m) — ±10 m excluded
-3. Target re-entry (McKinlay without Murta pair) — ±10 m excluded
+2. **Overburden entry** — Murta + corresponding McKinlay top (within 5 m) marks entry into overburden
+3. **Target re-entry** — next lone McKinlay top below the entry pair marks return to reservoir
+4. **Excluded interval** — full MD from overburden entry to re-entry (pay resumes at re-entry)
+5. If no re-entry top exists below a pair, assume re-entry at entry + 50 m MD
+6. Initial reservoir entry (DC30 + shallowest McKinlay) is **not** excluded
 
 ## Re-run
 

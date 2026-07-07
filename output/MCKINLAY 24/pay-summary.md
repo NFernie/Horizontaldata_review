@@ -1,12 +1,19 @@
 # MCKINLAY 24 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 03:25 UTC  
+**Generated:** 2026-07-07 04:18 UTC  
 **Formation tops name:** MCKINLAY 24  
 **McKinlay window:** 1628.6 – 2598.0 m MD  
 **DC30 top:** 1633.50 m MD  
 **Total lateral length (TD − DC30):** 964.5 m
 
 ---
+
+### Overburden Exclusion Intervals
+
+| Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
+|-------------|-------------|-----------------|------------|
+| 1770.6 | 1768.3 | 1837.1 | 66.5 |
+| 2525.7 | 2524.3 | 2532.8 | 7.1 |
 
 ## Pay Rules Applied
 
@@ -22,28 +29,28 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 728.5 | 75.5% | 6 |
-| Resistivity only | 549.1 | 56.9% | 47 |
-| Matching both | 523.5 | 54.3% | 7 |
+| Cuttings only | 749.5 | 77.7% | 6 |
+| Resistivity only | 582.8 | 60.4% | 54 |
+| Matching both | 544.5 | 56.5% | 7 |
 
-**Sample intervals in McKinlay Member:** 167
+**Sample intervals in McKinlay Member:** 172
 
 ## Cuttings-Only Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1642.5 | 1657.5 | 15.0 |
+| 1632.5 | 1657.5 | 25.0 |
 | 1667.5 | 1682.5 | 15.0 |
 | 1687.5 | 1717.5 | 30.0 |
-| 1727.5 | 1757.5 | 30.0 |
+| 1727.5 | 1762.5 | 35.0 |
 | 1852.5 | 1987.5 | 135.0 |
-| 2007.5 | 2511.0 | 503.5 |
+| 2007.5 | 2517.0 | 509.5 |
 
 ## Resistivity-Only Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1638.5 | 1650.1 | 11.6 |
+| 1628.6 | 1650.1 | 21.5 |
 | 1650.6 | 1651.0 | 0.5 |
 | 1651.8 | 1656.4 | 4.6 |
 | 1696.7 | 1698.0 | 1.2 |
@@ -57,21 +64,21 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1728.9 | 1731.9 | 3.0 |
 | 1732.7 | 1733.0 | 0.3 |
 | 1745.4 | 1745.7 | 0.3 |
-| 1745.8 | 1760.6 | 14.8 |
+| 1745.8 | 1764.4 | 18.6 |
 
-_(32 additional intervals omitted)_
+_(39 additional intervals omitted)_
 
 ## Matching Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1642.5 | 1657.5 | 15.0 |
+| 1632.5 | 1657.5 | 25.0 |
 | 1727.5 | 1732.5 | 5.0 |
-| 1747.5 | 1757.5 | 10.0 |
+| 1747.5 | 1762.5 | 15.0 |
 | 1852.5 | 1917.5 | 65.0 |
 | 1927.5 | 1987.5 | 60.0 |
 | 2012.5 | 2027.5 | 15.0 |
-| 2157.5 | 2511.0 | 353.5 |
+| 2157.5 | 2517.0 | 359.5 |
 
 ## Data Quality Notes
 

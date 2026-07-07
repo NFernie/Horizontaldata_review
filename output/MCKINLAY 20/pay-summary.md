@@ -1,12 +1,19 @@
 # MCKINLAY 20 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 03:25 UTC  
+**Generated:** 2026-07-07 04:18 UTC  
 **Formation tops name:** MCKINLAY 20  
 **McKinlay window:** 1633.5 – 3000.0 m MD  
 **DC30 top:** 1633.24 m MD  
 **Total lateral length (TD − DC30):** 1366.8 m
 
 ---
+
+### Overburden Exclusion Intervals
+
+| Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
+|-------------|-------------|-----------------|------------|
+| 2342.6 | 2342.6 | 2375.4 | 32.8 |
+| 2693.2 | 2692.2 | 2743.2 (assumed) | 50.0 |
 
 ## Pay Rules Applied
 
@@ -22,24 +29,25 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 1149.0 | 84.1% | 10 |
-| Resistivity only | 803.1 | 58.8% | 76 |
-| Matching both | 727.0 | 53.2% | 16 |
+| Cuttings only | 1168.0 | 85.5% | 11 |
+| Resistivity only | 828.6 | 60.6% | 74 |
+| Matching both | 746.0 | 54.6% | 17 |
 
-**Sample intervals in McKinlay Member:** 276
+**Sample intervals in McKinlay Member:** 275
 
 ## Cuttings-Only Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1645.5 | 1837.0 | 191.5 |
+| 1639.0 | 1640.5 | 1.5 |
+| 1642.5 | 1837.0 | 194.5 |
 | 1849.5 | 2037.5 | 188.0 |
 | 2042.5 | 2137.5 | 95.0 |
 | 2147.5 | 2332.5 | 185.0 |
-| 2386.5 | 2509.5 | 123.0 |
+| 2382.0 | 2509.5 | 127.5 |
 | 2531.0 | 2632.5 | 101.5 |
 | 2637.5 | 2667.5 | 30.0 |
-| 2672.5 | 2682.5 | 10.0 |
+| 2672.5 | 2692.5 | 20.0 |
 | 2757.5 | 2777.5 | 20.0 |
 | 2797.5 | 3002.5 | 205.0 |
 
@@ -47,7 +55,10 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1643.6 | 1751.2 | 107.6 |
+| 1633.5 | 1633.8 | 0.3 |
+| 1635.5 | 1636.2 | 0.8 |
+| 1636.4 | 1636.7 | 0.3 |
+| 1636.9 | 1751.2 | 114.3 |
 | 1751.8 | 1752.1 | 0.3 |
 | 1752.2 | 1753.7 | 1.5 |
 | 1754.5 | 1754.7 | 0.2 |
@@ -58,24 +69,22 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1760.9 | 1761.2 | 0.3 |
 | 1762.0 | 2100.6 | 338.6 |
 | 2108.2 | 2108.5 | 0.3 |
-| 2109.0 | 2332.6 | 223.6 |
-| 2356.0 | 2356.2 | 0.2 |
-| 2361.4 | 2365.3 | 4.0 |
-| 2385.4 | 2399.8 | 14.3 |
+| 2109.0 | 2342.6 | 233.6 |
 
-_(61 additional intervals omitted)_
+_(59 additional intervals omitted)_
 
 ## Matching Pay Intervals
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1645.5 | 1752.5 | 107.0 |
+| 1639.0 | 1640.5 | 1.5 |
+| 1642.5 | 1752.5 | 110.0 |
 | 1762.5 | 1837.0 | 74.5 |
 | 1849.5 | 2037.5 | 188.0 |
 | 2042.5 | 2102.5 | 60.0 |
 | 2107.5 | 2137.5 | 30.0 |
 | 2147.5 | 2332.5 | 185.0 |
-| 2386.5 | 2401.5 | 15.0 |
+| 2382.0 | 2401.5 | 19.5 |
 | 2410.5 | 2413.5 | 3.0 |
 | 2462.5 | 2467.5 | 5.0 |
 | 2497.5 | 2509.5 | 12.0 |
@@ -83,9 +92,8 @@ _(61 additional intervals omitted)_
 | 2587.5 | 2592.5 | 5.0 |
 | 2617.5 | 2632.5 | 15.0 |
 | 2637.5 | 2642.5 | 5.0 |
-| 2677.5 | 2682.5 | 5.0 |
 
-_(1 additional intervals omitted)_
+_(2 additional intervals omitted)_
 
 ## Data Quality Notes
 
