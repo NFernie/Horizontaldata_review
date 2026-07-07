@@ -213,44 +213,68 @@ def classify_tops(mck_list, murta_list, tolerance=PAIR_TOLERANCE):
 
 def exclusion_zones(overburden, target_reentry, initial_entry_depth=None, default_offset=DEFAULT_REENTRY_OFFSET):
     """
-    Build overburden exclusion intervals from Murta/McKinlay entry pairs to the next
-    lone McKinlay re-entry below. Pay resumes at the re-entry top.
+    Build overburden exclusion intervals by walking depth-ordered tops.
 
-    - Murta + McKinlay pair (within tolerance) = overburden entry (use McKinlay MD).
-    - Lone McKinlay below a pair = target formation re-entry.
-    - Shallowest lone McKinlay (initial reservoir entry with DC30) is not a re-entry marker.
-    - If no re-entry exists below a pair, assume re-entry at entry + default_offset m MD.
+    Consecutive Murta/McKinlay entry pairs before the next lone McKinlay
+    re-entry are merged into a single exclusion interval (first entry → re-entry).
     """
     if initial_entry_depth is None and target_reentry:
         initial_entry_depth = min(target_reentry)
 
-    reentry_pool = [
-        d for d in target_reentry if initial_entry_depth is None or d > initial_entry_depth + 0.01
+    reentry_markers = [
+        d for d in target_reentry
+        if initial_entry_depth is None or d > initial_entry_depth + 0.01
     ]
+
+    events = []
+    for ob in overburden:
+        events.append((ob["mckinlay"], "pair", ob))
+    for depth in reentry_markers:
+        events.append((depth, "reentry", None))
+    events.sort(key=lambda x: x[0])
+
     zones = []
     details = []
+    open_entry = None
+    open_pairs = []
 
-    for ob in sorted(overburden, key=lambda x: x["mckinlay"]):
-        entry = ob["mckinlay"]
-        re_entry = None
-        used_default = False
-        for idx, candidate in enumerate(reentry_pool):
-            if candidate > entry:
-                re_entry = candidate
-                reentry_pool.pop(idx)
-                break
-        if re_entry is None:
-            re_entry = entry + default_offset
-            used_default = True
+    for depth, kind, payload in events:
+        if kind == "pair":
+            if open_entry is None:
+                open_entry = depth
+            open_pairs.append(payload)
+            continue
 
-        zones.append((entry, re_entry, "overburden"))
+        if open_entry is None:
+            continue
+
+        zones.append((open_entry, depth, "overburden"))
         details.append(
             {
-                "entry": entry,
-                "murta": ob["murta"],
+                "entry": open_entry,
+                "murta": open_pairs[0]["murta"],
+                "re_entry": depth,
+                "length": depth - open_entry,
+                "default_reentry": False,
+                "pair_count": len(open_pairs),
+                "pair_depths": [p["mckinlay"] for p in open_pairs],
+            }
+        )
+        open_entry = None
+        open_pairs = []
+
+    if open_entry is not None:
+        re_entry = open_entry + default_offset
+        zones.append((open_entry, re_entry, "overburden"))
+        details.append(
+            {
+                "entry": open_entry,
+                "murta": open_pairs[0]["murta"],
                 "re_entry": re_entry,
-                "length": re_entry - entry,
-                "default_reentry": used_default,
+                "length": re_entry - open_entry,
+                "default_reentry": True,
+                "pair_count": len(open_pairs),
+                "pair_depths": [p["mckinlay"] for p in open_pairs],
             }
         )
 
@@ -804,9 +828,13 @@ def write_interpretation(meta, path):
             re_txt = f"{zd['re_entry']:.2f}"
             if zd.get("default_reentry"):
                 re_txt += f" (assumed +{DEFAULT_REENTRY_OFFSET:.0f} m)"
+            pairs_txt = ""
+            if zd.get("pair_count", 1) > 1:
+                pair_list = ", ".join(f"{d:.2f}" for d in zd.get("pair_depths", []))
+                pairs_txt = f" ({zd['pair_count']} entry pairs: {pair_list})"
             lines.append(
                 f"| {zd['entry']:.2f} | {zd['murta']:.2f} | {abs(zd['entry'] - zd['murta']):.2f} | "
-                f"{re_txt} | {zd['length']:.1f} |"
+                f"{re_txt} | {zd['length']:.1f} |{pairs_txt}"
             )
     elif meta["overburden"]:
         for ob in meta["overburden"]:
@@ -834,8 +862,9 @@ def write_interpretation(meta, path):
         "4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.",
         "5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).",
         "6. **NULL LAS values** (-999.25) excluded from averages.",
-        f"7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below "
-        f"(or entry + {DEFAULT_REENTRY_OFFSET:.0f} m MD if no re-entry is mapped). Initial DC30/McKinlay reservoir entry is not excluded.",
+        f"7. **Exclusion zones** span from the first Murta/McKinlay overburden entry in a sequence to the next lone "
+        f"McKinlay re-entry below (consecutive entry pairs are merged). If no re-entry is mapped, assume entry + "
+        f"{DEFAULT_REENTRY_OFFSET:.0f} m MD. Initial DC30/McKinlay reservoir entry is not excluded.",
         "8. **Input Sheet only** — Calculations Sheet not used.",
     ]
     if "McKinlay" in meta["cfg"]["xlsx"]:

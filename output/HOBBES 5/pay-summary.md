@@ -1,6 +1,6 @@
 # HOBBES 5 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 04:18 UTC  
+**Generated:** 2026-07-07 04:53 UTC  
 **Formation tops name:** HOBBES 5  
 **McKinlay window:** 1702.2 – 2590.0 m MD  
 **DC30 top:** 1701.15 m MD  
