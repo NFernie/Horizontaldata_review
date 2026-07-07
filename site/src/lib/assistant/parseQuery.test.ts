@@ -49,4 +49,19 @@ describe("parseQuery", () => {
     expect(parsed.alias).toBe("JENA31DW1");
     expect(parsed.summaryType).toBe("pay_summary");
   });
+
+  it("parses loose-grain interval filter with shorthand well and trailing depth", () => {
+    const parsed = parseQuery("loose grains jena 2500", TEST_WELLS);
+    expect(parsed.intent).toBe("INTERVAL_FILTER");
+    expect(parsed.alias).toBe("JENA31");
+    expect(parsed.depth).toBe(2500);
+    expect(parsed.filter?.looseGrains).toBe(true);
+  });
+
+  it("parses RQI threshold filter on a well", () => {
+    const parsed = parseQuery("rqi > 0.6 in Jena 31", TEST_WELLS);
+    expect(parsed.intent).toBe("INTERVAL_FILTER");
+    expect(parsed.alias).toBe("JENA31");
+    expect(parsed.filter?.minRqi).toBe(0.6);
+  });
 });

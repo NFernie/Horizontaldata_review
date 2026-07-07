@@ -16,6 +16,7 @@ function intervalSummaryRows(
     Porosity: s.poro_class,
     "Loose grains": s.loose_grains ? "Yes" : "No",
     Fluorescence: s.fluor != null ? formatPercent(s.fluor, 0) : null,
+    RQI: s.RQI != null ? formatNumber(s.RQI, 3) : null,
     WRCI: s.WRCI != null ? formatNumber(s.WRCI, 1) : null,
     "Risk class": s.risk_class,
     Flags: s.flags.length ? s.flags.join(", ") : "—",
@@ -71,18 +72,41 @@ export async function handleIntervalFilter(parsed: ParsedQuery): Promise<Assista
 
   const payload = await loadIntervals(parsed.alias);
   const { filter } = parsed;
-  const matches = payload.intervals.filter((record) => {
+  let matches = payload.intervals.filter((record) => {
     const s = record.summary;
     if (filter.looseGrains && !s.loose_grains) return false;
     if (filter.riskClass && s.risk_class !== filter.riskClass) return false;
     if (filter.minWrci != null && (s.WRCI == null || s.WRCI < filter.minWrci)) return false;
     if (filter.maxWrci != null && (s.WRCI == null || s.WRCI > filter.maxWrci)) return false;
+    if (filter.minRqi != null && (s.RQI == null || s.RQI < filter.minRqi)) return false;
+    if (filter.maxRqi != null && (s.RQI == null || s.RQI > filter.maxRqi)) return false;
     return true;
   });
 
+  if (parsed.depth != null && matches.length > 0) {
+    const nearest = findNearestInterval(matches, parsed.depth);
+    if (nearest) {
+      const { record, matchNote } = nearest;
+      return {
+        intent: "INTERVAL_FILTER",
+        title: `Filtered interval — ${payload.display} @ ${record.depth} m MD`,
+        summary: intervalSummaryRows(record),
+        detail_markdown: record.detail_markdown,
+        match_note: matchNote ?? `Nearest loose-grain match to ${parsed.depth} m MD.`,
+        citations: [
+          {
+            label: record.source.file,
+            source: record.source.file,
+            route: `/well/${parsed.alias}`,
+          },
+        ],
+      };
+    }
+  }
+
   const lines = matches.slice(0, 25).map((record) => {
     const flags = record.summary.flags.length ? record.summary.flags.join(", ") : "—";
-    return `| ${record.depth} | ${record.summary.pct_ss ?? "—"} | ${record.summary.WRCI ?? "—"} | ${record.summary.risk_class} | ${flags} |`;
+    return `| ${record.depth} | ${record.summary.pct_ss ?? "—"} | ${record.summary.RQI ?? "—"} | ${record.summary.WRCI ?? "—"} | ${record.summary.risk_class} | ${flags} |`;
   });
 
   const markdown = [
@@ -90,8 +114,8 @@ export async function handleIntervalFilter(parsed: ParsedQuery): Promise<Assista
     "",
     `Matched **${matches.length}** interval(s).`,
     "",
-    "| Depth (m) | %SS | WRCI | Risk | Flags |",
-    "|---:|---:|---:|---|---|",
+    "| Depth (m) | %SS | RQI | WRCI | Risk | Flags |",
+    "|---:|---:|---:|---:|---|---|",
     ...lines,
     matches.length > 25 ? `\n_(Showing first 25 of ${matches.length}.)_` : "",
   ].join("\n");

@@ -1,4 +1,5 @@
 import { dataUrl, fetchJson } from "@/lib/utils";
+import type { Bm25SearchIndex } from "./bm25";
 import type {
   CorpusStatsIndex,
   StatisticalMethodsDoc,
@@ -8,6 +9,7 @@ import type { CorpusChunk, CorpusIntervalsPayload, CorpusManifest } from "@/type
 let manifestPromise: Promise<CorpusManifest> | null = null;
 let chunksPromise: Promise<CorpusChunk[]> | null = null;
 let methodsPromise: Promise<StatisticalMethodsDoc> | null = null;
+let bm25Promise: Promise<Bm25SearchIndex> | null = null;
 
 export function loadManifest(): Promise<CorpusManifest> {
   manifestPromise ??= fetchJson<CorpusManifest>("corpus/manifest.json");
@@ -37,6 +39,11 @@ export function loadMethods(): Promise<StatisticalMethodsDoc> {
   return methodsPromise;
 }
 
+export function loadBm25Index(): Promise<Bm25SearchIndex> {
+  bm25Promise ??= fetchJson<Bm25SearchIndex>("corpus/search-index.json");
+  return bm25Promise;
+}
+
 export function loadIntervals(alias: string): Promise<CorpusIntervalsPayload> {
   return fetchJson<CorpusIntervalsPayload>(`corpus/intervals/${alias}.json`);
 }
@@ -49,4 +56,5 @@ export function resetCorpusCache(): void {
   manifestPromise = null;
   chunksPromise = null;
   methodsPromise = null;
+  bm25Promise = null;
 }
