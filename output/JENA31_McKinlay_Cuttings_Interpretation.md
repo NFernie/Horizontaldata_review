@@ -1,6 +1,6 @@
 # JENA 31 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-06 23:33 UTC  
+**Generated:** 2026-07-07 02:20 UTC  
 **Well:** JENA 31 (Jena Dev C Oil Lateral 1_Ops)  
 **TD:** 3394 m MD  
 
@@ -22,13 +22,9 @@
 | Marker | Depth (m MD) | Source |
 |--------|-------------|--------|
 | DC30 | 2249.74 | DC30.xlsx |
-| McKinlay Member (mudlog) | 2325.0 | Mudlog PDF |
-| McKinlay Member (shallowest, tops file) | 2250.62 | Mck_Murta.xlsx |
-| Murta Formation Base (mudlog) | 3345.0 | Mudlog PDF |
+| McKinlay Member (shallowest) | 2250.62 | Mck_Murta.xlsx |
 
 ### 2.2 McKinlay Member Top Classification
-
-For this horizontal well, formation tops were classified as:
 
 **Target re-entry (McKinlay without paired Murta):**
 - 2250.62 m MD
@@ -44,85 +40,29 @@ For this horizontal well, formation tops were classified as:
 
 **McKinlay Member analysis window:** 2250.6 – 3394.0 m MD
 
-**Excluded overburden zones (±10 m):** 2785–2805, 3188–3208, 3228–3248, 3322–3342
+**Excluded zones (±10 m around overburden & target re-entry tops):** 2785–2805 (overburden), 3188–3208 (overburden), 3228–3248 (overburden), 3322–3342 (overburden), 2241–2261 (target_reentry), 2833–2853 (target_reentry)
 
-**Samples in McKinlay Member:** 208 of 309 total (101 excluded as overburden/pre-reservoir)
+**Samples in McKinlay Member:** 201 of 309 total
+- Excluded pre-reservoir: 81
+- Excluded overburden intersections: 20
+- Excluded target re-entry tops: 7
 
 ## 3. Known Shortcomings
 
 > **Read this section before using the output.**
 
-1. **Mudlog PDF text extraction is imperfect.** Depth-to-description assignment uses proximity heuristics (±15 m window). Some descriptions may be mis-assigned or missed due to multi-column PDF layout.
-2. **Formation top discrepancy:** McKinlay Member is picked at 2250.62 m in Mck_Murta.xlsx but 2325.0 m in the mudlog PDF (Δ ≈ 74 m). The analysis uses the tops file (2250.62 m) per your instructions; mudlog descriptions near 2250–2325 m should be reviewed manually.
-3. **Well name mapping:** JENA 31 maps to `Jena Dev C Oil Lateral 1_Ops` in formation top files. This was inferred from TD (3394 m) and lateral naming — verify if a different mapping is intended.
-4. **Sample intervals** are computed as midpoints between consecutive sample depths (not from a dedicated interval column). Irregular sample spacing creates variable interval widths.
-5. **Resistivity permeability proxy** is a qualitative indicator only. Separation of deep vs shallow resistivity suggests invasion profile and is not a calibrated permeability measurement.
-6. **NULL values** in LAS data (-999.25) are excluded from averages. Intervals with sparse log coverage report partial or no data.
-7. **Overburden exclusion** uses a fixed ±10 m buffer around paired tops. Actual overburden thickness may differ.
-8. **No Calculations Sheet used** — per your instruction, only the Input Sheet was used for sample data.
+1. **Mudlog PDF text extraction is imperfect.** Depth-to-description assignment uses ±15 m proximity heuristics.
+2. **Formation top discrepancies** between Mck_Murta.xlsx and mudlog PDF picks are noted where present.
+3. **Well name mapping:** JENA 31 → `Jena Dev C Oil Lateral 1_Ops` (verified by TD and LAS WELL header).
+4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
+5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
+6. **NULL LAS values** (-999.25) excluded from averages.
+7. **Exclusion zones** use ±10 m around paired overburden tops AND McKinlay target re-entry tops without Murta pairs.
+8. **Input Sheet only** — Calculations Sheet not used.
 
 ## 4. McKinlay Member Sample Intervals
 
-Each row shows: depth interval, sample description (spreadsheet), matched mudlog cuttings, and average wireline log values.
-
-### 2255 m MD — Interval 2252.5 – 2257.5 m
-
-**Sample Description (spreadsheet):** Sample 2255m: 65% Siltstone, 35% fine Sandstone, 100% moderately bright FLUOR in SST. TG 45.8U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 35 |
-| Grain Size | f (max: F) |
-| Fluorescence | 100% mod bri |
-| Total Gas | 45.8 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2243m: off wh,lt-med gry,lt gry brn,vf-f,wl srt, lt gry wk sil cmt,tr off wh-gry arg mtx,mnr micmic,rr liths,rr carb spks,mod hd,pr vis por,mod bri fluor.
-- **SILTSTONE** @ ~2256m: lt-med gry,med gry brn,aren,rr arg, 2260 mnr micmic,rr sid frags,rr carb flks,frm,sbblky. 1232.4
-- _(1 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 126.1 | 32 |
-| RES_DEEP (ohm.m) | 26.56 | 32 |
-| RES_SHALLOW (ohm.m) | 18.61 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.95** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
-
----
-
-### 2260 m MD — Interval 2257.5 – 2262.5 m
-
-**Sample Description (spreadsheet):** Sample 2260m: rare siderite in 65% Siltstone, 35% fine Sandstone, 100% moderately bright FLUOR in SST. TG 110.5U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 35 |
-| Grain Size | f (max: F) |
-| Fluorescence | 100% mod bri |
-| Total Gas | 110.5 U |
-| FeCO₃ in Siltstone | rr |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2243m: off wh,lt-med gry,lt gry brn,vf-f,wl srt, lt gry wk sil cmt,tr off wh-gry arg mtx,mnr micmic,rr liths,rr carb spks,mod hd,pr vis por,mod bri fluor.
-- **SILTSTONE** @ ~2256m: lt-med gry,med gry brn,aren,rr arg, 2260 mnr micmic,rr sid frags,rr carb flks,frm,sbblky. 1232.4
-- _(2 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 106.3 | 33 |
-| RES_DEEP (ohm.m) | 25.20 | 33 |
-| RES_SHALLOW (ohm.m) | 18.42 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.78** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
-
----
+Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log averages.
 
 ### 2265 m MD — Interval 2262.5 – 2267.5 m
 
@@ -149,7 +89,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **3.87** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -178,7 +118,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.77** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -207,7 +147,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.93** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -237,7 +177,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.64** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -266,7 +206,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.41** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -296,7 +236,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.00** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -325,7 +265,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.22** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -354,7 +294,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.02** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -383,7 +323,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.23** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -413,7 +353,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.47** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -442,7 +382,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **6.08** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -471,7 +411,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.17** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -500,7 +440,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **16.81** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -513,7 +453,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 95 |
 | Grain Size | f (max: F) |
 | Fluorescence | 100% mod bri |
-| Total Gas | 160 U |
+| Total Gas | 160.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2319m: lt gry brn,trnsl,f,wl srt,sbrnd-sbang, 1232.4 wk sil cmt,rr of wh arg mtx,rr liths,rr mic,lse-fri aggs, pr-fr vis & inf por,mod bri fluor. of SST,dll-bri yel-grn evn fluor,mod bldng
@@ -529,7 +469,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **31.09** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -542,7 +482,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 100 |
 | Grain Size | f (max: F) |
 | Fluorescence | 100% mod bri |
-| Total Gas | 158 U |
+| Total Gas | 158.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2319m: lt gry brn,trnsl,f,wl srt,sbrnd-sbang, 1232.4 wk sil cmt,rr of wh arg mtx,rr liths,rr mic,lse-fri aggs, pr-fr vis & inf por,mod bri fluor. of SST,dll-bri yel-grn evn fluor,mod bldng
@@ -558,7 +498,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **45.39** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -571,7 +511,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 100 |
 | Grain Size | f (max: F) |
 | Fluorescence | 100% mod bri |
-| Total Gas | 159 U |
+| Total Gas | 159.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2340m: trnsl,lt brn gry,f-med,rr crs,mod srt, sbang-sbrnd,wk sil cmt,rr mtx,rr mic,rr liths,lse-fri 2344 aggs,fr vis & inf por,mod bri fluor. 1232.5 20-02-2026 82 / 6 / 4 / 5 / 3 193 U
@@ -586,7 +526,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **42.82** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -614,7 +554,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **49.46** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -642,7 +582,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **58.84** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -670,7 +610,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **64.32** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -685,7 +625,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | Fluorescence | 100% mod bri |
 | Total Gas | 109.8 U |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found in extracted text_
+**Mudlog Cuttings Description (PDF):** _No matching entry found_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -696,7 +636,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **72.18** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -723,7 +663,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **71.08** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -750,7 +690,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **90.39** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -777,7 +717,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **95.87** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -804,7 +744,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **140.79** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -821,7 +761,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: trnsl,clr,f-med,wl srt,sbang-sbrnd,wk sil cmt,nil vis mtx,lse & cln,fr inf por,mod bri fluor.
-- **SILTSTONE** @ ~2400m: lt-dk gry,aren,arg i/p,sli micmic,tr liths,
+- **SILTSTONE** @ ~2400m: 2084-2687 psi SILTSTONE:lt-dk gry,aren,arg i/p,sli micmic,tr liths,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -832,7 +772,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **104.51** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -849,7 +789,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: trnsl,clr,f-med,wl srt,sbang-sbrnd,wk sil cmt,nil vis mtx,lse & cln,fr inf por,mod bri fluor.
-- **SILTSTONE** @ ~2400m: lt-dk gry,aren,arg i/p,sli micmic,tr liths,
+- **SILTSTONE** @ ~2400m: 2084-2687 psi SILTSTONE:lt-dk gry,aren,arg i/p,sli micmic,tr liths,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -860,7 +800,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **75.38** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -873,11 +813,11 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 80 |
 | Grain Size | f-med (max: M) |
 | Fluorescence | 100% mod bri |
-| Total Gas | 140 U |
+| Total Gas | 140.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: trnsl,clr,f-med,wl srt,sbang-sbrnd,wk sil cmt,nil vis mtx,lse & cln,fr inf por,mod bri fluor.
-- **SILTSTONE** @ ~2400m: lt-dk gry,aren,arg i/p,sli micmic,tr liths,
+- **SILTSTONE** @ ~2400m: 2084-2687 psi SILTSTONE:lt-dk gry,aren,arg i/p,sli micmic,tr liths,
 - _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
@@ -889,7 +829,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **29.75** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -905,7 +845,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | Total Gas | 78.5 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2400m: lt-dk gry,aren,arg i/p,sli micmic,tr liths,
+- **SILTSTONE** @ ~2400m: 2084-2687 psi SILTSTONE:lt-dk gry,aren,arg i/p,sli micmic,tr liths,
 - **SANDSTONE** @ ~2412m: trnsl,lt gry brn,f-med,wl srt, sbang-sbrnd,wk sil cmt,rr off wh arg mtx,rr mic flks, rr liths,lse-fri aggs,fr vis & inf por,bri fluor.
 - _(1 additional mudlog entries in interval)_
 
@@ -918,7 +858,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **17.73** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -934,7 +874,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | Total Gas | 95.2 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2400m: lt-dk gry,aren,arg i/p,sli micmic,tr liths,
+- **SILTSTONE** @ ~2400m: 2084-2687 psi SILTSTONE:lt-dk gry,aren,arg i/p,sli micmic,tr liths,
 - **SANDSTONE** @ ~2412m: trnsl,lt gry brn,f-med,wl srt, sbang-sbrnd,wk sil cmt,rr off wh arg mtx,rr mic flks, rr liths,lse-fri aggs,fr vis & inf por,bri fluor.
 - _(1 additional mudlog entries in interval)_
 
@@ -947,7 +887,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **14.30** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -963,7 +903,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | Total Gas | 114.9 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2400m: lt-dk gry,aren,arg i/p,sli micmic,tr liths,
+- **SILTSTONE** @ ~2400m: 2084-2687 psi SILTSTONE:lt-dk gry,aren,arg i/p,sli micmic,tr liths,
 - **SANDSTONE** @ ~2412m: trnsl,lt gry brn,f-med,wl srt, sbang-sbrnd,wk sil cmt,rr off wh arg mtx,rr mic flks, rr liths,lse-fri aggs,fr vis & inf por,bri fluor.
 - _(2 additional mudlog entries in interval)_
 
@@ -976,7 +916,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.99** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -992,7 +932,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | Total Gas | 108.9 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2400m: lt-dk gry,aren,arg i/p,sli micmic,tr liths,
+- **SILTSTONE** @ ~2400m: 2084-2687 psi SILTSTONE:lt-dk gry,aren,arg i/p,sli micmic,tr liths,
 - **SANDSTONE** @ ~2412m: trnsl,lt gry brn,f-med,wl srt, sbang-sbrnd,wk sil cmt,rr off wh arg mtx,rr mic flks, rr liths,lse-fri aggs,fr vis & inf por,bri fluor.
 - _(2 additional mudlog entries in interval)_
 
@@ -1005,7 +945,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **14.05** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1034,7 +974,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **19.03** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1063,7 +1003,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **27.02** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1092,7 +1032,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **34.65** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1120,7 +1060,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **41.79** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1148,7 +1088,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **303.26** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1176,7 +1116,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **209.89** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1204,7 +1144,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **138.50** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1232,7 +1172,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **151.56** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1261,7 +1201,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **94.95** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1289,7 +1229,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **91.90** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1317,7 +1257,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **95.75** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1346,7 +1286,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **105.94** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1359,7 +1299,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | f-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 115 U |
+| Total Gas | 115.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2476m: clr,trnsl,f-med,wl srt,sbrnd-sbang,wk sil cmt,nil vis mtx,rr mic flks,rr liths,lse & cln,gd inf por,bri fluor.
@@ -1375,7 +1315,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **62.22** | — |
 
 **Permeability Proxy:** High inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1404,7 +1344,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **33.25** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1433,7 +1373,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **16.48** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1462,7 +1402,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.24** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1492,7 +1432,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.93** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1505,7 +1445,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 80 |
 | Grain Size | f-crs (max: C) |
 | Fluorescence | 100% bri |
-| Total Gas | 92 U |
+| Total Gas | 92.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2488m: lt-dk gry,aren,arg i/p,sli micmic,com LMST & sid frags,mod hd-hd,blky-sbblky. MW: 9.9 FV: 43 PV: 11 MD:2491.3 m
@@ -1521,7 +1461,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.65** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1550,7 +1490,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.23** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1579,7 +1519,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.55** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1608,7 +1548,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.73** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1637,7 +1577,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.66** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1667,7 +1607,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.64** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1695,7 +1635,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.81** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1724,7 +1664,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.93** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1753,7 +1693,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.70** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1782,7 +1722,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.19** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1811,7 +1751,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.05** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1840,7 +1780,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.06** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1869,7 +1809,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.72** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1899,7 +1839,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.54** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1928,7 +1868,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.93** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1957,7 +1897,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.75** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1985,7 +1925,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.09** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2012,7 +1952,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.40** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2040,7 +1980,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.29** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2068,7 +2008,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.19** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2097,7 +2037,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.32** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2125,7 +2065,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.68** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2154,7 +2094,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.19** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2183,7 +2123,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.50** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2212,7 +2152,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.53** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2225,7 +2165,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 100 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri |
-| Total Gas | 84 U |
+| Total Gas | 84.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2620m: med-dk gry,aren,mnr micmic,mod hd-hd,sbblky.
@@ -2241,7 +2181,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.89** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2270,7 +2210,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.96** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2299,7 +2239,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.98** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2328,7 +2268,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.92** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2357,7 +2297,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.04** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2386,7 +2326,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.16** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2415,7 +2355,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.72** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2444,7 +2384,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.93** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2473,7 +2413,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **6.79** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2490,7 +2430,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2668m: clr,trnsl,vf-med,mod wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh mtx,mnr mic flks,tr liths,lse-fri,pr-fr vis por,fr inf por,bri fluor.
-- **SILTSTONE** @ ~2682m: med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
+- **SILTSTONE** @ ~2682m: 78k SILTSTONE:med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
 - _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
@@ -2502,7 +2442,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.29** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2515,11 +2455,11 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 95 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 100 U |
+| Total Gas | 100.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2668m: clr,trnsl,vf-med,mod wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh mtx,mnr mic flks,tr liths,lse-fri,pr-fr vis por,fr inf por,bri fluor.
-- **SILTSTONE** @ ~2682m: med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
+- **SILTSTONE** @ ~2682m: 78k SILTSTONE:med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
 - _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
@@ -2531,7 +2471,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.74** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2544,11 +2484,11 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 60 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 46 U |
+| Total Gas | 46.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2668m: clr,trnsl,vf-med,mod wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh mtx,mnr mic flks,tr liths,lse-fri,pr-fr vis por,fr inf por,bri fluor.
-- **SILTSTONE** @ ~2682m: med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
+- **SILTSTONE** @ ~2682m: 78k SILTSTONE:med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
 - _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
@@ -2560,7 +2500,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.68** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2573,10 +2513,10 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 60 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 59 U |
+| Total Gas | 59.0 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2682m: med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
+- **SILTSTONE** @ ~2682m: 78k SILTSTONE:med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
 - **SANDSTONE** @ ~2692m: clr,trnsl,lt gry brn,vf-f,wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh arg mtx,mnr mic flks,tr liths,lse-fri aggs,pr-fr vis por,fr inf por,bri fluor.
 
 **Wireline Log Averages (LAS):**
@@ -2588,7 +2528,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.31** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2601,10 +2541,10 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 64 U |
+| Total Gas | 64.0 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2682m: med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
+- **SILTSTONE** @ ~2682m: 78k SILTSTONE:med-dk gry,mnr micmic,tr liths,tr sid, mod hd,sbfiss-sbblky.
 - **SANDSTONE** @ ~2692m: clr,trnsl,lt gry brn,vf-f,wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh arg mtx,mnr mic flks,tr liths,lse-fri aggs,pr-fr vis por,fr inf por,bri fluor.
 - _(1 additional mudlog entries in interval)_
 
@@ -2617,7 +2557,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.06** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2630,7 +2570,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 72 U |
+| Total Gas | 72.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2692m: clr,trnsl,lt gry brn,vf-f,wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh arg mtx,mnr mic flks,tr liths,lse-fri aggs,pr-fr vis por,fr inf por,bri fluor.
@@ -2645,7 +2585,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **6.38** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2658,7 +2598,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 52 U |
+| Total Gas | 52.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2692m: clr,trnsl,lt gry brn,vf-f,wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh arg mtx,mnr mic flks,tr liths,lse-fri aggs,pr-fr vis por,fr inf por,bri fluor.
@@ -2674,7 +2614,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.93** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2687,7 +2627,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 75 U |
+| Total Gas | 75.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2708m: clr,trnsl,lt gry brn,vf-f,wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh arg mtx,mnr mic flks,tr liths,lse-fri aggs,pr-fr vis por,fr inf por,bri fluor.
@@ -2702,7 +2642,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.31** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2715,7 +2655,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 77 U |
+| Total Gas | 77.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2708m: clr,trnsl,lt gry brn,vf-f,wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh arg mtx,mnr mic flks,tr liths,lse-fri aggs,pr-fr vis por,fr inf por,bri fluor.
@@ -2731,7 +2671,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.70** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2744,7 +2684,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 68 U |
+| Total Gas | 68.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2708m: clr,trnsl,lt gry brn,vf-f,wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh arg mtx,mnr mic flks,tr liths,lse-fri aggs,pr-fr vis por,fr inf por,bri fluor.
@@ -2760,7 +2700,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.85** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2773,7 +2713,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 60 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 81 U |
+| Total Gas | 81.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2708m: clr,trnsl,lt gry brn,vf-f,wl srt, sbrnd-sbang,off wh wk sil cmt,tr off wh arg mtx,mnr mic flks,tr liths,lse-fri aggs,pr-fr vis por,fr inf por,bri fluor.
@@ -2789,7 +2729,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **6.29** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2802,7 +2742,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 50 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 92 U |
+| Total Gas | 92.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2720m: med-dk gry,aren,mnr arg,mnr micmic, tr carb spks,,mod hd-hd,sbfiss-sbblky.
@@ -2818,7 +2758,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.05** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2831,7 +2771,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 102 U |
+| Total Gas | 102.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2720m: med-dk gry,aren,mnr arg,mnr micmic, tr carb spks,,mod hd-hd,sbfiss-sbblky.
@@ -2847,7 +2787,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.02** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2860,7 +2800,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 102 U |
+| Total Gas | 102.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2728m: med-dk gry,aren,mnr arg,mnr micmic, tr carb spks,,mod hd-hd,sbfiss-sbblky.
@@ -2876,7 +2816,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.01** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2889,7 +2829,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 80 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 76 U |
+| Total Gas | 76.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2728m: med-dk gry,aren,mnr arg,mnr micmic, tr carb spks,,mod hd-hd,sbfiss-sbblky.
@@ -2905,7 +2845,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.18** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2918,10 +2858,10 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 80 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% mod bri-bri |
-| Total Gas | 70 U |
+| Total Gas | 70.0 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2748m: clr,trnsl,lt gry brn,vf-med,dom med,
+- **SANDSTONE** @ ~2748m: 1-9 klbs SANDSTONE:clr,trnsl,lt gry brn,vf-med,dom med,
 - **SILTSTONE** @ ~2756m: med-dk gry,med lt gry i/p,aren,rr arg,tr micmic,frm,mod hd i/p,sbblky-blky.
 - _(1 additional mudlog entries in interval)_
 
@@ -2934,13 +2874,13 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.78** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
 ### 2755 m MD — Interval 2752.5 – 2757.5 m
 
-**Sample Description (spreadsheet):** 20% Siltstone, 80% f-med Sandstone, 100% bri FLUOR. TG 76.2U
+**Sample Description (spreadsheet):** 20% Siltstone, 80% f-med Sandstone, 100% bri FLUOR, TG 76.2U
 
 | Property | Value |
 |----------|-------|
@@ -2950,7 +2890,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | Total Gas | 76.2 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2748m: clr,trnsl,lt gry brn,vf-med,dom med,
+- **SANDSTONE** @ ~2748m: 1-9 klbs SANDSTONE:clr,trnsl,lt gry brn,vf-med,dom med,
 - **SILTSTONE** @ ~2756m: med-dk gry,med lt gry i/p,aren,rr arg,tr micmic,frm,mod hd i/p,sbblky-blky.
 - _(1 additional mudlog entries in interval)_
 
@@ -2963,7 +2903,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.04** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2976,10 +2916,10 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 80 |
 | Grain Size | f-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 42 U |
+| Total Gas | 42.0 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2748m: clr,trnsl,lt gry brn,vf-med,dom med,
+- **SANDSTONE** @ ~2748m: 1-9 klbs SANDSTONE:clr,trnsl,lt gry brn,vf-med,dom med,
 - **SILTSTONE** @ ~2756m: med-dk gry,med lt gry i/p,aren,rr arg,tr micmic,frm,mod hd i/p,sbblky-blky.
 - _(1 additional mudlog entries in interval)_
 
@@ -2992,13 +2932,13 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **6.28** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
 ### 2765 m MD — Interval 2762.5 – 2767.5 m
 
-**Sample Description (spreadsheet):** 15% Siltstone, 85% f-med Sandstone, 100% bri FLUOR. TG 87.7U
+**Sample Description (spreadsheet):** 15% Siltstone, 85% f-med Sandstone, 100% bri FLUOR, TG 87.7U
 
 | Property | Value |
 |----------|-------|
@@ -3008,7 +2948,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | Total Gas | 87.7 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2748m: clr,trnsl,lt gry brn,vf-med,dom med,
+- **SANDSTONE** @ ~2748m: 1-9 klbs SANDSTONE:clr,trnsl,lt gry brn,vf-med,dom med,
 - **SILTSTONE** @ ~2756m: med-dk gry,med lt gry i/p,aren,rr arg,tr micmic,frm,mod hd i/p,sbblky-blky.
 - _(2 additional mudlog entries in interval)_
 
@@ -3021,7 +2961,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.89** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3034,7 +2974,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 85 |
 | Grain Size | f-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 63 U |
+| Total Gas | 63.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2756m: med-dk gry,med lt gry i/p,aren,rr arg,tr micmic,frm,mod hd i/p,sbblky-blky.
@@ -3050,13 +2990,13 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.41** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
 ### 2775 m MD — Interval 2772.5 – 2777.5 m
 
-**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR. TG 98.6U
+**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR, TG 98.6U
 
 | Property | Value |
 |----------|-------|
@@ -3067,7 +3007,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2764m: clr,trnsl,lt gry brn,vf-med,dom med, mod wl srt,lt gry brn wk sil cmt,rr lt gry arg mtx,mnr mic flks,rr liths,lse-fri aggs,pr vis por,gd inf por,bri fluor.
-- **SANDSTONE** @ ~2778m: clr,trnsl,lt brn,vf-f,occ med,mod wl srt,sbang-sbrnd,wk sil cmt,tr lt brn arg mtx,tr liths, 2780 lse-fri aggs,pr vis por,fr inf por,bri fluor. 1229.2
+- **SANDSTONE** @ ~2778m: 75k SANDSTONE:clr,trnsl,lt brn,vf-f,occ med,mod wl srt,sbang-sbrnd,wk sil cmt,tr lt brn arg mtx,tr liths, 2780 lse-fri aggs,pr vis por,fr inf por,bri fluor. 1229.2
 - _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
@@ -3079,7 +3019,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.54** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3092,11 +3032,11 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 53 U |
+| Total Gas | 53.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2764m: clr,trnsl,lt gry brn,vf-med,dom med, mod wl srt,lt gry brn wk sil cmt,rr lt gry arg mtx,mnr mic flks,rr liths,lse-fri aggs,pr vis por,gd inf por,bri fluor.
-- **SANDSTONE** @ ~2778m: clr,trnsl,lt brn,vf-f,occ med,mod wl srt,sbang-sbrnd,wk sil cmt,tr lt brn arg mtx,tr liths, 2780 lse-fri aggs,pr vis por,fr inf por,bri fluor. 1229.2
+- **SANDSTONE** @ ~2778m: 75k SANDSTONE:clr,trnsl,lt brn,vf-f,occ med,mod wl srt,sbang-sbrnd,wk sil cmt,tr lt brn arg mtx,tr liths, 2780 lse-fri aggs,pr vis por,fr inf por,bri fluor. 1229.2
 - _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
@@ -3108,7 +3048,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.72** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3121,7 +3061,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 95 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 76 U |
+| Total Gas | 76.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2797m: clr,trnsl,lt brn,vf-f,occ med,mod wl srt,sbang-sbrnd,wk sil cmt,tr lt brn arg mtx,tr liths, lse-fri aggs,pr vis por,fr inf por,bri fluor.
@@ -3137,13 +3077,13 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **37.47** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
 ### 2815 m MD — Interval 2812.5 – 2817.5 m
 
-**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR. TG 65.4U
+**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR, TG 65.4U
 
 | Property | Value |
 |----------|-------|
@@ -3166,7 +3106,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **25.85** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3179,7 +3119,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 88 U |
+| Total Gas | 88.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2804m: clr,lt brn,trnsl,vf-med,mod srt, sbang-sbrnd,wk sil cmt,lt brn arg mtx,tr carb spks, fri-lse,pr vis por,fr-gd inf por,bri fluor.
@@ -3195,13 +3135,13 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **34.88** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
 ### 2825 m MD — Interval 2822.5 – 2827.5 m
 
-**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR. TG 58.5U
+**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR, TG 58.5U
 
 | Property | Value |
 |----------|-------|
@@ -3223,7 +3163,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **29.02** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3236,7 +3176,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 67 U |
+| Total Gas | 67.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2820m: med gry-med dk gry,aren,arg i/p,tr carb spks,tr micmic,frm-mod hd,sbblky-sbfiss i/p.
@@ -3252,152 +3192,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **21.73** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
-
----
-
-### 2835 m MD — Interval 2832.5 – 2837.5 m
-
-**Sample Description (spreadsheet):** 5% Siltstone, 95% vf-med Sandstone, 100% bri FLUOR. TG 100.5U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 95 |
-| Grain Size | vf-med (max: M) |
-| Fluorescence | 100% bri |
-| Total Gas | 100.5 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2820m: med gry-med dk gry,aren,arg i/p,tr carb spks,tr micmic,frm-mod hd,sbblky-sbfiss i/p.
-- **SANDSTONE** @ ~2828m: clr,lt brn,trnsl,vf-med,mod srt, sbang-sbrnd,wk sil cmt,lt brn arg mtx,tr carb spks, 2832 fri-lse,pr vis por,fr-gd inf por,bri fluor. 1228.8
-- _(1 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 130.1 | 33 |
-| RES_DEEP (ohm.m) | 42.68 | 33 |
-| RES_SHALLOW (ohm.m) | 23.76 | 33 |
-| **Δ Res (Deep − Shallow)** | **18.92** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
-
----
-
-### 2840 m MD — Interval 2837.5 – 2842.5 m
-
-**Sample Description (spreadsheet):** Sample 2840m: 5% Siltstone, 95% very fine to medium Sandstone, 100% bright FLUOR in SST. TG 123U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 95 |
-| Grain Size | vf-med (max: M) |
-| Fluorescence | 100% bri |
-| Total Gas | 123 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2828m: clr,lt brn,trnsl,vf-med,mod srt, sbang-sbrnd,wk sil cmt,lt brn arg mtx,tr carb spks, 2832 fri-lse,pr vis por,fr-gd inf por,bri fluor. 1228.8
-- **SANDSTONE** @ ~2844m: clr,lt brn,trnsl,vf-med,mod srt, sbang-sbrnd,wk sil cmt,lt brn arg mtx,tr carb spks, fri-lse,pr vis por,fr-gd inf por,bri fluor.
-- _(2 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 117.2 | 33 |
-| RES_DEEP (ohm.m) | 51.77 | 33 |
-| RES_SHALLOW (ohm.m) | 28.96 | 33 |
-| **Δ Res (Deep − Shallow)** | **22.80** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
-
----
-
-### 2845 m MD — Interval 2842.5 – 2847.5 m
-
-**Sample Description (spreadsheet):** 5% Siltstone, 95% vf-med Sandstone, 100% bri FLUOR. TG 87.6U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 95 |
-| Grain Size | vf-med (max: M) |
-| Fluorescence | 100% bri |
-| Total Gas | 87.6 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2828m: clr,lt brn,trnsl,vf-med,mod srt, sbang-sbrnd,wk sil cmt,lt brn arg mtx,tr carb spks, 2832 fri-lse,pr vis por,fr-gd inf por,bri fluor. 1228.8
-- **SANDSTONE** @ ~2844m: clr,lt brn,trnsl,vf-med,mod srt, sbang-sbrnd,wk sil cmt,lt brn arg mtx,tr carb spks, fri-lse,pr vis por,fr-gd inf por,bri fluor.
-- _(2 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 103.7 | 33 |
-| RES_DEEP (ohm.m) | 51.36 | 33 |
-| RES_SHALLOW (ohm.m) | 28.47 | 33 |
-| **Δ Res (Deep − Shallow)** | **22.89** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
-
----
-
-### 2850 m MD — Interval 2847.5 – 2852.5 m
-
-**Sample Description (spreadsheet):** Sample 2850m: 5% Siltstone, 95% very fine to medium Sandstone, 100% bright FLUOR in SST. TG 114U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 95 |
-| Grain Size | vf-med (max: M) |
-| Fluorescence | 100% bri |
-| Total Gas | 114 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2844m: clr,lt brn,trnsl,vf-med,mod srt, sbang-sbrnd,wk sil cmt,lt brn arg mtx,tr carb spks, fri-lse,pr vis por,fr-gd inf por,bri fluor.
-- **SILTSTONE** @ ~2856m: med gry-med dk gry,occ med lt gry, aren,mnr arg,tr carb spks,frm-mod hd,sbblky-blky.
-- _(1 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 109.2 | 33 |
-| RES_DEEP (ohm.m) | 50.61 | 33 |
-| RES_SHALLOW (ohm.m) | 28.46 | 33 |
-| **Δ Res (Deep − Shallow)** | **22.15** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
-
----
-
-### 2855 m MD — Interval 2852.5 – 2857.5 m
-
-**Sample Description (spreadsheet):** 15% Siltstone, 85% vf-med Sandstone, 100% bri FLUOR. TG 55.5U
-
-| Property | Value |
-|----------|-------|
-| % Sandstone | 85 |
-| Grain Size | vf-med (max: M) |
-| Fluorescence | 100% bri |
-| Total Gas | 55.5 U |
-
-**Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2844m: clr,lt brn,trnsl,vf-med,mod srt, sbang-sbrnd,wk sil cmt,lt brn arg mtx,tr carb spks, fri-lse,pr vis por,fr-gd inf por,bri fluor.
-- **SILTSTONE** @ ~2856m: med gry-med dk gry,occ med lt gry, aren,mnr arg,tr carb spks,frm-mod hd,sbblky-blky.
-- _(1 additional mudlog entries in interval)_
-
-**Wireline Log Averages (LAS):**
-| Curve | Average | Data Points |
-|-------|---------|-------------|
-| GR (gAPI) | 100.7 | 33 |
-| RES_DEEP (ohm.m) | 48.52 | 33 |
-| RES_SHALLOW (ohm.m) | 28.21 | 33 |
-| **Δ Res (Deep − Shallow)** | **20.32** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3410,7 +3205,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 85 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 136 U |
+| Total Gas | 136.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2844m: clr,lt brn,trnsl,vf-med,mod srt, sbang-sbrnd,wk sil cmt,lt brn arg mtx,tr carb spks, fri-lse,pr vis por,fr-gd inf por,bri fluor.
@@ -3426,20 +3221,20 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **18.06** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
 ### 2865 m MD — Interval 2862.5 – 2867.5 m
 
-**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR. TG 131U
+**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR, TG 131.0U
 
 | Property | Value |
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 131 U |
+| Total Gas | 131.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2856m: med gry-med dk gry,occ med lt gry, aren,mnr arg,tr carb spks,frm-mod hd,sbblky-blky.
@@ -3455,7 +3250,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **13.68** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3468,7 +3263,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 88 U |
+| Total Gas | 88.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2856m: med gry-med dk gry,occ med lt gry, aren,mnr arg,tr carb spks,frm-mod hd,sbblky-blky.
@@ -3484,13 +3279,13 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **12.86** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
 ### 2875 m MD — Interval 2872.5 – 2877.5 m
 
-**Sample Description (spreadsheet):** 15% Siltstone, 85% vf-med Sandstone, 100% bri FLUOR. TG 48.6U
+**Sample Description (spreadsheet):** 15% Siltstone, 85% vf-med Sandstone, 100% bri FLUOR, TG 48.6U
 
 | Property | Value |
 |----------|-------|
@@ -3512,7 +3307,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.04** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3525,7 +3320,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 85 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 89 U |
+| Total Gas | 89.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2876m: med gry-med dk gry,occ med lt gry, 2880 aren,mnr arg,tr carb spks,frm-mod hd,sbblky-blky. 1229.4
@@ -3541,13 +3336,13 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.06** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
 ### 2885 m MD — Interval 2882.5 – 2887.5 m
 
-**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR. TG 101.7U
+**Sample Description (spreadsheet):** 10% Siltstone, 90% vf-med Sandstone, 100% bri FLUOR, TG 101.7U
 
 | Property | Value |
 |----------|-------|
@@ -3570,7 +3365,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.87** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3599,13 +3394,13 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.30** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
 ### 2895 m MD — Interval 2892.5 – 2897.5 m
 
-**Sample Description (spreadsheet):** 5% Siltstone, 95% f-med Sandstone, 100% bri FLUOR. TG 104.2U
+**Sample Description (spreadsheet):** 5% Siltstone, 95% f-med Sandstone, 100% bri FLUOR, TG 104.2U
 
 | Property | Value |
 |----------|-------|
@@ -3627,7 +3422,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.94** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3655,7 +3450,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.52** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3684,7 +3479,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.02** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3713,7 +3508,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.35** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3742,7 +3537,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.84** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3771,7 +3566,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **12.40** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3784,7 +3579,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 95 |
 | Grain Size | med-v crs (max: VC) |
 | Fluorescence | 100% bri |
-| Total Gas | 106 U |
+| Total Gas | 106.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2912m: clr,trnsl,f-crs,pr srt,sbang-sbrnd,wk sil cmt,nil vis mtx,rr liths,lse,gd inf por,bri fluor. of SST,mod bri-bri yel-grn evn fluor,slw-mod bldng cut,blu-wh c/c,thk r/r.
@@ -3800,7 +3595,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **15.94** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3829,7 +3624,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **18.29** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3858,7 +3653,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **15.40** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3887,7 +3682,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **14.74** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3900,7 +3695,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 100 |
 | Grain Size | med-v crs (max: VC) |
 | Fluorescence | 100% bri |
-| Total Gas | 127 U |
+| Total Gas | 127.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2930m: clr,trnsl,med-v crs,pr srt,sbang-sbrnd, 1229.5 wk sil cmt,nil vis mtx,qtz ovgths,frstd & glassy qtz grs,mrr liths,lse,gd inf por,bri fluor.
@@ -3916,7 +3711,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **13.60** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3933,7 +3728,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2944m: lt-med gry,aren,sli micmic,mod hd, blky-sbfiss.
-- **SANDSTONE** @ ~2949m: clr,trnsl,pl brn,f-crs,dom f-med,mod
+- **SANDSTONE** @ ~2949m: 3-7 klbs SANDSTONE:clr,trnsl,pl brn,f-crs,dom f-med,mod
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3944,7 +3739,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **12.65** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3961,7 +3756,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2944m: lt-med gry,aren,sli micmic,mod hd, blky-sbfiss.
-- **SANDSTONE** @ ~2949m: clr,trnsl,pl brn,f-crs,dom f-med,mod
+- **SANDSTONE** @ ~2949m: 3-7 klbs SANDSTONE:clr,trnsl,pl brn,f-crs,dom f-med,mod
 - _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
@@ -3973,7 +3768,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.96** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3990,7 +3785,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2944m: lt-med gry,aren,sli micmic,mod hd, blky-sbfiss.
-- **SANDSTONE** @ ~2949m: clr,trnsl,pl brn,f-crs,dom f-med,mod
+- **SANDSTONE** @ ~2949m: 3-7 klbs SANDSTONE:clr,trnsl,pl brn,f-crs,dom f-med,mod
 - _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
@@ -4002,7 +3797,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.04** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4018,7 +3813,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | Total Gas | 113.2 U |
 
 **Mudlog Cuttings Description (PDF):**
-- **SANDSTONE** @ ~2949m: clr,trnsl,pl brn,f-crs,dom f-med,mod
+- **SANDSTONE** @ ~2949m: 3-7 klbs SANDSTONE:clr,trnsl,pl brn,f-crs,dom f-med,mod
 - **SANDSTONE** @ ~2968m: clr,trnsl,pl brn,vf-crs,sbrnd,lse-fri aggs,gd vis & inf por,bri fluor.
 - _(1 additional mudlog entries in interval)_
 
@@ -4031,7 +3826,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.18** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4060,7 +3855,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.32** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4089,7 +3884,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.26** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4118,7 +3913,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.69** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4147,7 +3942,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.16** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4175,7 +3970,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.81** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4204,7 +3999,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.67** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4232,7 +4027,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.12** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4259,7 +4054,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.22** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4287,7 +4082,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.08** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4300,7 +4095,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 95 |
 | Grain Size | vf-crs (max: C) |
 | Fluorescence | 100% bri |
-| Total Gas | 83 U |
+| Total Gas | 83.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3012m: med gry,med brn gry,aren,micmic,tr 3016 liths,mod hd,sbblky-sbfiss. 1228.1
@@ -4315,7 +4110,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.78** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4344,7 +4139,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.95** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4373,7 +4168,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.31** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4401,7 +4196,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **6.74** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4414,7 +4209,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 100 |
 | Grain Size | vf-med, rr crs (max: C) |
 | Fluorescence | 100% bri |
-| Total Gas | 107 U |
+| Total Gas | 107.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3025m: trnsl,clr,pl brn,f-med,rr crs,mod srt, sbang-sbrnd,wk sil cmt,ni-rr off wh arg mtx,rr off wh alt feld grs,rr liths,fri-lse,fr vis & inf por,bri fluor.
@@ -4430,7 +4225,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.65** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4459,7 +4254,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.83** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4488,7 +4283,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **7.90** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4517,7 +4312,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.04** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4546,7 +4341,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.99** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4575,7 +4370,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.47** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4604,7 +4399,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.95** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4617,7 +4412,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 90 |
 | Grain Size | vf-med (max: M) |
 | Fluorescence | 100% bri |
-| Total Gas | 95 U |
+| Total Gas | 95.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3056m: clr,trnsl,f-crs,pr srt,sbang-sbrnd,wk sil cmt,nil-rr off wh arg mtx,rr liths,rr mic,fri-lse,fr vis 3060 & inf por,bri fluor. 1228.0
@@ -4633,7 +4428,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.16** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4662,7 +4457,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.53** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4691,7 +4486,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.21** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4720,7 +4515,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.68** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4749,7 +4544,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **12.44** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4778,7 +4573,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **16.00** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4807,7 +4602,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **13.72** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4836,7 +4631,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.12** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4865,7 +4660,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **13.92** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4894,7 +4689,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.30** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4923,7 +4718,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.64** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4952,7 +4747,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.33** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4981,7 +4776,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.14** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5010,7 +4805,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **15.07** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5039,7 +4834,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **13.60** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5068,7 +4863,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **13.20** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5097,7 +4892,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **12.02** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5126,7 +4921,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.61** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5155,7 +4950,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.44** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5184,7 +4979,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.82** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5213,7 +5008,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.77** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5242,7 +5037,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.70** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5271,7 +5066,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.73** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5300,7 +5095,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.60** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5313,7 +5108,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 95 |
 | Grain Size | f-med, rr crs (max: C) |
 | Fluorescence | 90% mod bri |
-| Total Gas | 88 U |
+| Total Gas | 88.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3208m: pl brn,clr,trnsl,f-med,tr crs,mod srt, sbang-sbrnd,wk sil cmt,tr off wh arg mtx,rr liths, fri-lse,fr-gd inf & vis por,bri fluor. 32 12 1 3 2 0.3 o sl f w S - S m T o ,d d i m bl - d m ng o d c u b t r , i b y lu e - l w g h rn c p /c tc ,t h h y k - e r/ v r. n fluor,
@@ -5329,7 +5124,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.83** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5358,7 +5153,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.24** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5388,7 +5183,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **10.06** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5401,7 +5196,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 85 |
 | Grain Size | f-med, rr crs (max: C) |
 | Fluorescence | 100% bri |
-| Total Gas | 63 U |
+| Total Gas | 63.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3240m: clr,trnsl,pl yel brn,f-csr,pr srt, 3244 sbang-sbrnd,wk sil cmt,tr off wh arg mtx,tr liths, 1231.3 lse-fri aggs,fr vis & inf por,mod bri fluor. of SST,dll-mod bri yel grn ptchy-evn fluor,slw-
@@ -5417,7 +5212,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **18.99** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5446,7 +5241,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **12.19** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5475,7 +5270,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **11.42** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5504,7 +5299,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **12.31** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5533,7 +5328,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **17.45** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5562,7 +5357,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **17.04** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5591,7 +5386,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **16.70** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5620,7 +5415,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **17.84** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5633,7 +5428,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | % Sandstone | 95 |
 | Grain Size | f-crs (max: C) |
 | Fluorescence | 90% bri |
-| Total Gas | 108 U |
+| Total Gas | 108.0 U |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3284m: clr,trnsl,pl yel brn,f-crs,pr srt,sbrnd, wk sil cmt,rr off wh arg mtx,rr mic flks,fri-lse,fr-gd vis & inf por,bri fluor.
@@ -5649,7 +5444,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **13.71** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5678,7 +5473,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **14.38** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5706,7 +5501,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **16.62** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5735,7 +5530,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **17.05** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5764,7 +5559,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **24.40** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5793,7 +5588,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **9.12** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5822,7 +5617,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **8.86** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5851,7 +5646,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.94** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5880,7 +5675,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **5.24** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5909,7 +5704,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.79** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5938,7 +5733,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.60** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5967,7 +5762,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **4.36** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5996,7 +5791,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **3.48** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6024,7 +5819,7 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 | **Δ Res (Deep − Shallow)** | **3.39** | — |
 
 **Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability (invasion profile indicator).
+> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6053,9 +5848,10 @@ Each row shows: depth interval, sample description (spreadsheet), matched mudlog
 
 | Metric | Value |
 |--------|-------|
-| Intervals analysed | 208 |
-| Depth range | 2255 – 3390 m |
-| Avg % Sandstone | 88.4% |
-| Avg Δ Res (Deep−Shallow) | 20.07 ohm.m |
+| Intervals analysed | 201 |
+| Depth range | 2265 – 3390 m |
+| Avg % Sandstone | 88.8% |
+| Avg Δ Res (Deep−Shallow) | 20.16 ohm.m |
 | Max Δ Res | 303.26 ohm.m |
 | Min Δ Res | 3.39 ohm.m |
+| Mudlog matches | 200 / 201 |
