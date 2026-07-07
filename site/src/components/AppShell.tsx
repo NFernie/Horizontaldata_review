@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import { AssistantWidget } from "@/components/assistant/AssistantWidget";
 import { cn } from "@/lib/utils";
 
 interface NavItem {
@@ -115,6 +116,8 @@ export function AppShell({ children }: AppShellProps) {
           {children ?? <Outlet />}
         </main>
       </div>
+
+      <AssistantWidget />
     </div>
   );
 }
