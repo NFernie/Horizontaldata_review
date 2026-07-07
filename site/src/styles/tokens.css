@@ -1,3 +1,7 @@
+/* Design tokens — McKinlay Water Risk (UI/UX Pro Max + OpusPlanR1 §3.2 fallback)
+ * Skill: .cursor/skills/ui-ux-pro-max/SKILL.md
+ * Dark geoscience UI; Inter + JetBrains Mono; 4px grid; accessible contrast.
+ */
 :root {
   --bg: #0b0f14;
   --surface: #131a22;

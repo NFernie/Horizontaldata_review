@@ -12,8 +12,8 @@ const NAV_ITEMS: NavItem[] = [
   { to: "/", label: "Portfolio" },
   { to: "/well/JENA31DW1", label: "Well Detail" },
   { to: "/water-risk", label: "Water Risk" },
-  { to: "/compare", label: "Compare", disabled: true },
-  { to: "/methodology", label: "Methodology", disabled: true },
+  { to: "/compare", label: "Compare" },
+  { to: "/methodology", label: "Methodology" },
 ];
 
 interface AppShellProps {
