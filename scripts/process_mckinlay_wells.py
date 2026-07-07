@@ -1007,6 +1007,11 @@ def write_interpretation(meta, path):
         if pd.notna(item["pct_ss"]):
             lines.append(f"| % Sandstone | {item['pct_ss']} |")
         lines.append(f"| Grain Size | {item['grain']} (max: {item['max_grain']}) |")
+        if item.get("grain_ordinal"):
+            lines.append(f"| Grain Ordinal | {item['grain_ordinal']} |")
+        poro = item.get("poro_class")
+        lines.append(f"| Porosity Class | {poro if poro else '—'} |")
+        lines.append(f"| Loose Grains | {'Yes' if item.get('loose_grains') else 'No'} |")
         if pd.notna(item["fluor"]):
             lines.append(f"| Fluorescence | {item['fluor']}% {item['bright']} |")
         if pd.notna(item["gas"]):

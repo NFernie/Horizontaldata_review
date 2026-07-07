@@ -1,6 +1,6 @@
 # FROSTILLICUS 2 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 07:03 UTC  
+**Generated:** 2026-07-07 07:23 UTC  
 **Well:** FROSTILLICUS 2 (FROSTILLICUS 2)  
 **TD:** 3724 m MD  
 
@@ -73,6 +73,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 40.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 1.0% siderite in 60% Siltstone, minor siderite in 40% very fine to fine Sandstone, Trace pale to moderately bright |
 | Total Gas | 7.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -101,6 +104,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 30.000000000000004 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 1.0% pale to moderately bright |
 | Total Gas | 7.0 U |
 | FeCO₃ in Siltstone | minor |
@@ -129,6 +135,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 30.000000000000004 |
 | Grain Size | very finefine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 10.0% siderite in 30% very finefine to fine Sandstone, 10% pale to moderately bright |
 | Total Gas | 5.0 U |
 | FeCO₃ in Siltstone | minor |
@@ -157,6 +166,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 80.0% siderite in 20% Siltstone, 80% very fine to medium, trace coarse to very coarse Sandstone, 80% moderately bright |
 | Total Gas | 77.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -185,6 +197,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 9.999999999999998 |
 | Grain Size | fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 100.0 U |
 
@@ -212,6 +227,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 5.000000000000004 |
 | Grain Size | fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 94.0 U |
 
@@ -239,6 +257,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to medium,trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 102.0 U |
 
@@ -266,6 +287,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 100.0 U |
 
@@ -293,6 +317,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% pale to moderately bright |
 | Total Gas | 144.0 U |
 
@@ -321,6 +348,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 70.0 U |
 
@@ -348,6 +378,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 40.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 42.0 U |
 
@@ -375,6 +408,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 30.000000000000004 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 52.0 U |
 
@@ -402,6 +438,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 50.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 67.0 U |
 
@@ -429,6 +468,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 19.999999999999996 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 90.0% medium Sandstone, 90% moderately bright |
 | Total Gas | 75.0 U |
 
@@ -456,6 +498,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 118.0 U |
 
@@ -483,6 +528,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 121.0 U |
 
@@ -509,6 +557,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 140.0 U |
 
@@ -535,6 +586,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to coarse, common very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 148.0 U |
 
@@ -561,6 +615,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to coarse, common very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
 
@@ -588,6 +645,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright |
 | Total Gas | 209.0 U |
 
@@ -615,6 +675,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to medium, common coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 239.0 U |
 
@@ -642,6 +705,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright |
 | Total Gas | 221.0 U |
 
@@ -669,6 +735,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 199.0 U |
 
@@ -696,6 +765,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 146.0 U |
 
@@ -723,6 +795,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 214.0 U |
 
@@ -751,6 +826,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 242.0 U |
 | FeCO₃ in Siltstone | rare |
@@ -780,6 +858,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% bright |
 | Total Gas | 235.0 U |
 | FeCO₃ in Siltstone | rare |
@@ -809,6 +890,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 288.0 U |
 
@@ -837,6 +921,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 253.0 U |
 | FeCO₃ in Siltstone | rare |
@@ -866,6 +953,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, rare medium to coarse Sandstone, 100% bright |
 | Total Gas | 262.0 U |
 
@@ -893,6 +983,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 242.0 U |
 
@@ -920,6 +1013,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% siderite in 85% very fine to fine, trace medium to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 174.0 U |
 | FeCO₃ in Siltstone | rare |
@@ -947,6 +1043,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% nan |
 | Total Gas | 211.0 U |
 | FeCO₃ in Siltstone | common |
@@ -974,6 +1073,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 60.0% nan |
 | Total Gas | 164.0 U |
 | FeCO₃ in Siltstone | minor |
@@ -1001,6 +1103,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 10% Siltstone, 90% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 240.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -1028,6 +1133,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 299.0 U |
 
@@ -1054,6 +1162,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 275.0 U |
 
@@ -1081,6 +1192,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 293.0 U |
 
@@ -1108,6 +1222,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, rare medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 80.0 U |
 
@@ -1135,6 +1252,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 128.0 U |
 
@@ -1162,6 +1282,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 50.0% medium to coarse Sandstone, 50% moderately bright |
 | Total Gas | 61.0 U |
 
@@ -1189,6 +1312,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 45.0% medium to coarse Sandstone, 45% moderately bright |
 | Total Gas | 60.0 U |
 
@@ -1216,6 +1342,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 60.0% medium to coarse Sandstone, 60% moderately bright |
 | Total Gas | 78.0 U |
 
@@ -1244,6 +1373,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 55.00000000000001% nan |
 | Total Gas | 74.0 U |
 
@@ -1271,6 +1403,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 65.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 55.00000000000001% nan |
 | Total Gas | 63.0 U |
 
@@ -1298,6 +1433,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% coarse Sandstone, 75% moderately bright |
 | Total Gas | 95.0 U |
 
@@ -1325,6 +1463,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% coarse Sandstone, 75% moderately bright |
 | Total Gas | 91.0 U |
 
@@ -1352,6 +1493,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, rare coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 116.0 U |
 
@@ -1379,6 +1523,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine, minor medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 118.0 U |
 
@@ -1406,6 +1553,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine, minor medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 119.0 U |
 
@@ -1432,6 +1582,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
 
@@ -1458,6 +1611,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, rare coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
 
@@ -1484,6 +1640,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 163.0 U |
 
@@ -1511,6 +1670,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 201.0 U |
 
@@ -1538,6 +1700,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
 
@@ -1565,6 +1730,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine, rare medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 127.0 U |
 
@@ -1592,6 +1760,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 75.0% nan |
 | Total Gas | 116.0 U |
 
@@ -1619,6 +1790,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 75.0% nan |
 | Total Gas | 121.0 U |
 
@@ -1646,6 +1820,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | very fine to fine, g/t slty SST, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 60.0% medium to coarse Sandstone, 60% moderately bright |
 | Total Gas | 130.0 U |
 
@@ -1673,6 +1850,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine, g/t slty SST (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 70.0% siderite in 70% very fine to fine, g/t slty SST Sandstone, 70% moderately bright |
 | Total Gas | 117.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -1700,6 +1880,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 175.0 U |
 
@@ -1726,6 +1909,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 206.0 U |
 
@@ -1752,6 +1938,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 242.0 U |
 
@@ -1778,6 +1967,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
 
@@ -1804,6 +1996,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 231.0 U |
 
@@ -1830,6 +2025,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 242.0 U |
 
@@ -1856,6 +2054,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
 
@@ -1883,6 +2084,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, common coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 179.0 U |
 
@@ -1910,6 +2114,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 177.0 U |
 
@@ -1937,6 +2144,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% very coarse Sandstone, 80% moderately bright to bright |
 | Total Gas | 172.0 U |
 
@@ -1964,6 +2174,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 183.0 U |
 
@@ -1991,6 +2204,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% very coarse Sandstone, 80% moderately bright to bright |
 | Total Gas | 160.0 U |
 
@@ -2020,6 +2236,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 191.0 U |
 
@@ -2048,6 +2267,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
 
@@ -2075,6 +2297,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, common very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 179.0 U |
 
@@ -2102,6 +2327,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 186.0 U |
 
@@ -2129,6 +2357,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% coarse to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 155.0 U |
 
@@ -2157,6 +2388,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% coarse Sandstone, 80% moderately bright to pale |
 | Total Gas | 197.0 U |
 
@@ -2185,6 +2419,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
 
@@ -2213,6 +2450,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 186.0 U |
 
@@ -2240,6 +2480,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 230.0 U |
 
@@ -2267,6 +2510,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 190.0 U |
 
@@ -2294,6 +2540,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 211.0 U |
 
@@ -2322,6 +2571,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 195.0 U |
 
@@ -2349,6 +2601,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, common coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 219.0 U |
 
@@ -2377,6 +2632,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 172.0 U |
 
@@ -2405,6 +2663,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 207.0 U |
 
@@ -2433,6 +2694,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 198.0 U |
 
@@ -2461,6 +2725,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 182.0 U |
 
@@ -2489,6 +2756,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 192.0 U |
 
@@ -2516,6 +2786,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 184.0 U |
 
@@ -2543,6 +2816,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 212.0 U |
 
@@ -2569,6 +2845,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 206.0 U |
 
@@ -2595,6 +2874,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 227.0 U |
 
@@ -2621,6 +2903,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, common coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 195.0 U |
 
@@ -2647,6 +2932,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 197.0 U |
 
@@ -2673,6 +2961,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to verycoarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 199.0 U |
 
@@ -2699,6 +2990,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, rare coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 244.0 U |
 
@@ -2725,6 +3019,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
 
@@ -2751,6 +3048,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, common medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 185.0 U |
 
@@ -2777,6 +3077,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 133.0 U |
 
@@ -2803,6 +3106,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 177.0 U |
 
@@ -2829,6 +3135,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 179.0 U |
 
@@ -2855,6 +3164,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 142.0 U |
 
@@ -2881,6 +3193,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% medium to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 143.0 U |
 
@@ -2907,6 +3222,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 85.0% medium to very coarse Sandstone, 85% moderately bright |
 | Total Gas | 151.0 U |
 
@@ -2934,6 +3252,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% coarse Sandstone, 80% moderately bright |
 | Total Gas | 146.0 U |
 
@@ -2961,6 +3282,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 85.0% coarse to very coarse Sandstone, 85% moderately bright to bright |
 | Total Gas | 150.0 U |
 
@@ -2988,6 +3312,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% coarse Sandstone, 75% moderately bright to dull |
 | Total Gas | 125.0 U |
 
@@ -3015,6 +3342,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 70.0% medium to coarse Sandstone, 70% moderately bright to dull |
 | Total Gas | 93.0 U |
 
@@ -3042,6 +3372,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% nan |
 | Total Gas | 103.0 U |
 
@@ -3069,6 +3402,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% medium to coarse Sandstone, 75% moderately bright |
 | Total Gas | 110.0 U |
 
@@ -3096,6 +3432,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 65.0% medium Sandstone, 65% moderately bright to dull |
 | Total Gas | 113.0 U |
 
@@ -3122,6 +3461,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% nan |
 | Total Gas | 137.0 U |
 
@@ -3149,6 +3491,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 123.0 U |
 
@@ -3176,6 +3521,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 124.0 U |
 
@@ -3203,6 +3551,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% coarse Sandstone, 80% moderately bright |
 | Total Gas | 106.0 U |
 
@@ -3230,6 +3581,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% coarse to very coarse Sandstone, 75% moderately bright |
 | Total Gas | 95.0 U |
 
@@ -3258,6 +3612,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 95.0% coarse to very coarse Sandstone, 95% moderately bright |
 | Total Gas | 145.0 U |
 
@@ -3286,6 +3643,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 95.0% medium to coarse Sandstone, 95% moderately bright |
 | Total Gas | 149.0 U |
 
@@ -3314,6 +3674,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 155.0 U |
 
@@ -3341,6 +3704,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 95.0% coarse to very coarse Sandstone, 95% moderately bright |
 | Total Gas | 160.0 U |
 
@@ -3368,6 +3734,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% medium Sandstone, 80% moderately bright |
 | Total Gas | 138.0 U |
 
@@ -3395,6 +3764,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 116.0 U |
 
@@ -3422,6 +3794,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 149.0 U |
 
@@ -3448,6 +3823,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse, rare very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
 
@@ -3474,6 +3852,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 188.0 U |
 
@@ -3500,6 +3881,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 170.0 U |
 
@@ -3526,6 +3910,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 166.0 U |
 
@@ -3552,6 +3939,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 225.0 U |
 
@@ -3578,6 +3968,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 175.0 U |
 
@@ -3604,6 +3997,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 201.0 U |
 
@@ -3630,6 +4026,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 206.0 U |
 
@@ -3656,6 +4055,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 178.0 U |
 
@@ -3682,6 +4084,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine,trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 166.0 U |
 
@@ -3708,6 +4113,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 176.0 U |
 
@@ -3734,6 +4142,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
 
@@ -3760,6 +4171,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 174.0 U |
 
@@ -3786,6 +4200,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 176.0 U |
 
@@ -3812,6 +4229,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 175.0 U |
 
@@ -3838,6 +4258,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 199.0 U |
 
@@ -3864,6 +4287,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
 
@@ -3890,6 +4316,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
 
@@ -3916,6 +4345,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 206.0 U |
 
@@ -3942,6 +4374,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 243.0 U |
 
@@ -3968,6 +4403,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 230.0 U |
 
@@ -3995,6 +4433,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 229.0 U |
 
@@ -4022,6 +4463,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 172.0 U |
 
@@ -4049,6 +4493,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine,trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% bright |
 | Total Gas | 224.0 U |
 
@@ -4076,6 +4523,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 229.0 U |
 
@@ -4103,6 +4553,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 227.0 U |
 
@@ -4130,6 +4583,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 233.0 U |
 
@@ -4157,6 +4613,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% bright |
 | Total Gas | 226.0 U |
 
@@ -4183,6 +4642,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
 
@@ -4209,6 +4671,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 218.0 U |
 
@@ -4235,6 +4700,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
 
@@ -4261,6 +4729,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 198.0 U |
 
@@ -4287,6 +4758,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 199.0 U |
 
@@ -4314,6 +4788,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
 
@@ -4341,6 +4818,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 243.0 U |
 
@@ -4368,6 +4848,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 236.0 U |
 
@@ -4395,6 +4878,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 220.0 U |
 
@@ -4422,6 +4908,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 237.0 U |
 
@@ -4449,6 +4938,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
 
@@ -4476,6 +4968,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 236.0 U |
 
@@ -4502,6 +4997,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 231.0 U |
 
@@ -4529,6 +5027,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 247.0 U |
 
@@ -4556,6 +5057,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 254.0 U |
 
@@ -4583,6 +5087,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
 
@@ -4610,6 +5117,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine, occasional fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 238.0 U |
 
@@ -4637,6 +5147,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 251.0 U |
 
@@ -4664,6 +5177,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 295.0 U |
 
@@ -4691,6 +5207,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 282.0 U |
 
@@ -4717,6 +5236,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, rare coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
 
@@ -4743,6 +5265,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 10% Siltstone, trace siderite in 90% very fine to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 232.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -4770,6 +5295,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse, rare very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 10% Siltstone, trace siderite in 90% very fine to coarse, rare very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 301.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -4797,6 +5325,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 10% Siltstone, trace siderite in 90% very fine to medium, trace coarse to very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 274.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -4824,6 +5355,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 15% Siltstone, trace siderite in 85% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 203.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -4851,6 +5385,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | very fine to fine, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 1.0% siderite in 60% very fine to fine, trace coarse to very coarse Sandstone, Trace |
 | Total Gas | 45.0 U |
 | FeCO₃ in Siltstone | rare |
@@ -4880,6 +5417,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 1.0% dull to moderately bright |
 | Total Gas | 56.0 U |
 | FeCO₃ in Siltstone | common |
@@ -4909,6 +5449,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% siderite in 70% very fine to very coarse Sandstone, 75% moderately bright to dull |
 | Total Gas | 111.0 U |
 | FeCO₃ in Siltstone | minor |
@@ -4937,6 +5480,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% siderite in 80% very fine to very coarse Sandstone, 80% moderately bright |
 | Total Gas | 147.0 U |
 | FeCO₃ in Siltstone | minor |
@@ -4965,6 +5511,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% siderite in 85% very fine to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 193.0 U |
 | FeCO₃ in Siltstone | minor |
@@ -4993,6 +5542,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 90.0% siderite in 85% very fine to very coarse Sandstone, 90% bright to moderately bright |
 | Total Gas | 232.0 U |
 | FeCO₃ in Siltstone | minor |
@@ -5022,6 +5574,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 175.0 U |
 | FeCO₃ in Siltstone | minor |
@@ -5050,6 +5605,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 5% Siltstone, 95% very fine to medium, trace coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 184.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -5079,6 +5637,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 178.0 U |
 
@@ -5107,6 +5668,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 90.0% coarse Sandstone, 90% moderately bright |
 | Total Gas | 104.0 U |
 
@@ -5135,6 +5699,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to medium, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 107.0 U |
 
@@ -5163,6 +5730,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 60.0% nan |
 | Total Gas | 90.0 U |
 
@@ -5191,6 +5761,9 @@ Looks like we are back in the good sands.
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 70.0% nan |
 | Total Gas | 97.0 U |
 
@@ -5220,6 +5793,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
 
@@ -5247,6 +5823,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 133.0 U |
 
@@ -5273,6 +5852,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 125.0 U |
 
@@ -5299,6 +5881,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 141.0 U |
 
@@ -5325,6 +5910,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 143.0 U |
 
@@ -5351,6 +5939,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 136.0 U |
 
@@ -5377,6 +5968,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 60.0% siderite in 80% very fine to fine, trace coarse Sandstone, 60% pale to moderately bright |
 | Total Gas | 146.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -5404,6 +5998,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% very coarse Sandstone, 80% moderately bright |
 | Total Gas | 151.0 U |
 
@@ -5431,6 +6028,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 154.0 U |
 
@@ -5458,6 +6058,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 149.0 U |
 
@@ -5485,6 +6088,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
 
@@ -5512,6 +6118,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 146.0 U |
 
@@ -5539,6 +6148,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 156.0 U |
 
@@ -5566,6 +6178,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 152.0 U |
 
@@ -5594,6 +6209,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 144.0 U |
 
@@ -5621,6 +6239,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 157.0 U |
 
@@ -5648,6 +6269,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 166.0 U |
 
@@ -5675,6 +6299,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 151.0 U |
 
@@ -5702,6 +6329,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 156.0 U |
 
@@ -5729,6 +6359,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 173.0 U |
 
@@ -5756,6 +6389,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, rare coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse Sandstone, 100% moderately bright |
 | Total Gas | 186.0 U |
 
@@ -5782,6 +6418,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, rare medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 161.0 U |
 
@@ -5808,6 +6447,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, rare medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 147.0 U |
 
@@ -5834,6 +6476,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 170.0 U |
 
@@ -5860,6 +6505,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 235.0 U |
 
@@ -5886,6 +6534,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 204.0 U |
 
@@ -5912,6 +6563,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 212.0 U |
 
@@ -5938,6 +6592,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 195.0 U |
 
@@ -5965,6 +6622,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 193.0 U |
 
@@ -5992,6 +6652,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 195.0 U |
 
@@ -6019,6 +6682,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 208.0 U |
 
@@ -6046,6 +6712,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, minor coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 202.0 U |
 
@@ -6073,6 +6742,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 235.0 U |
 
@@ -6100,6 +6772,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 203.0 U |
 
@@ -6127,6 +6802,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
 
@@ -6153,6 +6831,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 207.0 U |
 
@@ -6180,6 +6861,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 251.0 U |
 
@@ -6207,6 +6891,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 209.0 U |
 
@@ -6234,6 +6921,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 154.0 U |
 
@@ -6261,6 +6951,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 209.0 U |
 
@@ -6289,6 +6982,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 183.0 U |
 
@@ -6317,6 +7013,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 190.0 U |
 
@@ -6345,6 +7044,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 202.0 U |
 
@@ -6372,6 +7074,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 236.0 U |
 
@@ -6399,6 +7104,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
 
@@ -6426,6 +7134,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 151.0 U |
 
@@ -6453,6 +7164,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 175.0 U |
 
@@ -6479,6 +7193,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 99.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 215.0 U |
 
@@ -6505,6 +7222,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 99.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 193.0 U |
 
@@ -6531,6 +7251,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 99.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 185.0 U |
 
@@ -6557,6 +7280,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 99.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 175.0 U |
 
@@ -6583,6 +7309,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 173.0 U |
 
@@ -6609,6 +7338,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 190.0 U |
 
@@ -6635,6 +7367,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 198.0 U |
 
@@ -6661,6 +7396,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 187.0 U |
 
@@ -6687,6 +7425,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse, rare very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 214.0 U |
 
@@ -6713,6 +7454,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% very coarse Sandstone, 90% moderately bright |
 | Total Gas | 178.0 U |
 
@@ -6739,6 +7483,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 155.0 U |
 
@@ -6766,6 +7513,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 204.0 U |
 
@@ -6793,6 +7543,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
 
@@ -6821,6 +7574,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 169.0 U |
 
@@ -6849,6 +7605,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 190.0 U |
 
@@ -6877,6 +7636,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 187.0 U |
 
@@ -6905,6 +7667,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 205.0 U |
 
@@ -6933,6 +7698,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 194.0 U |
 
@@ -6960,6 +7728,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 183.0 U |
 
@@ -6988,6 +7759,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 199.0 U |
 
@@ -7015,6 +7789,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 135.0 U |
 
@@ -7043,6 +7820,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 184.0 U |
 
@@ -7071,6 +7851,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 199.0 U |
 
@@ -7100,6 +7883,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, trace coarse Sandstone, 100% moderately bright |
 | Total Gas | 174.0 U |
 
@@ -7129,6 +7915,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, 100% moderately bright |
 | Total Gas | 158.0 U |
 
@@ -7158,6 +7947,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 121.0 U |
 
@@ -7186,6 +7978,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 113.0 U |
 
@@ -7215,6 +8010,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 151.0 U |
 
@@ -7243,6 +8041,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 133.0 U |
 
@@ -7271,6 +8072,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 137.0 U |
 
@@ -7298,6 +8102,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 119.0 U |
 
@@ -7325,6 +8132,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 147.0 U |
 
@@ -7352,6 +8162,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 180.0 U |
 
@@ -7379,6 +8192,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 191.0 U |
 
@@ -7405,6 +8221,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 157.0 U |
 
@@ -7431,6 +8250,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 166.0 U |
 
@@ -7457,6 +8279,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
 
@@ -7484,6 +8309,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 159.0 U |
 
@@ -7511,6 +8339,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 134.0 U |
 
@@ -7538,6 +8369,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 170.0 U |
 
@@ -7565,6 +8399,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 175.0 U |
 
@@ -7592,6 +8429,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine,trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 180.0 U |
 
@@ -7619,6 +8459,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 155.0 U |
 
@@ -7646,6 +8489,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 170.0 U |
 
@@ -7672,6 +8518,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 137.0 U |
 
@@ -7698,6 +8547,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 151.0 U |
 
@@ -7724,6 +8576,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to dull |
 | Total Gas | 153.0 U |
 
@@ -7751,6 +8606,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 163.0 U |
 
@@ -7778,6 +8636,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 163.0 U |
 
@@ -7805,6 +8666,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to  to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
 
@@ -7832,6 +8696,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 154.0 U |
 
@@ -7859,6 +8726,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse, rare very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
 
@@ -7886,6 +8756,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 151.0 U |
 
@@ -7913,6 +8786,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 146.0 U |
 
@@ -7939,6 +8815,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse, rare very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 143.0 U |
 
@@ -7965,6 +8844,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 155.0 U |
 
@@ -7991,6 +8873,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 164.0 U |
 
@@ -8018,6 +8903,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 166.0 U |
 
@@ -8045,6 +8933,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
 
@@ -8072,6 +8963,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 192.0 U |
 
@@ -8099,6 +8993,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 176.0 U |
 
@@ -8126,6 +9023,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, minor coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 202.0 U |
 
@@ -8153,6 +9053,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 101% moderately bright to bright |
 | Total Gas | 200.0 U |
 
@@ -8181,6 +9084,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, minor coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, minor coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 196.0 U |
 
@@ -8208,6 +9114,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
 
@@ -8235,6 +9144,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% moderately bright |
 | Total Gas | 136.0 U |
 
@@ -8262,6 +9174,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 132.0 U |
 
@@ -8290,6 +9205,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 175.0 U |
 
@@ -8318,6 +9236,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 162.0 U |
 
@@ -8346,6 +9267,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 166.0 U |
 
@@ -8373,6 +9297,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 174.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -8401,6 +9328,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 100% very fine to medium, minor coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 195.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -8429,6 +9359,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 202.0 U |
 | FeCO₃ in Siltstone | rare |
@@ -8458,6 +9391,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 159.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -8486,6 +9422,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% siderite in 90% very fine to fine, rare medium to coarse Sandstone, 80% moderately bright |
 | Total Gas | 148.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -8514,6 +9453,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% siderite in 75% very fine to medium, trace coarse Sandstone, 75% moderately bright |
 | Total Gas | 127.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -8542,6 +9484,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 85% very fine to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 159.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -8570,6 +9515,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, minor coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 95% very fine to medium, minor coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 200.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -8598,6 +9546,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 79.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 197.0 U |
 
@@ -8625,6 +9576,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 99.0 |
 | Grain Size | very fine to fine, rare medium to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, rare medium to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 196.0 U |
 
@@ -8651,6 +9605,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 91.0 |
 | Grain Size | very fine to medium, rare coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 214.0 U |
 
@@ -8679,6 +9636,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 81.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 188.0 U |
 
@@ -8707,6 +9667,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 71.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 95.0% nan |
 | Total Gas | 172.0 U |
 
@@ -8735,6 +9698,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 65.0 |
 | Grain Size | very fine to coarse, rare very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% nan |
 | Total Gas | 137.0 U |
 
@@ -8763,6 +9729,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to medium, rare coarse to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 95.0% nan |
 | Total Gas | 174.0 U |
 
@@ -8791,6 +9760,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 135.0 U |
 
@@ -8819,6 +9791,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% nan |
 | Total Gas | 147.0 U |
 
@@ -8847,6 +9822,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 114.0 U |
 
@@ -8873,6 +9851,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 146.0 U |
 
@@ -8899,6 +9880,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 119.0 U |
 
@@ -8925,6 +9909,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 121.0 U |
 
@@ -8951,6 +9938,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 134.0 U |
 
@@ -8977,6 +9967,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 166.0 U |
 
@@ -9003,6 +9996,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% bright to moderately bright |
 | Total Gas | 177.0 U |
 
@@ -9029,6 +10025,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 135.0 U |
 
@@ -9055,6 +10054,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 136.0 U |
 
@@ -9081,6 +10083,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 123.0 U |
 
@@ -9107,6 +10112,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 153.0 U |
 
@@ -9133,6 +10141,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, minor very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 173.0 U |
 
@@ -9159,6 +10170,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 180.0 U |
 
@@ -9185,6 +10199,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 167.0 U |
 
@@ -9211,6 +10228,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 174.0 U |
 
@@ -9237,6 +10257,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 161.0 U |
 
@@ -9264,6 +10287,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 156.0 U |
 
@@ -9291,6 +10317,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
 
@@ -9318,6 +10347,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 196.0 U |
 
@@ -9345,6 +10377,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
 
@@ -9373,6 +10408,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% bright to moderately bright |
 | Total Gas | 191.0 U |
 
@@ -9401,6 +10439,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
 
@@ -9429,6 +10470,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 206.0 U |
 
@@ -9456,6 +10500,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% bright to moderately bright |
 | Total Gas | 199.0 U |
 
@@ -9483,6 +10530,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 208.0 U |
 
@@ -9510,6 +10560,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 198.0 U |
 
@@ -9538,6 +10591,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
 
@@ -9565,6 +10621,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 199.0 U |
 
@@ -9592,6 +10651,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 194.0 U |
 
@@ -9619,6 +10681,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, 100% bright to moderately bright |
 | Total Gas | 180.0 U |
 
@@ -9647,6 +10712,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright to bright |
 | Total Gas | 201.0 U |
 
@@ -9675,6 +10743,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 207.0 U |
 
@@ -9703,6 +10774,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright to bright |
 | Total Gas | 143.0 U |
 
@@ -9730,6 +10804,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 182.0 U |
 
@@ -9757,6 +10834,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 176.0 U |
 
@@ -9784,6 +10864,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, rare medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 209.0 U |
 
@@ -9812,6 +10895,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 175.0 U |
 
@@ -9839,6 +10925,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, trace medium to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 166.0 U |
 
@@ -9866,6 +10955,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, minor medium Sandstone, 100% moderately bright |
 | Total Gas | 161.0 U |
 
@@ -9893,6 +10985,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 163.0 U |
 
@@ -9920,6 +11015,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 177.0 U |
 
@@ -9947,6 +11045,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% moderately bright |
 | Total Gas | 159.0 U |
 
@@ -9974,6 +11075,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
 
@@ -10000,6 +11104,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% nan |
 | Total Gas | 245.0 U |
 
@@ -10026,6 +11133,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 250.0 U |
 
@@ -10052,6 +11162,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 5% Siltstone, 95% very fine to coarse Sandstone, 100% moderately bright |
 | Total Gas | 235.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -10079,6 +11192,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to coarse, trace very coarse (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 20% Siltstone, 80% very fine to coarse, trace very coarse Sandstone, 100% moderately bright |
 | Total Gas | 240.0 U |
 | FeCO₃ in Siltstone | trace |
@@ -10106,6 +11222,9 @@ Gas seems to be holding between 130-140U
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siderite in 15% Siltstone, 85% very fine to medium Sandstone, 100% moderately bright |
 | Total Gas | 172.0 U |
 | FeCO₃ in Siltstone | trace |

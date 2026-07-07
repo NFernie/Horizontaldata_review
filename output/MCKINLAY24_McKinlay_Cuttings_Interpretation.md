@@ -1,6 +1,6 @@
 # MCKINLAY 24 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 07:04 UTC  
+**Generated:** 2026-07-07 07:24 UTC  
 **Well:** MCKINLAY 24 (MCKINLAY 24)  
 **TD:** 2598 m MD  
 
@@ -71,6 +71,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 1.0% siltstone. 60% very fine to fine sandstone. TG: 13U. Trace bright pinpoint |
 | Total Gas | 13.0 U |
 
@@ -98,6 +101,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine, minor med disagg (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 80% very fine to fine, minor med disagg sandstone. TG: 102U. 100% bright |
 | Total Gas | 102.0 U |
 
@@ -125,6 +131,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine, minor med- crs disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 90% very fine to fine, minor med- crs disagg sandstone. TG: 150U. 100% bright |
 | Total Gas | 150.0 U |
 
@@ -152,6 +161,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, minor med- crs disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 95% very fine to fine, minor med- crs disagg sandstone. TG: 160U. 100% bright |
 | Total Gas | 160.0 U |
 
@@ -180,6 +192,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, trace med- crs disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 95% very fine to fine, trace med- crs disagg sandstone. TG: 110U. 80% bright |
 | Total Gas | 110.0 U |
 
@@ -207,6 +222,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine, trace med- crs disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 90% very fine to fine, trace med- crs disagg sandstone. TG: 66U. 80% bright |
 | Total Gas | 66.0 U |
 
@@ -234,6 +252,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 70.0% siltstone. 85% very fine sandstone. TG: 43U. 70% bright |
 | Total Gas | 43.0 U |
 
@@ -261,6 +282,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 70.0% siltstone. 90% very fine sandstone. TG: 54U. 70% bright |
 | Total Gas | 54.0 U |
 
@@ -288,6 +312,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 90% very fine sandstone. TG: 53U. 80% bright |
 | Total Gas | 53.0 U |
 
@@ -315,6 +342,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 80% very fine sandstone. TG: 52U. 80% bright |
 | Total Gas | 52.0 U |
 
@@ -342,6 +372,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 80% very fine sandstone. TG: 43U. 80% bright to moderately bright |
 | Total Gas | 43.0 U |
 
@@ -368,6 +401,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 70.0% siltstone. 85% very fine sandstone. TG: 48U. 70% bright to moderately bright |
 | Total Gas | 48.0 U |
 
@@ -395,6 +431,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 80% very fine sandstone. TG: 42U. 80% bright |
 | Total Gas | 42.0 U |
 
@@ -422,6 +461,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 80% very fine sandstone. TG: 43U. 80% mod bright |
 | Total Gas | 43.0 U |
 
@@ -449,6 +491,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 75% very fine sandstone. TG: 46U. 80% mod bright |
 | Total Gas | 46.0 U |
 
@@ -476,6 +521,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 70% very fine sandstone. TG: 56U. 85% mod bright |
 | Total Gas | 56.0 U |
 
@@ -503,6 +551,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 85.0% siltstone. 70% very fine sandstone. TG: 45U. 80% mod bright |
 | Total Gas | 45.0 U |
 
@@ -530,6 +581,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 80% very fine to fine sandstone. TG: 43U. 80% mod bright |
 | Total Gas | 43.0 U |
 
@@ -557,6 +611,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 75.0% siltstone. 85% very fine to fine sandstone. TG: 42U. 75% mod bright |
 | Total Gas | 42.0 U |
 
@@ -583,6 +640,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 50.0% siltstone. 70% very fine sandstone. TG: 52U. 50% mod bright |
 | Total Gas | 52.0 U |
 
@@ -609,6 +669,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% siltstone. 70% very fine to fine sandstone. TG: 87U. 90% bright |
 | Total Gas | 87.0 U |
 
@@ -635,6 +698,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine agg, trace mdeium to coarse disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 80% very fine to fine agg, trace mdeium to coarse disagg sandstone. TG: 147U. 100% bright |
 | Total Gas | 147.0 U |
 
@@ -661,6 +727,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine agg, common medium to coarse disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 85% very fine to fine agg, common medium to coarse disagg sandstone. TG: 140U. 100% bright |
 | Total Gas | 140.0 U |
 
@@ -687,6 +756,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine agg, occasional to common medium to coarse disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 85% very fine to fine agg, occasional to common medium to coarse disagg sandstone. TG: 200U. 100% bright |
 | Total Gas | 200.0 U |
 
@@ -713,6 +785,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, trace medium to coarse disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 95% very fine to fine, trace medium to coarse disagg sandstone. TG: 238U. 100% bright |
 | Total Gas | 238.0 U |
 
@@ -739,6 +814,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine agg, com medium to coarse disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 90% very fine to fine agg, com medium to coarse disagg sandstone. TG: 230U. 100% bright |
 | Total Gas | 230.0 U |
 
@@ -766,6 +844,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine agg, com medium to coarse disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 95% very fine to fine agg, com medium to coarse disagg sandstone. TG: 250U. 100% bright |
 | Total Gas | 250.0 U |
 
@@ -793,6 +874,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 40.0 |
 | Grain Size | very fine to fine agg, occ medium to coarse disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 30.0% siltstone. 40% very fine to fine agg, occ medium to coarse disagg sandstone. TG: 60U. 30% bright |
 | Total Gas | 60.0 U |
 
@@ -821,6 +905,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | very fine to fine aggregates, trace medium disagg (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 0.0% none |
 | Total Gas | 16.0 U |
 
@@ -848,6 +935,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine aggregates, minor medium to coarse disagg (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 10.0% siltstone. 70% very fine to fine aggregates, minor medium to coarse disagg sandstone. TG: 22U. 10% mod bri-bri |
 | Total Gas | 22.0 U |
 
@@ -876,6 +966,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine aggregates, common fine to medium & trace coarse to very coarse disagg (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 30.0% siltstone. 70% very fine to fine aggregates, common fine to medium & trace coarse to very coarse disagg sandstone. TG: 95U. 30% bri-mod bri |
 | Total Gas | 95.0 U |
 
@@ -903,6 +996,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine aggregates, common fine to coarse & trace very coarse disagg (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% siltstone. 70% very fine to fine aggregates, common fine to coarse & trace very coarse disagg sandstone. TG: 98U. 80% bri-mod bri |
 | Total Gas | 98.0 U |
 
@@ -930,6 +1026,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregates, common fine to medium, mnr coarse & trace very coarse disagg (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 90% very fine to fine aggregates, common fine to medium, mnr coarse & trace very coarse disagg sandstone. TG: 139U. 100% bri-mod bri |
 | Total Gas | 139.0 U |
 
@@ -957,6 +1056,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | fine to coarse, trace very coarse disaggregated (minor very fine to fine aggs (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 95% fine to coarse, trace very coarse disaggregated (minor very fine to fine aggs) sandstone. TG: 143U. 100% bri-mod bri |
 | Total Gas | 143.0 U |
 
@@ -985,6 +1087,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | fine to coarse, trace very coarse disaggregated (minor very fine to fine aggs (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 80.0% fine to coarse, trace very coarse disaggregated (minor very fine to fine aggs) sandstone. TG: 85U. 80% mod bri |
 | Total Gas | 85.0 U |
 
@@ -1013,6 +1118,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | fine to coarse, minor very coarse disaggregated (common very fine to medium aggs (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 85% fine to coarse, minor very coarse disaggregated (common very fine to medium aggs) sandstone. TG: 94U. 100% mod bri to bright |
 | Total Gas | 94.0 U |
 
@@ -1041,6 +1149,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregates (minor fine to coarse & trace very coarse loose (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 95% very fine to fine aggregates (minor fine to coarse & trace very coarse loose) sandstone. TG: 122U. 100% bright |
 | Total Gas | 122.0 U |
 
@@ -1068,6 +1179,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (trace fine to very coarse loose (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (trace fine to very coarse loose) sandstone. TG: 138U. 100% bright |
 | Total Gas | 138.0 U |
 
@@ -1095,6 +1209,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (trace fine to medium loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (trace fine to medium loose) sandstone. TG: 148U. 100% bright |
 | Total Gas | 148.0 U |
 
@@ -1122,6 +1239,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregates (trace fine to v coarse loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | p-fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone. 95% very fine to fine aggregates (trace fine to v coarse loose) sandstone. TG: 122U. 100% bright to moderately bright |
 | Total Gas | 122.0 U |
 
@@ -1149,6 +1269,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (trace fine to medium loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (trace fine to medium loose) sandstone. TG: 106U. 100% moderately bright to bright |
 | Total Gas | 106.0 U |
 
@@ -1175,6 +1298,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (trace fine to medium loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (trace fine to medium loose) sandstone. TG: 91U. 100% moderately bright to bright |
 | Total Gas | 91.0 U |
 
@@ -1202,6 +1328,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (trace fine to medium loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (trace fine to medium loose) sandstone. TG: 222U. 100% moderately bright to bright |
 | Total Gas | 222.0 U |
 
@@ -1229,6 +1358,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (trace fine to medium loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (trace fine to medium loose) sandstone. TG: 360U. 100% bright |
 | Total Gas | 360.0 U |
 
@@ -1256,6 +1388,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (rare fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (rare fine loose) sandstone. TG: 268U. 100% bright |
 | Total Gas | 268.0 U |
 
@@ -1283,6 +1418,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (rare fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (rare fine loose) sandstone. TG: 258U. 100% bright |
 | Total Gas | 258.0 U |
 
@@ -1310,6 +1448,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (rare fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (rare fine loose) sandstone. TG: 254U. 100% bright |
 | Total Gas | 254.0 U |
 
@@ -1337,6 +1478,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (mnr fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (mnr fine loose) sandstone. TG: 273U. 100% bright |
 | Total Gas | 273.0 U |
 
@@ -1364,6 +1508,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (mnr fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (mnr fine loose) sandstone. TG: 266U. 100% bright to mod bright |
 | Total Gas | 266.0 U |
 
@@ -1390,6 +1537,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (mnr fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (mnr fine loose) sandstone. TG: 250U. 100% bright to mod bright |
 | Total Gas | 250.0 U |
 
@@ -1416,6 +1566,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine aggregates (mnr fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% Siltstone. 80% very fine to fine aggregates (mnr fine loose) sandstone. TG: 170U. 80% bright to mod bright |
 | Total Gas | 170.0 U |
 
@@ -1442,6 +1595,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregates (mnr fine to rare coarse loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 90% very fine to fine aggregates (mnr fine to rare coarse loose) sandstone. TG: 400U. 100% bright |
 | Total Gas | 400.0 U |
 
@@ -1468,6 +1624,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (occ fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (occ fine loose) sandstone. TG: 383U. 100% bright |
 | Total Gas | 383.0 U |
 
@@ -1494,6 +1653,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregates (com - abdt fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 90% very fine to fine aggregates (com - abdt fine loose) sandstone. TG: 283U. 100% bright |
 | Total Gas | 283.0 U |
 
@@ -1520,6 +1682,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine aggregates (occ - com fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 80% very fine to fine aggregates (occ - com fine loose) sandstone. TG: 295U. 100% bright |
 | Total Gas | 283.0 U |
 
@@ -1546,6 +1711,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine aggregates (occ - com med - coarse loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 85% very fine to fine aggregates (occ - com med - coarse loose) sandstone. TG: 350U. 100% bright |
 | Total Gas | 295.0 U |
 
@@ -1572,6 +1740,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | very fine to fine aggregates (occ - com med - coarse loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 85% very fine to fine aggregates (occ - com med - coarse loose) sandstone. TG: 280U. 100% bright |
 | Total Gas | 280.0 U |
 
@@ -1598,6 +1769,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (com fine - coarse loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (com fine - coarse loose) sandstone. TG: 290U. 100% bright |
 | Total Gas | 290.0 U |
 
@@ -1625,6 +1799,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine aggregates (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 30.0% Siltstone. 70% very fine to fine aggregates sandstone. TG: 120U. 30% bright |
 | Total Gas | 120.0 U |
 
@@ -1652,6 +1829,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 20.0% Siltstone. 60% very fine sandstone. TG: 130U. 20% bright |
 | Total Gas | 130.0 U |
 
@@ -1679,6 +1859,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 50.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 20.0% Siltstone. 50% very fine sandstone. TG: 110U. 20% bright |
 | Total Gas | 110.0 U |
 
@@ -1706,6 +1889,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 40.0 |
 | Grain Size | very fine (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 30.0% Siltstone. 40% very fine sandstone. TG: 75U. 30% bright |
 | Total Gas | 75.0 U |
 
@@ -1734,6 +1920,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | very fine - trace medium (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% Siltstone. 60% very fine - trace medium sandstone. TG: 130U. 80% bright |
 | Total Gas | 130.0 U |
 
@@ -1762,6 +1951,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine - trace medium (occ fine loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 80% very fine - trace medium (occ fine loose) sandstone. TG: 210U. 100% bright |
 | Total Gas | 210.0 U |
 
@@ -1791,6 +1983,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine - fine (occ fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 90% very fine - fine (occ fine loose) sandstone. TG: 150U. 100% bright |
 | Total Gas | 150.0 U |
 
@@ -1819,6 +2014,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine - fine (occ very fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine - fine (occ very fine loose) sandstone. TG: 220U. 100% bright |
 | Total Gas | 220.0 U |
 
@@ -1847,6 +2045,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine - fine (occ fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 90% very fine - fine (occ fine loose) sandstone. TG: 225U. 100% bright |
 | Total Gas | 225.0 U |
 
@@ -1875,6 +2076,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine - fine (occ - mnr fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine - fine (occ - mnr fine loose) sandstone. TG: 227U. 100% bright |
 | Total Gas | 227.0 U |
 
@@ -1903,6 +2107,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine - fine (occ - mnr fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine - fine (occ - mnr fine loose) sandstone. TG: 280U. 100% bright |
 | Total Gas | 280.0 U |
 
@@ -1930,6 +2137,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine - fine (mnr fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine - fine (mnr fine loose) sandstone. TG: 126U. 100% bright |
 | Total Gas | 126.0 U |
 
@@ -1957,6 +2167,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine (mnr very fine loose (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine (mnr very fine loose) sandstone. TG: 193U. 100% bright |
 | Total Gas | 193.0 U |
 
@@ -1983,6 +2196,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine (mnr very fine loose (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine (mnr very fine loose) sandstone. TG: 240U. 100% bright |
 | Total Gas | 240.0 U |
 
@@ -2010,6 +2226,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine (mnr very fine loose (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine (mnr very fine loose) sandstone. TG: 185U. 100% bright |
 | Total Gas | 185.0 U |
 
@@ -2037,6 +2256,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine (mnr very fine loose (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine (mnr very fine loose) sandstone. TG: 205U. 100% bright |
 | Total Gas | 205.0 U |
 
@@ -2064,6 +2286,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine (mnr very fine loose (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine (mnr very fine loose) sandstone. TG: 160U. 100% bright |
 | Total Gas | 160.0 U |
 
@@ -2091,6 +2316,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine (mnr very fine loose (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 90% very fine (mnr very fine loose) sandstone. TG: 150U. 100% bright |
 | Total Gas | 150.0 U |
 
@@ -2118,6 +2346,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine (mnr very fine loose (max: nan) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 90% very fine (mnr very fine loose) sandstone. TG: 206U. 100% bright |
 | Total Gas | 206.0 U |
 
@@ -2145,6 +2376,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine (occ to com fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine to fine (occ to com fine loose) sandstone. TG: 250U. 100% bright |
 | Total Gas | 250.0 U |
 
@@ -2172,6 +2406,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (predominantly fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine (predominantly fine loose) sandstone. TG: 290U. 100% bright |
 | Total Gas | 290.0 U |
 
@@ -2198,6 +2435,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (predominantly fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine (predominantly fine loose) sandstone. TG: 260U. 100% bright |
 | Total Gas | 260.0 U |
 
@@ -2225,6 +2465,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (predominantly fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine (predominantly fine loose) sandstone. TG: 280U. 100% bright |
 | Total Gas | 280.0 U |
 
@@ -2252,6 +2495,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (predominantly fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine (predominantly fine loose) sandstone. TG: 286U. 100% bright |
 | Total Gas | 286.0 U |
 
@@ -2279,6 +2525,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (com - abdt fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine (com - abdt fine loose) sandstone. TG: 260U. 100% bright |
 | Total Gas | 260.0 U |
 
@@ -2306,6 +2555,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (com - abdt fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine (com - abdt fine loose) sandstone. TG: 212U. 100% bright |
 | Total Gas | 212.0 U |
 
@@ -2334,6 +2586,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (com fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine (com fine loose) sandstone. TG: 205U. 100% bright |
 | Total Gas | 205.0 U |
 
@@ -2362,6 +2617,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium (com fine loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine, minor medium (com fine loose) sandstone. TG: 210U. 100% bright |
 | Total Gas | 210.0 U |
 
@@ -2390,6 +2648,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium (com fine loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine, minor medium (com fine loose) sandstone. TG: 264U. 100% bright |
 | Total Gas | 264.0 U |
 
@@ -2417,6 +2678,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium (com fine loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine, minor medium (com fine loose) sandstone. TG: 250U. 100% bright |
 | Total Gas | 250.0 U |
 
@@ -2444,6 +2708,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, minor medium (com fine loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine, minor medium (com fine loose) sandstone. TG: 190U. 100% bright |
 | Total Gas | 190.0 U |
 
@@ -2471,6 +2738,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, (abdt fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine to fine, (abdt fine loose) sandstone. TG: 200U. 100% bright |
 | Total Gas | 200.0 U |
 
@@ -2498,6 +2768,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, (occasional fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% Siltstone. 95% very fine to fine, (occasional fine loose) sandstone. TG: 150U. 80% bright |
 | Total Gas | 150.0 U |
 
@@ -2524,6 +2797,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% Siltstone. 90% very fine to fine sandstone. TG: 160U. 90% bright |
 | Total Gas | 160.0 U |
 
@@ -2550,6 +2826,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 90% very fine to fine sandstone. TG: 220U. 100% bright |
 | Total Gas | 220.0 U |
 
@@ -2576,6 +2855,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 90% very fine to fine sandstone. TG: 222U. 100% bright |
 | Total Gas | 222.0 U |
 
@@ -2602,6 +2884,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine to fine sandstone. TG: 250U. 100% bright |
 | Total Gas | 250.0 U |
 
@@ -2628,6 +2913,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine sandstone. TG: 273U. 100% bright |
 | Total Gas | 273.0 U |
 
@@ -2654,6 +2942,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (common very fine to fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (common very fine to fine loose) sandstone . TG: 326U. 100% bright |
 | Total Gas | 326.0 U |
 
@@ -2680,6 +2971,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (minor very fine to fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (minor very fine to fine loose) sandstone . TG: 355U. 100% bright |
 | Total Gas | 355.0 U |
 
@@ -2706,6 +3000,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor very fine to fine loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor very fine to fine loose) sandstone . TG: 412U. 100% bright |
 | Total Gas | 412.0 U |
 
@@ -2732,6 +3029,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregates (trace fine to very coarse loose grains (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregates (trace fine to very coarse loose grains) sandstone. TG: 309U. 100% bright |
 | Total Gas | 309.0 U |
 
@@ -2759,6 +3059,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregates (trace fine to very coarse loose grains (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | Yes |
 | Fluorescence | 100.0% siltstone, 90% very fine to fine aggregates (trace fine to very coarse loose grains) sandstone. TG: 315U. 100% bright |
 | Total Gas | 315.0 U |
 
@@ -2786,6 +3089,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | fine to very coarse loose (common very fine to fine aggregates (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% fine to very coarse loose (common very fine to fine aggregates) sandstone. TG: 405U. 100% bright |
 | Total Gas | 405.0 U |
 
@@ -2814,6 +3120,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | fine to very coarse loose (common very fine to fine aggregates (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 85% fine to very coarse loose (common very fine to fine aggregates) sandstone. TG: 274U. 100% bright to moderately bright |
 | Total Gas | 274.0 U |
 
@@ -2842,6 +3151,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregates (fine to very coarse loose (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% very fine to fine aggregates (fine to very coarse loose) sandstone. TG: 309U. 100% bright |
 | Total Gas | 309.0 U |
 
@@ -2871,6 +3183,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to medium aggregates (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% very fine to medium aggregates sandstone. TG: 331U. 100% bright |
 | Total Gas | 331.0 U |
 
@@ -2900,6 +3215,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to medium, trace coarse aggregated (minor loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to medium, trace coarse aggregated (minor loose) sandstone. TG: 364U. 100% bright |
 | Total Gas | 364.0 U |
 
@@ -2929,6 +3247,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor fine to coarse loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor fine to coarse loose) sandstone. TG: 267U. 100% bright to mod bright |
 | Total Gas | 267.0 U |
 
@@ -2958,6 +3279,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (trace medium to coarse loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (trace medium to coarse loose) sandstone. TG: 265U. 100% bright to mod bright |
 | Total Gas | 265.0 U |
 
@@ -2987,6 +3311,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (minor loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (minor loose) sandstone. TG: 293U. 100% bright |
 | Total Gas | 293.0 U |
 
@@ -3015,6 +3342,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine, trace medium aggregated (minor loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine, trace medium aggregated (minor loose) sandstone. TG: 481U. 100% bright |
 | Total Gas | 481.0 U |
 
@@ -3044,6 +3374,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (minor loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (minor loose) sandstone. TG: 372U. 100% bright |
 | Total Gas | 372.0 U |
 
@@ -3072,6 +3405,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (minor loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (minor loose) sandstone. TG: 288U. 100% bright |
 | Total Gas | 288.0 U |
 
@@ -3100,6 +3436,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (common loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (common loose) sandstone. TG: 360U. 100% bright |
 | Total Gas | 360.0 U |
 
@@ -3127,6 +3466,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (minor loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (minor loose) sandstone. TG: 494U. 100% bright |
 | Total Gas | 494.0 U |
 
@@ -3155,6 +3497,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor loose)\ (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor loose)\ sandstone. TG: 341U. 100% bright |
 | Total Gas | 341.0 U |
 
@@ -3183,6 +3528,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine, trace medium aggregated (minor loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% very fine to fine, trace medium aggregated (minor loose) sandstone. TG: 349U. 100% bright |
 | Total Gas | 349.0 U |
 
@@ -3211,6 +3559,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregated (minor loose (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% very fine to fine aggregated (minor loose) sandstone. TG: 285U. 100% bright |
 | Total Gas | 285.0 U |
 
@@ -3238,6 +3589,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine, rare medium aggregated (minor loose (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% very fine to fine, rare medium aggregated (minor loose) sandstone. TG: 405U. 100% bright |
 | Total Gas | 405.0 U |
 
@@ -3265,6 +3619,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse, trace very coarse loose (minor vf-f aggs (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to coarse, trace very coarse loose (minor vf-f aggs) sandstone. TG: 271U. 100% bright |
 | Total Gas | 271.0 U |
 
@@ -3292,6 +3649,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor fine to very coarse loose (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor fine to very coarse loose) sandstone. TG: 286U. 100% bright |
 | Total Gas | 286.0 U |
 
@@ -3320,6 +3680,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (rare fine to coarse coarse loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (rare fine to coarse coarse loose) sandstone. TG: 424U. 100% bright |
 | Total Gas | 424.0 U |
 
@@ -3347,6 +3710,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (trace fine to very coarse loose (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (trace fine to very coarse loose) sandstone. TG: 350U. 100% bright |
 | Total Gas | 350.0 U |
 
@@ -3374,6 +3740,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse aggregated (minor loose (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to medium, trace coarse aggregated (minor loose) sandstone. TG: 257U. 100% bright |
 | Total Gas | 257.0 U |
 
@@ -3401,6 +3770,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium, trace coarse disaggregated (minor very fine to fine aggregates (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to medium, trace coarse disaggregated (minor very fine to fine aggregates) sandstone. TG: 212U. 100% bright to moderately bright |
 | Total Gas | 212.0 U |
 
@@ -3429,6 +3801,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, trace very coarse disaggregated (common very fine to fine aggregates (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to coarse, trace very coarse disaggregated (common very fine to fine aggregates) sandstone. TG: 445U. 100% bright |
 | Total Gas | 445.0 U |
 
@@ -3457,6 +3832,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to coarse, trace very coarse disaggregated (common very fine to fine aggregates (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to coarse, trace very coarse disaggregated (common very fine to fine aggregates) sandstone. TG: 310U. 100% bright |
 | Total Gas | 310.0 U |
 
@@ -3485,6 +3863,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregated (minor medium to very coarse disaggregated (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% very fine to fine aggregated (minor medium to very coarse disaggregated) sandstone. TG: 294U. 100% bright |
 | Total Gas | 294.0 U |
 
@@ -3512,6 +3893,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregated (minor fine to very coarse disaggregated (max: nan) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% very fine to fine aggregated (minor fine to very coarse disaggregated) sandstone. TG: 350U. 100% bright |
 | Total Gas | 350.0 U |
 
@@ -3539,6 +3923,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor fine to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor fine to coarse disaggregated) sandstone. TG: 383U. 100% bright |
 | Total Gas | 383.0 U |
 
@@ -3566,6 +3953,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor fine to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor fine to coarse disaggregated) sandstone. TG: 295U. 100% bright |
 | Total Gas | 295.0 U |
 
@@ -3593,6 +3983,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor fine to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor fine to coarse disaggregated) sandstone. TG: 294U. 100% bright |
 | Total Gas | 294.0 U |
 
@@ -3619,6 +4012,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (trace fine to medium disaggregated (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (trace fine to medium disaggregated) sandstone. TG: 315U. 100% bright |
 | Total Gas | 315.0 U |
 
@@ -3645,6 +4041,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (trace fine to medium disaggregated (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (trace fine to medium disaggregated) sandstone. TG: 479U. 100% bright |
 | Total Gas | 479.0 U |
 
@@ -3671,6 +4070,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (trace fine to fine disaggregated (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (trace fine to fine disaggregated) sandstone. TG: 329U. 100% bright |
 | Total Gas | 329.0 U |
 
@@ -3697,6 +4099,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor fine to medium disaggregated (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor fine to medium disaggregated) sandstone. TG: 331U. 100% bright |
 | Total Gas | 331.0 U |
 
@@ -3723,6 +4128,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor fine to medium disaggregated (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor fine to medium disaggregated) sandstone. TG: 293U. 100% bright |
 | Total Gas | 293.0 U |
 
@@ -3750,6 +4158,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (minor fine to medium & trace coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (minor fine to medium & trace coarse disaggregated) sandstone. TG: 329U. 100% bright |
 | Total Gas | 329.0 U |
 
@@ -3777,6 +4188,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated (common fine to medium & trace coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 95% very fine to fine aggregated (common fine to medium & trace coarse disaggregated) sandstone. TG: 327U. 100% bright |
 | Total Gas | 327.0 U |
 
@@ -3804,6 +4218,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregated (common fine to medium & trace coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% very fine to fine aggregated (common fine to medium & trace coarse disaggregated) sandstone. TG: 320U. 100% bright |
 | Total Gas | 320.0 U |
 
@@ -3831,6 +4248,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | very fine to fine aggregated (abundant medium & minor coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% siltstone, 90% very fine to fine aggregated (abundant medium & minor coarse disaggregated) sandstone. TG: 330U. 100% bright |
 | Total Gas | 330.0 U |
 
@@ -3858,6 +4278,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated (predominantly medium & coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated (predominantly medium & coarse disaggregated) sandstone. TG: 430U. 100% bright |
 | Total Gas | 430.0 U |
 
@@ -3885,6 +4308,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | trace very fine to fine aggregated (predominantly medium & coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% trace very fine to fine aggregated (predominantly medium & coarse disaggregated) sandstone. TG: 305U. 100% bright |
 | Total Gas | 305.0 U |
 
@@ -3912,6 +4338,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated(common medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine to fine aggregated(common medium to coarse disaggregated) sandstone. TG: 320U. 100% bright |
 | Total Gas | 320.0 U |
 
@@ -3938,6 +4367,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregated(common to occasionally medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine to fine aggregated(common to occasionally medium to coarse disaggregated) sandstone. TG: 400U. 100% bright |
 | Total Gas | 400.0 U |
 
@@ -3964,6 +4396,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine aggregated(common to occasionally medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 80% very fine to fine aggregated(common to occasionally medium to coarse disaggregated) sandstone. TG: 290U. 100% bright |
 | Total Gas | 290.0 U |
 
@@ -3990,6 +4425,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | very fine to fine aggregated(common medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 70% very fine to fine aggregated(common medium to coarse disaggregated) sandstone. TG: 275U. 100% bright |
 | Total Gas | 275.0 U |
 
@@ -4016,6 +4454,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | very fine to fine aggregated(common medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% Siltstone. 60% very fine to fine aggregated(common medium to coarse disaggregated) sandstone. TG: 215U. 90% bright |
 | Total Gas | 215.0 U |
 
@@ -4042,6 +4483,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | very fine to fine aggregated(predominantly medium disaggregated (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 80% very fine to fine aggregated(predominantly medium disaggregated) sandstone. TG: 250U. 100% bright |
 | Total Gas | 250.0 U |
 
@@ -4069,6 +4513,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregated(predominantly disaggregated (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregated(predominantly disaggregated) sandstone. TG: 335U. 100% bright |
 | Total Gas | 335.0 U |
 
@@ -4096,6 +4543,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to coarse disaggregated (predominantly very fine to fine (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine to coarse disaggregated (predominantly very fine to fine) sandstone. TG: 370U. 100% |
 | Total Gas | 370.0 U |
 
@@ -4124,6 +4574,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregates (common medium to minor coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine to fine aggregates (common medium to minor coarse disaggregated) sandstone. TG: 406U. 100% |
 | Total Gas | 406.0 U |
 
@@ -4152,6 +4605,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to medium (common to abundant disaggregated (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to medium (common to abundant disaggregated) sandstone. TG: 307U. 100% |
 | Total Gas | 307.0 U |
 
@@ -4181,6 +4637,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (common medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (common medium to coarse disaggregated) sandstone. TG: 300U. 100% |
 | Total Gas | 300.0 U |
 
@@ -4210,6 +4669,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (predominantly medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (predominantly medium to coarse disaggregated) sandstone. TG: 395U. 100% |
 | Total Gas | 395.0 U |
 
@@ -4239,6 +4701,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (predominantly medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (predominantly medium to coarse disaggregated) sandstone. TG: 330U. 100% |
 | Total Gas | 330.0 U |
 
@@ -4267,6 +4732,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (predominantly medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (predominantly medium to coarse disaggregated) sandstone. TG: 335U. 100% |
 | Total Gas | 335.0 U |
 
@@ -4294,6 +4762,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (predominantly coarse to medium disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (predominantly coarse to medium disaggregated) sandstone. TG: 300U. 100% |
 | Total Gas | 300.0 U |
 
@@ -4322,6 +4793,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregate (predominantly medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine to fine aggregate (predominantly medium to coarse disaggregated) sandstone. TG: 345U. 100% |
 | Total Gas | 345.0 U |
 
@@ -4349,6 +4823,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | very fine to fine aggregates (com medium to minor coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% very fine to fine aggregates (com medium to minor coarse disaggregated) sandstone. TG: 390U. 100% |
 | Total Gas | 390.0 U |
 
@@ -4376,6 +4853,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | very fine to fine aggregates (com medium to coarse disaggregated (max: nan) |
+| Grain Ordinal | 4 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% Siltstone. 95% very fine to fine aggregates (com medium to coarse disaggregated) sandstone. TG: 310U. 100% |
 | Total Gas | 310.0 U |
 
@@ -4404,6 +4884,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | very fine to fine aggregates (trace disaggregated (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 30.0% Siltstone. 60% very fine to fine aggregates (trace disaggregated) sandstone. TG: 90U. 30% |
 | Total Gas | 90.0 U |
 
@@ -4431,6 +4914,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 50.0 |
 | Grain Size | very fine to fine aggregates (trace disaggregated (max: nan) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 10.0% Siltstone. 50% very fine to fine aggregates (trace disaggregated) sandstone. TG: 88U. 10% |
 | Total Gas | 88.0 U |
 
@@ -4458,6 +4944,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | very fine to fine aggregates (trace medium disaggregated (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 5.0% Siltstone. 60% very fine to fine aggregates (trace medium disaggregated) sandstone. TG: 80U. 5% |
 | Total Gas | 80.0 U |
 
@@ -4479,6 +4968,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 55.00000000000001 |
 | Grain Size | very fine to fine aggregates (trace medium disaggregated (max: nan) |
+| Grain Ordinal | 3 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% Siltstone. 55% very fine to fine aggregates (trace medium disaggregated) sandstone. TG: 68U. trace |
 | Total Gas | 68.0 U |
 

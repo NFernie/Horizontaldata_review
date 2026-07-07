@@ -1,6 +1,6 @@
 # HOBBES 6 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 07:03 UTC  
+**Generated:** 2026-07-07 07:23 UTC  
 **Well:** HOBBES 6 (HOBBES 6)  
 **TD:** 2500 m MD  
 
@@ -71,6 +71,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 30 |
 | Grain Size | vf - med (max: M ) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 20.0% mod bri - bri |
 | Total Gas | 38 U |
 | FeCO₃ in Siltstone | Tr |
@@ -99,6 +101,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 30 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 50.0% mod bri - bri |
 | Total Gas | 113 U |
 | FeCO₃ in Siltstone | Tr |
@@ -127,6 +131,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 70.0% mod bri - bri |
 | Total Gas | 199 U |
 | FeCO₃ in Siltstone | Tr |
@@ -155,6 +161,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 140 U |
 | FeCO₃ in Siltstone | Tr |
@@ -183,6 +191,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | f - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 133 U |
 | FeCO₃ in Siltstone | Tr |
@@ -211,6 +222,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | f - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 128 U |
 | FeCO₃ in Siltstone | Tr |
@@ -239,6 +253,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | f - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 158 U |
 | FeCO₃ in Siltstone | Tr |
@@ -267,6 +284,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% mod bri - bri |
 | Total Gas | 128 U |
 | FeCO₃ in Siltstone | Tr |
@@ -294,6 +313,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 90.0% mod bri - bri |
 | Total Gas | 189 U |
 | FeCO₃ in Siltstone | Tr |
@@ -321,6 +342,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70 |
 | Grain Size | vf - med (max: M ) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 50.0% mod bri    |
 | Total Gas | 73 U |
 | FeCO₃ in Siltstone | Tr |
@@ -349,6 +372,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70 |
 | Grain Size | vf - med (max: M ) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 50.0% mod bri    |
 | Total Gas | 60 U |
 | FeCO₃ in Siltstone | Tr |
@@ -377,6 +402,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 30.0% mod bri    |
 | Total Gas | 79 U |
 | FeCO₃ in Siltstone | Tr |
@@ -405,6 +432,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 30.0% mod bri    |
 | Total Gas | 79 U |
 | FeCO₃ in Siltstone | Tr |
@@ -433,6 +462,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 50.0% mod bri    |
 | Total Gas | 86 U |
 | FeCO₃ in Siltstone | Tr |
@@ -461,6 +492,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 50.0% mod bri    |
 | Total Gas | 82 U |
 | FeCO₃ in Siltstone | Tr |
@@ -489,6 +522,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 60.0% mod bri    |
 | Total Gas | 85 U |
 | FeCO₃ in Siltstone | Tr |
@@ -517,6 +552,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 60.0% mod bri    |
 | Total Gas | 123 U |
 | FeCO₃ in Siltstone | Tr |
@@ -545,6 +582,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 215 U |
 | FeCO₃ in Siltstone | Tr |
@@ -574,6 +613,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 190 U |
 | FeCO₃ in Siltstone | Tr |
@@ -604,6 +645,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 208 U |
 | FeCO₃ in Siltstone | Tr |
@@ -635,6 +678,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 70.0% mod bri - bri |
 | Total Gas | 99 U |
 | FeCO₃ in Siltstone | Tr |
@@ -666,6 +711,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf - med (max: M ) |
+| Porosity Class | gd |
+| Loose Grains | No |
 | Fluorescence | 70.0% dull - mod bri |
 | Total Gas | 90 U |
 | FeCO₃ in Siltstone | Tr |
@@ -697,6 +744,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 70.0% mod bri - bri |
 | Total Gas | 159 U |
 | FeCO₃ in Siltstone | Tr |
@@ -728,6 +777,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 344 U |
 | FeCO₃ in Siltstone | Tr |
@@ -758,6 +809,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 255 U |
 
@@ -785,6 +838,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - med (max: M) |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 285 U |
 
@@ -812,6 +867,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-med (max: M) |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 327 U |
 
@@ -839,6 +896,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-crs (max: C) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 297 U |
 
@@ -865,6 +924,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf-crs (max: C) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 321 U |
 
@@ -891,6 +952,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | vf-crs (max: C) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 306 U |
 
@@ -917,6 +980,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-med (max: C) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 268 U |
 
@@ -944,6 +1009,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 240 U |
 
@@ -971,6 +1038,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 455 U |
 
@@ -998,6 +1067,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 322 U |
 
@@ -1025,6 +1096,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-f (max: C) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 294 U |
 
@@ -1052,6 +1125,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 317 U |
 
@@ -1079,6 +1154,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 40 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 80.0% mod bri - bri |
 | Total Gas | 365 U |
 | FeCO₃ in Siltstone | Y |
@@ -1106,6 +1183,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 75 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 282 U |
 | FeCO₃ in Siltstone | Y |
@@ -1133,6 +1212,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 385 U |
 
@@ -1159,6 +1240,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% bri |
 | Total Gas | 317 U |
 
@@ -1185,6 +1268,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% bri |
 | Total Gas | 400 U |
 
@@ -1212,6 +1297,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf-f (max: F) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% bri |
 | Total Gas | 391 U |
 
@@ -1239,6 +1327,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 330 U |
 
@@ -1265,6 +1356,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | m - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 320 U |
 
@@ -1291,6 +1385,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 192 U |
 
@@ -1317,6 +1414,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 333 U |
 
@@ -1344,6 +1444,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | vf - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 327 U |
 
@@ -1371,6 +1474,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80 |
 | Grain Size | f - crs (max: C) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 188 U |
 
@@ -1399,6 +1504,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80 |
 | Grain Size | f - crs (max: C) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 263 U |
 
@@ -1427,6 +1534,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 241 U |
 
@@ -1455,6 +1564,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 221 U |
 
@@ -1483,6 +1594,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 215 U |
 
@@ -1511,6 +1624,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - med (max: M ) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 90.0% mod bri - bri |
 | Total Gas | 201 U |
 
@@ -1538,6 +1653,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | f - med (max: M ) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 263 U |
 
@@ -1566,6 +1683,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | f - med (max: M ) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 210 U |
 
@@ -1594,6 +1713,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 282 U |
 
@@ -1622,6 +1743,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 376 U |
 
@@ -1650,6 +1773,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr-gd |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 267 U |
 
@@ -1678,6 +1804,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | f - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 336 U |
 
@@ -1705,6 +1834,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | f - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 314 U |
 
@@ -1733,6 +1865,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100 |
 | Grain Size | vf - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 316 U |
 
@@ -1760,6 +1895,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | vf - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 270 U |
 
@@ -1787,6 +1925,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90 |
 | Grain Size | vf - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 255 U |
 
@@ -1814,6 +1955,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | vf - crs (max: C) |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 276 U |
 
@@ -1842,6 +1985,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | vf - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 326 U |
 
@@ -1869,6 +2015,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95 |
 | Grain Size | f - v crs (max: VC) |
+| Grain Ordinal | 5 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 100.0% mod bri - bri |
 | Total Gas | 297 U |
 
@@ -1897,6 +2046,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 30 |
 | Grain Size | vf-f (max: F) |
+| Grain Ordinal | 2 |
+| Porosity Class | none |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 67 U |
 
@@ -1924,6 +2076,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 40 |
 | Grain Size | vf-f (max: F) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 69 U |
 
@@ -1951,6 +2106,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 40 |
 | Grain Size | vf-f (max: VF) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 68 U |
 
@@ -1978,6 +2136,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 30 |
 | Grain Size | vf-f (max: VF) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 67 U |
 
@@ -2006,6 +2167,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 40 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 61 U |
 
@@ -2034,6 +2197,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 50 |
 | Grain Size | vf-f (max: M) |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 64 U |
 
@@ -2063,6 +2228,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 20 |
 | Grain Size | vf-f (max: F) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 54 U |
 | FeCO₃ in Siltstone | Y |
@@ -2093,6 +2261,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 20 |
 | Grain Size | vf-f (max: F) |
+| Grain Ordinal | 2 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 60 U |
 | FeCO₃ in Siltstone | Y |
@@ -2123,6 +2294,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 20 |
 | Grain Size | vf (max: VF) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 53 U |
 | FeCO₃ in Siltstone | Y |
@@ -2153,6 +2327,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 25 |
 | Grain Size | vf (max: VF) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 55 U |
 | FeCO₃ in Siltstone | Y |
@@ -2183,6 +2360,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 20 |
 | Grain Size | vf (max: VF) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 54 U |
 | FeCO₃ in Siltstone | Y |
@@ -2212,6 +2392,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 30 |
 | Grain Size | vf (max: VF) |
+| Grain Ordinal | 1 |
+| Porosity Class | fr |
+| Loose Grains | No |
 | Fluorescence | 0.0% nan |
 | Total Gas | 52 U |
 | FeCO₃ in Siltstone | Y |
