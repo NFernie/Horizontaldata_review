@@ -1,6 +1,6 @@
 # MCKINLAY 22 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 03:25 UTC  
+**Generated:** 2026-07-07 04:18 UTC  
 **Formation tops name:** MCKINLAY 22  
 **McKinlay window:** 1672.5 – 3206.3 m MD  
 **DC30 top:** 1671.61 m MD  
@@ -23,10 +23,10 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 1302.0 | 84.8% | 9 |
-| Resistivity only | 1039.8 | 67.8% | 63 |
+| Resistivity only | 1045.0 | 68.1% | 64 |
 | Matching both | 922.0 | 60.1% | 13 |
 
-**Sample intervals in McKinlay Member:** 306
+**Sample intervals in McKinlay Member:** 309
 
 ## Cuttings-Only Pay Intervals
 
@@ -46,7 +46,8 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1682.6 | 1704.2 | 21.6 |
+| 1677.2 | 1677.5 | 0.3 |
+| 1677.7 | 1704.2 | 26.5 |
 | 1704.4 | 1704.7 | 0.3 |
 | 1707.4 | 1707.7 | 0.3 |
 | 1707.9 | 1758.6 | 50.7 |
@@ -60,9 +61,8 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 1974.0 | 1974.4 | 0.5 |
 | 1977.9 | 1979.3 | 1.4 |
 | 1979.4 | 1979.8 | 0.3 |
-| 1982.6 | 2022.9 | 40.2 |
 
-_(48 additional intervals omitted)_
+_(49 additional intervals omitted)_
 
 ## Matching Pay Intervals
 

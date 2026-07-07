@@ -15,7 +15,7 @@ WORKSPACE = os.environ.get("WORKSPACE", "/workspace")
 OUTPUT_DIR = os.path.join(WORKSPACE, "output")
 NULL = -999.25
 PAIR_TOLERANCE = 5.0
-EXCLUSION_BUFFER = 10.0
+DEFAULT_REENTRY_OFFSET = 50.0
 MUDLOG_WINDOW = 15.0
 
 WELLS = [
@@ -187,32 +187,80 @@ LITH_TYPES = re.compile(
 
 
 def classify_tops(mck_list, murta_list, tolerance=PAIR_TOLERANCE):
+    """Classify McKinlay/Murta tops into overburden entry pairs and lone McKinlay re-entries."""
     overburden = []
-    target_reentry = []
-    for m in mck_list:
-        matched = False
-        for mu in murta_list:
-            if abs(m - mu) <= tolerance:
-                overburden.append({"mckinlay": m, "murta": mu, "delta": abs(m - mu)})
-                matched = True
-                break
-        if not matched:
-            target_reentry.append(m)
+    paired_mck = set()
+    paired_murta = set()
+    for mu in sorted(murta_list):
+        best_m = None
+        best_delta = None
+        for m in mck_list:
+            if m in paired_mck:
+                continue
+            delta = abs(m - mu)
+            if delta <= tolerance and (best_delta is None or delta < best_delta):
+                best_m = m
+                best_delta = delta
+        if best_m is not None:
+            overburden.append({"mckinlay": best_m, "murta": mu, "delta": best_delta})
+            paired_mck.add(best_m)
+            paired_murta.add(mu)
+
+    target_reentry = sorted(m for m in mck_list if m not in paired_mck)
+    overburden.sort(key=lambda x: x["mckinlay"])
     return overburden, target_reentry
 
 
-def exclusion_zones(overburden, target_reentry, buffer=EXCLUSION_BUFFER):
+def exclusion_zones(overburden, target_reentry, initial_entry_depth=None, default_offset=DEFAULT_REENTRY_OFFSET):
+    """
+    Build overburden exclusion intervals from Murta/McKinlay entry pairs to the next
+    lone McKinlay re-entry below. Pay resumes at the re-entry top.
+
+    - Murta + McKinlay pair (within tolerance) = overburden entry (use McKinlay MD).
+    - Lone McKinlay below a pair = target formation re-entry.
+    - Shallowest lone McKinlay (initial reservoir entry with DC30) is not a re-entry marker.
+    - If no re-entry exists below a pair, assume re-entry at entry + default_offset m MD.
+    """
+    if initial_entry_depth is None and target_reentry:
+        initial_entry_depth = min(target_reentry)
+
+    reentry_pool = [
+        d for d in target_reentry if initial_entry_depth is None or d > initial_entry_depth + 0.01
+    ]
     zones = []
-    for ob in overburden:
-        zones.append((ob["mckinlay"] - buffer, ob["mckinlay"] + buffer, "overburden"))
-    for t in target_reentry:
-        zones.append((t - buffer, t + buffer, "target_reentry"))
-    return zones
+    details = []
+
+    for ob in sorted(overburden, key=lambda x: x["mckinlay"]):
+        entry = ob["mckinlay"]
+        re_entry = None
+        used_default = False
+        for idx, candidate in enumerate(reentry_pool):
+            if candidate > entry:
+                re_entry = candidate
+                reentry_pool.pop(idx)
+                break
+        if re_entry is None:
+            re_entry = entry + default_offset
+            used_default = True
+
+        zones.append((entry, re_entry, "overburden"))
+        details.append(
+            {
+                "entry": entry,
+                "murta": ob["murta"],
+                "re_entry": re_entry,
+                "length": re_entry - entry,
+                "default_reentry": used_default,
+            }
+        )
+
+    return zones, details
 
 
 def interval_excluded(top, bot, zones):
+    """Return True if sample interval overlaps any half-open overburden zone [entry, re_entry)."""
     for zt, zb, _ in zones:
-        if not (bot < zt or top > zb):
+        if top < zb and bot > zt:
             return True
     return False
 
@@ -613,8 +661,10 @@ def process_well(cfg, dc30_df, mck_murta_df):
         raise ValueError(f"No McKinlay tops for {tops_name}")
 
     overburden, target_reentry = classify_tops(mck_tops, murta_tops)
-    zones = exclusion_zones(overburden, target_reentry)
     mck_start = min(mck_tops)
+    zones, zone_details = exclusion_zones(
+        overburden, target_reentry, initial_entry_depth=mck_start
+    )
     las_path = os.path.join(WORKSPACE, cfg["las"])
     las_td = parse_las_td(las_path)
     mck_end = float(cfg.get("td") or las_td or max(mck_tops) + 500)
@@ -636,7 +686,7 @@ def process_well(cfg, dc30_df, mck_murta_df):
     mck_end = max(mck_end, sample_max)
 
     results = []
-    excluded_pre = excluded_ob = excluded_re = 0
+    excluded_pre = excluded_ob = 0
     for _, row in samples.iterrows():
         depth = row["Depth_mMD"]
         top = row["interval_top"]
@@ -647,14 +697,11 @@ def process_well(cfg, dc30_df, mck_murta_df):
             continue
         reason = None
         for zt, zb, ztype in zones:
-            if not (bot < zt or top > zb):
+            if top < zb and bot > zt:
                 reason = ztype
                 break
         if reason:
-            if reason == "overburden":
-                excluded_ob += 1
-            else:
-                excluded_re += 1
+            excluded_ob += 1
             continue
 
         log_stats = avg_log(las_df, top, bot)
@@ -690,13 +737,13 @@ def process_well(cfg, dc30_df, mck_murta_df):
         "overburden": overburden,
         "target_reentry": target_reentry,
         "zones": zones,
+        "zone_details": zone_details,
         "mck_start": mck_start,
         "mck_end": mck_end,
         "mudlog_mck": mudlog_mck,
         "total_samples": len(samples),
         "excluded_pre": excluded_pre,
         "excluded_ob": excluded_ob,
-        "excluded_re": excluded_re,
         "results": results,
         "cfg": cfg,
     }
@@ -733,30 +780,51 @@ def write_interpretation(meta, path):
     lines += [
         "",
         "### 2.2 McKinlay Member Top Classification\n",
-        "**Target re-entry (McKinlay without paired Murta):**",
+        f"**Initial reservoir entry (DC30 + shallowest McKinlay):** {meta['mck_start']:.2f} m MD\n",
+        "**Target re-entry (lone McKinlay below an overburden entry pair):**",
     ]
-    for t in meta["target_reentry"]:
-        lines.append(f"- {t:.2f} m MD")
+    reentry_markers = [
+        zd["re_entry"]
+        for zd in meta.get("zone_details", [])
+        if not zd.get("default_reentry")
+    ]
+    if reentry_markers:
+        for t in reentry_markers:
+            lines.append(f"- {t:.2f} m MD")
+    else:
+        lines.append("- _none identified_")
     lines += [
         "",
-        "**Overburden intersections (McKinlay ≈ Murta within 5 m):**",
-        "| McKinlay (m MD) | Murta (m MD) | Δ (m) |",
-        "|-----------------|-------------|-------|",
+        "**Overburden entry (Murta + corresponding McKinlay within 5 m):**",
+        "| McKinlay entry (m MD) | Murta (m MD) | Δ (m) | Re-entry (m MD) | Zone length (m) |",
+        "|-----------------------|-------------|-------|-----------------|-----------------|",
     ]
-    if meta["overburden"]:
+    if meta.get("zone_details"):
+        for zd in meta["zone_details"]:
+            re_txt = f"{zd['re_entry']:.2f}"
+            if zd.get("default_reentry"):
+                re_txt += f" (assumed +{DEFAULT_REENTRY_OFFSET:.0f} m)"
+            lines.append(
+                f"| {zd['entry']:.2f} | {zd['murta']:.2f} | {abs(zd['entry'] - zd['murta']):.2f} | "
+                f"{re_txt} | {zd['length']:.1f} |"
+            )
+    elif meta["overburden"]:
         for ob in meta["overburden"]:
-            lines.append(f"| {ob['mckinlay']:.2f} | {ob['murta']:.2f} | {ob['delta']:.2f} |")
+            lines.append(
+                f"| {ob['mckinlay']:.2f} | {ob['murta']:.2f} | {ob['delta']:.2f} | — | — |"
+            )
     else:
-        lines.append("| _none identified_ | — | — |")
+        lines.append("| _none identified_ | — | — | — | — |")
 
-    zone_str = ", ".join([f"{zt:.0f}–{zb:.0f} ({zt_})" for zt, zb, zt_ in meta["zones"]])
+    zone_str = ", ".join(
+        [f"{zt:.0f}–{zb:.0f} m ({zt_})" for zt, zb, zt_ in meta["zones"]]
+    )
     lines += [
         f"\n**McKinlay Member analysis window:** {meta['mck_start']:.1f} – {meta['mck_end']:.1f} m MD",
-        f"\n**Excluded zones (±{EXCLUSION_BUFFER:.0f} m around overburden & target re-entry tops):** {zone_str or 'none'}",
+        f"\n**Excluded overburden intervals (entry → re-entry, pay resumes at re-entry):** {zone_str or 'none'}",
         f"\n**Samples in McKinlay Member:** {len(r)} of {meta['total_samples']} total",
         f"- Excluded pre-reservoir: {meta['excluded_pre']}",
-        f"- Excluded overburden intersections: {meta['excluded_ob']}",
-        f"- Excluded target re-entry tops: {meta['excluded_re']}",
+        f"- Excluded overburden intervals: {meta['excluded_ob']}",
         "",
         "## 3. Known Shortcomings\n",
         "> **Read this section before using the output.**\n",
@@ -766,7 +834,8 @@ def write_interpretation(meta, path):
         "4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.",
         "5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).",
         "6. **NULL LAS values** (-999.25) excluded from averages.",
-        f"7. **Exclusion zones** use ±{EXCLUSION_BUFFER:.0f} m around paired overburden tops AND McKinlay target re-entry tops without Murta pairs.",
+        f"7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below "
+        f"(or entry + {DEFAULT_REENTRY_OFFSET:.0f} m MD if no re-entry is mapped). Initial DC30/McKinlay reservoir entry is not excluded.",
         "8. **Input Sheet only** — Calculations Sheet not used.",
     ]
     if "McKinlay" in meta["cfg"]["xlsx"]:
@@ -888,9 +957,9 @@ def write_summary(meta, path):
         "",
         "## Formation Top Results\n",
         f"- DC30: **{meta['dc30_top']:.2f} m** | McKinlay start: **{meta['mck_start']:.2f} m** | TD: **{meta['mck_end']:.0f} m**",
-        f"- Overburden intersections: **{len(meta['overburden'])}**",
-        f"- Target re-entry tops: **{len(meta['target_reentry'])}**",
-        f"- Excluded zones: pre-reservoir {meta['excluded_pre']}, overburden {meta['excluded_ob']}, re-entry {meta['excluded_re']}",
+        f"- Overburden entry pairs: **{len(meta['overburden'])}**",
+        f"- Overburden exclusion intervals: **{len(meta['zones'])}**",
+        f"- Excluded samples: pre-reservoir {meta['excluded_pre']}, overburden {meta['excluded_ob']}",
         f"- **{len(r)}** McKinlay intervals retained\n",
         "## Key Findings\n",
     ]

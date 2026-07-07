@@ -34,7 +34,7 @@ def in_mckinlay_window(top, bot, mck_start, mck_end, zones):
     if mid < mck_start or mid > mck_end:
         return False
     for zt, zb, _ in zones:
-        if not (bot < zt or top > zb):
+        if top < zb and bot > zt:
             return False
     return True
 
@@ -66,8 +66,10 @@ def get_mckinlay_sample_intervals(cfg, dc30_df, mck_murta_df):
     mck_tops = sorted(tops[tops["Surface"] == "MCKINLAY MEMBER"]["MD"].tolist())
     murta_tops = sorted(tops[tops["Surface"] == "MURTA MEMBER"]["MD"].tolist())
     overburden, target_reentry = classify_tops(mck_tops, murta_tops)
-    zones = exclusion_zones(overburden, target_reentry)
     mck_start = min(mck_tops)
+    zones, zone_details = exclusion_zones(
+        overburden, target_reentry, initial_entry_depth=mck_start
+    )
 
     las_path = os.path.join(WORKSPACE, cfg["las"])
     las_td = parse_las_td(las_path)
@@ -110,6 +112,7 @@ def get_mckinlay_sample_intervals(cfg, dc30_df, mck_murta_df):
         "intervals": intervals,
         "las_df": las_df,
         "zones": zones,
+        "zone_details": zone_details,
     }
 
 
@@ -150,7 +153,7 @@ def res_only_pay(las_df, mck_start, mck_end, zones):
         res = row["RES_DEEP"]
         in_zone = True
         for zt, zb, _ in zones:
-            if zt <= d <= zb:
+            if zt <= d < zb:
                 in_zone = False
                 break
         is_pay = in_zone and res > RES_DEEP_CUTOFF
@@ -245,6 +248,21 @@ def write_well_pay_summary(result):
     cut = result["cuttings"]
     res = result["resistivity"]
     match = result["matching"]
+    zone_lines = []
+    if result.get("zone_details"):
+        zone_lines.append("### Overburden Exclusion Intervals\n")
+        zone_lines.append(
+            "| Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |"
+        )
+        zone_lines.append("|-------------|-------------|-----------------|------------|")
+        for zd in result["zone_details"]:
+            re_txt = f"{zd['re_entry']:.1f}"
+            if zd.get("default_reentry"):
+                re_txt += " (assumed)"
+            zone_lines.append(
+                f"| {zd['entry']:.1f} | {zd['murta']:.1f} | {re_txt} | {zd['length']:.1f} |"
+            )
+        zone_lines.append("")
 
     lines = [
         f"# {well} — McKinlay Pay Summary\n",
@@ -254,6 +272,7 @@ def write_well_pay_summary(result):
         f"**DC30 top:** {result['dc30_top']:.2f} m MD  ",
         f"**Total lateral length (TD − DC30):** {lat:.1f} m\n",
         "---\n",
+        *zone_lines,
         "## Pay Rules Applied\n",
         "See [`pay-rules.md`](../../pay-rules.md) for full definitions.\n",
         "| Category | Criteria | Data source |",
@@ -348,7 +367,7 @@ def write_all_wells_summary(results):
         f"3. **Resistivity pay** scans LAS at ~0.15 m steps; NULL values ({NULL}) excluded; gaps may break or shorten pay zones.",
         "4. **Matching pay** uses *average* RES_DEEP per sample interval — not point-by-point LAS; can differ from res-only totals.",
         f"5. **Cutoffs:** %Fluor > {FLUOR_CUTOFF:.0f}%, %SS > {SS_CUTOFF:.0f}%, RES_DEEP > {RES_DEEP_CUTOFF:.0f} ohm.m.",
-        "6. **McKinlay Member only** — overburden and re-entry exclusion zones applied (same as cuttings interpretation).",
+        "6. **McKinlay Member only** — overburden intervals (Murta/McKinlay entry → lone McKinlay re-entry) excluded from pay.",
         "7. **HOBBES 4** not included — no data files in repository.",
         "8. **Legacy McKinlay spreadsheets** (20–24) — fluorescence/sandstone from Sheet1 cols G/H; parsing quality varies.",
         "",
@@ -374,7 +393,7 @@ def write_pay_rules():
 
 - **Formation:** McKinlay Member only (horizontal target interval)
 - **Lateral reference:** DC30 top to TD (deepest sample or LAS stop)
-- **Exclusions:** Same overburden and target re-entry zones as cuttings interpretation (±10 m around paired McKinlay/Murta tops and unpaired McKinlay tops)
+- **Exclusions:** Overburden intervals from each Murta/McKinlay entry pair to the next lone McKinlay re-entry below (or entry + 50 m MD if no re-entry is mapped). Initial DC30/McKinlay reservoir entry is not excluded.
 
 ## Pay Categories
 

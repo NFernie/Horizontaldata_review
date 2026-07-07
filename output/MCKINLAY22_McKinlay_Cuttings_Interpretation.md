@@ -1,6 +1,6 @@
 # MCKINLAY 22 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 03:09 UTC  
+**Generated:** 2026-07-07 04:17 UTC  
 **Well:** MCKINLAY 22 (MCKINLAY 22)  
 **TD:** 3206 m MD  
 
@@ -26,22 +26,23 @@
 
 ### 2.2 McKinlay Member Top Classification
 
-**Target re-entry (McKinlay without paired Murta):**
-- 1672.50 m MD
+**Initial reservoir entry (DC30 + shallowest McKinlay):** 1672.50 m MD
 
-**Overburden intersections (McKinlay ≈ Murta within 5 m):**
-| McKinlay (m MD) | Murta (m MD) | Δ (m) |
-|-----------------|-------------|-------|
-| _none identified_ | — | — |
+**Target re-entry (lone McKinlay below an overburden entry pair):**
+- _none identified_
+
+**Overburden entry (Murta + corresponding McKinlay within 5 m):**
+| McKinlay entry (m MD) | Murta (m MD) | Δ (m) | Re-entry (m MD) | Zone length (m) |
+|-----------------------|-------------|-------|-----------------|-----------------|
+| _none identified_ | — | — | — | — |
 
 **McKinlay Member analysis window:** 1672.5 – 3206.3 m MD
 
-**Excluded zones (±10 m around overburden & target re-entry tops):** 1662–1682 (target_reentry)
+**Excluded overburden intervals (entry → re-entry, pay resumes at re-entry):** none
 
-**Samples in McKinlay Member:** 306 of 331 total
+**Samples in McKinlay Member:** 309 of 331 total
 - Excluded pre-reservoir: 22
-- Excluded overburden intersections: 0
-- Excluded target re-entry tops: 3
+- Excluded overburden intervals: 0
 
 ## 3. Known Shortcomings
 
@@ -53,13 +54,94 @@
 4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
 5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
 6. **NULL LAS values** (-999.25) excluded from averages.
-7. **Exclusion zones** use ±10 m around paired overburden tops AND McKinlay target re-entry tops without Murta pairs.
+7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if no re-entry is mapped). Initial DC30/McKinlay reservoir entry is not excluded.
 8. **Input Sheet only** — Calculations Sheet not used.
 9. **McKinlay legacy spreadsheet:** Sheet1 columns F (TG), G (%SS), H (%fluoro) used directly; column A description text parsed for grain size, fluorescence brightness, and siderite.
 
 ## 4. McKinlay Member Sample Intervals
 
 Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log averages.
+
+### 1675 m MD — Interval 1672.5 – 1677.5 m
+
+**Sample Description (spreadsheet):** Sample 1675m: 45% Siltstone. 55% Sandstone. 40% FLUOR, TG 13U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 55.00000000000001 |
+| Grain Size | Siltstone. 55% (max: nan) |
+| Fluorescence | 40.0% nan |
+| Total Gas | 13.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1680m: clr,trnsl,v lt brnsh gry, v lt gry,f,mnr med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,mnr brn-wh arg mtx, preddisagg,fri aggs,fr inf por,pr vis por,fluor.
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 107.6 | 33 |
+| RES_DEEP (ohm.m) | 17.86 | 33 |
+| RES_SHALLOW (ohm.m) | 16.52 | 33 |
+| **Δ Res (Deep − Shallow)** | **1.34** | — |
+
+**Permeability Proxy:** Low-moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 1680 m MD — Interval 1677.5 – 1680.5 m
+
+**Sample Description (spreadsheet):** Sample 1680m: 40% Siltstone. 60% Sandstone. 40% FLUOR, TG 10U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 60.0 |
+| Grain Size | Siltstone. 60% (max: nan) |
+| Fluorescence | 40.0% nan |
+| Total Gas | 10.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1680m: clr,trnsl,v lt brnsh gry, v lt gry,f,mnr med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,mnr brn-wh arg mtx, preddisagg,fri aggs,fr inf por,pr vis por,fluor.
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 113.1 | 19 |
+| RES_DEEP (ohm.m) | 20.93 | 19 |
+| RES_SHALLOW (ohm.m) | 19.61 | 19 |
+| **Δ Res (Deep − Shallow)** | **1.32** | — |
+
+**Permeability Proxy:** Low-moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
+
+### 1681 m MD — Interval 1680.5 – 1683.0 m
+
+**Sample Description (spreadsheet):** Sample 1681m: 20% Siltstone. 80% Sandstone. 75% dull to moderately bright FLUOR, TG 35U
+
+| Property | Value |
+|----------|-------|
+| % Sandstone | 80.0 |
+| Grain Size | Siltstone. 80% (max: nan) |
+| Fluorescence | 75.0% nan |
+| Total Gas | 35.0 U |
+
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1680m: clr,trnsl,v lt brnsh gry, v lt gry,f,mnr med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,mnr brn-wh arg mtx, preddisagg,fri aggs,fr inf por,pr vis por,fluor.
+
+**Wireline Log Averages (LAS):**
+| Curve | Average | Data Points |
+|-------|---------|-------------|
+| GR (gAPI) | 96.0 | 17 |
+| RES_DEEP (ohm.m) | 23.21 | 17 |
+| RES_SHALLOW (ohm.m) | 21.94 | 17 |
+| **Δ Res (Deep − Shallow)** | **1.27** | — |
+
+**Permeability Proxy:** Low-moderate inferred permeability
+> Greater deep-shallow resistivity separation → higher inferred permeability.
+
+---
 
 ### 1685 m MD — Interval 1683.0 – 1687.5 m
 
@@ -8298,10 +8380,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 
 | Metric | Value |
 |--------|-------|
-| Intervals analysed | 306 |
-| Depth range | 1685 – 3205 m |
-| Avg % Sandstone | 88.0% |
-| Avg Δ Res (Deep−Shallow) | 0.87 ohm.m |
+| Intervals analysed | 309 |
+| Depth range | 1675 – 3205 m |
+| Avg % Sandstone | 87.7% |
+| Avg Δ Res (Deep−Shallow) | 0.88 ohm.m |
 | Max Δ Res | 5.52 ohm.m |
 | Min Δ Res | -0.72 ohm.m |
-| Mudlog matches | 221 / 306 |
+| Mudlog matches | 224 / 309 |

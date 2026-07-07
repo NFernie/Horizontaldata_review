@@ -1,12 +1,18 @@
 # MCKINLAY 21 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 03:25 UTC  
+**Generated:** 2026-07-07 04:18 UTC  
 **Formation tops name:** MCKINLAY 21  
 **McKinlay window:** 1770.1 – 2417.0 m MD  
 **DC30 top:** 1769.69 m MD  
 **Total lateral length (TD − DC30):** 647.3 m
 
 ---
+
+### Overburden Exclusion Intervals
+
+| Entry (m MD) | Murta (m MD) | Re-entry (m MD) | Length (m) |
+|-------------|-------------|-----------------|------------|
+| 2212.0 | 2210.3 | 2227.6 | 15.6 |
 
 ## Pay Rules Applied
 
@@ -23,10 +29,10 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 470.0 | 72.6% | 5 |
-| Resistivity only | 475.6 | 73.5% | 19 |
+| Resistivity only | 497.0 | 76.8% | 20 |
 | Matching both | 400.0 | 61.8% | 6 |
 
-**Sample intervals in McKinlay Member:** 118
+**Sample intervals in McKinlay Member:** 124
 
 ## Cuttings-Only Pay Intervals
 
@@ -42,13 +48,14 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1780.1 | 1804.0 | 23.9 |
+| 1774.0 | 1804.0 | 30.0 |
 | 1805.3 | 1805.6 | 0.3 |
 | 1811.5 | 1811.7 | 0.2 |
 | 1812.0 | 1813.5 | 1.5 |
 | 1813.8 | 1813.9 | 0.2 |
-| 1833.6 | 2202.0 | 368.4 |
-| 2237.6 | 2255.4 | 17.8 |
+| 1833.6 | 2210.2 | 376.6 |
+| 2211.1 | 2211.7 | 0.6 |
+| 2231.2 | 2255.4 | 24.2 |
 | 2282.3 | 2282.7 | 0.5 |
 | 2282.9 | 2285.9 | 3.0 |
 | 2286.1 | 2287.6 | 1.5 |
@@ -56,9 +63,8 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | 2289.1 | 2289.4 | 0.3 |
 | 2289.6 | 2290.3 | 0.8 |
 | 2290.8 | 2330.3 | 39.5 |
-| 2348.7 | 2348.9 | 0.2 |
 
-_(4 additional intervals omitted)_
+_(5 additional intervals omitted)_
 
 ## Matching Pay Intervals
 
