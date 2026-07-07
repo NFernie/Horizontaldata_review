@@ -1,0 +1,7 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Node / web build
+node_modules/
+dist/
