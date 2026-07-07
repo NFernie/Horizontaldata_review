@@ -18,9 +18,9 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 ## Formation Top Results
 
 - DC30: **2249.74 m** | McKinlay start: **2250.62 m** | TD: **3394 m**
-- Overburden intersections: **4**
-- Target re-entry tops: **2**
-- Excluded zones: pre-reservoir 81, overburden 20, re-entry 7
+- Overburden intersections: **3**
+- Target re-entry tops: **3**
+- Excluded zones: pre-reservoir 81, overburden 15, re-entry 12
 - **201** McKinlay intervals retained
 
 ## Key Findings

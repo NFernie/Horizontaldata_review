@@ -1,6 +1,6 @@
 # BIALA 21 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 02:21 UTC  
+**Generated:** 2026-07-07 02:29 UTC  
 **Well:** BIALA 21 (BIALA 21)  
 **TD:** 3278 m MD  
 
@@ -37,7 +37,7 @@
 | 2857.27 | 2855.78 | 1.49 |
 | 3111.23 | 3111.23 | 0.00 |
 
-**McKinlay Member analysis window:** 1922.0 – 3278.0 m MD
+**McKinlay Member analysis window:** 1922.0 – 3278.1 m MD
 
 **Excluded zones (±10 m around overburden & target re-entry tops):** 2169–2189 (overburden), 2480–2500 (overburden), 2847–2867 (overburden), 3101–3121 (overburden), 1912–1932 (target_reentry)
 

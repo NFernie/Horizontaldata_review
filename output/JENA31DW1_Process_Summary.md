@@ -17,18 +17,18 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 ## Formation Top Results
 
-- DC30: **2060.75 m** | McKinlay start: **2060.98 m** | TD: **3658 m**
-- Overburden intersections: **4**
+- DC30: **2060.75 m** | McKinlay start: **2067.46 m** | TD: **3658 m**
+- Overburden intersections: **3**
 - Target re-entry tops: **4**
-- Excluded zones: pre-reservoir 47, overburden 18, re-entry 12
-- **178** McKinlay intervals retained
+- Excluded zones: pre-reservoir 47, overburden 13, re-entry 13
+- **182** McKinlay intervals retained
 
 ## Key Findings
 
-- Depth range: **2080 – 3658 m MD**
+- Depth range: **2090 – 3658 m MD**
 - Average sandstone: **82.3%**
-- Δ Res range: **-0.1 – 8.3 ohm.m** (avg 1.9)
-- Mudlog matched: **178 / 178** intervals
+- Δ Res range: **-0.1 – 14.9 ohm.m** (avg 1.9)
+- Mudlog matched: **182 / 182** intervals
 
 ## Limitations
 

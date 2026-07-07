@@ -1,56 +1,71 @@
 # Batch McKinlay Member Processing — Status
 
-**Generated:** 2026-07-07
+**Generated:** 2026-07-07 (updated)
 
-## Wells Completed (5 / 5 with data in repository)
+## Wells Completed (17 / 17 with data in repository)
 
-| Well | Tops Name | Intervals | Mudlog Match | Output Files |
-|------|-----------|-----------|--------------|--------------|
-| JENA 31 | Jena Dev C Oil Lateral 1_Ops | 201 | 200/201 | `JENA31_*` |
-| JENA 31DW1 | Jena Dev C Oil Lateral 2_Ops | 178 | 178/178 | `JENA31DW1_*` |
+| Well | Tops Name (Mck_Murta) | Intervals | Mudlog Match | Output |
+|------|----------------------|-----------|--------------|--------|
+| JENA 31 | JENA 31 OPS | 201 | 200/201 | `JENA31_*` |
+| JENA 31DW1 | JENA 31DW1 | 182 | 182/182 | `JENA31DW1_*` |
 | BIALA 19 | BIALA 19 | 219 | 218/219 | `BIALA19_*` |
-| BIALA 20 | BIALA 20 | 211 | 209/211 | `BIALA20_*` |
+| BIALA 20 | BIALA 20 | 175 | 173/175 | `BIALA20_*` |
 | BIALA 21 | BIALA 21 | 145 | 144/145 | `BIALA21_*` |
+| FROSTILLICUS 2 | FROSTILLICUS 2 | 370 | 248/370 | `FROSTILLICUS2_*` |
+| GRANCHIO 4 | GRANCHIO 4 | 126 | 93/126 | `GRANCHIO4_*` |
+| HOBBES 5 | HOBBES 5 | 114 | 60/114 | `HOBBES5_*` |
+| HOBBES 6 | HOBBES 6 | 81 | 55/81 | `HOBBES6_*` |
+| MCKINLAY 20 | MCKINLAY 20 | 276 | 211/276 | `MCKINLAY20_*` |
+| MCKINLAY 21 | MCKINLAY 21 | 118 | 81/118 | `MCKINLAY21_*` |
+| MCKINLAY 22 | MCKINLAY 22 | 306 | 221/306 | `MCKINLAY22_*` |
+| MCKINLAY 23 | MCKINLAY 23 | 180 | 78/180 | `MCKINLAY23_*` |
+| MCKINLAY 24 | MCKINLAY 24 | 167 | 125/167 | `MCKINLAY24_*` |
+| STIMPEE 6 | STIMPEE 6 | 143 | 115/143 | `STIMPEE6_*` |
+| STIMPEE 7 | STIMPEE 7 | 93 | 81/93 | `STIMPEE7_*` |
+| TERINGIE 6 | TERINGIE 6 | 166 | 165/166 | `TERINGIE6_*` |
 
-**Total McKinlay intervals analysed:** 954
+**Total McKinlay intervals analysed:** 2,892
 
-## Wells in Formation Tops — Data Not in Repository
+## Well Awaiting Data Upload
 
-The following 12 wells appear in `DC30.xlsx` / `Mck_Murta.xlsx` but **do not have mudlog PDF, sample Excel, or LAS files** in the repository root. They cannot be processed until data is uploaded.
+| Well | DC30 (m MD) | Status |
+|------|-------------|--------|
+| HOBBES 4 | 1630.71 | No mudlog PDF, sample Excel, or LAS file in repository |
 
-| Well | DC30 (m MD) |
-|------|-------------|
-| FROSTILLICUS 2 | 1614.15 |
-| GRANCHIO 4 | 1678.34 |
-| HOBBES 4 | 1630.71 |
-| HOBBES 5 | 1701.15 |
-| HOBBES 6 | 1685.47 |
-| MCKINLAY 20 | 1633.24 |
-| MCKINLAY 21 | 1769.69 |
-| MCKINLAY 22 | 1671.61 |
-| MCKINLAY 23 | 1678.59 |
-| MCKINLAY 24 | 1633.50 |
-| STIMPEE 6 | 1631.04 |
-| STIMPEE 7 | 1704.52 |
-| TERINGIE 6 | 1580.02 |
+## Excel Format Notes
+
+Two sample spreadsheet formats are supported:
+
+| Format | Wells | Sheet |
+|--------|-------|-------|
+| Standard | Jena, Biala, Granchio, Hobbes, Stimpee, Teringie | `Input Sheet` |
+| Legacy | Frostillicus 2, McKinlay 20–24 | `Sheet1` (header row 4) |
+
+Legacy format provides description text and %SS/TG but not grain size or fluorescence brightness fields.
+
+## Formation Tops Name Mapping
+
+`Mck_Murta.xlsx` uses updated well names for Jena laterals:
+
+| Mudlog / LAS | DC30.xlsx | Mck_Murta.xlsx |
+|--------------|-----------|----------------|
+| JENA 31 | Jena Dev C Oil Lateral 1_Ops | JENA 31 OPS |
+| JENA 31DW1 | Jena Dev C Oil Lateral 2_Ops | JENA 31DW1 |
 
 ## Exclusion Logic Applied
 
-Per updated workflow requirements:
+1. Pre-reservoir samples above shallowest McKinlay top — excluded
+2. Overburden intersections (McKinlay ≈ Murta within 5 m) — ±10 m excluded
+3. Target re-entry (McKinlay without Murta pair) — ±10 m excluded
 
-1. **Pre-reservoir:** Samples above shallowest McKinlay Member top excluded
-2. **Overburden intersections:** ±10 m around McKinlay tops paired with Murta tops (within 5 m)
-3. **Target re-entry:** ±10 m around McKinlay tops without corresponding Murta tops
-
-## Processing Script
-
-Re-run all wells:
+## Re-run
 
 ```bash
 python3 scripts/process_mckinlay_wells.py
 ```
 
-## Output Files per Well
+## Known Data Quality Issues
 
-- `[WELL]_McKinlay_Cuttings_Interpretation.md` — detailed per-interval data
-- `[WELL]_Process_Summary.md` — methodology and findings
+- **Mudlog match rates vary** — older field PDFs (Hobbes, McKinlay 23) have lower text extraction match rates
+- **HOBBES 4** — listed in tops files only; no well data files uploaded
+- **McKinlay legacy spreadsheets** — grain size / fluorescence fields not available

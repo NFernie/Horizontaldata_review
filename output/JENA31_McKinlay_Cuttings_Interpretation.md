@@ -1,7 +1,7 @@
 # JENA 31 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 02:20 UTC  
-**Well:** JENA 31 (Jena Dev C Oil Lateral 1_Ops)  
+**Generated:** 2026-07-07 02:28 UTC  
+**Well:** JENA 31 (JENA 31 OPS)  
 **TD:** 3394 m MD  
 
 ---
@@ -29,23 +29,23 @@
 **Target re-entry (McKinlay without paired Murta):**
 - 2250.62 m MD
 - 2842.67 m MD
+- 3238.04 m MD
 
 **Overburden intersections (McKinlay ≈ Murta within 5 m):**
 | McKinlay (m MD) | Murta (m MD) | Δ (m) |
 |-----------------|-------------|-------|
-| 2794.81 | 2791.94 | 2.87 |
+| 2794.81 | 2794.65 | 0.16 |
 | 3197.73 | 3197.73 | 0.00 |
-| 3238.04 | 3237.50 | 0.54 |
 | 3332.41 | 3331.56 | 0.85 |
 
 **McKinlay Member analysis window:** 2250.6 – 3394.0 m MD
 
-**Excluded zones (±10 m around overburden & target re-entry tops):** 2785–2805 (overburden), 3188–3208 (overburden), 3228–3248 (overburden), 3322–3342 (overburden), 2241–2261 (target_reentry), 2833–2853 (target_reentry)
+**Excluded zones (±10 m around overburden & target re-entry tops):** 2785–2805 (overburden), 3188–3208 (overburden), 3322–3342 (overburden), 2241–2261 (target_reentry), 2833–2853 (target_reentry), 3228–3248 (target_reentry)
 
 **Samples in McKinlay Member:** 201 of 309 total
 - Excluded pre-reservoir: 81
-- Excluded overburden intersections: 20
-- Excluded target re-entry tops: 7
+- Excluded overburden intersections: 15
+- Excluded target re-entry tops: 12
 
 ## 3. Known Shortcomings
 
@@ -53,7 +53,7 @@
 
 1. **Mudlog PDF text extraction is imperfect.** Depth-to-description assignment uses ±15 m proximity heuristics.
 2. **Formation top discrepancies** between Mck_Murta.xlsx and mudlog PDF picks are noted where present.
-3. **Well name mapping:** JENA 31 → `Jena Dev C Oil Lateral 1_Ops` (verified by TD and LAS WELL header).
+3. **Well name mapping:** JENA 31 → `JENA 31 OPS` (verified by TD and LAS WELL header).
 4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
 5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
 6. **NULL LAS values** (-999.25) excluded from averages.

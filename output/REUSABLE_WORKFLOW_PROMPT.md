@@ -1,21 +1,46 @@
 # Reusable Workflow Prompt — Horizontal Well Cuttings & Log Integration
 
-Copy and paste the prompt below for each additional well dataset.
+## Processing Status — All Available Wells Complete
+
+| # | Well | Intervals | Status |
+|---|------|-----------|--------|
+| 1 | JENA 31 | 201 | Complete |
+| 2 | JENA 31DW1 | 182 | Complete |
+| 3 | BIALA 19 | 219 | Complete |
+| 4 | BIALA 20 | 175 | Complete |
+| 5 | BIALA 21 | 145 | Complete |
+| 6 | FROSTILLICUS 2 | 370 | Complete |
+| 7 | GRANCHIO 4 | 126 | Complete |
+| 8 | HOBBES 5 | 114 | Complete |
+| 9 | HOBBES 6 | 81 | Complete |
+| 10 | MCKINLAY 20 | 276 | Complete |
+| 11 | MCKINLAY 21 | 118 | Complete |
+| 12 | MCKINLAY 22 | 306 | Complete |
+| 13 | MCKINLAY 23 | 180 | Complete |
+| 14 | MCKINLAY 24 | 167 | Complete |
+| 15 | STIMPEE 6 | 143 | Complete |
+| 16 | STIMPEE 7 | 93 | Complete |
+| 17 | TERINGIE 6 | 166 | Complete |
+
+**Pending:** HOBBES 4 (formation tops only — no data files in repo)
 
 ---
+
+Copy and paste the prompt below for any new well dataset:
 
 ```
 For well [WELL_NAME], integrate the following data sources for the McKinlay Member only:
 
 DATA FILES (in workspace root):
 - Mudlog PDF: [WELL_NAME]_ML_Mudlog_*.pdf
-- Sample Descriptions Excel: [WELL_NAME] Hz Section Samples Descriptions*.xlsx (use Input Sheet ONLY)
+- Sample Descriptions Excel: [WELL_NAME] Hz Section Samples Descriptions*.xlsx (use Input Sheet ONLY, or Sheet1 for legacy format)
 - Formation tops: DC30.xlsx and Mck_Murta.xlsx
 - Wireline log (LAS): [well_folder]/LAS file with GR, RES_DEEP, RES_SHALLOW
 
 WELL IDENTIFICATION:
 - Map the mudlog well name to the corresponding entry in DC30.xlsx and Mck_Murta.xlsx
 - Verify by matching TD depth and lateral naming convention
+- Note: Jena wells may use JENA 31 OPS / JENA 31DW1 in Mck_Murta vs lateral names in DC30
 
 MCKINLAY MEMBER FILTERING (horizontal well logic):
 1. Initial reservoir intersection = shallowest McKinlay Member top MD, cross-reference with DC30 top
@@ -34,8 +59,8 @@ FOR EACH MCKINLAY SAMPLE INTERVAL:
 6. Add permeability proxy comment: greater separation = higher inferred permeability
 
 OUTPUT — Create markdown files:
-1. [WELL_NAME]_McKinlay_Cuttings_Interpretation.md — detailed per-interval data
-2. [WELL_NAME]_Process_Summary.md — methodology and findings summary
+1. [WELL_NAME]_McKinlay_Cuttings_Interpretation.md
+2. [WELL_NAME]_Process_Summary.md
 
 REQUIREMENTS:
 - Be explicit about ALL shortcomings and data quality issues
@@ -43,22 +68,6 @@ REQUIREMENTS:
 - Flag intervals with missing mudlog matches or sparse log data
 - Do not use Calculations Sheet or other Excel tabs beyond Input Sheet
 ```
-
-## Processing Status
-
-| # | Well | Tops Name | Intervals | Status |
-|---|------|-----------|-----------|--------|
-| 1 | JENA 31 | Jena Dev C Oil Lateral 1_Ops | 201 | **Complete** |
-| 2 | JENA 31DW1 | Jena Dev C Oil Lateral 2_Ops | 178 | **Complete** |
-| 3 | BIALA 19 | BIALA 19 | 219 | **Complete** |
-| 4 | BIALA 20 | BIALA 20 | 211 | **Complete** |
-| 5 | BIALA 21 | BIALA 21 | 145 | **Complete** |
-
-## Wells Awaiting Data Upload
-
-These wells exist in formation top files but have **no mudlog / sample / LAS files** in the repository:
-
-FROSTILLICUS 2, GRANCHIO 4, HOBBES 4, HOBBES 5, HOBBES 6, MCKINLAY 20–24, STIMPEE 6, STIMPEE 7, TERINGIE 6
 
 ## Batch Re-run
 

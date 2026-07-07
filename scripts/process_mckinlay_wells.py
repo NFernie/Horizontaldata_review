@@ -25,7 +25,6 @@ WELLS = [
         "pdf": "JENA 31_ML_Mudlog_Spud-3394_MD_Final.pdf",
         "xlsx": "Jena 31- Hz Section Samples Descriptions_3394_TD.xlsx",
         "las": "Jena_31",
-        "td": 3394,
     },
     {
         "alias": "JENA31DW1",
@@ -34,7 +33,6 @@ WELLS = [
         "pdf": "JENA 31DW1_ML_Mudlog_Spud-3658_MD_Final.pdf",
         "xlsx": "Jena 31DW1- Hz Section Samples Descriptions.xlsx",
         "las": "Jena_31DW1",
-        "td": 3658,
     },
     {
         "alias": "BIALA19",
@@ -43,7 +41,6 @@ WELLS = [
         "pdf": "BIALA 19_ML_Mudlog_Spud-3730_MD_Final.pdf",
         "xlsx": "Biala 19 Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Biala_19",
-        "td": 3730,
     },
     {
         "alias": "BIALA20",
@@ -52,7 +49,6 @@ WELLS = [
         "pdf": "BIALA 20_ML_Mudlog_Spud-3315_MD_Final.pdf",
         "xlsx": "Biala 20 Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Biala_20",
-        "td": 3315,
     },
     {
         "alias": "BIALA21",
@@ -61,9 +57,128 @@ WELLS = [
         "pdf": "BIALA 21_ML_Mudlog_Spud-3278_MD_Final.pdf",
         "xlsx": "Biala 21 Hz Section Samples Descriptions_Rev3-fernc.xlsx",
         "las": "Biala_21",
-        "td": 3278,
+    },
+    {
+        "alias": "FROSTILLICUS2",
+        "display": "FROSTILLICUS 2",
+        "tops_name": "FROSTILLICUS 2",
+        "pdf": "Frostillicus 2_Mudlog_Spud-3724m_TD_Field_Final.pdf",
+        "xlsx": "Frostillicus 2 Hz Section Samples Descriptions.xlsx",
+        "las": "Frosti_2",
+    },
+    {
+        "alias": "GRANCHIO4",
+        "display": "GRANCHIO 4",
+        "tops_name": "GRANCHIO 4",
+        "pdf": "Granchio 4_Mudlog_Spud-2825m_TD_Field Final.pdf",
+        "xlsx": "Granchio 4 Hz Section Samples Descriptions_Rev3.xlsx",
+        "las": "Granchio_4",
+    },
+    {
+        "alias": "HOBBES5",
+        "display": "HOBBES 5",
+        "tops_name": "HOBBES 5",
+        "pdf": "Hobbes 5_Mudlog_Spud-2590m_TD_Field Final.pdf",
+        "xlsx": "Hobbes 5_Hz Section Samples Descriptions_Rev3.xlsx",
+        "las": "Hobbes_5",
+    },
+    {
+        "alias": "HOBBES6",
+        "display": "HOBBES 6",
+        "tops_name": "HOBBES 6",
+        "pdf": "Hobbes 6_Mudlog_Spud-2500m_TD_Field Final.pdf",
+        "xlsx": "Hobbes 6 Hz Section Samples Descriptions_Rev3.xlsx",
+        "las": "Hobbes_6",
+    },
+    {
+        "alias": "MCKINLAY20",
+        "display": "MCKINLAY 20",
+        "tops_name": "MCKINLAY 20",
+        "pdf": "McKinlay 20_Mudlog_Spud-3000m_TD_Field Final.pdf",
+        "xlsx": "McKinlay 20 Hz Section samples descriptions.xlsx",
+        "las": "Mck_20",
+    },
+    {
+        "alias": "MCKINLAY21",
+        "display": "MCKINLAY 21",
+        "tops_name": "MCKINLAY 21",
+        "pdf": "McKinlay 21_Mudlog_Spud-2417m_TD.pdf",
+        "xlsx": "McKinlay 21 Hz Section Samples Descriptions.xlsx",
+        "las": "Mck_21",
+    },
+    {
+        "alias": "MCKINLAY22",
+        "display": "MCKINLAY 22",
+        "tops_name": "MCKINLAY 22",
+        "pdf": "Mckinlay 22_Mudlog_SPUD-3206.4m(TD).pdf",
+        "xlsx": "McKinlay 22 Hz Section samples descriptions.xlsx",
+        "las": "Mck_22",
+    },
+    {
+        "alias": "MCKINLAY23",
+        "display": "MCKINLAY 23",
+        "tops_name": "MCKINLAY 23",
+        "pdf": "McKinlay 23_Mudlog_Spud-2590m_TD_Field Final.pdf",
+        "xlsx": "McKinlay 23 Hz Section Samples Descriptions.xlsx",
+        "las": "Mck_23",
+    },
+    {
+        "alias": "MCKINLAY24",
+        "display": "MCKINLAY 24",
+        "tops_name": "MCKINLAY 24",
+        "pdf": "McKinlay 24_Mudlog_Spud-2598m_TD_Field Final.pdf",
+        "xlsx": "McKinlay 24 Hz Section Samples Descriptions.xlsx",
+        "las": "Mck_24",
+    },
+    {
+        "alias": "STIMPEE6",
+        "display": "STIMPEE 6",
+        "tops_name": "STIMPEE 6",
+        "pdf": "Stimpee 6_Mudlog_Spud-3186m_TD_Field_Final.pdf",
+        "xlsx": "Stimpee 6_Hz Section Samples Descriptions_Rev3.xlsx",
+        "las": "Stimpee_6",
+    },
+    {
+        "alias": "STIMPEE7",
+        "display": "STIMPEE 7",
+        "tops_name": "STIMPEE 7",
+        "pdf": "Stimpee 7_Mudlog_Spud-2840m_TD_Field Final.pdf",
+        "xlsx": "Stimpee 7_Hz Section Samples Descriptions_Rev3.xlsx",
+        "las": "Stimpee_7",
+    },
+    {
+        "alias": "TERINGIE6",
+        "display": "TERINGIE 6",
+        "tops_name": "TERINGIE 6",
+        "pdf": "TERINGIE 6_ML_Mudlog_Spud-3441.4_MD_Final.pdf",
+        "xlsx": "Teringie 6 Hz Section Samples Descriptions_Rev3.xlsx",
+        "las": "Teringie_6",
     },
 ]
+
+WELL_TOPS_ALIASES = {
+    "Jena Dev C Oil Lateral 1_Ops": ["JENA 31 OPS", "Jena Dev C Oil Lateral 1_Ops", "JENA 31"],
+    "Jena Dev C Oil Lateral 2_Ops": ["JENA 31DW1", "Jena Dev C Oil Lateral 2_Ops"],
+}
+
+
+def resolve_well_name(df, cfg):
+    candidates = [
+        cfg.get("tops_name"),
+        cfg.get("display"),
+        cfg.get("alias"),
+    ]
+    candidates.extend(WELL_TOPS_ALIASES.get(cfg.get("tops_name", ""), []))
+    seen = set()
+    for name in candidates:
+        if not name or name in seen:
+            continue
+        seen.add(name)
+        match = df[df["Well identifier (Well name)"] == name]
+        if not match.empty:
+            return name, match
+    raise ValueError(f"No tops match for {cfg.get('display')} in dataframe")
+
 
 LITH_TYPES = re.compile(
     r"(SANDSTONE|SILTSTONE|LIMESTONE(?:\([^)]*\))?|SHALE|DOLOMITE|COAL|ANHYDRITE|MUDSTONE|CLAYSTONE)"
@@ -215,41 +330,119 @@ def avg_log(df, top, bot):
     return result
 
 
-def load_samples(xlsx_path):
-    raw = pd.read_excel(xlsx_path, sheet_name="Input Sheet", header=2)
-    raw.columns = [str(c).strip() if pd.notna(c) else f"col_{i}" for i, c in enumerate(raw.columns)]
+def parse_las_td(las_path):
+    with open(las_path) as f:
+        for line in f:
+            if line.strip().startswith("STOP"):
+                return float(line.split(".m")[1].split(":")[0].strip())
+    return None
 
-    def col(name):
-        for c in raw.columns:
-            if name.lower() in str(c).lower():
+
+def _find_col(columns, *names):
+    for c in columns:
+        cl = str(c).lower()
+        for name in names:
+            if name.lower() in cl:
                 return c
-        return None
+    return None
 
-    depth_col = col("Depth")
-    if depth_col is None:
-        raise ValueError(f"Depth column not found in {xlsx_path}")
 
-    samples = pd.DataFrame(
-        {
-            "Depth_mMD": pd.to_numeric(raw[depth_col], errors="coerce"),
-            "Pct_Sandstone": raw[col("% Sandstone")] if col("% Sandstone") else np.nan,
-            "Grain_Size": raw[col("Grain Size")] if col("Grain Size") else np.nan,
-            "Max_Grain_Size": raw[col("Max Grain")] if col("Max Grain") else np.nan,
-            "Pct_Fluor": raw[col("% Fluor")] if col("% Fluor") else np.nan,
-            "Brightness": raw[col("Brightness")] if col("Brightness") else np.nan,
-            "Gas_U": raw[col("Gas")] if col("Gas") else np.nan,
-            "FeCO3_SLTST": raw[col("FeCO3 in SLTST")] if col("FeCO3 in SLTST") else np.nan,
-            "FeCO3_SST": raw[col("FeCO3 in SST")] if col("FeCO3 in SST") else np.nan,
-        }
-    )
-    samples = samples.dropna(subset=["Depth_mMD"]).reset_index(drop=True)
+def _find_depth_col(df):
+    col = _find_col(df.columns, "depth", "mmd")
+    if col is not None:
+        return col
+    for c in df.columns:
+        vals = pd.to_numeric(df[c], errors="coerce").dropna()
+        if len(vals) >= 5 and (vals.between(500, 5000).mean() > 0.8):
+            return c
+    return None
 
-    long_desc = pd.read_excel(xlsx_path, sheet_name="Long Sample Name")
+
+def _pct_from_series(series):
+    vals = pd.to_numeric(series, errors="coerce")
+    if vals.dropna().empty:
+        return vals
+    if vals.max() <= 1.0:
+        return vals * 100
+    return vals
+
+
+def load_samples(xlsx_path):
+    xl = pd.ExcelFile(xlsx_path)
     long_map = {}
-    for _, row in long_desc.iterrows():
-        m = re.match(r"Sample (\d+(?:\.\d+)?)m:", str(row["Description"]))
-        if m:
-            long_map[float(m.group(1))] = str(row["Description"])
+
+    if "Input Sheet" in xl.sheet_names:
+        raw = pd.read_excel(xlsx_path, sheet_name="Input Sheet", header=2)
+        raw.columns = [str(c).strip() if pd.notna(c) else f"col_{i}" for i, c in enumerate(raw.columns)]
+        depth_col = _find_col(raw.columns, "Depth")
+        if depth_col is None:
+            raise ValueError(f"Depth column not found in {xlsx_path}")
+        samples = pd.DataFrame(
+            {
+                "Depth_mMD": pd.to_numeric(raw[depth_col], errors="coerce"),
+                "Pct_Sandstone": raw[_find_col(raw.columns, "% Sandstone")]
+                if _find_col(raw.columns, "% Sandstone")
+                else np.nan,
+                "Grain_Size": raw[_find_col(raw.columns, "Grain Size")]
+                if _find_col(raw.columns, "Grain Size")
+                else np.nan,
+                "Max_Grain_Size": raw[_find_col(raw.columns, "Max Grain")]
+                if _find_col(raw.columns, "Max Grain")
+                else np.nan,
+                "Pct_Fluor": raw[_find_col(raw.columns, "% Fluor")]
+                if _find_col(raw.columns, "% Fluor")
+                else np.nan,
+                "Brightness": raw[_find_col(raw.columns, "Brightness")]
+                if _find_col(raw.columns, "Brightness")
+                else np.nan,
+                "Gas_U": raw[_find_col(raw.columns, "Gas")]
+                if _find_col(raw.columns, "Gas")
+                else np.nan,
+                "FeCO3_SLTST": raw[_find_col(raw.columns, "FeCO3 in SLTST")]
+                if _find_col(raw.columns, "FeCO3 in SLTST")
+                else np.nan,
+                "FeCO3_SST": raw[_find_col(raw.columns, "FeCO3 in SST")]
+                if _find_col(raw.columns, "FeCO3 in SST")
+                else np.nan,
+            }
+        )
+        if "Long Sample Name" in xl.sheet_names:
+            long_desc = pd.read_excel(xlsx_path, sheet_name="Long Sample Name")
+            for _, row in long_desc.iterrows():
+                m = re.match(r"Sample (\d+(?:\.\d+)?)m:", str(row.get("Description", "")))
+                if m:
+                    long_map[float(m.group(1))] = str(row["Description"])
+    else:
+        raw = pd.read_excel(xlsx_path, sheet_name="Sheet1", header=3)
+        raw.columns = [str(c).strip() if pd.notna(c) else f"col_{i}" for i, c in enumerate(raw.columns)]
+        depth_col = _find_depth_col(raw)
+        if depth_col is None:
+            raise ValueError(f"Depth column not found in legacy sheet for {xlsx_path}")
+        ss_col = _find_col(raw.columns, "%SS", "% SS", "% Sandstone")
+        desc_col = _find_col(raw.columns, "description")
+        fluor_col = _find_col(raw.columns, "%fluoro", "% Fluor")
+        gas_col = _find_col(raw.columns, "TG", "Gas")
+        samples = pd.DataFrame(
+            {
+                "Depth_mMD": pd.to_numeric(raw[depth_col], errors="coerce"),
+                "Pct_Sandstone": _pct_from_series(raw[ss_col]) if ss_col else np.nan,
+                "Grain_Size": np.nan,
+                "Max_Grain_Size": np.nan,
+                "Pct_Fluor": _pct_from_series(raw[fluor_col]) if fluor_col else np.nan,
+                "Brightness": np.nan,
+                "Gas_U": pd.to_numeric(raw[gas_col], errors="coerce") if gas_col else np.nan,
+                "FeCO3_SLTST": np.nan,
+                "FeCO3_SST": np.nan,
+            }
+        )
+        if desc_col:
+            for _, row in raw.iterrows():
+                desc = str(row.get(desc_col, ""))
+                m = re.match(r"Sample (\d+(?:\.\d+)?)m", desc)
+                if m:
+                    long_map[float(m.group(1))] = desc
+
+    samples = samples.dropna(subset=["Depth_mMD"]).reset_index(drop=True)
 
     depths = samples["Depth_mMD"].values
     tops, bots = [], []
@@ -287,13 +480,11 @@ def fmt(val, digits=2):
 
 
 def process_well(cfg, dc30_df, mck_murta_df):
-    tops_name = cfg["tops_name"]
-    dc30_row = dc30_df[dc30_df["Well identifier (Well name)"] == tops_name]
-    if dc30_row.empty:
-        raise ValueError(f"No DC30 top for {tops_name}")
+    _, dc30_row = resolve_well_name(dc30_df, cfg)
     dc30_top = float(dc30_row["MD"].values[0])
 
-    tops = mck_murta_df[mck_murta_df["Well identifier (Well name)"] == tops_name]
+    tops_name, tops = resolve_well_name(mck_murta_df, cfg)
+    tops = tops.sort_values("MD")
     mck_tops = sorted(tops[tops["Surface"] == "MCKINLAY MEMBER"]["MD"].tolist())
     murta_tops = sorted(tops[tops["Surface"] == "MURTA MEMBER"]["MD"].tolist())
     if not mck_tops:
@@ -302,11 +493,12 @@ def process_well(cfg, dc30_df, mck_murta_df):
     overburden, target_reentry = classify_tops(mck_tops, murta_tops)
     zones = exclusion_zones(overburden, target_reentry)
     mck_start = min(mck_tops)
-    mck_end = float(cfg["td"])
+    las_path = os.path.join(WORKSPACE, cfg["las"])
+    las_td = parse_las_td(las_path)
+    mck_end = float(cfg.get("td") or las_td or max(mck_tops) + 500)
 
     pdf_path = os.path.join(WORKSPACE, cfg["pdf"])
     xlsx_path = os.path.join(WORKSPACE, cfg["xlsx"])
-    las_path = os.path.join(WORKSPACE, cfg["las"])
 
     mudlog_text = extract_mudlog_text(pdf_path)
     mudlog_entries = parse_mudlog_entries(mudlog_text)
@@ -318,6 +510,8 @@ def process_well(cfg, dc30_df, mck_murta_df):
 
     samples, long_map = load_samples(xlsx_path)
     las_df = parse_las(las_path)
+    sample_max = float(samples["Depth_mMD"].max())
+    mck_end = max(mck_end, sample_max)
 
     results = []
     excluded_pre = excluded_ob = excluded_re = 0
