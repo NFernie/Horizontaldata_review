@@ -4,7 +4,7 @@ import { FLAG_LABELS, RISK_LABELS } from "@/config";
 
 interface RiskBadgeProps {
   risk?: RiskClass | null;
-  flag?: keyof typeof FLAG_LABELS;
+  flag?: keyof typeof FLAG_LABELS | string;
   className?: string;
 }
 
@@ -16,6 +16,7 @@ const riskStyles: Record<RiskClass, string> = {
 
 export function RiskBadge({ risk, flag, className }: RiskBadgeProps) {
   if (flag) {
+    const label = FLAG_LABELS[flag as keyof typeof FLAG_LABELS] ?? flag;
     return (
       <span
         className={cn(
@@ -24,7 +25,7 @@ export function RiskBadge({ risk, flag, className }: RiskBadgeProps) {
           className,
         )}
       >
-        {FLAG_LABELS[flag]}
+        {label}
       </span>
     );
   }

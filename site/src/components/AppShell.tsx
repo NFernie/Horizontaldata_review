@@ -10,8 +10,8 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { to: "/", label: "Portfolio" },
-  { to: "/well/JENA31DW1", label: "Well Detail", disabled: true },
-  { to: "/water-risk", label: "Water Risk", disabled: true },
+  { to: "/well/JENA31DW1", label: "Well Detail" },
+  { to: "/water-risk", label: "Water Risk" },
   { to: "/compare", label: "Compare", disabled: true },
   { to: "/methodology", label: "Methodology", disabled: true },
 ];

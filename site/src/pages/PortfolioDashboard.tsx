@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { Card } from "@/components/Card";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
@@ -43,7 +44,12 @@ export function PortfolioDashboard() {
       header: "Well",
       render: (row) => (
         <div>
-          <p className="font-medium text-text">{row.display}</p>
+          <Link
+            to={`/well/${row.alias}`}
+            className="font-medium text-accent hover:underline"
+          >
+            {row.display}
+          </Link>
           <p className="text-xs text-text-muted">{row.alias}</p>
         </div>
       ),
