@@ -29,6 +29,52 @@ from process_mckinlay_wells import WELLS, process_well  # noqa: E402
 DATA_ROOT = os.path.join(WORKSPACE, config.DATA_DIR)
 
 
+def clean_scalar(val):
+    """Convert pandas/numpy missing and non-JSON floats to None for browser-safe JSON."""
+    if val is None:
+        return None
+    try:
+        if pd.isna(val):
+            return None
+    except (TypeError, ValueError):
+        pass
+    if isinstance(val, (np.floating, float)):
+        f = float(val)
+        if math.isnan(f) or math.isinf(f):
+            return None
+        return f
+    if isinstance(val, np.integer):
+        return int(val)
+    if isinstance(val, (np.bool_,)):
+        return bool(val)
+    return val
+
+
+def sanitize_for_json(obj):
+    """Recursively replace NaN/Inf with null so JSON.parse works in browsers."""
+    if isinstance(obj, dict):
+        return {k: sanitize_for_json(v) for k, v in obj.items()}
+    if isinstance(obj, (list, tuple)):
+        return [sanitize_for_json(v) for v in obj]
+    if isinstance(obj, (np.floating, float)):
+        f = float(obj)
+        if math.isnan(f) or math.isinf(f):
+            return None
+        return f
+    if isinstance(obj, np.integer):
+        return int(obj)
+    if isinstance(obj, (np.bool_,)):
+        return bool(obj)
+    if isinstance(obj, np.ndarray):
+        return sanitize_for_json(obj.tolist())
+    try:
+        if pd.isna(obj):
+            return None
+    except (TypeError, ValueError):
+        pass
+    return obj
+
+
 def _json_default(obj):
     if isinstance(obj, (np.integer,)):
         return int(obj)
@@ -47,7 +93,7 @@ def _json_default(obj):
 def write_json(path, data):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as f:
-        json.dump(data, f, indent=2, default=_json_default)
+        json.dump(sanitize_for_json(data), f, indent=2, allow_nan=False)
 
 
 def clamp(value, lo=0.0, hi=1.0):
@@ -348,31 +394,32 @@ def cosine_similarity_matrix(mat):
 
 def serialize_interval(row):
     log = row.get("log") or {}
+    clean_log = {k: clean_scalar(v) for k, v in log.items()}
     return {
         "depth": row["depth"],
         "top": row["top"],
         "bot": row["bot"],
-        "pct_ss": row.get("pct_ss"),
-        "pct_slt": row.get("pct_slt"),
-        "grain": row.get("grain"),
-        "max_grain": row.get("max_grain"),
+        "pct_ss": clean_scalar(row.get("pct_ss")),
+        "pct_slt": clean_scalar(row.get("pct_slt")),
+        "grain": row.get("grain") if pd.notna(row.get("grain")) else None,
+        "max_grain": row.get("max_grain") if pd.notna(row.get("max_grain")) else None,
         "grain_ordinal": row.get("grain_ordinal"),
         "poro_class": row.get("poro_class"),
         "loose_grains": row.get("loose_grains"),
-        "fluor": row.get("fluor"),
-        "bright": row.get("bright"),
-        "gas": row.get("gas"),
-        "fec03_slt": row.get("fec03_slt"),
-        "fec03_sst": row.get("fec03_sst"),
+        "fluor": clean_scalar(row.get("fluor")),
+        "bright": row.get("bright") if pd.notna(row.get("bright")) else None,
+        "gas": clean_scalar(row.get("gas")),
+        "fec03_slt": row.get("fec03_slt") if pd.notna(row.get("fec03_slt")) else None,
+        "fec03_sst": row.get("fec03_sst") if pd.notna(row.get("fec03_sst")) else None,
         "long_desc": row.get("long_desc"),
-        "log": log,
+        "log": clean_log,
         "perm": row.get("perm"),
         "matching_pay": row.get("matching_pay"),
-        "RQI": row.get("RQI"),
-        "WRCI": row.get("WRCI"),
+        "RQI": clean_scalar(row.get("RQI")),
+        "WRCI": clean_scalar(row.get("WRCI")),
         "risk_class": row.get("risk_class"),
         "flags": row.get("flags", []),
-        "z_scores": row.get("z_scores", {}),
+        "z_scores": {k: clean_scalar(v) for k, v in row.get("z_scores", {}).items()},
         "anomalies": row.get("anomalies", []),
     }
 

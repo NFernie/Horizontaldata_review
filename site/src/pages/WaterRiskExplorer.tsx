@@ -1,3 +1,10 @@
+import { Card } from "@/components/Card";
+import { RiskBadge } from "@/components/RiskBadge";
+import { StatTile } from "@/components/StatTile";
+import { WellSelect } from "@/components/WellSelect";
+import { useWells } from "@/hooks/useWells";
+import { fetchJson, formatNumber, formatPercent } from "@/lib/utils";
+import type { FlaggedZone, WaterRiskPayload } from "@/types/waterRisk";
 import { useEffect, useMemo, useState } from "react";
 import {
   Bar,
@@ -8,17 +15,11 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { Card } from "@/components/Card";
-import { RiskBadge } from "@/components/RiskBadge";
-import { StatTile } from "@/components/StatTile";
-import { fetchJson, formatNumber, formatPercent } from "@/lib/utils";
-import type { FlaggedZone, WaterRiskPayload } from "@/types/waterRisk";
-import { KS_FOCUS_ALIASES } from "@/config";
 
 function ZoneCard({ zone }: { zone: FlaggedZone }) {
   const ev = zone.evidence;
   return (
-    <article className="rounded-card border border-border bg-surface-2 p-4">
+    <article className="rounded-card border border-border bg-surface-2 p-4 transition-colors hover:border-accent/30">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
           <p className="font-mono text-sm font-semibold text-text">
@@ -32,9 +33,13 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1.5">
-        {zone.flags.map((f) => (
-          <RiskBadge key={f} flag={f as "highperm" | "lowres" | "lowfluor"} />
-        ))}
+        {zone.flags.length > 0 ? (
+          zone.flags.map((f) => (
+            <RiskBadge key={f} flag={f as "highperm" | "lowres" | "lowfluor"} />
+          ))
+        ) : (
+          <span className="text-xs text-text-muted">No red flags (elevated by WRCI)</span>
+        )}
       </div>
 
       <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 text-xs sm:grid-cols-3">
@@ -79,90 +84,151 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
   );
 }
 
-function WellRiskPanel({ payload }: { payload: WaterRiskPayload }) {
+interface WellRiskPanelProps {
+  payload: WaterRiskPayload | null;
+  alias: string;
+  wells: ReturnType<typeof useWells>["activeWells"];
+  onAliasChange: (alias: string) => void;
+  label: string;
+  loading?: boolean;
+}
+
+function WellRiskPanel({
+  payload,
+  alias,
+  wells,
+  onAliasChange,
+  label,
+  loading,
+}: WellRiskPanelProps) {
   const topChart = useMemo(
     () =>
-      payload.flagged_zones.slice(0, 8).map((z) => ({
+      (payload?.flagged_zones ?? []).slice(0, 8).map((z) => ({
         depth: `${z.depth.toFixed(0)}m`,
         WRCI: z.WRCI ?? 0,
       })),
-    [payload.flagged_zones],
+    [payload],
   );
 
-  const highCount = payload.flagged_zones.filter((z) => z.risk_class === "High").length;
-  const elevatedCount = payload.flagged_zones.filter((z) => z.risk_class === "Elevated").length;
+  const highCount = payload?.flagged_zones.filter((z) => z.risk_class === "High").length ?? 0;
+  const elevatedCount =
+    payload?.flagged_zones.filter((z) => z.risk_class === "Elevated").length ?? 0;
 
   return (
-    <div className="space-y-4">
-      <header>
-        <h2 className="text-lg font-semibold text-text">{payload.display}</h2>
-        <p className="text-sm text-text-muted">{payload.flagged_zones.length} flagged zones</p>
-      </header>
+    <Card className="flex h-full flex-col">
+      <WellSelect
+        wells={wells}
+        value={alias}
+        onChange={onAliasChange}
+        label={label}
+        id={`water-risk-${label.replace(/\s+/g, "-").toLowerCase()}`}
+        className="mb-4"
+      />
 
-      <div className="grid grid-cols-2 gap-3">
-        <StatTile label="High risk" value={highCount} variant="risk" />
-        <StatTile label="Elevated" value={elevatedCount} variant="accent" />
-      </div>
+      {loading ? (
+        <p className="text-sm text-text-muted">Loading flagged zones…</p>
+      ) : !payload ? (
+        <p className="text-sm text-text-muted">No water-risk data for this well.</p>
+      ) : (
+        <div className="space-y-4">
+          <p className="text-sm text-text-muted">{payload.flagged_zones.length} flagged zones</p>
 
-      {topChart.length > 0 ? (
-        <div className="h-48 rounded-card border border-border bg-surface-2 p-2">
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={topChart} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
-              <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" vertical={false} />
-              <XAxis dataKey="depth" tick={{ fill: "var(--text-muted)", fontSize: 10 }} />
-              <YAxis
-                domain={[0, 100]}
-                tick={{ fill: "var(--text-muted)", fontSize: 10 }}
-                width={28}
-              />
-              <Tooltip
-                contentStyle={{
-                  background: "var(--surface-2)",
-                  border: "1px solid var(--border)",
-                  borderRadius: 8,
-                  color: "var(--text)",
-                }}
-              />
-              <Bar dataKey="WRCI" fill="var(--risk-elev)" radius={[4, 4, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
+          <div className="grid grid-cols-2 gap-3">
+            <StatTile label="High risk" value={highCount} variant="risk" />
+            <StatTile label="Elevated" value={elevatedCount} variant="accent" />
+          </div>
+
+          {topChart.length > 0 ? (
+            <div className="h-48 rounded-card border border-border bg-surface-2 p-2">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={topChart} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+                  <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" vertical={false} />
+                  <XAxis dataKey="depth" tick={{ fill: "var(--text-muted)", fontSize: 10 }} />
+                  <YAxis
+                    domain={[0, 100]}
+                    tick={{ fill: "var(--text-muted)", fontSize: 10 }}
+                    width={28}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      background: "var(--surface-2)",
+                      border: "1px solid var(--border)",
+                      borderRadius: 8,
+                      color: "var(--text)",
+                    }}
+                  />
+                  <Bar dataKey="WRCI" fill="var(--risk-elev)" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          ) : (
+            <p className="text-sm text-text-muted">No flagged zones for chart.</p>
+          )}
+
+          <div className="max-h-[32rem] space-y-3 overflow-y-auto pr-1">
+            {payload.flagged_zones.length === 0 ? (
+              <p className="text-sm text-text-muted">No elevated or high-risk zones identified.</p>
+            ) : (
+              payload.flagged_zones.map((zone) => (
+                <ZoneCard key={`${zone.depth}-${zone.top}`} zone={zone} />
+              ))
+            )}
+          </div>
         </div>
-      ) : null}
-
-      <div className="space-y-3 max-h-[32rem] overflow-y-auto pr-1">
-        {payload.flagged_zones.map((zone) => (
-          <ZoneCard key={`${zone.depth}-${zone.top}`} zone={zone} />
-        ))}
-      </div>
-    </div>
+      )}
+    </Card>
   );
 }
 
 export function WaterRiskExplorer() {
-  const [data, setData] = useState<Record<string, WaterRiskPayload>>({});
+  const { activeWells, loading: wellsLoading, error: wellsError } = useWells();
+  const [leftAlias, setLeftAlias] = useState("JENA31");
+  const [rightAlias, setRightAlias] = useState("JENA31DW1");
+  const [cache, setCache] = useState<Record<string, WaterRiskPayload>>({});
+  const [loadingAliases, setLoadingAliases] = useState<Set<string>>(new Set());
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!activeWells.length) return;
+    const aliases = [...new Set([leftAlias, rightAlias])];
+    const missing = aliases.filter((a) => !cache[a] && !loadingAliases.has(a));
+    if (!missing.length) return;
+
+    setLoadingAliases((prev) => new Set([...prev, ...missing]));
     Promise.all(
-      KS_FOCUS_ALIASES.map((alias) =>
-        fetchJson<WaterRiskPayload>(`data/water_risk/${alias}.json`).then((payload) => [
-          alias,
-          payload,
-        ] as const),
+      missing.map((alias) =>
+        fetchJson<WaterRiskPayload>(`data/water_risk/${alias}.json`)
+          .then((payload) => ({ alias, payload }))
+          .catch((err: Error) => {
+            throw new Error(`${alias}: ${err.message}`);
+          }),
       ),
     )
-      .then((entries) => setData(Object.fromEntries(entries)))
+      .then((results) => {
+        setCache((prev) => {
+          const next = { ...prev };
+          results.forEach(({ alias, payload }) => {
+            next[alias] = payload;
+          });
+          return next;
+        });
+      })
       .catch((err: Error) => setError(err.message))
-      .finally(() => setLoading(false));
-  }, []);
+      .finally(() => {
+        setLoadingAliases((prev) => {
+          const next = new Set(prev);
+          missing.forEach((a) => next.delete(a));
+          return next;
+        });
+      });
+  }, [activeWells, leftAlias, rightAlias, cache, loadingAliases]);
 
-  if (loading) return <p className="text-text-muted">Loading water-risk data…</p>;
+  if (wellsLoading) return <p className="text-text-muted">Loading wells…</p>;
 
-  if (error) {
+  if (wellsError || error) {
     return (
       <Card title="Unable to load water-risk data">
-        <p className="text-risk-high">{error}</p>
+        <p className="text-risk-high">{wellsError ?? error}</p>
       </Card>
     );
   }
@@ -172,15 +238,28 @@ export function WaterRiskExplorer() {
       <header>
         <h1 className="text-xl font-semibold text-text sm:text-2xl">Water-Risk Explorer</h1>
         <p className="mt-1 max-w-3xl text-sm text-text-muted">
-          Ranked flagged McKinlay intervals for Jena 31 and Jena 31DW1. Each card shows contributing
-          red flags and supporting petrophysical evidence.
+          Compare flagged McKinlay intervals side-by-side for any two wells. Defaults to Jena 31
+          and Jena 31DW1; use the selectors above each column to switch wells.
         </p>
       </header>
 
       <div className="grid gap-6 xl:grid-cols-2">
-        {KS_FOCUS_ALIASES.map((alias) =>
-          data[alias] ? <WellRiskPanel key={alias} payload={data[alias]} /> : null,
-        )}
+        <WellRiskPanel
+          label="Left well"
+          alias={leftAlias}
+          wells={activeWells}
+          onAliasChange={setLeftAlias}
+          payload={cache[leftAlias] ?? null}
+          loading={loadingAliases.has(leftAlias)}
+        />
+        <WellRiskPanel
+          label="Right well"
+          alias={rightAlias}
+          wells={activeWells}
+          onAliasChange={setRightAlias}
+          payload={cache[rightAlias] ?? null}
+          loading={loadingAliases.has(rightAlias)}
+        />
       </div>
     </div>
   );
