@@ -1,6 +1,6 @@
 # BIALA 20 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-07 05:36 UTC  
+**Generated:** 2026-07-07 07:02 UTC  
 **Well:** BIALA 20 (BIALA 20)  
 **TD:** 3315 m MD  
 
@@ -87,12 +87,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.5 | 16 |
-| RES_DEEP (ohm.m) | 67.10 | 16 |
-| RES_SHALLOW (ohm.m) | 33.28 | 16 |
-| **Δ Res (Deep − Shallow)** | **33.82** | — |
+| GR (gAPI) | 67.1 | 16 |
+| RES_DEEP (ohm.m) | 33.28 | 16 |
+| RES_SHALLOW (ohm.m) | 30.53 | 16 |
+| **Δ Res (Deep − Shallow)** | **2.75** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -116,12 +116,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 28.6 | 49 |
-| RES_DEEP (ohm.m) | 77.32 | 49 |
-| RES_SHALLOW (ohm.m) | 32.02 | 49 |
-| **Δ Res (Deep − Shallow)** | **45.30** | — |
+| GR (gAPI) | 77.3 | 49 |
+| RES_DEEP (ohm.m) | 32.02 | 49 |
+| RES_SHALLOW (ohm.m) | 28.58 | 49 |
+| **Δ Res (Deep − Shallow)** | **3.44** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -145,12 +145,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.3 | 66 |
-| RES_DEEP (ohm.m) | 95.46 | 66 |
-| RES_SHALLOW (ohm.m) | 30.94 | 66 |
-| **Δ Res (Deep − Shallow)** | **64.52** | — |
+| GR (gAPI) | 95.5 | 66 |
+| RES_DEEP (ohm.m) | 30.94 | 66 |
+| RES_SHALLOW (ohm.m) | 27.30 | 66 |
+| **Δ Res (Deep − Shallow)** | **3.64** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -174,12 +174,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.5 | 66 |
-| RES_DEEP (ohm.m) | 95.60 | 66 |
-| RES_SHALLOW (ohm.m) | 30.19 | 66 |
-| **Δ Res (Deep − Shallow)** | **65.41** | — |
+| GR (gAPI) | 95.6 | 66 |
+| RES_DEEP (ohm.m) | 30.19 | 66 |
+| RES_SHALLOW (ohm.m) | 27.46 | 66 |
+| **Δ Res (Deep − Shallow)** | **2.73** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -203,12 +203,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.0 | 65 |
-| RES_DEEP (ohm.m) | 93.70 | 65 |
-| RES_SHALLOW (ohm.m) | 30.70 | 65 |
-| **Δ Res (Deep − Shallow)** | **63.00** | — |
+| GR (gAPI) | 93.7 | 65 |
+| RES_DEEP (ohm.m) | 30.70 | 65 |
+| RES_SHALLOW (ohm.m) | 30.04 | 65 |
+| **Δ Res (Deep − Shallow)** | **0.67** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -232,12 +232,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 28.6 | 49 |
-| RES_DEEP (ohm.m) | 94.24 | 49 |
-| RES_SHALLOW (ohm.m) | 29.09 | 49 |
-| **Δ Res (Deep − Shallow)** | **65.15** | — |
+| GR (gAPI) | 94.2 | 49 |
+| RES_DEEP (ohm.m) | 29.09 | 49 |
+| RES_SHALLOW (ohm.m) | 28.59 | 49 |
+| **Δ Res (Deep − Shallow)** | **0.50** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -261,12 +261,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.4 | 33 |
-| RES_DEEP (ohm.m) | 82.72 | 33 |
-| RES_SHALLOW (ohm.m) | 27.67 | 33 |
-| **Δ Res (Deep − Shallow)** | **55.04** | — |
+| GR (gAPI) | 82.7 | 33 |
+| RES_DEEP (ohm.m) | 27.67 | 33 |
+| RES_SHALLOW (ohm.m) | 27.36 | 33 |
+| **Δ Res (Deep − Shallow)** | **0.31** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -290,12 +290,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.9 | 33 |
-| RES_DEEP (ohm.m) | 78.05 | 33 |
-| RES_SHALLOW (ohm.m) | 27.64 | 33 |
-| **Δ Res (Deep − Shallow)** | **50.41** | — |
+| GR (gAPI) | 78.0 | 33 |
+| RES_DEEP (ohm.m) | 27.64 | 33 |
+| RES_SHALLOW (ohm.m) | 26.88 | 33 |
+| **Δ Res (Deep − Shallow)** | **0.76** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -319,12 +319,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.5 | 33 |
-| RES_DEEP (ohm.m) | 80.12 | 33 |
-| RES_SHALLOW (ohm.m) | 28.03 | 33 |
-| **Δ Res (Deep − Shallow)** | **52.08** | — |
+| GR (gAPI) | 80.1 | 33 |
+| RES_DEEP (ohm.m) | 28.03 | 33 |
+| RES_SHALLOW (ohm.m) | 26.46 | 33 |
+| **Δ Res (Deep − Shallow)** | **1.57** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -348,12 +348,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.7 | 33 |
-| RES_DEEP (ohm.m) | 90.77 | 33 |
-| RES_SHALLOW (ohm.m) | 28.79 | 33 |
-| **Δ Res (Deep − Shallow)** | **61.98** | — |
+| GR (gAPI) | 90.8 | 33 |
+| RES_DEEP (ohm.m) | 28.79 | 33 |
+| RES_SHALLOW (ohm.m) | 27.72 | 33 |
+| **Δ Res (Deep − Shallow)** | **1.07** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -377,12 +377,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 29.5 | 32 |
-| RES_DEEP (ohm.m) | 96.17 | 32 |
-| RES_SHALLOW (ohm.m) | 30.32 | 32 |
-| **Δ Res (Deep − Shallow)** | **65.85** | — |
+| GR (gAPI) | 96.2 | 32 |
+| RES_DEEP (ohm.m) | 30.32 | 32 |
+| RES_SHALLOW (ohm.m) | 29.51 | 32 |
+| **Δ Res (Deep − Shallow)** | **0.81** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -406,12 +406,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.9 | 33 |
-| RES_DEEP (ohm.m) | 101.58 | 33 |
-| RES_SHALLOW (ohm.m) | 33.08 | 33 |
-| **Δ Res (Deep − Shallow)** | **68.50** | — |
+| GR (gAPI) | 101.6 | 33 |
+| RES_DEEP (ohm.m) | 33.08 | 33 |
+| RES_SHALLOW (ohm.m) | 30.87 | 33 |
+| **Δ Res (Deep − Shallow)** | **2.21** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -435,12 +435,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.1 | 33 |
-| RES_DEEP (ohm.m) | 96.15 | 33 |
-| RES_SHALLOW (ohm.m) | 34.23 | 33 |
-| **Δ Res (Deep − Shallow)** | **61.92** | — |
+| GR (gAPI) | 96.1 | 33 |
+| RES_DEEP (ohm.m) | 34.23 | 33 |
+| RES_SHALLOW (ohm.m) | 30.08 | 33 |
+| **Δ Res (Deep − Shallow)** | **4.15** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -464,12 +464,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.7 | 33 |
-| RES_DEEP (ohm.m) | 94.73 | 33 |
-| RES_SHALLOW (ohm.m) | 34.82 | 33 |
-| **Δ Res (Deep − Shallow)** | **59.91** | — |
+| GR (gAPI) | 94.7 | 33 |
+| RES_DEEP (ohm.m) | 34.82 | 33 |
+| RES_SHALLOW (ohm.m) | 30.69 | 33 |
+| **Δ Res (Deep − Shallow)** | **4.13** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -493,12 +493,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 28.3 | 33 |
-| RES_DEEP (ohm.m) | 86.04 | 33 |
-| RES_SHALLOW (ohm.m) | 32.24 | 33 |
-| **Δ Res (Deep − Shallow)** | **53.81** | — |
+| GR (gAPI) | 86.0 | 33 |
+| RES_DEEP (ohm.m) | 32.24 | 33 |
+| RES_SHALLOW (ohm.m) | 28.26 | 33 |
+| **Δ Res (Deep − Shallow)** | **3.98** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -522,12 +522,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.6 | 33 |
-| RES_DEEP (ohm.m) | 79.88 | 33 |
-| RES_SHALLOW (ohm.m) | 33.40 | 33 |
-| **Δ Res (Deep − Shallow)** | **46.48** | — |
+| GR (gAPI) | 79.9 | 33 |
+| RES_DEEP (ohm.m) | 33.40 | 33 |
+| RES_SHALLOW (ohm.m) | 30.63 | 33 |
+| **Δ Res (Deep − Shallow)** | **2.77** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -551,12 +551,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.4 | 32 |
-| RES_DEEP (ohm.m) | 78.69 | 32 |
-| RES_SHALLOW (ohm.m) | 36.59 | 32 |
-| **Δ Res (Deep − Shallow)** | **42.11** | — |
+| GR (gAPI) | 78.7 | 32 |
+| RES_DEEP (ohm.m) | 36.59 | 32 |
+| RES_SHALLOW (ohm.m) | 30.42 | 32 |
+| **Δ Res (Deep − Shallow)** | **6.17** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -580,12 +580,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 29.6 | 33 |
-| RES_DEEP (ohm.m) | 75.33 | 33 |
-| RES_SHALLOW (ohm.m) | 36.62 | 33 |
-| **Δ Res (Deep − Shallow)** | **38.71** | — |
+| GR (gAPI) | 75.3 | 33 |
+| RES_DEEP (ohm.m) | 36.62 | 33 |
+| RES_SHALLOW (ohm.m) | 29.64 | 33 |
+| **Δ Res (Deep − Shallow)** | **6.99** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -609,12 +609,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.0 | 33 |
-| RES_DEEP (ohm.m) | 77.06 | 33 |
-| RES_SHALLOW (ohm.m) | 31.07 | 33 |
-| **Δ Res (Deep − Shallow)** | **46.00** | — |
+| GR (gAPI) | 77.1 | 33 |
+| RES_DEEP (ohm.m) | 31.07 | 33 |
+| RES_SHALLOW (ohm.m) | 27.00 | 33 |
+| **Δ Res (Deep − Shallow)** | **4.07** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -638,12 +638,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.5 | 33 |
-| RES_DEEP (ohm.m) | 76.36 | 33 |
-| RES_SHALLOW (ohm.m) | 32.17 | 33 |
-| **Δ Res (Deep − Shallow)** | **44.19** | — |
+| GR (gAPI) | 76.4 | 33 |
+| RES_DEEP (ohm.m) | 32.17 | 33 |
+| RES_SHALLOW (ohm.m) | 30.55 | 33 |
+| **Δ Res (Deep − Shallow)** | **1.63** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -667,12 +667,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 34.0 | 33 |
-| RES_DEEP (ohm.m) | 75.54 | 33 |
-| RES_SHALLOW (ohm.m) | 36.64 | 33 |
-| **Δ Res (Deep − Shallow)** | **38.90** | — |
+| GR (gAPI) | 75.5 | 33 |
+| RES_DEEP (ohm.m) | 36.64 | 33 |
+| RES_SHALLOW (ohm.m) | 34.00 | 33 |
+| **Δ Res (Deep − Shallow)** | **2.65** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -696,12 +696,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 33.9 | 32 |
-| RES_DEEP (ohm.m) | 65.98 | 32 |
-| RES_SHALLOW (ohm.m) | 36.30 | 32 |
-| **Δ Res (Deep − Shallow)** | **29.68** | — |
+| GR (gAPI) | 66.0 | 32 |
+| RES_DEEP (ohm.m) | 36.30 | 32 |
+| RES_SHALLOW (ohm.m) | 33.87 | 32 |
+| **Δ Res (Deep − Shallow)** | **2.42** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -725,12 +725,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 34.2 | 33 |
-| RES_DEEP (ohm.m) | 67.79 | 33 |
-| RES_SHALLOW (ohm.m) | 36.42 | 33 |
-| **Δ Res (Deep − Shallow)** | **31.37** | — |
+| GR (gAPI) | 67.8 | 33 |
+| RES_DEEP (ohm.m) | 36.42 | 33 |
+| RES_SHALLOW (ohm.m) | 34.25 | 33 |
+| **Δ Res (Deep − Shallow)** | **2.17** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -754,12 +754,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 34.1 | 33 |
-| RES_DEEP (ohm.m) | 73.32 | 33 |
-| RES_SHALLOW (ohm.m) | 36.55 | 33 |
-| **Δ Res (Deep − Shallow)** | **36.77** | — |
+| GR (gAPI) | 73.3 | 33 |
+| RES_DEEP (ohm.m) | 36.55 | 33 |
+| RES_SHALLOW (ohm.m) | 34.10 | 33 |
+| **Δ Res (Deep − Shallow)** | **2.45** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -783,12 +783,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 34.7 | 33 |
-| RES_DEEP (ohm.m) | 73.27 | 33 |
-| RES_SHALLOW (ohm.m) | 38.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **34.37** | — |
+| GR (gAPI) | 73.3 | 33 |
+| RES_DEEP (ohm.m) | 38.90 | 33 |
+| RES_SHALLOW (ohm.m) | 34.68 | 33 |
+| **Δ Res (Deep − Shallow)** | **4.23** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -812,12 +812,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 37.6 | 49 |
-| RES_DEEP (ohm.m) | 98.25 | 49 |
-| RES_SHALLOW (ohm.m) | 40.58 | 49 |
-| **Δ Res (Deep − Shallow)** | **57.67** | — |
+| GR (gAPI) | 98.3 | 49 |
+| RES_DEEP (ohm.m) | 40.58 | 49 |
+| RES_SHALLOW (ohm.m) | 37.62 | 49 |
+| **Δ Res (Deep − Shallow)** | **2.96** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -841,12 +841,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 38.5 | 66 |
-| RES_DEEP (ohm.m) | 100.93 | 66 |
-| RES_SHALLOW (ohm.m) | 40.88 | 66 |
-| **Δ Res (Deep − Shallow)** | **60.05** | — |
+| GR (gAPI) | 100.9 | 66 |
+| RES_DEEP (ohm.m) | 40.88 | 66 |
+| RES_SHALLOW (ohm.m) | 38.47 | 66 |
+| **Δ Res (Deep − Shallow)** | **2.41** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -869,12 +869,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 45.8 | 65 |
-| RES_DEEP (ohm.m) | 79.68 | 65 |
-| RES_SHALLOW (ohm.m) | 54.93 | 65 |
-| **Δ Res (Deep − Shallow)** | **24.75** | — |
+| GR (gAPI) | 79.7 | 65 |
+| RES_DEEP (ohm.m) | 54.93 | 65 |
+| RES_SHALLOW (ohm.m) | 45.76 | 65 |
+| **Δ Res (Deep − Shallow)** | **9.17** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -897,12 +897,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 40.3 | 66 |
-| RES_DEEP (ohm.m) | 77.48 | 66 |
-| RES_SHALLOW (ohm.m) | 48.52 | 66 |
-| **Δ Res (Deep − Shallow)** | **28.96** | — |
+| GR (gAPI) | 77.5 | 66 |
+| RES_DEEP (ohm.m) | 48.52 | 66 |
+| RES_SHALLOW (ohm.m) | 40.30 | 66 |
+| **Δ Res (Deep − Shallow)** | **8.21** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -926,12 +926,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 41.0 | 65 |
-| RES_DEEP (ohm.m) | 77.84 | 65 |
-| RES_SHALLOW (ohm.m) | 46.91 | 65 |
-| **Δ Res (Deep − Shallow)** | **30.94** | — |
+| GR (gAPI) | 77.8 | 65 |
+| RES_DEEP (ohm.m) | 46.91 | 65 |
+| RES_SHALLOW (ohm.m) | 41.03 | 65 |
+| **Δ Res (Deep − Shallow)** | **5.88** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -955,12 +955,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 38.3 | 66 |
-| RES_DEEP (ohm.m) | 93.45 | 66 |
-| RES_SHALLOW (ohm.m) | 43.70 | 66 |
-| **Δ Res (Deep − Shallow)** | **49.75** | — |
+| GR (gAPI) | 93.5 | 66 |
+| RES_DEEP (ohm.m) | 43.70 | 66 |
+| RES_SHALLOW (ohm.m) | 38.30 | 66 |
+| **Δ Res (Deep − Shallow)** | **5.40** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -984,12 +984,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 38.6 | 66 |
-| RES_DEEP (ohm.m) | 98.25 | 66 |
-| RES_SHALLOW (ohm.m) | 44.56 | 66 |
-| **Δ Res (Deep − Shallow)** | **53.68** | — |
+| GR (gAPI) | 98.2 | 66 |
+| RES_DEEP (ohm.m) | 44.56 | 66 |
+| RES_SHALLOW (ohm.m) | 38.59 | 66 |
+| **Δ Res (Deep − Shallow)** | **5.98** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1013,12 +1013,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 36.0 | 65 |
-| RES_DEEP (ohm.m) | 100.69 | 65 |
-| RES_SHALLOW (ohm.m) | 42.47 | 65 |
-| **Δ Res (Deep − Shallow)** | **58.22** | — |
+| GR (gAPI) | 100.7 | 65 |
+| RES_DEEP (ohm.m) | 42.47 | 65 |
+| RES_SHALLOW (ohm.m) | 35.99 | 65 |
+| **Δ Res (Deep − Shallow)** | **6.48** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1042,12 +1042,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.7 | 66 |
-| RES_DEEP (ohm.m) | 99.73 | 66 |
-| RES_SHALLOW (ohm.m) | 33.65 | 66 |
-| **Δ Res (Deep − Shallow)** | **66.08** | — |
+| GR (gAPI) | 99.7 | 66 |
+| RES_DEEP (ohm.m) | 33.65 | 66 |
+| RES_SHALLOW (ohm.m) | 30.67 | 66 |
+| **Δ Res (Deep − Shallow)** | **2.98** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1071,12 +1071,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 34.3 | 66 |
-| RES_DEEP (ohm.m) | 98.73 | 66 |
-| RES_SHALLOW (ohm.m) | 39.18 | 66 |
-| **Δ Res (Deep − Shallow)** | **59.55** | — |
+| GR (gAPI) | 98.7 | 66 |
+| RES_DEEP (ohm.m) | 39.18 | 66 |
+| RES_SHALLOW (ohm.m) | 34.31 | 66 |
+| **Δ Res (Deep − Shallow)** | **4.88** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1100,12 +1100,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 40.5 | 65 |
-| RES_DEEP (ohm.m) | 87.18 | 65 |
-| RES_SHALLOW (ohm.m) | 45.50 | 65 |
-| **Δ Res (Deep − Shallow)** | **41.68** | — |
+| GR (gAPI) | 87.2 | 65 |
+| RES_DEEP (ohm.m) | 45.50 | 65 |
+| RES_SHALLOW (ohm.m) | 40.48 | 65 |
+| **Δ Res (Deep − Shallow)** | **5.02** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1129,12 +1129,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 44.2 | 66 |
-| RES_DEEP (ohm.m) | 78.06 | 66 |
-| RES_SHALLOW (ohm.m) | 50.76 | 66 |
-| **Δ Res (Deep − Shallow)** | **27.30** | — |
+| GR (gAPI) | 78.1 | 66 |
+| RES_DEEP (ohm.m) | 50.76 | 66 |
+| RES_SHALLOW (ohm.m) | 44.24 | 66 |
+| **Δ Res (Deep − Shallow)** | **6.52** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1158,10 +1158,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 54.8 | 65 |
-| RES_DEEP (ohm.m) | 72.84 | 65 |
-| RES_SHALLOW (ohm.m) | 64.58 | 65 |
-| **Δ Res (Deep − Shallow)** | **8.26** | — |
+| GR (gAPI) | 72.8 | 65 |
+| RES_DEEP (ohm.m) | 64.58 | 65 |
+| RES_SHALLOW (ohm.m) | 54.75 | 65 |
+| **Δ Res (Deep − Shallow)** | **9.83** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -1188,12 +1188,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 54.3 | 66 |
-| RES_DEEP (ohm.m) | 99.82 | 66 |
-| RES_SHALLOW (ohm.m) | 80.76 | 66 |
-| **Δ Res (Deep − Shallow)** | **19.07** | — |
+| GR (gAPI) | 99.8 | 66 |
+| RES_DEEP (ohm.m) | 80.76 | 66 |
+| RES_SHALLOW (ohm.m) | 54.27 | 66 |
+| **Δ Res (Deep − Shallow)** | **26.48** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** Moderate-high inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1217,12 +1217,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 49.0 | 66 |
-| RES_DEEP (ohm.m) | 104.77 | 66 |
-| RES_SHALLOW (ohm.m) | 85.21 | 66 |
-| **Δ Res (Deep − Shallow)** | **19.55** | — |
+| GR (gAPI) | 104.8 | 66 |
+| RES_DEEP (ohm.m) | 85.21 | 66 |
+| RES_SHALLOW (ohm.m) | 48.96 | 66 |
+| **Δ Res (Deep − Shallow)** | **36.26** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** Moderate-high inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1246,12 +1246,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 52.6 | 65 |
-| RES_DEEP (ohm.m) | 104.84 | 65 |
-| RES_SHALLOW (ohm.m) | 88.13 | 65 |
-| **Δ Res (Deep − Shallow)** | **16.70** | — |
+| GR (gAPI) | 104.8 | 65 |
+| RES_DEEP (ohm.m) | 88.13 | 65 |
+| RES_SHALLOW (ohm.m) | 52.57 | 65 |
+| **Δ Res (Deep − Shallow)** | **35.57** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** Moderate-high inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1276,10 +1276,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 43.7 | 56 |
-| RES_DEEP (ohm.m) | 98.70 | 56 |
-| RES_SHALLOW (ohm.m) | 69.10 | 56 |
-| **Δ Res (Deep − Shallow)** | **29.60** | — |
+| GR (gAPI) | 98.7 | 56 |
+| RES_DEEP (ohm.m) | 69.10 | 56 |
+| RES_SHALLOW (ohm.m) | 43.73 | 56 |
+| **Δ Res (Deep − Shallow)** | **25.38** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -1306,10 +1306,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 42.4 | 33 |
-| RES_DEEP (ohm.m) | 107.36 | 33 |
-| RES_SHALLOW (ohm.m) | 73.27 | 33 |
-| **Δ Res (Deep − Shallow)** | **34.09** | — |
+| GR (gAPI) | 107.4 | 33 |
+| RES_DEEP (ohm.m) | 73.27 | 33 |
+| RES_SHALLOW (ohm.m) | 42.39 | 33 |
+| **Δ Res (Deep − Shallow)** | **30.88** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -1336,10 +1336,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 41.6 | 33 |
-| RES_DEEP (ohm.m) | 119.01 | 33 |
-| RES_SHALLOW (ohm.m) | 88.70 | 33 |
-| **Δ Res (Deep − Shallow)** | **30.30** | — |
+| GR (gAPI) | 119.0 | 33 |
+| RES_DEEP (ohm.m) | 88.70 | 33 |
+| RES_SHALLOW (ohm.m) | 41.56 | 33 |
+| **Δ Res (Deep − Shallow)** | **47.14** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -1366,12 +1366,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 49.1 | 32 |
-| RES_DEEP (ohm.m) | 117.87 | 32 |
-| RES_SHALLOW (ohm.m) | 112.18 | 32 |
-| **Δ Res (Deep − Shallow)** | **5.69** | — |
+| GR (gAPI) | 117.9 | 32 |
+| RES_DEEP (ohm.m) | 112.18 | 32 |
+| RES_SHALLOW (ohm.m) | 49.15 | 32 |
+| **Δ Res (Deep − Shallow)** | **63.03** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** High inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1396,12 +1396,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 55.2 | 43 |
-| RES_DEEP (ohm.m) | 119.48 | 43 |
-| RES_SHALLOW (ohm.m) | 123.49 | 43 |
-| **Δ Res (Deep − Shallow)** | **-4.01** | — |
+| GR (gAPI) | 119.5 | 43 |
+| RES_DEEP (ohm.m) | 123.49 | 43 |
+| RES_SHALLOW (ohm.m) | 55.19 | 43 |
+| **Δ Res (Deep − Shallow)** | **68.30** | — |
 
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
+**Permeability Proxy:** High inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1426,10 +1426,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 41.9 | 49 |
-| RES_DEEP (ohm.m) | 111.66 | 49 |
-| RES_SHALLOW (ohm.m) | 86.30 | 49 |
-| **Δ Res (Deep − Shallow)** | **25.36** | — |
+| GR (gAPI) | 111.7 | 49 |
+| RES_DEEP (ohm.m) | 86.30 | 49 |
+| RES_SHALLOW (ohm.m) | 41.92 | 49 |
+| **Δ Res (Deep − Shallow)** | **44.38** | — |
 
 **Permeability Proxy:** Moderate-high inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -1456,12 +1456,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 45.3 | 65 |
-| RES_DEEP (ohm.m) | 83.23 | 65 |
-| RES_SHALLOW (ohm.m) | 55.06 | 65 |
-| **Δ Res (Deep − Shallow)** | **28.17** | — |
+| GR (gAPI) | 83.2 | 65 |
+| RES_DEEP (ohm.m) | 55.06 | 65 |
+| RES_SHALLOW (ohm.m) | 45.33 | 65 |
+| **Δ Res (Deep − Shallow)** | **9.73** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1486,12 +1486,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 29.5 | 66 |
-| RES_DEEP (ohm.m) | 83.92 | 66 |
-| RES_SHALLOW (ohm.m) | 36.28 | 66 |
-| **Δ Res (Deep − Shallow)** | **47.64** | — |
+| GR (gAPI) | 83.9 | 66 |
+| RES_DEEP (ohm.m) | 36.28 | 66 |
+| RES_SHALLOW (ohm.m) | 29.45 | 66 |
+| **Δ Res (Deep − Shallow)** | **6.83** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1515,12 +1515,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 21.3 | 66 |
-| RES_DEEP (ohm.m) | 99.62 | 66 |
-| RES_SHALLOW (ohm.m) | 26.52 | 66 |
-| **Δ Res (Deep − Shallow)** | **73.10** | — |
+| GR (gAPI) | 99.6 | 66 |
+| RES_DEEP (ohm.m) | 26.52 | 66 |
+| RES_SHALLOW (ohm.m) | 21.31 | 66 |
+| **Δ Res (Deep − Shallow)** | **5.21** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1544,12 +1544,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 31.0 | 66 |
-| RES_DEEP (ohm.m) | 84.75 | 66 |
-| RES_SHALLOW (ohm.m) | 43.10 | 66 |
-| **Δ Res (Deep − Shallow)** | **41.66** | — |
+| GR (gAPI) | 84.8 | 66 |
+| RES_DEEP (ohm.m) | 43.10 | 66 |
+| RES_SHALLOW (ohm.m) | 31.03 | 66 |
+| **Δ Res (Deep − Shallow)** | **12.06** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1573,12 +1573,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 41.9 | 66 |
-| RES_DEEP (ohm.m) | 72.05 | 66 |
-| RES_SHALLOW (ohm.m) | 51.64 | 66 |
-| **Δ Res (Deep − Shallow)** | **20.40** | — |
+| GR (gAPI) | 72.0 | 66 |
+| RES_DEEP (ohm.m) | 51.64 | 66 |
+| RES_SHALLOW (ohm.m) | 41.87 | 66 |
+| **Δ Res (Deep − Shallow)** | **9.77** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1602,12 +1602,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 69.3 | 65 |
-| RES_DEEP (ohm.m) | 79.64 | 65 |
-| RES_SHALLOW (ohm.m) | 71.09 | 65 |
-| **Δ Res (Deep − Shallow)** | **8.55** | — |
+| GR (gAPI) | 79.6 | 65 |
+| RES_DEEP (ohm.m) | 71.09 | 65 |
+| RES_SHALLOW (ohm.m) | 69.30 | 65 |
+| **Δ Res (Deep − Shallow)** | **1.79** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1631,12 +1631,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 66.6 | 66 |
-| RES_DEEP (ohm.m) | 68.84 | 66 |
-| RES_SHALLOW (ohm.m) | 70.72 | 66 |
-| **Δ Res (Deep − Shallow)** | **-1.88** | — |
+| GR (gAPI) | 68.8 | 66 |
+| RES_DEEP (ohm.m) | 70.72 | 66 |
+| RES_SHALLOW (ohm.m) | 66.60 | 66 |
+| **Δ Res (Deep − Shallow)** | **4.12** | — |
 
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1661,10 +1661,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 73.8 | 65 |
-| RES_DEEP (ohm.m) | 59.88 | 65 |
-| RES_SHALLOW (ohm.m) | 68.81 | 65 |
-| **Δ Res (Deep − Shallow)** | **-8.92** | — |
+| GR (gAPI) | 59.9 | 65 |
+| RES_DEEP (ohm.m) | 68.81 | 65 |
+| RES_SHALLOW (ohm.m) | 73.85 | 65 |
+| **Δ Res (Deep − Shallow)** | **-5.04** | — |
 
 **Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -1691,12 +1691,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 59.2 | 66 |
-| RES_DEEP (ohm.m) | 76.70 | 66 |
-| RES_SHALLOW (ohm.m) | 59.92 | 66 |
-| **Δ Res (Deep − Shallow)** | **16.77** | — |
+| GR (gAPI) | 76.7 | 66 |
+| RES_DEEP (ohm.m) | 59.92 | 66 |
+| RES_SHALLOW (ohm.m) | 59.24 | 66 |
+| **Δ Res (Deep − Shallow)** | **0.68** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1721,12 +1721,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 49.8 | 66 |
-| RES_DEEP (ohm.m) | 79.67 | 66 |
-| RES_SHALLOW (ohm.m) | 55.51 | 66 |
-| **Δ Res (Deep − Shallow)** | **24.16** | — |
+| GR (gAPI) | 79.7 | 66 |
+| RES_DEEP (ohm.m) | 55.51 | 66 |
+| RES_SHALLOW (ohm.m) | 49.77 | 66 |
+| **Δ Res (Deep − Shallow)** | **5.74** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1751,12 +1751,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 44.8 | 49 |
-| RES_DEEP (ohm.m) | 75.96 | 49 |
-| RES_SHALLOW (ohm.m) | 48.63 | 49 |
-| **Δ Res (Deep − Shallow)** | **27.34** | — |
+| GR (gAPI) | 76.0 | 49 |
+| RES_DEEP (ohm.m) | 48.63 | 49 |
+| RES_SHALLOW (ohm.m) | 44.81 | 49 |
+| **Δ Res (Deep − Shallow)** | **3.81** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1780,12 +1780,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 37.1 | 26 |
-| RES_DEEP (ohm.m) | 70.98 | 26 |
-| RES_SHALLOW (ohm.m) | 41.86 | 26 |
-| **Δ Res (Deep − Shallow)** | **29.12** | — |
+| GR (gAPI) | 71.0 | 26 |
+| RES_DEEP (ohm.m) | 41.86 | 26 |
+| RES_SHALLOW (ohm.m) | 37.05 | 26 |
+| **Δ Res (Deep − Shallow)** | **4.81** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1809,12 +1809,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.6 | 20 |
-| RES_DEEP (ohm.m) | 70.44 | 20 |
-| RES_SHALLOW (ohm.m) | 37.19 | 20 |
-| **Δ Res (Deep − Shallow)** | **33.24** | — |
+| GR (gAPI) | 70.4 | 20 |
+| RES_DEEP (ohm.m) | 37.19 | 20 |
+| RES_SHALLOW (ohm.m) | 30.56 | 20 |
+| **Δ Res (Deep − Shallow)** | **6.63** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1839,12 +1839,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 24.3 | 19 |
-| RES_DEEP (ohm.m) | 76.41 | 19 |
-| RES_SHALLOW (ohm.m) | 32.80 | 19 |
-| **Δ Res (Deep − Shallow)** | **43.61** | — |
+| GR (gAPI) | 76.4 | 19 |
+| RES_DEEP (ohm.m) | 32.80 | 19 |
+| RES_SHALLOW (ohm.m) | 24.27 | 19 |
+| **Δ Res (Deep − Shallow)** | **8.52** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1869,12 +1869,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.0 | 20 |
-| RES_DEEP (ohm.m) | 85.74 | 20 |
-| RES_SHALLOW (ohm.m) | 35.27 | 20 |
-| **Δ Res (Deep − Shallow)** | **50.47** | — |
+| GR (gAPI) | 85.7 | 20 |
+| RES_DEEP (ohm.m) | 35.27 | 20 |
+| RES_SHALLOW (ohm.m) | 27.01 | 20 |
+| **Δ Res (Deep − Shallow)** | **8.26** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1898,12 +1898,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.9 | 20 |
-| RES_DEEP (ohm.m) | 74.48 | 20 |
-| RES_SHALLOW (ohm.m) | 29.50 | 20 |
-| **Δ Res (Deep − Shallow)** | **44.99** | — |
+| GR (gAPI) | 74.5 | 20 |
+| RES_DEEP (ohm.m) | 29.50 | 20 |
+| RES_SHALLOW (ohm.m) | 27.88 | 20 |
+| **Δ Res (Deep − Shallow)** | **1.61** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1927,12 +1927,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 25.7 | 20 |
-| RES_DEEP (ohm.m) | 73.45 | 20 |
-| RES_SHALLOW (ohm.m) | 27.24 | 20 |
-| **Δ Res (Deep − Shallow)** | **46.21** | — |
+| GR (gAPI) | 73.4 | 20 |
+| RES_DEEP (ohm.m) | 27.24 | 20 |
+| RES_SHALLOW (ohm.m) | 25.75 | 20 |
+| **Δ Res (Deep − Shallow)** | **1.49** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1956,12 +1956,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 25.0 | 19 |
-| RES_DEEP (ohm.m) | 71.95 | 19 |
-| RES_SHALLOW (ohm.m) | 26.39 | 19 |
-| **Δ Res (Deep − Shallow)** | **45.56** | — |
+| GR (gAPI) | 71.9 | 19 |
+| RES_DEEP (ohm.m) | 26.39 | 19 |
+| RES_SHALLOW (ohm.m) | 24.96 | 19 |
+| **Δ Res (Deep − Shallow)** | **1.43** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -1985,12 +1985,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.1 | 20 |
-| RES_DEEP (ohm.m) | 64.84 | 20 |
-| RES_SHALLOW (ohm.m) | 27.51 | 20 |
-| **Δ Res (Deep − Shallow)** | **37.34** | — |
+| GR (gAPI) | 64.8 | 20 |
+| RES_DEEP (ohm.m) | 27.51 | 20 |
+| RES_SHALLOW (ohm.m) | 27.12 | 20 |
+| **Δ Res (Deep − Shallow)** | **0.38** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2015,12 +2015,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.9 | 20 |
-| RES_DEEP (ohm.m) | 61.39 | 20 |
-| RES_SHALLOW (ohm.m) | 28.21 | 20 |
-| **Δ Res (Deep − Shallow)** | **33.18** | — |
+| GR (gAPI) | 61.4 | 20 |
+| RES_DEEP (ohm.m) | 28.21 | 20 |
+| RES_SHALLOW (ohm.m) | 26.89 | 20 |
+| **Δ Res (Deep − Shallow)** | **1.32** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2045,12 +2045,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.1 | 19 |
-| RES_DEEP (ohm.m) | 74.40 | 19 |
-| RES_SHALLOW (ohm.m) | 28.18 | 19 |
-| **Δ Res (Deep − Shallow)** | **46.22** | — |
+| GR (gAPI) | 74.4 | 19 |
+| RES_DEEP (ohm.m) | 28.18 | 19 |
+| RES_SHALLOW (ohm.m) | 27.07 | 19 |
+| **Δ Res (Deep − Shallow)** | **1.12** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2075,12 +2075,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 24.5 | 20 |
-| RES_DEEP (ohm.m) | 74.50 | 20 |
-| RES_SHALLOW (ohm.m) | 26.63 | 20 |
-| **Δ Res (Deep − Shallow)** | **47.87** | — |
+| GR (gAPI) | 74.5 | 20 |
+| RES_DEEP (ohm.m) | 26.63 | 20 |
+| RES_SHALLOW (ohm.m) | 24.48 | 20 |
+| **Δ Res (Deep − Shallow)** | **2.15** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2104,12 +2104,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.4 | 20 |
-| RES_DEEP (ohm.m) | 76.54 | 20 |
-| RES_SHALLOW (ohm.m) | 29.56 | 20 |
-| **Δ Res (Deep − Shallow)** | **46.98** | — |
+| GR (gAPI) | 76.5 | 20 |
+| RES_DEEP (ohm.m) | 29.56 | 20 |
+| RES_SHALLOW (ohm.m) | 27.40 | 20 |
+| **Δ Res (Deep − Shallow)** | **2.16** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2133,12 +2133,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 23.8 | 19 |
-| RES_DEEP (ohm.m) | 83.31 | 19 |
-| RES_SHALLOW (ohm.m) | 28.10 | 19 |
-| **Δ Res (Deep − Shallow)** | **55.22** | — |
+| GR (gAPI) | 83.3 | 19 |
+| RES_DEEP (ohm.m) | 28.10 | 19 |
+| RES_SHALLOW (ohm.m) | 23.81 | 19 |
+| **Δ Res (Deep − Shallow)** | **4.29** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2162,12 +2162,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 20.9 | 20 |
-| RES_DEEP (ohm.m) | 82.43 | 20 |
-| RES_SHALLOW (ohm.m) | 22.64 | 20 |
-| **Δ Res (Deep − Shallow)** | **59.79** | — |
+| GR (gAPI) | 82.4 | 20 |
+| RES_DEEP (ohm.m) | 22.64 | 20 |
+| RES_SHALLOW (ohm.m) | 20.93 | 20 |
+| **Δ Res (Deep − Shallow)** | **1.71** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2191,12 +2191,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 20.1 | 20 |
-| RES_DEEP (ohm.m) | 85.90 | 20 |
-| RES_SHALLOW (ohm.m) | 21.16 | 20 |
-| **Δ Res (Deep − Shallow)** | **64.74** | — |
+| GR (gAPI) | 85.9 | 20 |
+| RES_DEEP (ohm.m) | 21.16 | 20 |
+| RES_SHALLOW (ohm.m) | 20.09 | 20 |
+| **Δ Res (Deep − Shallow)** | **1.07** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2220,12 +2220,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 19.1 | 19 |
-| RES_DEEP (ohm.m) | 102.14 | 19 |
-| RES_SHALLOW (ohm.m) | 20.81 | 19 |
-| **Δ Res (Deep − Shallow)** | **81.33** | — |
+| GR (gAPI) | 102.1 | 19 |
+| RES_DEEP (ohm.m) | 20.81 | 19 |
+| RES_SHALLOW (ohm.m) | 19.10 | 19 |
+| **Δ Res (Deep − Shallow)** | **1.72** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2249,12 +2249,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 20.4 | 20 |
-| RES_DEEP (ohm.m) | 84.54 | 20 |
-| RES_SHALLOW (ohm.m) | 21.31 | 20 |
-| **Δ Res (Deep − Shallow)** | **63.22** | — |
+| GR (gAPI) | 84.5 | 20 |
+| RES_DEEP (ohm.m) | 21.31 | 20 |
+| RES_SHALLOW (ohm.m) | 20.38 | 20 |
+| **Δ Res (Deep − Shallow)** | **0.94** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2278,12 +2278,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 20.3 | 20 |
-| RES_DEEP (ohm.m) | 80.86 | 20 |
-| RES_SHALLOW (ohm.m) | 21.85 | 20 |
-| **Δ Res (Deep − Shallow)** | **59.01** | — |
+| GR (gAPI) | 80.9 | 20 |
+| RES_DEEP (ohm.m) | 21.85 | 20 |
+| RES_SHALLOW (ohm.m) | 20.31 | 20 |
+| **Δ Res (Deep − Shallow)** | **1.54** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2307,12 +2307,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 21.7 | 19 |
-| RES_DEEP (ohm.m) | 84.83 | 19 |
-| RES_SHALLOW (ohm.m) | 22.75 | 19 |
-| **Δ Res (Deep − Shallow)** | **62.08** | — |
+| GR (gAPI) | 84.8 | 19 |
+| RES_DEEP (ohm.m) | 22.75 | 19 |
+| RES_SHALLOW (ohm.m) | 21.71 | 19 |
+| **Δ Res (Deep − Shallow)** | **1.04** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2336,12 +2336,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 21.5 | 20 |
-| RES_DEEP (ohm.m) | 69.65 | 20 |
-| RES_SHALLOW (ohm.m) | 22.94 | 20 |
-| **Δ Res (Deep − Shallow)** | **46.72** | — |
+| GR (gAPI) | 69.7 | 20 |
+| RES_DEEP (ohm.m) | 22.94 | 20 |
+| RES_SHALLOW (ohm.m) | 21.49 | 20 |
+| **Δ Res (Deep − Shallow)** | **1.45** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2365,12 +2365,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 22.6 | 20 |
-| RES_DEEP (ohm.m) | 81.75 | 20 |
-| RES_SHALLOW (ohm.m) | 23.04 | 20 |
-| **Δ Res (Deep − Shallow)** | **58.72** | — |
+| GR (gAPI) | 81.8 | 20 |
+| RES_DEEP (ohm.m) | 23.04 | 20 |
+| RES_SHALLOW (ohm.m) | 22.57 | 20 |
+| **Δ Res (Deep − Shallow)** | **0.47** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2394,12 +2394,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 22.6 | 19 |
-| RES_DEEP (ohm.m) | 81.30 | 19 |
-| RES_SHALLOW (ohm.m) | 22.89 | 19 |
-| **Δ Res (Deep − Shallow)** | **58.41** | — |
+| GR (gAPI) | 81.3 | 19 |
+| RES_DEEP (ohm.m) | 22.89 | 19 |
+| RES_SHALLOW (ohm.m) | 22.65 | 19 |
+| **Δ Res (Deep − Shallow)** | **0.24** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2423,12 +2423,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 22.5 | 20 |
-| RES_DEEP (ohm.m) | 74.24 | 20 |
-| RES_SHALLOW (ohm.m) | 23.60 | 20 |
-| **Δ Res (Deep − Shallow)** | **50.64** | — |
+| GR (gAPI) | 74.2 | 20 |
+| RES_DEEP (ohm.m) | 23.60 | 20 |
+| RES_SHALLOW (ohm.m) | 22.47 | 20 |
+| **Δ Res (Deep − Shallow)** | **1.13** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2452,12 +2452,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 22.5 | 30 |
-| RES_DEEP (ohm.m) | 70.63 | 30 |
-| RES_SHALLOW (ohm.m) | 23.94 | 30 |
-| **Δ Res (Deep − Shallow)** | **46.70** | — |
+| GR (gAPI) | 70.6 | 30 |
+| RES_DEEP (ohm.m) | 23.94 | 30 |
+| RES_SHALLOW (ohm.m) | 22.47 | 30 |
+| **Δ Res (Deep − Shallow)** | **1.47** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2481,12 +2481,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 23.0 | 52 |
-| RES_DEEP (ohm.m) | 69.11 | 52 |
-| RES_SHALLOW (ohm.m) | 24.18 | 52 |
-| **Δ Res (Deep − Shallow)** | **44.92** | — |
+| GR (gAPI) | 69.1 | 52 |
+| RES_DEEP (ohm.m) | 24.18 | 52 |
+| RES_SHALLOW (ohm.m) | 22.99 | 52 |
+| **Δ Res (Deep − Shallow)** | **1.19** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2510,12 +2510,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 23.8 | 66 |
-| RES_DEEP (ohm.m) | 78.57 | 66 |
-| RES_SHALLOW (ohm.m) | 24.97 | 66 |
-| **Δ Res (Deep − Shallow)** | **53.60** | — |
+| GR (gAPI) | 78.6 | 66 |
+| RES_DEEP (ohm.m) | 24.97 | 66 |
+| RES_SHALLOW (ohm.m) | 23.78 | 66 |
+| **Δ Res (Deep − Shallow)** | **1.19** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2538,12 +2538,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 23.6 | 65 |
-| RES_DEEP (ohm.m) | 75.04 | 65 |
-| RES_SHALLOW (ohm.m) | 24.90 | 65 |
-| **Δ Res (Deep − Shallow)** | **50.14** | — |
+| GR (gAPI) | 75.0 | 65 |
+| RES_DEEP (ohm.m) | 24.90 | 65 |
+| RES_SHALLOW (ohm.m) | 23.56 | 65 |
+| **Δ Res (Deep − Shallow)** | **1.34** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2567,12 +2567,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 22.4 | 66 |
-| RES_DEEP (ohm.m) | 78.53 | 66 |
-| RES_SHALLOW (ohm.m) | 23.34 | 66 |
-| **Δ Res (Deep − Shallow)** | **55.19** | — |
+| GR (gAPI) | 78.5 | 66 |
+| RES_DEEP (ohm.m) | 23.34 | 66 |
+| RES_SHALLOW (ohm.m) | 22.44 | 66 |
+| **Δ Res (Deep − Shallow)** | **0.90** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2596,12 +2596,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 21.8 | 66 |
-| RES_DEEP (ohm.m) | 77.46 | 66 |
-| RES_SHALLOW (ohm.m) | 22.34 | 66 |
-| **Δ Res (Deep − Shallow)** | **55.12** | — |
+| GR (gAPI) | 77.5 | 66 |
+| RES_DEEP (ohm.m) | 22.34 | 66 |
+| RES_SHALLOW (ohm.m) | 21.79 | 66 |
+| **Δ Res (Deep − Shallow)** | **0.55** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2625,12 +2625,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 20.7 | 65 |
-| RES_DEEP (ohm.m) | 65.37 | 65 |
-| RES_SHALLOW (ohm.m) | 21.90 | 65 |
-| **Δ Res (Deep − Shallow)** | **43.47** | — |
+| GR (gAPI) | 65.4 | 65 |
+| RES_DEEP (ohm.m) | 21.90 | 65 |
+| RES_SHALLOW (ohm.m) | 20.75 | 65 |
+| **Δ Res (Deep − Shallow)** | **1.16** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2654,12 +2654,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 22.0 | 66 |
-| RES_DEEP (ohm.m) | 76.17 | 66 |
-| RES_SHALLOW (ohm.m) | 24.56 | 66 |
-| **Δ Res (Deep − Shallow)** | **51.61** | — |
+| GR (gAPI) | 76.2 | 66 |
+| RES_DEEP (ohm.m) | 24.56 | 66 |
+| RES_SHALLOW (ohm.m) | 21.97 | 66 |
+| **Δ Res (Deep − Shallow)** | **2.59** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2683,12 +2683,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 25.4 | 66 |
-| RES_DEEP (ohm.m) | 75.93 | 66 |
-| RES_SHALLOW (ohm.m) | 27.96 | 66 |
-| **Δ Res (Deep − Shallow)** | **47.98** | — |
+| GR (gAPI) | 75.9 | 66 |
+| RES_DEEP (ohm.m) | 27.96 | 66 |
+| RES_SHALLOW (ohm.m) | 25.43 | 66 |
+| **Δ Res (Deep − Shallow)** | **2.52** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2712,12 +2712,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 41.1 | 65 |
-| RES_DEEP (ohm.m) | 69.48 | 65 |
-| RES_SHALLOW (ohm.m) | 42.81 | 65 |
-| **Δ Res (Deep − Shallow)** | **26.67** | — |
+| GR (gAPI) | 69.5 | 65 |
+| RES_DEEP (ohm.m) | 42.81 | 65 |
+| RES_SHALLOW (ohm.m) | 41.09 | 65 |
+| **Δ Res (Deep − Shallow)** | **1.72** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2741,12 +2741,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 65.5 | 65 |
-| RES_DEEP (ohm.m) | 70.46 | 65 |
-| RES_SHALLOW (ohm.m) | 73.05 | 65 |
-| **Δ Res (Deep − Shallow)** | **-2.59** | — |
+| GR (gAPI) | 70.5 | 65 |
+| RES_DEEP (ohm.m) | 73.05 | 65 |
+| RES_SHALLOW (ohm.m) | 65.51 | 65 |
+| **Δ Res (Deep − Shallow)** | **7.54** | — |
 
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2771,12 +2771,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 67.4 | 66 |
-| RES_DEEP (ohm.m) | 76.79 | 66 |
-| RES_SHALLOW (ohm.m) | 70.23 | 66 |
-| **Δ Res (Deep − Shallow)** | **6.57** | — |
+| GR (gAPI) | 76.8 | 66 |
+| RES_DEEP (ohm.m) | 70.23 | 66 |
+| RES_SHALLOW (ohm.m) | 67.38 | 66 |
+| **Δ Res (Deep − Shallow)** | **2.84** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2801,12 +2801,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 47.1 | 66 |
-| RES_DEEP (ohm.m) | 73.52 | 66 |
-| RES_SHALLOW (ohm.m) | 52.68 | 66 |
-| **Δ Res (Deep − Shallow)** | **20.84** | — |
+| GR (gAPI) | 73.5 | 66 |
+| RES_DEEP (ohm.m) | 52.68 | 66 |
+| RES_SHALLOW (ohm.m) | 47.12 | 66 |
+| **Δ Res (Deep − Shallow)** | **5.56** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2831,12 +2831,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 32.4 | 65 |
-| RES_DEEP (ohm.m) | 77.84 | 65 |
-| RES_SHALLOW (ohm.m) | 37.24 | 65 |
-| **Δ Res (Deep − Shallow)** | **40.60** | — |
+| GR (gAPI) | 77.8 | 65 |
+| RES_DEEP (ohm.m) | 37.24 | 65 |
+| RES_SHALLOW (ohm.m) | 32.40 | 65 |
+| **Δ Res (Deep − Shallow)** | **4.84** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2860,12 +2860,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.1 | 66 |
-| RES_DEEP (ohm.m) | 76.58 | 66 |
-| RES_SHALLOW (ohm.m) | 31.08 | 66 |
-| **Δ Res (Deep − Shallow)** | **45.50** | — |
+| GR (gAPI) | 76.6 | 66 |
+| RES_DEEP (ohm.m) | 31.08 | 66 |
+| RES_SHALLOW (ohm.m) | 27.11 | 66 |
+| **Δ Res (Deep − Shallow)** | **3.97** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2890,12 +2890,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.5 | 65 |
-| RES_DEEP (ohm.m) | 82.34 | 65 |
-| RES_SHALLOW (ohm.m) | 29.79 | 65 |
-| **Δ Res (Deep − Shallow)** | **52.55** | — |
+| GR (gAPI) | 82.3 | 65 |
+| RES_DEEP (ohm.m) | 29.79 | 65 |
+| RES_SHALLOW (ohm.m) | 26.48 | 65 |
+| **Δ Res (Deep − Shallow)** | **3.31** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2919,12 +2919,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 25.0 | 66 |
-| RES_DEEP (ohm.m) | 87.87 | 66 |
-| RES_SHALLOW (ohm.m) | 27.36 | 66 |
-| **Δ Res (Deep − Shallow)** | **60.51** | — |
+| GR (gAPI) | 87.9 | 66 |
+| RES_DEEP (ohm.m) | 27.36 | 66 |
+| RES_SHALLOW (ohm.m) | 24.98 | 66 |
+| **Δ Res (Deep − Shallow)** | **2.39** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2949,12 +2949,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 24.5 | 66 |
-| RES_DEEP (ohm.m) | 88.24 | 66 |
-| RES_SHALLOW (ohm.m) | 28.10 | 66 |
-| **Δ Res (Deep − Shallow)** | **60.14** | — |
+| GR (gAPI) | 88.2 | 66 |
+| RES_DEEP (ohm.m) | 28.10 | 66 |
+| RES_SHALLOW (ohm.m) | 24.47 | 66 |
+| **Δ Res (Deep − Shallow)** | **3.63** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -2979,12 +2979,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.7 | 65 |
-| RES_DEEP (ohm.m) | 88.99 | 65 |
-| RES_SHALLOW (ohm.m) | 38.44 | 65 |
-| **Δ Res (Deep − Shallow)** | **50.55** | — |
+| GR (gAPI) | 89.0 | 65 |
+| RES_DEEP (ohm.m) | 38.44 | 65 |
+| RES_SHALLOW (ohm.m) | 30.66 | 65 |
+| **Δ Res (Deep − Shallow)** | **7.78** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3008,12 +3008,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 32.7 | 66 |
-| RES_DEEP (ohm.m) | 80.39 | 66 |
-| RES_SHALLOW (ohm.m) | 42.46 | 66 |
-| **Δ Res (Deep − Shallow)** | **37.93** | — |
+| GR (gAPI) | 80.4 | 66 |
+| RES_DEEP (ohm.m) | 42.46 | 66 |
+| RES_SHALLOW (ohm.m) | 32.70 | 66 |
+| **Δ Res (Deep − Shallow)** | **9.75** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3037,12 +3037,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 36.4 | 65 |
-| RES_DEEP (ohm.m) | 70.44 | 65 |
-| RES_SHALLOW (ohm.m) | 44.83 | 65 |
-| **Δ Res (Deep − Shallow)** | **25.61** | — |
+| GR (gAPI) | 70.4 | 65 |
+| RES_DEEP (ohm.m) | 44.83 | 65 |
+| RES_SHALLOW (ohm.m) | 36.39 | 65 |
+| **Δ Res (Deep − Shallow)** | **8.44** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3066,12 +3066,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 38.6 | 66 |
-| RES_DEEP (ohm.m) | 68.48 | 66 |
-| RES_SHALLOW (ohm.m) | 45.47 | 66 |
-| **Δ Res (Deep − Shallow)** | **23.00** | — |
+| GR (gAPI) | 68.5 | 66 |
+| RES_DEEP (ohm.m) | 45.47 | 66 |
+| RES_SHALLOW (ohm.m) | 38.58 | 66 |
+| **Δ Res (Deep − Shallow)** | **6.89** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3095,12 +3095,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 36.0 | 66 |
-| RES_DEEP (ohm.m) | 69.44 | 66 |
-| RES_SHALLOW (ohm.m) | 46.82 | 66 |
-| **Δ Res (Deep − Shallow)** | **22.62** | — |
+| GR (gAPI) | 69.4 | 66 |
+| RES_DEEP (ohm.m) | 46.82 | 66 |
+| RES_SHALLOW (ohm.m) | 36.02 | 66 |
+| **Δ Res (Deep − Shallow)** | **10.81** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3124,12 +3124,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 35.4 | 65 |
-| RES_DEEP (ohm.m) | 70.05 | 65 |
-| RES_SHALLOW (ohm.m) | 42.16 | 65 |
-| **Δ Res (Deep − Shallow)** | **27.89** | — |
+| GR (gAPI) | 70.0 | 65 |
+| RES_DEEP (ohm.m) | 42.16 | 65 |
+| RES_SHALLOW (ohm.m) | 35.42 | 65 |
+| **Δ Res (Deep − Shallow)** | **6.73** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3153,12 +3153,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 37.7 | 66 |
-| RES_DEEP (ohm.m) | 67.60 | 66 |
-| RES_SHALLOW (ohm.m) | 42.75 | 66 |
-| **Δ Res (Deep − Shallow)** | **24.85** | — |
+| GR (gAPI) | 67.6 | 66 |
+| RES_DEEP (ohm.m) | 42.75 | 66 |
+| RES_SHALLOW (ohm.m) | 37.69 | 66 |
+| **Δ Res (Deep − Shallow)** | **5.05** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3182,12 +3182,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 41.4 | 66 |
-| RES_DEEP (ohm.m) | 67.43 | 66 |
-| RES_SHALLOW (ohm.m) | 45.06 | 66 |
-| **Δ Res (Deep − Shallow)** | **22.37** | — |
+| GR (gAPI) | 67.4 | 66 |
+| RES_DEEP (ohm.m) | 45.06 | 66 |
+| RES_SHALLOW (ohm.m) | 41.35 | 66 |
+| **Δ Res (Deep − Shallow)** | **3.71** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3211,12 +3211,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 52.8 | 65 |
-| RES_DEEP (ohm.m) | 72.45 | 65 |
-| RES_SHALLOW (ohm.m) | 53.15 | 65 |
-| **Δ Res (Deep − Shallow)** | **19.30** | — |
+| GR (gAPI) | 72.5 | 65 |
+| RES_DEEP (ohm.m) | 53.15 | 65 |
+| RES_SHALLOW (ohm.m) | 52.85 | 65 |
+| **Δ Res (Deep − Shallow)** | **0.30** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3240,12 +3240,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 51.2 | 66 |
-| RES_DEEP (ohm.m) | 78.62 | 66 |
-| RES_SHALLOW (ohm.m) | 54.16 | 66 |
-| **Δ Res (Deep − Shallow)** | **24.46** | — |
+| GR (gAPI) | 78.6 | 66 |
+| RES_DEEP (ohm.m) | 54.16 | 66 |
+| RES_SHALLOW (ohm.m) | 51.19 | 66 |
+| **Δ Res (Deep − Shallow)** | **2.97** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3269,12 +3269,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 48.1 | 65 |
-| RES_DEEP (ohm.m) | 76.53 | 65 |
-| RES_SHALLOW (ohm.m) | 53.07 | 65 |
-| **Δ Res (Deep − Shallow)** | **23.46** | — |
+| GR (gAPI) | 76.5 | 65 |
+| RES_DEEP (ohm.m) | 53.07 | 65 |
+| RES_SHALLOW (ohm.m) | 48.14 | 65 |
+| **Δ Res (Deep − Shallow)** | **4.93** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3298,12 +3298,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 34.5 | 66 |
-| RES_DEEP (ohm.m) | 72.41 | 66 |
-| RES_SHALLOW (ohm.m) | 40.87 | 66 |
-| **Δ Res (Deep − Shallow)** | **31.54** | — |
+| GR (gAPI) | 72.4 | 66 |
+| RES_DEEP (ohm.m) | 40.87 | 66 |
+| RES_SHALLOW (ohm.m) | 34.54 | 66 |
+| **Δ Res (Deep − Shallow)** | **6.32** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3327,12 +3327,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 28.3 | 66 |
-| RES_DEEP (ohm.m) | 67.79 | 66 |
-| RES_SHALLOW (ohm.m) | 34.51 | 66 |
-| **Δ Res (Deep − Shallow)** | **33.28** | — |
+| GR (gAPI) | 67.8 | 66 |
+| RES_DEEP (ohm.m) | 34.51 | 66 |
+| RES_SHALLOW (ohm.m) | 28.26 | 66 |
+| **Δ Res (Deep − Shallow)** | **6.25** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3356,12 +3356,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 24.2 | 65 |
-| RES_DEEP (ohm.m) | 72.68 | 65 |
-| RES_SHALLOW (ohm.m) | 34.12 | 65 |
-| **Δ Res (Deep − Shallow)** | **38.56** | — |
+| GR (gAPI) | 72.7 | 65 |
+| RES_DEEP (ohm.m) | 34.12 | 65 |
+| RES_SHALLOW (ohm.m) | 24.23 | 65 |
+| **Δ Res (Deep − Shallow)** | **9.89** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3385,12 +3385,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 25.6 | 66 |
-| RES_DEEP (ohm.m) | 80.55 | 66 |
-| RES_SHALLOW (ohm.m) | 33.36 | 66 |
-| **Δ Res (Deep − Shallow)** | **47.19** | — |
+| GR (gAPI) | 80.6 | 66 |
+| RES_DEEP (ohm.m) | 33.36 | 66 |
+| RES_SHALLOW (ohm.m) | 25.57 | 66 |
+| **Δ Res (Deep − Shallow)** | **7.79** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3414,12 +3414,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.0 | 65 |
-| RES_DEEP (ohm.m) | 91.88 | 65 |
-| RES_SHALLOW (ohm.m) | 32.91 | 65 |
-| **Δ Res (Deep − Shallow)** | **58.97** | — |
+| GR (gAPI) | 91.9 | 65 |
+| RES_DEEP (ohm.m) | 32.91 | 65 |
+| RES_SHALLOW (ohm.m) | 27.00 | 65 |
+| **Δ Res (Deep − Shallow)** | **5.90** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3443,12 +3443,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 25.6 | 66 |
-| RES_DEEP (ohm.m) | 87.97 | 66 |
-| RES_SHALLOW (ohm.m) | 29.18 | 66 |
-| **Δ Res (Deep − Shallow)** | **58.79** | — |
+| GR (gAPI) | 88.0 | 66 |
+| RES_DEEP (ohm.m) | 29.18 | 66 |
+| RES_SHALLOW (ohm.m) | 25.56 | 66 |
+| **Δ Res (Deep − Shallow)** | **3.62** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3472,12 +3472,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 23.3 | 66 |
-| RES_DEEP (ohm.m) | 88.12 | 66 |
-| RES_SHALLOW (ohm.m) | 27.55 | 66 |
-| **Δ Res (Deep − Shallow)** | **60.57** | — |
+| GR (gAPI) | 88.1 | 66 |
+| RES_DEEP (ohm.m) | 27.55 | 66 |
+| RES_SHALLOW (ohm.m) | 23.34 | 66 |
+| **Δ Res (Deep − Shallow)** | **4.22** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3501,12 +3501,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.5 | 65 |
-| RES_DEEP (ohm.m) | 85.32 | 65 |
-| RES_SHALLOW (ohm.m) | 31.39 | 65 |
-| **Δ Res (Deep − Shallow)** | **53.93** | — |
+| GR (gAPI) | 85.3 | 65 |
+| RES_DEEP (ohm.m) | 31.39 | 65 |
+| RES_SHALLOW (ohm.m) | 27.54 | 65 |
+| **Δ Res (Deep − Shallow)** | **3.85** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3530,12 +3530,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 34.0 | 66 |
-| RES_DEEP (ohm.m) | 91.98 | 66 |
-| RES_SHALLOW (ohm.m) | 39.12 | 66 |
-| **Δ Res (Deep − Shallow)** | **52.86** | — |
+| GR (gAPI) | 92.0 | 66 |
+| RES_DEEP (ohm.m) | 39.12 | 66 |
+| RES_SHALLOW (ohm.m) | 34.03 | 66 |
+| **Δ Res (Deep − Shallow)** | **5.09** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3559,12 +3559,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 35.4 | 66 |
-| RES_DEEP (ohm.m) | 90.76 | 66 |
-| RES_SHALLOW (ohm.m) | 43.25 | 66 |
-| **Δ Res (Deep − Shallow)** | **47.51** | — |
+| GR (gAPI) | 90.8 | 66 |
+| RES_DEEP (ohm.m) | 43.25 | 66 |
+| RES_SHALLOW (ohm.m) | 35.44 | 66 |
+| **Δ Res (Deep − Shallow)** | **7.81** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3588,12 +3588,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 34.2 | 65 |
-| RES_DEEP (ohm.m) | 88.57 | 65 |
-| RES_SHALLOW (ohm.m) | 40.56 | 65 |
-| **Δ Res (Deep − Shallow)** | **48.01** | — |
+| GR (gAPI) | 88.6 | 65 |
+| RES_DEEP (ohm.m) | 40.56 | 65 |
+| RES_SHALLOW (ohm.m) | 34.22 | 65 |
+| **Δ Res (Deep − Shallow)** | **6.34** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3617,12 +3617,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 31.5 | 66 |
-| RES_DEEP (ohm.m) | 88.50 | 66 |
-| RES_SHALLOW (ohm.m) | 38.22 | 66 |
-| **Δ Res (Deep − Shallow)** | **50.27** | — |
+| GR (gAPI) | 88.5 | 66 |
+| RES_DEEP (ohm.m) | 38.22 | 66 |
+| RES_SHALLOW (ohm.m) | 31.54 | 66 |
+| **Δ Res (Deep − Shallow)** | **6.69** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3646,12 +3646,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 32.9 | 49 |
-| RES_DEEP (ohm.m) | 91.98 | 49 |
-| RES_SHALLOW (ohm.m) | 42.85 | 49 |
-| **Δ Res (Deep − Shallow)** | **49.13** | — |
+| GR (gAPI) | 92.0 | 49 |
+| RES_DEEP (ohm.m) | 42.85 | 49 |
+| RES_SHALLOW (ohm.m) | 32.86 | 49 |
+| **Δ Res (Deep − Shallow)** | **10.00** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3675,12 +3675,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 34.3 | 33 |
-| RES_DEEP (ohm.m) | 76.27 | 33 |
-| RES_SHALLOW (ohm.m) | 47.27 | 33 |
-| **Δ Res (Deep − Shallow)** | **29.00** | — |
+| GR (gAPI) | 76.3 | 33 |
+| RES_DEEP (ohm.m) | 47.27 | 33 |
+| RES_SHALLOW (ohm.m) | 34.31 | 33 |
+| **Δ Res (Deep − Shallow)** | **12.96** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3704,12 +3704,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 36.6 | 33 |
-| RES_DEEP (ohm.m) | 70.85 | 33 |
-| RES_SHALLOW (ohm.m) | 45.58 | 33 |
-| **Δ Res (Deep − Shallow)** | **25.27** | — |
+| GR (gAPI) | 70.8 | 33 |
+| RES_DEEP (ohm.m) | 45.58 | 33 |
+| RES_SHALLOW (ohm.m) | 36.63 | 33 |
+| **Δ Res (Deep − Shallow)** | **8.95** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3733,12 +3733,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 38.0 | 32 |
-| RES_DEEP (ohm.m) | 64.55 | 32 |
-| RES_SHALLOW (ohm.m) | 43.68 | 32 |
-| **Δ Res (Deep − Shallow)** | **20.87** | — |
+| GR (gAPI) | 64.5 | 32 |
+| RES_DEEP (ohm.m) | 43.68 | 32 |
+| RES_SHALLOW (ohm.m) | 38.01 | 32 |
+| **Δ Res (Deep − Shallow)** | **5.66** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3762,12 +3762,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 36.6 | 33 |
-| RES_DEEP (ohm.m) | 74.81 | 33 |
-| RES_SHALLOW (ohm.m) | 41.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **32.88** | — |
+| GR (gAPI) | 74.8 | 33 |
+| RES_DEEP (ohm.m) | 41.93 | 33 |
+| RES_SHALLOW (ohm.m) | 36.57 | 33 |
+| **Δ Res (Deep − Shallow)** | **5.36** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3791,12 +3791,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 50.5 | 33 |
-| RES_DEEP (ohm.m) | 76.21 | 33 |
-| RES_SHALLOW (ohm.m) | 52.91 | 33 |
-| **Δ Res (Deep − Shallow)** | **23.30** | — |
+| GR (gAPI) | 76.2 | 33 |
+| RES_DEEP (ohm.m) | 52.91 | 33 |
+| RES_SHALLOW (ohm.m) | 50.49 | 33 |
+| **Δ Res (Deep − Shallow)** | **2.43** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3820,12 +3820,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 61.5 | 33 |
-| RES_DEEP (ohm.m) | 69.99 | 33 |
-| RES_SHALLOW (ohm.m) | 62.14 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.85** | — |
+| GR (gAPI) | 70.0 | 33 |
+| RES_DEEP (ohm.m) | 62.14 | 33 |
+| RES_SHALLOW (ohm.m) | 61.48 | 33 |
+| **Δ Res (Deep − Shallow)** | **0.66** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3849,10 +3849,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 57.7 | 33 |
-| RES_DEEP (ohm.m) | 70.40 | 33 |
-| RES_SHALLOW (ohm.m) | 63.51 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.89** | — |
+| GR (gAPI) | 70.4 | 33 |
+| RES_DEEP (ohm.m) | 63.51 | 33 |
+| RES_SHALLOW (ohm.m) | 57.71 | 33 |
+| **Δ Res (Deep − Shallow)** | **5.80** | — |
 
 **Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
@@ -3878,12 +3878,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 57.9 | 32 |
-| RES_DEEP (ohm.m) | 70.40 | 32 |
-| RES_SHALLOW (ohm.m) | 67.52 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.88** | — |
+| GR (gAPI) | 70.4 | 32 |
+| RES_DEEP (ohm.m) | 67.52 | 32 |
+| RES_SHALLOW (ohm.m) | 57.86 | 32 |
+| **Δ Res (Deep − Shallow)** | **9.66** | — |
 
-**Permeability Proxy:** Low-moderate inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3907,12 +3907,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 48.2 | 66 |
-| RES_DEEP (ohm.m) | 93.70 | 66 |
-| RES_SHALLOW (ohm.m) | 81.03 | 66 |
-| **Δ Res (Deep − Shallow)** | **12.66** | — |
+| GR (gAPI) | 93.7 | 66 |
+| RES_DEEP (ohm.m) | 81.03 | 66 |
+| RES_SHALLOW (ohm.m) | 48.24 | 66 |
+| **Δ Res (Deep − Shallow)** | **32.79** | — |
 
-**Permeability Proxy:** Moderate inferred permeability
+**Permeability Proxy:** Moderate-high inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3936,12 +3936,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 65.4 | 65 |
-| RES_DEEP (ohm.m) | 64.54 | 65 |
-| RES_SHALLOW (ohm.m) | 63.84 | 65 |
-| **Δ Res (Deep − Shallow)** | **0.70** | — |
+| GR (gAPI) | 64.5 | 65 |
+| RES_DEEP (ohm.m) | 63.84 | 65 |
+| RES_SHALLOW (ohm.m) | 65.36 | 65 |
+| **Δ Res (Deep − Shallow)** | **-1.52** | — |
 
-**Permeability Proxy:** Low-moderate inferred permeability
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3965,12 +3965,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 38.6 | 66 |
-| RES_DEEP (ohm.m) | 70.45 | 66 |
-| RES_SHALLOW (ohm.m) | 44.45 | 66 |
-| **Δ Res (Deep − Shallow)** | **26.00** | — |
+| GR (gAPI) | 70.5 | 66 |
+| RES_DEEP (ohm.m) | 44.45 | 66 |
+| RES_SHALLOW (ohm.m) | 38.63 | 66 |
+| **Δ Res (Deep − Shallow)** | **5.82** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -3994,12 +3994,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 25.4 | 65 |
-| RES_DEEP (ohm.m) | 73.64 | 65 |
-| RES_SHALLOW (ohm.m) | 35.05 | 65 |
-| **Δ Res (Deep − Shallow)** | **38.59** | — |
+| GR (gAPI) | 73.6 | 65 |
+| RES_DEEP (ohm.m) | 35.05 | 65 |
+| RES_SHALLOW (ohm.m) | 25.41 | 65 |
+| **Δ Res (Deep − Shallow)** | **9.63** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4023,12 +4023,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 21.8 | 66 |
-| RES_DEEP (ohm.m) | 89.52 | 66 |
-| RES_SHALLOW (ohm.m) | 33.01 | 66 |
-| **Δ Res (Deep − Shallow)** | **56.51** | — |
+| GR (gAPI) | 89.5 | 66 |
+| RES_DEEP (ohm.m) | 33.01 | 66 |
+| RES_SHALLOW (ohm.m) | 21.78 | 66 |
+| **Δ Res (Deep − Shallow)** | **11.23** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4052,12 +4052,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.5 | 66 |
-| RES_DEEP (ohm.m) | 74.78 | 66 |
-| RES_SHALLOW (ohm.m) | 40.63 | 66 |
-| **Δ Res (Deep − Shallow)** | **34.15** | — |
+| GR (gAPI) | 74.8 | 66 |
+| RES_DEEP (ohm.m) | 40.63 | 66 |
+| RES_SHALLOW (ohm.m) | 26.48 | 66 |
+| **Δ Res (Deep − Shallow)** | **14.14** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4081,12 +4081,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 24.6 | 65 |
-| RES_DEEP (ohm.m) | 67.51 | 65 |
-| RES_SHALLOW (ohm.m) | 27.79 | 65 |
-| **Δ Res (Deep − Shallow)** | **39.72** | — |
+| GR (gAPI) | 67.5 | 65 |
+| RES_DEEP (ohm.m) | 27.79 | 65 |
+| RES_SHALLOW (ohm.m) | 24.59 | 65 |
+| **Δ Res (Deep − Shallow)** | **3.19** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4110,12 +4110,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 25.9 | 66 |
-| RES_DEEP (ohm.m) | 76.78 | 66 |
-| RES_SHALLOW (ohm.m) | 27.19 | 66 |
-| **Δ Res (Deep − Shallow)** | **49.59** | — |
+| GR (gAPI) | 76.8 | 66 |
+| RES_DEEP (ohm.m) | 27.19 | 66 |
+| RES_SHALLOW (ohm.m) | 25.90 | 66 |
+| **Δ Res (Deep − Shallow)** | **1.29** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4139,12 +4139,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.6 | 66 |
-| RES_DEEP (ohm.m) | 75.16 | 66 |
-| RES_SHALLOW (ohm.m) | 27.61 | 66 |
-| **Δ Res (Deep − Shallow)** | **47.55** | — |
+| GR (gAPI) | 75.2 | 66 |
+| RES_DEEP (ohm.m) | 27.61 | 66 |
+| RES_SHALLOW (ohm.m) | 26.57 | 66 |
+| **Δ Res (Deep − Shallow)** | **1.04** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4168,12 +4168,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 24.9 | 65 |
-| RES_DEEP (ohm.m) | 79.91 | 65 |
-| RES_SHALLOW (ohm.m) | 25.90 | 65 |
-| **Δ Res (Deep − Shallow)** | **54.01** | — |
+| GR (gAPI) | 79.9 | 65 |
+| RES_DEEP (ohm.m) | 25.90 | 65 |
+| RES_SHALLOW (ohm.m) | 24.89 | 65 |
+| **Δ Res (Deep − Shallow)** | **1.01** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4197,12 +4197,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 23.6 | 66 |
-| RES_DEEP (ohm.m) | 72.28 | 66 |
-| RES_SHALLOW (ohm.m) | 26.36 | 66 |
-| **Δ Res (Deep − Shallow)** | **45.92** | — |
+| GR (gAPI) | 72.3 | 66 |
+| RES_DEEP (ohm.m) | 26.36 | 66 |
+| RES_SHALLOW (ohm.m) | 23.61 | 66 |
+| **Δ Res (Deep − Shallow)** | **2.75** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4226,12 +4226,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 22.0 | 65 |
-| RES_DEEP (ohm.m) | 70.05 | 65 |
-| RES_SHALLOW (ohm.m) | 23.40 | 65 |
-| **Δ Res (Deep − Shallow)** | **46.65** | — |
+| GR (gAPI) | 70.0 | 65 |
+| RES_DEEP (ohm.m) | 23.40 | 65 |
+| RES_SHALLOW (ohm.m) | 21.99 | 65 |
+| **Δ Res (Deep − Shallow)** | **1.41** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4255,12 +4255,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.0 | 66 |
-| RES_DEEP (ohm.m) | 68.52 | 66 |
-| RES_SHALLOW (ohm.m) | 28.03 | 66 |
-| **Δ Res (Deep − Shallow)** | **40.49** | — |
+| GR (gAPI) | 68.5 | 66 |
+| RES_DEEP (ohm.m) | 28.03 | 66 |
+| RES_SHALLOW (ohm.m) | 26.04 | 66 |
+| **Δ Res (Deep − Shallow)** | **1.99** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4284,12 +4284,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.7 | 66 |
-| RES_DEEP (ohm.m) | 68.32 | 66 |
-| RES_SHALLOW (ohm.m) | 28.56 | 66 |
-| **Δ Res (Deep − Shallow)** | **39.75** | — |
+| GR (gAPI) | 68.3 | 66 |
+| RES_DEEP (ohm.m) | 28.56 | 66 |
+| RES_SHALLOW (ohm.m) | 27.70 | 66 |
+| **Δ Res (Deep − Shallow)** | **0.87** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4313,12 +4313,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.3 | 65 |
-| RES_DEEP (ohm.m) | 76.18 | 65 |
-| RES_SHALLOW (ohm.m) | 27.69 | 65 |
-| **Δ Res (Deep − Shallow)** | **48.49** | — |
+| GR (gAPI) | 76.2 | 65 |
+| RES_DEEP (ohm.m) | 27.69 | 65 |
+| RES_SHALLOW (ohm.m) | 26.26 | 65 |
+| **Δ Res (Deep − Shallow)** | **1.44** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4342,12 +4342,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.4 | 66 |
-| RES_DEEP (ohm.m) | 62.22 | 66 |
-| RES_SHALLOW (ohm.m) | 26.62 | 66 |
-| **Δ Res (Deep − Shallow)** | **35.59** | — |
+| GR (gAPI) | 62.2 | 66 |
+| RES_DEEP (ohm.m) | 26.62 | 66 |
+| RES_SHALLOW (ohm.m) | 27.40 | 66 |
+| **Δ Res (Deep − Shallow)** | **-0.78** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4371,12 +4371,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.0 | 65 |
-| RES_DEEP (ohm.m) | 64.30 | 65 |
-| RES_SHALLOW (ohm.m) | 25.78 | 65 |
-| **Δ Res (Deep − Shallow)** | **38.52** | — |
+| GR (gAPI) | 64.3 | 65 |
+| RES_DEEP (ohm.m) | 25.78 | 65 |
+| RES_SHALLOW (ohm.m) | 26.00 | 65 |
+| **Δ Res (Deep − Shallow)** | **-0.22** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4400,12 +4400,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 29.1 | 66 |
-| RES_DEEP (ohm.m) | 70.11 | 66 |
-| RES_SHALLOW (ohm.m) | 28.24 | 66 |
-| **Δ Res (Deep − Shallow)** | **41.87** | — |
+| GR (gAPI) | 70.1 | 66 |
+| RES_DEEP (ohm.m) | 28.24 | 66 |
+| RES_SHALLOW (ohm.m) | 29.09 | 66 |
+| **Δ Res (Deep − Shallow)** | **-0.85** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4429,12 +4429,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 28.1 | 66 |
-| RES_DEEP (ohm.m) | 67.03 | 66 |
-| RES_SHALLOW (ohm.m) | 28.82 | 66 |
-| **Δ Res (Deep − Shallow)** | **38.21** | — |
+| GR (gAPI) | 67.0 | 66 |
+| RES_DEEP (ohm.m) | 28.82 | 66 |
+| RES_SHALLOW (ohm.m) | 28.08 | 66 |
+| **Δ Res (Deep − Shallow)** | **0.74** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4458,12 +4458,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 28.6 | 65 |
-| RES_DEEP (ohm.m) | 62.96 | 65 |
-| RES_SHALLOW (ohm.m) | 27.95 | 65 |
-| **Δ Res (Deep − Shallow)** | **35.01** | — |
+| GR (gAPI) | 63.0 | 65 |
+| RES_DEEP (ohm.m) | 27.95 | 65 |
+| RES_SHALLOW (ohm.m) | 28.62 | 65 |
+| **Δ Res (Deep − Shallow)** | **-0.67** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4487,12 +4487,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.4 | 66 |
-| RES_DEEP (ohm.m) | 61.83 | 66 |
-| RES_SHALLOW (ohm.m) | 26.97 | 66 |
-| **Δ Res (Deep − Shallow)** | **34.86** | — |
+| GR (gAPI) | 61.8 | 66 |
+| RES_DEEP (ohm.m) | 26.97 | 66 |
+| RES_SHALLOW (ohm.m) | 27.35 | 66 |
+| **Δ Res (Deep − Shallow)** | **-0.38** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4516,12 +4516,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 26.1 | 66 |
-| RES_DEEP (ohm.m) | 66.36 | 66 |
-| RES_SHALLOW (ohm.m) | 25.95 | 66 |
-| **Δ Res (Deep − Shallow)** | **40.41** | — |
+| GR (gAPI) | 66.4 | 66 |
+| RES_DEEP (ohm.m) | 25.95 | 66 |
+| RES_SHALLOW (ohm.m) | 26.08 | 66 |
+| **Δ Res (Deep − Shallow)** | **-0.14** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4545,12 +4545,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 28.6 | 65 |
-| RES_DEEP (ohm.m) | 60.49 | 65 |
-| RES_SHALLOW (ohm.m) | 27.78 | 65 |
-| **Δ Res (Deep − Shallow)** | **32.71** | — |
+| GR (gAPI) | 60.5 | 65 |
+| RES_DEEP (ohm.m) | 27.78 | 65 |
+| RES_SHALLOW (ohm.m) | 28.64 | 65 |
+| **Δ Res (Deep − Shallow)** | **-0.86** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4574,12 +4574,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 30.6 | 66 |
-| RES_DEEP (ohm.m) | 67.08 | 66 |
-| RES_SHALLOW (ohm.m) | 30.05 | 66 |
-| **Δ Res (Deep − Shallow)** | **37.03** | — |
+| GR (gAPI) | 67.1 | 66 |
+| RES_DEEP (ohm.m) | 30.05 | 66 |
+| RES_SHALLOW (ohm.m) | 30.60 | 66 |
+| **Δ Res (Deep − Shallow)** | **-0.55** | — |
 
-**Permeability Proxy:** Moderate-high inferred permeability
+**Permeability Proxy:** Low inferred permeability (tight/cemented)
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4603,12 +4603,12 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
 |-------|---------|-------------|
-| GR (gAPI) | 27.8 | 65 |
-| RES_DEEP (ohm.m) | 81.86 | 65 |
-| RES_SHALLOW (ohm.m) | 30.50 | 65 |
-| **Δ Res (Deep − Shallow)** | **51.36** | — |
+| GR (gAPI) | 81.9 | 65 |
+| RES_DEEP (ohm.m) | 30.50 | 65 |
+| RES_SHALLOW (ohm.m) | 27.79 | 65 |
+| **Δ Res (Deep − Shallow)** | **2.72** | — |
 
-**Permeability Proxy:** High inferred permeability
+**Permeability Proxy:** Low-moderate inferred permeability
 > Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
@@ -4620,7 +4620,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Intervals analysed | 156 |
 | Depth range | 1585 – 3260 m |
 | Avg % Sandstone | 94.7% |
-| Avg Δ Res (Deep−Shallow) | 40.05 ohm.m |
-| Max Δ Res | 81.33 ohm.m |
-| Min Δ Res | -8.92 ohm.m |
+| Avg Δ Res (Deep−Shallow) | 6.21 ohm.m |
+| Max Δ Res | 68.30 ohm.m |
+| Min Δ Res | -5.04 ohm.m |
 | Mudlog matches | 156 / 156 |

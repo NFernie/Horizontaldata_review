@@ -349,29 +349,144 @@ def parse_mudlog_entries(text):
     return entries
 
 
+LAS_CURVE_ALIASES = {
+    "GR": ("GR", "GR_GOLD"),
+    "RES_DEEP": ("RES_DEEP", "RES_DEEP_GOLD", "RD"),
+    "RES_SHALLOW": ("RES_SHALLOW", "RES_SHALLOW_GOLD", "RS"),
+    "RES_MED": ("RES_MED", "RES_MEDIUM_GOLD"),
+}
+
+
+def _las_mnemonic(line):
+    """Extract the curve mnemonic from a ~Curve section line."""
+    token = line.strip().split()[0]
+    return token.split(".")[0].upper()
+
+
+def _map_las_columns(curve_names):
+    """Map LAS curve mnemonics to canonical column names by name, not position."""
+    upper = [name.upper() for name in curve_names]
+    col_map = {}
+    for canonical, aliases in LAS_CURVE_ALIASES.items():
+        for alias in aliases:
+            if alias in upper:
+                col_map[upper.index(alias)] = canonical
+                break
+    return col_map
+
+
 def parse_las(las_path):
+    """Read LAS file using ~Curve mnemonics; map aliases to canonical curve names."""
+    curve_names = []
     data = []
+    section = None
     with open(las_path) as f:
-        in_ascii = False
         for line in f:
-            if line.strip().startswith("~Ascii"):
-                in_ascii = True
+            stripped = line.strip()
+            if stripped.startswith("~"):
+                section = stripped[1:].split()[0].lower()
                 continue
-            if in_ascii and line.strip():
+            if section == "curve" and stripped and not stripped.startswith("#"):
+                curve_names.append(_las_mnemonic(line))
+                continue
+            if section == "ascii" and stripped:
                 parts = line.split()
-                if len(parts) >= 4:
-                    data.append(
-                        {
-                            "depth": float(parts[0]),
-                            "GR": float(parts[1]),
-                            "RES_DEEP": float(parts[2]),
-                            "RES_MED": float(parts[3]),
-                            "RES_SHALLOW": float(parts[4])
-                            if len(parts) > 4
-                            else NULL,
-                        }
-                    )
+                if len(parts) < 2:
+                    continue
+                row = {"depth": float(parts[0])}
+                col_map = _map_las_columns(curve_names)
+                for idx, canonical in col_map.items():
+                    if idx < len(parts):
+                        row[canonical] = float(parts[idx])
+                for canonical in LAS_CURVE_ALIASES:
+                    row.setdefault(canonical, NULL)
+                data.append(row)
     return pd.DataFrame(data)
+
+
+def parse_porosity(text):
+    """
+    Parse porosity class from cuttings description text.
+
+    Returns one of: none, poor, p-fr, fr, fr-gd, gd (or None if text empty).
+    """
+    if not isinstance(text, str) or not text.strip():
+        return None
+    t = text.lower()
+    if re.search(r"\bno\s+por\b|\bno\s+porosity\b|\bnil\s+por\b", t):
+        return "none"
+    if re.search(r"\bfr[\s-]?gd\b|\bfr[\s-]?good\b", t):
+        return "fr-gd"
+    if re.search(r"\bp[\s-]?fr\b|\bfr[\s-]?pr\b|\bpoor[\s-]?fair\b", t):
+        return "p-fr"
+    if re.search(r"\bgd\b(?!\w)|\bgood\s+por\b|\bgood\s+porosity\b", t):
+        return "gd"
+    if re.search(r"\bfr\b(?!\w)|\bfair\s+por\b|\bfair\s+porosity\b|\bvis\s+por\b|\binf\s+por\b", t):
+        return "fr"
+    if re.search(r"\bpoor\s+por\b|\bpoor\s+porosity\b|\bpr\s+por\b", t):
+        return "poor"
+    if re.search(r"\bpor\b|\bporosity\b", t):
+        return "fr"
+    return "none"
+
+
+def parse_loose_grains(text):
+    """Return True when loose-grain indicators appear in cuttings description text."""
+    if not isinstance(text, str) or not text.strip():
+        return False
+    t = text.lower()
+    return bool(
+        re.search(
+            r"\blse\s+grn\b|\bloose\s+grain\b|\bloose\s+grains\b|\blse\s+med\b.*\bqtz\b",
+            t,
+        )
+    )
+
+
+def _grain_token_ordinal(token):
+    """Map a single grain-size token to ordinal 1..5 (vf..vc), or 0 if unknown."""
+    if not isinstance(token, str) or not token.strip():
+        return 0
+    t = token.strip().lower()
+    if re.search(r"\bvc\b|very\s*coarse|v\s*crs", t):
+        return 5
+    if re.search(r"\bcrs\b|\bcoarse\b", t) and "very" not in t:
+        return 4
+    if re.search(r"\bmed\b|\bmedium\b", t):
+        return 3
+    if re.search(r"\bfine\b|\bf\b(?!\w)", t) and "very" not in t:
+        return 2
+    if re.search(r"\bvf\b|very\s*fine|v\s*f\b", t):
+        return 1
+    return 0
+
+
+def grain_ordinal(grain, max_grain=None):
+    """
+    Convert grain-size text to ordinal 0..5.
+
+    Uses max_grain when present, otherwise the finest grain token found in grain text.
+    Ordinal scale: vf=1, f=2, m=3, c=4, vc=5; 0 = unknown.
+    """
+    primary = max_grain if pd.notna(max_grain) and str(max_grain).strip() else grain
+    if not isinstance(primary, str) or not primary.strip():
+        return 0
+    tokens = re.split(r"[,/()\-]|to", primary)
+    ordinals = [_grain_token_ordinal(tok) for tok in tokens]
+    ordinals = [o for o in ordinals if o > 0]
+    return max(ordinals) if ordinals else _grain_token_ordinal(primary)
+
+
+def _interval_descriptor_text(long_desc, mud_matches):
+    """Combine long_desc (preferred) with matched mudlog lithology text for parsing."""
+    parts = []
+    if isinstance(long_desc, str) and long_desc.strip():
+        parts.append(long_desc.strip())
+    for entry in mud_matches or []:
+        txt = entry.get("text")
+        if isinstance(txt, str) and txt.strip():
+            parts.append(txt.strip())
+    return " ".join(parts)
 
 
 def avg_log(df, top, bot):
@@ -717,6 +832,7 @@ def process_well(cfg, dc30_df, mck_murta_df):
 
         log_stats = avg_log(las_df, top, bot)
         mud_matches = find_mudlog(top, bot, mudlog_entries)
+        desc_text = _interval_descriptor_text(long_map.get(depth, ""), mud_matches)
         silt = 100 - row["Pct_Sandstone"] if pd.notna(row["Pct_Sandstone"]) else None
         results.append(
             {
@@ -736,6 +852,9 @@ def process_well(cfg, dc30_df, mck_murta_df):
                 "mudlog": mud_matches,
                 "log": log_stats,
                 "perm": perm_proxy(log_stats["res_sep"] if log_stats else None),
+                "poro_class": parse_porosity(desc_text),
+                "loose_grains": parse_loose_grains(desc_text),
+                "grain_ordinal": grain_ordinal(row["Grain_Size"], row["Max_Grain_Size"]),
             }
         )
 
