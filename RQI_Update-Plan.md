@@ -5,6 +5,10 @@
 **Purpose:** Hand-off document for a planning or implementation agent coordinating pipeline reruns (RQI, WRCI, and related statistics).  
 **No code changes in the planning pass that produced this document.**
 
+**Companion plans:**
+- [`res_sep_fix-plan.md`](res_sep_fix-plan.md) — resistivity-separation / DSI / charge-aware permeability flagging. **Coordinate any WRCI perm-flag change through this plan and §9 below before a full pipeline rerun (§6).**
+- [`mudlog_cutting_descriptions.md`](mudlog_cutting_descriptions.md) — cuttings / mudlog abbreviation glossary for all text parsers.
+
 ---
 
 ## 1. Executive summary
@@ -278,6 +282,7 @@ Execute in order after parser + config changes:
 | Document | Role |
 |----------|------|
 | [`mudlog_cutting_descriptions.md`](mudlog_cutting_descriptions.md) | Abbreviation glossary for parsers |
+| [`res_sep_fix-plan.md`](res_sep_fix-plan.md) | Resistivity-separation / DSI / charge-aware perm flagging (coordinate via §9; rerun via §6) |
 | [`OpusPlanR1.md`](OpusPlanR1.md) | Original WRCI / RQI statistical design |
 | [`New Statistical Methods.md`](New Statistical Methods.md) | Canonical method definitions for site + corpus |
 | [`pay-rules.md`](pay-rules.md) | Pay logic (orthogonal to RQI; same rerun cadence) |
@@ -289,12 +294,13 @@ Execute in order after parser + config changes:
 
 These were **not** decided in the RQI Q&A and may trigger **additional** reruns:
 
-- WRCI component weights (`a,b,c,d`) or red-flag percentile cutoffs
+- **Resistivity-separation / permeability flagging** — the current `highperm` red flag uses **absolute** ΔRes (`res_sep`), which mis-fires on oil-charged pay. The proposed move to a **Dynamic Separation Index (DSI)** with a **charge gate** (water / oil / transition), plus optional **RES_MED** tri-curve invasion profiling, is designed in **[`res_sep_fix-plan.md`](res_sep_fix-plan.md)**. Stakeholder answers to that plan's §9 clarifying questions are a **prerequisite** for the WRCI perm term below.
+- WRCI component weights (`a,b,c,d`) or red-flag percentile cutoffs — for the perm term, replace `res_sep`-based `highperm_norm` with the DSI-based, charge-gated severity from [`res_sep_fix-plan.md`](res_sep_fix-plan.md) §8.
 - Whether `sid cmt` should ever contribute a small cement penalty
 - Jaccard replacement flag naming/threshold for hardness (e.g. top quartile of hardness score within well)
 - Whether assistant `looseGrains` filter should map to hardness score or be removed
 
-Capture decisions for these in a separate `WRCI_Update-Plan.md` if work proceeds in parallel.
+Capture decisions for these in a separate `WRCI_Update-Plan.md` if work proceeds in parallel. The resistivity-separation subset is already captured in [`res_sep_fix-plan.md`](res_sep_fix-plan.md); WRCI weight changes from both plans must ship together in a single coordinated rerun (§6).
 
 ---
 
