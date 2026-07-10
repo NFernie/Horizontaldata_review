@@ -446,7 +446,7 @@ Compare to deeper and shallower independantly and flag if either meets the crite
 
 8. Does **RQI drop > 10%** alone trigger ZOI, or only fluor/TG/res drops when RQI ≥ 0.6?  
 
-If RQI is within the range of <10% or greater than neighbours and change in flour/TG/res meets criteria trigger a ZOI. 
+If RQI is within the range of <10% or greater than neighbours and change in flour/TG/res meets criteria trigger a ZOI. Use this alternative approach 'ZOI only when ≥2 of 3 metrics drop >15%'
 
 9. Should ZOI fire when values drop but remain **above pay cutoffs** (your example: fluor 80%, res 25)? — assumed **yes**.
 
