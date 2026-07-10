@@ -22,6 +22,10 @@ from mudlog_parser import (  # noqa: E402
     parse_fluorescence_entries,
     parse_mudlog_entries,
 )
+from mudlog_bar_fluor import (  # noqa: E402
+    build_bar_fluorescence_series,
+    match_bar_fluorescence,
+)
 from trajectory import TrajectoryInterpolator  # noqa: E402
 
 WORKSPACE = (
@@ -195,6 +199,9 @@ WELLS = [
         "litho": "McKinlay 11_Litho ASCII_90-6786'.ASC",
         "gas": "McKinlay 11_Drill-Gas ASCII_Spud-6786'.ASC",
         "depth_unit": "ft",
+        "bar_fluor": True,
+        "bar_fluor_cap_below_ft": 5313,
+        "bar_fluor_cap_below_pct": 10,
     },
     {
         "alias": "MCKINLAY12",
@@ -803,30 +810,64 @@ def _assign_interval_bounds(samples: pd.DataFrame) -> pd.DataFrame:
 
 
 def enrich_samples_from_mudlog(cfg: dict, samples: pd.DataFrame) -> pd.DataFrame:
-    """Attach fluorescence % and brightness from mudlog PDF text track (ft depths → m)."""
+    """Attach fluorescence % from mudlog PDF (bar track and/or text blocks)."""
     if cfg.get("ingest") != "litho_gas":
         return samples
     pdf_path = os.path.join(WORKSPACE, cfg["pdf"])
     mudlog_text = extract_mudlog_text(pdf_path)
     depth_unit = cfg.get("depth_unit", "ft")
+
+    bar_series = (
+        build_bar_fluorescence_series(
+            pdf_path,
+            cap_below_ft=cfg.get("bar_fluor_cap_below_ft"),
+            cap_below_pct=float(cfg.get("bar_fluor_cap_below_pct", 10)),
+        )
+        if cfg.get("bar_fluor")
+        else []
+    )
     fluor_entries = parse_fluorescence_entries(mudlog_text, depth_unit=depth_unit)
-    if not fluor_entries:
+    if not bar_series and not fluor_entries:
         return samples
 
     out = samples.copy()
     if "Brightness" in out.columns:
         out["Brightness"] = out["Brightness"].astype(object)
+
+    text_brightness: dict[float, str] = {}
+    for block in fluor_entries:
+        mid_m = (block["top_m"] + block["bot_m"]) / 2.0
+        if block.get("brightness"):
+            text_brightness[mid_m] = block["brightness"]
+
     for idx, row in out.iterrows():
         if pd.notna(row.get("Pct_Fluor")):
             continue
         top = float(row["interval_top"])
         bot = float(row["interval_bottom"])
-        fluor_match = match_fluorescence(top, bot, fluor_entries)
-        if fluor_match is None:
+        mid_m = (top + bot) / 2.0
+
+        bar_match = match_bar_fluorescence(top, bot, bar_series) if bar_series else None
+        text_match = match_fluorescence(top, bot, fluor_entries) if fluor_entries else None
+
+        candidates = []
+        if bar_match is not None:
+            candidates.append(bar_match["pct_mid"])
+        if text_match is not None:
+            candidates.append(text_match["pct_mid"])
+        if not candidates:
             continue
-        out.at[idx, "Pct_Fluor"] = fluor_match["pct_mid"]
-        if pd.isna(row.get("Brightness")) and fluor_match.get("brightness"):
-            out.at[idx, "Brightness"] = fluor_match["brightness"]
+        out.at[idx, "Pct_Fluor"] = max(candidates)
+
+        if pd.isna(row.get("Brightness")) or not row.get("Brightness"):
+            if text_brightness:
+                nearest = min(text_brightness, key=lambda k: abs(k - mid_m))
+                if abs(nearest - mid_m) < 30:
+                    out.at[idx, "Brightness"] = text_brightness[nearest]
+            if (pd.isna(out.at[idx, "Brightness"]) or not out.at[idx, "Brightness"]) and text_match:
+                if text_match.get("brightness"):
+                    out.at[idx, "Brightness"] = text_match["brightness"]
+
     return out
 
 
@@ -875,6 +916,15 @@ def process_well(cfg, dc30_df, mck_murta_df):
     mudlog_text = extract_mudlog_text(pdf_path)
     depth_unit = cfg.get("depth_unit", "m")
     mudlog_entries = parse_mudlog_entries(mudlog_text, depth_unit=depth_unit)
+    bar_series = (
+        build_bar_fluorescence_series(
+            pdf_path,
+            cap_below_ft=cfg.get("bar_fluor_cap_below_ft"),
+            cap_below_pct=float(cfg.get("bar_fluor_cap_below_pct", 10)),
+        )
+        if cfg.get("bar_fluor")
+        else []
+    )
     fluor_entries = (
         parse_fluorescence_entries(mudlog_text, depth_unit=depth_unit)
         if depth_unit == "ft"
@@ -919,11 +969,17 @@ def process_well(cfg, dc30_df, mck_murta_df):
         fluor = row["Pct_Fluor"]
         bright = row["Brightness"]
         if pd.isna(fluor):
-            fluor_match = match_fluorescence(top, bot, fluor_entries) if fluor_entries else None
-            if fluor_match is not None:
-                fluor = fluor_match["pct_mid"]
+            bar_match = match_bar_fluorescence(top, bot, bar_series) if bar_series else None
+            text_match = match_fluorescence(top, bot, fluor_entries) if fluor_entries else None
+            candidates = []
+            if bar_match is not None:
+                candidates.append(bar_match["pct_mid"])
+            if text_match is not None:
+                candidates.append(text_match["pct_mid"])
                 if pd.isna(bright) or (isinstance(bright, float) and np.isnan(bright)):
-                    bright = fluor_match.get("brightness")
+                    bright = text_match.get("brightness")
+            if candidates:
+                fluor = max(candidates)
         if pd.isna(fluor):
             mud_parsed = parse_mckinlay_description(desc_text)
             if mud_parsed.get("pct_fluor_text") is not None:

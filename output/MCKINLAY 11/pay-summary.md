@@ -1,6 +1,6 @@
 # MCKINLAY 11 — McKinlay Pay Summary
 
-**Generated:** 2026-07-10 04:53 UTC  
+**Generated:** 2026-07-10 05:57 UTC  
 **Formation tops name:** MCKINLAY 11  
 **McKinlay window:** 1603.2 – 2068.2 m MD  
 **DC30 top:** 1600.20 m MD  
@@ -29,9 +29,9 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 190.0 | 40.6% | 5 |
+| Cuttings only | 205.0 | 43.8% | 6 |
 | Resistivity only | 350.9 | 75.0% | 4 |
-| Matching both | 190.0 | 40.6% | 5 |
+| Matching both | 205.0 | 43.8% | 6 |
 
 **Sample intervals in McKinlay Member:** 70
 
@@ -40,6 +40,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1602.5 | 1632.5 | 30.0 |
+| 1672.5 | 1687.5 | 15.0 |
 | 1732.5 | 1782.5 | 50.0 |
 | 1802.5 | 1872.5 | 70.0 |
 | 1942.5 | 1962.5 | 20.0 |
@@ -59,6 +60,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1602.5 | 1632.5 | 30.0 |
+| 1672.5 | 1687.5 | 15.0 |
 | 1732.5 | 1782.5 | 50.0 |
 | 1802.5 | 1872.5 | 70.0 |
 | 1942.5 | 1962.5 | 20.0 |
@@ -66,5 +68,4 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 ## Data Quality Notes
 
-- **6** sample intervals missing %SS or %Fluor — excluded from cuttings/matching pay.
 - **1** intervals lack valid LAS RES_DEEP — excluded from matching pay only.
