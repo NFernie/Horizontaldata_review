@@ -1,32 +1,40 @@
 # Reusable Workflow Prompt — Horizontal Well Cuttings & Log Integration
 
-## Processing Status — All Available Wells Complete
+## Processing Status — All Available Wells Complete (23 wells)
 
-| # | Well | Intervals | Status |
-|---|------|-----------|--------|
-| 1 | JENA 31 | 201 | Complete |
-| 2 | JENA 31DW1 | 182 | Complete |
-| 3 | BIALA 19 | 219 | Complete |
-| 4 | BIALA 20 | 175 | Complete |
-| 5 | BIALA 21 | 145 | Complete |
-| 6 | FROSTILLICUS 2 | 370 | Complete |
-| 7 | GRANCHIO 4 | 126 | Complete |
-| 8 | HOBBES 5 | 114 | Complete |
-| 9 | HOBBES 6 | 81 | Complete |
-| 10 | MCKINLAY 20 | 276 | Complete |
-| 11 | MCKINLAY 21 | 118 | Complete |
-| 12 | MCKINLAY 22 | 306 | Complete |
-| 13 | MCKINLAY 23 | 180 | Complete |
-| 14 | MCKINLAY 24 | 167 | Complete |
-| 15 | STIMPEE 6 | 143 | Complete |
-| 16 | STIMPEE 7 | 93 | Complete |
-| 17 | TERINGIE 6 | 166 | Complete |
+| # | Well | Intervals | Ingest | Status |
+|---|------|-----------|--------|--------|
+| 1 | JENA 31 | 201 | Excel | Complete |
+| 2 | JENA 31DW1 | 182 | Excel | Complete |
+| 3 | BIALA 19 | 219 | Excel | Complete |
+| 4 | BIALA 20 | 175 | Excel | Complete |
+| 5 | BIALA 21 | 145 | Excel | Complete |
+| 6 | FROSTILLICUS 2 | 370 | Excel | Complete |
+| 7 | GRANCHIO 4 | 126 | Excel | Complete |
+| 8 | HOBBES 5 | 114 | Excel | Complete |
+| 9 | HOBBES 6 | 81 | Excel | Complete |
+| 10 | MCKINLAY 10 | 96 | Litho+gas | Complete |
+| 11 | MCKINLAY 11 | 70 | Litho+gas | Complete |
+| 12 | MCKINLAY 12 | 172 | Litho+gas | Complete |
+| 13 | MCKINLAY 13 | 247 | Litho+gas | Complete |
+| 14 | MCKINLAY 14 | 113 | Litho+gas | Complete |
+| 15 | MCKINLAY 15 | 57 | Litho+gas | Complete |
+| 16 | MCKINLAY 20 | 276 | Excel | Complete |
+| 17 | MCKINLAY 21 | 118 | Excel | Complete |
+| 18 | MCKINLAY 22 | 306 | Excel | Complete |
+| 19 | MCKINLAY 23 | 180 | Excel | Complete |
+| 20 | MCKINLAY 24 | 167 | Excel | Complete |
+| 21 | STIMPEE 6 | 143 | Excel | Complete |
+| 22 | STIMPEE 7 | 93 | Excel | Complete |
+| 23 | TERINGIE 6 | 166 | Excel | Complete |
 
 **Pending:** HOBBES 4 (formation tops only — no data files in repo)
 
 ---
 
-Copy and paste the prompt below for any new well dataset:
+## Standard workflow (sample Excel wells)
+
+Copy and paste the prompt below for any new well dataset with a sample description spreadsheet:
 
 ```
 For well [WELL_NAME], integrate the following data sources for the McKinlay Member only:
@@ -70,10 +78,51 @@ REQUIREMENTS:
 - Do not use Calculations Sheet or other Excel tabs beyond Input Sheet
 ```
 
+---
+
+## Alternate workflow (litho + drill-gas wells — no sample Excel)
+
+Use when sample description spreadsheets are unavailable (e.g. McKinlay 10–15). Implemented in `scripts/litho_gas_ingest.py` and `scripts/trajectory.py`.
+
+```
+For well [WELL_NAME], integrate McKinlay Member data WITHOUT sample Excel:
+
+DATA FILES (workspace root):
+- Mudlog PDF: McKinlay NN_Mudlog_*.pdf
+- Lithology ASCII/TXT: Petrel litho export (depths in feet)
+- Drill-gas ASCII/TXT: Petrel drill-gas export (depths in feet)
+- Formation tops: DC30.xlsx and Mck_Murta.xlsx
+- Wireline LAS: Mck_NN (GR, RES_DEEP, RES_SHALLOW)
+- Trajectory: Mck_NN_trajectory (Petrel export — MD and Z columns; Z = mTVDss subsea)
+
+INGESTION:
+1. Convert litho and drill-gas depths from feet to metres MD (× 0.3048)
+2. Aggregate lithology and gas to fixed 5 m sample bins (bin centre = interval midpoint)
+3. Derive %SS from lithology codes: 405/400 = sandstone, 406 = siltstone, 407/800 = shale
+4. Parse trajectory via scripts/trajectory.py → interpolate_mtvds(md) for each interval
+5. Apply same classify_tops / exclusion_zones horizontal logic as Excel wells
+6. Match mudlog PDF cuttings text per interval (±15 m window)
+
+WELLS REGISTRY (scripts/process_mckinlay_wells.py):
+- Set ingest: "litho_gas", litho, gas, trajectory, depth_unit: "ft" keys on WELLS entry
+
+OUTPUT:
+1. output/MCKINLAYNN_McKinlay_Cuttings_Interpretation.md (includes mTVDss per interval)
+2. output/MCKINLAYNN_Process_Summary.md
+3. output/MCKINLAY NN/pay-summary.md (via compute_pay_summary.py)
+
+KNOWN GAPS:
+- No %Fluor / fluorescence brightness → cuttings pay and matching pay will be zero
+- Grain size mostly NaN from litho codes
+- Resistivity pay only; verify overburden exclusion with compute_pay_summary exit code 0
+```
+
 ## Batch Re-run
 
 ```bash
 python3 scripts/process_mckinlay_wells.py
+python3 scripts/process_mckinlay_wells.py --only MCKINLAY10
+python3 scripts/compute_pay_summary.py
 ```
 
 See `BATCH_PROCESSING_STATUS.md` for full summary.

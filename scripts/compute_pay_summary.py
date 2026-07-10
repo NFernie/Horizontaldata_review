@@ -22,7 +22,8 @@ from process_mckinlay_wells import (  # noqa: E402
     avg_log,
     exclusion_zones,
     classify_tops,
-    load_samples,
+    interval_excluded,
+    load_well_samples,
     parse_las,
     parse_las_td,
     resolve_well_name,
@@ -62,6 +63,29 @@ def merge_intervals(intervals):
     return [(t, b) for t, b in merged], total
 
 
+def subtract_exclusion_zones(intervals, zones):
+    """Remove portions of pay intervals that overlap overburden exclusion zones."""
+    if not intervals or not zones:
+        return intervals
+    cleaned: list[tuple[float, float]] = []
+    for top, bot in intervals:
+        parts = [(top, bot)]
+        for zt, zb, _ in zones:
+            new_parts: list[tuple[float, float]] = []
+            for part_top, part_bot in parts:
+                if part_bot <= zt or part_top >= zb:
+                    new_parts.append((part_top, part_bot))
+                else:
+                    if part_top < zt:
+                        new_parts.append((part_top, zt))
+                    if part_bot > zb:
+                        new_parts.append((zb, part_bot))
+            parts = new_parts
+        cleaned.extend(parts)
+    merged, _ = merge_intervals(cleaned)
+    return merged
+
+
 def get_mckinlay_sample_intervals(cfg, dc30_df, mck_murta_df):
     _, dc30_row = resolve_well_name(dc30_df, cfg)
     dc30_top = float(dc30_row["MD"].values[0])
@@ -79,8 +103,7 @@ def get_mckinlay_sample_intervals(cfg, dc30_df, mck_murta_df):
     las_td = parse_las_td(las_path)
     mck_end = float(cfg.get("td") or las_td or max(mck_tops) + 500)
 
-    xlsx_path = os.path.join(WORKSPACE, cfg["xlsx"])
-    samples, _ = load_samples(xlsx_path)
+    samples, _ = load_well_samples(cfg, mck_start, mck_end)
     mck_end = max(mck_end, float(samples["Depth_mMD"].max()))
 
     intervals = []
@@ -120,13 +143,15 @@ def get_mckinlay_sample_intervals(cfg, dc30_df, mck_murta_df):
     }
 
 
-def cuttings_pay(intervals):
+def cuttings_pay(intervals, zones=None):
     pay_iv = []
     for iv in intervals:
         ss = iv["pct_ss"]
         fluor = iv["pct_fluor"]
         if pd.notna(ss) and pd.notna(fluor) and ss > SS_CUTOFF and fluor > FLUOR_CUTOFF:
             pay_iv.append((iv["top"], iv["bot"]))
+    if zones:
+        pay_iv = subtract_exclusion_zones(pay_iv, zones)
     merged, total = merge_intervals(pay_iv)
     missing = sum(
         1
@@ -175,6 +200,7 @@ def res_only_pay(las_df, mck_start, mck_end, zones):
     if run_start is not None and prev_depth is not None:
         pay_iv.append((run_start, prev_depth + step / 2))
 
+    pay_iv = subtract_exclusion_zones(pay_iv, zones)
     merged, total = merge_intervals(pay_iv)
     null_pct = (
         las_df[(las_df["depth"] >= mck_start) & (las_df["depth"] <= mck_end)]["RES_DEEP"]
@@ -186,7 +212,7 @@ def res_only_pay(las_df, mck_start, mck_end, zones):
     return merged, total, null_pct
 
 
-def matching_pay(intervals):
+def matching_pay(intervals, zones=None):
     pay_iv = []
     no_res = 0
     for iv in intervals:
@@ -204,6 +230,8 @@ def matching_pay(intervals):
             and res > RES_DEEP_CUTOFF
         ):
             pay_iv.append((iv["top"], iv["bot"]))
+    if zones:
+        pay_iv = subtract_exclusion_zones(pay_iv, zones)
     merged, total = merge_intervals(pay_iv)
     return merged, total, no_res
 
@@ -216,11 +244,12 @@ def pct_of_lateral(pay_md, lateral_length):
 
 def analyze_well(cfg, dc30_df, mck_murta_df):
     data = get_mckinlay_sample_intervals(cfg, dc30_df, mck_murta_df)
-    cut_iv, cut_md, cut_missing = cuttings_pay(data["intervals"])
+    zones = data["zones"]
+    cut_iv, cut_md, cut_missing = cuttings_pay(data["intervals"], zones)
     res_iv, res_md, res_null_pct = res_only_pay(
-        data["las_df"], data["mck_start"], data["mck_end"], data["zones"]
+        data["las_df"], data["mck_start"], data["mck_end"], zones
     )
-    match_iv, match_md, match_no_res = matching_pay(data["intervals"])
+    match_iv, match_md, match_no_res = matching_pay(data["intervals"], zones)
 
     return {
         **data,
@@ -477,15 +506,48 @@ python3 scripts/compute_pay_summary.py
     return path
 
 
+def verify_pay_excludes_overburden(result) -> list[str]:
+    """Return overlap error messages if any pay interval intersects exclusion zones."""
+    zones = result["zones"]
+    errors = []
+    for category in ("cuttings", "resistivity", "matching"):
+        for top, bot in result[category]["intervals"]:
+            if interval_excluded(top, bot, zones):
+                errors.append(
+                    f"{result['alias']} {category} pay [{top:.1f}, {bot:.1f}] overlaps overburden"
+                )
+    return errors
+
+
+def _parse_only_filter(argv: list[str]) -> list[str] | None:
+    if not argv:
+        return None
+    if "--only" in argv:
+        idx = argv.index("--only")
+        if idx + 1 >= len(argv):
+            raise SystemExit("--only requires a well alias")
+        return [argv[idx + 1].upper().replace(" ", "")]
+    return [a.upper().replace(" ", "") for a in argv if not a.startswith("-")]
+
+
 def main():
     dc30_df = pd.read_excel(os.path.join(WORKSPACE, "DC30.xlsx"))
     mck_murta_df = pd.read_excel(os.path.join(WORKSPACE, "Mck_Murta.xlsx"))
 
+    only = _parse_only_filter(sys.argv[1:])
+    wells = WELLS
+    if only:
+        wells = [w for w in WELLS if w["alias"] in only or w["display"].upper().replace(" ", "") in only]
+        if not wells:
+            raise SystemExit(f"No wells matched filter: {only}")
+
     write_pay_rules()
     results = []
-    for cfg in WELLS:
+    overlap_errors: list[str] = []
+    for cfg in wells:
         print(f"Pay analysis: {cfg['display']}...")
         result = analyze_well(cfg, dc30_df, mck_murta_df)
+        overlap_errors.extend(verify_pay_excludes_overburden(result))
         write_well_pay_summary(result)
         results.append(result)
         print(
@@ -493,8 +555,16 @@ def main():
             f"match={result['matching']['md']:.0f}m lateral={result['lateral_length']:.0f}m"
         )
 
-    write_all_wells_summary(results)
-    print(f"\nWrote pay-rules.md and {len(results)} well summaries + ALL_WELLS_PAY_SUMMARY.md")
+    if overlap_errors:
+        for msg in overlap_errors:
+            print(f"ERROR: {msg}", file=sys.stderr)
+        raise SystemExit(1)
+
+    if not only:
+        write_all_wells_summary(results)
+    print(f"\nWrote pay-rules.md and {len(results)} well summaries")
+    if not only:
+        print("+ ALL_WELLS_PAY_SUMMARY.md")
 
 
 if __name__ == "__main__":

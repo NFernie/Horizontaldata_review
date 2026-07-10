@@ -11,6 +11,13 @@ import numpy as np
 import pandas as pd
 import pdfplumber
 
+SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
+if SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, SCRIPTS_DIR)
+
+from litho_gas_ingest import build_sample_intervals  # noqa: E402
+from trajectory import TrajectoryInterpolator  # noqa: E402
+
 WORKSPACE = (
     os.environ.get("WORKSPACE")
     or os.environ.get("GITHUB_WORKSPACE")
@@ -158,6 +165,78 @@ WELLS = [
         "pdf": "TERINGIE 6_ML_Mudlog_Spud-3441.4_MD_Final.pdf",
         "xlsx": "Teringie 6 Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Teringie_6",
+    },
+    {
+        "alias": "MCKINLAY10",
+        "display": "MCKINLAY 10",
+        "tops_name": "MCKINLAY 10",
+        "pdf": "McKinlay 10_Mudlog_Spud-6936'.pdf",
+        "las": "Mck_10",
+        "trajectory": "Mck_10_trajectory",
+        "ingest": "litho_gas",
+        "litho": "McKINLAY_10_LITHO_100-6935'.ASC",
+        "gas": "McKINLAY_10_DRILL_GAS_6936'.ASC",
+        "depth_unit": "ft",
+    },
+    {
+        "alias": "MCKINLAY11",
+        "display": "MCKINLAY 11",
+        "tops_name": "MCKINLAY 11",
+        "pdf": "McKinlay 11_Mudlog Spud-6800'_Final.pdf",
+        "las": "Mck_11",
+        "trajectory": "Mck_11_trajectory",
+        "ingest": "litho_gas",
+        "litho": "McKinlay 11_Litho ASCII_90-6786'.ASC",
+        "gas": "McKinlay 11_Drill-Gas ASCII_Spud-6786'.ASC",
+        "depth_unit": "ft",
+    },
+    {
+        "alias": "MCKINLAY12",
+        "display": "MCKINLAY 12",
+        "tops_name": "MCKINLAY 12",
+        "pdf": "McKinlay 12_Mudlog_Spud-9526ft(TD)_Prelim.pdf",
+        "las": "Mck_12",
+        "trajectory": "Mck_12_trajectory",
+        "ingest": "litho_gas",
+        "litho": "Mckinlay 12_Litho_Spud-9526ft(TD) Prelim.txt",
+        "gas": "Mckinlay 12_Drill-Gas_Spud-9526ft(TD) Prelim.txt",
+        "depth_unit": "ft",
+    },
+    {
+        "alias": "MCKINLAY13",
+        "display": "MCKINLAY 13",
+        "tops_name": "MCKINLAY 13",
+        "pdf": "McKinlay 13_Mudlog_Spud-10593ft_Final Field.pdf",
+        "las": "Mck_13",
+        "trajectory": "Mck_13_trajectory",
+        "ingest": "litho_gas",
+        "litho": "McKinlay 13_Litho_Spud-10593ft.ASC",
+        "gas": "McKinlay 13_Drill-Gas_Spud-10593ft.ASC",
+        "depth_unit": "ft",
+    },
+    {
+        "alias": "MCKINLAY14",
+        "display": "MCKINLAY 14",
+        "tops_name": "MCKINLAY 14",
+        "pdf": "McKinlay 14_Mudlog_Spud-8674ft_Final.pdf",
+        "las": "Mck_14",
+        "trajectory": "Mck_14_trajectory",
+        "ingest": "litho_gas",
+        "litho": "Mckinlay 14_Litho_Spud-8674ft (TD).txt",
+        "gas": "Mckinlay 14_Drill-Gas_Spud-8674ft (TD).txt",
+        "depth_unit": "ft",
+    },
+    {
+        "alias": "MCKINLAY15",
+        "display": "MCKINLAY 15",
+        "tops_name": "MCKINLAY 15",
+        "pdf": "McKinlay 15_Mudlog_Spud-8495ft_Final Field.pdf",
+        "las": "Mck_15",
+        "trajectory": "Mck_15_trajectory",
+        "ingest": "litho_gas",
+        "litho": "McKinlay 15_Litho_Spud-8495ft.ASC",
+        "gas": "McKinlay 15_Drill-Gas_Spud-8495ft.ASC",
+        "depth_unit": "ft",
     },
 ]
 
@@ -747,7 +826,11 @@ def load_samples(xlsx_path):
         samples, long_map = load_legacy_mckinlay_samples(xlsx_path)
 
     samples = samples.dropna(subset=["Depth_mMD"]).reset_index(drop=True)
+    samples = _assign_interval_bounds(samples)
+    return samples, long_map
 
+
+def _assign_interval_bounds(samples: pd.DataFrame) -> pd.DataFrame:
     depths = samples["Depth_mMD"].values
     tops, bots = [], []
     for i in range(len(depths)):
@@ -764,7 +847,15 @@ def load_samples(xlsx_path):
         bots.append(bot)
     samples["interval_top"] = tops
     samples["interval_bottom"] = bots
-    return samples, long_map
+    return samples
+
+
+def load_well_samples(cfg: dict, mck_start: float, mck_end: float) -> tuple[pd.DataFrame, dict]:
+    """Load sample intervals from Excel or litho/gas ASCII (McKinlay 10–15)."""
+    if cfg.get("ingest") == "litho_gas":
+        return build_sample_intervals(cfg, mck_start, mck_end)
+    xlsx_path = os.path.join(WORKSPACE, cfg["xlsx"])
+    return load_samples(xlsx_path)
 
 
 def find_mudlog(top, bot, entries, window=MUDLOG_WINDOW):
@@ -803,8 +894,11 @@ def process_well(cfg, dc30_df, mck_murta_df):
     las_td = parse_las_td(las_path)
     mck_end = float(cfg.get("td") or las_td or max(mck_tops) + 500)
 
+    trajectory = None
+    if cfg.get("trajectory"):
+        trajectory = TrajectoryInterpolator.from_file(cfg["trajectory"])
+
     pdf_path = os.path.join(WORKSPACE, cfg["pdf"])
-    xlsx_path = os.path.join(WORKSPACE, cfg["xlsx"])
 
     mudlog_text = extract_mudlog_text(pdf_path)
     mudlog_entries = parse_mudlog_entries(mudlog_text)
@@ -814,7 +908,7 @@ def process_well(cfg, dc30_df, mck_murta_df):
         if e["type"] == "formation_top" and "MCKINLAY" in e["name"].upper()
     ]
 
-    samples, long_map = load_samples(xlsx_path)
+    samples, long_map = load_well_samples(cfg, mck_start, mck_end)
     las_df = parse_las(las_path)
     sample_max = float(samples["Depth_mMD"].max())
     mck_end = max(mck_end, sample_max)
@@ -842,6 +936,7 @@ def process_well(cfg, dc30_df, mck_murta_df):
         mud_matches = find_mudlog(top, bot, mudlog_entries)
         desc_text = _interval_descriptor_text(long_map.get(depth, ""), mud_matches)
         silt = 100 - row["Pct_Sandstone"] if pd.notna(row["Pct_Sandstone"]) else None
+        mtvds = trajectory.interpolate_mtvds(depth) if trajectory else None
         results.append(
             {
                 "depth": depth,
@@ -863,6 +958,7 @@ def process_well(cfg, dc30_df, mck_murta_df):
                 "poro_class": parse_porosity(desc_text),
                 "loose_grains": parse_loose_grains(desc_text),
                 "grain_ordinal": grain_ordinal(row["Grain_Size"], row["Max_Grain_Size"]),
+                "mtvds": mtvds,
             }
         )
 
@@ -902,9 +998,22 @@ def write_interpretation(meta, path):
         "| Source | File | Role |",
         "|--------|------|------|",
         f"| Mudlog PDF | `{meta['cfg']['pdf']}` | Cuttings lithology descriptions |",
-        f"| Sample Descriptions | `{meta['cfg']['xlsx']}` (Input Sheet) | Depth intervals & sample properties |",
+    ]
+    if meta["cfg"].get("ingest") == "litho_gas":
+        lines.append(
+            f"| Litho / drill-gas ASCII | `{meta['cfg']['litho']}`, `{meta['cfg']['gas']}` | 5 m bins (ft→m MD) |"
+        )
+    else:
+        lines.append(
+            f"| Sample Descriptions | `{meta['cfg']['xlsx']}` ({_sample_sheet_label(meta['cfg']['xlsx'])}) | Depth intervals & sample properties |"
+        )
+    lines += [
         "| Formation Tops | `DC30.xlsx`, `Mck_Murta.xlsx` | Reservoir entry & overburden identification |",
         f"| Wireline Log (LAS) | `{meta['cfg']['las']}` | GR, RES_DEEP, RES_SHALLOW |",
+    ]
+    if meta["cfg"].get("trajectory"):
+        lines.append(f"| Trajectory | `{meta['cfg']['trajectory']}` | mTVDss (Z subsea) |")
+    lines += [
         "",
         "## 2. Formation Top Analysis\n",
         "### 2.1 Key Tops\n",
@@ -976,16 +1085,26 @@ def write_interpretation(meta, path):
         f"re-entry below (or entry + {DEFAULT_REENTRY_OFFSET:.0f} m MD if none mapped). Later entry pairs "
         f"inside an existing exclusion interval are treated as the same overburden excursion. Initial "
         f"DC30/McKinlay reservoir entry is not excluded.",
-        "8. **Input Sheet only** — Calculations Sheet not used.",
     ]
-    if "McKinlay" in meta["cfg"]["xlsx"]:
-        lines.append(
-            "9. **McKinlay legacy spreadsheet:** Sheet1 columns F (TG), G (%SS), H (%fluoro) used directly; "
-            "column A description text parsed for grain size, fluorescence brightness, and siderite."
-        )
-        lines.append("")
+    if meta["cfg"].get("ingest") == "litho_gas":
+        lines += [
+            "8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes; "
+            "**no fluorescence %** in ASCII — cuttings pay may be unavailable.",
+            "9. **Grain size / brightness** not parsed from litho ASCII — derived from mudlog text where matched.",
+            "",
+        ]
+    elif meta["cfg"].get("xlsx"):
+        lines += [
+            "8. **Input Sheet only** — Calculations Sheet not used.",
+        ]
+        if "McKinlay" in meta["cfg"]["xlsx"]:
+            lines.append(
+                "9. **McKinlay legacy spreadsheet:** Sheet1 columns F (TG), G (%SS), H (%fluoro) used directly; "
+                "column A description text parsed for grain size, fluorescence brightness, and siderite."
+            )
+            lines.append("")
     if meta["mudlog_mck"] and abs(meta["mudlog_mck"][0] - meta["mck_start"]) > 10:
-        n = 10 if "McKinlay" in meta["cfg"]["xlsx"] else 9
+        n = len([ln for ln in lines if ln and ln[0].isdigit()]) + 1
         lines.append(
             f"{n}. **McKinlay pick discrepancy:** tops file {meta['mck_start']:.2f} m vs mudlog {meta['mudlog_mck'][0]:.1f} m "
             f"(Δ ≈ {abs(meta['mudlog_mck'][0] - meta['mck_start']):.0f} m)."
@@ -1024,6 +1143,8 @@ def write_interpretation(meta, path):
             lines.append(f"| Fluorescence | {item['fluor']}% {item['bright']} |")
         if pd.notna(item["gas"]):
             lines.append(f"| Total Gas | {item['gas']} U |")
+        if item.get("mtvds") is not None:
+            lines.append(f"| mTVDss | {item['mtvds']:.2f} m |")
         if pd.notna(item["fec03_slt"]):
             lines.append(f"| FeCO₃ in Siltstone | {item['fec03_slt']} |")
         if pd.notna(item["fec03_sst"]):
@@ -1096,9 +1217,22 @@ def write_summary(meta, path):
         f"| File | Purpose |",
         f"|------|---------|",
         f"| `{meta['cfg']['pdf']}` | Mudlog cuttings |",
-        f"| `{meta['cfg']['xlsx']}` → {_sample_sheet_label(meta['cfg']['xlsx'])} | Sample intervals |",
+    ]
+    if meta["cfg"].get("ingest") == "litho_gas":
+        lines.append(
+            f"| `{meta['cfg']['litho']}`, `{meta['cfg']['gas']}` | Litho + drill-gas ASCII (5 m bins) |"
+        )
+    else:
+        lines.append(
+            f"| `{meta['cfg']['xlsx']}` → {_sample_sheet_label(meta['cfg']['xlsx'])} | Sample intervals |"
+        )
+    lines += [
         f"| `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |",
         f"| `{meta['cfg']['las']}` | GR / resistivity |",
+    ]
+    if meta["cfg"].get("trajectory"):
+        lines.append(f"| `{meta['cfg']['trajectory']}` | Trajectory → mTVDss |")
+    lines += [
         "",
         "## Formation Top Results\n",
         f"- DC30: **{meta['dc30_top']:.2f} m** | McKinlay start: **{meta['mck_start']:.2f} m** | TD: **{meta['mck_end']:.0f} m**",
@@ -1133,15 +1267,28 @@ def _sample_sheet_label(xlsx_name):
     return "Input Sheet"
 
 
+def _parse_only_filter(argv: list[str]) -> list[str] | None:
+    if not argv:
+        return None
+    if "--only" in argv:
+        idx = argv.index("--only")
+        if idx + 1 >= len(argv):
+            raise SystemExit("--only requires a well alias (e.g. MCKINLAY10)")
+        return [argv[idx + 1].upper().replace(" ", "")]
+    return [a.upper().replace(" ", "") for a in argv if not a.startswith("-")]
+
+
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     dc30_df = pd.read_excel(os.path.join(WORKSPACE, "DC30.xlsx"))
     mck_murta_df = pd.read_excel(os.path.join(WORKSPACE, "Mck_Murta.xlsx"))
 
-    only = [a.upper() for a in sys.argv[1:]] if len(sys.argv) > 1 else None
+    only = _parse_only_filter(sys.argv[1:])
     wells = WELLS
     if only:
         wells = [w for w in WELLS if w["alias"] in only or w["display"].upper().replace(" ", "") in only]
+        if not wells:
+            raise SystemExit(f"No wells matched filter: {only}")
 
     summaries = []
     for cfg in wells:
@@ -1153,9 +1300,11 @@ def main():
         )
         write_summary(meta, os.path.join(OUTPUT_DIR, f"{alias}_Process_Summary.md"))
         summaries.append(meta)
+        mtvds_count = sum(1 for x in meta["results"] if x.get("mtvds") is not None)
         print(
             f"  -> {len(meta['results'])} intervals, "
-            f"mudlog {sum(1 for x in meta['results'] if x['mudlog'])}/{len(meta['results'])}"
+            f"mudlog {sum(1 for x in meta['results'] if x['mudlog'])}/{len(meta['results'])}, "
+            f"mTVDss {mtvds_count}/{len(meta['results'])}"
         )
 
     return summaries
@@ -1163,3 +1312,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    sys.exit(0)
