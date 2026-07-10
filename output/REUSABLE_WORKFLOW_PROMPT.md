@@ -101,7 +101,9 @@ INGESTION:
 3. Derive %SS from lithology codes: 405/400 = sandstone, 406 = siltstone, 407/800 = shale
 4. Parse trajectory via scripts/trajectory.py → interpolate_mtvds(md) for each interval
 5. Apply same classify_tops / exclusion_zones horizontal logic as Excel wells
-6. Match mudlog PDF cuttings text per interval (±15 m window)
+6. Match mudlog PDF at **metre depth converted to feet** for text lookup (m × 3.281 ≈ ft MD)
+7. Parse fluorescence from mudlog text track: FLUOR:start'-end':pct% or FLUORESCENCE:start-end':
+8. LAS resistivity averages use metre MD intervals (LAS files are in metres)
 
 WELLS REGISTRY (scripts/process_mckinlay_wells.py):
 - Set ingest: "litho_gas", litho, gas, trajectory, depth_unit: "ft" keys on WELLS entry
@@ -112,9 +114,9 @@ OUTPUT:
 3. output/MCKINLAY NN/pay-summary.md (via compute_pay_summary.py)
 
 KNOWN GAPS:
-- No %Fluor / fluorescence brightness → cuttings pay and matching pay will be zero
 - Grain size mostly NaN from litho codes
-- Resistivity pay only; verify overburden exclusion with compute_pay_summary exit code 0
+- Fluorescence brightness text quality varies with PDF extraction (field PDFs)
+- Verify overburden exclusion with compute_pay_summary exit code 0
 ```
 
 ## Batch Re-run

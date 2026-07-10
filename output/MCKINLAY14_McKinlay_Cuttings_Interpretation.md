@@ -1,6 +1,6 @@
 # MCKINLAY 14 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-10 03:39 UTC  
+**Generated:** 2026-07-10 04:53 UTC  
 **Well:** MCKINLAY 14 (MCKINLAY 14)  
 **TD:** 2644 m MD  
 
@@ -64,8 +64,8 @@
 5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
 6. **NULL LAS values** (-999.25) excluded from averages.
 7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if none mapped). Later entry pairs inside an existing exclusion interval are treated as the same overburden excursion. Initial DC30/McKinlay reservoir entry is not excluded.
-8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes; **no fluorescence %** in ASCII — cuttings pay may be unavailable.
-9. **Grain size / brightness** not parsed from litho ASCII — derived from mudlog text where matched.
+8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes; **no fluorescence %** in litho ASCII — fluorescence from mudlog PDF text track (FLUOR / FLUORESCENCE, ft→m); cuttings pay where matched.
+9. **Grain size** not parsed from litho ASCII — derived from mudlog lithology text where matched.
 
 ## 4. McKinlay Member Sample Intervals
 
@@ -79,12 +79,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 7.5% mod bri yel wh sptd |
 | Total Gas | 259.51875 U |
 | mTVDss | -1199.19 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1820m: wh,off wh,trnsl, clr,lt brn,vf-f,wl srt,sbang-sbrnd, mod strg sil cmt,com lt brn arg mtx, tr carb spks,tr liths,fri-mod hd, v pr vis por,fluor.
+- **SANDSTONE** @ ~1832m: 1-11 klbs SANDSTONE:wh,off wh,v lt FLW:453-515 gpm lt brn arg mtx,rr yel/orng stns, mod hd,v pr vis por,fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -107,12 +111,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 328.74375000000003 U |
 | mTVDss | -1199.37 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1832m: 1-11 klbs SANDSTONE:wh,off wh,v lt FLW:453-515 gpm lt brn arg mtx,rr yel/orng stns, mod hd,v pr vis por,fluor.
+- **SANDSTONE** @ ~1841m: trnsl,clr,wh, f-crs,pr srt,ang-sbrnd,mod sil cmt 6050 in f aggs,com wh arg mtx in f aggs, med-crs qtz grs pred lse,mod hd f aggs,pr-gd inf por,fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -135,12 +142,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 437.02352941176474 U |
 | mTVDss | -1199.49 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1832m: 1-11 klbs SANDSTONE:wh,off wh,v lt FLW:453-515 gpm lt brn arg mtx,rr yel/orng stns, mod hd,v pr vis por,fluor.
+- **SANDSTONE** @ ~1841m: trnsl,clr,wh, f-crs,pr srt,ang-sbrnd,mod sil cmt 6050 in f aggs,com wh arg mtx in f aggs, med-crs qtz grs pred lse,mod hd f aggs,pr-gd inf por,fluor.
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -163,12 +173,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 406.39375 U |
 | mTVDss | -1199.61 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1841m: trnsl,clr,wh, f-crs,pr srt,ang-sbrnd,mod sil cmt 6050 in f aggs,com wh arg mtx in f aggs, med-crs qtz grs pred lse,mod hd f aggs,pr-gd inf por,fluor.
+- **SILTSTONE** @ ~1850m: med-lt gry,med-lt brnsh gry,pred aren,mnr arg,occ 71 / 7 / 6 / 8 / 8 420U carb spks,micmic,mod hd,sbblky- occ sbfiss.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -191,12 +204,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 298.3235294117647 U |
 | mTVDss | -1199.74 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1841m: trnsl,clr,wh, f-crs,pr srt,ang-sbrnd,mod sil cmt 6050 in f aggs,com wh arg mtx in f aggs, med-crs qtz grs pred lse,mod hd f aggs,pr-gd inf por,fluor.
+- **SILTSTONE** @ ~1850m: med-lt gry,med-lt brnsh gry,pred aren,mnr arg,occ 71 / 7 / 6 / 8 / 8 420U carb spks,micmic,mod hd,sbblky- occ sbfiss.
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -219,12 +235,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 262.86875 U |
 | mTVDss | -1199.86 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1850m: med-lt gry,med-lt brnsh gry,pred aren,mnr arg,occ 71 / 7 / 6 / 8 / 8 420U carb spks,micmic,mod hd,sbblky- occ sbfiss.
+- **SANDSTONE** @ ~1856m: trnsl,clr,off wh, rr opq,f-crs,pr srt,ang-sbrnd,mod strg sil cmt,in f aggs,com off wh arg mtx,pred med-crs cln lse qtz grs,mod hd aggs,pr-gd inf por,fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -247,12 +266,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 357.25 U |
 | mTVDss | -1199.99 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1850m: med-lt gry,med-lt brnsh gry,pred aren,mnr arg,occ 71 / 7 / 6 / 8 / 8 420U carb spks,micmic,mod hd,sbblky- occ sbfiss.
+- **SANDSTONE** @ ~1856m: trnsl,clr,off wh, rr opq,f-crs,pr srt,ang-sbrnd,mod strg sil cmt,in f aggs,com off wh arg mtx,pred med-crs cln lse qtz grs,mod hd aggs,pr-gd inf por,fluor.
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -275,12 +297,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 343.67058823529413 U |
 | mTVDss | -1200.08 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1856m: trnsl,clr,off wh, rr opq,f-crs,pr srt,ang-sbrnd,mod strg sil cmt,in f aggs,com off wh arg mtx,pred med-crs cln lse qtz grs,mod hd aggs,pr-gd inf por,fluor.
+- **SANDSTONE** @ ~1862m: trnsl,clr,off wh, 6120 rr opq,f-crs,pr srt,ang-sbrnd,mod strg sil cmt,in f aggs,com off wh arg mtx,pred med-crs cln lse qtz grs,mod hd aggs,pr-gd inf por,fluor.
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -303,12 +328,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 303.6 U |
 | mTVDss | -1200.08 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1862m: trnsl,clr,off wh, 6120 rr opq,f-crs,pr srt,ang-sbrnd,mod strg sil cmt,in f aggs,com off wh arg mtx,pred med-crs cln lse qtz grs,mod hd aggs,pr-gd inf por,fluor.
+- **SANDSTONE** @ ~1871m: 2-14 klbs 6150 SANDSTONE:clr,trnsl,off wh, FLW:447-512 gpm abdt off wh-lt gry arg mtx,tr mica flks,pred cln lse grs,fri-occ mod
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -332,11 +360,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Total Gas | 213.9941176470588 U |
 | mTVDss | -1200.08 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1871m: 2-14 klbs 6150 SANDSTONE:clr,trnsl,off wh, FLW:447-512 gpm abdt off wh-lt gry arg mtx,tr mica flks,pred cln lse grs,fri-occ mod
+- **SILTSTONE** @ ~1878m: 5.9 6180 SILTSTONE:lt-med gry,lt pH:9.5 brnsh gry,aren,arg i/p,micmic, Ck:1 mod hd,sbblky-sbfiss. Cl:75k
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -359,12 +390,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr |
+| Loose Grains | Yes |
 | Total Gas | 218.04375000000002 U |
 | mTVDss | -1200.08 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1871m: 2-14 klbs 6150 SANDSTONE:clr,trnsl,off wh, FLW:447-512 gpm abdt off wh-lt gry arg mtx,tr mica flks,pred cln lse grs,fri-occ mod
+- **SILTSTONE** @ ~1878m: 5.9 6180 SILTSTONE:lt-med gry,lt pH:9.5 brnsh gry,aren,arg i/p,micmic, Ck:1 mod hd,sbblky-sbfiss. Cl:75k
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -387,12 +421,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr |
+| Loose Grains | Yes |
 | Total Gas | 309.6125 U |
 | mTVDss | -1200.08 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1878m: 5.9 6180 SILTSTONE:lt-med gry,lt pH:9.5 brnsh gry,aren,arg i/p,micmic, Ck:1 mod hd,sbblky-sbfiss. Cl:75k
+- **SANDSTONE** @ ~1887m: clr,trnsl,off wh, 14 18 28 med-f,mnr crs,mod srt,sbang-sbrnd, wk sil cmt,com off wh arg mtx,com i flk t t th /lithi l mica flks,tr qtz ovgths w/lith incl,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -415,12 +452,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr |
+| Loose Grains | Yes |
 | Total Gas | 281.5529411764706 U |
 | mTVDss | -1200.07 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1878m: 5.9 6180 SILTSTONE:lt-med gry,lt pH:9.5 brnsh gry,aren,arg i/p,micmic, Ck:1 mod hd,sbblky-sbfiss. Cl:75k
+- **SANDSTONE** @ ~1887m: clr,trnsl,off wh, 14 18 28 med-f,mnr crs,mod srt,sbang-sbrnd, wk sil cmt,com off wh arg mtx,com i flk t t th /lithi l mica flks,tr qtz ovgths w/lith incl,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -443,12 +483,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 326.3625 U |
 | mTVDss | -1200.00 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1887m: clr,trnsl,off wh, 14 18 28 med-f,mnr crs,mod srt,sbang-sbrnd, wk sil cmt,com off wh arg mtx,com i flk t t th /lithi l mica flks,tr qtz ovgths w/lith incl,
+- **SANDSTONE** @ ~1902m: clr,trnsl,off wh, 6250 lt gry,vf-med,mod srt,sbrnd-sbang, wk sil cmt,mnr off wh-lt gry arg mtx, occ mica flks,tr carb spks,fri aggs, cln lse grs i/p,pr-fr inf & vis por,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -471,12 +514,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 331.1117647058823 U |
 | mTVDss | -1199.88 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1902m: clr,trnsl,off wh, 6250 lt gry,vf-med,mod srt,sbrnd-sbang, wk sil cmt,mnr off wh-lt gry arg mtx, occ mica flks,tr carb spks,fri aggs, cln lse grs i/p,pr-fr inf & vis por,
+- **SANDSTONE** @ ~1911m: wh,off wh,trnsl,rr clr, vf-med,pred f,fr srt,sbang-sbrnd, 6280 wk sil cmt,mnr wh arg mtx,tr mica, fri aggs,fr inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -499,12 +545,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 363.925 U |
 | mTVDss | -1199.76 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1902m: clr,trnsl,off wh, 6250 lt gry,vf-med,mod srt,sbrnd-sbang, wk sil cmt,mnr off wh-lt gry arg mtx, occ mica flks,tr carb spks,fri aggs, cln lse grs i/p,pr-fr inf & vis por,
+- **SANDSTONE** @ ~1911m: wh,off wh,trnsl,rr clr, vf-med,pred f,fr srt,sbang-sbrnd, 6280 wk sil cmt,mnr wh arg mtx,tr mica, fri aggs,fr inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -527,12 +576,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 271.7647058823529 U |
 | mTVDss | -1199.64 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1902m: clr,trnsl,off wh, 6250 lt gry,vf-med,mod srt,sbrnd-sbang, wk sil cmt,mnr off wh-lt gry arg mtx, occ mica flks,tr carb spks,fri aggs, cln lse grs i/p,pr-fr inf & vis por,
+- **SANDSTONE** @ ~1911m: wh,off wh,trnsl,rr clr, vf-med,pred f,fr srt,sbang-sbrnd, 6280 wk sil cmt,mnr wh arg mtx,tr mica, fri aggs,fr inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -555,12 +607,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 328.98125 U |
 | mTVDss | -1199.52 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1911m: wh,off wh,trnsl,rr clr, vf-med,pred f,fr srt,sbang-sbrnd, 6280 wk sil cmt,mnr wh arg mtx,tr mica, fri aggs,fr inf por,fluor.
+- **SANDSTONE** @ ~1917m: 1053-1464 psi SANDSTONE:clr,trnsl,wh,f-crs,pr FLW: 431-518 gpm srt,sbang-sbrnd,tr sil cmt,pred lse qtz grs,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -583,12 +638,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 393.6875 U |
 | mTVDss | -1199.40 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1911m: wh,off wh,trnsl,rr clr, vf-med,pred f,fr srt,sbang-sbrnd, 6280 wk sil cmt,mnr wh arg mtx,tr mica, fri aggs,fr inf por,fluor.
+- **SANDSTONE** @ ~1917m: 1053-1464 psi SANDSTONE:clr,trnsl,wh,f-crs,pr FLW: 431-518 gpm srt,sbang-sbrnd,tr sil cmt,pred lse qtz grs,gd inf por,fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -611,12 +669,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 440.11176470588236 U |
 | mTVDss | -1199.28 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1917m: 1053-1464 psi SANDSTONE:clr,trnsl,wh,f-crs,pr FLW: 431-518 gpm srt,sbang-sbrnd,tr sil cmt,pred lse qtz grs,gd inf por,fluor.
+- **SANDSTONE** @ ~1935m: clr,trnsl,wh,f-crs,dom f pr srt,sbang-sbrnd,tr sil cmt,dom lse qtz grs,gd inf por,fluor. 6360 69 / 7 / 6 / 8 / 10 MW:9.5
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -639,12 +700,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 445.61249999999995 U |
 | mTVDss | -1199.16 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1935m: clr,trnsl,wh,f-crs,dom f pr srt,sbang-sbrnd,tr sil cmt,dom lse qtz grs,gd inf por,fluor. 6360 69 / 7 / 6 / 8 / 10 MW:9.5
+- **SANDSTONE** @ ~1939m: brn/orng,trnsl,clr,lt 6390 brn,f-med,mod srt,sbang-sbrnd,wk sil cmt,com lt brn arg mtx,fri-mod hd,fr vis por,fluor. 0 0.5 1 4 14 6400
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -667,12 +730,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 381.94117647058823 U |
 | mTVDss | -1199.04 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1935m: clr,trnsl,wh,f-crs,dom f pr srt,sbang-sbrnd,tr sil cmt,dom lse qtz grs,gd inf por,fluor. 6360 69 / 7 / 6 / 8 / 10 MW:9.5
+- **SANDSTONE** @ ~1939m: brn/orng,trnsl,clr,lt 6390 brn,f-med,mod srt,sbang-sbrnd,wk sil cmt,com lt brn arg mtx,fri-mod hd,fr vis por,fluor. 0 0.5 1 4 14 6400
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -695,12 +760,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 235.73125 U |
 | mTVDss | -1198.82 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1990m: lt-med gry,aren,mnr vf carb spks,rr micmic,tr liths,mod ( 6 4 5 0 4 7 0 4) hd,sbblky-blky.
+- **SANDSTONE** @ ~1999m: v lt brn,off wh,wh, trnsl,clr,f-crs,pr srt,ang-sbrnd, mod strg sil cmt,com off wh arg 70 / 6 / 5 / 8 / 11 mtx,mod hd,pr vis por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -723,12 +791,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 60.0% None |
 | Total Gas | 243.35294117647058 U |
 | mTVDss | -1198.89 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~1990m: lt-med gry,aren,mnr vf carb spks,rr micmic,tr liths,mod ( 6 4 5 0 4 7 0 4) hd,sbblky-blky.
+- **SANDSTONE** @ ~1999m: v lt brn,off wh,wh, trnsl,clr,f-crs,pr srt,ang-sbrnd, mod strg sil cmt,com off wh arg 70 / 6 / 5 / 8 / 11 mtx,mod hd,pr vis por,fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -751,12 +823,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 60.0% None |
 | Total Gas | 377.65625 U |
 | mTVDss | -1198.97 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1999m: v lt brn,off wh,wh, trnsl,clr,f-crs,pr srt,ang-sbrnd, mod strg sil cmt,com off wh arg 70 / 6 / 5 / 8 / 11 mtx,mod hd,pr vis por,fluor.
+- **SANDSTONE** @ ~2006m: clr-trnsl,opq,off wh, lt-med brn i/p,f-med,rr crs,pr- 6590 mod srt,sbrnd-sbang,mod-wk sil cmt,tr off wh arg mtx,tr lt brn sil mtx,com lse qtz grs,gd vis por,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -779,12 +855,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 60.0% None |
 | Total Gas | 431.8941176470588 U |
 | mTVDss | -1199.05 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~1999m: v lt brn,off wh,wh, trnsl,clr,f-crs,pr srt,ang-sbrnd, mod strg sil cmt,com off wh arg 70 / 6 / 5 / 8 / 11 mtx,mod hd,pr vis por,fluor.
+- **SANDSTONE** @ ~2006m: clr-trnsl,opq,off wh, lt-med brn i/p,f-med,rr crs,pr- 6590 mod srt,sbrnd-sbang,mod-wk sil cmt,tr off wh arg mtx,tr lt brn sil mtx,com lse qtz grs,gd vis por,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -807,12 +887,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 382.44374999999997 U |
 | mTVDss | -1199.16 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2006m: clr-trnsl,opq,off wh, lt-med brn i/p,f-med,rr crs,pr- 6590 mod srt,sbrnd-sbang,mod-wk sil cmt,tr off wh arg mtx,tr lt brn sil mtx,com lse qtz grs,gd vis por,
+- **SANDSTONE** @ ~2018m: off wh-v lt brn,clr- trnsl,frstd,f-med,pred f aggs,rr crs,mod-pr srt,sbrnd-sbang,mod wk sil cmt,com v lt brn-off wh arg mtx,com lse qtz grs,fri-mod hd,rr
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -836,11 +919,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Loose Grains | Yes |
 | Total Gas | 366.05625 U |
 | mTVDss | -1199.26 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2018m: off wh-v lt brn,clr- trnsl,frstd,f-med,pred f aggs,rr crs,mod-pr srt,sbrnd-sbang,mod wk sil cmt,com v lt brn-off wh arg mtx,com lse qtz grs,fri-mod hd,rr
+- **SANDSTONE** @ ~2027m: off wh-v lt brn,clr- trnsl,f-med,pred f aggs,rr crs,mod- pr srt,sbrnd-sbang,mod wk sil cmt, com v lt brn-off wh arg mtx,com 6660 70 / 7 / 6 / 8 / 9 lse qtz grs,fri-mod hd,rr carb spks,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -863,12 +949,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr |
+| Loose Grains | Yes |
 | Total Gas | 410.2941176470588 U |
 | mTVDss | -1199.37 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2018m: off wh-v lt brn,clr- trnsl,frstd,f-med,pred f aggs,rr crs,mod-pr srt,sbrnd-sbang,mod wk sil cmt,com v lt brn-off wh arg mtx,com lse qtz grs,fri-mod hd,rr
+- **SANDSTONE** @ ~2027m: off wh-v lt brn,clr- trnsl,f-med,pred f aggs,rr crs,mod- pr srt,sbrnd-sbang,mod wk sil cmt, com v lt brn-off wh arg mtx,com 6660 70 / 7 / 6 / 8 / 9 lse qtz grs,fri-mod hd,rr carb spks,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -891,12 +980,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr |
+| Loose Grains | Yes |
+| Fluorescence | 0.0% none |
 | Total Gas | 405.4375 U |
 | mTVDss | -1199.47 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2018m: off wh-v lt brn,clr- trnsl,frstd,f-med,pred f aggs,rr crs,mod-pr srt,sbrnd-sbang,mod wk sil cmt,com v lt brn-off wh arg mtx,com lse qtz grs,fri-mod hd,rr
+- **SANDSTONE** @ ~2027m: off wh-v lt brn,clr- trnsl,f-med,pred f aggs,rr crs,mod- pr srt,sbrnd-sbang,mod wk sil cmt, com v lt brn-off wh arg mtx,com 6660 70 / 7 / 6 / 8 / 9 lse qtz grs,fri-mod hd,rr carb spks,
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -919,12 +1012,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 75.0% None |
 | Total Gas | 402.14374999999995 U |
 | mTVDss | -1200.45 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2091m: clr,trnsl,off wh,rr opq,f-med,rr crs,mod srt, sbrnd-sbang,wk-occ mod strg sil g, g cmt,mnr off wh arg mtx,occ mica
+- **SILTSTONE** @ ~2101m: 1-12 klbs 6900 SILTSTONE:med gry,med brnsh FLW:457-513 gpm
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -947,12 +1044,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 75.0% None |
 | Total Gas | 376.8352941176471 U |
 | mTVDss | -1200.50 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2091m: clr,trnsl,off wh,rr opq,f-med,rr crs,mod srt, sbrnd-sbang,wk-occ mod strg sil g, g cmt,mnr off wh arg mtx,occ mica
+- **SILTSTONE** @ ~2101m: 1-12 klbs 6900 SILTSTONE:med gry,med brnsh FLW:457-513 gpm
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -975,12 +1076,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 75.0% None |
 | Total Gas | 368.26875 U |
 | mTVDss | -1200.55 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2101m: 1-12 klbs 6900 SILTSTONE:med gry,med brnsh FLW:457-513 gpm
+- **SANDSTONE** @ ~2112m: clr,trnsl,off wh, tr opq,f-crs,pr srt,sbang-sbrnd, 67 / 7 / 6 / 9 / 11 430U ang i/p,wk sil cmt,com off wh arg mtx,com mica flks,tr carb spks & liths,fri aggs,cln lse grs i/p,gd inf
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1003,12 +1108,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 392.1941176470589 U |
 | mTVDss | -1200.61 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2101m: 1-12 klbs 6900 SILTSTONE:med gry,med brnsh FLW:457-513 gpm
+- **SANDSTONE** @ ~2112m: clr,trnsl,off wh, tr opq,f-crs,pr srt,sbang-sbrnd, 67 / 7 / 6 / 9 / 11 430U ang i/p,wk sil cmt,com off wh arg mtx,com mica flks,tr carb spks & liths,fri aggs,cln lse grs i/p,gd inf
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1031,12 +1140,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 442.83124999999995 U |
 | mTVDss | -1200.66 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2112m: clr,trnsl,off wh, tr opq,f-crs,pr srt,sbang-sbrnd, 67 / 7 / 6 / 9 / 11 430U ang i/p,wk sil cmt,com off wh arg mtx,com mica flks,tr carb spks & liths,fri aggs,cln lse grs i/p,gd inf
+- **SANDSTONE** @ ~2124m: clr,trnsl,off wh, tr opq,f-crs,pr srt,sbang-sbrnd, ang i/p,wk sil cmt,com off wh arg mtx,com mica flks,tr carb spks & liths,fri aggs,cln lse grs i/p,gd inf
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1059,12 +1172,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 408.96875 U |
 | mTVDss | -1200.72 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2112m: clr,trnsl,off wh, tr opq,f-crs,pr srt,sbang-sbrnd, 67 / 7 / 6 / 9 / 11 430U ang i/p,wk sil cmt,com off wh arg mtx,com mica flks,tr carb spks & liths,fri aggs,cln lse grs i/p,gd inf
+- **SANDSTONE** @ ~2124m: clr,trnsl,off wh, tr opq,f-crs,pr srt,sbang-sbrnd, ang i/p,wk sil cmt,com off wh arg mtx,com mica flks,tr carb spks & liths,fri aggs,cln lse grs i/p,gd inf
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1087,12 +1204,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 441.38823529411764 U |
 | mTVDss | -1200.77 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2124m: clr,trnsl,off wh, tr opq,f-crs,pr srt,sbang-sbrnd, ang i/p,wk sil cmt,com off wh arg mtx,com mica flks,tr carb spks & liths,fri aggs,cln lse grs i/p,gd inf
+- **SANDSTONE** @ ~2131m: clr,trnsl,opq, 14 18 28 off wh,med-crs,mnr f aggs,pr srt, sbang-ang,tr wk sil cmt,tr off wh arg mtx,rr mica flks,pred cln lse 67 / 7 / 6 / 9 / 11 460U
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1115,12 +1236,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 449.03125 U |
 | mTVDss | -1200.82 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2124m: clr,trnsl,off wh, tr opq,f-crs,pr srt,sbang-sbrnd, ang i/p,wk sil cmt,com off wh arg mtx,com mica flks,tr carb spks & liths,fri aggs,cln lse grs i/p,gd inf
+- **SANDSTONE** @ ~2131m: clr,trnsl,opq, 14 18 28 off wh,med-crs,mnr f aggs,pr srt, sbang-ang,tr wk sil cmt,tr off wh arg mtx,rr mica flks,pred cln lse 67 / 7 / 6 / 9 / 11 460U
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1143,12 +1268,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 412.2058823529412 U |
 | mTVDss | -1200.87 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2124m: clr,trnsl,off wh, tr opq,f-crs,pr srt,sbang-sbrnd, ang i/p,wk sil cmt,com off wh arg mtx,com mica flks,tr carb spks & liths,fri aggs,cln lse grs i/p,gd inf
+- **SANDSTONE** @ ~2131m: clr,trnsl,opq, 14 18 28 off wh,med-crs,mnr f aggs,pr srt, sbang-ang,tr wk sil cmt,tr off wh arg mtx,rr mica flks,pred cln lse 67 / 7 / 6 / 9 / 11 460U
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1171,12 +1300,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 370.08124999999995 U |
 | mTVDss | -1200.93 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2131m: clr,trnsl,opq, 14 18 28 off wh,med-crs,mnr f aggs,pr srt, sbang-ang,tr wk sil cmt,tr off wh arg mtx,rr mica flks,pred cln lse 67 / 7 / 6 / 9 / 11 460U
+- **SANDSTONE** @ ~2146m: clr,trnsl,opq, (4080) off wh,med-crs,mnr f aggs,pr srt, sbang-ang,tr wk sil cmt,tr off wh arg mtx,rr mica flks,pred cln lse grs,mnr fri aggs,gd vis & inf por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1199,12 +1332,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 396.1117647058823 U |
 | mTVDss | -1200.98 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2146m: clr,trnsl,opq, (4080) off wh,med-crs,mnr f aggs,pr srt, sbang-ang,tr wk sil cmt,tr off wh arg mtx,rr mica flks,pred cln lse grs,mnr fri aggs,gd vis & inf por,
+- **SANDSTONE** @ ~2159m: clr,trnsl,opq, 7090 off wh,f-crs,pr-mod srt,sbang-sbrnd, ang i/p,tr wk sil cmt,mnr off wh arg 67 / 7 / 6 / 9 / 11 557 U mtx,mnr mica flks,tr carb spks,fri f grn aggs,med-crs cln lse qtz grs,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1227,12 +1364,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 407.7375 U |
 | mTVDss | -1201.03 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2146m: clr,trnsl,opq, (4080) off wh,med-crs,mnr f aggs,pr srt, sbang-ang,tr wk sil cmt,tr off wh arg mtx,rr mica flks,pred cln lse grs,mnr fri aggs,gd vis & inf por,
+- **SANDSTONE** @ ~2159m: clr,trnsl,opq, 7090 off wh,f-crs,pr-mod srt,sbang-sbrnd, ang i/p,tr wk sil cmt,mnr off wh arg 67 / 7 / 6 / 9 / 11 557 U mtx,mnr mica flks,tr carb spks,fri f grn aggs,med-crs cln lse qtz grs,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1255,12 +1396,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 446.0 U |
 | mTVDss | -1201.07 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2146m: clr,trnsl,opq, (4080) off wh,med-crs,mnr f aggs,pr srt, sbang-ang,tr wk sil cmt,tr off wh arg mtx,rr mica flks,pred cln lse grs,mnr fri aggs,gd vis & inf por,
+- **SANDSTONE** @ ~2159m: clr,trnsl,opq, 7090 off wh,f-crs,pr-mod srt,sbang-sbrnd, ang i/p,tr wk sil cmt,mnr off wh arg 67 / 7 / 6 / 9 / 11 557 U mtx,mnr mica flks,tr carb spks,fri f grn aggs,med-crs cln lse qtz grs,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1284,11 +1429,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 437.38823529411764 U |
 | mTVDss | -1201.09 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2159m: clr,trnsl,opq, 7090 off wh,f-crs,pr-mod srt,sbang-sbrnd, ang i/p,tr wk sil cmt,mnr off wh arg 67 / 7 / 6 / 9 / 11 557 U mtx,mnr mica flks,tr carb spks,fri f grn aggs,med-crs cln lse qtz grs,
+- **SANDSTONE** @ ~2167m: clr,trnsl,opq, off wh,f-crs,pr-mod srt,sbang-sbrnd, 7120 ang i/p,tr wk sil cmt,mnr off wh arg mtx,mnr mica flks,tr carb spks,fri 503U f grn aggs,med-crs cln lse qtz grs,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1311,12 +1460,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 476.8 U |
 | mTVDss | -1201.48 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2204m: clr,trnsl,opq, med-crs,sbrnd-sbang,tr wk sil cmt,tr mica flks,pred cln lse grs, 67 / 7 / 6 / 9 / 11 514U fri aggs,gd inf por,fluor.
+- **SANDSTONE** @ ~2213m: clr,trnsl,f-crs, pred med,pr-fr srt,sbang-sbrnd, 67 / 7 / 6 / 9 / 11 593U tr sil cmt,tr wh arg mtx,tr mica flks,fri-lse,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1339,12 +1492,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 566.8352941176472 U |
 | mTVDss | -1201.54 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2204m: clr,trnsl,opq, med-crs,sbrnd-sbang,tr wk sil cmt,tr mica flks,pred cln lse grs, 67 / 7 / 6 / 9 / 11 514U fri aggs,gd inf por,fluor.
+- **SANDSTONE** @ ~2213m: clr,trnsl,f-crs, pred med,pr-fr srt,sbang-sbrnd, 67 / 7 / 6 / 9 / 11 593U tr sil cmt,tr wh arg mtx,tr mica flks,fri-lse,gd inf por,fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1367,12 +1524,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 556.89375 U |
 | mTVDss | -1201.60 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2204m: clr,trnsl,opq, med-crs,sbrnd-sbang,tr wk sil cmt,tr mica flks,pred cln lse grs, 67 / 7 / 6 / 9 / 11 514U fri aggs,gd inf por,fluor.
+- **SANDSTONE** @ ~2213m: clr,trnsl,f-crs, pred med,pr-fr srt,sbang-sbrnd, 67 / 7 / 6 / 9 / 11 593U tr sil cmt,tr wh arg mtx,tr mica flks,fri-lse,gd inf por,fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1395,12 +1556,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 482.4764705882353 U |
 | mTVDss | -1201.65 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2213m: clr,trnsl,f-crs, pred med,pr-fr srt,sbang-sbrnd, 67 / 7 / 6 / 9 / 11 593U tr sil cmt,tr wh arg mtx,tr mica flks,fri-lse,gd inf por,fluor.
+- **SANDSTONE** @ ~2225m: clr,trnsl,f-med, mnr crs,pr-fr srt,sbang-sbrnd, trsilcmttrwhargmtxtrmica tr sil cmt,tr wh arg mtx,tr mica flks,fri-lse,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1423,12 +1588,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 424.61875 U |
 | mTVDss | -1201.71 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2213m: clr,trnsl,f-crs, pred med,pr-fr srt,sbang-sbrnd, 67 / 7 / 6 / 9 / 11 593U tr sil cmt,tr wh arg mtx,tr mica flks,fri-lse,gd inf por,fluor.
+- **SANDSTONE** @ ~2225m: clr,trnsl,f-med, mnr crs,pr-fr srt,sbang-sbrnd, trsilcmttrwhargmtxtrmica tr sil cmt,tr wh arg mtx,tr mica flks,fri-lse,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1451,12 +1620,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 470.3125 U |
 | mTVDss | -1201.76 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2225m: clr,trnsl,f-med, mnr crs,pr-fr srt,sbang-sbrnd, trsilcmttrwhargmtxtrmica tr sil cmt,tr wh arg mtx,tr mica flks,fri-lse,gd inf por,fluor.
+- **SANDSTONE** @ ~2231m: 9.5 7340 SANDSTONE:clr,trnsl,opq, Ck:1 off wh,f-med,tr crs,pr-mod srt, Cl:79k (4082) sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1479,12 +1652,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 465.3764705882353 U |
 | mTVDss | -1201.81 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2225m: clr,trnsl,f-med, mnr crs,pr-fr srt,sbang-sbrnd, trsilcmttrwhargmtxtrmica tr sil cmt,tr wh arg mtx,tr mica flks,fri-lse,gd inf por,fluor.
+- **SANDSTONE** @ ~2231m: 9.5 7340 SANDSTONE:clr,trnsl,opq, Ck:1 off wh,f-med,tr crs,pr-mod srt, Cl:79k (4082) sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1507,12 +1684,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 483.51250000000005 U |
 | mTVDss | -1201.86 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2231m: 9.5 7340 SANDSTONE:clr,trnsl,opq, Ck:1 off wh,f-med,tr crs,pr-mod srt, Cl:79k (4082) sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- **SANDSTONE** @ ~2249m: clr,trnsl,opq, 67 / 7 / 6 / 9 / 11 512U off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1535,12 +1716,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 496.05882352941177 U |
 | mTVDss | -1201.87 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2249m: clr,trnsl,opq, 67 / 7 / 6 / 9 / 11 512U off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- **SANDSTONE** @ ~2259m: clr,trnsl,opq, off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1563,12 +1747,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 461.63125 U |
 | mTVDss | -1201.86 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2249m: clr,trnsl,opq, 67 / 7 / 6 / 9 / 11 512U off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- **SANDSTONE** @ ~2259m: clr,trnsl,opq, off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1591,12 +1779,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 431.74375 U |
 | mTVDss | -1201.86 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2249m: clr,trnsl,opq, 67 / 7 / 6 / 9 / 11 512U off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- **SANDSTONE** @ ~2259m: clr,trnsl,opq, off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1619,12 +1811,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 498.3117647058823 U |
 | mTVDss | -1201.86 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2249m: clr,trnsl,opq, 67 / 7 / 6 / 9 / 11 512U off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- **SANDSTONE** @ ~2259m: clr,trnsl,opq, off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1647,12 +1843,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 534.18125 U |
 | mTVDss | -1201.85 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2259m: clr,trnsl,opq, off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- **SANDSTONE** @ ~2268m: trnsl,clr,off wh,f-med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,tr off wh arg mtx, (4083) tr carb spks,fri,lse i/p,gd vis por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1675,12 +1875,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 575.6705882352941 U |
 | mTVDss | -1201.85 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2259m: clr,trnsl,opq, off wh,f-med,tr crs,pr-mod srt, sbang-sbrnd,tr wk sil cmt,tr off wh arg mtx,mnr mica flks,fri aggs, cln lse grs i/p,gd vis & inf por,
+- **SANDSTONE** @ ~2268m: trnsl,clr,off wh,f-med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,tr off wh arg mtx, (4083) tr carb spks,fri,lse i/p,gd vis por,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1703,12 +1907,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 612.73125 U |
 | mTVDss | -1201.84 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2268m: trnsl,clr,off wh,f-med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,tr off wh arg mtx, (4083) tr carb spks,fri,lse i/p,gd vis por,
+- **SANDSTONE** @ ~2280m: trnsl,clr,f-crs, pr srt,sbrnd-occ sbang,tr wk sil cmt,tr mica flks,pred lse/cln agg qtz grs,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1731,12 +1939,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 554.65625 U |
 | mTVDss | -1201.83 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2268m: trnsl,clr,off wh,f-med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,tr off wh arg mtx, (4083) tr carb spks,fri,lse i/p,gd vis por,
+- **SANDSTONE** @ ~2280m: trnsl,clr,f-crs, pr srt,sbrnd-occ sbang,tr wk sil cmt,tr mica flks,pred lse/cln agg qtz grs,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1759,12 +1971,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 512.3764705882353 U |
 | mTVDss | -1201.83 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2280m: trnsl,clr,f-crs, pr srt,sbrnd-occ sbang,tr wk sil cmt,tr mica flks,pred lse/cln agg qtz grs,gd inf por,fluor.
+- **SANDSTONE** @ ~2292m: clr,trnsl,opq, off wh,f-crs,pr-mod srt,sbrnd-sbang, t k il il t ff h t tr wk sil sil cmt,mnr off wh arg mtx, 67 / 7 / 6 / 9 / 11 577U tr mica flks,tr carb spks & incl,fri
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1787,12 +2003,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 566.48125 U |
 | mTVDss | -1201.82 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2280m: trnsl,clr,f-crs, pr srt,sbrnd-occ sbang,tr wk sil cmt,tr mica flks,pred lse/cln agg qtz grs,gd inf por,fluor.
+- **SANDSTONE** @ ~2292m: clr,trnsl,opq, off wh,f-crs,pr-mod srt,sbrnd-sbang, t k il il t ff h t tr wk sil sil cmt,mnr off wh arg mtx, 67 / 7 / 6 / 9 / 11 577U tr mica flks,tr carb spks & incl,fri
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1815,12 +2035,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 633.3764705882354 U |
 | mTVDss | -1201.81 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2292m: clr,trnsl,opq, off wh,f-crs,pr-mod srt,sbrnd-sbang, t k il il t ff h t tr wk sil sil cmt,mnr off wh arg mtx, 67 / 7 / 6 / 9 / 11 577U tr mica flks,tr carb spks & incl,fri
+- **SANDSTONE** @ ~2304m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,lse,gd inf
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1843,12 +2067,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 707.29375 U |
 | mTVDss | -1201.80 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2292m: clr,trnsl,opq, off wh,f-crs,pr-mod srt,sbrnd-sbang, t k il il t ff h t tr wk sil sil cmt,mnr off wh arg mtx, 67 / 7 / 6 / 9 / 11 577U tr mica flks,tr carb spks & incl,fri
+- **SANDSTONE** @ ~2304m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,lse,gd inf
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1871,12 +2098,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 713.85 U |
 | mTVDss | -1201.77 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2304m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,lse,gd inf
+- **SANDSTONE** @ ~2313m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,cln lse qtz grs,tr mica,gd inf por,fluor. 0 0.5 1 4 14 7600
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1899,12 +2128,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 550.2823529411764 U |
 | mTVDss | -1201.75 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2304m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,lse,gd inf
+- **SANDSTONE** @ ~2313m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,cln lse qtz grs,tr mica,gd inf por,fluor. 0 0.5 1 4 14 7600
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1927,12 +2158,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 499.80625000000003 U |
 | mTVDss | -1201.73 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2304m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,lse,gd inf
+- **SANDSTONE** @ ~2313m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,cln lse qtz grs,tr mica,gd inf por,fluor. 0 0.5 1 4 14 7600
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1955,13 +2189,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
 | Total Gas | 453.18823529411765 U |
 | mTVDss | -1201.70 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2340m: med gry,med brnsh gry,arg,occ carb spks & frags,frm, blky-sbblky.
+- **SANDSTONE** @ ~2313m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,cln lse qtz grs,tr mica,gd inf por,fluor. 0 0.5 1 4 14 7600
+- **SANDSTONE** @ ~2335m: trnsl,clr,tr v lt brn, f-crs,pred med,pr-fr srt,sbang- sbrnd,tr wk sil cmt,tr wh arg mtx, 67 / 7 / 6 / 9 / 11 cln lse qtz grs,tr mica,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -1984,13 +2220,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 474.29999999999995 U |
 | mTVDss | -1201.68 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2340m: med gry,med brnsh gry,arg,occ carb spks & frags,frm, blky-sbblky.
+- **SANDSTONE** @ ~2313m: trnsl,clr,f-crs,pred med,pr-fr srt,sbang-sbrnd,tr wk sil cmt,tr wh arg mtx,cln lse qtz grs,tr mica,gd inf por,fluor. 0 0.5 1 4 14 7600
+- **SANDSTONE** @ ~2335m: trnsl,clr,tr v lt brn, f-crs,pred med,pr-fr srt,sbang- sbrnd,tr wk sil cmt,tr wh arg mtx, 67 / 7 / 6 / 9 / 11 cln lse qtz grs,tr mica,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2013,13 +2252,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 574.03125 U |
 | mTVDss | -1201.65 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2340m: med gry,med brnsh gry,arg,occ carb spks & frags,frm, blky-sbblky.
+- **SANDSTONE** @ ~2335m: trnsl,clr,tr v lt brn, f-crs,pred med,pr-fr srt,sbang- sbrnd,tr wk sil cmt,tr wh arg mtx, 67 / 7 / 6 / 9 / 11 cln lse qtz grs,tr mica,gd inf por,fluor.
+- **SANDSTONE** @ ~2341m: trnsl,clr,off wh,v lt brn,f-med,mod wl srt,sbang- sbrnd,wk sil cmt,mnr off wh arg mtx,tr mica,fri,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2042,13 +2284,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 529.1529411764706 U |
 | mTVDss | -1201.59 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2340m: med gry,med brnsh gry,arg,occ carb spks & frags,frm, blky-sbblky.
+- **SANDSTONE** @ ~2335m: trnsl,clr,tr v lt brn, f-crs,pred med,pr-fr srt,sbang- sbrnd,tr wk sil cmt,tr wh arg mtx, 67 / 7 / 6 / 9 / 11 cln lse qtz grs,tr mica,gd inf por,fluor.
+- **SANDSTONE** @ ~2341m: trnsl,clr,off wh,v lt brn,f-med,mod wl srt,sbang- sbrnd,wk sil cmt,mnr off wh arg mtx,tr mica,fri,gd inf por,fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2071,13 +2316,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 556.69375 U |
 | mTVDss | -1201.54 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2340m: med gry,med brnsh gry,arg,occ carb spks & frags,frm, blky-sbblky.
+- **SANDSTONE** @ ~2335m: trnsl,clr,tr v lt brn, f-crs,pred med,pr-fr srt,sbang- sbrnd,tr wk sil cmt,tr wh arg mtx, 67 / 7 / 6 / 9 / 11 cln lse qtz grs,tr mica,gd inf por,fluor.
+- **SANDSTONE** @ ~2341m: trnsl,clr,off wh,v lt brn,f-med,mod wl srt,sbang- sbrnd,wk sil cmt,mnr off wh arg mtx,tr mica,fri,gd inf por,fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2100,13 +2348,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 560.0117647058823 U |
 | mTVDss | -1201.49 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2340m: med gry,med brnsh gry,arg,occ carb spks & frags,frm, blky-sbblky.
+- **SANDSTONE** @ ~2335m: trnsl,clr,tr v lt brn, f-crs,pred med,pr-fr srt,sbang- sbrnd,tr wk sil cmt,tr wh arg mtx, 67 / 7 / 6 / 9 / 11 cln lse qtz grs,tr mica,gd inf por,fluor.
+- **SANDSTONE** @ ~2341m: trnsl,clr,off wh,v lt brn,f-med,mod wl srt,sbang- sbrnd,wk sil cmt,mnr off wh arg mtx,tr mica,fri,gd inf por,fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2129,13 +2380,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 493.63749999999993 U |
 | mTVDss | -1201.44 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2340m: med gry,med brnsh gry,arg,occ carb spks & frags,frm, blky-sbblky.
+- **SANDSTONE** @ ~2341m: trnsl,clr,off wh,v lt brn,f-med,mod wl srt,sbang- sbrnd,wk sil cmt,mnr off wh arg mtx,tr mica,fri,gd inf por,fluor.
+- **SILTSTONE** @ ~2350m: med dk gry,tr carb spks,tr mica,mod hd,blky-sbblky.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2158,12 +2412,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 633.95 U |
 | mTVDss | -1201.39 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2350m: med dk gry,tr carb spks,tr mica,mod hd,blky-sbblky.
+- **SANDSTONE** @ ~2362m: clr,opq,trnsl,off wh,f- med,rr crs grs,mod srt,sbang-sbrnd, 7760 mod-wk sil cmt,off wh arg mtx i/p, tr mica,tr liths,rr carb spks,dom lse cln grs,tr fri aggs,gd vis por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2186,12 +2444,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 698.8882352941175 U |
 | mTVDss | -1201.32 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2350m: med dk gry,tr carb spks,tr mica,mod hd,blky-sbblky.
+- **SANDSTONE** @ ~2362m: clr,opq,trnsl,off wh,f- med,rr crs grs,mod srt,sbang-sbrnd, 7760 mod-wk sil cmt,off wh arg mtx i/p, tr mica,tr liths,rr carb spks,dom lse cln grs,tr fri aggs,gd vis por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2214,12 +2476,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 599.2647058823529 U |
 | mTVDss | -1201.25 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2362m: clr,opq,trnsl,off wh,f- med,rr crs grs,mod srt,sbang-sbrnd, 7760 mod-wk sil cmt,off wh arg mtx i/p, tr mica,tr liths,rr carb spks,dom lse cln grs,tr fri aggs,gd vis por,
+- **SANDSTONE** @ ~2374m: 434-517 gpm SANDSTONE:trnsl,clr,f-crs,pred med,pr srt,sbang-sbrnd,rr wk sil cmt,pred lse qtz grs,gd vis inf por,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2242,12 +2507,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 617.1823529411764 U |
 | mTVDss | -1201.18 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2362m: clr,opq,trnsl,off wh,f- med,rr crs grs,mod srt,sbang-sbrnd, 7760 mod-wk sil cmt,off wh arg mtx i/p, tr mica,tr liths,rr carb spks,dom lse cln grs,tr fri aggs,gd vis por,
+- **SANDSTONE** @ ~2374m: 434-517 gpm SANDSTONE:trnsl,clr,f-crs,pred med,pr srt,sbang-sbrnd,rr wk sil cmt,pred lse qtz grs,gd vis inf por,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2270,12 +2538,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 623.29375 U |
 | mTVDss | -1201.11 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2374m: 434-517 gpm SANDSTONE:trnsl,clr,f-crs,pred med,pr srt,sbang-sbrnd,rr wk sil cmt,pred lse qtz grs,gd vis inf por,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2298,12 +2568,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 581.7882352941176 U |
 | mTVDss | -1201.03 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2374m: 434-517 gpm SANDSTONE:trnsl,clr,f-crs,pred med,pr srt,sbang-sbrnd,rr wk sil cmt,pred lse qtz grs,gd vis inf por,
+- **SANDSTONE** @ ~2402m: trnsl,clr,f-crs,pred MW:9.4 med,pr srt,sbang-sbrnd,rr wk sil FV:44 cmt,pred lse qtz grs,gd vis inf por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2326,12 +2600,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 626.64375 U |
 | mTVDss | -1200.96 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2374m: 434-517 gpm SANDSTONE:trnsl,clr,f-crs,pred med,pr srt,sbang-sbrnd,rr wk sil cmt,pred lse qtz grs,gd vis inf por,
+- **SANDSTONE** @ ~2402m: trnsl,clr,f-crs,pred MW:9.4 med,pr srt,sbang-sbrnd,rr wk sil FV:44 cmt,pred lse qtz grs,gd vis inf por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2354,12 +2632,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri-bri yel wh evn |
 | Total Gas | 666.325 U |
 | mTVDss | -1200.94 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2402m: trnsl,clr,f-crs,pred MW:9.4 med,pr srt,sbang-sbrnd,rr wk sil FV:44 cmt,pred lse qtz grs,gd vis inf por,
+- **SILTSTONE** @ ~2402m: med gry,med dk gry,tr 7910 micmic,mod hd,sbblky. mod bri ppt-ptchy,mod bri inst cut,mod bri thn r/r.
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2382,13 +2663,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 100.0% Sandstone (litho ASCII aggregate) TG 161.4U (drill-gas ASCII) mod gry,mod dk gry, aren,rr carb spks,rr micmic & liths, frm-mod hd,blky. off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf med gry,med dk gry, rr med dk gry brn,aren,tr-rr carb 8070 spks,tr micmic,rr liths,frm-mod hd,sbblky. off wh-v lt brn,clr- trnsl,opq,f-crs,dom f aggs,pr srt, sbrnd-sbang,com wk sil cmt,com off wh arg mtx,rr carb spks,tr liths, fri aggs,com cln lse qtz grs,fr vis clr,frstd,trnsl,tr off 8110 wh,dom crs,tr f-med,sbrnd-rnd,tr wk sil cmt,tr off wh arg mtx,dom cln lse grs,tr fri aggs,gd inf por, |
 | Total Gas | 161.38235294117646 U |
 | mTVDss | -1201.22 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2440m: med-occ lt gry, arg,rr carb spks,rr calc frags, tr micmic,tr dissem pyr,frm-occ sft,sbblky-blky. 2460 SURVEY @ 2459.81'MDRT
+- **SILTSTONE** @ ~2441m: mod gry,mod dk gry, aren,rr carb spks,rr micmic & liths, frm-mod hd,blky.
+- **SANDSTONE** @ ~2451m: off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2411,13 +2695,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 100.0% Sandstone (litho ASCII aggregate) TG 178.1U (drill-gas ASCII) mod gry,mod dk gry, aren,rr carb spks,rr micmic & liths, frm-mod hd,blky. off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf med gry,med dk gry, rr med dk gry brn,aren,tr-rr carb 8070 spks,tr micmic,rr liths,frm-mod hd,sbblky. off wh-v lt brn,clr- trnsl,opq,f-crs,dom f aggs,pr srt, sbrnd-sbang,com wk sil cmt,com off wh arg mtx,rr carb spks,tr liths, fri aggs,com cln lse qtz grs,fr vis clr,frstd,trnsl,tr off 8110 wh,dom crs,tr f-med,sbrnd-rnd,tr wk sil cmt,tr off wh arg mtx,dom cln lse grs,tr fri aggs,gd inf por, |
 | Total Gas | 178.14375 U |
 | mTVDss | -1201.27 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2440m: med-occ lt gry, arg,rr carb spks,rr calc frags, tr micmic,tr dissem pyr,frm-occ sft,sbblky-blky. 2460 SURVEY @ 2459.81'MDRT
+- **SILTSTONE** @ ~2441m: mod gry,mod dk gry, aren,rr carb spks,rr micmic & liths, frm-mod hd,blky.
+- **SANDSTONE** @ ~2451m: off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2440,12 +2727,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 100.0% Sandstone (litho ASCII aggregate) TG 191.2U (drill-gas ASCII) off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf med gry,med dk gry, rr med dk gry brn,aren,tr-rr carb 8070 spks,tr micmic,rr liths,frm-mod hd,sbblky. off wh-v lt brn,clr- trnsl,opq,f-crs,dom f aggs,pr srt, sbrnd-sbang,com wk sil cmt,com off wh arg mtx,rr carb spks,tr liths, fri aggs,com cln lse qtz grs,fr vis clr,frstd,trnsl,tr off 8110 wh,dom crs,tr f-med,sbrnd-rnd,tr wk sil cmt,tr off wh arg mtx,dom cln lse grs,tr fri aggs,gd inf por, |
 | Total Gas | 191.1823529411765 U |
 | mTVDss | -1201.32 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2451m: off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf
+- **SILTSTONE** @ ~2457m: med gry,med dk gry, rr med dk gry brn,aren,tr-rr carb 8070 spks,tr micmic,rr liths,frm-mod hd,sbblky.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2468,12 +2759,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr-gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri yel wh ptchy evn |
 | Total Gas | 187.34375 U |
 | mTVDss | -1201.38 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2451m: off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf
+- **SILTSTONE** @ ~2457m: med gry,med dk gry, rr med dk gry brn,aren,tr-rr carb 8070 spks,tr micmic,rr liths,frm-mod hd,sbblky.
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2496,12 +2791,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr-gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri yel wh ptchy evn |
 | Total Gas | 193.02499999999998 U |
 | mTVDss | -1201.43 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2457m: med gry,med dk gry, rr med dk gry brn,aren,tr-rr carb 8070 spks,tr micmic,rr liths,frm-mod hd,sbblky.
+- **SANDSTONE** @ ~2466m: off wh-v lt brn,clr- trnsl,opq,f-crs,dom f aggs,pr srt, sbrnd-sbang,com wk sil cmt,com off wh arg mtx,rr carb spks,tr liths, fri aggs,com cln lse qtz grs,fr vis
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2524,13 +2823,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr-gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri yel wh ptchy evn |
 | Total Gas | 251.48823529411766 U |
 | mTVDss | -1201.48 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2490m: med-occ lt gry, arg,rr carb spks,tr calc frags, tr micmic,tr dissem pyr,frm-occ mod hd,blky-sbblky.
+- **SANDSTONE** @ ~2466m: off wh-v lt brn,clr- trnsl,opq,f-crs,dom f aggs,pr srt, sbrnd-sbang,com wk sil cmt,com off wh arg mtx,rr carb spks,tr liths, fri aggs,com cln lse qtz grs,fr vis
+- **SANDSTONE** @ ~2466m: clr,frstd,trnsl,tr off 8110 wh,dom crs,tr f-med,sbrnd-rnd,tr wk sil cmt,tr off wh arg mtx,dom cln lse grs,tr fri aggs,gd inf por, fluor.
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2553,13 +2855,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr-gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri yel wh ptchy evn |
 | Total Gas | 295.01250000000005 U |
 | mTVDss | -1201.53 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2490m: med-occ lt gry, arg,rr carb spks,tr calc frags, tr micmic,tr dissem pyr,frm-occ mod hd,blky-sbblky.
+- **SANDSTONE** @ ~2466m: off wh-v lt brn,clr- trnsl,opq,f-crs,dom f aggs,pr srt, sbrnd-sbang,com wk sil cmt,com off wh arg mtx,rr carb spks,tr liths, fri aggs,com cln lse qtz grs,fr vis
+- **SANDSTONE** @ ~2466m: clr,frstd,trnsl,tr off 8110 wh,dom crs,tr f-med,sbrnd-rnd,tr wk sil cmt,tr off wh arg mtx,dom cln lse grs,tr fri aggs,gd inf por, fluor.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2582,13 +2887,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr-gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% mod bri yel wh ptchy evn |
 | Total Gas | 308.40000000000003 U |
 | mTVDss | -1201.56 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2490m: med-occ lt gry, arg,rr carb spks,tr calc frags, tr micmic,tr dissem pyr,frm-occ mod hd,blky-sbblky.
+- **SANDSTONE** @ ~2478m: trnsl,clr,off wh,f- crs,pr srt,sbang-sbrnd,nil-wk sil 8140 cmt,mnr off wh arg mtx,tr micmic, lse-fri aggs,fr-gd inf por,fluor. (4082)
+- **SANDSTONE** @ ~2493m: off wh,clr-trnsl,v lt 8190 brn,f-crs,pr srt-med wl srt aggs, sbrnd-rnd,sbang i/p,mod-wk sil cmt i/p,mnr off wh arg mtx,mnr mica flks, rr carb spks,rr liths,com cln lse grs,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2611,13 +2918,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr-gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 264.7875 U |
 | mTVDss | -1201.59 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2490m: med-occ lt gry, arg,rr carb spks,tr calc frags, tr micmic,tr dissem pyr,frm-occ mod hd,blky-sbblky.
+- **SANDSTONE** @ ~2478m: trnsl,clr,off wh,f- crs,pr srt,sbang-sbrnd,nil-wk sil 8140 cmt,mnr off wh arg mtx,tr micmic, lse-fri aggs,fr-gd inf por,fluor. (4082)
+- **SANDSTONE** @ ~2493m: off wh,clr-trnsl,v lt 8190 brn,f-crs,pr srt-med wl srt aggs, sbrnd-rnd,sbang i/p,mod-wk sil cmt i/p,mnr off wh arg mtx,mnr mica flks, rr carb spks,rr liths,com cln lse grs,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2640,13 +2949,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | fr-gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 313.9125 U |
 | mTVDss | -1201.63 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2490m: med-occ lt gry, arg,rr carb spks,tr calc frags, tr micmic,tr dissem pyr,frm-occ mod hd,blky-sbblky.
+- **SANDSTONE** @ ~2478m: trnsl,clr,off wh,f- crs,pr srt,sbang-sbrnd,nil-wk sil 8140 cmt,mnr off wh arg mtx,tr micmic, lse-fri aggs,fr-gd inf por,fluor. (4082)
+- **SANDSTONE** @ ~2493m: off wh,clr-trnsl,v lt 8190 brn,f-crs,pr srt-med wl srt aggs, sbrnd-rnd,sbang i/p,mod-wk sil cmt i/p,mnr off wh arg mtx,mnr mica flks, rr carb spks,rr liths,com cln lse grs,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2669,13 +2981,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 360.20000000000005 U |
 | mTVDss | -1201.66 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2490m: med-occ lt gry, arg,rr carb spks,tr calc frags, tr micmic,tr dissem pyr,frm-occ mod hd,blky-sbblky.
+- **SANDSTONE** @ ~2493m: off wh,clr-trnsl,v lt 8190 brn,f-crs,pr srt-med wl srt aggs, sbrnd-rnd,sbang i/p,mod-wk sil cmt i/p,mnr off wh arg mtx,mnr mica flks, rr carb spks,rr liths,com cln lse grs,
+- **SANDSTONE** @ ~2512m: clr,trnsl,tr off wh, (4082) f-crs,pr srt,sbrnd,tr rnd,tr wk sil cmt,tr off wh arg mtx,tr mica flks,dom cln lse grs,gd inf por,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2698,13 +3012,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 85.0% None |
 | Total Gas | 362.625 U |
 | mTVDss | -1201.70 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2490m: med-occ lt gry, arg,rr carb spks,tr calc frags, tr micmic,tr dissem pyr,frm-occ mod hd,blky-sbblky.
+- **SANDSTONE** @ ~2493m: off wh,clr-trnsl,v lt 8190 brn,f-crs,pr srt-med wl srt aggs, sbrnd-rnd,sbang i/p,mod-wk sil cmt i/p,mnr off wh arg mtx,mnr mica flks, rr carb spks,rr liths,com cln lse grs,
+- **SANDSTONE** @ ~2512m: clr,trnsl,tr off wh, (4082) f-crs,pr srt,sbrnd,tr rnd,tr wk sil cmt,tr off wh arg mtx,tr mica flks,dom cln lse grs,gd inf por,
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2727,12 +3043,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 75.0% mod bri yel wh |
 | Total Gas | 374.65882352941173 U |
 | mTVDss | -1201.73 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2493m: off wh,clr-trnsl,v lt 8190 brn,f-crs,pr srt-med wl srt aggs, sbrnd-rnd,sbang i/p,mod-wk sil cmt i/p,mnr off wh arg mtx,mnr mica flks, rr carb spks,rr liths,com cln lse grs,
+- **SANDSTONE** @ ~2512m: clr,trnsl,tr off wh, (4082) f-crs,pr srt,sbrnd,tr rnd,tr wk sil cmt,tr off wh arg mtx,tr mica flks,dom cln lse grs,gd inf por,
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2755,12 +3075,15 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 75.0% mod bri yel wh |
 | Total Gas | 760.2875 U |
 | mTVDss | -1201.77 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2512m: clr,trnsl,tr off wh, (4082) f-crs,pr srt,sbrnd,tr rnd,tr wk sil cmt,tr off wh arg mtx,tr mica flks,dom cln lse grs,gd inf por,
+- **SANDSTONE** @ ~2527m: off wh,clr,trnsl,v lt brn,f-crs,com f aggs,mod srt, sbrnd-sbang,tr v crs ang fract grs, wk sil cmt,off wh arg mtx i/p,tr
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2783,12 +3106,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | gd |
+| Loose Grains | Yes |
+| Fluorescence | 75.0% mod bri yel wh |
 | Total Gas | 587.54375 U |
 | mTVDss | -1201.80 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2512m: clr,trnsl,tr off wh, (4082) f-crs,pr srt,sbrnd,tr rnd,tr wk sil cmt,tr off wh arg mtx,tr mica flks,dom cln lse grs,gd inf por,
+- **SANDSTONE** @ ~2527m: off wh,clr,trnsl,v lt brn,f-crs,com f aggs,mod srt, sbrnd-sbang,tr v crs ang fract grs, wk sil cmt,off wh arg mtx i/p,tr
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2811,12 +3138,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | p-fr |
+| Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 214.0375 U |
 | mTVDss | -1202.10 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2551m: med gry-med dk gry, med dk grysh brn,aren,tr micmic, rr carb spks,mod hd,sbblky.
+- **SANDSTONE** @ ~2554m: off wh-lt brn,med brn, clr-opq,trnsl,f-med aggs,med-v crs 8390 lse,pr srt,sbang-sbrnd,occ ang fract v crs grs,mod-strg sil cmt,tr wk sil cmt,off wh-lt brn arg mtx,tr slty
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2839,12 +3170,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | p-fr |
+| Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 221.00625 U |
 | mTVDss | -1202.09 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2554m: off wh-lt brn,med brn, clr-opq,trnsl,f-med aggs,med-v crs 8390 lse,pr srt,sbang-sbrnd,occ ang fract v crs grs,mod-strg sil cmt,tr wk sil cmt,off wh-lt brn arg mtx,tr slty
+- **SANDSTONE** @ ~2566m: off wh,clr,trnsl, lt brn,f-med,cln lse crs grs,pr-mod 72 / 6 / 5 / 8 / 9 srt,sbang-sbrnd,wk sil cmt,com off wh-lt brn arg mtx,mnr mica flks,fri 8430 aggs,lse crs qtz grs i/p,fr-pr vis
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2867,12 +3202,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | p-fr |
+| Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 222.27058823529413 U |
 | mTVDss | -1202.09 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2566m: off wh,clr,trnsl, lt brn,f-med,cln lse crs grs,pr-mod 72 / 6 / 5 / 8 / 9 srt,sbang-sbrnd,wk sil cmt,com off wh-lt brn arg mtx,mnr mica flks,fri 8430 aggs,lse crs qtz grs i/p,fr-pr vis
+- **SILTSTONE** @ ~2576m: lt-med gry,med brnsh gry,aren,arg i/p,micmic,occ carb spks,mnr liths,mod hd,sbfiss-sbblky.
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2895,12 +3234,16 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
-| Porosity Class | none |
-| Loose Grains | No |
+| Porosity Class | p-fr |
+| Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 203.375 U |
 | mTVDss | -1202.08 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2566m: off wh,clr,trnsl, lt brn,f-med,cln lse crs grs,pr-mod 72 / 6 / 5 / 8 / 9 srt,sbang-sbrnd,wk sil cmt,com off wh-lt brn arg mtx,mnr mica flks,fri 8430 aggs,lse crs qtz grs i/p,fr-pr vis
+- **SILTSTONE** @ ~2576m: lt-med gry,med brnsh gry,aren,arg i/p,micmic,occ carb spks,mnr liths,mod hd,sbfiss-sbblky.
+- _(3 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2925,10 +3268,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 40.0% None |
 | Total Gas | 184.55882352941177 U |
 | mTVDss | -1202.08 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2576m: lt-med gry,med brnsh gry,aren,arg i/p,micmic,occ carb spks,mnr liths,mod hd,sbfiss-sbblky.
+- **SANDSTONE** @ ~2582m: clr,trnsl,opq, lt brn,f-crs,pr srt,sbang-sbrnd, mnr wk sil cmt,occ off wh-lt brn arg mtx,rr carb spks & lith incl, tr mica flks,fri f-med grn aggs,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2953,10 +3300,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 40.0% None |
 | Total Gas | 189.31875 U |
 | mTVDss | -1202.07 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SILTSTONE** @ ~2576m: lt-med gry,med brnsh gry,aren,arg i/p,micmic,occ carb spks,mnr liths,mod hd,sbfiss-sbblky.
+- **SANDSTONE** @ ~2582m: clr,trnsl,opq, lt brn,f-crs,pr srt,sbang-sbrnd, mnr wk sil cmt,occ off wh-lt brn arg mtx,rr carb spks & lith incl, tr mica flks,fri f-med grn aggs,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -2981,10 +3332,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 40.0% None |
 | Total Gas | 208.08749999999998 U |
 | mTVDss | -1202.07 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2582m: clr,trnsl,opq, lt brn,f-crs,pr srt,sbang-sbrnd, mnr wk sil cmt,occ off wh-lt brn arg mtx,rr carb spks & lith incl, tr mica flks,fri f-med grn aggs,
+- **SANDSTONE** @ ~2588m: clr,trnsl,opq, lt brn,f-crs,pr srt,sbang-sbrnd, mnr wk sil cmt,occ off wh-lt brn arg mtx,rr carb spks & lith incl,
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3009,10 +3364,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 40.0% None |
 | Total Gas | 183.8235294117647 U |
 | mTVDss | -1202.06 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2588m: clr,trnsl,opq, lt brn,f-crs,pr srt,sbang-sbrnd, mnr wk sil cmt,occ off wh-lt brn arg mtx,rr carb spks & lith incl,
+- **SANDSTONE** @ ~2597m: clr,trnsl,opq, 8530 off wh,f-crs,pr-mod srt,sbang-sbrnd, mnr wk-occ mod strg sil cmt,mod abdt off wh arg mtx,mnr mica flks,rr carb spks & lith incl,fri-occ mod
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3037,10 +3396,14 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 40.0% None |
 | Total Gas | 161.54375 U |
 | mTVDss | -1202.04 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2588m: clr,trnsl,opq, lt brn,f-crs,pr srt,sbang-sbrnd, mnr wk sil cmt,occ off wh-lt brn arg mtx,rr carb spks & lith incl,
+- **SANDSTONE** @ ~2597m: clr,trnsl,opq, 8530 off wh,f-crs,pr-mod srt,sbang-sbrnd, mnr wk-occ mod strg sil cmt,mod abdt off wh arg mtx,mnr mica flks,rr carb spks & lith incl,fri-occ mod
+- _(2 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3068,7 +3431,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Total Gas | 136.35882352941175 U |
 | mTVDss | -1202.03 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2597m: clr,trnsl,opq, 8530 off wh,f-crs,pr-mod srt,sbang-sbrnd, mnr wk-occ mod strg sil cmt,mod abdt off wh arg mtx,mnr mica flks,rr carb spks & lith incl,fri-occ mod
+- **SANDSTONE** @ ~2612m: clr,trnsl,opq, off wh,lt brnsh gry,f-crs,pr srt, sbang-sbrnd,mnr wk-occ mod strg sil cmt,com off wh-lt brnsh gry arg mtx,mnr mica,tr carb spks,fri-mod
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3096,7 +3462,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Total Gas | 119.55624999999999 U |
 | mTVDss | -1202.02 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2612m: clr,trnsl,opq, off wh,lt brnsh gry,f-crs,pr srt, sbang-sbrnd,mnr wk-occ mod strg sil cmt,com off wh-lt brnsh gry arg mtx,mnr mica,tr carb spks,fri-mod
+- **SILTSTONE** @ ~2618m: lt-med gry,med brnsh gry,aren,arg i/p,micmic,occ carb 0 0.5 1 4 14 8600 spks,mnr liths,mod hd,sbfiss-sbblky. 14 28 SURVEY @ 8608.2'MDRT
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3124,7 +3492,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Total Gas | 123.57058823529411 U |
 | mTVDss | -1202.00 m |
 
-**Mudlog Cuttings Description (PDF):** _No matching entry found_
+**Mudlog Cuttings Description (PDF):**
+- **SANDSTONE** @ ~2612m: clr,trnsl,opq, off wh,lt brnsh gry,f-crs,pr srt, sbang-sbrnd,mnr wk-occ mod strg sil cmt,com off wh-lt brnsh gry arg mtx,mnr mica,tr carb spks,fri-mod
+- **SILTSTONE** @ ~2618m: lt-med gry,med brnsh gry,aren,arg i/p,micmic,occ carb 0 0.5 1 4 14 8600 spks,mnr liths,mod hd,sbfiss-sbblky. 14 28 SURVEY @ 8608.2'MDRT
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3153,7 +3524,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | mTVDss | -1201.99 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2640m: med-rr lt gry,mnr 2660 brnsh gry,arg,tr carb spks,tr micmic, tr loc glauc,tr dissem pyr,frm-occ mod hd,sbblky-occ blky.
+- **SANDSTONE** @ ~2612m: clr,trnsl,opq, off wh,lt brnsh gry,f-crs,pr srt, sbang-sbrnd,mnr wk-occ mod strg sil cmt,com off wh-lt brnsh gry arg mtx,mnr mica,tr carb spks,fri-mod
+- **SILTSTONE** @ ~2618m: lt-med gry,med brnsh gry,aren,arg i/p,micmic,occ carb 0 0.5 1 4 14 8600 spks,mnr liths,mod hd,sbfiss-sbblky. 14 28 SURVEY @ 8608.2'MDRT
+- _(1 additional mudlog entries in interval)_
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3182,7 +3555,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | mTVDss | -1201.99 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2640m: med-rr lt gry,mnr 2660 brnsh gry,arg,tr carb spks,tr micmic, tr loc glauc,tr dissem pyr,frm-occ mod hd,sbblky-occ blky.
+- **SILTSTONE** @ ~2618m: lt-med gry,med brnsh gry,aren,arg i/p,micmic,occ carb 0 0.5 1 4 14 8600 spks,mnr liths,mod hd,sbfiss-sbblky. 14 28 SURVEY @ 8608.2'MDRT
+- **SANDSTONE** @ ~2633m: clr,trnsl,opq, 50 / 5 / 7 / 15 / 23 off wh,lt brnsh gry,f-crs,pr srt, sbang-sbrnd,mnr wk-occ mod strg sil cmt,com off wh-lt brnsh gry arg mtx,mnr mica,tr carb spks,fri-mod
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3211,7 +3585,8 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | mTVDss | -1201.99 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2640m: med-rr lt gry,mnr 2660 brnsh gry,arg,tr carb spks,tr micmic, tr loc glauc,tr dissem pyr,frm-occ mod hd,sbblky-occ blky.
+- **SILTSTONE** @ ~2618m: lt-med gry,med brnsh gry,aren,arg i/p,micmic,occ carb 0 0.5 1 4 14 8600 spks,mnr liths,mod hd,sbfiss-sbblky. 14 28 SURVEY @ 8608.2'MDRT
+- **SANDSTONE** @ ~2633m: clr,trnsl,opq, 50 / 5 / 7 / 15 / 23 off wh,lt brnsh gry,f-crs,pr srt, sbang-sbrnd,mnr wk-occ mod strg sil cmt,com off wh-lt brnsh gry arg mtx,mnr mica,tr carb spks,fri-mod
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3240,7 +3615,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | mTVDss | -1201.99 m |
 
 **Mudlog Cuttings Description (PDF):**
-- **SILTSTONE** @ ~2640m: med-rr lt gry,mnr 2660 brnsh gry,arg,tr carb spks,tr micmic, tr loc glauc,tr dissem pyr,frm-occ mod hd,sbblky-occ blky.
+- **SANDSTONE** @ ~2633m: clr,trnsl,opq, 50 / 5 / 7 / 15 / 23 off wh,lt brnsh gry,f-crs,pr srt, sbang-sbrnd,mnr wk-occ mod strg sil cmt,com off wh-lt brnsh gry arg mtx,mnr mica,tr carb spks,fri-mod
 
 **Wireline Log Averages (LAS):**
 | Curve | Average | Data Points |
@@ -3259,4 +3634,4 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Avg Δ Res (Deep−Shallow) | 8.17 ohm.m |
 | Max Δ Res | 25.77 ohm.m |
 | Min Δ Res | 1.55 ohm.m |
-| Mudlog matches | 20 / 113 |
+| Mudlog matches | 113 / 113 |

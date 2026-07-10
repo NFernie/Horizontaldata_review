@@ -1,6 +1,6 @@
 # MCKINLAY 13 — McKinlay Pay Summary
 
-**Generated:** 2026-07-10 03:41 UTC  
+**Generated:** 2026-07-10 04:54 UTC  
 **Formation tops name:** MCKINLAY 13  
 **McKinlay window:** 1831.5 – 3228.7 m MD  
 **DC30 top:** 1831.54 m MD  
@@ -31,15 +31,21 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 0.0 | 0.0% | 0 |
+| Cuttings only | 565.0 | 40.4% | 5 |
 | Resistivity only | 1058.4 | 75.8% | 19 |
-| Matching both | 0.0 | 0.0% | 0 |
+| Matching both | 560.0 | 40.1% | 5 |
 
 **Sample intervals in McKinlay Member:** 247
 
 ## Cuttings-Only Pay Intervals
 
-_No pay intervals identified._
+| Top (m MD) | Bottom (m MD) | Length (m) |
+|------------|---------------|------------|
+| 1907.5 | 2012.5 | 105.0 |
+| 2162.5 | 2387.5 | 225.0 |
+| 2812.5 | 2872.5 | 60.0 |
+| 2892.5 | 2987.5 | 95.0 |
+| 3147.5 | 3227.5 | 80.0 |
 
 ## Resistivity-Only Pay Intervals
 
@@ -65,9 +71,14 @@ _(4 additional intervals omitted)_
 
 ## Matching Pay Intervals
 
-_No pay intervals identified._
+| Top (m MD) | Bottom (m MD) | Length (m) |
+|------------|---------------|------------|
+| 1907.5 | 2012.5 | 105.0 |
+| 2162.5 | 2387.5 | 225.0 |
+| 2812.5 | 2872.5 | 60.0 |
+| 2892.5 | 2987.5 | 95.0 |
+| 3147.5 | 3222.5 | 75.0 |
 
 ## Data Quality Notes
 
-- **247** sample intervals missing %SS or %Fluor — excluded from cuttings/matching pay.
 - **1** intervals lack valid LAS RES_DEEP — excluded from matching pay only.

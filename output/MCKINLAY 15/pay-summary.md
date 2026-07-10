@@ -1,6 +1,6 @@
 # MCKINLAY 15 — McKinlay Pay Summary
 
-**Generated:** 2026-07-10 03:41 UTC  
+**Generated:** 2026-07-10 04:54 UTC  
 **Formation tops name:** MCKINLAY 15  
 **McKinlay window:** 1717.8 – 2589.1 m MD  
 **DC30 top:** 1717.85 m MD  
@@ -62,5 +62,5 @@ _No pay intervals identified._
 
 ## Data Quality Notes
 
-- **57** sample intervals missing %SS or %Fluor — excluded from cuttings/matching pay.
+- **18** sample intervals missing %SS or %Fluor — excluded from cuttings/matching pay.
 - **1** intervals lack valid LAS RES_DEEP — excluded from matching pay only.

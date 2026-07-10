@@ -28,7 +28,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 - Depth range: **1605 – 2065 m MD**
 - Average sandstone: **97.0%**
-- Mudlog matched: **47 / 70** intervals
+- Mudlog matched: **70 / 70** intervals
 
 ## Limitations
 

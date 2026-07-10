@@ -16,6 +16,12 @@ if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 
 from litho_gas_ingest import build_sample_intervals  # noqa: E402
+from mudlog_parser import (  # noqa: E402
+    find_mudlog,
+    match_fluorescence,
+    parse_fluorescence_entries,
+    parse_mudlog_entries,
+)
 from trajectory import TrajectoryInterpolator  # noqa: E402
 
 WORKSPACE = (
@@ -264,11 +270,6 @@ def resolve_well_name(df, cfg):
     raise ValueError(f"No tops match for {cfg.get('display')} in dataframe")
 
 
-LITH_TYPES = re.compile(
-    r"(SANDSTONE|SILTSTONE|LIMESTONE(?:\([^)]*\))?|SHALE|DOLOMITE|COAL|ANHYDRITE|MUDSTONE|CLAYSTONE)"
-)
-
-
 def classify_tops(mck_list, murta_list, tolerance=PAIR_TOLERANCE):
     """Classify McKinlay/Murta tops into overburden entry pairs and lone McKinlay re-entries."""
     overburden = []
@@ -381,55 +382,6 @@ def extract_mudlog_text(pdf_path):
             if text:
                 chunks.append(text)
     return "\n".join(chunks)
-
-
-def parse_mudlog_entries(text):
-    entries = []
-    lines = text.split("\n")
-    current_depths = []
-    for i, line in enumerate(lines):
-        top_match = re.search(
-            r"(MCKINLAY MEMBER|MURTA[^:]*|DC30):\s*(\d+\.?\d*)mMDRT", line
-        )
-        if top_match:
-            entries.append(
-                {
-                    "type": "formation_top",
-                    "name": top_match.group(1),
-                    "depth": float(top_match.group(2)),
-                    "text": line.strip(),
-                }
-            )
-        md_match = re.search(r"MD:(\d+\.?\d*)\s*m", line)
-        if md_match:
-            current_depths.append(float(md_match.group(1)))
-        lith_match = LITH_TYPES.search(line)
-        if lith_match and ":" in line:
-            lith_type = lith_match.group(1)
-            desc = line.split(":", 1)[1].strip()
-            depth_est = current_depths[-1] if current_depths else None
-            for j in range(max(0, i - 3), i):
-                nums = re.findall(r"^(\d{4})$", lines[j].strip())
-                if nums:
-                    depth_est = float(nums[0])
-            full_desc = desc
-            for j in range(i + 1, min(i + 5, len(lines))):
-                nl = lines[j].strip()
-                if LITH_TYPES.search(nl) or re.match(r"MD:", nl) or re.match(r"^\d{4}$", nl):
-                    break
-                if nl and not re.match(
-                    r"^(WOB|RPM|SPP|FLOW|FLUORESCENCE|MD:|VD |azi )", nl
-                ):
-                    full_desc += " " + nl
-            entries.append(
-                {
-                    "type": "lithology",
-                    "lith_type": lith_type,
-                    "depth_est": depth_est,
-                    "text": full_desc[:600],
-                }
-            )
-    return entries
 
 
 LAS_CURVE_ALIASES = {
@@ -850,22 +802,42 @@ def _assign_interval_bounds(samples: pd.DataFrame) -> pd.DataFrame:
     return samples
 
 
+def enrich_samples_from_mudlog(cfg: dict, samples: pd.DataFrame) -> pd.DataFrame:
+    """Attach fluorescence % and brightness from mudlog PDF text track (ft depths → m)."""
+    if cfg.get("ingest") != "litho_gas":
+        return samples
+    pdf_path = os.path.join(WORKSPACE, cfg["pdf"])
+    mudlog_text = extract_mudlog_text(pdf_path)
+    depth_unit = cfg.get("depth_unit", "ft")
+    fluor_entries = parse_fluorescence_entries(mudlog_text, depth_unit=depth_unit)
+    if not fluor_entries:
+        return samples
+
+    out = samples.copy()
+    if "Brightness" in out.columns:
+        out["Brightness"] = out["Brightness"].astype(object)
+    for idx, row in out.iterrows():
+        if pd.notna(row.get("Pct_Fluor")):
+            continue
+        top = float(row["interval_top"])
+        bot = float(row["interval_bottom"])
+        fluor_match = match_fluorescence(top, bot, fluor_entries)
+        if fluor_match is None:
+            continue
+        out.at[idx, "Pct_Fluor"] = fluor_match["pct_mid"]
+        if pd.isna(row.get("Brightness")) and fluor_match.get("brightness"):
+            out.at[idx, "Brightness"] = fluor_match["brightness"]
+    return out
+
+
 def load_well_samples(cfg: dict, mck_start: float, mck_end: float) -> tuple[pd.DataFrame, dict]:
     """Load sample intervals from Excel or litho/gas ASCII (McKinlay 10–15)."""
     if cfg.get("ingest") == "litho_gas":
-        return build_sample_intervals(cfg, mck_start, mck_end)
+        samples, long_map = build_sample_intervals(cfg, mck_start, mck_end)
+        samples = enrich_samples_from_mudlog(cfg, samples)
+        return samples, long_map
     xlsx_path = os.path.join(WORKSPACE, cfg["xlsx"])
     return load_samples(xlsx_path)
-
-
-def find_mudlog(top, bot, entries, window=MUDLOG_WINDOW):
-    return [
-        e
-        for e in entries
-        if e["type"] == "lithology"
-        and e.get("depth_est")
-        and (top - window) <= e["depth_est"] <= (bot + window)
-    ]
 
 
 def fmt(val, digits=2):
@@ -901,7 +873,13 @@ def process_well(cfg, dc30_df, mck_murta_df):
     pdf_path = os.path.join(WORKSPACE, cfg["pdf"])
 
     mudlog_text = extract_mudlog_text(pdf_path)
-    mudlog_entries = parse_mudlog_entries(mudlog_text)
+    depth_unit = cfg.get("depth_unit", "m")
+    mudlog_entries = parse_mudlog_entries(mudlog_text, depth_unit=depth_unit)
+    fluor_entries = (
+        parse_fluorescence_entries(mudlog_text, depth_unit=depth_unit)
+        if depth_unit == "ft"
+        else []
+    )
     mudlog_mck = [
         e["depth"]
         for e in mudlog_entries
@@ -933,10 +911,26 @@ def process_well(cfg, dc30_df, mck_murta_df):
             continue
 
         log_stats = avg_log(las_df, top, bot)
-        mud_matches = find_mudlog(top, bot, mudlog_entries)
+        mud_matches = find_mudlog(top, bot, mudlog_entries, window_m=MUDLOG_WINDOW)
         desc_text = _interval_descriptor_text(long_map.get(depth, ""), mud_matches)
         silt = 100 - row["Pct_Sandstone"] if pd.notna(row["Pct_Sandstone"]) else None
         mtvds = trajectory.interpolate_mtvds(depth) if trajectory else None
+
+        fluor = row["Pct_Fluor"]
+        bright = row["Brightness"]
+        if pd.isna(fluor):
+            fluor_match = match_fluorescence(top, bot, fluor_entries) if fluor_entries else None
+            if fluor_match is not None:
+                fluor = fluor_match["pct_mid"]
+                if pd.isna(bright) or (isinstance(bright, float) and np.isnan(bright)):
+                    bright = fluor_match.get("brightness")
+        if pd.isna(fluor):
+            mud_parsed = parse_mckinlay_description(desc_text)
+            if mud_parsed.get("pct_fluor_text") is not None:
+                fluor = mud_parsed["pct_fluor_text"]
+            if (pd.isna(bright) or not bright) and mud_parsed.get("brightness"):
+                bright = mud_parsed["brightness"]
+
         results.append(
             {
                 "depth": depth,
@@ -946,8 +940,8 @@ def process_well(cfg, dc30_df, mck_murta_df):
                 "pct_slt": silt,
                 "grain": row["Grain_Size"],
                 "max_grain": row["Max_Grain_Size"],
-                "fluor": row["Pct_Fluor"],
-                "bright": row["Brightness"],
+                "fluor": fluor,
+                "bright": bright,
                 "gas": row["Gas_U"],
                 "fec03_slt": row["FeCO3_SLTST"],
                 "fec03_sst": row["FeCO3_SST"],
@@ -1089,8 +1083,8 @@ def write_interpretation(meta, path):
     if meta["cfg"].get("ingest") == "litho_gas":
         lines += [
             "8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes; "
-            "**no fluorescence %** in ASCII — cuttings pay may be unavailable.",
-            "9. **Grain size / brightness** not parsed from litho ASCII — derived from mudlog text where matched.",
+            "**no fluorescence %** in litho ASCII — fluorescence from mudlog PDF text track (FLUOR / FLUORESCENCE, ft→m); cuttings pay where matched.",
+            "9. **Grain size** not parsed from litho ASCII — derived from mudlog lithology text where matched.",
             "",
         ]
     elif meta["cfg"].get("xlsx"):

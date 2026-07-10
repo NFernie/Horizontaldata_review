@@ -193,7 +193,7 @@ def aggregate_to_bins(
                 "Grain_Size": np.nan,
                 "Max_Grain_Size": np.nan,
                 "Pct_Fluor": np.nan,
-                "Brightness": np.nan,
+                "Brightness": None,
                 "Gas_U": gas_u,
                 "FeCO3_SLTST": np.nan,
                 "FeCO3_SST": np.nan,

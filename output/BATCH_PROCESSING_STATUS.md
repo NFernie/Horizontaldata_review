@@ -15,12 +15,12 @@
 | GRANCHIO 4 | GRANCHIO 4 | 126 | 93/126 | — | Excel | `GRANCHIO4_*` |
 | HOBBES 5 | HOBBES 5 | 114 | 60/114 | — | Excel | `HOBBES5_*` |
 | HOBBES 6 | HOBBES 6 | 81 | 55/81 | — | Excel | `HOBBES6_*` |
-| MCKINLAY 10 | MCKINLAY 10 | 96 | 65/96 | 96/96 | Litho+gas | `MCKINLAY10_*` |
-| MCKINLAY 11 | MCKINLAY 11 | 70 | 47/70 | 70/70 | Litho+gas | `MCKINLAY11_*` |
-| MCKINLAY 12 | MCKINLAY 12 | 172 | 130/172 | 172/172 | Litho+gas | `MCKINLAY12_*` |
-| MCKINLAY 13 | MCKINLAY 13 | 247 | 95/247 | 247/247 | Litho+gas | `MCKINLAY13_*` |
-| MCKINLAY 14 | MCKINLAY 14 | 113 | 20/113 | 113/113 | Litho+gas | `MCKINLAY14_*` |
-| MCKINLAY 15 | MCKINLAY 15 | 57 | 42/57 | 57/57 | Litho+gas | `MCKINLAY15_*` |
+| MCKINLAY 10 | MCKINLAY 10 | 96 | 96/96 | 96/96 | Litho+gas | `MCKINLAY10_*` |
+| MCKINLAY 11 | MCKINLAY 11 | 70 | 70/70 | 70/70 | Litho+gas | `MCKINLAY11_*` |
+| MCKINLAY 12 | MCKINLAY 12 | 172 | 172/172 | 172/172 | Litho+gas | `MCKINLAY12_*` |
+| MCKINLAY 13 | MCKINLAY 13 | 247 | 247/247 | 247/247 | Litho+gas | `MCKINLAY13_*` |
+| MCKINLAY 14 | MCKINLAY 14 | 113 | 113/113 | 113/113 | Litho+gas | `MCKINLAY14_*` |
+| MCKINLAY 15 | MCKINLAY 15 | 57 | 57/57 | 57/57 | Litho+gas | `MCKINLAY15_*` |
 | MCKINLAY 20 | MCKINLAY 20 | 276 | 211/276 | — | Excel | `MCKINLAY20_*` |
 | MCKINLAY 21 | MCKINLAY 21 | 118 | 81/118 | — | Excel | `MCKINLAY21_*` |
 | MCKINLAY 22 | MCKINLAY 22 | 306 | 221/306 | — | Excel | `MCKINLAY22_*` |
@@ -48,11 +48,11 @@
 
 ### Litho/gas wells — data gaps
 
-- No sample Excel → **no %Fluor** or fluorescence brightness; **cuttings pay = 0 m** for all six wells
+- No sample Excel → fluorescence from **mudlog PDF text track** (`FLUOR:` / `FLUORESCENCE:` blocks; depths in ft → m MD)
+- Mudlog lithology matched at **correct metre depth** (PDF depths converted ft→m before interval lookup)
 - %SS derived from lithology codes (405/400 sandstone, 406 siltstone, 407/800 shale)
 - Grain size mostly unavailable from litho ASCII; porosity/loose grains from mudlog text where matched
-- Mudlog match rate varies (MCKINLAY 14 lowest at 20/113 — older field PDF)
-- Resistivity pay from LAS only; overburden zones clipped via `subtract_exclusion_zones`
+- Resistivity pay from LAS (metres); overburden zones clipped via `subtract_exclusion_zones`
 
 ## Excel Format Notes
 
@@ -102,4 +102,4 @@ python3 scripts/compute_pay_summary.py MCKINLAY10 MCKINLAY11 MCKINLAY12 MCKINLAY
 - **Mudlog match rates vary** — older field PDFs (Hobbes, McKinlay 14, McKinlay 23) have lower text extraction match rates
 - **HOBBES 4** — listed in tops files only; no well data files uploaded
 - **McKinlay legacy spreadsheets** — grain size / fluorescence fields not available
-- **McKinlay 10–15** — no fluorescence from litho/gas ingest; resistivity pay only until fluorescence source added
+- **McKinlay 10–15** — mudlog PDF depths in feet; parser converts to metres before matching intervals and LAS
