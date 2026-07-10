@@ -6,7 +6,8 @@
 **No code changes in the planning pass that produced this document.**
 
 **Companion plans:**
-- [`res_sep_fix-plan.md`](res_sep_fix-plan.md) — resistivity-separation / DSI / charge-aware permeability flagging. **Coordinate any WRCI perm-flag change through this plan and §9 below before a full pipeline rerun (§6).**
+- [`updated-plan-2026-07-10.md`](updated-plan-2026-07-10.md) — **active execution plan** for RQI v2 rerun, new wells, ZOI/OWC flags, ΔRes removal. **Use this for go-ahead and pipeline sequencing.**
+- [`res_sep_fix-plan.md`](res_sep_fix-plan.md) — **SUSPENDED** (DSI / charge-aware perm flagging — not proceeding).
 - [`mudlog_cutting_descriptions.md`](mudlog_cutting_descriptions.md) — cuttings / mudlog abbreviation glossary for all text parsers.
 
 ---
