@@ -1,6 +1,6 @@
 # Resistivity Separation Fix Plan (DSI & Charge-Aware Perm Flagging)
 
-**Status:** Planning only — **do not implement until stakeholder go-ahead**  
+**Status:** **⏸ SUSPENDED (2026-07-10)** — stakeholder decision to remove ΔRes from analysis entirely. See [`updated-plan-2026-07-10.md`](updated-plan-2026-07-10.md). Do not implement unless explicitly revived.  
 **Parent plan:** [`RQI_Update-Plan.md`](RQI_Update-Plan.md)  
 **Related reference:** [`mudlog_cutting_descriptions.md`](mudlog_cutting_descriptions.md)  
 **Primary objective:** Fix permeability-zone flagging so resistivity separation contributes to **water-risk** assessment only when charge context supports it — not on every high-RQI zone with large absolute ΔRes.
