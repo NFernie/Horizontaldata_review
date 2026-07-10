@@ -1,7 +1,8 @@
 # Updated Pipeline Plan — RQI v2, New Wells, Along-Wellbore Flags & OWC Proximity
 
 **Date:** 2026-07-10  
-**Status:** **Planning only — do not run pipelines or change code until stakeholder go-ahead**  
+**Status:** **Approved for implementation** — §9 stakeholder answers locked (2026-07-10)  
+**Branch:** Commit directly to `main` (single PR)  
 **Supersedes (in part):** `res_sep_fix-plan.md` (**suspended**), OpusPlanR1 `highperm` / ΔRes red-flag logic  
 **Implements:** `RQI_Update-Plan.md` §3 locked decisions (8-component RQI)  
 **New inputs:** trajectory files (`*_trajectory`), `Oil_Water_Contact.csv`, McKinlay 10–15 datasets
@@ -99,9 +100,31 @@ This plan coordinates a **single major release** covering:
 
 ### Phase 0 — Planning lock-in (this document)
 
-**Gate:** Stakeholder answers §9 questions. No code until approved.
+**Gate:** ~~Stakeholder answers §9 questions.~~ **✅ Complete** — see §9 locked answers.
 
 **Deliverable:** Signed-off thresholds for ZOI, OWC, WRCI weights, McKinlay 10–15 ingestion strategy.
+
+---
+
+## 4A. Locked decisions summary (from §9 answers)
+
+| Topic | Decision |
+|-------|----------|
+| McKinlay 10–15 ingestion | Mudlog PDF + litho ASCII + drill-gas; **5 m bins**; horizontal McKinlay Member; tops in `Mck_Murta.xlsx` confirmed |
+| ZOI window | **±3 intervals** (3 shallower + 3 deeper) |
+| ZOI reference | **Average of 3 shallower** and **average of 3 deeper** — compare independently; flag if **either** side meets criteria |
+| ZOI trigger | RQI within **10% of neighbours OR higher** than neighbours; **≥2 of 3** metrics (fluor, TGas, RES_DEEP) drop **>15%** vs that reference average; **% drop** for TGas |
+| ZOI vs pay | ZOI fires above pay cutoffs; if **below** pay cutoffs use standard `lowres` / `lowfluor` red flags |
+| `low_GR` | **GR < 65 gAPI** on RQI ≥ 0.6; **boolean flag only** (not a WRCI severity term) |
+| OWC depth | **`Z` = mTVDss**; distance = `\|Z_interval − OWC_field\|`; Jena 31 + 31DW1 → Jena −1198; McKinlay 10–15 → McKinlay −1203 |
+| OWC in WRCI | **Yes** — OWC proximity severity **replaces** former perm term in WRCI numeric score |
+| WRCI weights | **0.40·RQI + 0.20·lowres + 0.20·lowfluor + 0.20·owc_severity** (rebalanced from 0.50/0.25/0.25) |
+| ZOI vs WRCI | **Independent** — ZOI is not a WRCI input; flag as risk zone when **ZOI + (WRCI Elevated or High)** co-occur |
+| `RQI_THRESHOLD` | **0.6** fixed |
+| Sequencing | **Single PR**; batch McKinlay 10–15 first, then **all 23 wells** together in final rerun |
+| CI | Add `compute_pay_summary.py` to deploy workflow |
+| Structural viz | **OWC distance only** — no private viz repo this release |
+| ΔRes / DSI | **Removed / suspended** — no `res_sep`, no `highperm` |
 
 ---
 
@@ -158,31 +181,33 @@ This plan coordinates a **single major release** covering:
 | Site | Remove `res_sep` depth track; remove `highperm` chips |
 | `res_sep_fix-plan.md` | Add **SUSPENDED** banner at top |
 
-#### 3B — New WRCI formula (proposed default)
+#### 3B — WRCI formula (locked §9)
 
 ```
-WRCI = 100 × ( 0.50·RQI + 0.25·lowres_severity + 0.25·lowfluor_severity )
+WRCI = 100 × ( 0.40·RQI + 0.20·lowres_severity + 0.20·lowfluor_severity + 0.20·owc_severity )
 ```
 
-Red-flag booleans on **RQI ≥ 0.6** only:
+`owc_severity` maps proximity tier to 0–1 (High → 1.0, Elevated → 0.5, Low → 0.0) using §5.2 distance bands.
 
-| Flag ID | Condition | Replaces |
-|---------|-----------|----------|
-| `lowres` | `avg_RES_DEEP < 20` Ω·m | unchanged |
-| `lowfluor` | `fluor < 75%` | unchanged |
-| `low_GR` | `avg_GR < 65` gAPI | **`highperm`** (perm proxy) |
-| `ZOI` | Along-wellbore deterioration — §6 | **new** |
-| `owc_near` | OWC proximity — §7 | **new** |
+Red-flag booleans on **RQI ≥ 0.6** only (except OWC tiers also apply per §5.2 for RQI < 0.6):
 
-**Risk class (proposed — confirm in §9):**
+| Flag ID | Condition | WRCI term? |
+|---------|-----------|------------|
+| `lowres` | `avg_RES_DEEP < 20` Ω·m | severity in formula |
+| `lowfluor` | `fluor < 75%` | severity in formula |
+| `low_GR` | `avg_GR < 65` gAPI | **boolean only** |
+| `ZOI` | §4 algorithm | **independent** — not in WRCI formula |
+| `owc_near` | §5 proximity tiers | **severity in formula** |
 
-| Class | Rule (draft) |
-|-------|----------------|
-| **High** | WRCI ≥ 66 **and** ≥ 2 of `{lowres, lowfluor, low_GR, ZOI, owc_near=High}` |
-| **Elevated** | WRCI 40–66 **or** 1 flag **or** `owc_near=Elevated` on RQI≥0.6 / ZOI |
+**Risk class (locked §9):**
+
+| Class | Rule |
+|-------|------|
+| **High** | WRCI ≥ 66 **and** (`owc_near=High` **or** ≥2 of `{lowres, lowfluor, low_GR}`) **or** (ZOI **and** WRCI ≥ 66) |
+| **Elevated** | WRCI 40–66 **or** 1 of `{lowres, lowfluor, low_GR}` **or** `owc_near=Elevated` **or** (ZOI **and** WRCI ≥ 40) |
 | **Low** | Otherwise |
 
-> WRCI weights and risk-class combinatorics are **draft** — stakeholder must confirm §9 Q5–Q6.
+> Implementer: encode exact combinatorics in `scripts/config.py` with comments; mirror in `site/src/config.ts`.
 
 #### 3C — RQI in tables
 
@@ -213,30 +238,32 @@ Compare each interval's **RQI, %Fluor, TGas, RES_DEEP** to **nearby intervals in
 | X (reference) | Y | 0.60 | 100% | 40 | 30 |
 | A (flagged) | B | 0.63 | 80% (−20%) | 30 (−25%) | 25 (−17%) | → **ZOI** |
 
-#### 4.2 Proposed algorithm (draft — pending §9 Q2)
+#### 4.2 Algorithm (locked §9)
 
-For each retained interval *i* (sorted by MD):
-
-```
-neighbours = intervals at i-1, i, i+1   # 3-interval window (1 shallower + self + 1 deeper)
-           OR i-3…i+3                    # 7-interval window — TBD
-
-reference  = neighbour with max(RQI) among window excluding i, where RQI ≥ 0.6
-           OR immediate shallower interval if RQI ≥ 0.6 — TBD
-
-For each metric m ∈ {fluor, gas, avg_RES_DEEP}:
-  drop_pct(m) = (ref[m] - cur[m]) / ref[m]   # only if ref[m] > 0
-
-ZOI = (RQI_i ≥ 0.6) AND any(drop_pct(m) > 0.15)
-```
-
-**Additional idea — RQI drop variant (from ambiguous wording):**
+For each retained interval *i* (sorted by MD, overburden excluded):
 
 ```
-RQI_drop = (ref_RQI - RQI_i) / ref_RQI > 0.10   # 10% RQI decrease vs neighbour
+shallow_avg = mean(fluor, gas, RES_DEEP) over intervals [i-3 .. i-1]
+deep_avg    = mean(fluor, gas, RES_DEEP) over intervals [i+1 .. i+3]
+shallow_RQI_avg = mean(RQI) over [i-3 .. i-1]
+deep_RQI_avg    = mean(RQI) over [i+1 .. i+3]
+
+For each side S ∈ {shallow, deep} where enough neighbours exist:
+  rqi_ok = (RQI_i >= RQI_THRESHOLD) AND (
+             RQI_i >= RQI_avg_S * 0.9          # within 10% of neighbours OR higher
+             OR RQI_i > RQI_avg_S
+           )
+  drops = count over m ∈ {fluor, gas, RES_DEEP} where:
+             ref[m] > 0 AND (ref[m] - cur[m]) / ref[m] > 0.15
+             # ref = shallow_avg or deep_avg for that metric
+  side_triggers = rqi_ok AND drops >= 2
+
+ZOI = side_triggers_shallow OR side_triggers_deep
 ```
 
-Clarify whether RQI drop alone triggers ZOI or only fluor/TG/res drops on RQI≥0.6.
+- Edge intervals: use available neighbours only (1–3 per side).  
+- Missing fluor/gas: compute drops over **available** metrics only; still require **≥2** drops.  
+- If interval is **below pay cutoffs** (`lowres` / `lowfluor`), use standard red flags — ZOI is for above-cutoff deterioration.
 
 #### 4.3 Edge cases
 
@@ -526,13 +553,249 @@ Lets do OWC distance only for now
 
 ---
 
-## 10. Suggested stakeholder reading order
+## 12. Implementation agent prompts (copy-paste)
 
-1. This document §9 (questions)  
-2. `RQI_Update-Plan.md` §3 (locked RQI decisions)  
-3. `updated-plan-2026-07-10.md` §4–6 (phases)  
-4. `Oil_Water_Contact.csv` + one trajectory file (e.g. `Jena_31_trajectory`)  
-5. `mudlog_cutting_descriptions.md` (parser glossary)
+> **Usage:** One prompt per message. Wait for the phase acceptance gate before starting the next — unless using a **combined prompt** noted below. Commit to `main`. Single PR for the full release.
+
+### How many phases per prompt?
+
+| Approach | Phases | When |
+|----------|--------|------|
+| **Recommended** | **1** | Default — highest success rate |
+| **Acceptable** | **3 + 4 + 5** | Single backend session — all touch `export_web_data.py` |
+| **Acceptable** | **6** | After 1–5 pass — rerun + site + CI only |
+| **Do not combine** | 1 + 2 | Both heavily edit `process_mckinlay_wells.py` |
+| **Do not combine** | 2 + 3 | Phase 3 export needs Phase 2 RQI fields |
+| **Do not parallelise** | Any two phases on same file | See §13 |
+
+---
+
+### Prompt — Phase 1: Batch McKinlay 10–15 + trajectory
+
+```
+Execute updated-plan-2026-07-10.md Phase 1 only.
+
+Read: updated-plan-2026-07-10.md §4A (locked decisions), §3.1, §9A, RQI_Update-Plan.md §6.
+Do NOT implement RQI v2 parsers, WRCI changes, or full 23-well JSON export yet.
+
+Tasks:
+1. Add MCKINLAY10–MCKINLAY15 to WELLS registry in scripts/process_mckinlay_wells.py.
+   Map to DC30.xlsx / Mck_Murta.xlsx tops (confirmed present).
+2. Build alternate ingestion for wells without sample Excel:
+   - Mudlog PDF + litho ASCII/TXT + drill-gas ASCII/TXT
+   - Convert feet → metres MD
+   - Aggregate litho/gas to 5 m sample bins
+3. New module scripts/trajectory.py (or similar):
+   - Parse Petrel *_trajectory files (MD, Z columns)
+   - interpolate_mtvds(md) → mTVDss (Z column = subsea)
+4. Attach mTVDss to each interval record in process output
+5. Run process_mckinlay_wells.py for MCKINLAY10–15 only first; fix errors
+6. Run compute_pay_summary.py for new wells; verify overburden exclusion
+7. Update output/BATCH_PROCESSING_STATUS.md and REUSABLE_WORKFLOW_PROMPT.md
+
+Constraints:
+- Reuse classify_tops / exclusion_zones unchanged
+- Do NOT remove res_sep yet (Phase 3)
+- Horizontal McKinlay Member logic same as existing 17 wells
+
+Acceptance:
+- output/MCKINLAY{10..15}_McKinlay_Cuttings_Interpretation.md exist
+- output/MCKINLAY{10..15}_Process_Summary.md exist
+- output/McKinlay {10..15}/pay-summary.md exist (or consistent naming)
+- Spot-check MCKINLAY10: retained intervals have mTVDss populated
+- Pay intervals do not overlap overburden exclusion zones
+- python3 scripts/process_mckinlay_wells.py --only MCKINLAY10 exits 0
+
+Commit to main. Summarise data gaps and interval counts per new well.
+```
+
+---
+
+### Prompt — Phase 2: RQI v2 (8-component)
+
+```
+Execute updated-plan-2026-07-10.md Phase 2 only.
+
+Prerequisite: Phase 1 merged to main.
+
+Read: RQI_Update-Plan.md §3–4 (locked parsers, weights, lookup tables), mudlog_cutting_descriptions.md.
+
+Tasks:
+1. Add parse_sorting(), parse_angularity(), parse_cement(), parse_hardness() in process_mckinlay_wells.py
+   Run on _interval_descriptor_text(long_desc, mud_matches)
+2. Update scripts/config.py RQI_WEIGHTS (0.20/0.17/0.14/0.13/0.12/0.10/0.08/0.06)
+3. Refactor export_web_data.py compute_rqi_components():
+   - 8 components with per-interval weight renormalisation when sorting/cement/angularity missing
+4. Remove loose_grains boolean from process output, export, Jaccard flags (replace with hardness-based flag at implementation discretion per RQI_Update-Plan.md §5 item 7)
+5. Mirror config in site/src/config.ts
+6. Re-run process_mckinlay_wells.py for ALL 23 wells
+7. Do NOT change WRCI flags or remove res_sep yet (Phase 3)
+
+Acceptance:
+- JENA31 @ 2500 m: hardness/sorting/cement parsed in interpretation MD
+- RQI value differs from old 5-component export
+- No loose_grains in new interval records
+- npm run build still succeeds (config mirror only)
+
+Commit to main. Report RQI distribution change for JENA31 vs prior.
+```
+
+---
+
+### Prompt — Phases 3 + 4 + 5: Flags, ZOI, OWC, ΔRes removal (combined)
+
+```
+Execute updated-plan-2026-07-10.md Phases 3, 4, and 5 together.
+
+Prerequisites: Phases 1 and 2 on main.
+
+Read: updated-plan-2026-07-10.md §4A, §3B–3C, §4.2, §5, §6 (ΔRes removal checklist).
+
+Tasks — Phase 3 (remove ΔRes + flag framework):
+1. Remove res_sep, perm_proxy(), Δ Res rows from process_mckinlay_wells.py interpretation MD
+2. Remove highperm, res_sep from config.py, export_web_data.py, site/src/config.ts
+3. New WRCI: 0.40·RQI + 0.20·lowres + 0.20·lowfluor + 0.20·owc_severity
+4. low_GR boolean flag: avg_GR < 65 AND RQI >= 0.6 (NOT a WRCI severity term)
+5. Remove res_sep from Spearman, z-scores, Jaccard, KS, clusters; add low_GR, ZOI to Jaccard vocabulary
+6. Site: remove res_sep depth track and highperm chips; add RQI column to DataTable, Water-Risk evidence
+7. Update New Statistical Methods.md Method 1; confirm res_sep_fix-plan.md SUSPENDED banner
+
+Tasks — Phase 4 (ZOI):
+8. Implement ZOI per §4.2: ±3 interval window, shallow/deep averages independently,
+   ≥2 of {fluor, gas, RES_DEEP} drop >15%, RQI gate per locked rules
+9. ZOI independent of WRCI formula; store flag_zoi on intervals
+
+Tasks — Phase 5 (OWC):
+10. Load Oil_Water_Contact.csv (normalise field names); well→field map
+11. owc_distance_m = abs(mTVDss - OWC_field); tiers per §5.2 (different bands for RQI>=0.6 vs <0.6)
+12. owc_severity feeds WRCI numeric score; owc_near tier flag on interval
+13. Risk class per §3B locked table (ZOI + WRCI co-occurrence rules)
+
+Run export_web_data.py after changes. Do NOT run full corpus/site deploy yet.
+
+Acceptance:
+- grep -r "highperm\|res_sep" site/src scripts --include="*.py" --include="*.ts" --include="*.tsx" returns no hits (except suspended plan doc / historical OpusPlan)
+- water_risk/JENA31.json has RQI, WRCI, flags without highperm
+- JENA31 interval at ~2500 m: mTVDss, owc_distance_m, owc_near tier present
+- ZOI unit test or script assertion for stakeholder example pattern
+- npm run build succeeds
+
+Commit to main.
+```
+
+---
+
+### Prompt — Phase 6: Full pipeline rerun, corpus, CI, deploy
+
+```
+Execute updated-plan-2026-07-10.md Phase 6 only.
+
+Prerequisites: Phases 1–5 on main.
+
+Tasks:
+1. pip install -r requirements.txt
+2. python3 scripts/process_mckinlay_wells.py          # all 23 wells
+3. python3 scripts/compute_pay_summary.py
+4. python3 scripts/export_web_data.py
+5. python3 scripts/build_corpus_index.py
+6. Add compute_pay_summary.py to .github/workflows/deploy.yml (after process + export, before corpus)
+7. cd site && npm test && npm run build
+8. Update output/ALL_WELLS_PAY_SUMMARY.md, BATCH_PROCESSING_STATUS.md (23 wells)
+9. Add pay overburden assertion test if not done in Phase 1
+
+Acceptance gates G1–G7 from §4 Phase 6:
+- 23 wells in wells.json
+- No res_sep/highperm in site/public/data
+- RQI visible alongside WRCI on Well Detail and Water-Risk
+- JENA31 @ 2500 m passes spot-check
+- npm run build clean
+
+Commit all generated artefacts to main. Single PR ready for review.
+```
+
+---
+
+### Prompt — Optional: Debugging pass (recommended, not required)
+
+```
+Debugging pass for updated-plan-2026-07-10.md implementation.
+
+Read updated-plan-2026-07-10.md §4A and acceptance gates.
+
+Do NOT add features. Investigate and report:
+
+1. JENA 31 + JENA 31DW1: list top 10 intervals by WRCI; verify no oil-pay intervals falsely High risk
+2. ZOI: count per well; manually verify 3 intervals including stakeholder example pattern
+3. OWC: confirm JENA 31 mTVDss vs OWC −1198 distances are geologically plausible along lateral
+4. McKinlay 10–15: interval counts, mudlog match rate, any missing LAS curves
+5. Pay: assert zero overlap between pay intervals and overburden zones (all 23 wells)
+6. grep residual highperm/res_sep in repo
+
+Output: DEBUG_REPORT.md with findings and fix recommendations only.
+Only commit code fixes if clearly broken; otherwise report only.
+```
+
+---
+
+## 13. Parallelisation matrix
+
+### Can phases run simultaneously?
+
+| Phases | Parallel? | Reason |
+|--------|-----------|--------|
+| **1 ∥ 2** | **No** | Both edit `process_mckinlay_wells.py` |
+| **2 ∥ 3** | **No** | Export needs RQI v2 fields from Phase 2 |
+| **3 ∥ 4 ∥ 5** | **No** (combine instead) | All edit `export_web_data.py` + `config.py` |
+| **3 ∥ site UI** | **Caution** | Site needs frozen JSON schema from export — do site in Phase 3 or after |
+| **1.5 trajectory module ∥ 2** | **Possible** | Only if Phase 1 landed `scripts/trajectory.py` first and Phase 2 avoids that file |
+| **6 ∥ anything** | **No** | Phase 6 is the integration gate |
+
+### Maximum safe concurrency
+
+| Agents | What can run in parallel |
+|--------|------------------------|
+| **1 agent (recommended)** | Phases **1 → 2 → (3+4+5) → 6** sequentially |
+| **2 agents (max)** | Agent A: Phases 1→2 (extractor). Agent B: **wait** until Phase 3 schema agreed, then site-only UI stubs — **high conflict risk; not recommended** |
+| **3+ agents** | **Not recommended** — shared Python files and generated JSON will conflict |
+
+### Combined prompts (fewer hand-offs)
+
+| Combined block | Phases | Agent sessions |
+|----------------|--------|----------------|
+| Backend flags | **3 + 4 + 5** | 1 session |
+| Full delivery | **1 → 2 → 345 → 6** | **4 sessions** (optimal) |
+
+**Bottom line:** At most **one** implementation agent on this repo at a time. **Zero** phases can safely run in parallel on shared files. The only time-saving merge is **Phases 3+4+5 in one prompt**.
+
+---
+
+## 14. Debugging agent — recommended or required?
+
+| | Guidance |
+|---|----------|
+| **Required?** | **No** — not a gate for merge or deploy. |
+| **Recommended?** | **Yes** — run the optional debugging prompt (§12) **after Phases 3+4+5** and again **after Phase 6**. |
+| **When it pays off most** | ZOI edge cases (±3 window at lateral toes), OWC distance sanity, McKinlay 10–15 ASCII ingestion, pay/overburden overlap, residual `res_sep` references. |
+| **What it should not do** | Re-scope features, change locked §4A thresholds, or implement `res_sep_fix-plan.md`. |
+
+**Suggested workflow:**
+
+```
+Phase 1 → spot-check MCKINLAY10
+Phase 2 → spot-check JENA31 @ 2500 m RQI
+Phases 3+4+5 → optional debugging pass → fix blockers
+Phase 6 → full rerun → optional debugging pass → merge
+```
+
+---
+
+## 10. Suggested reading order (implementer)
+
+1. This document **§4A** (locked decisions) + **§12** (copy-paste prompts)  
+2. `RQI_Update-Plan.md` §3–4 (RQI parsers)  
+3. This document §4.2 (ZOI) + §5 (OWC)  
+4. `Oil_Water_Contact.csv` + `Jena_31_trajectory`  
+5. `mudlog_cutting_descriptions.md`
 
 ---
 
@@ -541,3 +804,4 @@ Lets do OWC distance only for now
 | Date | Change |
 |------|--------|
 | 2026-07-10 | Initial plan — RQI v2 rerun, McKinlay 10–15 batching, ΔRes removal, ZOI + OWC flags, private repo guidance |
+| 2026-07-10 | §9 answers locked; §4A summary; §12 implementation prompts; §13 parallelisation; §14 debugging guidance; WRCI rebalanced with OWC severity |
