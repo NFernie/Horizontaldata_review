@@ -414,49 +414,115 @@ For **OWC proximity flags**, Option **D** is likely sufficient (1D interpolation
 
 ### A. McKinlay 10–15 ingestion
 
-1. **Sample spreadsheets:** Will Hz Section Samples Descriptions Excel files be uploaded for McKinlay 10–15, or should we build intervals from **mudlog PDF + litho ASCII + drill-gas** only?  
-2. If ASCII-only: what is the **sample spacing** (litho rows are ~1.3 ft)? Aggregate to 5 m bins to match existing wells?  
-3. Are McKinlay 10–15 **horizontal McKinlay Member targets** (same exclusion logic as 20–24)?  
-4. Confirm **Mck_Murta.xlsx** now contains tops for wells 10–15.
+1. **Sample spreadsheets:** Will Hz Section Samples Descriptions Excel files be uploaded for McKinlay 10–15, or should we build intervals from **mudlog PDF + litho ASCII + drill-gas** only?
+
+Build intervals from Mudlog PDF + Litho + Drill Gas
+ 
+3. If ASCII-only: what is the **sample spacing** (litho rows are ~1.3 ft)? Aggregate to 5 m bins to match existing wells?  
+
+Aggregate to 5m bins
+
+4. Are McKinlay 10–15 **horizontal McKinlay Member targets** (same exclusion logic as 20–24)?  
+
+Yes, horizontal McKinlay Member targets, all the wells in the data set are Horizontal Mckinlay Member Targets
+
+5. Confirm **Mck_Murta.xlsx** now contains tops for wells 10–15.
+
+Confirmed tops are included in the xlsx
 
 ### B. Zone of Interest (ZOI)
 
 5. **Neighbour window:** 1 shallower + 1 deeper (3 total), or wider (±3 intervals)?  
+
+3 shallower and 3 deeper
+
 6. **Reference interval:** Immediate shallower, immediate deeper, best RQI in window, or average of neighbours?  
+
+Average of neighbours, compare to average of shallower and compare to average of deeper. So compare to two different averages
+
 7. **% drop baseline:** Compare to **shallower** neighbour only (matches your example), or max of neighbours?  
+
+Compare to deeper and shallower independantly and flag if either meets the criteria
+
 8. Does **RQI drop > 10%** alone trigger ZOI, or only fluor/TG/res drops when RQI ≥ 0.6?  
-9. Should ZOI fire when values drop but remain **above pay cutoffs** (your example: fluor 80%, res 25)? — assumed **yes**.  
+
+If RQI is within the range of <10% or greater than neighbours and change in flour/TG/res meets criteria trigger a ZOI. 
+
+9. Should ZOI fire when values drop but remain **above pay cutoffs** (your example: fluor 80%, res 25)? — assumed **yes**.
+
+Yes, if below pay cutoffs trigger use the red flag triggers. 
+
 10. **TGas units:** Compare absolute drop or % drop? (40 → 30 is −25% but also −10 units.)
+
+Percentage drop >15%
 
 ### C. low_GR flag
 
 11. Confirm threshold: **GR < 65 gAPI** on intervals where **RQI ≥ 0.6** only (same gate as other red flags)?  
+
+Use the suggested threshold
+
 12. Should `low_GR` contribute to WRCI severity term, or be **boolean flag only**?
+
+Boolean flag only. GR is already considered in RQI and therefore WRCI independantly 
+
 
 ### D. OWC / trajectory
 
 13. Confirm **`Z` column = mTVDss** for OWC distance (not TVD relative to KB).  
-14. **Jena 31 vs 31DW1:** both use Field **Jena** OWC (−1198)?  
+
+Z = mTVDss 
+
+14. **Jena 31 vs 31DW1:** both use Field **Jena** OWC (−1198)? 
+
+Yes same OWC
+
 15. **McKinlay 10–15:** all use Field **McKinlay** (−1203)?  
+
+Yes same OWC
+
 16. Distance formula: `|Z_interval − OWC_field|` — correct?  
+
+Correct 
+
 17. Should OWC proximity affect **WRCI numeric score** or only **risk_class / flag chips**?
+
+OWC should effect WRCI numeric score
 
 ### E. WRCI & risk classification
 
 18. Approve proposed WRCI weights **0.50 / 0.25 / 0.25** (RQI / lowres / lowfluor) after removing perm term?  
+
+Approved. Balance in OWC proximity to replace perm term
+
 19. How should **ZOI** and **owc_near** combine with WRCI for High / Elevated / Low? (See §4 draft table.)  
+
+ZOI does not need to combine with WRCI, it should be independant and verified as a risk zone when they flag together (WRCI eleveated or high). Combine WRCI for high & elevated owc_near 
+
 20. Keep **`RQI_THRESHOLD = 0.6`** fixed per `RQI_Update-Plan.md`?
+
+Keep the threshold
 
 ### F. Scope & sequencing
 
 21. **Single PR** for all phases, or phase-per-PR with intermediate review?  
+
+Single PR
+
 22. Run **17-well rerun first** (RQI v2 + flags) before adding McKinlay 10–15, or all 23 together?  
+
+All 23 together after batching Mck 10-15
+
 23. Approve adding `compute_pay_summary.py` to **GitHub Actions** deploy workflow?
+
+Approve
 
 ### G. Private viz repo
 
 24. Repo URL / name and preferred integration option (§8 A–D)?  
 25. Is structural viz **required for this release**, or OWC distance only?
+
+Lets do OWC distance only for now
 
 ---
 
