@@ -121,28 +121,55 @@ def extract_bar_series(
     pdf_path: str,
     resolution: int = 200,
     track: dict | None = None,
+    all_pages: bool = False,
+    depth_ft_min: float | None = None,
+    depth_ft_max: float | None = None,
 ) -> list[BarSample]:
-    """Extract raw fluorescence bar fill for every foot in PDF."""
+    """Extract raw fluorescence bar fill for every foot in PDF (or McKinlay depth window)."""
     pdf_path = _resolve_path(pdf_path)
     track = track or MCKINLAY11_TRACK
     by_ft: dict[int, float] = {}
 
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
-            text = page.extract_text() or ""
-            if "FLUORESCENCE:" not in text and not re.search(r"FLUOR:\d", text):
-                continue
+            if not all_pages:
+                text = page.extract_text() or ""
+                if "FLUORESCENCE:" not in text and not re.search(r"FLUOR:\d", text):
+                    continue
             coef = _page_depth_model(page)
             if coef is None:
                 continue
             for ft, pct_raw in _extract_page_bar_series(page, coef, resolution, track):
-                # Keep max if pages overlap
+                if depth_ft_min is not None and ft < depth_ft_min:
+                    continue
+                if depth_ft_max is not None and ft > depth_ft_max:
+                    continue
                 by_ft[int(ft)] = max(by_ft.get(int(ft), 0.0), pct_raw)
 
     return [
         BarSample(depth_ft=ft, depth_m=ft * FT_TO_M, pct_raw=pct, pct=pct, source="bar")
         for ft, pct in sorted(by_ft.items())
     ]
+
+
+def build_bar_fluorescence_series_raw(
+    pdf_path: str,
+    resolution: int = 200,
+    track: dict | None = None,
+    depth_m_min: float | None = None,
+    depth_m_max: float | None = None,
+) -> list[BarSample]:
+    """Bar-only fluorescence: raw raster fill, no text-block calibration."""
+    ft_min = depth_m_min / FT_TO_M if depth_m_min is not None else None
+    ft_max = depth_m_max / FT_TO_M if depth_m_max is not None else None
+    return extract_bar_series(
+        pdf_path,
+        resolution=resolution,
+        track=track,
+        all_pages=True,
+        depth_ft_min=ft_min,
+        depth_ft_max=ft_max,
+    )
 
 
 def calibrate_bar_with_text_blocks(

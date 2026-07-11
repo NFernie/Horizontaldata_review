@@ -24,6 +24,7 @@ from mudlog_parser import (  # noqa: E402
 )
 from mudlog_bar_fluor import (  # noqa: E402
     build_bar_fluorescence_series,
+    build_bar_fluorescence_series_raw,
     match_bar_fluorescence,
 )
 from trajectory import TrajectoryInterpolator  # noqa: E402
@@ -200,8 +201,7 @@ WELLS = [
         "gas": "McKinlay 11_Drill-Gas ASCII_Spud-6786'.ASC",
         "depth_unit": "ft",
         "bar_fluor": True,
-        "bar_fluor_cap_below_ft": 5313,
-        "bar_fluor_cap_below_pct": 10,
+        "bar_fluor_only": True,
     },
     {
         "alias": "MCKINLAY12",
@@ -809,23 +809,35 @@ def _assign_interval_bounds(samples: pd.DataFrame) -> pd.DataFrame:
     return samples
 
 
-def enrich_samples_from_mudlog(cfg: dict, samples: pd.DataFrame) -> pd.DataFrame:
+def enrich_samples_from_mudlog(
+    cfg: dict,
+    samples: pd.DataFrame,
+    mck_start: float | None = None,
+    mck_end: float | None = None,
+) -> pd.DataFrame:
     """Attach fluorescence % from mudlog PDF (bar track and/or text blocks)."""
     if cfg.get("ingest") != "litho_gas":
         return samples
     pdf_path = os.path.join(WORKSPACE, cfg["pdf"])
     mudlog_text = extract_mudlog_text(pdf_path)
     depth_unit = cfg.get("depth_unit", "ft")
+    bar_only = bool(cfg.get("bar_fluor_only"))
 
-    bar_series = (
-        build_bar_fluorescence_series(
-            pdf_path,
-            cap_below_ft=cfg.get("bar_fluor_cap_below_ft"),
-            cap_below_pct=float(cfg.get("bar_fluor_cap_below_pct", 10)),
-        )
-        if cfg.get("bar_fluor")
-        else []
-    )
+    bar_series: list = []
+    if cfg.get("bar_fluor"):
+        if bar_only:
+            bar_series = build_bar_fluorescence_series_raw(
+                pdf_path,
+                depth_m_min=mck_start,
+                depth_m_max=mck_end,
+            )
+        else:
+            bar_series = build_bar_fluorescence_series(
+                pdf_path,
+                cap_below_ft=cfg.get("bar_fluor_cap_below_ft"),
+                cap_below_pct=float(cfg.get("bar_fluor_cap_below_pct", 10)),
+            )
+
     fluor_entries = parse_fluorescence_entries(mudlog_text, depth_unit=depth_unit)
     if not bar_series and not fluor_entries:
         return samples
@@ -841,8 +853,6 @@ def enrich_samples_from_mudlog(cfg: dict, samples: pd.DataFrame) -> pd.DataFrame
             text_brightness[mid_m] = block["brightness"]
 
     for idx, row in out.iterrows():
-        if pd.notna(row.get("Pct_Fluor")):
-            continue
         top = float(row["interval_top"])
         bot = float(row["interval_bottom"])
         mid_m = (top + bot) / 2.0
@@ -850,14 +860,22 @@ def enrich_samples_from_mudlog(cfg: dict, samples: pd.DataFrame) -> pd.DataFrame
         bar_match = match_bar_fluorescence(top, bot, bar_series) if bar_series else None
         text_match = match_fluorescence(top, bot, fluor_entries) if fluor_entries else None
 
-        candidates = []
-        if bar_match is not None:
-            candidates.append(bar_match["pct_mid"])
-        if text_match is not None:
-            candidates.append(text_match["pct_mid"])
-        if not candidates:
-            continue
-        out.at[idx, "Pct_Fluor"] = max(candidates)
+        if bar_only:
+            if bar_match is None:
+                out.at[idx, "Pct_Fluor"] = np.nan
+            else:
+                out.at[idx, "Pct_Fluor"] = bar_match["pct_mid"]
+        else:
+            if pd.notna(row.get("Pct_Fluor")):
+                pass
+            else:
+                candidates = []
+                if bar_match is not None:
+                    candidates.append(bar_match["pct_mid"])
+                if text_match is not None:
+                    candidates.append(text_match["pct_mid"])
+                if candidates:
+                    out.at[idx, "Pct_Fluor"] = max(candidates)
 
         if pd.isna(row.get("Brightness")) or not row.get("Brightness"):
             if text_brightness:
@@ -875,7 +893,7 @@ def load_well_samples(cfg: dict, mck_start: float, mck_end: float) -> tuple[pd.D
     """Load sample intervals from Excel or litho/gas ASCII (McKinlay 10–15)."""
     if cfg.get("ingest") == "litho_gas":
         samples, long_map = build_sample_intervals(cfg, mck_start, mck_end)
-        samples = enrich_samples_from_mudlog(cfg, samples)
+        samples = enrich_samples_from_mudlog(cfg, samples, mck_start, mck_end)
         return samples, long_map
     xlsx_path = os.path.join(WORKSPACE, cfg["xlsx"])
     return load_samples(xlsx_path)
@@ -916,15 +934,7 @@ def process_well(cfg, dc30_df, mck_murta_df):
     mudlog_text = extract_mudlog_text(pdf_path)
     depth_unit = cfg.get("depth_unit", "m")
     mudlog_entries = parse_mudlog_entries(mudlog_text, depth_unit=depth_unit)
-    bar_series = (
-        build_bar_fluorescence_series(
-            pdf_path,
-            cap_below_ft=cfg.get("bar_fluor_cap_below_ft"),
-            cap_below_pct=float(cfg.get("bar_fluor_cap_below_pct", 10)),
-        )
-        if cfg.get("bar_fluor")
-        else []
-    )
+    bar_only = bool(cfg.get("bar_fluor_only"))
     fluor_entries = (
         parse_fluorescence_entries(mudlog_text, depth_unit=depth_unit)
         if depth_unit == "ft"
@@ -940,6 +950,21 @@ def process_well(cfg, dc30_df, mck_murta_df):
     las_df = parse_las(las_path)
     sample_max = float(samples["Depth_mMD"].max())
     mck_end = max(mck_end, sample_max)
+
+    bar_series: list = []
+    if cfg.get("bar_fluor"):
+        if bar_only:
+            bar_series = build_bar_fluorescence_series_raw(
+                pdf_path,
+                depth_m_min=mck_start,
+                depth_m_max=mck_end,
+            )
+        else:
+            bar_series = build_bar_fluorescence_series(
+                pdf_path,
+                cap_below_ft=cfg.get("bar_fluor_cap_below_ft"),
+                cap_below_pct=float(cfg.get("bar_fluor_cap_below_pct", 10)),
+            )
 
     results = []
     excluded_pre = excluded_ob = 0
@@ -968,7 +993,16 @@ def process_well(cfg, dc30_df, mck_murta_df):
 
         fluor = row["Pct_Fluor"]
         bright = row["Brightness"]
-        if pd.isna(fluor):
+        if bar_only:
+            bar_match = match_bar_fluorescence(top, bot, bar_series) if bar_series else None
+            text_match = match_fluorescence(top, bot, fluor_entries) if fluor_entries else None
+            if bar_match is not None:
+                fluor = bar_match["pct_mid"]
+            else:
+                fluor = np.nan
+            if (pd.isna(bright) or not bright) and text_match and text_match.get("brightness"):
+                bright = text_match["brightness"]
+        elif pd.isna(fluor):
             bar_match = match_bar_fluorescence(top, bot, bar_series) if bar_series else None
             text_match = match_fluorescence(top, bot, fluor_entries) if fluor_entries else None
             candidates = []
@@ -980,7 +1014,7 @@ def process_well(cfg, dc30_df, mck_murta_df):
                     bright = text_match.get("brightness")
             if candidates:
                 fluor = max(candidates)
-        if pd.isna(fluor):
+        if not bar_only and pd.isna(fluor):
             mud_parsed = parse_mckinlay_description(desc_text)
             if mud_parsed.get("pct_fluor_text") is not None:
                 fluor = mud_parsed["pct_fluor_text"]
@@ -1137,12 +1171,21 @@ def write_interpretation(meta, path):
         f"DC30/McKinlay reservoir entry is not excluded.",
     ]
     if meta["cfg"].get("ingest") == "litho_gas":
-        lines += [
-            "8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes; "
-            "**no fluorescence %** in litho ASCII — fluorescence from mudlog PDF text track (FLUOR / FLUORESCENCE, ft→m); cuttings pay where matched.",
-            "9. **Grain size** not parsed from litho ASCII — derived from mudlog lithology text where matched.",
-            "",
-        ]
+        if meta["cfg"].get("bar_fluor_only"):
+            lines += [
+                "8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes. "
+                "**Fluorescence %** from mudlog PDF graphics bar track only (raw fill, full McKinlay MD window). "
+                "Text block % values are not used; brightness descriptions from text where matched.",
+                "9. **Grain size** not parsed from litho ASCII — derived from mudlog lithology text where matched.",
+                "",
+            ]
+        else:
+            lines += [
+                "8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes; "
+                "**no fluorescence %** in litho ASCII — fluorescence from mudlog PDF text track (FLUOR / FLUORESCENCE, ft→m); cuttings pay where matched.",
+                "9. **Grain size** not parsed from litho ASCII — derived from mudlog lithology text where matched.",
+                "",
+            ]
     elif meta["cfg"].get("xlsx"):
         lines += [
             "8. **Input Sheet only** — Calculations Sheet not used.",
