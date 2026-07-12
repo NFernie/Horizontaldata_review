@@ -1,6 +1,6 @@
 # MCKINLAY 24 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 12:48 UTC  
+**Generated:** 2026-07-12 23:41 UTC  
 **Formation tops name:** MCKINLAY 24  
 **McKinlay window:** 1628.6 – 2598.0 m MD  
 **DC30 top:** 1633.50 m MD  

@@ -1,6 +1,6 @@
 # MCKINLAY 20 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 12:48 UTC  
+**Generated:** 2026-07-12 23:41 UTC  
 **Formation tops name:** MCKINLAY 20  
 **McKinlay window:** 1633.5 – 3000.0 m MD  
 **DC30 top:** 1633.24 m MD  
@@ -30,7 +30,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 1168.0 | 85.5% | 11 |
-| Resistivity only | 828.6 | 60.6% | 74 |
+| Resistivity only | 828.5 | 60.6% | 74 |
 | Matching both | 746.0 | 54.6% | 17 |
 
 **Sample intervals in McKinlay Member:** 275

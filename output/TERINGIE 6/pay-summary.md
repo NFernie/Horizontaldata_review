@@ -1,6 +1,6 @@
 # TERINGIE 6 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 12:48 UTC  
+**Generated:** 2026-07-12 23:41 UTC  
 **Formation tops name:** TERINGIE 6  
 **McKinlay window:** 1666.1 – 3444.4 m MD  
 **DC30 top:** 1580.02 m MD  
@@ -32,7 +32,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 955.0 | 51.2% | 17 |
-| Resistivity only | 1301.8 | 69.8% | 88 |
+| Resistivity only | 1301.6 | 69.8% | 88 |
 | Matching both | 810.0 | 43.4% | 18 |
 
 **Sample intervals in McKinlay Member:** 159

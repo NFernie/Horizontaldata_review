@@ -1,6 +1,6 @@
 # JENA 31DW1 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 12:48 UTC  
+**Generated:** 2026-07-12 23:40 UTC  
 **Formation tops name:** JENA 31DW1  
 **McKinlay window:** 2067.5 – 3658.0 m MD  
 **DC30 top:** 2060.75 m MD  
@@ -31,7 +31,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 1180.0 | 73.9% | 7 |
-| Resistivity only | 1204.4 | 75.4% | 21 |
+| Resistivity only | 1204.3 | 75.4% | 21 |
 | Matching both | 1175.0 | 73.6% | 7 |
 
 **Sample intervals in McKinlay Member:** 165

@@ -1,6 +1,6 @@
 # BIALA 20 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 12:48 UTC  
+**Generated:** 2026-07-12 23:41 UTC  
 **Formation tops name:** BIALA 20  
 **McKinlay window:** 1580.0 – 3315.0 m MD  
 **DC30 top:** 1583.42 m MD  
@@ -34,7 +34,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 1202.5 | 69.4% | 6 |
-| Resistivity only | 1281.4 | 74.0% | 6 |
+| Resistivity only | 1281.2 | 74.0% | 6 |
 | Matching both | 1202.5 | 69.4% | 6 |
 
 **Sample intervals in McKinlay Member:** 156
@@ -55,10 +55,10 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
 | 1580.9 | 1926.7 | 345.8 |
-| 2050.8 | 2093.6 | 42.8 |
-| 2189.8 | 2241.1 | 51.4 |
+| 2050.8 | 2093.5 | 42.7 |
+| 2189.8 | 2241.1 | 51.3 |
 | 2305.3 | 2519.1 | 213.8 |
-| 2598.2 | 2966.1 | 367.9 |
+| 2598.2 | 2966.1 | 367.8 |
 | 3010.1 | 3269.8 | 259.7 |
 
 ## Matching Pay Intervals

@@ -1,6 +1,6 @@
 # GRANCHIO 4 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 12:48 UTC  
+**Generated:** 2026-07-12 23:41 UTC  
 **Formation tops name:** GRANCHIO 4  
 **McKinlay window:** 1678.1 – 2825.0 m MD  
 **DC30 top:** 1678.34 m MD  
@@ -30,7 +30,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 990.0 | 86.3% | 10 |
-| Resistivity only | 1033.7 | 90.2% | 4 |
+| Resistivity only | 1033.7 | 90.1% | 4 |
 | Matching both | 955.0 | 83.3% | 9 |
 
 **Sample intervals in McKinlay Member:** 127
@@ -54,7 +54,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1678.2 | 1792.3 | 114.1 |
+| 1678.2 | 1792.2 | 114.1 |
 | 1829.5 | 2066.5 | 237.0 |
 | 2089.0 | 2132.6 | 43.6 |
 | 2176.8 | 2815.8 | 639.0 |

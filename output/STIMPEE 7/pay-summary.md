@@ -1,6 +1,6 @@
 # STIMPEE 7 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 12:48 UTC  
+**Generated:** 2026-07-12 23:41 UTC  
 **Formation tops name:** STIMPEE 7  
 **McKinlay window:** 1702.5 – 2840.1 m MD  
 **DC30 top:** 1704.52 m MD  
@@ -32,7 +32,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 707.5 | 62.3% | 8 |
-| Resistivity only | 795.5 | 70.1% | 4 |
+| Resistivity only | 795.4 | 70.0% | 4 |
 | Matching both | 707.5 | 62.3% | 8 |
 
 **Sample intervals in McKinlay Member:** 84
@@ -54,7 +54,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1702.5 | 2108.1 | 405.5 |
+| 1702.5 | 2108.0 | 405.5 |
 | 2163.4 | 2255.0 | 91.6 |
 | 2306.0 | 2513.5 | 207.4 |
 | 2675.0 | 2766.0 | 91.0 |

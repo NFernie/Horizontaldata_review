@@ -216,8 +216,7 @@ WELLS = [
         "litho": "Mckinlay 12_Litho_Spud-9526ft(TD) Prelim.txt",
         "gas": "Mckinlay 12_Drill-Gas_Spud-9526ft(TD) Prelim.txt",
         "depth_unit": "ft",
-        "bar_fluor": True,
-        "bar_fluor_only": True,
+        "fluor_text_max": True,
     },
     {
         "alias": "MCKINLAY13",
@@ -230,8 +229,7 @@ WELLS = [
         "litho": "McKinlay 13_Litho_Spud-10593ft.ASC",
         "gas": "McKinlay 13_Drill-Gas_Spud-10593ft.ASC",
         "depth_unit": "ft",
-        "bar_fluor": True,
-        "bar_fluor_only": True,
+        "fluor_text_max": True,
     },
     {
         "alias": "MCKINLAY14",
@@ -244,8 +242,7 @@ WELLS = [
         "litho": "Mckinlay 14_Litho_Spud-8674ft (TD).txt",
         "gas": "Mckinlay 14_Drill-Gas_Spud-8674ft (TD).txt",
         "depth_unit": "ft",
-        "bar_fluor": True,
-        "bar_fluor_only": True,
+        "fluor_text_max": True,
     },
     {
         "alias": "MCKINLAY15",
@@ -258,8 +255,7 @@ WELLS = [
         "litho": "McKinlay 15_Litho_Spud-8495ft.ASC",
         "gas": "McKinlay 15_Drill-Gas_Spud-8495ft.ASC",
         "depth_unit": "ft",
-        "bar_fluor": True,
-        "bar_fluor_only": True,
+        "fluor_text_max": True,
     },
 ]
 
@@ -819,6 +815,13 @@ def _assign_interval_bounds(samples: pd.DataFrame) -> pd.DataFrame:
     return samples
 
 
+def _text_fluor_pct(block: dict, use_max: bool) -> float:
+    """Return fluorescence % from a text block (max or mid of range)."""
+    if use_max:
+        return float(block["pct_max"])
+    return float(block["pct_mid"])
+
+
 def enrich_samples_from_mudlog(
     cfg: dict,
     samples: pd.DataFrame,
@@ -832,6 +835,7 @@ def enrich_samples_from_mudlog(
     mudlog_text = extract_mudlog_text(pdf_path)
     depth_unit = cfg.get("depth_unit", "ft")
     bar_only = bool(cfg.get("bar_fluor_only"))
+    text_max = bool(cfg.get("fluor_text_max"))
 
     bar_series: list = []
     if cfg.get("bar_fluor"):
@@ -883,7 +887,7 @@ def enrich_samples_from_mudlog(
                 if bar_match is not None:
                     candidates.append(bar_match["pct_mid"])
                 if text_match is not None:
-                    candidates.append(text_match["pct_mid"])
+                    candidates.append(_text_fluor_pct(text_match, text_max))
                 if candidates:
                     out.at[idx, "Pct_Fluor"] = max(candidates)
 
@@ -945,6 +949,7 @@ def process_well(cfg, dc30_df, mck_murta_df):
     depth_unit = cfg.get("depth_unit", "m")
     mudlog_entries = parse_mudlog_entries(mudlog_text, depth_unit=depth_unit)
     bar_only = bool(cfg.get("bar_fluor_only"))
+    text_max = bool(cfg.get("fluor_text_max"))
     fluor_entries = (
         parse_fluorescence_entries(mudlog_text, depth_unit=depth_unit)
         if depth_unit == "ft"
@@ -1019,7 +1024,7 @@ def process_well(cfg, dc30_df, mck_murta_df):
             if bar_match is not None:
                 candidates.append(bar_match["pct_mid"])
             if text_match is not None:
-                candidates.append(text_match["pct_mid"])
+                candidates.append(_text_fluor_pct(text_match, text_max))
                 if pd.isna(bright) or (isinstance(bright, float) and np.isnan(bright)):
                     bright = text_match.get("brightness")
             if candidates:
@@ -1186,6 +1191,14 @@ def write_interpretation(meta, path):
                 "8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes. "
                 "**Fluorescence %** from mudlog PDF graphics bar track only (raw fill, full McKinlay MD window). "
                 "Text block % values are not used; brightness descriptions from text where matched.",
+                "9. **Grain size** not parsed from litho ASCII — derived from mudlog lithology text where matched.",
+                "",
+            ]
+        elif meta["cfg"].get("fluor_text_max"):
+            lines += [
+                "8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes. "
+                "**Fluorescence %** from mudlog PDF text blocks (`FLUOR:` / `FLUORESCENCE:` ranges, ft→m); "
+                "upper bound of each range used (e.g. 60–90% → 90%), not the midpoint.",
                 "9. **Grain size** not parsed from litho ASCII — derived from mudlog lithology text where matched.",
                 "",
             ]

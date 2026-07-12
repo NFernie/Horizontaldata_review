@@ -1,6 +1,6 @@
 # JENA 31 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 12:48 UTC  
+**Generated:** 2026-07-12 23:40 UTC  
 **Formation tops name:** JENA 31 OPS  
 **McKinlay window:** 2250.6 – 3394.0 m MD  
 **DC30 top:** 2249.74 m MD  
@@ -31,7 +31,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 940.0 | 82.1% | 4 |
-| Resistivity only | 972.8 | 85.0% | 18 |
+| Resistivity only | 972.6 | 85.0% | 18 |
 | Matching both | 920.0 | 80.4% | 6 |
 
 **Sample intervals in McKinlay Member:** 197

@@ -1,6 +1,6 @@
 # FROSTILLICUS 2 — McKinlay Pay Summary
 
-**Generated:** 2026-07-07 12:48 UTC  
+**Generated:** 2026-07-12 23:41 UTC  
 **Formation tops name:** FROSTILLICUS 2  
 **McKinlay window:** 1614.7 – 3724.0 m MD  
 **DC30 top:** 1614.15 m MD  
@@ -32,7 +32,7 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
 | Cuttings only | 1677.0 | 79.5% | 13 |
-| Resistivity only | 1862.8 | 88.3% | 7 |
+| Resistivity only | 1862.7 | 88.3% | 7 |
 | Matching both | 1677.0 | 79.5% | 13 |
 
 **Sample intervals in McKinlay Member:** 373
@@ -59,11 +59,11 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Top (m MD) | Bottom (m MD) | Length (m) |
 |------------|---------------|------------|
-| 1614.8 | 1721.1 | 106.4 |
+| 1614.8 | 1721.1 | 106.3 |
 | 1757.1 | 1872.2 | 115.1 |
 | 1872.3 | 2229.8 | 357.5 |
 | 2230.0 | 2493.9 | 264.0 |
-| 2494.4 | 2530.2 | 35.8 |
+| 2494.4 | 2530.2 | 35.7 |
 | 2675.8 | 2776.5 | 100.7 |
 | 2806.5 | 3689.8 | 883.3 |
 

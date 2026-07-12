@@ -1,6 +1,6 @@
 # MCKINLAY 15 — McKinlay Pay Summary
 
-**Generated:** 2026-07-12 23:20 UTC  
+**Generated:** 2026-07-12 23:42 UTC  
 **Formation tops name:** MCKINLAY 15  
 **McKinlay window:** 1717.8 – 2589.1 m MD  
 **DC30 top:** 1717.85 m MD  
@@ -29,15 +29,18 @@ See [`pay-rules.md`](../../pay-rules.md) for full definitions.
 
 | Category | Pay MD (m) | % of Lateral | Intervals |
 |----------|-----------|--------------|-----------|
-| Cuttings only | 0.0 | 0.0% | 0 |
+| Cuttings only | 170.0 | 19.5% | 2 |
 | Resistivity only | 162.9 | 18.7% | 12 |
-| Matching both | 0.0 | 0.0% | 0 |
+| Matching both | 140.0 | 16.1% | 3 |
 
 **Sample intervals in McKinlay Member:** 57
 
 ## Cuttings-Only Pay Intervals
 
-_No pay intervals identified._
+| Top (m MD) | Bottom (m MD) | Length (m) |
+|------------|---------------|------------|
+| 1722.5 | 1837.5 | 115.0 |
+| 1992.5 | 2047.5 | 55.0 |
 
 ## Resistivity-Only Pay Intervals
 
@@ -58,8 +61,13 @@ _No pay intervals identified._
 
 ## Matching Pay Intervals
 
-_No pay intervals identified._
+| Top (m MD) | Bottom (m MD) | Length (m) |
+|------------|---------------|------------|
+| 1722.5 | 1837.5 | 115.0 |
+| 1992.5 | 2007.5 | 15.0 |
+| 2032.5 | 2042.5 | 10.0 |
 
 ## Data Quality Notes
 
+- **18** sample intervals missing %SS or %Fluor — excluded from cuttings/matching pay.
 - **1** intervals lack valid LAS RES_DEEP — excluded from matching pay only.

@@ -17,10 +17,10 @@
 | HOBBES 6 | HOBBES 6 | 81 | 55/81 | — | Excel | Spreadsheet | 466 | `HOBBES6_*` |
 | MCKINLAY 10 | MCKINLAY 10 | 96 | 96/96 | 96/96 | Litho+gas | **Bar-only** | **260** | `MCKINLAY10_*` |
 | MCKINLAY 11 | MCKINLAY 11 | 70 | 70/70 | 70/70 | Litho+gas | **Bar-only** | **310** | `MCKINLAY11_*` |
-| MCKINLAY 12 | MCKINLAY 12 | 172 | 172/172 | 172/172 | Litho+gas | **Bar-only** | 0 | `MCKINLAY12_*` |
-| MCKINLAY 13 | MCKINLAY 13 | 247 | 247/247 | 247/247 | Litho+gas | **Bar-only** | 0 | `MCKINLAY13_*` |
-| MCKINLAY 14 | MCKINLAY 14 | 113 | 113/113 | 113/113 | Litho+gas | **Bar-only** | 0 | `MCKINLAY14_*` |
-| MCKINLAY 15 | MCKINLAY 15 | 57 | 57/57 | 57/57 | Litho+gas | **Bar-only** | 0 | `MCKINLAY15_*` |
+| MCKINLAY 12 | MCKINLAY 12 | 172 | 172/172 | 172/172 | Litho+gas | **Text max** | **590** | `MCKINLAY12_*` |
+| MCKINLAY 13 | MCKINLAY 13 | 247 | 247/247 | 247/247 | Litho+gas | **Text max** | **1035** | `MCKINLAY13_*` |
+| MCKINLAY 14 | MCKINLAY 14 | 113 | 113/113 | 113/113 | Litho+gas | **Text max** | **295** | `MCKINLAY14_*` |
+| MCKINLAY 15 | MCKINLAY 15 | 57 | 57/57 | 57/57 | Litho+gas | **Text max** | **170** | `MCKINLAY15_*` |
 | MCKINLAY 20 | MCKINLAY 20 | 276 | 211/276 | — | Excel | Spreadsheet | 1168 | `MCKINLAY20_*` |
 | MCKINLAY 21 | MCKINLAY 21 | 118 | 81/118 | — | Excel | Spreadsheet | 470 | `MCKINLAY21_*` |
 | MCKINLAY 22 | MCKINLAY 22 | 306 | 221/306 | — | Excel | Spreadsheet | 1302 | `MCKINLAY22_*` |
@@ -48,8 +48,9 @@
 
 ### Litho/gas wells — data gaps
 
-- No sample Excel → fluorescence from **mudlog PDF graphics bar track** (McKinlay 10–15 bar-only mode; raw fill % across full McKinlay MD window)
-- Text `FLUOR:` / `FLUORESCENCE:` block % values are **not** used in bar-only mode; brightness descriptions from text where matched
+- No sample Excel → fluorescence from mudlog PDF:
+  - **Mck 10–11:** graphics bar track (bar-only, raw fill %)
+  - **Mck 12–15:** text `FLUOR:` / `FLUORESCENCE:` blocks (ft→m); **upper bound** of each range (e.g. 60–90% → 90%)
 - Mudlog lithology matched at **correct metre depth** (PDF depths converted ft→m before interval lookup)
 - %SS derived from lithology codes (405/400 sandstone, 406 siltstone, 407/800 shale)
 - Grain size mostly unavailable from litho ASCII; porosity/loose grains from mudlog text where matched
@@ -104,15 +105,16 @@ python3 scripts/compute_pay_summary.py MCKINLAY10 MCKINLAY11 MCKINLAY12 MCKINLAY
 - **HOBBES 4** — listed in tops files only; no well data files uploaded
 - **McKinlay legacy spreadsheets** — grain size / fluorescence fields not available
 - **McKinlay 10–15** — mudlog PDF depths in feet; parser converts to metres before matching intervals and LAS
-- **McKinlay 10–15 bar-only fluorescence** — Mck 10 and Mck 11 yield cuttings pay (260 m and 310 m); Mck 12–15 bar raster reads mostly &lt;75% (likely different PDF track layout vs Mck 11 calibration) — cuttings pay remains 0 m on those wells until track tuning
+- **McKinlay 10–11** — bar-only fluorescence (validated against pre-AI estimates)
+- **McKinlay 12–15** — text-block fluorescence using range **maximum** (author paints bar at zone minimum; text blocks retain true peak)
 
-## Bar-Only Fluorescence (McKinlay 10–15)
+## Fluorescence Ingestion (McKinlay 10–15)
 
-| Well | Bar samples | Mean %Fluor | Cuttings pay (m) | % lateral | Notes |
-|------|-------------|-------------|------------------|-----------|-------|
-| MCKINLAY 10 | full lateral | ~85–100% in pay zones | 260 | 48.9% | Up from 0 m (text-only) |
-| MCKINLAY 11 | 1,525 | 86.9 (median 88) | 310 | 66.2% | Reference calibration |
-| MCKINLAY 12 | full lateral | mostly 18–46% | 0 | 0% | Bar track may need per-well x-offset |
-| MCKINLAY 13 | full lateral | mostly 40–64% | 0 | 0% | Below 75% pay cutoff |
-| MCKINLAY 14 | full lateral | mostly 40–43% | 0 | 0% | Below 75% pay cutoff |
-| MCKINLAY 15 | full lateral | mostly 20–43% | 0 | 0% | Below 75% pay cutoff |
+| Well | Method | Cuttings pay (m) | % lateral | Notes |
+|------|--------|------------------|-----------|-------|
+| MCKINLAY 10 | Bar-only | 260 | 48.9% | Unchanged |
+| MCKINLAY 11 | Bar-only | 310 | 66.2% | Reference calibration |
+| MCKINLAY 12 | Text max | 590 | 48.2% | FLUOR blocks e.g. 5850'–5920':90% |
+| MCKINLAY 13 | Text max | 1035 | 74.1% | Long lateral; strong text-block coverage |
+| MCKINLAY 14 | Text max | 295 | 36.4% | |
+| MCKINLAY 15 | Text max | 170 | 19.5% | Short retained interval count (57) |
