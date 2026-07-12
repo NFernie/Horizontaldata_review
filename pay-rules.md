@@ -1,6 +1,6 @@
 # McKinlay Member Pay Rules
 
-**Established:** 2026-07-10
+**Established:** 2026-07-12
 
 ## Scope
 

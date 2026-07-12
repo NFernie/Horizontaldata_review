@@ -1,34 +1,34 @@
 # Batch McKinlay Member Processing — Status
 
-**Generated:** 2026-07-10 (updated — Phase 1: McKinlay 10–15)
+**Generated:** 2026-07-12 (updated — bar-only fluorescence: McKinlay 10–15)
 
 ## Wells Completed (23 / 23 with data in repository)
 
-| Well | Tops Name (Mck_Murta) | Intervals | Mudlog Match | mTVDss | Ingest | Output |
-|------|----------------------|-----------|--------------|--------|--------|--------|
-| JENA 31 | JENA 31 OPS | 201 | 200/201 | — | Excel | `JENA31_*` |
-| JENA 31DW1 | JENA 31DW1 | 182 | 182/182 | — | Excel | `JENA31DW1_*` |
-| BIALA 19 | BIALA 19 | 219 | 218/219 | — | Excel | `BIALA19_*` |
-| BIALA 20 | BIALA 20 | 175 | 173/175 | — | Excel | `BIALA20_*` |
-| BIALA 21 | BIALA 21 | 145 | 144/145 | — | Excel | `BIALA21_*` |
-| FROSTILLICUS 2 | FROSTILLICUS 2 | 370 | 248/370 | — | Excel | `FROSTILLICUS2_*` |
-| GRANCHIO 4 | GRANCHIO 4 | 126 | 93/126 | — | Excel | `GRANCHIO4_*` |
-| HOBBES 5 | HOBBES 5 | 114 | 60/114 | — | Excel | `HOBBES5_*` |
-| HOBBES 6 | HOBBES 6 | 81 | 55/81 | — | Excel | `HOBBES6_*` |
-| MCKINLAY 10 | MCKINLAY 10 | 96 | 96/96 | 96/96 | Litho+gas | `MCKINLAY10_*` |
-| MCKINLAY 11 | MCKINLAY 11 | 70 | 70/70 | 70/70 | Litho+gas | `MCKINLAY11_*` |
-| MCKINLAY 12 | MCKINLAY 12 | 172 | 172/172 | 172/172 | Litho+gas | `MCKINLAY12_*` |
-| MCKINLAY 13 | MCKINLAY 13 | 247 | 247/247 | 247/247 | Litho+gas | `MCKINLAY13_*` |
-| MCKINLAY 14 | MCKINLAY 14 | 113 | 113/113 | 113/113 | Litho+gas | `MCKINLAY14_*` |
-| MCKINLAY 15 | MCKINLAY 15 | 57 | 57/57 | 57/57 | Litho+gas | `MCKINLAY15_*` |
-| MCKINLAY 20 | MCKINLAY 20 | 276 | 211/276 | — | Excel | `MCKINLAY20_*` |
-| MCKINLAY 21 | MCKINLAY 21 | 118 | 81/118 | — | Excel | `MCKINLAY21_*` |
-| MCKINLAY 22 | MCKINLAY 22 | 306 | 221/306 | — | Excel | `MCKINLAY22_*` |
-| MCKINLAY 23 | MCKINLAY 23 | 180 | 78/180 | — | Excel | `MCKINLAY23_*` |
-| MCKINLAY 24 | MCKINLAY 24 | 167 | 125/167 | — | Excel | `MCKINLAY24_*` |
-| STIMPEE 6 | STIMPEE 6 | 143 | 115/143 | — | Excel | `STIMPEE6_*` |
-| STIMPEE 7 | STIMPEE 7 | 93 | 81/93 | — | Excel | `STIMPEE7_*` |
-| TERINGIE 6 | TERINGIE 6 | 166 | 165/166 | — | Excel | `TERINGIE6_*` |
+| Well | Tops Name (Mck_Murta) | Intervals | Mudlog Match | mTVDss | Ingest | Fluor source | Cuttings pay (m) | Output |
+|------|----------------------|-----------|--------------|--------|--------|--------------|------------------|--------|
+| JENA 31 | JENA 31 OPS | 201 | 200/201 | — | Excel | Spreadsheet | 940 | `JENA31_*` |
+| JENA 31DW1 | JENA 31DW1 | 182 | 182/182 | — | Excel | Spreadsheet | 1180 | `JENA31DW1_*` |
+| BIALA 19 | BIALA 19 | 219 | 218/219 | — | Excel | Spreadsheet | 1692 | `BIALA19_*` |
+| BIALA 20 | BIALA 20 | 175 | 173/175 | — | Excel | Spreadsheet | 1202 | `BIALA20_*` |
+| BIALA 21 | BIALA 21 | 145 | 144/145 | — | Excel | Spreadsheet | 910 | `BIALA21_*` |
+| FROSTILLICUS 2 | FROSTILLICUS 2 | 370 | 248/370 | — | Excel | Spreadsheet | 1677 | `FROSTILLICUS2_*` |
+| GRANCHIO 4 | GRANCHIO 4 | 126 | 93/126 | — | Excel | Spreadsheet | 990 | `GRANCHIO4_*` |
+| HOBBES 5 | HOBBES 5 | 114 | 60/114 | — | Excel | Spreadsheet | 407 | `HOBBES5_*` |
+| HOBBES 6 | HOBBES 6 | 81 | 55/81 | — | Excel | Spreadsheet | 466 | `HOBBES6_*` |
+| MCKINLAY 10 | MCKINLAY 10 | 96 | 96/96 | 96/96 | Litho+gas | **Bar-only** | **260** | `MCKINLAY10_*` |
+| MCKINLAY 11 | MCKINLAY 11 | 70 | 70/70 | 70/70 | Litho+gas | **Bar-only** | **310** | `MCKINLAY11_*` |
+| MCKINLAY 12 | MCKINLAY 12 | 172 | 172/172 | 172/172 | Litho+gas | **Bar-only** | 0 | `MCKINLAY12_*` |
+| MCKINLAY 13 | MCKINLAY 13 | 247 | 247/247 | 247/247 | Litho+gas | **Bar-only** | 0 | `MCKINLAY13_*` |
+| MCKINLAY 14 | MCKINLAY 14 | 113 | 113/113 | 113/113 | Litho+gas | **Bar-only** | 0 | `MCKINLAY14_*` |
+| MCKINLAY 15 | MCKINLAY 15 | 57 | 57/57 | 57/57 | Litho+gas | **Bar-only** | 0 | `MCKINLAY15_*` |
+| MCKINLAY 20 | MCKINLAY 20 | 276 | 211/276 | — | Excel | Spreadsheet | 1168 | `MCKINLAY20_*` |
+| MCKINLAY 21 | MCKINLAY 21 | 118 | 81/118 | — | Excel | Spreadsheet | 470 | `MCKINLAY21_*` |
+| MCKINLAY 22 | MCKINLAY 22 | 306 | 221/306 | — | Excel | Spreadsheet | 1302 | `MCKINLAY22_*` |
+| MCKINLAY 23 | MCKINLAY 23 | 180 | 78/180 | — | Excel | Spreadsheet | 870 | `MCKINLAY23_*` |
+| MCKINLAY 24 | MCKINLAY 24 | 167 | 125/167 | — | Excel | Spreadsheet | 749 | `MCKINLAY24_*` |
+| STIMPEE 6 | STIMPEE 6 | 143 | 115/143 | — | Excel | Spreadsheet | 1158 | `STIMPEE6_*` |
+| STIMPEE 7 | STIMPEE 7 | 93 | 81/93 | — | Excel | Spreadsheet | 707 | `STIMPEE7_*` |
+| TERINGIE 6 | TERINGIE 6 | 166 | 165/166 | — | Excel | Spreadsheet | 955 | `TERINGIE6_*` |
 
 **Total McKinlay intervals analysed:** 3,647
 
@@ -48,7 +48,8 @@
 
 ### Litho/gas wells — data gaps
 
-- No sample Excel → fluorescence from **mudlog PDF text track** (`FLUOR:` / `FLUORESCENCE:` blocks; depths in ft → m MD)
+- No sample Excel → fluorescence from **mudlog PDF graphics bar track** (McKinlay 10–15 bar-only mode; raw fill % across full McKinlay MD window)
+- Text `FLUOR:` / `FLUORESCENCE:` block % values are **not** used in bar-only mode; brightness descriptions from text where matched
 - Mudlog lithology matched at **correct metre depth** (PDF depths converted ft→m before interval lookup)
 - %SS derived from lithology codes (405/400 sandstone, 406 siltstone, 407/800 shale)
 - Grain size mostly unavailable from litho ASCII; porosity/loose grains from mudlog text where matched
@@ -103,3 +104,15 @@ python3 scripts/compute_pay_summary.py MCKINLAY10 MCKINLAY11 MCKINLAY12 MCKINLAY
 - **HOBBES 4** — listed in tops files only; no well data files uploaded
 - **McKinlay legacy spreadsheets** — grain size / fluorescence fields not available
 - **McKinlay 10–15** — mudlog PDF depths in feet; parser converts to metres before matching intervals and LAS
+- **McKinlay 10–15 bar-only fluorescence** — Mck 10 and Mck 11 yield cuttings pay (260 m and 310 m); Mck 12–15 bar raster reads mostly &lt;75% (likely different PDF track layout vs Mck 11 calibration) — cuttings pay remains 0 m on those wells until track tuning
+
+## Bar-Only Fluorescence (McKinlay 10–15)
+
+| Well | Bar samples | Mean %Fluor | Cuttings pay (m) | % lateral | Notes |
+|------|-------------|-------------|------------------|-----------|-------|
+| MCKINLAY 10 | full lateral | ~85–100% in pay zones | 260 | 48.9% | Up from 0 m (text-only) |
+| MCKINLAY 11 | 1,525 | 86.9 (median 88) | 310 | 66.2% | Reference calibration |
+| MCKINLAY 12 | full lateral | mostly 18–46% | 0 | 0% | Bar track may need per-well x-offset |
+| MCKINLAY 13 | full lateral | mostly 40–64% | 0 | 0% | Below 75% pay cutoff |
+| MCKINLAY 14 | full lateral | mostly 40–43% | 0 | 0% | Below 75% pay cutoff |
+| MCKINLAY 15 | full lateral | mostly 20–43% | 0 | 0% | Below 75% pay cutoff |

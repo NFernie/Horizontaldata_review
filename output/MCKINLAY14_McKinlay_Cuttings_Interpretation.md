@@ -1,6 +1,6 @@
 # MCKINLAY 14 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-10 04:53 UTC  
+**Generated:** 2026-07-12 23:16 UTC  
 **Well:** MCKINLAY 14 (MCKINLAY 14)  
 **TD:** 2644 m MD  
 
@@ -64,7 +64,7 @@
 5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
 6. **NULL LAS values** (-999.25) excluded from averages.
 7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if none mapped). Later entry pairs inside an existing exclusion interval are treated as the same overburden excursion. Initial DC30/McKinlay reservoir entry is not excluded.
-8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes; **no fluorescence %** in litho ASCII — fluorescence from mudlog PDF text track (FLUOR / FLUORESCENCE, ft→m); cuttings pay where matched.
+8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes. **Fluorescence %** from mudlog PDF graphics bar track only (raw fill, full McKinlay MD window). Text block % values are not used; brightness descriptions from text where matched.
 9. **Grain size** not parsed from litho ASCII — derived from mudlog lithology text where matched.
 
 ## 4. McKinlay Member Sample Intervals
@@ -81,7 +81,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 7.5% mod bri yel wh sptd |
+| Fluorescence | 42.25% mod bri yel wh sptd |
 | Total Gas | 259.51875 U |
 | mTVDss | -1199.19 m |
 
@@ -113,6 +113,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 43.75% mod bri yel wh sptd |
 | Total Gas | 328.74375000000003 U |
 | mTVDss | -1199.37 m |
 
@@ -144,6 +145,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 43.529411764705884% mod bri yel wh sptd |
 | Total Gas | 437.02352941176474 U |
 | mTVDss | -1199.49 m |
 
@@ -175,6 +177,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 43.75% mod bri yel wh sptd |
 | Total Gas | 406.39375 U |
 | mTVDss | -1199.61 m |
 
@@ -206,6 +209,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 298.3235294117647 U |
 | mTVDss | -1199.74 m |
 
@@ -237,6 +241,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 262.86875 U |
 | mTVDss | -1199.86 m |
 
@@ -268,6 +273,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 43.75% None |
 | Total Gas | 357.25 U |
 | mTVDss | -1199.99 m |
 
@@ -299,6 +305,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 343.67058823529413 U |
 | mTVDss | -1200.08 m |
 
@@ -330,6 +337,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 303.6 U |
 | mTVDss | -1200.08 m |
 
@@ -361,6 +369,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | Yes |
+| Fluorescence | 42.11764705882353% None |
 | Total Gas | 213.9941176470588 U |
 | mTVDss | -1200.08 m |
 
@@ -392,6 +401,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 218.04375000000002 U |
 | mTVDss | -1200.08 m |
 
@@ -423,6 +433,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 309.6125 U |
 | mTVDss | -1200.08 m |
 
@@ -454,6 +465,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
 | Loose Grains | Yes |
+| Fluorescence | 40.23529411764706% None |
 | Total Gas | 281.5529411764706 U |
 | mTVDss | -1200.07 m |
 
@@ -485,6 +497,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 326.3625 U |
 | mTVDss | -1200.00 m |
 
@@ -516,6 +529,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 331.1117647058823 U |
 | mTVDss | -1199.88 m |
 
@@ -547,6 +561,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 363.925 U |
 | mTVDss | -1199.76 m |
 
@@ -578,6 +593,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.470588235294116% None |
 | Total Gas | 271.7647058823529 U |
 | mTVDss | -1199.64 m |
 
@@ -609,6 +625,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 328.98125 U |
 | mTVDss | -1199.52 m |
 
@@ -640,6 +657,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 43.75% None |
 | Total Gas | 393.6875 U |
 | mTVDss | -1199.40 m |
 
@@ -671,6 +689,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 440.11176470588236 U |
 | mTVDss | -1199.28 m |
 
@@ -702,6 +721,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 445.61249999999995 U |
 | mTVDss | -1199.16 m |
 
@@ -732,6 +752,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 381.94117647058823 U |
 | mTVDss | -1199.04 m |
 
@@ -762,6 +783,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 19.0% None |
 | Total Gas | 235.73125 U |
 | mTVDss | -1198.82 m |
 
@@ -793,7 +815,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 60.0% None |
+| Fluorescence | 24.941176470588236% None |
 | Total Gas | 243.35294117647058 U |
 | mTVDss | -1198.89 m |
 
@@ -825,7 +847,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 60.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 377.65625 U |
 | mTVDss | -1198.97 m |
 
@@ -857,7 +879,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 60.0% None |
+| Fluorescence | 40.470588235294116% None |
 | Total Gas | 431.8941176470588 U |
 | mTVDss | -1199.05 m |
 
@@ -889,6 +911,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.75% None |
 | Total Gas | 382.44374999999997 U |
 | mTVDss | -1199.16 m |
 
@@ -920,6 +943,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 366.05625 U |
 | mTVDss | -1199.26 m |
 
@@ -951,6 +975,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 410.2941176470588 U |
 | mTVDss | -1199.37 m |
 
@@ -982,7 +1007,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
 | Loose Grains | Yes |
-| Fluorescence | 0.0% none |
+| Fluorescence | 40.0% None |
 | Total Gas | 405.4375 U |
 | mTVDss | -1199.47 m |
 
@@ -1014,7 +1039,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 75.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 402.14374999999995 U |
 | mTVDss | -1200.45 m |
 
@@ -1046,7 +1071,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 75.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 376.8352941176471 U |
 | mTVDss | -1200.50 m |
 
@@ -1078,7 +1103,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 75.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 368.26875 U |
 | mTVDss | -1200.55 m |
 
@@ -1110,7 +1135,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 43.76470588235294% None |
 | Total Gas | 392.1941176470589 U |
 | mTVDss | -1200.61 m |
 
@@ -1142,7 +1167,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 442.83124999999995 U |
 | mTVDss | -1200.66 m |
 
@@ -1174,7 +1199,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 408.96875 U |
 | mTVDss | -1200.72 m |
 
@@ -1206,7 +1231,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.23529411764706% None |
 | Total Gas | 441.38823529411764 U |
 | mTVDss | -1200.77 m |
 
@@ -1238,7 +1263,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 43.75% None |
 | Total Gas | 449.03125 U |
 | mTVDss | -1200.82 m |
 
@@ -1270,7 +1295,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 412.2058823529412 U |
 | mTVDss | -1200.87 m |
 
@@ -1302,7 +1327,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 370.08124999999995 U |
 | mTVDss | -1200.93 m |
 
@@ -1334,7 +1359,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 396.1117647058823 U |
 | mTVDss | -1200.98 m |
 
@@ -1366,7 +1391,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 407.7375 U |
 | mTVDss | -1201.03 m |
 
@@ -1398,7 +1423,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 43.75% None |
 | Total Gas | 446.0 U |
 | mTVDss | -1201.07 m |
 
@@ -1430,7 +1455,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 437.38823529411764 U |
 | mTVDss | -1201.09 m |
 
@@ -1462,7 +1487,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 476.8 U |
 | mTVDss | -1201.48 m |
 
@@ -1494,7 +1519,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 566.8352941176472 U |
 | mTVDss | -1201.54 m |
 
@@ -1526,7 +1551,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 47.5% None |
 | Total Gas | 556.89375 U |
 | mTVDss | -1201.60 m |
 
@@ -1558,7 +1583,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 482.4764705882353 U |
 | mTVDss | -1201.65 m |
 
@@ -1590,7 +1615,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 424.61875 U |
 | mTVDss | -1201.71 m |
 
@@ -1622,7 +1647,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 470.3125 U |
 | mTVDss | -1201.76 m |
 
@@ -1654,7 +1679,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 47.05882352941177% None |
 | Total Gas | 465.3764705882353 U |
 | mTVDss | -1201.81 m |
 
@@ -1686,7 +1711,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 43.75% None |
 | Total Gas | 483.51250000000005 U |
 | mTVDss | -1201.86 m |
 
@@ -1718,7 +1743,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 496.05882352941177 U |
 | mTVDss | -1201.87 m |
 
@@ -1749,7 +1774,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 461.63125 U |
 | mTVDss | -1201.86 m |
 
@@ -1781,7 +1806,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 431.74375 U |
 | mTVDss | -1201.86 m |
 
@@ -1813,7 +1838,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 43.529411764705884% None |
 | Total Gas | 498.3117647058823 U |
 | mTVDss | -1201.86 m |
 
@@ -1845,7 +1870,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 534.18125 U |
 | mTVDss | -1201.85 m |
 
@@ -1877,7 +1902,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 575.6705882352941 U |
 | mTVDss | -1201.85 m |
 
@@ -1909,7 +1934,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 43.75% None |
 | Total Gas | 612.73125 U |
 | mTVDss | -1201.84 m |
 
@@ -1941,7 +1966,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 44.5% None |
 | Total Gas | 554.65625 U |
 | mTVDss | -1201.83 m |
 
@@ -1973,7 +1998,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 512.3764705882353 U |
 | mTVDss | -1201.83 m |
 
@@ -2005,7 +2030,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 566.48125 U |
 | mTVDss | -1201.82 m |
 
@@ -2037,7 +2062,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% None |
 | Total Gas | 633.3764705882354 U |
 | mTVDss | -1201.81 m |
 
@@ -2069,6 +2094,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 707.29375 U |
 | mTVDss | -1201.80 m |
 
@@ -2100,6 +2126,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 713.85 U |
 | mTVDss | -1201.77 m |
 
@@ -2130,6 +2157,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 550.2823529411764 U |
 | mTVDss | -1201.75 m |
 
@@ -2160,6 +2188,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 499.80625000000003 U |
 | mTVDss | -1201.73 m |
 
@@ -2191,6 +2220,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
+| Fluorescence | 40.0% None |
 | Total Gas | 453.18823529411765 U |
 | mTVDss | -1201.70 m |
 
@@ -2222,7 +2252,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 43.75% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 474.29999999999995 U |
 | mTVDss | -1201.68 m |
 
@@ -2254,7 +2284,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 574.03125 U |
 | mTVDss | -1201.65 m |
 
@@ -2286,7 +2316,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.23529411764706% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 529.1529411764706 U |
 | mTVDss | -1201.59 m |
 
@@ -2318,7 +2348,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 556.69375 U |
 | mTVDss | -1201.54 m |
 
@@ -2350,7 +2380,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 560.0117647058823 U |
 | mTVDss | -1201.49 m |
 
@@ -2382,7 +2412,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 43.75% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 493.63749999999993 U |
 | mTVDss | -1201.44 m |
 
@@ -2414,7 +2444,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 633.95 U |
 | mTVDss | -1201.39 m |
 
@@ -2446,7 +2476,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 43.529411764705884% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 698.8882352941175 U |
 | mTVDss | -1201.32 m |
 
@@ -2478,7 +2508,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.75% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 599.2647058823529 U |
 | mTVDss | -1201.25 m |
 
@@ -2509,7 +2539,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 617.1823529411764 U |
 | mTVDss | -1201.18 m |
 
@@ -2540,7 +2570,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 623.29375 U |
 | mTVDss | -1201.11 m |
 
@@ -2570,7 +2600,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.470588235294116% mod bri-bri yel wh evn |
 | Total Gas | 581.7882352941176 U |
 | mTVDss | -1201.03 m |
 
@@ -2602,7 +2632,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh ptchy-evn |
+| Fluorescence | 40.0% mod bri-bri yel wh evn |
 | Total Gas | 626.64375 U |
 | mTVDss | -1200.96 m |
 
@@ -2634,7 +2664,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri-bri yel wh evn |
+| Fluorescence | 40.5% mod bri-bri yel wh evn |
 | Total Gas | 666.325 U |
 | mTVDss | -1200.94 m |
 
@@ -2665,7 +2695,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 100.0% Sandstone (litho ASCII aggregate) TG 161.4U (drill-gas ASCII) mod gry,mod dk gry, aren,rr carb spks,rr micmic & liths, frm-mod hd,blky. off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf med gry,med dk gry, rr med dk gry brn,aren,tr-rr carb 8070 spks,tr micmic,rr liths,frm-mod hd,sbblky. off wh-v lt brn,clr- trnsl,opq,f-crs,dom f aggs,pr srt, sbrnd-sbang,com wk sil cmt,com off wh arg mtx,rr carb spks,tr liths, fri aggs,com cln lse qtz grs,fr vis clr,frstd,trnsl,tr off 8110 wh,dom crs,tr f-med,sbrnd-rnd,tr wk sil cmt,tr off wh arg mtx,dom cln lse grs,tr fri aggs,gd inf por, |
+| Fluorescence | 43.529411764705884% mod bri yel wh ptchy evn |
 | Total Gas | 161.38235294117646 U |
 | mTVDss | -1201.22 m |
 
@@ -2697,7 +2727,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 100.0% Sandstone (litho ASCII aggregate) TG 178.1U (drill-gas ASCII) mod gry,mod dk gry, aren,rr carb spks,rr micmic & liths, frm-mod hd,blky. off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf med gry,med dk gry, rr med dk gry brn,aren,tr-rr carb 8070 spks,tr micmic,rr liths,frm-mod hd,sbblky. off wh-v lt brn,clr- trnsl,opq,f-crs,dom f aggs,pr srt, sbrnd-sbang,com wk sil cmt,com off wh arg mtx,rr carb spks,tr liths, fri aggs,com cln lse qtz grs,fr vis clr,frstd,trnsl,tr off 8110 wh,dom crs,tr f-med,sbrnd-rnd,tr wk sil cmt,tr off wh arg mtx,dom cln lse grs,tr fri aggs,gd inf por, |
+| Fluorescence | 40.0% mod bri yel wh ptchy evn |
 | Total Gas | 178.14375 U |
 | mTVDss | -1201.27 m |
 
@@ -2729,7 +2759,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 100.0% Sandstone (litho ASCII aggregate) TG 191.2U (drill-gas ASCII) off wh,trnsl,clr,v lt brn,f-crs,pr srt,ang-sbrnd,wk-mod strg sil cmt,com off wh-v lt brn (4081) 74 / 6 / 4 / 7 / 9 202 U arg mtx,rr carb spks,tr micmic,tr 8050 liths,fri-mod hd,occ hd,pr inf med gry,med dk gry, rr med dk gry brn,aren,tr-rr carb 8070 spks,tr micmic,rr liths,frm-mod hd,sbblky. off wh-v lt brn,clr- trnsl,opq,f-crs,dom f aggs,pr srt, sbrnd-sbang,com wk sil cmt,com off wh arg mtx,rr carb spks,tr liths, fri aggs,com cln lse qtz grs,fr vis clr,frstd,trnsl,tr off 8110 wh,dom crs,tr f-med,sbrnd-rnd,tr wk sil cmt,tr off wh arg mtx,dom cln lse grs,tr fri aggs,gd inf por, |
+| Fluorescence | 43.529411764705884% mod bri yel wh ptchy evn |
 | Total Gas | 191.1823529411765 U |
 | mTVDss | -1201.32 m |
 
@@ -2761,7 +2791,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri yel wh ptchy evn |
+| Fluorescence | 40.0% mod bri yel wh ptchy evn |
 | Total Gas | 187.34375 U |
 | mTVDss | -1201.38 m |
 
@@ -2793,7 +2823,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri yel wh ptchy evn |
+| Fluorescence | 40.25% mod bri yel wh ptchy evn |
 | Total Gas | 193.02499999999998 U |
 | mTVDss | -1201.43 m |
 
@@ -2825,7 +2855,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri yel wh ptchy evn |
+| Fluorescence | 44.0% mod bri yel wh ptchy evn |
 | Total Gas | 251.48823529411766 U |
 | mTVDss | -1201.48 m |
 
@@ -2857,7 +2887,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri yel wh ptchy evn |
+| Fluorescence | 40.0% mod bri yel wh ptchy evn |
 | Total Gas | 295.01250000000005 U |
 | mTVDss | -1201.53 m |
 
@@ -2889,7 +2919,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% mod bri yel wh ptchy evn |
+| Fluorescence | 40.0% mod bri yel wh ptchy evn |
 | Total Gas | 308.40000000000003 U |
 | mTVDss | -1201.56 m |
 
@@ -2920,7 +2950,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% mod bri yel wh ptchy evn |
 | Total Gas | 264.7875 U |
 | mTVDss | -1201.59 m |
 
@@ -2951,7 +2981,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 41.5% mod bri yel wh |
 | Total Gas | 313.9125 U |
 | mTVDss | -1201.63 m |
 
@@ -2983,7 +3013,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 40.0% mod bri yel wh |
 | Total Gas | 360.20000000000005 U |
 | mTVDss | -1201.66 m |
 
@@ -3014,7 +3044,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 85.0% None |
+| Fluorescence | 47.5% mod bri yel wh |
 | Total Gas | 362.625 U |
 | mTVDss | -1201.70 m |
 
@@ -3045,7 +3075,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 75.0% mod bri yel wh |
+| Fluorescence | 40.0% mod bri yel wh |
 | Total Gas | 374.65882352941173 U |
 | mTVDss | -1201.73 m |
 
@@ -3077,7 +3107,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 75.0% mod bri yel wh |
+| Fluorescence | 40.0% mod bri yel wh |
 | Total Gas | 760.2875 U |
 | mTVDss | -1201.77 m |
 
@@ -3108,7 +3138,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
 | Loose Grains | Yes |
-| Fluorescence | 75.0% mod bri yel wh |
+| Fluorescence | 46.0% mod bri yel wh |
 | Total Gas | 587.54375 U |
 | mTVDss | -1201.80 m |
 
@@ -3140,7 +3170,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | p-fr |
 | Loose Grains | Yes |
-| Fluorescence | 40.0% None |
+| Fluorescence | 16.25% None |
 | Total Gas | 214.0375 U |
 | mTVDss | -1202.10 m |
 
@@ -3172,7 +3202,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | p-fr |
 | Loose Grains | Yes |
-| Fluorescence | 40.0% None |
+| Fluorescence | 16.0% None |
 | Total Gas | 221.00625 U |
 | mTVDss | -1202.09 m |
 
@@ -3204,7 +3234,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | p-fr |
 | Loose Grains | Yes |
-| Fluorescence | 40.0% None |
+| Fluorescence | 16.0% None |
 | Total Gas | 222.27058823529413 U |
 | mTVDss | -1202.09 m |
 
@@ -3236,7 +3266,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | p-fr |
 | Loose Grains | Yes |
-| Fluorescence | 40.0% None |
+| Fluorescence | 23.5% None |
 | Total Gas | 203.375 U |
 | mTVDss | -1202.08 m |
 
@@ -3268,7 +3298,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
-| Fluorescence | 40.0% None |
+| Fluorescence | 18.823529411764707% None |
 | Total Gas | 184.55882352941177 U |
 | mTVDss | -1202.08 m |
 
@@ -3300,7 +3330,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
-| Fluorescence | 40.0% None |
+| Fluorescence | 18.0% None |
 | Total Gas | 189.31875 U |
 | mTVDss | -1202.07 m |
 
@@ -3332,7 +3362,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
-| Fluorescence | 40.0% None |
+| Fluorescence | 22.75% None |
 | Total Gas | 208.08749999999998 U |
 | mTVDss | -1202.07 m |
 
@@ -3364,7 +3394,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
-| Fluorescence | 40.0% None |
+| Fluorescence | 16.941176470588236% None |
 | Total Gas | 183.8235294117647 U |
 | mTVDss | -1202.06 m |
 
@@ -3396,7 +3426,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
-| Fluorescence | 40.0% None |
+| Fluorescence | 16.0% None |
 | Total Gas | 161.54375 U |
 | mTVDss | -1202.04 m |
 
@@ -3428,6 +3458,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 21.41176470588235% None |
 | Total Gas | 136.35882352941175 U |
 | mTVDss | -1202.03 m |
 
@@ -3459,6 +3490,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 18.25% None |
 | Total Gas | 119.55624999999999 U |
 | mTVDss | -1202.02 m |
 
@@ -3489,6 +3521,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 20.941176470588236% None |
 | Total Gas | 123.57058823529411 U |
 | mTVDss | -1202.00 m |
 
@@ -3520,6 +3553,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 23.0% None |
 | Total Gas | 122.5625 U |
 | mTVDss | -1201.99 m |
 
@@ -3551,6 +3585,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 20.25% None |
 | Total Gas | 128.51875 U |
 | mTVDss | -1201.99 m |
 
@@ -3581,6 +3616,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 23.058823529411764% None |
 | Total Gas | 121.02352941176471 U |
 | mTVDss | -1201.99 m |
 
@@ -3611,6 +3647,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
 | Loose Grains | No |
+| Fluorescence | 17.25% None |
 | Total Gas | 98.59375 U |
 | mTVDss | -1201.99 m |
 

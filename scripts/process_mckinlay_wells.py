@@ -188,6 +188,8 @@ WELLS = [
         "litho": "McKINLAY_10_LITHO_100-6935'.ASC",
         "gas": "McKINLAY_10_DRILL_GAS_6936'.ASC",
         "depth_unit": "ft",
+        "bar_fluor": True,
+        "bar_fluor_only": True,
     },
     {
         "alias": "MCKINLAY11",
@@ -214,6 +216,8 @@ WELLS = [
         "litho": "Mckinlay 12_Litho_Spud-9526ft(TD) Prelim.txt",
         "gas": "Mckinlay 12_Drill-Gas_Spud-9526ft(TD) Prelim.txt",
         "depth_unit": "ft",
+        "bar_fluor": True,
+        "bar_fluor_only": True,
     },
     {
         "alias": "MCKINLAY13",
@@ -226,6 +230,8 @@ WELLS = [
         "litho": "McKinlay 13_Litho_Spud-10593ft.ASC",
         "gas": "McKinlay 13_Drill-Gas_Spud-10593ft.ASC",
         "depth_unit": "ft",
+        "bar_fluor": True,
+        "bar_fluor_only": True,
     },
     {
         "alias": "MCKINLAY14",
@@ -238,6 +244,8 @@ WELLS = [
         "litho": "Mckinlay 14_Litho_Spud-8674ft (TD).txt",
         "gas": "Mckinlay 14_Drill-Gas_Spud-8674ft (TD).txt",
         "depth_unit": "ft",
+        "bar_fluor": True,
+        "bar_fluor_only": True,
     },
     {
         "alias": "MCKINLAY15",
@@ -250,6 +258,8 @@ WELLS = [
         "litho": "McKinlay 15_Litho_Spud-8495ft.ASC",
         "gas": "McKinlay 15_Drill-Gas_Spud-8495ft.ASC",
         "depth_unit": "ft",
+        "bar_fluor": True,
+        "bar_fluor_only": True,
     },
 ]
 
