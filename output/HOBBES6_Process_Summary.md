@@ -14,6 +14,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 | `Hobbes 6 Hz Section Samples Descriptions_Rev3.xlsx` → Input Sheet | Sample intervals |
 | `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |
 | `Hobbes_6` | GR / resistivity |
+| `Hobbes_6_trajectory` | Trajectory → mTVDss |
 
 ## Formation Top Results
 
@@ -27,7 +28,6 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 - Depth range: **1686 – 2500 m MD**
 - Average sandstone: **80.1%**
-- Δ Res range: **-0.8 – 7.5 ohm.m** (avg 2.0)
 - Mudlog matched: **62 / 78** intervals
 
 ## Limitations

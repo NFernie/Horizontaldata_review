@@ -1,7 +1,7 @@
 # Updated Pipeline Plan — RQI v2, New Wells, Along-Wellbore Flags & OWC Proximity
 
 **Date:** 2026-07-10  
-**Status:** **In progress** — Phases 0–2 **complete** on `main`; **ready for Phases 3+4+5** (combined)  
+**Status:** **Complete** — Phases 0–6 **complete** on `main` (Phase 6 integration rerun 2026-07-13)  
 **Branch:** Commit directly to `main` (single PR)  
 **Last updated:** 2026-07-13  
 **Supersedes (in part):** `res_sep_fix-plan.md` (**suspended**), OpusPlanR1 `highperm` / ΔRes red-flag logic  
@@ -32,12 +32,12 @@ This plan coordinates a **single major release** covering:
 | **0** Planning lock-in | ✅ Complete | §9 locked 2026-07-10 |
 | **1** McKinlay 10–15 + trajectory | ✅ Complete | On `main` — `scripts/trajectory.py`, litho+gas ingest, 23-well `BATCH_PROCESSING_STATUS.md`, pay summaries |
 | **2** RQI v2 (8-component) | ✅ Complete | `acddeee` — parsers, weights, `loose_hardness`; all 23 wells reprocessed + export regenerated |
-| **3** Remove ΔRes; flag framework | ⏳ **Next** | `res_sep` / `highperm` still in code, config, site UI, JSON |
-| **4** ZOI along-wellbore | ⏳ Pending | Not started — combine with Phase 3 per §12 |
-| **5** OWC proximity | ⏳ Pending | `mTVDss` on Mck 10–15 process records only; not yet in export JSON for all wells |
-| **6** Full rerun + CI deploy | ⏳ Pending | After 3+4+5 |
+| **3** Remove ΔRes; flag framework | ✅ Complete | `2a78681` — `res_sep` / `highperm` removed; `low_GR`, WRCI v2 |
+| **4** ZOI along-wellbore | ✅ Complete | `2a78681` — `compute_zoi()` in export; `test_zoi.py` |
+| **5** OWC proximity | ✅ Complete | `2a78681` — `owc.py`, trajectory on all 23 wells, OWC tiers in JSON |
+| **6** Full rerun + CI deploy | ✅ Complete | 2026-07-13 — 3,746 intervals, corpus, CI pay + tests, Methods page |
 
-**Phase 3 readiness:** **Yes** — Phases 1 and 2 acceptance gates passed. Proceed with the **combined Phases 3+4+5 prompt** (§12), not Phase 3 in isolation. See §4B for pre-flight notes.
+**Release readiness:** All acceptance gates G1–G7 passed (§4 Phase 6). HOBBES 4 remains data-missing placeholder only.
 
 ---
 
@@ -370,7 +370,7 @@ ZOI = side_triggers_shallow OR side_triggers_deep
 
 ---
 
-### Phase 6 — Full pipeline rerun & site deploy ⏳ **Pending (after 3+4+5)**
+### Phase 6 — Full pipeline rerun & site deploy ✅ **Complete (2026-07-13)**
 
 **Execute only after Phases 1–5 pass acceptance gates.**
 
@@ -852,3 +852,4 @@ Phase 6 → full rerun → optional debugging pass → merge
 | 2026-07-10 | Initial plan — RQI v2 rerun, McKinlay 10–15 batching, ΔRes removal, ZOI + OWC flags, private repo guidance |
 | 2026-07-10 | §9 answers locked; §4A summary; §12 implementation prompts; §13 parallelisation; §14 debugging guidance; WRCI rebalanced with OWC severity |
 | 2026-07-13 | Phases 1–2 marked complete; §4B Phase 3+4+5 readiness; JENA31 RQI v2 acceptance recorded (`acddeee`) |
+| 2026-07-13 | Phases 3–6 complete — WRCI v2, ZOI, OWC, full rerun (3,746 intervals), CI pay/overburden tests, Methods page |

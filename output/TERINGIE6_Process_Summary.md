@@ -14,6 +14,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 | `Teringie 6 Hz Section Samples Descriptions_Rev3.xlsx` → Input Sheet | Sample intervals |
 | `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |
 | `Teringie_6` | GR / resistivity |
+| `Terignie_6_trajectory` | Trajectory → mTVDss |
 
 ## Formation Top Results
 
@@ -27,7 +28,6 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 - Depth range: **1670 – 3441 m MD**
 - Average sandstone: **97.8%**
-- Δ Res range: **0.6 – 13.5 ohm.m** (avg 3.0)
 - Mudlog matched: **159 / 159** intervals
 
 ## Limitations

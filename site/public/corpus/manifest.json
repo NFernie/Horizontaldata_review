@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-07-07T23:35:01Z",
+  "generated_at": "2026-07-13T02:23:38Z",
   "wells": [
     {
       "alias": "JENA31",
@@ -205,11 +205,83 @@
         "pay_summary": "output/TERINGIE 6/pay-summary.md",
         "process_summary": "output/TERINGIE6_Process_Summary.md"
       }
+    },
+    {
+      "alias": "MCKINLAY10",
+      "display": "MCKINLAY 10",
+      "depth_min": 1585.0,
+      "depth_max": 2110.0,
+      "interval_count": 96,
+      "sources": {
+        "interpretation": "output/MCKINLAY10_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 10/pay-summary.md",
+        "process_summary": "output/MCKINLAY10_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY11",
+      "display": "MCKINLAY 11",
+      "depth_min": 1605.0,
+      "depth_max": 2065.0,
+      "interval_count": 70,
+      "sources": {
+        "interpretation": "output/MCKINLAY11_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 11/pay-summary.md",
+        "process_summary": "output/MCKINLAY11_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY12",
+      "display": "MCKINLAY 12",
+      "depth_min": 1685.0,
+      "depth_max": 2900.0,
+      "interval_count": 172,
+      "sources": {
+        "interpretation": "output/MCKINLAY12_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 12/pay-summary.md",
+        "process_summary": "output/MCKINLAY12_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY13",
+      "display": "MCKINLAY 13",
+      "depth_min": 1835.0,
+      "depth_max": 3225.0,
+      "interval_count": 247,
+      "sources": {
+        "interpretation": "output/MCKINLAY13_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 13/pay-summary.md",
+        "process_summary": "output/MCKINLAY13_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY14",
+      "display": "MCKINLAY 14",
+      "depth_min": 1835.0,
+      "depth_max": 2640.0,
+      "interval_count": 113,
+      "sources": {
+        "interpretation": "output/MCKINLAY14_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 14/pay-summary.md",
+        "process_summary": "output/MCKINLAY14_Process_Summary.md"
+      }
+    },
+    {
+      "alias": "MCKINLAY15",
+      "display": "MCKINLAY 15",
+      "depth_min": 1720.0,
+      "depth_max": 2585.0,
+      "interval_count": 57,
+      "sources": {
+        "interpretation": "output/MCKINLAY15_McKinlay_Cuttings_Interpretation.md",
+        "pay_summary": "output/MCKINLAY 15/pay-summary.md",
+        "process_summary": "output/MCKINLAY15_Process_Summary.md"
+      }
     }
   ],
   "chunk_counts": {
-    "interval": 2991,
+    "interval": 3746,
     "method": 5,
-    "summary": 34
+    "summary": 46
   }
 }

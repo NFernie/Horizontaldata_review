@@ -14,6 +14,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 | `Jena 31DW1- Hz Section Samples Descriptions.xlsx` → Input Sheet | Sample intervals |
 | `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |
 | `Jena_31DW1` | GR / resistivity |
+| `Jena_31DW1_trajectory` | Trajectory → mTVDss |
 
 ## Formation Top Results
 
@@ -27,7 +28,6 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 - Depth range: **2070 – 3658 m MD**
 - Average sandstone: **89.3%**
-- Δ Res range: **-0.2 – 31.5 ohm.m** (avg 3.2)
 - Mudlog matched: **165 / 165** intervals
 
 ## Limitations

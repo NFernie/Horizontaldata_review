@@ -14,6 +14,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 | `Stimpee 7_Hz Section Samples Descriptions_Rev3.xlsx` → Input Sheet | Sample intervals |
 | `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |
 | `Stimpee_7` | GR / resistivity |
+| `Stimpee_7_trajectory` | Trajectory → mTVDss |
 
 ## Formation Top Results
 
@@ -27,7 +28,6 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 - Depth range: **1705 – 2840 m MD**
 - Average sandstone: **96.4%**
-- Δ Res range: **2.4 – 28.0 ohm.m** (avg 8.4)
 - Mudlog matched: **79 / 84** intervals
 
 ## Limitations

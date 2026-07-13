@@ -1,6 +1,6 @@
 # All Wells — McKinlay Pay Comparison
 
-**Generated:** 2026-07-13 00:27 UTC
+**Generated:** 2026-07-13 02:13 UTC
 
 ## Summary Table
 

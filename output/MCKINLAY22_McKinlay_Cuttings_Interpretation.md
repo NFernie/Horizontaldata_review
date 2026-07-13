@@ -1,6 +1,6 @@
 # MCKINLAY 22 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 00:52 UTC  
+**Generated:** 2026-07-13 02:06 UTC  
 **Well:** MCKINLAY 22 (MCKINLAY 22)  
 **TD:** 3206 m MD  
 
@@ -14,6 +14,7 @@
 | Sample Descriptions | `McKinlay 22 Hz Section samples descriptions.xlsx` (Sheet1 (cols F=TG, G=%SS, H=%fluoro + col A descriptions)) | Depth intervals & sample properties |
 | Formation Tops | `DC30.xlsx`, `Mck_Murta.xlsx` | Reservoir entry & overburden identification |
 | Wireline Log (LAS) | `Mck_22` | GR, RES_DEEP, RES_SHALLOW |
+| Trajectory | `Mck_22_trajectory` | mTVDss (Z subsea) |
 
 ## 2. Formation Top Analysis
 
@@ -52,7 +53,7 @@
 2. **Formation top discrepancies** between Mck_Murta.xlsx and mudlog PDF picks are noted where present.
 3. **Well name mapping:** MCKINLAY 22 → `MCKINLAY 22` (verified by TD and LAS WELL header).
 4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
-5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
+5. **Water-risk flags** use RQI, fluorescence, resistivity, GR, ZOI, and OWC proximity (see export).
 6. **NULL LAS values** (-999.25) excluded from averages.
 7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if none mapped). Later entry pairs inside an existing exclusion interval are treated as the same overburden excursion. Initial DC30/McKinlay reservoir entry is not excluded.
 8. **Input Sheet only** — Calculations Sheet not used.
@@ -77,6 +78,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 40.0% nan |
 | Total Gas | 13.0 U |
+| mTVDss | -1193.03 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1680m: clr,trnsl,v lt brnsh gry, v lt gry,f,mnr med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,mnr brn-wh arg mtx, preddisagg,fri aggs,fr inf por,pr vis por,fluor.
@@ -89,10 +91,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 107.6 | 33 |
 | RES_DEEP (ohm.m) | 17.86 | 33 |
 | RES_SHALLOW (ohm.m) | 15.50 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.37** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -111,6 +109,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 40.0% nan |
 | Total Gas | 10.0 U |
+| mTVDss | -1193.34 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1680m: clr,trnsl,v lt brnsh gry, v lt gry,f,mnr med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,mnr brn-wh arg mtx, preddisagg,fri aggs,fr inf por,pr vis por,fluor.
@@ -123,10 +122,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 113.1 | 19 |
 | RES_DEEP (ohm.m) | 20.93 | 19 |
 | RES_SHALLOW (ohm.m) | 18.21 | 19 |
-| **Δ Res (Deep − Shallow)** | **2.72** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -145,6 +140,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 35.0 U |
+| mTVDss | -1193.40 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1680m: clr,trnsl,v lt brnsh gry, v lt gry,f,mnr med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,mnr brn-wh arg mtx, preddisagg,fri aggs,fr inf por,pr vis por,fluor.
@@ -157,10 +153,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.0 | 17 |
 | RES_DEEP (ohm.m) | 23.21 | 17 |
 | RES_SHALLOW (ohm.m) | 20.26 | 17 |
-| **Δ Res (Deep − Shallow)** | **2.95** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -179,6 +171,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 55.0 U |
+| mTVDss | -1193.65 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1680m: clr,trnsl,v lt brnsh gry, v lt gry,f,mnr med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,mnr brn-wh arg mtx, preddisagg,fri aggs,fr inf por,pr vis por,fluor.
@@ -191,10 +184,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.3 | 29 |
 | RES_DEEP (ohm.m) | 22.03 | 29 |
 | RES_SHALLOW (ohm.m) | 21.23 | 29 |
-| **Δ Res (Deep − Shallow)** | **0.80** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -213,6 +202,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 58.0 U |
+| mTVDss | -1193.97 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1680m: clr,trnsl,v lt brnsh gry, v lt gry,f,mnr med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,mnr brn-wh arg mtx, preddisagg,fri aggs,fr inf por,pr vis por,fluor.
@@ -225,10 +215,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.3 | 33 |
 | RES_DEEP (ohm.m) | 20.43 | 33 |
 | RES_SHALLOW (ohm.m) | 19.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.44** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -247,6 +233,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 69.0 U |
+| mTVDss | -1194.27 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1680m: clr,trnsl,v lt brnsh gry, v lt gry,f,mnr med,tr crs,mod srt,sbang- sbrnd,wk sil cmt,mnr brn-wh arg mtx, preddisagg,fri aggs,fr inf por,pr vis por,fluor.
@@ -259,10 +246,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.0 | 33 |
 | RES_DEEP (ohm.m) | 20.85 | 33 |
 | RES_SHALLOW (ohm.m) | 20.10 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.75** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -281,6 +264,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 42.0 U |
+| mTVDss | -1194.56 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med grysh brn,med-dk gry,aren,g/t slty SST i/p,tr carb spks, mnr sndy lams,mod hd-frm,sbblky- sbfiss. SURVEY @ 1717.9m
@@ -292,10 +276,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.7 | 33 |
 | RES_DEEP (ohm.m) | 21.82 | 33 |
 | RES_SHALLOW (ohm.m) | 21.02 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.80** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -314,6 +294,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 63.0 U |
+| mTVDss | -1194.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med grysh brn,med-dk gry,aren,g/t slty SST i/p,tr carb spks, mnr sndy lams,mod hd-frm,sbblky- sbfiss. SURVEY @ 1717.9m
@@ -326,10 +307,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.1 | 33 |
 | RES_DEEP (ohm.m) | 19.97 | 33 |
 | RES_SHALLOW (ohm.m) | 17.60 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.37** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -348,6 +325,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 50.0 U |
+| mTVDss | -1195.02 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med grysh brn,med-dk gry,aren,g/t slty SST i/p,tr carb spks, mnr sndy lams,mod hd-frm,sbblky- sbfiss. SURVEY @ 1717.9m
@@ -360,10 +338,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.9 | 32 |
 | RES_DEEP (ohm.m) | 21.33 | 32 |
 | RES_SHALLOW (ohm.m) | 18.45 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.88** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -382,6 +356,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 38.0 U |
+| mTVDss | -1195.15 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med grysh brn,med-dk gry,aren,g/t slty SST i/p,tr carb spks, mnr sndy lams,mod hd-frm,sbblky- sbfiss. SURVEY @ 1717.9m
@@ -394,10 +369,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.1 | 27 |
 | RES_DEEP (ohm.m) | 20.66 | 27 |
 | RES_SHALLOW (ohm.m) | 18.28 | 27 |
-| **Δ Res (Deep − Shallow)** | **2.38** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -416,6 +387,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 111.0 U |
+| mTVDss | -1195.22 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med grysh brn,med-dk gry,aren,g/t slty SST i/p,tr carb spks, mnr sndy lams,mod hd-frm,sbblky- sbfiss. SURVEY @ 1717.9m
@@ -428,10 +400,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.5 | 16 |
 | RES_DEEP (ohm.m) | 21.99 | 16 |
 | RES_SHALLOW (ohm.m) | 19.67 | 16 |
-| **Δ Res (Deep − Shallow)** | **2.32** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -450,6 +418,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 44.0 U |
+| mTVDss | -1195.25 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med grysh brn,med-dk gry,aren,g/t slty SST i/p,tr carb spks, mnr sndy lams,mod hd-frm,sbblky- sbfiss. SURVEY @ 1717.9m
@@ -462,10 +431,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.6 | 23 |
 | RES_DEEP (ohm.m) | 21.75 | 23 |
 | RES_SHALLOW (ohm.m) | 19.35 | 23 |
-| **Δ Res (Deep − Shallow)** | **2.40** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -485,6 +450,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 50.0% nan |
 | Total Gas | 43.0 U |
+| mTVDss | -1195.31 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med grysh brn,med-dk gry,aren,g/t slty SST i/p,tr carb spks, mnr sndy lams,mod hd-frm,sbblky- sbfiss. SURVEY @ 1717.9m
@@ -497,10 +463,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.9 | 33 |
 | RES_DEEP (ohm.m) | 22.43 | 33 |
 | RES_SHALLOW (ohm.m) | 19.64 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.79** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -520,6 +482,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 60.0% nan |
 | Total Gas | 38.0 U |
+| mTVDss | -1195.36 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1720m: lt-med grysh brn,tr dk gry,aren,g/t slty SST,tr carb spks,tr micmic,frm,mod hd i/p,sbblky-blky.
@@ -532,10 +495,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 89.8 | 33 |
 | RES_DEEP (ohm.m) | 23.50 | 33 |
 | RES_SHALLOW (ohm.m) | 20.26 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.24** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -555,6 +514,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 60.0% nan |
 | Total Gas | 45.0 U |
+| mTVDss | -1195.37 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1720m: lt-med grysh brn,tr dk gry,aren,g/t slty SST,tr carb spks,tr micmic,frm,mod hd i/p,sbblky-blky.
@@ -567,10 +527,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.9 | 26 |
 | RES_DEEP (ohm.m) | 24.40 | 26 |
 | RES_SHALLOW (ohm.m) | 20.46 | 26 |
-| **Δ Res (Deep − Shallow)** | **3.94** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -586,6 +542,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | — |
 | Fluorescence | 70.0% nan |
 | Total Gas | 98.0 U |
+| mTVDss | -1195.37 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -595,10 +552,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.3 | 16 |
 | RES_DEEP (ohm.m) | 24.52 | 16 |
 | RES_SHALLOW (ohm.m) | 19.39 | 16 |
-| **Δ Res (Deep − Shallow)** | **5.12** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -614,6 +567,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 65.0% nan |
 | Total Gas | 60.0 U |
+| mTVDss | -1195.37 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -623,10 +577,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.1 | 23 |
 | RES_DEEP (ohm.m) | 23.19 | 23 |
 | RES_SHALLOW (ohm.m) | 20.66 | 23 |
-| **Δ Res (Deep − Shallow)** | **2.53** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -642,6 +592,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 45.0% nan |
 | Total Gas | 43.0 U |
+| mTVDss | -1195.35 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -651,10 +602,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 95.3 | 33 |
 | RES_DEEP (ohm.m) | 22.55 | 33 |
 | RES_SHALLOW (ohm.m) | 19.91 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.63** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -670,6 +617,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 60.0% nan |
 | Total Gas | 80.0 U |
+| mTVDss | -1195.32 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -679,10 +627,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.1 | 25 |
 | RES_DEEP (ohm.m) | 27.15 | 25 |
 | RES_SHALLOW (ohm.m) | 23.77 | 25 |
-| **Δ Res (Deep − Shallow)** | **3.38** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -698,6 +642,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 80.0% nan |
 | Total Gas | 113.0 U |
+| mTVDss | -1195.30 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -707,10 +652,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.1 | 16 |
 | RES_DEEP (ohm.m) | 24.91 | 16 |
 | RES_SHALLOW (ohm.m) | 23.37 | 16 |
-| **Δ Res (Deep − Shallow)** | **1.54** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -726,6 +667,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 75.0% nan |
 | Total Gas | 131.0 U |
+| mTVDss | -1195.28 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -735,10 +677,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.1 | 25 |
 | RES_DEEP (ohm.m) | 22.62 | 25 |
 | RES_SHALLOW (ohm.m) | 21.39 | 25 |
-| **Δ Res (Deep − Shallow)** | **1.23** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -754,6 +692,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 85.0% nan |
 | Total Gas | 142.0 U |
+| mTVDss | -1195.23 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -763,10 +702,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.8 | 32 |
 | RES_DEEP (ohm.m) | 19.55 | 32 |
 | RES_SHALLOW (ohm.m) | 18.01 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.54** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -785,6 +720,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 50.0% nan |
 | Total Gas | 93.0 U |
+| mTVDss | -1195.18 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1780m: lt brn,v lt gry brn, clr-trnsl,vf,g/t aren SLTST,v wl srt,sbang-sbrnd,wk sil cmt,com pl brn gry slty/arg mtx,fri,pr vis por,fluor.
@@ -796,10 +732,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 105.2 | 33 |
 | RES_DEEP (ohm.m) | 16.58 | 33 |
 | RES_SHALLOW (ohm.m) | 14.91 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.67** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -819,6 +751,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 20.0% nan |
 | Total Gas | 52.0 U |
+| mTVDss | -1195.12 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1780m: lt brn,v lt gry brn, clr-trnsl,vf,g/t aren SLTST,v wl srt,sbang-sbrnd,wk sil cmt,com pl brn gry slty/arg mtx,fri,pr vis por,fluor.
@@ -830,10 +763,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 105.4 | 33 |
 | RES_DEEP (ohm.m) | 16.20 | 33 |
 | RES_SHALLOW (ohm.m) | 14.32 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.89** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -853,6 +782,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 50.0% nan |
 | Total Gas | 63.0 U |
+| mTVDss | -1195.06 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1780m: lt brn,v lt gry brn, clr-trnsl,vf,g/t aren SLTST,v wl srt,sbang-sbrnd,wk sil cmt,com pl brn gry slty/arg mtx,fri,pr vis por,fluor.
@@ -865,10 +795,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.1 | 33 |
 | RES_DEEP (ohm.m) | 16.30 | 33 |
 | RES_SHALLOW (ohm.m) | 14.22 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.08** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -888,6 +814,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 30.0% nan |
 | Total Gas | 58.0 U |
+| mTVDss | -1195.00 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1780m: lt brn,v lt gry brn, clr-trnsl,vf,g/t aren SLTST,v wl srt,sbang-sbrnd,wk sil cmt,com pl brn gry slty/arg mtx,fri,pr vis por,fluor.
@@ -900,10 +827,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 101.8 | 33 |
 | RES_DEEP (ohm.m) | 16.62 | 33 |
 | RES_SHALLOW (ohm.m) | 14.44 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.18** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -923,6 +846,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 20.0% nan |
 | Total Gas | 65.0 U |
+| mTVDss | -1194.93 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1780m: lt brn,v lt gry brn, clr-trnsl,vf,g/t aren SLTST,v wl srt,sbang-sbrnd,wk sil cmt,com pl brn gry slty/arg mtx,fri,pr vis por,fluor.
@@ -935,10 +859,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.6 | 33 |
 | RES_DEEP (ohm.m) | 17.14 | 33 |
 | RES_SHALLOW (ohm.m) | 14.51 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.63** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -958,6 +878,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 50.0% nan |
 | Total Gas | 67.0 U |
+| mTVDss | -1194.86 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1780m: lt brn,v lt gry brn, clr-trnsl,vf,g/t aren SLTST,v wl srt,sbang-sbrnd,wk sil cmt,com pl brn gry slty/arg mtx,fri,pr vis por,fluor.
@@ -970,10 +891,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.4 | 32 |
 | RES_DEEP (ohm.m) | 18.23 | 32 |
 | RES_SHALLOW (ohm.m) | 15.47 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.76** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -993,6 +910,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 50.0% nan |
 | Total Gas | 64.0 U |
+| mTVDss | -1194.79 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1780m: lt brn,v lt gry brn, clr-trnsl,vf,g/t aren SLTST,v wl srt,sbang-sbrnd,wk sil cmt,com pl brn gry slty/arg mtx,fri,pr vis por,fluor.
@@ -1005,10 +923,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.3 | 33 |
 | RES_DEEP (ohm.m) | 19.28 | 33 |
 | RES_SHALLOW (ohm.m) | 16.15 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.13** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1028,6 +942,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 104.0 U |
+| mTVDss | -1194.72 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1790m: clr-trnsl,pl trnsl brn,vf-f,rr med-crs,mod srt,sbang- sbrnd,wk sil cmt,mnr pl gry arg mtx,com lse,fr inf por,pr vis por, fluor.
@@ -1040,10 +955,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.5 | 33 |
 | RES_DEEP (ohm.m) | 19.48 | 33 |
 | RES_SHALLOW (ohm.m) | 16.60 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.89** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1063,6 +974,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.50) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 90.0 U |
+| mTVDss | -1194.63 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1790m: clr-trnsl,pl trnsl brn,vf-f,rr med-crs,mod srt,sbang- sbrnd,wk sil cmt,mnr pl gry arg mtx,com lse,fr inf por,pr vis por, fluor.
@@ -1075,10 +987,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.9 | 33 |
 | RES_DEEP (ohm.m) | 20.40 | 33 |
 | RES_SHALLOW (ohm.m) | 18.34 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.05** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1098,6 +1006,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.50) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 132.0 U |
+| mTVDss | -1194.54 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1820m: clr-trnsl,f-med,mnr crs,mod srt,sbang-sbrnd,mod wh sil cmt,lt brn-gryslty mtx,fri aggs, abdt lse qtz grs,gd inf por,pr vis por, fluor.
@@ -1109,10 +1018,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.4 | 33 |
 | RES_DEEP (ohm.m) | 20.10 | 33 |
 | RES_SHALLOW (ohm.m) | 17.45 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.65** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1132,6 +1037,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.50) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 130.0 U |
+| mTVDss | -1194.44 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1820m: clr-trnsl,f-med,mnr crs,mod srt,sbang-sbrnd,mod wh sil cmt,lt brn-gryslty mtx,fri aggs, abdt lse qtz grs,gd inf por,pr vis por, fluor.
@@ -1143,10 +1049,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.4 | 32 |
 | RES_DEEP (ohm.m) | 21.17 | 32 |
 | RES_SHALLOW (ohm.m) | 19.98 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.19** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1166,6 +1068,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.50) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 105.0 U |
+| mTVDss | -1194.32 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1820m: clr-trnsl,f-med,mnr crs,mod srt,sbang-sbrnd,mod wh sil cmt,lt brn-gryslty mtx,fri aggs, abdt lse qtz grs,gd inf por,pr vis por, fluor.
@@ -1177,10 +1080,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.4 | 33 |
 | RES_DEEP (ohm.m) | 20.85 | 33 |
 | RES_SHALLOW (ohm.m) | 19.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.17** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1200,6 +1099,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.50) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 126.0 U |
+| mTVDss | -1194.19 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1820m: clr-trnsl,f-med,mnr crs,mod srt,sbang-sbrnd,mod wh sil cmt,lt brn-gryslty mtx,fri aggs, abdt lse qtz grs,gd inf por,pr vis por, fluor.
@@ -1212,10 +1112,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.6 | 33 |
 | RES_DEEP (ohm.m) | 20.20 | 33 |
 | RES_SHALLOW (ohm.m) | 19.59 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.61** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1235,6 +1131,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.50) |
 | Fluorescence | 100.0% Siltstone. 100% fine to med, minor coarse Sandstone. 100% bri |
 | Total Gas | 135.0 U |
+| mTVDss | -1194.03 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1820m: clr-trnsl,f-med,mnr crs,mod srt,sbang-sbrnd,mod wh sil cmt,lt brn-gryslty mtx,fri aggs, abdt lse qtz grs,gd inf por,pr vis por, fluor.
@@ -1247,10 +1144,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 72.2 | 33 |
 | RES_DEEP (ohm.m) | 20.72 | 33 |
 | RES_SHALLOW (ohm.m) | 20.22 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.50** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1270,6 +1163,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.50) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 130.0 U |
+| mTVDss | -1193.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1820m: clr-trnsl,f-med,mnr crs,mod srt,sbang-sbrnd,mod wh sil cmt,lt brn-gryslty mtx,fri aggs, abdt lse qtz grs,gd inf por,pr vis por, fluor.
@@ -1282,10 +1176,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.6 | 33 |
 | RES_DEEP (ohm.m) | 23.23 | 33 |
 | RES_SHALLOW (ohm.m) | 23.88 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.65** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1305,6 +1195,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.50) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 136.0 U |
+| mTVDss | -1193.72 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: clr-trnsl,v pl brn-off wh,vf-f,mnr crs,wl srt,sbang-sbrnd, wk sil cmt,com pl brn arg cmt,mnr lse, tr qtz ovgths,fri-mod hd,pr vis por,fr- gd inf por,fluor.
@@ -1317,10 +1208,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.9 | 32 |
 | RES_DEEP (ohm.m) | 23.18 | 32 |
 | RES_SHALLOW (ohm.m) | 22.52 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.66** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1340,6 +1227,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.50) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 100.0 U |
+| mTVDss | -1193.60 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: clr-trnsl,v pl brn-off wh,vf-f,mnr crs,wl srt,sbang-sbrnd, wk sil cmt,com pl brn arg cmt,mnr lse, tr qtz ovgths,fri-mod hd,pr vis por,fr- gd inf por,fluor.
@@ -1352,10 +1240,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.2 | 33 |
 | RES_DEEP (ohm.m) | 23.53 | 33 |
 | RES_SHALLOW (ohm.m) | 20.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.60** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1375,6 +1259,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.50) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 163.0 U |
+| mTVDss | -1193.52 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: clr-trnsl,v pl brn-off wh,vf-f,mnr crs,wl srt,sbang-sbrnd, wk sil cmt,com pl brn arg cmt,mnr lse, tr qtz ovgths,fri-mod hd,pr vis por,fr- gd inf por,fluor.
@@ -1387,10 +1272,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.9 | 33 |
 | RES_DEEP (ohm.m) | 22.86 | 33 |
 | RES_SHALLOW (ohm.m) | 20.78 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.08** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1410,6 +1291,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.50) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 151.0 U |
+| mTVDss | -1193.47 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: clr-trnsl,v pl brn-off wh,vf-f,mnr crs,wl srt,sbang-sbrnd, wk sil cmt,com pl brn arg cmt,mnr lse, tr qtz ovgths,fri-mod hd,pr vis por,fr- gd inf por,fluor.
@@ -1422,10 +1304,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.7 | 33 |
 | RES_DEEP (ohm.m) | 23.39 | 33 |
 | RES_SHALLOW (ohm.m) | 20.97 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.42** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1445,6 +1323,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 110.0 U |
+| mTVDss | -1193.42 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1870m: med dk gry,med gry brn, aren,tr carb flks,mod hd-frm,sbblky- blky. 64 / 6 / 6 / 10 / 14 108 U SURVEY @ 1871.8m
@@ -1457,10 +1336,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.9 | 49 |
 | RES_DEEP (ohm.m) | 24.75 | 49 |
 | RES_SHALLOW (ohm.m) | 19.71 | 49 |
-| **Δ Res (Deep − Shallow)** | **5.04** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1480,6 +1355,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 84.0 U |
+| mTVDss | -1193.37 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1870m: med dk gry,med gry brn, aren,tr carb flks,mod hd-frm,sbblky- blky. 64 / 6 / 6 / 10 / 14 108 U SURVEY @ 1871.8m
@@ -1492,10 +1368,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 114.5 | 49 |
 | RES_DEEP (ohm.m) | 23.02 | 49 |
 | RES_SHALLOW (ohm.m) | 19.23 | 49 |
-| **Δ Res (Deep − Shallow)** | **3.78** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1514,6 +1386,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 40.0% nan |
 | Total Gas | 87.0 U |
+| mTVDss | -1193.37 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1870m: med dk gry,med gry brn, aren,tr carb flks,mod hd-frm,sbblky- blky. 64 / 6 / 6 / 10 / 14 108 U SURVEY @ 1871.8m
@@ -1526,10 +1399,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.3 | 33 |
 | RES_DEEP (ohm.m) | 22.29 | 33 |
 | RES_SHALLOW (ohm.m) | 18.72 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.57** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1549,6 +1418,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 50.0% nan |
 | Total Gas | 110.0 U |
+| mTVDss | -1193.39 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1870m: med dk gry,med gry brn, aren,tr carb flks,mod hd-frm,sbblky- blky. 64 / 6 / 6 / 10 / 14 108 U SURVEY @ 1871.8m
@@ -1561,10 +1431,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 107.3 | 33 |
 | RES_DEEP (ohm.m) | 22.99 | 33 |
 | RES_SHALLOW (ohm.m) | 18.77 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.23** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1584,6 +1450,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 70.0 U |
+| mTVDss | -1193.44 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1870m: med dk gry,med gry brn, aren,tr carb flks,mod hd-frm,sbblky- blky. 64 / 6 / 6 / 10 / 14 108 U SURVEY @ 1871.8m
@@ -1596,10 +1463,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.0 | 33 |
 | RES_DEEP (ohm.m) | 28.93 | 33 |
 | RES_SHALLOW (ohm.m) | 23.03 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.90** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1615,6 +1478,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 106.0 U |
+| mTVDss | -1193.50 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -1624,10 +1488,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 84.6 | 32 |
 | RES_DEEP (ohm.m) | 26.28 | 32 |
 | RES_SHALLOW (ohm.m) | 21.14 | 32 |
-| **Δ Res (Deep − Shallow)** | **5.14** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1643,6 +1503,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 130.0 U |
+| mTVDss | -1193.58 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -1652,10 +1513,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.7 | 33 |
 | RES_DEEP (ohm.m) | 25.87 | 33 |
 | RES_SHALLOW (ohm.m) | 21.56 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.31** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1671,6 +1528,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 140.0 U |
+| mTVDss | -1193.65 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -1680,10 +1538,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 73.9 | 33 |
 | RES_DEEP (ohm.m) | 24.44 | 33 |
 | RES_SHALLOW (ohm.m) | 22.62 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.82** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1703,6 +1557,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 110.0 U |
+| mTVDss | -1193.71 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: v pl brn,v lt gry,clr-trnsl, vf-f,rr med-crs,tr slty intrlams,mod srt, sbang-sbrnd,mod sil cmt,com gry-brn arg mtx,fri-mod hd,rr hd aggs,mnr disagg qtz grs,pr-fr vis por,gd inf por,
@@ -1715,10 +1570,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 74.0 | 33 |
 | RES_DEEP (ohm.m) | 24.33 | 33 |
 | RES_SHALLOW (ohm.m) | 23.80 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.53** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1738,6 +1589,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 114.0 U |
+| mTVDss | -1193.76 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: v pl brn,v lt gry,clr-trnsl, vf-f,rr med-crs,tr slty intrlams,mod srt, sbang-sbrnd,mod sil cmt,com gry-brn arg mtx,fri-mod hd,rr hd aggs,mnr disagg qtz grs,pr-fr vis por,gd inf por,
@@ -1750,10 +1602,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 76.7 | 33 |
 | RES_DEEP (ohm.m) | 23.36 | 33 |
 | RES_SHALLOW (ohm.m) | 22.40 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.96** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1773,6 +1621,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 105.0 U |
+| mTVDss | -1193.80 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: v pl brn,v lt gry,clr-trnsl, vf-f,rr med-crs,tr slty intrlams,mod srt, sbang-sbrnd,mod sil cmt,com gry-brn arg mtx,fri-mod hd,rr hd aggs,mnr disagg qtz grs,pr-fr vis por,gd inf por,
@@ -1785,10 +1634,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.2 | 33 |
 | RES_DEEP (ohm.m) | 24.89 | 33 |
 | RES_SHALLOW (ohm.m) | 23.42 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.47** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1808,6 +1653,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium. occasional loose Sandstone. 100% bri |
 | Total Gas | 125.0 U |
+| mTVDss | -1193.83 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: v pl brn,v lt gry,clr-trnsl, vf-f,rr med-crs,tr slty intrlams,mod srt, sbang-sbrnd,mod sil cmt,com gry-brn arg mtx,fri-mod hd,rr hd aggs,mnr disagg qtz grs,pr-fr vis por,gd inf por,
@@ -1820,10 +1666,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.1 | 32 |
 | RES_DEEP (ohm.m) | 26.80 | 32 |
 | RES_SHALLOW (ohm.m) | 23.71 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.10** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1843,6 +1685,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 98.0 U |
+| mTVDss | -1193.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: v pl brn,v lt gry,clr-trnsl, vf-f,rr med-crs,tr slty intrlams,mod srt, sbang-sbrnd,mod sil cmt,com gry-brn arg mtx,fri-mod hd,rr hd aggs,mnr disagg qtz grs,pr-fr vis por,gd inf por,
@@ -1855,10 +1698,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.6 | 33 |
 | RES_DEEP (ohm.m) | 28.13 | 33 |
 | RES_SHALLOW (ohm.m) | 24.14 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.98** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1878,6 +1717,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 152.0 U |
+| mTVDss | -1193.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: v pl brn,v lt gry,clr-trnsl, vf-f,rr med-crs,tr slty intrlams,mod srt, sbang-sbrnd,mod sil cmt,com gry-brn arg mtx,fri-mod hd,rr hd aggs,mnr disagg qtz grs,pr-fr vis por,gd inf por,
@@ -1890,10 +1730,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.3 | 33 |
 | RES_DEEP (ohm.m) | 27.29 | 33 |
 | RES_SHALLOW (ohm.m) | 23.17 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.12** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1913,6 +1749,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 130.0 U |
+| mTVDss | -1193.94 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: v pl brn,v lt gry,clr-trnsl, vf-f,rr med-crs,tr slty intrlams,mod srt, sbang-sbrnd,mod sil cmt,com gry-brn arg mtx,fri-mod hd,rr hd aggs,mnr disagg qtz grs,pr-fr vis por,gd inf por,
@@ -1925,10 +1762,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.1 | 33 |
 | RES_DEEP (ohm.m) | 27.43 | 33 |
 | RES_SHALLOW (ohm.m) | 23.78 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.65** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1948,6 +1781,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse. minor loose Sandstone. 100% bri |
 | Total Gas | 132.0 U |
+| mTVDss | -1193.98 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1940m: med dk gry,med gry brn, med gry, aren,mnr sndy lams,mnr micmic,frm,mnr mod hd,sbblky-sbfiss.
@@ -1960,10 +1794,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.0 | 33 |
 | RES_DEEP (ohm.m) | 24.61 | 33 |
 | RES_SHALLOW (ohm.m) | 22.08 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.53** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1983,6 +1813,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 129.0 U |
+| mTVDss | -1194.02 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1940m: med dk gry,med gry brn, med gry, aren,mnr sndy lams,mnr micmic,frm,mnr mod hd,sbblky-sbfiss.
@@ -1995,10 +1826,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.4 | 32 |
 | RES_DEEP (ohm.m) | 22.38 | 32 |
 | RES_SHALLOW (ohm.m) | 19.49 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.89** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2018,6 +1845,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse. mnr loose Sandstone. 100% bri |
 | Total Gas | 188.0 U |
+| mTVDss | -1194.07 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1940m: med dk gry,med gry brn, med gry, aren,mnr sndy lams,mnr micmic,frm,mnr mod hd,sbblky-sbfiss.
@@ -2030,10 +1858,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 84.7 | 33 |
 | RES_DEEP (ohm.m) | 22.97 | 33 |
 | RES_SHALLOW (ohm.m) | 20.88 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.09** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2053,6 +1877,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 174.0 U |
+| mTVDss | -1194.12 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1940m: med dk gry,med gry brn, med gry, aren,mnr sndy lams,mnr micmic,frm,mnr mod hd,sbblky-sbfiss.
@@ -2065,10 +1890,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.3 | 33 |
 | RES_DEEP (ohm.m) | 22.98 | 33 |
 | RES_SHALLOW (ohm.m) | 19.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.33** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2088,6 +1909,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse. common loose Sandstone. 100% bri-mod bri |
 | Total Gas | 130.0 U |
+| mTVDss | -1194.17 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1960m: v pl brn,clr-trnsl,vf-med, tr crs-v crs,tr slty intrlams,pr srt,sbang- sbrnd,tr ang,mod sil cmt,com brn arg mtx,fri-mod hd,rr hd aggs,com disagg qtz grs,pr-fr vis por,gd inf por,fluor.
@@ -2100,10 +1922,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.8 | 33 |
 | RES_DEEP (ohm.m) | 22.30 | 33 |
 | RES_SHALLOW (ohm.m) | 19.55 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.75** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2123,6 +1941,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse-v coarse. common loose Sandstone. 100% bri |
 | Total Gas | 172.0 U |
+| mTVDss | -1194.22 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1960m: v pl brn,clr-trnsl,vf-med, tr crs-v crs,tr slty intrlams,pr srt,sbang- sbrnd,tr ang,mod sil cmt,com brn arg mtx,fri-mod hd,rr hd aggs,com disagg qtz grs,pr-fr vis por,gd inf por,fluor.
@@ -2135,10 +1954,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.9 | 33 |
 | RES_DEEP (ohm.m) | 22.07 | 33 |
 | RES_SHALLOW (ohm.m) | 19.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.69** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2158,6 +1973,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse. common loose Sandstone. 100% bri |
 | Total Gas | 174.0 U |
+| mTVDss | -1194.27 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1960m: v pl brn,clr-trnsl,vf-med, tr crs-v crs,tr slty intrlams,pr srt,sbang- sbrnd,tr ang,mod sil cmt,com brn arg mtx,fri-mod hd,rr hd aggs,com disagg qtz grs,pr-fr vis por,gd inf por,fluor.
@@ -2170,10 +1986,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.6 | 32 |
 | RES_DEEP (ohm.m) | 20.31 | 32 |
 | RES_SHALLOW (ohm.m) | 18.41 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.90** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2193,6 +2005,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse. common loose Sandstone. 100% bri |
 | Total Gas | 201.0 U |
+| mTVDss | -1194.33 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1960m: v pl brn,clr-trnsl,vf-med, tr crs-v crs,tr slty intrlams,pr srt,sbang- sbrnd,tr ang,mod sil cmt,com brn arg mtx,fri-mod hd,rr hd aggs,com disagg qtz grs,pr-fr vis por,gd inf por,fluor.
@@ -2205,10 +2018,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 82.3 | 33 |
 | RES_DEEP (ohm.m) | 19.78 | 33 |
 | RES_SHALLOW (ohm.m) | 17.94 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.84** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2228,6 +2037,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to v coarse. minor loose Sandstone. 100% bri |
 | Total Gas | 205.0 U |
+| mTVDss | -1194.40 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1990m: v pl brn,clr-trnsl,vf-med tr crs,tr slty lams,mod srt,sbang-sbrnd, mod sil cmt,mnr brn arg mtx,fri-mod hd,mnr disagg qtz grs,pr-fr vis por, fr-gd inf por,fluor.
@@ -2240,10 +2050,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 77.7 | 33 |
 | RES_DEEP (ohm.m) | 19.73 | 33 |
 | RES_SHALLOW (ohm.m) | 18.49 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.24** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2263,6 +2069,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
+| mTVDss | -1194.48 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1990m: v pl brn,clr-trnsl,vf-med tr crs,tr slty lams,mod srt,sbang-sbrnd, mod sil cmt,mnr brn arg mtx,fri-mod hd,mnr disagg qtz grs,pr-fr vis por, fr-gd inf por,fluor.
@@ -2275,10 +2082,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 74.1 | 33 |
 | RES_DEEP (ohm.m) | 22.70 | 33 |
 | RES_SHALLOW (ohm.m) | 21.58 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.12** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2298,6 +2101,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, mnr medium, tr coarse, mnr loose Sandstone. 100% bri |
 | Total Gas | 228.0 U |
+| mTVDss | -1194.57 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1990m: v pl brn,clr-trnsl,vf-med tr crs,tr slty lams,mod srt,sbang-sbrnd, mod sil cmt,mnr brn arg mtx,fri-mod hd,mnr disagg qtz grs,pr-fr vis por, fr-gd inf por,fluor.
@@ -2310,10 +2114,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 71.0 | 33 |
 | RES_DEEP (ohm.m) | 26.58 | 33 |
 | RES_SHALLOW (ohm.m) | 26.32 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.25** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2333,6 +2133,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse, com loose Sandstone. 100% bri |
 | Total Gas | 215.0 U |
+| mTVDss | -1194.65 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1990m: v pl brn,clr-trnsl,vf-med tr crs,tr slty lams,mod srt,sbang-sbrnd, mod sil cmt,mnr brn arg mtx,fri-mod hd,mnr disagg qtz grs,pr-fr vis por, fr-gd inf por,fluor.
@@ -2345,10 +2146,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 58.0 | 32 |
 | RES_DEEP (ohm.m) | 27.31 | 32 |
 | RES_SHALLOW (ohm.m) | 28.84 | 32 |
-| **Δ Res (Deep − Shallow)** | **-1.53** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2368,6 +2165,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 202.0 U |
+| mTVDss | -1194.73 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1990m: v pl brn,clr-trnsl,vf-med tr crs,tr slty lams,mod srt,sbang-sbrnd, mod sil cmt,mnr brn arg mtx,fri-mod hd,mnr disagg qtz grs,pr-fr vis por, fr-gd inf por,fluor.
@@ -2380,10 +2178,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 60.1 | 33 |
 | RES_DEEP (ohm.m) | 26.79 | 33 |
 | RES_SHALLOW (ohm.m) | 26.40 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.39** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2403,6 +2197,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 204.0 U |
+| mTVDss | -1194.80 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1990m: v pl brn,clr-trnsl,vf-med tr crs,tr slty lams,mod srt,sbang-sbrnd, mod sil cmt,mnr brn arg mtx,fri-mod hd,mnr disagg qtz grs,pr-fr vis por, fr-gd inf por,fluor.
@@ -2415,10 +2210,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 69.6 | 33 |
 | RES_DEEP (ohm.m) | 26.74 | 33 |
 | RES_SHALLOW (ohm.m) | 25.73 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.01** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2438,6 +2229,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% medium-coarse Sandstone. 100% bri |
 | Total Gas | 202.0 U |
+| mTVDss | -1194.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med dk gry-dk gry,aren, com vf sndy lams,tr carb spks,tr- loc com micmic,sbblky-sbfiss. SURVEY @ 2025.0m INC: 89.90° AZI: 85.91°G
@@ -2450,10 +2242,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 80.9 | 33 |
 | RES_DEEP (ohm.m) | 27.08 | 33 |
 | RES_SHALLOW (ohm.m) | 22.72 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.36** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2473,6 +2261,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 196.0 U |
+| mTVDss | -1194.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med dk gry-dk gry,aren, com vf sndy lams,tr carb spks,tr- loc com micmic,sbblky-sbfiss. SURVEY @ 2025.0m INC: 89.90° AZI: 85.91°G
@@ -2485,10 +2274,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.4 | 33 |
 | RES_DEEP (ohm.m) | 25.30 | 33 |
 | RES_SHALLOW (ohm.m) | 21.62 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.68** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2508,6 +2293,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse-v coarse Sandstone. 100% bri |
 | Total Gas | 197.0 U |
+| mTVDss | -1195.04 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med dk gry-dk gry,aren, com vf sndy lams,tr carb spks,tr- loc com micmic,sbblky-sbfiss. SURVEY @ 2025.0m INC: 89.90° AZI: 85.91°G
@@ -2520,10 +2306,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 81.0 | 32 |
 | RES_DEEP (ohm.m) | 21.87 | 32 |
 | RES_SHALLOW (ohm.m) | 19.81 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.06** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2543,6 +2325,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
+| mTVDss | -1195.14 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med dk gry-dk gry,aren, com vf sndy lams,tr carb spks,tr- loc com micmic,sbblky-sbfiss. SURVEY @ 2025.0m INC: 89.90° AZI: 85.91°G
@@ -2555,10 +2338,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 82.1 | 33 |
 | RES_DEEP (ohm.m) | 19.91 | 33 |
 | RES_SHALLOW (ohm.m) | 19.14 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.77** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2578,6 +2357,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to v coarse Sandstone. 100% bri |
 | Total Gas | 205.0 U |
+| mTVDss | -1195.26 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med dk gry-dk gry,aren, com vf sndy lams,tr carb spks,tr- loc com micmic,sbblky-sbfiss. SURVEY @ 2025.0m INC: 89.90° AZI: 85.91°G
@@ -2590,10 +2370,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.8 | 33 |
 | RES_DEEP (ohm.m) | 19.58 | 33 |
 | RES_SHALLOW (ohm.m) | 19.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.31** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2613,6 +2389,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone. 100% bri |
 | Total Gas | 204.0 U |
+| mTVDss | -1195.38 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med dk gry-dk gry,aren, com vf sndy lams,tr carb spks,tr- loc com micmic,sbblky-sbfiss. SURVEY @ 2025.0m INC: 89.90° AZI: 85.91°G
@@ -2625,10 +2402,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 95.8 | 33 |
 | RES_DEEP (ohm.m) | 19.84 | 33 |
 | RES_SHALLOW (ohm.m) | 20.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **-1.15** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2648,6 +2421,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 167.0 U |
+| mTVDss | -1195.53 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2040m: clr-trnsl,v pl brn,lt brnsh gry,vf-med,rr crs-v crs,tr-loc com slty lams,pr srt,sbang-sbrnd,wk-mod sil cmt, mnr-loc com brn-gry arg mtx,tr micmic, disagg,fri-mod hd aggs,fr-gd inf por,pr
@@ -2660,10 +2434,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 100.8 | 33 |
 | RES_DEEP (ohm.m) | 19.85 | 33 |
 | RES_SHALLOW (ohm.m) | 20.24 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.38** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2683,6 +2453,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
+| mTVDss | -1195.68 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2040m: clr-trnsl,v pl brn,lt brnsh gry,vf-med,rr crs-v crs,tr-loc com slty lams,pr srt,sbang-sbrnd,wk-mod sil cmt, mnr-loc com brn-gry arg mtx,tr micmic, disagg,fri-mod hd aggs,fr-gd inf por,pr
@@ -2695,10 +2466,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 104.6 | 33 |
 | RES_DEEP (ohm.m) | 20.76 | 33 |
 | RES_SHALLOW (ohm.m) | 20.55 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.21** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2718,6 +2485,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse-v coarse Sandstone. 100% bri |
 | Total Gas | 192.0 U |
+| mTVDss | -1195.84 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2040m: clr-trnsl,v pl brn,lt brnsh gry,vf-med,rr crs-v crs,tr-loc com slty lams,pr srt,sbang-sbrnd,wk-mod sil cmt, mnr-loc com brn-gry arg mtx,tr micmic, disagg,fri-mod hd aggs,fr-gd inf por,pr
@@ -2730,10 +2498,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.2 | 32 |
 | RES_DEEP (ohm.m) | 21.52 | 32 |
 | RES_SHALLOW (ohm.m) | 20.73 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.79** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2753,6 +2517,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse-v coarse Sandstone. 100% bri |
 | Total Gas | 198.0 U |
+| mTVDss | -1195.99 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2040m: clr-trnsl,v pl brn,lt brnsh gry,vf-med,rr crs-v crs,tr-loc com slty lams,pr srt,sbang-sbrnd,wk-mod sil cmt, mnr-loc com brn-gry arg mtx,tr micmic, disagg,fri-mod hd aggs,fr-gd inf por,pr
@@ -2765,10 +2530,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.4 | 33 |
 | RES_DEEP (ohm.m) | 21.17 | 33 |
 | RES_SHALLOW (ohm.m) | 19.32 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.85** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2788,6 +2549,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone. 100% bri-mod bri |
 | Total Gas | 188.0 U |
+| mTVDss | -1196.13 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2070m: lt brnsh gry,vf,g/t aren SLTST i/p,mnr slty lams,v wl srt,sbang- sbrnd,mod sil cmt,com gry-brn slty fri,mnr mod hd,v pr vis por,fluor.
@@ -2800,10 +2562,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.7 | 33 |
 | RES_DEEP (ohm.m) | 21.41 | 33 |
 | RES_SHALLOW (ohm.m) | 19.91 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.50** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2823,6 +2581,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% medium Sandstone. 90% bri-dull |
 | Total Gas | 179.0 U |
+| mTVDss | -1196.27 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2070m: lt brnsh gry,vf,g/t aren SLTST i/p,mnr slty lams,v wl srt,sbang- sbrnd,mod sil cmt,com gry-brn slty fri,mnr mod hd,v pr vis por,fluor.
@@ -2835,10 +2594,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.7 | 33 |
 | RES_DEEP (ohm.m) | 20.52 | 33 |
 | RES_SHALLOW (ohm.m) | 19.58 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.94** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2858,6 +2613,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 182.0 U |
+| mTVDss | -1196.39 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2070m: lt brnsh gry,vf,g/t aren SLTST i/p,mnr slty lams,v wl srt,sbang- sbrnd,mod sil cmt,com gry-brn slty fri,mnr mod hd,v pr vis por,fluor.
@@ -2870,10 +2626,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 95.2 | 33 |
 | RES_DEEP (ohm.m) | 20.20 | 33 |
 | RES_SHALLOW (ohm.m) | 19.70 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.50** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2893,6 +2645,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 183.0 U |
+| mTVDss | -1196.51 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2070m: lt brnsh gry,vf,g/t aren SLTST i/p,mnr slty lams,v wl srt,sbang- sbrnd,mod sil cmt,com gry-brn slty fri,mnr mod hd,v pr vis por,fluor.
@@ -2905,10 +2658,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.6 | 32 |
 | RES_DEEP (ohm.m) | 19.18 | 32 |
 | RES_SHALLOW (ohm.m) | 18.01 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.16** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2928,6 +2677,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 184.0 U |
+| mTVDss | -1196.62 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2070m: lt brnsh gry,vf,g/t aren SLTST i/p,mnr slty lams,v wl srt,sbang- sbrnd,mod sil cmt,com gry-brn slty fri,mnr mod hd,v pr vis por,fluor.
@@ -2940,10 +2690,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.7 | 33 |
 | RES_DEEP (ohm.m) | 19.07 | 33 |
 | RES_SHALLOW (ohm.m) | 17.09 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.97** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2963,6 +2709,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 186.0 U |
+| mTVDss | -1196.72 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2070m: lt brnsh gry,vf,g/t aren SLTST i/p,mnr slty lams,v wl srt,sbang- sbrnd,mod sil cmt,com gry-brn slty fri,mnr mod hd,v pr vis por,fluor.
@@ -2975,10 +2722,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.8 | 33 |
 | RES_DEEP (ohm.m) | 18.84 | 33 |
 | RES_SHALLOW (ohm.m) | 16.78 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.05** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2998,6 +2741,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 95.0% nan |
 | Total Gas | 191.0 U |
+| mTVDss | -1196.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2080m: lt brnsh gry,clr,trnsl,vf-f, g/t aren SLTST i/p,tr slty lams,wl srt, sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,mnr disagg f qtz grs,v pr vis por,fr inf por
@@ -3010,10 +2754,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.8 | 33 |
 | RES_DEEP (ohm.m) | 19.11 | 33 |
 | RES_SHALLOW (ohm.m) | 17.60 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.51** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3033,6 +2773,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 190.0 U |
+| mTVDss | -1196.92 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2080m: lt brnsh gry,clr,trnsl,vf-f, g/t aren SLTST i/p,tr slty lams,wl srt, sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,mnr disagg f qtz grs,v pr vis por,fr inf por
@@ -3045,10 +2786,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.8 | 33 |
 | RES_DEEP (ohm.m) | 17.98 | 33 |
 | RES_SHALLOW (ohm.m) | 16.87 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.11** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3068,6 +2805,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 182.0 U |
+| mTVDss | -1197.02 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2090m: lt brnsh gry,lt gry,clr,trnsl, vf-f,g/t aren SLTST i/p,tr slty lams,wl srt,sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,mnr disagg f qtz grs,v pr vis por,fr inf por,
@@ -3080,10 +2818,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.5 | 32 |
 | RES_DEEP (ohm.m) | 18.65 | 32 |
 | RES_SHALLOW (ohm.m) | 17.66 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.99** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3103,6 +2837,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 183.0 U |
+| mTVDss | -1197.12 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2090m: lt brnsh gry,lt gry,clr,trnsl, vf-f,g/t aren SLTST i/p,tr slty lams,wl srt,sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,mnr disagg f qtz grs,v pr vis por,fr inf por,
@@ -3115,10 +2850,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.3 | 33 |
 | RES_DEEP (ohm.m) | 18.19 | 33 |
 | RES_SHALLOW (ohm.m) | 16.79 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.39** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3134,6 +2865,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 176.0 U |
+| mTVDss | -1197.21 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3143,10 +2875,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.8 | 33 |
 | RES_DEEP (ohm.m) | 18.33 | 33 |
 | RES_SHALLOW (ohm.m) | 17.09 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.24** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3162,6 +2890,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 173.0 U |
+| mTVDss | -1197.30 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3171,10 +2900,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.4 | 33 |
 | RES_DEEP (ohm.m) | 18.79 | 33 |
 | RES_SHALLOW (ohm.m) | 17.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.42** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3190,6 +2915,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, 100% mod bri to dull |
 | Total Gas | 184.0 U |
+| mTVDss | -1197.37 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3199,10 +2925,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.2 | 33 |
 | RES_DEEP (ohm.m) | 17.93 | 33 |
 | RES_SHALLOW (ohm.m) | 16.35 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.58** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3222,6 +2944,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, 100% mod bri |
 | Total Gas | 181.0 U |
+| mTVDss | -1197.43 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2140m: pl brn,pl gry,vf,v wl srt,sbang-sbrnd,mod wk sil cmt,abdt pl gry slty/arg mtx,tr carb spks,tr slty lams,fri-mod hd, pr vis por,fluor.
@@ -3234,10 +2957,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.9 | 32 |
 | RES_DEEP (ohm.m) | 17.54 | 32 |
 | RES_SHALLOW (ohm.m) | 16.11 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.43** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3257,6 +2976,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 177.0 U |
+| mTVDss | -1197.48 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2140m: pl brn,pl gry,vf,v wl srt,sbang-sbrnd,mod wk sil cmt,abdt pl gry slty/arg mtx,tr carb spks,tr slty lams,fri-mod hd, pr vis por,fluor.
@@ -3269,10 +2989,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 95.2 | 33 |
 | RES_DEEP (ohm.m) | 17.56 | 33 |
 | RES_SHALLOW (ohm.m) | 16.14 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.42** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3292,6 +3008,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 126.0 U |
+| mTVDss | -1197.51 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2140m: pl brn,pl gry,vf,v wl srt,sbang-sbrnd,mod wk sil cmt,abdt pl gry slty/arg mtx,tr carb spks,tr slty lams,fri-mod hd, pr vis por,fluor.
@@ -3304,10 +3021,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.9 | 33 |
 | RES_DEEP (ohm.m) | 18.48 | 33 |
 | RES_SHALLOW (ohm.m) | 16.88 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.60** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3327,6 +3040,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 144.0 U |
+| mTVDss | -1197.53 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2140m: pl brn,pl gry,vf,v wl srt,sbang-sbrnd,mod wk sil cmt,abdt pl gry slty/arg mtx,tr carb spks,tr slty lams,fri-mod hd, pr vis por,fluor.
@@ -3339,10 +3053,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.2 | 33 |
 | RES_DEEP (ohm.m) | 18.43 | 33 |
 | RES_SHALLOW (ohm.m) | 16.86 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.57** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3362,6 +3072,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 140.0 U |
+| mTVDss | -1197.54 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2140m: pl brn,pl gry,vf,v wl srt,sbang-sbrnd,mod wk sil cmt,abdt pl gry slty/arg mtx,tr carb spks,tr slty lams,fri-mod hd, pr vis por,fluor.
@@ -3374,10 +3085,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.9 | 33 |
 | RES_DEEP (ohm.m) | 18.29 | 33 |
 | RES_SHALLOW (ohm.m) | 17.33 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.96** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3397,6 +3104,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone100% very fine Sandstone, 100% mod bri |
 | Total Gas | 94.0 U |
+| mTVDss | -1197.55 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2140m: pl brn,pl gry,vf,v wl srt,sbang-sbrnd,mod wk sil cmt,abdt pl gry slty/arg mtx,tr carb spks,tr slty lams,fri-mod hd, pr vis por,fluor.
@@ -3409,10 +3117,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.8 | 33 |
 | RES_DEEP (ohm.m) | 18.70 | 33 |
 | RES_SHALLOW (ohm.m) | 17.31 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.40** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3432,6 +3136,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 115.0 U |
+| mTVDss | -1197.58 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2140m: pl brn,pl gry,vf,v wl srt,sbang-sbrnd,mod wk sil cmt,abdt pl gry slty/arg mtx,tr carb spks,tr slty lams,fri-mod hd, pr vis por,fluor.
@@ -3444,10 +3149,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.2 | 32 |
 | RES_DEEP (ohm.m) | 20.34 | 32 |
 | RES_SHALLOW (ohm.m) | 18.71 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.63** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3467,6 +3168,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% Siltstone. 100% very fine Sandstone, 90% mod bri to pale |
 | Total Gas | 156.0 U |
+| mTVDss | -1197.61 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2160m: pl brn,pl gry,clr-trnsl,vf- f,mnr crs,wl srt,sbng-sbrnd,mod wk sil 2170 cmt,com pl gry-off wh arg mtx,tr carb spks,rr tr slty lams,occ lse qtz grs, occ qtz ovgths,fri-mod hd aggs,gd
@@ -3478,10 +3180,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.0 | 33 |
 | RES_DEEP (ohm.m) | 20.59 | 33 |
 | RES_SHALLOW (ohm.m) | 18.96 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.64** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3501,6 +3199,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 137.0 U |
+| mTVDss | -1197.65 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2160m: pl brn,pl gry,clr-trnsl,vf- f,mnr crs,wl srt,sbng-sbrnd,mod wk sil 2170 cmt,com pl gry-off wh arg mtx,tr carb spks,rr tr slty lams,occ lse qtz grs, occ qtz ovgths,fri-mod hd aggs,gd
@@ -3513,10 +3212,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 84.1 | 33 |
 | RES_DEEP (ohm.m) | 19.09 | 33 |
 | RES_SHALLOW (ohm.m) | 19.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.28** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3536,6 +3231,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 104.0 U |
+| mTVDss | -1197.67 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2160m: pl brn,pl gry,clr-trnsl,vf- f,mnr crs,wl srt,sbng-sbrnd,mod wk sil 2170 cmt,com pl gry-off wh arg mtx,tr carb spks,rr tr slty lams,occ lse qtz grs, occ qtz ovgths,fri-mod hd aggs,gd
@@ -3548,10 +3244,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 76.3 | 33 |
 | RES_DEEP (ohm.m) | 17.54 | 33 |
 | RES_SHALLOW (ohm.m) | 17.83 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.29** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3571,6 +3263,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 108.0 U |
+| mTVDss | -1197.67 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2160m: pl brn,pl gry,clr-trnsl,vf- f,mnr crs,wl srt,sbng-sbrnd,mod wk sil 2170 cmt,com pl gry-off wh arg mtx,tr carb spks,rr tr slty lams,occ lse qtz grs, occ qtz ovgths,fri-mod hd aggs,gd
@@ -3583,10 +3276,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 82.6 | 33 |
 | RES_DEEP (ohm.m) | 17.01 | 33 |
 | RES_SHALLOW (ohm.m) | 15.40 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.61** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3606,6 +3295,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 76.0 U |
+| mTVDss | -1197.67 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2180m: clr-trnsl,pl brn gry,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,occ pl gry arg mtx,occ- com qtz ovgths,abdt lse qtz grs,mod hd aggs,gd inf por,pr vis por,fluor.
@@ -3618,10 +3308,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.2 | 32 |
 | RES_DEEP (ohm.m) | 17.48 | 32 |
 | RES_SHALLOW (ohm.m) | 16.20 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.28** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3641,6 +3327,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 140.0 U |
+| mTVDss | -1197.68 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2180m: clr-trnsl,pl brn gry,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,occ pl gry arg mtx,occ- com qtz ovgths,abdt lse qtz grs,mod hd aggs,gd inf por,pr vis por,fluor.
@@ -3653,10 +3340,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 104.1 | 33 |
 | RES_DEEP (ohm.m) | 18.32 | 33 |
 | RES_SHALLOW (ohm.m) | 16.85 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.46** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3676,6 +3359,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 195.0 U |
+| mTVDss | -1197.68 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2180m: clr-trnsl,pl brn gry,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,occ pl gry arg mtx,occ- com qtz ovgths,abdt lse qtz grs,mod hd aggs,gd inf por,pr vis por,fluor.
@@ -3688,10 +3372,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.3 | 33 |
 | RES_DEEP (ohm.m) | 18.16 | 33 |
 | RES_SHALLOW (ohm.m) | 15.80 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.36** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3711,6 +3391,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 242.0 U |
+| mTVDss | -1197.72 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2180m: clr-trnsl,pl brn gry,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,occ pl gry arg mtx,occ- com qtz ovgths,abdt lse qtz grs,mod hd aggs,gd inf por,pr vis por,fluor.
@@ -3723,10 +3404,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.0 | 33 |
 | RES_DEEP (ohm.m) | 18.69 | 33 |
 | RES_SHALLOW (ohm.m) | 16.60 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.09** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3746,6 +3423,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 240.0 U |
+| mTVDss | -1197.76 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2210m: clr-trnsl,vf-f,com med -crs,mod pr srt,sbang-sbrnd,mod strg sil cmt,com pl gry-off wh arg mtx,com qtz ovghs,mnr slty lams,com lse qtz grs,mod hd aggs,gd inf por,fr vis
@@ -3756,10 +3434,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.4 | 33 |
 | RES_DEEP (ohm.m) | 17.47 | 33 |
 | RES_SHALLOW (ohm.m) | 16.42 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.05** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3779,6 +3453,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 230.0 U |
+| mTVDss | -1197.80 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2210m: clr-trnsl,vf-f,com med -crs,mod pr srt,sbang-sbrnd,mod strg sil cmt,com pl gry-off wh arg mtx,com qtz ovghs,mnr slty lams,com lse qtz grs,mod hd aggs,gd inf por,fr vis
@@ -3791,10 +3466,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 77.9 | 32 |
 | RES_DEEP (ohm.m) | 18.39 | 32 |
 | RES_SHALLOW (ohm.m) | 18.09 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.31** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3814,6 +3485,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
+| mTVDss | -1197.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2210m: clr-trnsl,vf-f,com med -crs,mod pr srt,sbang-sbrnd,mod strg sil cmt,com pl gry-off wh arg mtx,com qtz ovghs,mnr slty lams,com lse qtz grs,mod hd aggs,gd inf por,fr vis
@@ -3826,10 +3498,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 76.2 | 33 |
 | RES_DEEP (ohm.m) | 17.16 | 33 |
 | RES_SHALLOW (ohm.m) | 17.12 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.04** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3849,6 +3517,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 156.0 U |
+| mTVDss | -1197.89 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2210m: clr-trnsl,vf-f,com med -crs,mod pr srt,sbang-sbrnd,mod strg sil cmt,com pl gry-off wh arg mtx,com qtz ovghs,mnr slty lams,com lse qtz grs,mod hd aggs,gd inf por,fr vis
@@ -3861,10 +3530,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 71.3 | 33 |
 | RES_DEEP (ohm.m) | 17.47 | 33 |
 | RES_SHALLOW (ohm.m) | 17.74 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.26** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3884,6 +3549,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
+| mTVDss | -1197.92 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2210m: clr-trnsl,vf-f,com med -crs,mod pr srt,sbang-sbrnd,mod strg sil cmt,com pl gry-off wh arg mtx,com qtz ovghs,mnr slty lams,com lse qtz grs,mod hd aggs,gd inf por,fr vis
@@ -3896,10 +3562,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.9 | 33 |
 | RES_DEEP (ohm.m) | 17.27 | 33 |
 | RES_SHALLOW (ohm.m) | 17.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.42** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3919,6 +3581,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 170.0 U |
+| mTVDss | -1197.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2210m: clr-trnsl,vf-f,com med -crs,mod pr srt,sbang-sbrnd,mod strg sil cmt,com pl gry-off wh arg mtx,com qtz ovghs,mnr slty lams,com lse qtz grs,mod hd aggs,gd inf por,fr vis
@@ -3931,10 +3594,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 76.8 | 33 |
 | RES_DEEP (ohm.m) | 17.23 | 33 |
 | RES_SHALLOW (ohm.m) | 17.33 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.10** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3954,6 +3613,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 270.0 U |
+| mTVDss | -1197.97 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2220m: clr-trnsl,vf-f,com med -crs,mod pr srt,sbang-sbrnd,mod strg sil cmt,com pl gry-off wh arg mtx,com qtz ovghs,mnr slty lams,com lse qtz grs,mod hd aggs,gd inf por,fr vis
@@ -3966,10 +3626,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 71.8 | 32 |
 | RES_DEEP (ohm.m) | 16.36 | 32 |
 | RES_SHALLOW (ohm.m) | 16.94 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.58** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3989,6 +3645,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 270.0 U |
+| mTVDss | -1197.97 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2220m: clr-trnsl,vf-f,com med -crs,mod pr srt,sbang-sbrnd,mod strg sil cmt,com pl gry-off wh arg mtx,com qtz ovghs,mnr slty lams,com lse qtz grs,mod hd aggs,gd inf por,fr vis
@@ -4001,10 +3658,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 74.2 | 33 |
 | RES_DEEP (ohm.m) | 17.68 | 33 |
 | RES_SHALLOW (ohm.m) | 18.33 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.65** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4020,6 +3673,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 282.0 U |
+| mTVDss | -1197.98 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4029,10 +3683,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.2 | 33 |
 | RES_DEEP (ohm.m) | 18.51 | 33 |
 | RES_SHALLOW (ohm.m) | 19.49 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.98** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4048,6 +3698,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 258.0 U |
+| mTVDss | -1197.97 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4057,10 +3708,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.1 | 33 |
 | RES_DEEP (ohm.m) | 18.02 | 33 |
 | RES_SHALLOW (ohm.m) | 18.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.92** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4076,6 +3723,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 230.0 U |
+| mTVDss | -1197.97 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4085,10 +3733,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.1 | 33 |
 | RES_DEEP (ohm.m) | 16.80 | 33 |
 | RES_SHALLOW (ohm.m) | 17.34 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.54** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4104,6 +3748,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
+| mTVDss | -1197.96 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4113,10 +3758,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 89.8 | 32 |
 | RES_DEEP (ohm.m) | 16.72 | 32 |
 | RES_SHALLOW (ohm.m) | 16.77 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.05** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4132,6 +3773,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 260.0 U |
+| mTVDss | -1197.95 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4141,10 +3783,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 84.1 | 33 |
 | RES_DEEP (ohm.m) | 17.20 | 33 |
 | RES_SHALLOW (ohm.m) | 17.33 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.13** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4164,6 +3802,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
+| mTVDss | -1197.94 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2280m: clr-trnsl,pl gry,vf-f,mod pr srt,sbang-sbrnd,wk sil cmt,com lt gry arg mtx,tr carb spks,pred lse qtz grs,mod hd aggs,gd inf por,pr vis por, fluor.
@@ -4176,10 +3815,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.7 | 33 |
 | RES_DEEP (ohm.m) | 17.51 | 33 |
 | RES_SHALLOW (ohm.m) | 18.18 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.66** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4199,6 +3834,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 265.0 U |
+| mTVDss | -1197.92 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2280m: clr-trnsl,pl gry,vf-f,mod pr srt,sbang-sbrnd,wk sil cmt,com lt gry arg mtx,tr carb spks,pred lse qtz grs,mod hd aggs,gd inf por,pr vis por, fluor.
@@ -4211,10 +3847,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 80.0 | 33 |
 | RES_DEEP (ohm.m) | 17.88 | 33 |
 | RES_SHALLOW (ohm.m) | 18.57 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.70** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4234,6 +3866,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 273.0 U |
+| mTVDss | -1197.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2280m: clr-trnsl,pl gry,vf-f,mod pr srt,sbang-sbrnd,wk sil cmt,com lt gry arg mtx,tr carb spks,pred lse qtz grs,mod hd aggs,gd inf por,pr vis por, fluor.
@@ -4246,10 +3879,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 80.1 | 33 |
 | RES_DEEP (ohm.m) | 18.77 | 33 |
 | RES_SHALLOW (ohm.m) | 19.14 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.37** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4269,6 +3898,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 281.0 U |
+| mTVDss | -1197.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2280m: clr-trnsl,pl gry,vf-f,mod pr srt,sbang-sbrnd,wk sil cmt,com lt gry arg mtx,tr carb spks,pred lse qtz grs,mod hd aggs,gd inf por,pr vis por, fluor.
@@ -4281,10 +3911,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.0 | 33 |
 | RES_DEEP (ohm.m) | 18.66 | 33 |
 | RES_SHALLOW (ohm.m) | 19.05 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.39** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4304,6 +3930,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1197.84 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2280m: clr-trnsl,pl gry,vf-f,mod pr srt,sbang-sbrnd,wk sil cmt,com lt gry arg mtx,tr carb spks,pred lse qtz grs,mod hd aggs,gd inf por,pr vis por, fluor.
@@ -4316,10 +3943,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 80.6 | 32 |
 | RES_DEEP (ohm.m) | 18.49 | 32 |
 | RES_SHALLOW (ohm.m) | 18.89 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.39** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4339,6 +3962,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 258.0 U |
+| mTVDss | -1197.80 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2280m: clr-trnsl,pl gry,vf-f,mod pr srt,sbang-sbrnd,wk sil cmt,com lt gry arg mtx,tr carb spks,pred lse qtz grs,mod hd aggs,gd inf por,pr vis por, fluor.
@@ -4351,10 +3975,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.1 | 33 |
 | RES_DEEP (ohm.m) | 18.94 | 33 |
 | RES_SHALLOW (ohm.m) | 19.23 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.28** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4374,6 +3994,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 247.0 U |
+| mTVDss | -1197.77 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2280m: clr-trnsl,pl gry,vf-f,mod pr srt,sbang-sbrnd,wk sil cmt,com lt gry arg mtx,tr carb spks,pred lse qtz grs,mod hd aggs,gd inf por,pr vis por, fluor.
@@ -4386,10 +4007,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 77.3 | 33 |
 | RES_DEEP (ohm.m) | 19.17 | 33 |
 | RES_SHALLOW (ohm.m) | 20.81 | 33 |
-| **Δ Res (Deep − Shallow)** | **-1.64** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4409,6 +4026,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 253.0 U |
+| mTVDss | -1197.72 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2300m: clr-trnsl,vf-f,mnr-occ med-crs,sbang-sbrnd,mod sil cmt,mnr pl gry arg mtx,mod hd aggs,pred lse cln qtz grs,gd inf por,fr vis por,fluor.
@@ -4421,10 +4039,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 89.3 | 33 |
 | RES_DEEP (ohm.m) | 18.80 | 33 |
 | RES_SHALLOW (ohm.m) | 19.14 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.34** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4444,6 +4058,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1197.66 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2300m: clr-trnsl,vf-f,mnr-occ med-crs,sbang-sbrnd,mod sil cmt,mnr pl gry arg mtx,mod hd aggs,pred lse cln qtz grs,gd inf por,fr vis por,fluor.
@@ -4456,10 +4071,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 89.7 | 33 |
 | RES_DEEP (ohm.m) | 19.82 | 33 |
 | RES_SHALLOW (ohm.m) | 19.62 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.20** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4479,6 +4090,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 273.0 U |
+| mTVDss | -1197.60 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2300m: clr-trnsl,vf-f,mnr-occ med-crs,sbang-sbrnd,mod sil cmt,mnr pl gry arg mtx,mod hd aggs,pred lse cln qtz grs,gd inf por,fr vis por,fluor.
@@ -4491,10 +4103,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.9 | 32 |
 | RES_DEEP (ohm.m) | 20.11 | 32 |
 | RES_SHALLOW (ohm.m) | 19.65 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.46** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4514,6 +4122,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 250.0 U |
+| mTVDss | -1197.53 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2300m: clr-trnsl,vf-f,mnr-occ med-crs,sbang-sbrnd,mod sil cmt,mnr pl gry arg mtx,mod hd aggs,pred lse cln qtz grs,gd inf por,fr vis por,fluor.
@@ -4526,10 +4135,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.2 | 33 |
 | RES_DEEP (ohm.m) | 18.92 | 33 |
 | RES_SHALLOW (ohm.m) | 18.40 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.52** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4549,6 +4154,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 253.0 U |
+| mTVDss | -1197.45 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2310m: med dk gry,dk gry,aren, occ sndy lams,tr carb spks,sft-frm sbblky-blky. 63 / 6 / 5 / 10 / 16 286 U
@@ -4561,10 +4167,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.1 | 33 |
 | RES_DEEP (ohm.m) | 19.54 | 33 |
 | RES_SHALLOW (ohm.m) | 17.82 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.73** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4584,6 +4186,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 240.0 U |
+| mTVDss | -1197.38 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2310m: med dk gry,dk gry,aren, occ sndy lams,tr carb spks,sft-frm sbblky-blky. 63 / 6 / 5 / 10 / 16 286 U
@@ -4596,10 +4199,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.5 | 33 |
 | RES_DEEP (ohm.m) | 21.60 | 33 |
 | RES_SHALLOW (ohm.m) | 19.25 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.36** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4615,6 +4214,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 75.0% nan |
 | Total Gas | 251.0 U |
+| mTVDss | -1197.31 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4624,10 +4224,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.9 | 33 |
 | RES_DEEP (ohm.m) | 24.90 | 33 |
 | RES_SHALLOW (ohm.m) | 22.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.25** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4643,6 +4239,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 80.0% medium sandstone. 80% mod bright to bright |
 | Total Gas | 270.0 U |
+| mTVDss | -1197.23 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4652,10 +4249,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.1 | 32 |
 | RES_DEEP (ohm.m) | 24.77 | 32 |
 | RES_SHALLOW (ohm.m) | 22.99 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.78** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4671,6 +4264,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 282.0 U |
+| mTVDss | -1197.15 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4680,10 +4274,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.2 | 33 |
 | RES_DEEP (ohm.m) | 23.22 | 33 |
 | RES_SHALLOW (ohm.m) | 21.89 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.34** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4699,6 +4289,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% medium sandstone. 100% mod bright to bright |
 | Total Gas | 270.0 U |
+| mTVDss | -1197.05 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4708,10 +4299,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.2 | 33 |
 | RES_DEEP (ohm.m) | 23.78 | 33 |
 | RES_SHALLOW (ohm.m) | 21.45 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.32** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4727,6 +4314,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% medium sandstone. 100% mod bright to bright |
 | Total Gas | 264.0 U |
+| mTVDss | -1196.93 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4736,10 +4324,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.2 | 33 |
 | RES_DEEP (ohm.m) | 20.98 | 33 |
 | RES_SHALLOW (ohm.m) | 18.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.08** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4759,6 +4343,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% medium sandstone. 100% bright to mod bright |
 | Total Gas | 285.0 U |
+| mTVDss | -1196.80 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2370m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,com intrlams w/ SLTST,wl srt,sbang-sbrnd,mod-wk sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd aggs,mnr disagg qtz grs,pr vis por,fr
@@ -4769,10 +4354,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.3 | 33 |
 | RES_DEEP (ohm.m) | 18.23 | 33 |
 | RES_SHALLOW (ohm.m) | 17.58 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.65** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4792,6 +4373,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% medium sandstone. 100% mod bright to bright |
 | Total Gas | 268.0 U |
+| mTVDss | -1196.66 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2370m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,com intrlams w/ SLTST,wl srt,sbang-sbrnd,mod-wk sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd aggs,mnr disagg qtz grs,pr vis por,fr
@@ -4802,10 +4384,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.5 | 32 |
 | RES_DEEP (ohm.m) | 17.91 | 32 |
 | RES_SHALLOW (ohm.m) | 17.23 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.67** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4825,6 +4403,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 249.0 U |
+| mTVDss | -1196.51 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2370m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,com intrlams w/ SLTST,wl srt,sbang-sbrnd,mod-wk sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd aggs,mnr disagg qtz grs,pr vis por,fr
@@ -4837,10 +4416,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 101.0 | 33 |
 | RES_DEEP (ohm.m) | 20.42 | 33 |
 | RES_SHALLOW (ohm.m) | 18.02 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.40** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4860,6 +4435,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 243.0 U |
+| mTVDss | -1196.35 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2370m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,com intrlams w/ SLTST,wl srt,sbang-sbrnd,mod-wk sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd aggs,mnr disagg qtz grs,pr vis por,fr
@@ -4872,10 +4448,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.1 | 33 |
 | RES_DEEP (ohm.m) | 19.52 | 33 |
 | RES_SHALLOW (ohm.m) | 17.54 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.98** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4895,6 +4467,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 241.0 U |
+| mTVDss | -1196.19 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2370m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,com intrlams w/ SLTST,wl srt,sbang-sbrnd,mod-wk sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd aggs,mnr disagg qtz grs,pr vis por,fr
@@ -4907,10 +4480,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.8 | 33 |
 | RES_DEEP (ohm.m) | 18.27 | 33 |
 | RES_SHALLOW (ohm.m) | 16.85 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.42** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4930,6 +4499,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 85.0% nan |
 | Total Gas | 240.0 U |
+| mTVDss | -1196.01 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2370m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,com intrlams w/ SLTST,wl srt,sbang-sbrnd,mod-wk sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd aggs,mnr disagg qtz grs,pr vis por,fr
@@ -4942,10 +4512,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.0 | 33 |
 | RES_DEEP (ohm.m) | 18.54 | 33 |
 | RES_SHALLOW (ohm.m) | 17.00 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.54** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4965,6 +4531,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 231.0 U |
+| mTVDss | -1195.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2370m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,com intrlams w/ SLTST,wl srt,sbang-sbrnd,mod-wk sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd aggs,mnr disagg qtz grs,pr vis por,fr
@@ -4977,10 +4544,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.8 | 33 |
 | RES_DEEP (ohm.m) | 19.25 | 33 |
 | RES_SHALLOW (ohm.m) | 17.70 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.55** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5000,6 +4563,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1195.63 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,loc com intrlam w/ SLTST,wl srt,sbang-sbrnd,mod sil cmt,mnr gry-brn arg mtx,fri-mod hd aggs,mnr disagg qtz grs,pr vis por,fr
@@ -5012,10 +4576,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.5 | 32 |
 | RES_DEEP (ohm.m) | 20.56 | 32 |
 | RES_SHALLOW (ohm.m) | 18.42 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.14** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5035,6 +4595,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 272.0 U |
+| mTVDss | -1195.42 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,loc com intrlam w/ SLTST,wl srt,sbang-sbrnd,mod sil cmt,mnr gry-brn arg mtx,fri-mod hd aggs,mnr disagg qtz grs,pr vis por,fr
@@ -5047,10 +4608,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.8 | 33 |
 | RES_DEEP (ohm.m) | 24.60 | 33 |
 | RES_SHALLOW (ohm.m) | 22.42 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.18** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5070,6 +4627,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 248.0 U |
+| mTVDss | -1195.21 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2390m: lt-med gry brn,vf-f,g/t aren SLTST i/p,loc com intrlam w/ SLTST,wl srt,sbang-sbrnd,mod sil cmt, mnr gry-brn arg mtx,fri-mod hd aggs, pr vis por,fluor.
@@ -5082,10 +4640,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.4 | 33 |
 | RES_DEEP (ohm.m) | 29.93 | 33 |
 | RES_SHALLOW (ohm.m) | 24.83 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.10** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5105,6 +4659,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1194.99 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2390m: lt-med gry brn,vf-f,g/t aren SLTST i/p,loc com intrlam w/ SLTST,wl srt,sbang-sbrnd,mod sil cmt, mnr gry-brn arg mtx,fri-mod hd aggs, pr vis por,fluor.
@@ -5117,10 +4672,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.0 | 33 |
 | RES_DEEP (ohm.m) | 34.68 | 33 |
 | RES_SHALLOW (ohm.m) | 27.82 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.86** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5140,6 +4691,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% medium, 90% mod bright |
 | Total Gas | 275.0 U |
+| mTVDss | -1194.77 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr,trnsl,v lt grysh brn, vf-med,tr crs,tr intrlam w/ SLTST,mod srt,sbang-sbrnd,tr ang,wk-mod sil cmt, mnr gry-brn arg mtx,tr mic flks,pred disagg,com fri,mnr mod hd,fr-gd inf
@@ -5152,10 +4704,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.9 | 33 |
 | RES_DEEP (ohm.m) | 33.51 | 33 |
 | RES_SHALLOW (ohm.m) | 28.94 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.57** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5175,6 +4723,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 265.0 U |
+| mTVDss | -1194.55 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr,trnsl,v lt grysh brn, vf-med,tr crs,tr intrlam w/ SLTST,mod srt,sbang-sbrnd,tr ang,wk-mod sil cmt, mnr gry-brn arg mtx,tr mic flks,pred disagg,com fri,mnr mod hd,fr-gd inf
@@ -5187,10 +4736,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.0 | 32 |
 | RES_DEEP (ohm.m) | 34.10 | 32 |
 | RES_SHALLOW (ohm.m) | 29.00 | 32 |
-| **Δ Res (Deep − Shallow)** | **5.10** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5210,6 +4755,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium, 100% bright to mod bright |
 | Total Gas | 275.0 U |
+| mTVDss | -1194.34 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr,trnsl,v lt grysh brn, vf-med,tr crs,tr intrlam w/ SLTST,mod srt,sbang-sbrnd,tr ang,wk-mod sil cmt, mnr gry-brn arg mtx,tr mic flks,pred disagg,com fri,mnr mod hd,fr-gd inf
@@ -5222,10 +4768,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.4 | 33 |
 | RES_DEEP (ohm.m) | 34.72 | 33 |
 | RES_SHALLOW (ohm.m) | 30.94 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.78** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5245,6 +4787,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse, 100% bright |
 | Total Gas | 312.0 U |
+| mTVDss | -1194.12 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr,trnsl,v lt grysh brn, vf-med,tr crs,tr intrlam w/ SLTST,mod srt,sbang-sbrnd,tr ang,wk-mod sil cmt, mnr gry-brn arg mtx,tr mic flks,pred disagg,com fri,mnr mod hd,fr-gd inf
@@ -5257,10 +4800,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.0 | 33 |
 | RES_DEEP (ohm.m) | 38.46 | 33 |
 | RES_SHALLOW (ohm.m) | 36.42 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.03** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5280,6 +4819,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium Sandstone, trace coarse, 100% bright |
 | Total Gas | 295.0 U |
+| mTVDss | -1193.92 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr,trnsl,v lt grysh brn, vf-med,tr crs,tr intrlam w/ SLTST,mod srt,sbang-sbrnd,tr ang,wk-mod sil cmt, mnr gry-brn arg mtx,tr mic flks,pred disagg,com fri,mnr mod hd,fr-gd inf
@@ -5292,10 +4832,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.7 | 33 |
 | RES_DEEP (ohm.m) | 38.34 | 33 |
 | RES_SHALLOW (ohm.m) | 39.15 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.81** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5315,6 +4851,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium Sandstone, rare coarse-v crs, 100% bright |
 | Total Gas | 303.0 U |
+| mTVDss | -1193.73 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr,trnsl,v lt grysh brn, vf-med,tr crs,tr intrlam w/ SLTST,mod srt,sbang-sbrnd,tr ang,wk-mod sil cmt, mnr gry-brn arg mtx,tr mic flks,pred disagg,com fri,mnr mod hd,fr-gd inf
@@ -5327,10 +4864,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 69.6 | 33 |
 | RES_DEEP (ohm.m) | 33.98 | 33 |
 | RES_SHALLOW (ohm.m) | 34.89 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.91** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5346,6 +4879,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% v coarse, 100% bright |
 | Total Gas | 292.0 U |
+| mTVDss | -1193.56 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -5355,10 +4889,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 66.4 | 32 |
 | RES_DEEP (ohm.m) | 35.13 | 32 |
 | RES_SHALLOW (ohm.m) | 33.52 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.62** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5374,6 +4904,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium Sandstone, trace coarse. 100% bright |
 | Total Gas | 324.0 U |
+| mTVDss | -1193.43 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -5383,10 +4914,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 67.0 | 33 |
 | RES_DEEP (ohm.m) | 37.12 | 33 |
 | RES_SHALLOW (ohm.m) | 31.51 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.62** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5402,6 +4929,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium Sandstone, trace coarse-v coarse. 100% bright |
 | Total Gas | 322.0 U |
+| mTVDss | -1193.30 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -5411,10 +4939,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 67.4 | 33 |
 | RES_DEEP (ohm.m) | 37.33 | 33 |
 | RES_SHALLOW (ohm.m) | 32.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.40** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5434,6 +4958,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, mnr medium Sandstone, 100% bright |
 | Total Gas | 322.0 U |
+| mTVDss | -1193.21 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2470m: v lt grysh brn,clr,trnsl, vf-f,mnr med,wl srt,sbang-sbrnd,wk sil cmt,mnr gry-brn arg mtx,fri,com disagg, pr-fr vis por,gd inf por,fluor.
@@ -5446,10 +4971,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 70.8 | 33 |
 | RES_DEEP (ohm.m) | 41.91 | 33 |
 | RES_SHALLOW (ohm.m) | 36.31 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.59** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5469,6 +4990,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% bright |
 | Total Gas | 302.0 U |
+| mTVDss | -1193.13 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2470m: v lt grysh brn,clr,trnsl, vf-f,mnr med,wl srt,sbang-sbrnd,wk sil cmt,mnr gry-brn arg mtx,fri,com disagg, pr-fr vis por,gd inf por,fluor.
@@ -5481,10 +5003,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 69.6 | 33 |
 | RES_DEEP (ohm.m) | 42.79 | 33 |
 | RES_SHALLOW (ohm.m) | 31.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **11.11** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5504,6 +5022,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, Sandstone with trace medium to coarse, 100% bright |
 | Total Gas | 299.0 U |
+| mTVDss | -1193.07 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2470m: v lt grysh brn,clr,trnsl, vf-f,mnr med,wl srt,sbang-sbrnd,wk sil cmt,mnr gry-brn arg mtx,fri,com disagg, pr-fr vis por,gd inf por,fluor.
@@ -5516,10 +5035,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 69.1 | 32 |
 | RES_DEEP (ohm.m) | 35.17 | 32 |
 | RES_SHALLOW (ohm.m) | 27.71 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.46** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5539,6 +5054,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, mnr medium Sandstone trace coarse, 100% bright |
 | Total Gas | 300.0 U |
+| mTVDss | -1193.02 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2470m: v lt grysh brn,clr,trnsl, vf-f,mnr med,wl srt,sbang-sbrnd,wk sil cmt,mnr gry-brn arg mtx,fri,com disagg, pr-fr vis por,gd inf por,fluor.
@@ -5551,10 +5067,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 68.7 | 33 |
 | RES_DEEP (ohm.m) | 35.42 | 33 |
 | RES_SHALLOW (ohm.m) | 32.50 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.92** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5574,6 +5086,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 261.0 U |
+| mTVDss | -1192.98 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2470m: v lt grysh brn,clr,trnsl, vf-f,mnr med,wl srt,sbang-sbrnd,wk sil cmt,mnr gry-brn arg mtx,fri,com disagg, pr-fr vis por,gd inf por,fluor.
@@ -5586,10 +5099,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 68.0 | 33 |
 | RES_DEEP (ohm.m) | 37.36 | 33 |
 | RES_SHALLOW (ohm.m) | 33.21 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.15** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5609,6 +5118,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% medium, Sandstone 100% bright |
 | Total Gas | 232.0 U |
+| mTVDss | -1192.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2470m: v lt grysh brn,clr,trnsl, vf-f,mnr med,wl srt,sbang-sbrnd,wk sil cmt,mnr gry-brn arg mtx,fri,com disagg, pr-fr vis por,gd inf por,fluor.
@@ -5621,10 +5131,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 66.8 | 33 |
 | RES_DEEP (ohm.m) | 37.23 | 33 |
 | RES_SHALLOW (ohm.m) | 33.27 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.96** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5644,6 +5150,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% medium, Sandstone 100% bright |
 | Total Gas | 318.0 U |
+| mTVDss | -1192.93 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2470m: v lt grysh brn,clr,trnsl, vf-f,mnr med,wl srt,sbang-sbrnd,wk sil cmt,mnr gry-brn arg mtx,fri,com disagg, pr-fr vis por,gd inf por,fluor.
@@ -5656,10 +5163,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 63.3 | 33 |
 | RES_DEEP (ohm.m) | 38.56 | 33 |
 | RES_SHALLOW (ohm.m) | 35.81 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.75** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5679,6 +5182,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 321.0 U |
+| mTVDss | -1192.92 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2480m: v lt grysh brn,lt gry,clr, trnsl,opq,vf-f,mnr med-crs,tr slty lams, wl srt,sbang-sbrnd,wk-mod sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd,mnr disagg med-crs qtz grs,pr vis por,fr inf
@@ -5691,10 +5195,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 66.7 | 32 |
 | RES_DEEP (ohm.m) | 36.41 | 32 |
 | RES_SHALLOW (ohm.m) | 35.66 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.75** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5714,6 +5214,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 295.0 U |
+| mTVDss | -1192.92 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2480m: v lt grysh brn,lt gry,clr, trnsl,opq,vf-f,mnr med-crs,tr slty lams, wl srt,sbang-sbrnd,wk-mod sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd,mnr disagg med-crs qtz grs,pr vis por,fr inf
@@ -5726,10 +5227,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 71.9 | 33 |
 | RES_DEEP (ohm.m) | 34.32 | 33 |
 | RES_SHALLOW (ohm.m) | 31.59 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.73** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5749,6 +5246,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to coarse Sandstone, 100% bright |
 | Total Gas | 296.0 U |
+| mTVDss | -1192.92 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2500m: 1-7klbs SILTSTONE:dk gry-v dk gry,med dk gry, FLW: 247-271gpm SURVEY @ 2506.8m
@@ -5761,10 +5259,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 69.0 | 33 |
 | RES_DEEP (ohm.m) | 35.36 | 33 |
 | RES_SHALLOW (ohm.m) | 30.15 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.22** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5784,6 +5278,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 286.0 U |
+| mTVDss | -1192.93 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2500m: 1-7klbs SILTSTONE:dk gry-v dk gry,med dk gry, FLW: 247-271gpm SURVEY @ 2506.8m
@@ -5796,10 +5291,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 68.7 | 33 |
 | RES_DEEP (ohm.m) | 37.23 | 33 |
 | RES_SHALLOW (ohm.m) | 35.24 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.00** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5819,6 +5310,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to coarse Sandstone 100% bright |
 | Total Gas | 321.0 U |
+| mTVDss | -1192.94 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2500m: 1-7klbs SILTSTONE:dk gry-v dk gry,med dk gry, FLW: 247-271gpm SURVEY @ 2506.8m
@@ -5831,10 +5323,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 66.2 | 33 |
 | RES_DEEP (ohm.m) | 36.88 | 33 |
 | RES_SHALLOW (ohm.m) | 34.57 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.30** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5854,6 +5342,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 305.0 U |
+| mTVDss | -1192.96 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2500m: 1-7klbs SILTSTONE:dk gry-v dk gry,med dk gry, FLW: 247-271gpm SURVEY @ 2506.8m
@@ -5866,10 +5355,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 67.9 | 33 |
 | RES_DEEP (ohm.m) | 39.53 | 33 |
 | RES_SHALLOW (ohm.m) | 34.80 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.73** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5885,6 +5370,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 279.0 U |
+| mTVDss | -1192.98 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -5894,10 +5380,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 72.6 | 32 |
 | RES_DEEP (ohm.m) | 44.50 | 32 |
 | RES_SHALLOW (ohm.m) | 35.61 | 32 |
-| **Δ Res (Deep − Shallow)** | **8.89** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5917,6 +5399,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 274.0 U |
+| mTVDss | -1193.01 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2540m: v lt brnsh gry,clr-trnsl, vf-med,rr crs,vf-f in aggs,tr slty lams, v pr srt,sbang-sbrnd,mnr ang crs grs, wk-loc mod sil cmt,mnr brn-gry arg 68 / 6 / 5 / 9 / 12 304 U
@@ -5929,10 +5412,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 67.1 | 33 |
 | RES_DEEP (ohm.m) | 45.26 | 33 |
 | RES_SHALLOW (ohm.m) | 35.15 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.11** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5952,6 +5431,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 306.0 U |
+| mTVDss | -1193.04 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2540m: v lt brnsh gry,clr-trnsl, vf-med,rr crs,vf-f in aggs,tr slty lams, v pr srt,sbang-sbrnd,mnr ang crs grs, wk-loc mod sil cmt,mnr brn-gry arg 68 / 6 / 5 / 9 / 12 304 U
@@ -5964,10 +5444,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 66.1 | 33 |
 | RES_DEEP (ohm.m) | 35.70 | 33 |
 | RES_SHALLOW (ohm.m) | 30.49 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.21** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5987,6 +5463,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 290.0 U |
+| mTVDss | -1193.08 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2540m: v lt brnsh gry,clr-trnsl, vf-med,rr crs,vf-f in aggs,tr slty lams, v pr srt,sbang-sbrnd,mnr ang crs grs, wk-loc mod sil cmt,mnr brn-gry arg 68 / 6 / 5 / 9 / 12 304 U
@@ -5999,10 +5476,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 66.2 | 33 |
 | RES_DEEP (ohm.m) | 32.02 | 33 |
 | RES_SHALLOW (ohm.m) | 28.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.36** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6022,6 +5495,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 289.0 U |
+| mTVDss | -1193.13 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2540m: v lt brnsh gry,clr-trnsl, vf-med,rr crs,vf-f in aggs,tr slty lams, v pr srt,sbang-sbrnd,mnr ang crs grs, wk-loc mod sil cmt,mnr brn-gry arg 68 / 6 / 5 / 9 / 12 304 U
@@ -6034,10 +5508,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 72.4 | 33 |
 | RES_DEEP (ohm.m) | 34.09 | 33 |
 | RES_SHALLOW (ohm.m) | 32.76 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.34** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6057,6 +5527,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 305.0 U |
+| mTVDss | -1193.18 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2540m: v lt brnsh gry,clr-trnsl, vf-med,rr crs,vf-f in aggs,tr slty lams, v pr srt,sbang-sbrnd,mnr ang crs grs, wk-loc mod sil cmt,mnr brn-gry arg 68 / 6 / 5 / 9 / 12 304 U
@@ -6069,10 +5540,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.1 | 49 |
 | RES_DEEP (ohm.m) | 38.76 | 49 |
 | RES_SHALLOW (ohm.m) | 38.50 | 49 |
-| **Δ Res (Deep − Shallow)** | **0.26** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6092,6 +5559,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone 100% bright |
 | Total Gas | 278.0 U |
+| mTVDss | -1193.29 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2540m: v lt brnsh gry,clr-trnsl, vf-med,rr crs,vf-f in aggs,tr slty lams, v pr srt,sbang-sbrnd,mnr ang crs grs, wk-loc mod sil cmt,mnr brn-gry arg 68 / 6 / 5 / 9 / 12 304 U
@@ -6104,10 +5572,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.9 | 49 |
 | RES_DEEP (ohm.m) | 35.94 | 49 |
 | RES_SHALLOW (ohm.m) | 33.31 | 49 |
-| **Δ Res (Deep − Shallow)** | **2.62** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6125,6 +5589,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 287.0 U |
+| mTVDss | -1193.34 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2570m: pl brn,pl brn gry,clr-trnsl, vf g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,fri-rr mod hd,v pr-pr vis,por, fluor.
@@ -6135,10 +5600,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.5 | 33 |
 | RES_DEEP (ohm.m) | 36.10 | 33 |
 | RES_SHALLOW (ohm.m) | 31.58 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.52** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6156,6 +5617,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 298.0 U |
+| mTVDss | -1193.39 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2570m: pl brn,pl brn gry,clr-trnsl, vf g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,fri-rr mod hd,v pr-pr vis,por, fluor.
@@ -6168,10 +5630,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.3 | 33 |
 | RES_DEEP (ohm.m) | 35.42 | 33 |
 | RES_SHALLOW (ohm.m) | 31.79 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.63** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6189,6 +5647,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 287.0 U |
+| mTVDss | -1193.42 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2570m: pl brn,pl brn gry,clr-trnsl, vf g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,fri-rr mod hd,v pr-pr vis,por, fluor.
@@ -6201,10 +5660,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.5 | 32 |
 | RES_DEEP (ohm.m) | 34.75 | 32 |
 | RES_SHALLOW (ohm.m) | 29.20 | 32 |
-| **Δ Res (Deep − Shallow)** | **5.55** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6223,6 +5678,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 290.0 U |
+| mTVDss | -1193.45 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2570m: pl brn,pl brn gry,clr-trnsl, vf g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,fri-rr mod hd,v pr-pr vis,por, fluor.
@@ -6235,10 +5691,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.3 | 33 |
 | RES_DEEP (ohm.m) | 30.75 | 33 |
 | RES_SHALLOW (ohm.m) | 24.72 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.03** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6257,6 +5709,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 248.0 U |
+| mTVDss | -1193.45 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2570m: pl brn,pl brn gry,clr-trnsl, vf g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,fri-rr mod hd,v pr-pr vis,por, fluor.
@@ -6269,10 +5722,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.7 | 33 |
 | RES_DEEP (ohm.m) | 26.96 | 33 |
 | RES_SHALLOW (ohm.m) | 21.91 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.05** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6291,6 +5740,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 271.0 U |
+| mTVDss | -1193.44 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2570m: pl brn,pl brn gry,clr-trnsl, vf g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,fri-rr mod hd,v pr-pr vis,por, fluor.
@@ -6303,10 +5753,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.2 | 33 |
 | RES_DEEP (ohm.m) | 28.42 | 33 |
 | RES_SHALLOW (ohm.m) | 24.18 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.24** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6324,6 +5770,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 220.0 U |
+| mTVDss | -1193.41 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2580m: pl brn,pl brn gry,clr-trnsl, 63 / 6 / 6 / 10 / 15 302 U vf-f,g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,mnr lse,fri-rr mod hd,pr vis & inf por,fluor.
@@ -6336,10 +5783,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.7 | 33 |
 | RES_DEEP (ohm.m) | 32.53 | 33 |
 | RES_SHALLOW (ohm.m) | 27.20 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.33** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6358,6 +5801,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 265.0 U |
+| mTVDss | -1193.38 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2580m: pl brn,pl brn gry,clr-trnsl, 63 / 6 / 6 / 10 / 15 302 U vf-f,g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,mnr lse,fri-rr mod hd,pr vis & inf por,fluor.
@@ -6370,10 +5814,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.6 | 32 |
 | RES_DEEP (ohm.m) | 30.66 | 32 |
 | RES_SHALLOW (ohm.m) | 24.58 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.08** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6392,6 +5832,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 253.0 U |
+| mTVDss | -1193.33 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2600m: pl brn,pl brn gry,clr-trnsl, vf-f,g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,mnr lse,fri-rr mod hd,pr vis & inf por,fluor.
@@ -6404,10 +5845,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.7 | 33 |
 | RES_DEEP (ohm.m) | 29.24 | 33 |
 | RES_SHALLOW (ohm.m) | 22.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.24** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6427,6 +5864,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 250.0 U |
+| mTVDss | -1193.27 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2600m: pl brn,pl brn gry,clr-trnsl, vf-f,g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,mnr lse,fri-rr mod hd,pr vis & inf por,fluor.
@@ -6439,10 +5877,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 100.6 | 33 |
 | RES_DEEP (ohm.m) | 25.64 | 33 |
 | RES_SHALLOW (ohm.m) | 20.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.74** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6462,6 +5896,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 210.0 U |
+| mTVDss | -1193.21 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2600m: pl brn,pl brn gry,clr-trnsl, vf-f,g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,mnr lse,fri-rr mod hd,pr vis & inf por,fluor.
@@ -6474,10 +5909,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.3 | 33 |
 | RES_DEEP (ohm.m) | 24.92 | 33 |
 | RES_SHALLOW (ohm.m) | 21.01 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.92** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6497,6 +5928,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 261.0 U |
+| mTVDss | -1193.14 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2600m: pl brn,pl brn gry,clr-trnsl, vf-f,g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,mnr lse,fri-rr mod hd,pr vis & inf por,fluor.
@@ -6509,10 +5941,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.6 | 33 |
 | RES_DEEP (ohm.m) | 22.96 | 33 |
 | RES_SHALLOW (ohm.m) | 20.59 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.37** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6532,6 +5960,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 205.0 U |
+| mTVDss | -1193.08 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2610m: pl brn,pl brn gry,clr-trnsl, vf-f,mnr g/t aren SLTST,sbang-sbrnd, mod sil cmt,com pl gry arg mtx,tr carb spks,tr slty lams,fri-mod hd,pr vis por, fr inf por,fluor.
@@ -6544,10 +5973,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.5 | 33 |
 | RES_DEEP (ohm.m) | 24.12 | 33 |
 | RES_SHALLOW (ohm.m) | 21.14 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.98** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6567,6 +5992,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 275.0 U |
+| mTVDss | -1193.01 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2610m: pl brn,pl brn gry,clr-trnsl, vf-f,mnr g/t aren SLTST,sbang-sbrnd, mod sil cmt,com pl gry arg mtx,tr carb spks,tr slty lams,fri-mod hd,pr vis por, fr inf por,fluor.
@@ -6579,10 +6005,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.5 | 32 |
 | RES_DEEP (ohm.m) | 22.98 | 32 |
 | RES_SHALLOW (ohm.m) | 20.65 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.33** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6602,6 +6024,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 238.0 U |
+| mTVDss | -1192.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2620m: pl brn,pl brn gry,clr-trnsl, vf-f,mnr g/t aren SLTST,sbang-sbrnd, mod sil cmt,com pl gry arg mtx,tr carb spks,mnr lse,tr slty lams,fri-mod hd,pr 0 0.5 1 4 14 2630 1 10 100 1K vis por,fr inf por,fluor.
@@ -6614,10 +6037,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.9 | 33 |
 | RES_DEEP (ohm.m) | 22.15 | 33 |
 | RES_SHALLOW (ohm.m) | 19.81 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.34** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6637,6 +6056,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 252.0 U |
+| mTVDss | -1192.89 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2620m: pl brn,pl brn gry,clr-trnsl, vf-f,mnr g/t aren SLTST,sbang-sbrnd, mod sil cmt,com pl gry arg mtx,tr carb spks,mnr lse,tr slty lams,fri-mod hd,pr 0 0.5 1 4 14 2630 1 10 100 1K vis por,fr inf por,fluor.
@@ -6649,10 +6069,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.7 | 33 |
 | RES_DEEP (ohm.m) | 22.17 | 33 |
 | RES_SHALLOW (ohm.m) | 19.48 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.68** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6668,6 +6084,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 230.0 U |
+| mTVDss | -1192.84 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -6677,10 +6094,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.8 | 33 |
 | RES_DEEP (ohm.m) | 22.12 | 33 |
 | RES_SHALLOW (ohm.m) | 19.39 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.73** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6696,6 +6109,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 221.0 U |
+| mTVDss | -1192.80 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -6705,10 +6119,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 104.3 | 33 |
 | RES_DEEP (ohm.m) | 22.08 | 33 |
 | RES_SHALLOW (ohm.m) | 19.08 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.00** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6724,6 +6134,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 216.0 U |
+| mTVDss | -1192.76 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -6733,10 +6144,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 105.0 | 32 |
 | RES_DEEP (ohm.m) | 22.42 | 32 |
 | RES_SHALLOW (ohm.m) | 19.20 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.22** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6752,6 +6159,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 232.0 U |
+| mTVDss | -1192.75 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2670m: med dk gry,dk gry,med gry brn,aren,com carb spks,mnr micmic,frm, sbblky-sbfiss. 04-08-2021 05-08-2021
@@ -6762,10 +6170,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.2 | 33 |
 | RES_DEEP (ohm.m) | 22.48 | 33 |
 | RES_SHALLOW (ohm.m) | 19.51 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.97** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6781,6 +6185,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 85.0% nan |
 | Total Gas | 215.0 U |
+| mTVDss | -1192.75 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2670m: med dk gry,dk gry,med gry brn,aren,com carb spks,mnr micmic,frm, sbblky-sbfiss. 04-08-2021 05-08-2021
@@ -6791,10 +6196,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 100.8 | 33 |
 | RES_DEEP (ohm.m) | 22.52 | 33 |
 | RES_SHALLOW (ohm.m) | 20.02 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.50** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6814,6 +6215,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 241.0 U |
+| mTVDss | -1192.76 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2670m: med dk gry,dk gry,med gry brn,aren,com carb spks,mnr micmic,frm, sbblky-sbfiss. 04-08-2021 05-08-2021
@@ -6825,10 +6227,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.5 | 33 |
 | RES_DEEP (ohm.m) | 22.21 | 33 |
 | RES_SHALLOW (ohm.m) | 19.46 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.76** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6848,6 +6246,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 222.0 U |
+| mTVDss | -1192.77 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2670m: med dk gry,dk gry,med gry brn,aren,com carb spks,mnr micmic,frm, sbblky-sbfiss. 04-08-2021 05-08-2021
@@ -6859,10 +6258,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.4 | 33 |
 | RES_DEEP (ohm.m) | 21.96 | 33 |
 | RES_SHALLOW (ohm.m) | 19.10 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.86** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6882,6 +6277,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 230.0 U |
+| mTVDss | -1192.78 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2670m: med dk gry,dk gry,med gry brn,aren,com carb spks,mnr micmic,frm, sbblky-sbfiss. 04-08-2021 05-08-2021
@@ -6894,10 +6290,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.4 | 32 |
 | RES_DEEP (ohm.m) | 21.63 | 32 |
 | RES_SHALLOW (ohm.m) | 19.17 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.46** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6917,6 +6309,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 212.0 U |
+| mTVDss | -1192.79 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2670m: med dk gry,dk gry,med gry brn,aren,com carb spks,mnr micmic,frm, sbblky-sbfiss. 04-08-2021 05-08-2021
@@ -6929,10 +6322,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.1 | 33 |
 | RES_DEEP (ohm.m) | 22.38 | 33 |
 | RES_SHALLOW (ohm.m) | 19.62 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.76** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6952,6 +6341,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 246.0 U |
+| mTVDss | -1192.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2670m: med dk gry,dk gry,med gry brn,aren,com carb spks,mnr micmic,frm, sbblky-sbfiss. 04-08-2021 05-08-2021
@@ -6964,10 +6354,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 100.5 | 33 |
 | RES_DEEP (ohm.m) | 21.89 | 33 |
 | RES_SHALLOW (ohm.m) | 19.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.20** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6987,6 +6373,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 211.0 U |
+| mTVDss | -1192.84 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2680m: pl gry brn,pl gry,clr-trnsl, 257 U vf-f,g/t aren SLTST,v wl srt,sbang-sbrnd, mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod hd-fri,pr vis por,fluor.
@@ -6999,10 +6386,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.1 | 33 |
 | RES_DEEP (ohm.m) | 21.92 | 33 |
 | RES_SHALLOW (ohm.m) | 19.70 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.22** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7022,6 +6405,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
+| mTVDss | -1192.89 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2680m: pl gry brn,pl gry,clr-trnsl, 257 U vf-f,g/t aren SLTST,v wl srt,sbang-sbrnd, mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod hd-fri,pr vis por,fluor.
@@ -7034,10 +6418,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.7 | 33 |
 | RES_DEEP (ohm.m) | 21.91 | 33 |
 | RES_SHALLOW (ohm.m) | 20.16 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.76** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7057,6 +6437,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 222.0 U |
+| mTVDss | -1192.94 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2690m: pl gry brn,pl gry,clr-trnsl, vf-f,g/t aren SLTST,v wl srt,sbang-sbrnd, mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod hd-fri,mnr lse,pr vis
@@ -7069,10 +6450,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 106.4 | 32 |
 | RES_DEEP (ohm.m) | 22.24 | 32 |
 | RES_SHALLOW (ohm.m) | 20.67 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.57** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7092,6 +6469,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 231.0 U |
+| mTVDss | -1193.02 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2690m: pl gry brn,pl gry,clr-trnsl, vf-f,g/t aren SLTST,v wl srt,sbang-sbrnd, mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod hd-fri,mnr lse,pr vis
@@ -7104,10 +6482,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 106.9 | 33 |
 | RES_DEEP (ohm.m) | 21.94 | 33 |
 | RES_SHALLOW (ohm.m) | 20.58 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.35** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7127,6 +6501,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 232.0 U |
+| mTVDss | -1193.09 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2710m: pl gry brn,pl gry,clr-trnsl, vf-f,pred vf,g/t aren SLTST,v wl srt, sbang-sbrnd,mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod
@@ -7139,10 +6514,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 104.1 | 33 |
 | RES_DEEP (ohm.m) | 21.01 | 33 |
 | RES_SHALLOW (ohm.m) | 19.69 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.31** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7162,6 +6533,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1193.18 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2710m: pl gry brn,pl gry,clr-trnsl, vf-f,pred vf,g/t aren SLTST,v wl srt, sbang-sbrnd,mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod
@@ -7174,10 +6546,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.9 | 33 |
 | RES_DEEP (ohm.m) | 21.14 | 33 |
 | RES_SHALLOW (ohm.m) | 19.51 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.63** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7197,6 +6565,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1193.26 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2710m: pl gry brn,pl gry,clr-trnsl, vf-f,pred vf,g/t aren SLTST,v wl srt, sbang-sbrnd,mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod
@@ -7209,10 +6578,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.4 | 33 |
 | RES_DEEP (ohm.m) | 22.23 | 33 |
 | RES_SHALLOW (ohm.m) | 20.18 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.05** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7232,6 +6597,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 233.0 U |
+| mTVDss | -1193.34 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2710m: pl gry brn,pl gry,clr-trnsl, vf-f,pred vf,g/t aren SLTST,v wl srt, sbang-sbrnd,mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod
@@ -7244,10 +6610,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.8 | 32 |
 | RES_DEEP (ohm.m) | 21.78 | 32 |
 | RES_SHALLOW (ohm.m) | 19.54 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.24** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7267,6 +6629,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
+| mTVDss | -1193.40 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2720m: pl gry brn,pl gry,clr-trnsl, vf-f,pred vf,g/t aren SLTST,v wl srt, sbang-sbrnd,mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod
@@ -7279,10 +6642,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 104.6 | 33 |
 | RES_DEEP (ohm.m) | 21.36 | 33 |
 | RES_SHALLOW (ohm.m) | 19.20 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.17** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7302,6 +6661,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 190.0 U |
+| mTVDss | -1193.45 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2720m: pl gry brn,pl gry,clr-trnsl, vf-f,pred vf,g/t aren SLTST,v wl srt, sbang-sbrnd,mod strg sil cmt,com off wh-pl gry arg mtx,occ-com slty lams,tr qtz ovgths,tr carb spks,mod
@@ -7314,10 +6674,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 105.4 | 33 |
 | RES_DEEP (ohm.m) | 21.26 | 33 |
 | RES_SHALLOW (ohm.m) | 19.24 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.02** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7333,6 +6689,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 225.0 U |
+| mTVDss | -1193.48 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7342,10 +6699,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 100.2 | 33 |
 | RES_DEEP (ohm.m) | 23.06 | 33 |
 | RES_SHALLOW (ohm.m) | 20.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.69** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7361,6 +6714,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 160.0 U |
+| mTVDss | -1193.50 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7370,10 +6724,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 100.8 | 33 |
 | RES_DEEP (ohm.m) | 23.10 | 33 |
 | RES_SHALLOW (ohm.m) | 20.58 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.53** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7389,6 +6739,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 228.0 U |
+| mTVDss | -1193.50 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7398,10 +6749,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.2 | 33 |
 | RES_DEEP (ohm.m) | 23.73 | 33 |
 | RES_SHALLOW (ohm.m) | 22.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.07** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7417,6 +6764,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 226.0 U |
+| mTVDss | -1193.48 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7426,10 +6774,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.0 | 32 |
 | RES_DEEP (ohm.m) | 23.89 | 32 |
 | RES_SHALLOW (ohm.m) | 23.99 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.10** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7445,6 +6789,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse to very coarse. 100% bright |
 | Total Gas | 243.0 U |
+| mTVDss | -1193.48 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7454,10 +6799,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 70.9 | 33 |
 | RES_DEEP (ohm.m) | 23.17 | 33 |
 | RES_SHALLOW (ohm.m) | 23.36 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.18** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7473,6 +6814,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 257.0 U |
+| mTVDss | -1193.50 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7482,10 +6824,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.7 | 33 |
 | RES_DEEP (ohm.m) | 25.13 | 33 |
 | RES_SHALLOW (ohm.m) | 22.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.23** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7501,6 +6839,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% siltstone, 100% very fine to medium sandstone, trace coarse to very coarse. 100% bright-mod bright |
 | Total Gas | 197.0 U |
+| mTVDss | -1193.56 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7510,10 +6849,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 56.0 | 33 |
 | RES_DEEP (ohm.m) | 27.54 | 33 |
 | RES_SHALLOW (ohm.m) | 26.06 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.48** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7529,6 +6864,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse to very coarse. 100% bright-mod bright |
 | Total Gas | 215.0 U |
+| mTVDss | -1193.67 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7538,10 +6874,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 66.8 | 33 |
 | RES_DEEP (ohm.m) | 22.65 | 33 |
 | RES_SHALLOW (ohm.m) | 21.76 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.89** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7557,6 +6889,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse to very coarse. 100% bright |
 | Total Gas | 230.0 U |
+| mTVDss | -1193.81 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7566,10 +6899,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 82.2 | 32 |
 | RES_DEEP (ohm.m) | 22.13 | 32 |
 | RES_SHALLOW (ohm.m) | 21.59 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.53** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7585,6 +6914,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% very coarse. 100% bright-mod bright |
 | Total Gas | 195.0 U |
+| mTVDss | -1193.95 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7594,10 +6924,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.4 | 33 |
 | RES_DEEP (ohm.m) | 21.03 | 33 |
 | RES_SHALLOW (ohm.m) | 18.88 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.15** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7613,6 +6939,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 180.0 U |
+| mTVDss | -1194.09 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7622,10 +6949,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 106.3 | 33 |
 | RES_DEEP (ohm.m) | 19.34 | 33 |
 | RES_SHALLOW (ohm.m) | 17.32 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.02** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7645,6 +6968,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse. 100% mod bright to bright |
 | Total Gas | 166.0 U |
+| mTVDss | -1194.24 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2810m: dk gry,lt-med gry,aren, g/t slty SST i/p,mnr carb spks,com sndy lams,tr micmic,frm,mnr mod hd, sbblky-sbfiss. SURVEY @ 2814.1m
@@ -7656,10 +6980,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 121.6 | 33 |
 | RES_DEEP (ohm.m) | 18.99 | 33 |
 | RES_SHALLOW (ohm.m) | 16.92 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.07** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7679,6 +6999,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium sandstone. 80% mod bright |
 | Total Gas | 166.0 U |
+| mTVDss | -1194.37 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2810m: dk gry,lt-med gry,aren, g/t slty SST i/p,mnr carb spks,com sndy lams,tr micmic,frm,mnr mod hd, sbblky-sbfiss. SURVEY @ 2814.1m
@@ -7690,10 +7011,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 127.3 | 33 |
 | RES_DEEP (ohm.m) | 18.36 | 33 |
 | RES_SHALLOW (ohm.m) | 16.10 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.27** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7713,6 +7030,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% medium sandstone. 70% mod bright |
 | Total Gas | 171.0 U |
+| mTVDss | -1194.46 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2810m: dk gry,lt-med gry,aren, g/t slty SST i/p,mnr carb spks,com sndy lams,tr micmic,frm,mnr mod hd, sbblky-sbfiss. SURVEY @ 2814.1m
@@ -7725,10 +7043,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 108.6 | 32 |
 | RES_DEEP (ohm.m) | 19.06 | 32 |
 | RES_SHALLOW (ohm.m) | 15.93 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.12** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7748,6 +7062,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% medium sandstone. 75% mod bright |
 | Total Gas | 159.0 U |
+| mTVDss | -1194.52 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2810m: dk gry,lt-med gry,aren, g/t slty SST i/p,mnr carb spks,com sndy lams,tr micmic,frm,mnr mod hd, sbblky-sbfiss. SURVEY @ 2814.1m
@@ -7760,10 +7075,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 112.1 | 33 |
 | RES_DEEP (ohm.m) | 19.54 | 33 |
 | RES_SHALLOW (ohm.m) | 16.27 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.27** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7783,6 +7094,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 158.0 U |
+| mTVDss | -1194.55 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2810m: dk gry,lt-med gry,aren, g/t slty SST i/p,mnr carb spks,com sndy lams,tr micmic,frm,mnr mod hd, sbblky-sbfiss. SURVEY @ 2814.1m
@@ -7795,10 +7107,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 111.1 | 33 |
 | RES_DEEP (ohm.m) | 19.09 | 33 |
 | RES_SHALLOW (ohm.m) | 16.11 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.98** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7818,6 +7126,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 176.0 U |
+| mTVDss | -1194.55 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2810m: dk gry,lt-med gry,aren, g/t slty SST i/p,mnr carb spks,com sndy lams,tr micmic,frm,mnr mod hd, sbblky-sbfiss. SURVEY @ 2814.1m
@@ -7830,10 +7139,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 112.8 | 33 |
 | RES_DEEP (ohm.m) | 18.27 | 33 |
 | RES_SHALLOW (ohm.m) | 15.95 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.32** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7853,6 +7158,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 163.0 U |
+| mTVDss | -1194.55 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2810m: dk gry,lt-med gry,aren, g/t slty SST i/p,mnr carb spks,com sndy lams,tr micmic,frm,mnr mod hd, sbblky-sbfiss. SURVEY @ 2814.1m
@@ -7865,10 +7171,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 109.7 | 33 |
 | RES_DEEP (ohm.m) | 18.41 | 33 |
 | RES_SHALLOW (ohm.m) | 15.94 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.47** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7888,6 +7190,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 170.0 U |
+| mTVDss | -1194.53 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2820m: lt-med gry,dk gry,aren, g/t slty SST i/p,com sndy lams,tr carb spks,tr micmic,frm,mnr mod hd, sbblky-sbfiss. 0 0.5 1 4 14 2830 1 10 100 1K
@@ -7900,10 +7203,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 110.8 | 32 |
 | RES_DEEP (ohm.m) | 20.40 | 32 |
 | RES_SHALLOW (ohm.m) | 17.01 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.38** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7923,6 +7222,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 65.0% nan |
 | Total Gas | 168.0 U |
+| mTVDss | -1194.52 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2820m: lt-med gry,dk gry,aren, g/t slty SST i/p,com sndy lams,tr carb spks,tr micmic,frm,mnr mod hd, sbblky-sbfiss. 0 0.5 1 4 14 2830 1 10 100 1K
@@ -7935,10 +7235,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 110.6 | 33 |
 | RES_DEEP (ohm.m) | 19.57 | 33 |
 | RES_SHALLOW (ohm.m) | 16.88 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.70** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7958,6 +7254,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 60.0% nan |
 | Total Gas | 160.0 U |
+| mTVDss | -1194.49 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2840m: lt-med grey,lt grysh brn, vf-f,g/t aren SLTST i/p,v wl srt,sbang- sbrnd,mnr slty lams,wk-mod sil cmt, com gry-brn slty mtx,tr carb spks,fri, mnr mod hd,v pr vis por,fluor.
@@ -7970,10 +7267,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 108.5 | 33 |
 | RES_DEEP (ohm.m) | 20.00 | 33 |
 | RES_SHALLOW (ohm.m) | 17.28 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.72** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7993,6 +7286,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 162.0 U |
+| mTVDss | -1194.45 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2840m: lt-med grey,lt grysh brn, vf-f,g/t aren SLTST i/p,v wl srt,sbang- sbrnd,mnr slty lams,wk-mod sil cmt, com gry-brn slty mtx,tr carb spks,fri, mnr mod hd,v pr vis por,fluor.
@@ -8005,10 +7299,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 108.2 | 33 |
 | RES_DEEP (ohm.m) | 19.78 | 33 |
 | RES_SHALLOW (ohm.m) | 17.63 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.15** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8028,6 +7318,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 166.0 U |
+| mTVDss | -1194.40 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2840m: lt-med grey,lt grysh brn, vf-f,g/t aren SLTST i/p,v wl srt,sbang- sbrnd,mnr slty lams,wk-mod sil cmt, com gry-brn slty mtx,tr carb spks,fri, mnr mod hd,v pr vis por,fluor.
@@ -8040,10 +7331,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 107.1 | 33 |
 | RES_DEEP (ohm.m) | 22.59 | 33 |
 | RES_SHALLOW (ohm.m) | 19.66 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.94** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8063,6 +7350,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 203.0 U |
+| mTVDss | -1194.34 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2840m: lt-med grey,lt grysh brn, vf-f,g/t aren SLTST i/p,v wl srt,sbang- sbrnd,mnr slty lams,wk-mod sil cmt, com gry-brn slty mtx,tr carb spks,fri, mnr mod hd,v pr vis por,fluor.
@@ -8075,10 +7363,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.3 | 33 |
 | RES_DEEP (ohm.m) | 23.25 | 33 |
 | RES_SHALLOW (ohm.m) | 19.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.35** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8094,6 +7378,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 247.0 U |
+| mTVDss | -1194.28 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8103,10 +7388,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 106.5 | 33 |
 | RES_DEEP (ohm.m) | 22.61 | 33 |
 | RES_SHALLOW (ohm.m) | 20.04 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.57** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8122,6 +7403,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% mod bright to bright |
 | Total Gas | 215.0 U |
+| mTVDss | -1194.22 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8131,10 +7413,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.9 | 33 |
 | RES_DEEP (ohm.m) | 21.71 | 33 |
 | RES_SHALLOW (ohm.m) | 19.02 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.69** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8150,6 +7428,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright |
 | Total Gas | 236.0 U |
+| mTVDss | -1194.16 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8159,10 +7438,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.3 | 33 |
 | RES_DEEP (ohm.m) | 21.10 | 33 |
 | RES_SHALLOW (ohm.m) | 19.08 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.02** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8178,6 +7453,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright |
 | Total Gas | 268.0 U |
+| mTVDss | -1194.11 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8187,10 +7463,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.7 | 33 |
 | RES_DEEP (ohm.m) | 21.45 | 33 |
 | RES_SHALLOW (ohm.m) | 19.45 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.00** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8206,6 +7478,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 232.0 U |
+| mTVDss | -1194.05 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8215,10 +7488,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.3 | 33 |
 | RES_DEEP (ohm.m) | 22.15 | 33 |
 | RES_SHALLOW (ohm.m) | 20.53 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.62** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8234,6 +7503,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse, Sandstone, 100% bright |
 | Total Gas | 244.0 U |
+| mTVDss | -1194.00 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8243,10 +7513,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.9 | 32 |
 | RES_DEEP (ohm.m) | 20.96 | 32 |
 | RES_SHALLOW (ohm.m) | 20.05 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.91** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8262,6 +7528,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright |
 | Total Gas | 268.0 U |
+| mTVDss | -1193.94 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8271,10 +7538,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.9 | 33 |
 | RES_DEEP (ohm.m) | 22.36 | 33 |
 | RES_SHALLOW (ohm.m) | 21.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.71** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8294,6 +7557,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 277.0 U |
+| mTVDss | -1193.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2910m: dk gry,med dk gry,med gry, aren,intrlam w/ SST i/p,arg i/p,micmic, tr carb spks,frm-sft,mnr mod hd,sbblky- blky,mnr sbfiss.
@@ -8306,10 +7570,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.9 | 33 |
 | RES_DEEP (ohm.m) | 23.92 | 33 |
 | RES_SHALLOW (ohm.m) | 23.45 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.47** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8329,6 +7589,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright |
 | Total Gas | 283.0 U |
+| mTVDss | -1193.86 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2910m: dk gry,med dk gry,med gry, aren,intrlam w/ SST i/p,arg i/p,micmic, tr carb spks,frm-sft,mnr mod hd,sbblky- blky,mnr sbfiss.
@@ -8341,10 +7602,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.9 | 33 |
 | RES_DEEP (ohm.m) | 22.50 | 33 |
 | RES_SHALLOW (ohm.m) | 22.92 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.42** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8364,6 +7621,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 290.0 U |
+| mTVDss | -1193.84 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2910m: dk gry,med dk gry,med gry, aren,intrlam w/ SST i/p,arg i/p,micmic, tr carb spks,frm-sft,mnr mod hd,sbblky- blky,mnr sbfiss.
@@ -8376,10 +7634,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.0 | 33 |
 | RES_DEEP (ohm.m) | 22.20 | 33 |
 | RES_SHALLOW (ohm.m) | 22.95 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.75** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8399,6 +7653,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% bright |
 | Total Gas | 283.0 U |
+| mTVDss | -1193.83 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2910m: dk gry,med dk gry,med gry, aren,intrlam w/ SST i/p,arg i/p,micmic, tr carb spks,frm-sft,mnr mod hd,sbblky- blky,mnr sbfiss.
@@ -8411,10 +7666,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.3 | 32 |
 | RES_DEEP (ohm.m) | 22.02 | 32 |
 | RES_SHALLOW (ohm.m) | 22.71 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.69** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8434,6 +7685,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 282.0 U |
+| mTVDss | -1193.83 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2910m: dk gry,med dk gry,med gry, aren,intrlam w/ SST i/p,arg i/p,micmic, tr carb spks,frm-sft,mnr mod hd,sbblky- blky,mnr sbfiss.
@@ -8446,10 +7698,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.8 | 33 |
 | RES_DEEP (ohm.m) | 21.63 | 33 |
 | RES_SHALLOW (ohm.m) | 22.52 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.89** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8469,6 +7717,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 257.0 U |
+| mTVDss | -1193.83 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2910m: dk gry,med dk gry,med gry, aren,intrlam w/ SST i/p,arg i/p,micmic, tr carb spks,frm-sft,mnr mod hd,sbblky- blky,mnr sbfiss.
@@ -8481,10 +7730,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.9 | 33 |
 | RES_DEEP (ohm.m) | 24.73 | 33 |
 | RES_SHALLOW (ohm.m) | 25.24 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.51** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8504,6 +7749,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 252.0 U |
+| mTVDss | -1193.84 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2910m: dk gry,med dk gry,med gry, aren,intrlam w/ SST i/p,arg i/p,micmic, tr carb spks,frm-sft,mnr mod hd,sbblky- blky,mnr sbfiss.
@@ -8516,10 +7762,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.9 | 33 |
 | RES_DEEP (ohm.m) | 24.11 | 33 |
 | RES_SHALLOW (ohm.m) | 23.19 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.92** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8535,6 +7777,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 258.0 U |
+| mTVDss | -1193.85 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8544,10 +7787,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.9 | 33 |
 | RES_DEEP (ohm.m) | 23.11 | 33 |
 | RES_SHALLOW (ohm.m) | 22.79 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.32** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8567,6 +7806,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright |
 | Total Gas | 265.0 U |
+| mTVDss | -1193.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2950m: clr-trnsl,lt grysh brn,pl gry, vf-med,mnr crs,pr srt,sbrnd-sbang,mod wk sil cmt,occ pl gry brn arg mtx,tr carb spks, tr slty lams,com qtz ovgths,occ mod hd aggs,com-pred disagg qtz grs,pr vis por,
@@ -8578,10 +7818,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.5 | 32 |
 | RES_DEEP (ohm.m) | 24.96 | 32 |
 | RES_SHALLOW (ohm.m) | 25.08 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.12** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8601,6 +7837,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 263.0 U |
+| mTVDss | -1193.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2950m: clr-trnsl,lt grysh brn,pl gry, vf-med,mnr crs,pr srt,sbrnd-sbang,mod wk sil cmt,occ pl gry brn arg mtx,tr carb spks, tr slty lams,com qtz ovgths,occ mod hd aggs,com-pred disagg qtz grs,pr vis por,
@@ -8612,10 +7849,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 77.7 | 33 |
 | RES_DEEP (ohm.m) | 24.68 | 33 |
 | RES_SHALLOW (ohm.m) | 23.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.69** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8635,6 +7868,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% very coarse, 100% bright |
 | Total Gas | 286.0 U |
+| mTVDss | -1193.83 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2950m: clr-trnsl,lt grysh brn,pl gry, vf-med,mnr crs,pr srt,sbrnd-sbang,mod wk sil cmt,occ pl gry brn arg mtx,tr carb spks, tr slty lams,com qtz ovgths,occ mod hd aggs,com-pred disagg qtz grs,pr vis por,
@@ -8646,10 +7880,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 72.1 | 33 |
 | RES_DEEP (ohm.m) | 25.68 | 33 |
 | RES_SHALLOW (ohm.m) | 23.55 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.13** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8669,6 +7899,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% coarse, 100% bright |
 | Total Gas | 285.0 U |
+| mTVDss | -1193.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2950m: clr-trnsl,lt grysh brn,pl gry, vf-med,mnr crs,pr srt,sbrnd-sbang,mod wk sil cmt,occ pl gry brn arg mtx,tr carb spks, tr slty lams,com qtz ovgths,occ mod hd aggs,com-pred disagg qtz grs,pr vis por,
@@ -8680,10 +7911,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 77.6 | 33 |
 | RES_DEEP (ohm.m) | 26.55 | 33 |
 | RES_SHALLOW (ohm.m) | 23.85 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.70** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8703,6 +7930,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 288.0 U |
+| mTVDss | -1193.79 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2950m: clr-trnsl,lt grysh brn,pl gry, vf-med,mnr crs,pr srt,sbrnd-sbang,mod wk sil cmt,occ pl gry brn arg mtx,tr carb spks, tr slty lams,com qtz ovgths,occ mod hd aggs,com-pred disagg qtz grs,pr vis por,
@@ -8715,10 +7943,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.7 | 33 |
 | RES_DEEP (ohm.m) | 28.87 | 33 |
 | RES_SHALLOW (ohm.m) | 26.25 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.62** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8738,6 +7962,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright |
 | Total Gas | 297.0 U |
+| mTVDss | -1193.78 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2950m: clr-trnsl,lt grysh brn,pl gry, vf-med,mnr crs,pr srt,sbrnd-sbang,mod wk sil cmt,occ pl gry brn arg mtx,tr carb spks, tr slty lams,com qtz ovgths,occ mod hd aggs,com-pred disagg qtz grs,pr vis por,
@@ -8750,10 +7975,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 84.5 | 32 |
 | RES_DEEP (ohm.m) | 29.21 | 32 |
 | RES_SHALLOW (ohm.m) | 24.59 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.62** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8773,6 +7994,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright |
 | Total Gas | 295.0 U |
+| mTVDss | -1193.79 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2950m: clr-trnsl,lt grysh brn,pl gry, vf-med,mnr crs,pr srt,sbrnd-sbang,mod wk sil cmt,occ pl gry brn arg mtx,tr carb spks, tr slty lams,com qtz ovgths,occ mod hd aggs,com-pred disagg qtz grs,pr vis por,
@@ -8785,10 +8007,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.1 | 33 |
 | RES_DEEP (ohm.m) | 30.68 | 33 |
 | RES_SHALLOW (ohm.m) | 25.31 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.37** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8808,6 +8026,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright |
 | Total Gas | 290.0 U |
+| mTVDss | -1193.80 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: lt grysh brn,lt gry,clr,trnsl, vf-crs,mnr crs,v pr srt,sbang-sbrnd,tr ang crs,wk-mod sil cmt,mnr gry-brn arg mtx,tr carb spks,tr mic flks,fri,mnr mod hd,com disagg,pr vis por,gd inf por,
@@ -8819,10 +8038,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 76.2 | 33 |
 | RES_DEEP (ohm.m) | 32.21 | 33 |
 | RES_SHALLOW (ohm.m) | 26.03 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.18** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8842,6 +8057,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 280.0 U |
+| mTVDss | -1193.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: lt grysh brn,lt gry,clr,trnsl, vf-crs,mnr crs,v pr srt,sbang-sbrnd,tr ang crs,wk-mod sil cmt,mnr gry-brn arg mtx,tr carb spks,tr mic flks,fri,mnr mod hd,com disagg,pr vis por,gd inf por,
@@ -8854,10 +8070,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.8 | 33 |
 | RES_DEEP (ohm.m) | 29.33 | 33 |
 | RES_SHALLOW (ohm.m) | 23.98 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.35** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8877,6 +8089,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 267.0 U |
+| mTVDss | -1193.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: lt grysh brn,lt gry,clr,trnsl, vf-crs,mnr crs,v pr srt,sbang-sbrnd,tr ang crs,wk-mod sil cmt,mnr gry-brn arg mtx,tr carb spks,tr mic flks,fri,mnr mod hd,com disagg,pr vis por,gd inf por,
@@ -8889,10 +8102,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.1 | 33 |
 | RES_DEEP (ohm.m) | 26.74 | 33 |
 | RES_SHALLOW (ohm.m) | 21.62 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.12** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8912,6 +8121,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 260.0 U |
+| mTVDss | -1193.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: lt grysh brn,lt gry,clr,trnsl, vf-crs,mnr crs,v pr srt,sbang-sbrnd,tr ang crs,wk-mod sil cmt,mnr gry-brn arg mtx,tr carb spks,tr mic flks,fri,mnr mod hd,com disagg,pr vis por,gd inf por,
@@ -8924,10 +8134,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.5 | 33 |
 | RES_DEEP (ohm.m) | 29.77 | 33 |
 | RES_SHALLOW (ohm.m) | 23.03 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.74** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8947,6 +8153,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 232.0 U |
+| mTVDss | -1193.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2990m: lt grysh brn,lt gry,clr,trnsl, vf-crs,mnr crs,v pr srt,sbang-sbrnd,tr ang crs,wk-mod sil cmt,mnr gry-brn arg mtx,tr carb spks,tr mic flks,fri,mnr mod hd,com disagg,pr vis por,gd inf por,
@@ -8959,10 +8166,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 111.8 | 32 |
 | RES_DEEP (ohm.m) | 26.89 | 32 |
 | RES_SHALLOW (ohm.m) | 20.40 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.49** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8982,6 +8185,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 85.0% nan |
 | Total Gas | 214.0 U |
+| mTVDss | -1193.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2990m: lt grysh brn,lt gry,clr,trnsl, vf-crs,mnr crs,v pr srt,sbang-sbrnd,tr ang crs,wk-mod sil cmt,mnr gry-brn arg mtx,tr carb spks,tr mic flks,fri,mnr mod hd,com disagg,pr vis por,gd inf por,
@@ -8994,10 +8198,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 107.4 | 33 |
 | RES_DEEP (ohm.m) | 28.52 | 33 |
 | RES_SHALLOW (ohm.m) | 21.82 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.70** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9017,6 +8217,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 65.0% nan |
 | Total Gas | 190.0 U |
+| mTVDss | -1194.04 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2990m: lt grysh brn,lt gry,clr,trnsl, vf-crs,mnr crs,v pr srt,sbang-sbrnd,tr ang crs,wk-mod sil cmt,mnr gry-brn arg mtx,tr carb spks,tr mic flks,fri,mnr mod hd,com disagg,pr vis por,gd inf por,
@@ -9029,10 +8230,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 109.9 | 33 |
 | RES_DEEP (ohm.m) | 26.53 | 33 |
 | RES_SHALLOW (ohm.m) | 20.75 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.78** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9052,6 +8249,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 202.0 U |
+| mTVDss | -1194.17 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2990m: lt grysh brn,lt gry,clr,trnsl, vf-crs,mnr crs,v pr srt,sbang-sbrnd,tr ang crs,wk-mod sil cmt,mnr gry-brn arg mtx,tr carb spks,tr mic flks,fri,mnr mod hd,com disagg,pr vis por,gd inf por,
@@ -9064,10 +8262,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 113.8 | 33 |
 | RES_DEEP (ohm.m) | 24.83 | 33 |
 | RES_SHALLOW (ohm.m) | 21.78 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.06** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9087,6 +8281,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 200.0 U |
+| mTVDss | -1194.32 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3010m: clr-trnsl,pl gry,vf-crs,pr srt,sbrnd-sbang,mod strg sil mtx,mnr pl gry brn arg mtx,tr carb spks,rr qtz ovgths, mod hd-fri aggs,pred lse,cln qtz grs,pr vis por,gd inf por,fluor.
@@ -9099,10 +8294,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 109.4 | 33 |
 | RES_DEEP (ohm.m) | 25.33 | 33 |
 | RES_SHALLOW (ohm.m) | 22.19 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.15** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9122,6 +8313,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 234.0 U |
+| mTVDss | -1194.47 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3010m: clr-trnsl,pl gry,vf-crs,pr srt,sbrnd-sbang,mod strg sil mtx,mnr pl gry brn arg mtx,tr carb spks,rr qtz ovgths, mod hd-fri aggs,pred lse,cln qtz grs,pr vis por,gd inf por,fluor.
@@ -9134,10 +8326,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.9 | 32 |
 | RES_DEEP (ohm.m) | 24.25 | 32 |
 | RES_SHALLOW (ohm.m) | 19.96 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.29** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9157,6 +8345,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 248.0 U |
+| mTVDss | -1194.63 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3010m: clr-trnsl,pl gry,vf-crs,pr srt,sbrnd-sbang,mod strg sil mtx,mnr pl gry brn arg mtx,tr carb spks,rr qtz ovgths, mod hd-fri aggs,pred lse,cln qtz grs,pr vis por,gd inf por,fluor.
@@ -9169,10 +8358,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.8 | 33 |
 | RES_DEEP (ohm.m) | 24.07 | 33 |
 | RES_SHALLOW (ohm.m) | 20.08 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.98** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9192,6 +8377,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 253.0 U |
+| mTVDss | -1194.80 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3010m: clr-trnsl,pl gry,vf-crs,pr srt,sbrnd-sbang,mod strg sil mtx,mnr pl gry brn arg mtx,tr carb spks,rr qtz ovgths, mod hd-fri aggs,pred lse,cln qtz grs,pr vis por,gd inf por,fluor.
@@ -9204,10 +8390,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 73.8 | 33 |
 | RES_DEEP (ohm.m) | 24.74 | 33 |
 | RES_SHALLOW (ohm.m) | 21.22 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.52** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9227,6 +8409,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 295.0 U |
+| mTVDss | -1194.97 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3020m: clr-trnsl,pl gry,vf-crs,pr srt,sbrnd-sbang,mod str sil mt,com pl 0 0.5 1 4 14 3030 1 10 100 1K gry brn arg mtx,tr carb spks,rr qtz ovgths, 14 18 28 1K 10K mod hd-fri aggs,pred lse,cln qtz grs,pr vis por,gd inf por,fluor.
@@ -9239,10 +8422,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 72.3 | 33 |
 | RES_DEEP (ohm.m) | 25.48 | 33 |
 | RES_SHALLOW (ohm.m) | 24.34 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.14** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9262,6 +8441,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 252.0 U |
+| mTVDss | -1195.14 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3020m: clr-trnsl,pl gry,vf-crs,pr srt,sbrnd-sbang,mod str sil mt,com pl 0 0.5 1 4 14 3030 1 10 100 1K gry brn arg mtx,tr carb spks,rr qtz ovgths, 14 18 28 1K 10K mod hd-fri aggs,pred lse,cln qtz grs,pr vis por,gd inf por,fluor.
@@ -9274,10 +8454,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 67.2 | 33 |
 | RES_DEEP (ohm.m) | 23.89 | 33 |
 | RES_SHALLOW (ohm.m) | 22.53 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.36** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9297,6 +8473,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 255.0 U |
+| mTVDss | -1195.33 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3040m: pl brn gry,clr-trnsl,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,abdt pl gry brn arg mtx,occ qtz ovgths,tr carb flks,por,mnr slty lams, 3050 mnr lse,pr vis gd inf por,fluor.
@@ -9309,10 +8486,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 73.8 | 32 |
 | RES_DEEP (ohm.m) | 24.69 | 32 |
 | RES_SHALLOW (ohm.m) | 23.63 | 32 |
-| **Δ Res (Deep − Shallow)** | **1.06** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9332,6 +8505,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 270.0 U |
+| mTVDss | -1195.51 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3040m: pl brn gry,clr-trnsl,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,abdt pl gry brn arg mtx,occ qtz ovgths,tr carb flks,por,mnr slty lams, 3050 mnr lse,pr vis gd inf por,fluor.
@@ -9344,10 +8518,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.0 | 33 |
 | RES_DEEP (ohm.m) | 23.20 | 33 |
 | RES_SHALLOW (ohm.m) | 23.74 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.54** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9367,6 +8537,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 245.0 U |
+| mTVDss | -1195.68 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3040m: pl brn gry,clr-trnsl,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,abdt pl gry brn arg mtx,occ qtz ovgths,tr carb flks,por,mnr slty lams, 3050 mnr lse,pr vis gd inf por,fluor.
@@ -9379,10 +8550,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 106.4 | 33 |
 | RES_DEEP (ohm.m) | 21.34 | 33 |
 | RES_SHALLOW (ohm.m) | 22.02 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.68** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9402,6 +8569,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 251.0 U |
+| mTVDss | -1195.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3040m: pl brn gry,clr-trnsl,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,abdt pl gry brn arg mtx,occ qtz ovgths,tr carb flks,por,mnr slty lams, 3050 mnr lse,pr vis gd inf por,fluor.
@@ -9414,10 +8582,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 100.1 | 33 |
 | RES_DEEP (ohm.m) | 21.76 | 33 |
 | RES_SHALLOW (ohm.m) | 22.23 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.47** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9433,6 +8597,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 245.0 U |
+| mTVDss | -1195.94 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9442,10 +8607,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.3 | 33 |
 | RES_DEEP (ohm.m) | 22.19 | 33 |
 | RES_SHALLOW (ohm.m) | 21.91 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.28** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9461,6 +8622,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 232.0 U |
+| mTVDss | -1196.02 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9470,10 +8632,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 104.2 | 32 |
 | RES_DEEP (ohm.m) | 20.91 | 32 |
 | RES_SHALLOW (ohm.m) | 21.28 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.37** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9489,6 +8647,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 288.0 U |
+| mTVDss | -1196.08 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9498,10 +8657,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.3 | 33 |
 | RES_DEEP (ohm.m) | 21.74 | 33 |
 | RES_SHALLOW (ohm.m) | 21.74 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.00** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9521,6 +8676,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 268.0 U |
+| mTVDss | -1196.14 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3090m: clr-trnsl,v pl gry brn,vf-f, occ med,wl srt,sbang-sbrnd,mod strg sil cmt,com pl gry arg mtx,mod hd-fri, pred lse cln qtz grs,mnr qtz ovgths,pr vis por,gd inf por,fluor.
@@ -9533,10 +8689,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.3 | 33 |
 | RES_DEEP (ohm.m) | 21.69 | 33 |
 | RES_SHALLOW (ohm.m) | 21.30 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.40** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9556,6 +8708,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 287.0 U |
+| mTVDss | -1196.18 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3090m: clr-trnsl,v pl gry brn,vf-f, occ med,wl srt,sbang-sbrnd,mod strg sil cmt,com pl gry arg mtx,mod hd-fri, pred lse cln qtz grs,mnr qtz ovgths,pr vis por,gd inf por,fluor.
@@ -9568,10 +8721,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.3 | 33 |
 | RES_DEEP (ohm.m) | 21.73 | 33 |
 | RES_SHALLOW (ohm.m) | 21.85 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.11** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9591,6 +8740,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 282.0 U |
+| mTVDss | -1196.22 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3090m: clr-trnsl,v pl gry brn,vf-f, occ med,wl srt,sbang-sbrnd,mod strg sil cmt,com pl gry arg mtx,mod hd-fri, pred lse cln qtz grs,mnr qtz ovgths,pr vis por,gd inf por,fluor.
@@ -9603,10 +8753,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 82.1 | 33 |
 | RES_DEEP (ohm.m) | 23.13 | 33 |
 | RES_SHALLOW (ohm.m) | 24.83 | 33 |
-| **Δ Res (Deep − Shallow)** | **-1.71** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9626,6 +8772,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 284.0 U |
+| mTVDss | -1196.25 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3090m: clr-trnsl,v pl gry brn,vf-f, occ med,wl srt,sbang-sbrnd,mod strg sil cmt,com pl gry arg mtx,mod hd-fri, pred lse cln qtz grs,mnr qtz ovgths,pr vis por,gd inf por,fluor.
@@ -9638,10 +8785,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 74.2 | 32 |
 | RES_DEEP (ohm.m) | 22.79 | 32 |
 | RES_SHALLOW (ohm.m) | 22.94 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.15** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9661,6 +8804,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 302.0 U |
+| mTVDss | -1196.28 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3090m: clr-trnsl,v pl gry brn,vf-f, occ med,wl srt,sbang-sbrnd,mod strg sil cmt,com pl gry arg mtx,mod hd-fri, pred lse cln qtz grs,mnr qtz ovgths,pr vis por,gd inf por,fluor.
@@ -9673,10 +8817,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 72.5 | 33 |
 | RES_DEEP (ohm.m) | 22.07 | 33 |
 | RES_SHALLOW (ohm.m) | 21.36 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.70** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9696,6 +8836,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 294.0 U |
+| mTVDss | -1196.30 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3090m: clr-trnsl,v pl gry brn,vf-f, occ med,wl srt,sbang-sbrnd,mod strg sil cmt,com pl gry arg mtx,mod hd-fri, pred lse cln qtz grs,mnr qtz ovgths,pr vis por,gd inf por,fluor.
@@ -9708,10 +8849,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.3 | 33 |
 | RES_DEEP (ohm.m) | 21.41 | 33 |
 | RES_SHALLOW (ohm.m) | 20.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.73** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9731,6 +8868,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | strg sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 255.0 U |
+| mTVDss | -1196.33 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3090m: clr-trnsl,v pl gry brn,vf-f, occ med,wl srt,sbang-sbrnd,mod strg sil cmt,com pl gry arg mtx,mod hd-fri, pred lse cln qtz grs,mnr qtz ovgths,pr vis por,gd inf por,fluor.
@@ -9743,10 +8881,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.6 | 33 |
 | RES_DEEP (ohm.m) | 20.34 | 33 |
 | RES_SHALLOW (ohm.m) | 19.76 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.58** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9766,6 +8900,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 284.0 U |
+| mTVDss | -1196.35 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3110m: v pl gry brn,clr,trnsl,vf-f, v wl srt,sbang-sbrnd,mod sil cmt,com pl gry arg mtx,fri-mod hd,com vf-f disagg qtz grs,com lse fri,mnr mod hd, pr vis por,fr-gd inf por,fluor.
@@ -9778,10 +8913,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 77.0 | 33 |
 | RES_DEEP (ohm.m) | 19.37 | 33 |
 | RES_SHALLOW (ohm.m) | 19.32 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.05** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9801,6 +8932,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 257.0 U |
+| mTVDss | -1196.37 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3110m: v pl gry brn,clr,trnsl,vf-f, v wl srt,sbang-sbrnd,mod sil cmt,com pl gry arg mtx,fri-mod hd,com vf-f disagg qtz grs,com lse fri,mnr mod hd, pr vis por,fr-gd inf por,fluor.
@@ -9813,10 +8945,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.9 | 33 |
 | RES_DEEP (ohm.m) | 19.65 | 33 |
 | RES_SHALLOW (ohm.m) | 18.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.72** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9836,6 +8964,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium, Sandstone, common loose. 100% bright |
 | Total Gas | 266.0 U |
+| mTVDss | -1196.39 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3110m: v pl gry brn,clr,trnsl,vf-f, v wl srt,sbang-sbrnd,mod sil cmt,com pl gry arg mtx,fri-mod hd,com vf-f disagg qtz grs,com lse fri,mnr mod hd, pr vis por,fr-gd inf por,fluor.
@@ -9848,10 +8977,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 74.4 | 32 |
 | RES_DEEP (ohm.m) | 18.77 | 32 |
 | RES_SHALLOW (ohm.m) | 19.18 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.41** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9871,6 +8996,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 311.0 U |
+| mTVDss | -1196.41 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3110m: v pl gry brn,clr,trnsl,vf-f, v wl srt,sbang-sbrnd,mod sil cmt,com pl gry arg mtx,fri-mod hd,com vf-f disagg qtz grs,com lse fri,mnr mod hd, pr vis por,fr-gd inf por,fluor.
@@ -9883,10 +9009,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 71.9 | 33 |
 | RES_DEEP (ohm.m) | 19.22 | 33 |
 | RES_SHALLOW (ohm.m) | 19.75 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.53** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9906,6 +9028,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, minorloose. 100% bright |
 | Total Gas | 290.0 U |
+| mTVDss | -1196.43 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3120m: v pl gry brn,lt gry,clr,trnsl, vf-f,tr slty lams,wl srt,sbang-sbrnd,mod sil cmt,com gry-brn arg mtx,fri,mnr mod 69 / 6 / 5 / 9 / 11 314 U hd,mnr disagg f qtz grs,pr-v pr vis por, fr inf por,fluor.
@@ -9918,10 +9041,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 74.1 | 33 |
 | RES_DEEP (ohm.m) | 19.08 | 33 |
 | RES_SHALLOW (ohm.m) | 19.67 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.59** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9941,6 +9060,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, minor loose. 100% bright |
 | Total Gas | 267.0 U |
+| mTVDss | -1196.45 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3120m: v pl gry brn,lt gry,clr,trnsl, vf-f,tr slty lams,wl srt,sbang-sbrnd,mod sil cmt,com gry-brn arg mtx,fri,mnr mod 69 / 6 / 5 / 9 / 11 314 U hd,mnr disagg f qtz grs,pr-v pr vis por, fr inf por,fluor.
@@ -9953,10 +9073,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.6 | 33 |
 | RES_DEEP (ohm.m) | 19.15 | 33 |
 | RES_SHALLOW (ohm.m) | 19.66 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.52** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9976,6 +9092,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse Sandstone, common loose. 100% bright |
 | Total Gas | 268.0 U |
+| mTVDss | -1196.50 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3140m: 1-7 klbs 3150 SILTSTONE:dk gry-v dk gry,med dk FLW: 248-271gpm
@@ -9988,10 +9105,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 71.6 | 33 |
 | RES_DEEP (ohm.m) | 19.00 | 33 |
 | RES_SHALLOW (ohm.m) | 18.97 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.02** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10011,6 +9124,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 269.0 U |
+| mTVDss | -1196.57 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3140m: 1-7 klbs 3150 SILTSTONE:dk gry-v dk gry,med dk FLW: 248-271gpm
@@ -10023,10 +9137,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 74.3 | 32 |
 | RES_DEEP (ohm.m) | 18.06 | 32 |
 | RES_SHALLOW (ohm.m) | 18.28 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.22** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10046,6 +9156,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% coarse Sandstone, common loose. 100% bright |
 | Total Gas | 276.0 U |
+| mTVDss | -1196.66 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3140m: 1-7 klbs 3150 SILTSTONE:dk gry-v dk gry,med dk FLW: 248-271gpm
@@ -10058,10 +9169,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 72.9 | 33 |
 | RES_DEEP (ohm.m) | 17.77 | 33 |
 | RES_SHALLOW (ohm.m) | 17.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.13** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10081,6 +9188,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% vrey coarse Sandstone, common loose. 100% bright |
 | Total Gas | 266.0 U |
+| mTVDss | -1196.77 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3140m: 1-7 klbs 3150 SILTSTONE:dk gry-v dk gry,med dk FLW: 248-271gpm
@@ -10093,10 +9201,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 74.5 | 33 |
 | RES_DEEP (ohm.m) | 17.47 | 33 |
 | RES_SHALLOW (ohm.m) | 17.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.46** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10116,6 +9220,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, common loose. 100% bright |
 | Total Gas | 257.0 U |
+| mTVDss | -1196.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3170m: grysh blk-v dk gry, arg,aren i/p,frm,mnr mod hd,sbfiss. SURVEY @ 3175.4m INC: 88.56° AZI: 82.14°G
@@ -10128,10 +9233,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.1 | 33 |
 | RES_DEEP (ohm.m) | 18.14 | 33 |
 | RES_SHALLOW (ohm.m) | 18.43 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.29** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10151,6 +9252,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 259.0 U |
+| mTVDss | -1197.04 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3170m: grysh blk-v dk gry, arg,aren i/p,frm,mnr mod hd,sbfiss. SURVEY @ 3175.4m INC: 88.56° AZI: 82.14°G
@@ -10163,10 +9265,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.7 | 33 |
 | RES_DEEP (ohm.m) | 18.01 | 33 |
 | RES_SHALLOW (ohm.m) | 17.94 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.07** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10186,6 +9284,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 263.0 U |
+| mTVDss | -1197.18 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3170m: grysh blk-v dk gry, arg,aren i/p,frm,mnr mod hd,sbfiss. SURVEY @ 3175.4m INC: 88.56° AZI: 82.14°G
@@ -10198,10 +9297,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 104.8 | 32 |
 | RES_DEEP (ohm.m) | 18.12 | 32 |
 | RES_SHALLOW (ohm.m) | 18.17 | 32 |
-| **Δ Res (Deep − Shallow)** | **-0.05** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10221,6 +9316,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 50.0% coarse, common loose. 50% moderately bright |
 | Total Gas | 223.0 U |
+| mTVDss | -1197.31 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3170m: grysh blk-v dk gry, arg,aren i/p,frm,mnr mod hd,sbfiss. SURVEY @ 3175.4m INC: 88.56° AZI: 82.14°G
@@ -10233,10 +9329,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.8 | 33 |
 | RES_DEEP (ohm.m) | 17.32 | 33 |
 | RES_SHALLOW (ohm.m) | 15.85 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.47** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10256,6 +9348,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 25.0% coarse, common loose. 25% moderately bright to dull |
 | Total Gas | 186.0 U |
+| mTVDss | -1197.43 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3170m: grysh blk-v dk gry, arg,aren i/p,frm,mnr mod hd,sbfiss. SURVEY @ 3175.4m INC: 88.56° AZI: 82.14°G
@@ -10268,10 +9361,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.3 | 33 |
 | RES_DEEP (ohm.m) | 17.29 | 33 |
 | RES_SHALLOW (ohm.m) | 15.07 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.22** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10291,6 +9380,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 35.0% nan |
 | Total Gas | 175.0 U |
+| mTVDss | -1197.52 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3170m: grysh blk-v dk gry, arg,aren i/p,frm,mnr mod hd,sbfiss. SURVEY @ 3175.4m INC: 88.56° AZI: 82.14°G
@@ -10303,10 +9393,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.2 | 33 |
 | RES_DEEP (ohm.m) | 16.27 | 33 |
 | RES_SHALLOW (ohm.m) | 14.14 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.13** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10322,6 +9408,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 40.0% nan |
 | Total Gas | 168.0 U |
+| mTVDss | -1197.59 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -10331,10 +9418,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.3 | 11 |
 | RES_DEEP (ohm.m) | 16.58 | 33 |
 | RES_SHALLOW (ohm.m) | 14.08 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.50** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10350,6 +9433,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 40.0% nan |
 | Total Gas | 167.0 U |
+| mTVDss | -1197.64 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -10358,10 +9442,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |-------|---------|-------------|
 | RES_DEEP (ohm.m) | 15.70 | 29 |
 | RES_SHALLOW (ohm.m) | 13.73 | 29 |
-| **Δ Res (Deep − Shallow)** | **1.98** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10377,6 +9457,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 40.0% nan |
 | Total Gas | 163.0 U |
+| mTVDss | -1197.68 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -10384,7 +9465,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Curve | Average | Data Points |
 |-------|---------|-------------|
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 3205 m MD — Interval 3202.5 – 3207.5 m
@@ -10399,6 +9479,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 35.0% nan |
 | Total Gas | 142.0 U |
+| mTVDss | -1197.70 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -10406,7 +9487,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Curve | Average | Data Points |
 |-------|---------|-------------|
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ## 5. Summary Statistics (McKinlay Member)
@@ -10416,7 +9496,4 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Intervals analysed | 309 |
 | Depth range | 1675 – 3205 m |
 | Avg % Sandstone | 87.7% |
-| Avg Δ Res (Deep−Shallow) | 2.02 ohm.m |
-| Max Δ Res | 11.11 ohm.m |
-| Min Δ Res | -1.71 ohm.m |
 | Mudlog matches | 253 / 309 |

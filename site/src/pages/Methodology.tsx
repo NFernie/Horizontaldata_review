@@ -46,10 +46,39 @@ export function Methodology() {
       <header>
         <h1 className="text-xl font-semibold text-text sm:text-2xl">Methodology</h1>
         <p className="mt-1 max-w-3xl text-sm text-text-muted">
-          Statistical methods, tunable cutoffs (from <code className="text-accent">site/src/config.ts</code>
-          ), and data-quality caveats for the McKinlay Member water-risk review.
+          Statistical methods for the McKinlay Member water-risk review —{" "}
+          <strong className="font-normal text-text">23 horizontal wells</strong>, RQI v2 (8 components),
+          WRCI v2 (OWC-aware), ZOI along-wellbore flags, and pay summaries with overburden exclusion.
+          Tunable cutoffs mirror <code className="text-accent">scripts/config.py</code> and{" "}
+          <code className="text-accent">site/src/config.ts</code>.
         </p>
       </header>
+
+      <Card title="Pipeline overview" description="updated-plan-2026-07-10 — Phases 1–6">
+        <ol className="list-decimal space-y-2 pl-5 text-sm text-text-muted">
+          <li>
+            <strong className="text-text">Process</strong> — mudlog + cuttings + LAS + trajectory →
+            interpretation markdown and interval records (McKinlay 10–15 via litho/gas ingest).
+          </li>
+          <li>
+            <strong className="text-text">Pay</strong> — cuttings, resistivity, and matching pay with
+            overburden zones excluded (<code className="text-accent">compute_pay_summary.py</code>).
+          </li>
+          <li>
+            <strong className="text-text">Export</strong> — RQI v2, ZOI, OWC proximity, WRCI, risk class,
+            Spearman / Jaccard / KS / clusters → <code className="text-accent">site/public/data/</code>.
+          </li>
+          <li>
+            <strong className="text-text">Site</strong> — Well Detail, Water-Risk Explorer, and inter-well
+            comparison views consume exported JSON.
+          </li>
+        </ol>
+        <p className="mt-3 text-sm text-text-muted">
+          Retired: ΔRes (<code className="text-accent">res_sep</code>) and{" "}
+          <code className="text-accent">highperm</code> permeability proxy — suspended per stakeholder
+          decision (see <code className="text-accent">updated-plan-2026-07-10.md</code>).
+        </p>
+      </Card>
 
       <Card title="Water-Risk Composite Index (WRCI)" description="updated-plan §3B — intra-well scoring">
         <div className="space-y-4 text-sm text-text-muted">
@@ -145,11 +174,16 @@ export function Methodology() {
         </div>
       </Card>
 
-      <Card title="Pay cutoffs">
+      <Card title="Pay cutoffs & overburden">
         <ul className="list-disc space-y-1 pl-5 text-sm text-text-muted">
-          <li>% Sandstone &gt; {SS_CUTOFF}%</li>
-          <li>% Fluorescence &gt; {FLUOR_CUTOFF}%</li>
-          <li>RES_DEEP &gt; {RES_DEEP_CUTOFF} ohm.m (matching pay)</li>
+          <li>% Sandstone &gt; {SS_CUTOFF}% (cuttings pay)</li>
+          <li>% Fluorescence &gt; {FLUOR_CUTOFF}% (cuttings pay)</li>
+          <li>RES_DEEP &gt; {RES_DEEP_CUTOFF} ohm.m (resistivity and matching pay)</li>
+          <li>
+            Overburden intervals (Murta/McKinlay entry → lone McKinlay re-entry) are excluded from pay
+            totals and all interval statistics — verified by{" "}
+            <code className="text-accent">test_pay_overburden.py</code>.
+          </li>
         </ul>
       </Card>
 
@@ -174,6 +208,15 @@ export function Methodology() {
           <li>
             <strong className="text-text">Overburden exclusion</strong> — Murta/McKinlay entry → lone
             McKinlay re-entry intervals excluded from all statistics.
+          </li>
+          <li>
+            <strong className="text-text">McKinlay 10–15</strong> — litho + drill-gas ASCII ingest (5 m bins);
+            fluorescence from bar track (Mck 10–11) or text FLUOR blocks (Mck 12–15).
+          </li>
+          <li>
+            <strong className="text-text">Trajectory / OWC</strong> — mTVDss from Petrel{" "}
+            <code className="text-accent">*_trajectory</code> files; OWC distance uses field contacts in{" "}
+            <code className="text-accent">Oil_Water_Contact.csv</code>.
           </li>
           <li>
             <strong className="text-text">HOBBES 4</strong> — no data files; excluded from analysis.
