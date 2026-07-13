@@ -62,17 +62,10 @@ function computeDomains(intervals: IntervalRecord[]) {
     .map((i) => i.log?.avg_RES_SHALLOW)
     .filter((v): v is number => v != null && v > 0);
   const resAll = [...resD, ...resS];
-  const mtvds = intervals
-    .map((i) => i.mTVDss)
-    .filter((v): v is number => v != null && !Number.isNaN(v));
-
-  const mtvdsMin = mtvds.length ? Math.min(...mtvds) : -1300;
-  const mtvdsMax = mtvds.length ? Math.max(...mtvds) : -1100;
 
   return {
     gr: [0, Math.max(120, ...(gr.length ? gr : [120]))] as [number, number],
     res: [0.5, Math.max(10, ...(resAll.length ? resAll : [100]))] as [number, number],
-    mtvds: [mtvdsMin, mtvdsMax] as [number, number],
   };
 }
 
@@ -104,15 +97,6 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
 
   const tracks: TrackDef[] = useMemo(
     () => [
-      {
-        id: "mtvds",
-        label: "TVDss",
-        unit: "m",
-        scale: "linear",
-        domain: domains.mtvds,
-        getPrimary: (i) => i.mTVDss,
-        primaryColor: "#38bdf8",
-      },
       {
         id: "gr",
         label: "GR",
@@ -379,8 +363,8 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
         })}
       </svg>
       <p className="border-t border-border px-3 py-2 text-xs text-text-muted">
-        Depth axis shows MD and TVDss. TVDss track from trajectory; shaded bands = overburden
-        exclusion. RES track: deep (left) vs shallow (right), log-scaled.
+        Depth axis lists MD and TVDss at each tick. Shaded bands = overburden exclusion. RES track:
+        deep (left) vs shallow (right), log-scaled.
       </p>
     </div>
   );

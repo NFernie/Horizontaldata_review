@@ -24,6 +24,10 @@ import {
   YAxis,
 } from "recharts";
 
+function resolveAlias(alias: string, activeAliases: Set<string>, fallback: string): string {
+  return activeAliases.has(alias) ? alias : fallback;
+}
+
 function ZoneCard({ zone }: { zone: FlaggedZone }) {
   const ev = zone.evidence;
   return (
@@ -213,15 +217,31 @@ function WellRiskPanel({
 
 export function WaterRiskExplorer() {
   const { activeWells, loading: wellsLoading, error: wellsError } = useWells();
-  const [leftAlias, setLeftAlias] = useState(() =>
-    readStoredWaterRiskLeft(readStoredWell("JENA31")),
+  const activeAliasSet = useMemo(
+    () => new Set(activeWells.map((w) => w.alias)),
+    [activeWells],
   );
-  const [rightAlias, setRightAlias] = useState(() => readStoredWaterRiskRight("JENA31DW1"));
+  const defaultLeft = activeWells[0]?.alias ?? "JENA31";
+  const defaultRight = activeWells.find((w) => w.alias !== defaultLeft)?.alias ?? "JENA31DW1";
+
+  const [leftAlias, setLeftAlias] = useState(() =>
+    resolveAlias(readStoredWaterRiskLeft(readStoredWell(defaultLeft)), activeAliasSet, defaultLeft),
+  );
+  const [rightAlias, setRightAlias] = useState(() =>
+    resolveAlias(readStoredWaterRiskRight(defaultRight), activeAliasSet, defaultRight),
+  );
   const [cache, setCache] = useState<Record<string, WaterRiskPayload>>({});
   const [loadingAliases, setLoadingAliases] = useState<Set<string>>(new Set());
   const [error, setError] = useState<string | null>(null);
   const cacheRef = useRef(cache);
+  const inFlightRef = useRef<Set<string>>(new Set());
   cacheRef.current = cache;
+
+  useEffect(() => {
+    if (!activeWells.length) return;
+    setLeftAlias((prev) => resolveAlias(prev, activeAliasSet, defaultLeft));
+    setRightAlias((prev) => resolveAlias(prev, activeAliasSet, defaultRight));
+  }, [activeWells, activeAliasSet, defaultLeft, defaultRight]);
 
   const handleLeftChange = useCallback((alias: string) => {
     setLeftAlias(alias);
@@ -236,55 +256,49 @@ export function WaterRiskExplorer() {
 
   useEffect(() => {
     if (!activeWells.length) return;
+
     const aliases = [...new Set([leftAlias, rightAlias])];
-    const missing = aliases.filter((a) => !cacheRef.current[a] && !loadingAliases.has(a));
-    if (!missing.length) return;
+    let active = true;
 
-    setLoadingAliases((prev) => new Set([...prev, ...missing]));
-    let cancelled = false;
+    aliases.forEach((alias) => {
+      if (cacheRef.current[alias] || inFlightRef.current.has(alias)) return;
 
-    Promise.all(
-      missing.map((alias) =>
-        fetchJson<WaterRiskPayload>(`data/water_risk/${alias}.json`)
-          .then((payload) => ({ alias, payload }))
-          .catch((err: Error) => {
-            throw new Error(`${alias}: ${err.message}`);
-          }),
-      ),
-    )
-      .then((results) => {
-        if (cancelled) return;
-        setCache((prev) => {
-          const next = { ...prev };
-          results.forEach(({ alias, payload }) => {
-            next[alias] = payload;
+      inFlightRef.current.add(alias);
+      setLoadingAliases((prev) => new Set(prev).add(alias));
+
+      fetchJson<WaterRiskPayload>(`data/water_risk/${alias}.json`)
+        .then((payload) => {
+          if (!active) return;
+          cacheRef.current = { ...cacheRef.current, [alias]: payload };
+          setCache((prev) => ({ ...prev, [alias]: payload }));
+          setError(null);
+        })
+        .catch((err: Error) => {
+          if (!active) return;
+          setError(`${alias}: ${err.message}`);
+        })
+        .finally(() => {
+          inFlightRef.current.delete(alias);
+          if (!active) return;
+          setLoadingAliases((prev) => {
+            const next = new Set(prev);
+            next.delete(alias);
+            return next;
           });
-          return next;
         });
-      })
-      .catch((err: Error) => {
-        if (!cancelled) setError(err.message);
-      })
-      .finally(() => {
-        if (cancelled) return;
-        setLoadingAliases((prev) => {
-          const next = new Set(prev);
-          missing.forEach((a) => next.delete(a));
-          return next;
-        });
-      });
+    });
 
     return () => {
-      cancelled = true;
+      active = false;
     };
   }, [activeWells, leftAlias, rightAlias]);
 
   if (wellsLoading) return <p className="text-text-muted">Loading wells…</p>;
 
-  if (wellsError || error) {
+  if (wellsError) {
     return (
       <Card title="Unable to load water-risk data">
-        <p className="text-risk-high">{wellsError ?? error}</p>
+        <p className="text-risk-high">{wellsError}</p>
       </Card>
     );
   }
@@ -297,6 +311,7 @@ export function WaterRiskExplorer() {
           Compare flagged McKinlay intervals side-by-side for any two wells. Your last selected
           wells are remembered as you move between pages.
         </p>
+        {error ? <p className="mt-2 text-sm text-risk-high">{error}</p> : null}
       </header>
 
       <div className="grid gap-6 xl:grid-cols-2">

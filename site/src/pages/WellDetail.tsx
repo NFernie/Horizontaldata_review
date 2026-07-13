@@ -180,7 +180,6 @@ export function WellDetail() {
         title="Track legend"
         items={[
           { label: "Overburden", color: "rgba(147,161,176,0.35)", description: "excluded zones" },
-          { label: "TVDss", color: "#38bdf8" },
           { label: "RES deep", color: "var(--res-high)" },
           { label: "RES shallow", color: "var(--res-low)" },
           { label: "WRCI High", color: "var(--risk-high)" },
