@@ -11,7 +11,7 @@ import {
   writeStoredWaterRiskRight,
   writeStoredWell,
 } from "@/hooks/useWellSelection";
-import { fetchJson, formatDepthMd, formatNumber, formatPercent } from "@/lib/utils";
+import { fetchJson, formatDepthMd, formatHafwl, formatNumber, formatPercent } from "@/lib/utils";
 import type { FlaggedZone, WaterRiskPayload } from "@/types/waterRisk";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
@@ -42,6 +42,9 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
           </p>
         </div>
         <RiskBadge risk={zone.risk_class} />
+        {zone.isolated ? (
+          <span className="rounded px-1.5 py-0.5 text-xs font-medium text-emerald-400">Isolated</span>
+        ) : null}
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1.5">
@@ -72,6 +75,10 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
         <div>
           <dt className="text-text-muted">RES_DEEP</dt>
           <dd className="font-mono text-text">{formatNumber(ev.avg_RES_DEEP, 1)}</dd>
+        </div>
+        <div>
+          <dt className="text-text-muted">HAFWL</dt>
+          <dd className="font-mono text-text">{formatHafwl(ev.hafwl_m)}</dd>
         </div>
         <div>
           <dt className="text-text-muted">OWC dist</dt>

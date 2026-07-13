@@ -32,6 +32,7 @@ from owc import (  # noqa: E402
     owc_proximity_tier,
     owc_severity,
 )
+from isolation import attach_isolation, load_isolation_by_alias  # noqa: E402
 from process_mckinlay_wells import WELLS, process_well  # noqa: E402
 
 DATA_ROOT = os.path.join(WORKSPACE, config.DATA_DIR)
@@ -252,12 +253,16 @@ def compute_zoi(rows):
 
 
 def attach_owc(rows, alias):
-    """Attach mTVDss, OWC distance, and proximity tier per updated-plan §5."""
-    owc_field = owc_for_alias(alias)
+    """Attach mTVDss, HAFWL, OWC distance, and proximity tier per updated-plan §5."""
+    owc_mtvds = owc_for_alias(alias)
     for row in rows:
         mtvds = row.get("mtvds")
         row["mTVDss"] = mtvds
-        dist = owc_distance_m(mtvds, owc_field)
+        if mtvds is not None and owc_mtvds is not None:
+            row["hafwl_m"] = float(mtvds) - float(owc_mtvds)
+        else:
+            row["hafwl_m"] = None
+        dist = owc_distance_m(mtvds, owc_mtvds)
         row["owc_distance_m"] = dist
         tier = owc_proximity_tier(dist, row.get("RQI"), bool(row.get("flag_zoi")))
         row["owc_near"] = apply_owc_res_suppress(tier, row.get("avg_RES_DEEP"))
@@ -602,8 +607,10 @@ def serialize_interval(row):
         "risk_class": row.get("risk_class"),
         "flags": row.get("flags", []),
         "mTVDss": clean_scalar(row.get("mTVDss")),
+        "hafwl_m": clean_scalar(row.get("hafwl_m")),
         "owc_distance_m": clean_scalar(row.get("owc_distance_m")),
         "owc_near": row.get("owc_near"),
+        "isolated": bool(row.get("isolated")),
         "z_scores": {k: clean_scalar(v) for k, v in row.get("z_scores", {}).items()},
         "anomalies": row.get("anomalies", []),
     }
@@ -624,6 +631,7 @@ def water_risk_payload(rows):
             "RQI": r.get("RQI"),
             "risk_class": r.get("risk_class"),
             "flags": r.get("flags", []),
+            "isolated": bool(r.get("isolated")),
             "evidence": {
                 "pct_ss": r.get("pct_ss"),
                 "grain_ordinal": r.get("grain_ordinal"),
@@ -633,8 +641,10 @@ def water_risk_payload(rows):
                 "avg_GR": r.get("avg_GR"),
                 "avg_RES_DEEP": r.get("avg_RES_DEEP"),
                 "mTVDss": r.get("mTVDss"),
+                "hafwl_m": clean_scalar(r.get("hafwl_m")),
                 "owc_distance_m": r.get("owc_distance_m"),
                 "owc_near": r.get("owc_near"),
+                "isolated": bool(r.get("isolated")),
             },
         }
         for r in flagged
@@ -672,6 +682,7 @@ def run_ks_tests(all_rows_by_alias):
 def main():
     dc30_df = pd.read_excel(os.path.join(WORKSPACE, "DC30.xlsx"))
     mck_murta_df = pd.read_excel(os.path.join(WORKSPACE, "Mck_Murta.xlsx"))
+    isolation_by_alias = load_isolation_by_alias()
 
     well_metas = []
     enriched_by_alias = {}
@@ -688,6 +699,7 @@ def main():
         rows = compute_rqi_components(rows)
         rows = compute_zoi(rows)
         rows = attach_owc(rows, alias)
+        rows = attach_isolation(rows, alias, isolation_by_alias)
         rows = compute_flags_and_wrci(rows)
         rows = modified_zscores(rows)
 
@@ -699,6 +711,7 @@ def main():
         well_metas.append(meta)
 
         owc_mtvds = owc_for_alias(alias)
+        iso_ranges = isolation_by_alias.get(alias, [])
         write_json(
             os.path.join(DATA_ROOT, "intervals", f"{alias}.json"),
             {
@@ -707,6 +720,7 @@ def main():
                 "interval_count": len(rows),
                 "owc_field": field_for_alias(alias),
                 "owc_mtvds": clean_scalar(owc_mtvds),
+                "isolation_depths": iso_ranges,
                 "intervals": [serialize_interval(r) for r in rows],
             },
         )

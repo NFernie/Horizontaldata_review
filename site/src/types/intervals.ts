@@ -30,10 +30,17 @@ export interface IntervalRecord {
   risk_class: RiskClass;
   flags: string[];
   mTVDss?: number | null;
+  hafwl_m?: number | null;
   owc_distance_m?: number | null;
   owc_near?: "High" | "Elevated" | "Low" | null;
+  isolated?: boolean;
   z_scores: Record<string, number | null>;
   anomalies: string[];
+}
+
+export interface IsolationDepth {
+  top_md: number;
+  bot_md: number;
 }
 
 export interface IntervalsPayload {
@@ -42,5 +49,6 @@ export interface IntervalsPayload {
   interval_count: number;
   owc_field?: string | null;
   owc_mtvds?: number | null;
+  isolation_depths?: IsolationDepth[];
   intervals: IntervalRecord[];
 }

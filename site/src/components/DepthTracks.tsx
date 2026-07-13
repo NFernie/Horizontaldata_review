@@ -1,10 +1,11 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import type { IntervalRecord } from "@/types/intervals";
+import type { IsolationDepth } from "@/types/intervals";
 import type { ExclusionZone } from "@/types/zones";
-import { cn, formatDepthMd } from "@/lib/utils";
+import { cn, formatNumber } from "@/lib/utils";
 
 const TRACK_WIDTH = 64;
-const DEPTH_AXIS_WIDTH = 88;
+const DEPTH_AXIS_WIDTH = 118;
 const HEADER_HEIGHT = 28;
 const FOOTER_HEIGHT = 8;
 const PLOT_HEIGHT = 520;
@@ -22,6 +23,13 @@ interface TrackDef {
   primaryColor: string;
   secondaryColor?: string;
   riskTrack?: boolean;
+}
+
+interface DepthHover {
+  md: number;
+  mtvds: number | null;
+  x: number;
+  y: number;
 }
 
 function clamp(n: number, lo: number, hi: number) {
@@ -69,7 +77,7 @@ function computeDomains(intervals: IntervalRecord[]) {
   };
 }
 
-function nearestMtvds(intervals: IntervalRecord[], md: number): number | null {
+function nearestInterval(intervals: IntervalRecord[], md: number): IntervalRecord | null {
   let best: IntervalRecord | null = null;
   let bestDist = Infinity;
   for (const iv of intervals) {
@@ -80,16 +88,18 @@ function nearestMtvds(intervals: IntervalRecord[], md: number): number | null {
       best = iv;
     }
   }
-  return best?.mTVDss ?? null;
+  return best;
 }
 
 interface DepthTracksProps {
   intervals: IntervalRecord[];
   zones: ExclusionZone[];
+  isolationDepths?: IsolationDepth[];
   className?: string;
 }
 
-export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
+export function DepthTracks({ intervals, zones, isolationDepths = [], className }: DepthTracksProps) {
+  const [hover, setHover] = useState<DepthHover | null>(null);
   const domains = useMemo(() => computeDomains(intervals), [intervals]);
 
   const depthMin = useMemo(() => Math.min(...intervals.map((i) => i.top)), [intervals]);
@@ -169,6 +179,9 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
   const depthToY = (d: number) =>
     HEADER_HEIGHT + ((d - depthMin) / (depthMax - depthMin || 1)) * PLOT_HEIGHT;
 
+  const yToDepth = (y: number) =>
+    depthMin + ((y - HEADER_HEIGHT) / PLOT_HEIGHT) * (depthMax - depthMin);
+
   const ticks = useMemo(() => {
     const span = depthMax - depthMin;
     const step = span > 800 ? 200 : span > 400 ? 100 : 50;
@@ -178,8 +191,38 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
     return result;
   }, [depthMin, depthMax]);
 
+  const handleAxisMove = (event: React.MouseEvent<SVGRectElement>) => {
+    const svg = event.currentTarget.ownerSVGElement;
+    if (!svg) return;
+    const rect = svg.getBoundingClientRect();
+    const y = event.clientY - rect.top;
+    if (y < HEADER_HEIGHT || y > HEADER_HEIGHT + PLOT_HEIGHT) {
+      setHover(null);
+      return;
+    }
+    const md = yToDepth(y);
+    const iv = nearestInterval(intervals, md);
+    setHover({
+      md,
+      mtvds: iv?.mTVDss ?? null,
+      x: event.clientX - rect.left + 12,
+      y: event.clientY - rect.top - 36,
+    });
+  };
+
   return (
-    <div className={cn("overflow-x-auto rounded-card border border-border bg-surface", className)}>
+    <div className={cn("relative overflow-x-auto rounded-card border border-border bg-surface", className)}>
+      {hover ? (
+        <div
+          className="pointer-events-none absolute z-10 rounded-card border border-border bg-surface-2 px-2 py-1.5 font-mono text-xs text-text shadow-lg"
+          style={{ left: hover.x, top: Math.max(8, hover.y) }}
+        >
+          <div>{hover.md.toFixed(1)} m MD</div>
+          <div className="text-text-muted">
+            {hover.mtvds != null ? `${hover.mtvds.toFixed(2)} m TVDss` : "TVDss —"}
+          </div>
+        </div>
+      ) : null}
       <svg
         width={totalWidth}
         height={totalHeight}
@@ -200,6 +243,19 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
               strokeWidth={0.5}
             />
           ))}
+          {isolationDepths.map((iso) => (
+            <rect
+              key={`iso-${iso.top_md}-${iso.bot_md}`}
+              x={DEPTH_AXIS_WIDTH}
+              y={depthToY(iso.top_md)}
+              width={tracks.length * TRACK_WIDTH}
+              height={Math.max(1, depthToY(iso.bot_md) - depthToY(iso.top_md))}
+              fill="rgba(52,211,153,0.12)"
+              stroke="rgba(52,211,153,0.45)"
+              strokeWidth={0.5}
+              strokeDasharray="4 3"
+            />
+          ))}
         </g>
 
         <g fontSize={9} fill="var(--text-muted)" fontFamily="JetBrains Mono, monospace">
@@ -207,25 +263,39 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
             Depth
           </text>
           {ticks.map((d) => {
-            const mtvds = nearestMtvds(intervals, d);
+            const mtvds = nearestInterval(intervals, d)?.mTVDss ?? null;
+            const y = depthToY(d);
             return (
               <g key={d}>
                 <line
                   x1={DEPTH_AXIS_WIDTH - 4}
                   x2={totalWidth}
-                  y1={depthToY(d)}
-                  y2={depthToY(d)}
+                  y1={y}
+                  y2={y}
                   stroke="var(--border)"
                   strokeWidth={0.5}
                   strokeDasharray="2 4"
                 />
-                <text x={4} y={depthToY(d) + 3}>
-                  {formatDepthMd(d, mtvds, 0)}
+                <text x={4} y={y - 2}>
+                  {d.toFixed(0)} MD
+                </text>
+                <text x={4} y={y + 9} fill="var(--text-muted)">
+                  {mtvds != null ? `${formatNumber(mtvds, 1)} TVDss` : "—"}
                 </text>
               </g>
             );
           })}
         </g>
+
+        <rect
+          x={0}
+          y={HEADER_HEIGHT}
+          width={DEPTH_AXIS_WIDTH}
+          height={PLOT_HEIGHT}
+          fill="transparent"
+          onMouseMove={handleAxisMove}
+          onMouseLeave={() => setHover(null)}
+        />
 
         {tracks.map((track, idx) => {
           const x = DEPTH_AXIS_WIDTH + idx * TRACK_WIDTH;
@@ -363,8 +433,8 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
         })}
       </svg>
       <p className="border-t border-border px-3 py-2 text-xs text-text-muted">
-        Depth axis lists MD and TVDss at each tick. Shaded bands = overburden exclusion. RES track:
-        deep (left) vs shallow (right), log-scaled.
+        Depth axis: MD and TVDss on separate lines — hover the axis for exact values. Grey bands =
+        overburden exclusion; green dashed = mechanical isolation.
       </p>
     </div>
   );

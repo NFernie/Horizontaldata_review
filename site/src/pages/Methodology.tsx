@@ -21,6 +21,7 @@ import {
   SPEARMAN_VARS,
   SS_CUTOFF,
   FLUOR_CUTOFF,
+  LOWFLUOR_SEVERITY_REF,
   WRCI_ELEVATED_THRESHOLD,
   WRCI_HIGH_MIN_FLAGS,
   WRCI_HIGH_THRESHOLD,
@@ -135,7 +136,7 @@ export function Methodology() {
               {WRCI_WEIGHTS.lowfluor_severity}·lowfluor_severity + {WRCI_WEIGHTS.owc_severity}·owc_severity)
             </p>
             <p>lowres_severity = clamp(({RES_DEEP_CUTOFF} − RES_DEEP) / {RES_DEEP_CUTOFF}, 0, 1)</p>
-            <p>lowfluor_severity = clamp(({FLUOR_CUTOFF} − fluor) / {FLUOR_CUTOFF}, 0, 1)</p>
+            <p>lowfluor_severity = clamp(({LOWFLUOR_SEVERITY_REF} − fluor) / {LOWFLUOR_SEVERITY_REF}, 0, 1)</p>
             <ul className="list-disc space-y-1 pl-4 font-sans">
               <li>
                 <strong className="text-risk-high">{RISK_LABELS.High}</strong> — WRCI ≥ {WRCI_HIGH_THRESHOLD}{" "}

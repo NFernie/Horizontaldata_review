@@ -35,6 +35,13 @@ export function formatPercent(value: number | null | undefined | unknown, digits
   return `${n.toFixed(digits)}%`;
 }
 
+/** Format HAFWL (mTVDss − field OWC); positive = above contact. */
+export function formatHafwl(value: number | null | undefined): string {
+  const n = typeof value === "number" ? value : toNumber(value);
+  if (n == null || Number.isNaN(n)) return "—";
+  return `${n.toFixed(1)} m`;
+}
+
 /** Format measured depth with optional subsea TVD alongside. */
 export function formatDepthMd(md: number, mtvds?: number | null, digitsMd = 0): string {
   const mdPart = `${md.toFixed(digitsMd)} m MD`;

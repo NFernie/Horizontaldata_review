@@ -15,7 +15,7 @@
         "loose_hardness": false,
         "fluor": 82.46153846153847,
         "RQI": 0.31653689158852993,
-        "WRCI": 12.66,
+        "WRCI": 16.17,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1605m: 100% Sandstone (litho ASCII aggregate) TG 183.7U (drill-gas ASCII)"
@@ -38,7 +38,7 @@
         "loose_hardness": false,
         "fluor": 94.3529411764706,
         "RQI": 0.465,
-        "WRCI": 18.6,
+        "WRCI": 19.73,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1610m: 100% Sandstone (litho ASCII aggregate) TG 172.9U (drill-gas ASCII)"
@@ -61,7 +61,7 @@
         "loose_hardness": false,
         "fluor": 96.25,
         "RQI": 0.3989524329670698,
-        "WRCI": 15.96,
+        "WRCI": 16.71,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1615m: 100% Sandstone (litho ASCII aggregate) TG 217.9U (drill-gas ASCII)"
@@ -84,7 +84,7 @@
         "loose_hardness": false,
         "fluor": 96.47058823529412,
         "RQI": 0.32122184863267633,
-        "WRCI": 12.85,
+        "WRCI": 13.55,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1620m: 100% Sandstone (litho ASCII aggregate) TG 253.7U (drill-gas ASCII)"
@@ -153,7 +153,7 @@
         "loose_hardness": false,
         "fluor": 89.41176470588235,
         "RQI": 0.44793940861266757,
-        "WRCI": 17.92,
+        "WRCI": 20.04,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1635m: 100% Sandstone (litho ASCII aggregate) TG 239.9U (drill-gas ASCII)"
@@ -176,7 +176,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.521631778314125,
-        "WRCI": 20.87,
+        "WRCI": 23.27,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1640m: 100% Sandstone (litho ASCII aggregate) TG 265.2U (drill-gas ASCII)"
@@ -199,7 +199,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5143830843756769,
-        "WRCI": 20.58,
+        "WRCI": 22.98,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1645m: 100% Sandstone (litho ASCII aggregate) TG 192.7U (drill-gas ASCII)"
@@ -222,7 +222,7 @@
         "loose_hardness": false,
         "fluor": 95.5,
         "RQI": 0.48629990150930824,
-        "WRCI": 19.45,
+        "WRCI": 20.35,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1650m: 100% Sandstone (litho ASCII aggregate) TG 286.0U (drill-gas ASCII)"
@@ -245,7 +245,7 @@
         "loose_hardness": false,
         "fluor": 95.5,
         "RQI": 0.4908744030864262,
-        "WRCI": 19.63,
+        "WRCI": 20.53,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1655m: 100% Sandstone (litho ASCII aggregate) TG 269.0U (drill-gas ASCII)"
@@ -268,7 +268,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.47467644727653796,
-        "WRCI": 18.99,
+        "WRCI": 21.39,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1660m: 100% Sandstone (litho ASCII aggregate) TG 236.0U (drill-gas ASCII)"
@@ -291,7 +291,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.4571174867991933,
-        "WRCI": 18.28,
+        "WRCI": 20.68,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1665m: 100% Sandstone (litho ASCII aggregate) TG 209.0U (drill-gas ASCII)"
@@ -314,7 +314,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.45608829158237874,
-        "WRCI": 18.24,
+        "WRCI": 20.64,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1670m: 100% Sandstone (litho ASCII aggregate) TG 116.0U (drill-gas ASCII)"
@@ -337,7 +337,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.3696041093576713,
-        "WRCI": 14.78,
+        "WRCI": 17.18,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1675m: 100% Sandstone (litho ASCII aggregate) TG 169.9U (drill-gas ASCII)"
@@ -360,7 +360,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.3927763074090135,
-        "WRCI": 15.71,
+        "WRCI": 18.11,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1680m: 100% Sandstone (litho ASCII aggregate) TG 245.2U (drill-gas ASCII)"
@@ -383,7 +383,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.3917303622588278,
-        "WRCI": 15.67,
+        "WRCI": 18.07,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1685m: 100% Sandstone (litho ASCII aggregate) TG 276.7U (drill-gas ASCII)"
@@ -406,7 +406,7 @@
         "loose_hardness": false,
         "fluor": 76.75,
         "RQI": 0.3651260570954955,
-        "WRCI": 14.61,
+        "WRCI": 19.26,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1690m: 100% Sandstone (litho ASCII aggregate) TG 241.0U (drill-gas ASCII)"
@@ -429,7 +429,7 @@
         "loose_hardness": false,
         "fluor": 64.0,
         "RQI": 0.355,
-        "WRCI": 17.13,
+        "WRCI": 21.4,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1695m: 100% Sandstone (litho ASCII aggregate) TG 100.3U (drill-gas ASCII)"
@@ -452,7 +452,7 @@
         "loose_hardness": false,
         "fluor": 85.0,
         "RQI": 0.4268796452642041,
-        "WRCI": 17.08,
+        "WRCI": 20.08,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1700m: 100% Sandstone (litho ASCII aggregate) TG 190.1U (drill-gas ASCII)"
@@ -475,7 +475,7 @@
         "loose_hardness": false,
         "fluor": 88.70588235294117,
         "RQI": 0.47218036834066035,
-        "WRCI": 18.89,
+        "WRCI": 21.15,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1705m: 100% Sandstone (litho ASCII aggregate) TG 351.6U (drill-gas ASCII)"
@@ -498,7 +498,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.448114884941164,
-        "WRCI": 17.92,
+        "WRCI": 20.32,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1710m: 100% Sandstone (litho ASCII aggregate) TG 324.1U (drill-gas ASCII)"
@@ -521,7 +521,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.4444506622543235,
-        "WRCI": 17.78,
+        "WRCI": 20.18,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1715m: 100% Sandstone (litho ASCII aggregate) TG 318.3U (drill-gas ASCII)"
@@ -544,9 +544,11 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5159875554409699,
-        "WRCI": 20.64,
+        "WRCI": 23.04,
         "risk_class": "Low",
-        "flags": [],
+        "flags": [
+          "ZOI"
+        ],
         "long_desc": "Sample 1720m: 100% Sandstone (litho ASCII aggregate) TG 258.7U (drill-gas ASCII)"
       },
       "detail_markdown": "### 1720 m MD — Interval 1717.5 – 1722.5 m\n\n**Sample Description (spreadsheet):** Sample 1720m: 100% Sandstone (litho ASCII aggregate) TG 258.7U (drill-gas ASCII)\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | nan (max: nan) |\n| Porosity Class | fr |\n| Hardness | fri (0.70) |\n| Sorting | wl (0.80) |\n| Angularity | sbang (0.25) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 88.0% mod bri-bri blu/grn ptchy,v slw blu/wh strmng c/c,blu/wh thk r/r |\n| Total Gas | 258.65882352941173 U |\n| mTVDss | -1197.00 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~1704m: med brn gry,mnr v pl gry,dom aren,occ carb spks & loc com micrlams,frm-mod hd,sbblky. 84 / 7 / 3 / 3 / 3 370U\n- **SANDSTONE** @ ~1707m: off wh-trnsl,v pl brn i/p,vf-f,sbang,wl srt,wk-frm sil 5610 cmt,mnr kaol mtx,tr liths spks,carb spks,fri-frm aggs,v pr-pr vis por,fluor. 84 / 7 / 3 / 3 / 3\n- _(5 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 97.9 | 33 |\n| RES_DEEP (ohm.m) | 34.59 | 33 |",
@@ -567,7 +569,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5165992520123318,
-        "WRCI": 20.66,
+        "WRCI": 23.06,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1725m: 100% Sandstone (litho ASCII aggregate) TG 253.0U (drill-gas ASCII)"
@@ -590,7 +592,7 @@
         "loose_hardness": false,
         "fluor": 88.70588235294117,
         "RQI": 0.493821815655463,
-        "WRCI": 19.75,
+        "WRCI": 22.01,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1730m: 100% Sandstone (litho ASCII aggregate) TG 168.0U (drill-gas ASCII)"
@@ -613,7 +615,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.6013066781798259,
-        "WRCI": 24.05,
+        "WRCI": 26.45,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1735m: 100% Sandstone (litho ASCII aggregate) TG 62.2U (drill-gas ASCII)"
@@ -636,7 +638,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.6247706169264095,
-        "WRCI": 24.99,
+        "WRCI": 27.39,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1740m: 100% Sandstone (litho ASCII aggregate) TG 63.9U (drill-gas ASCII)"
@@ -659,7 +661,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.711277587021306,
-        "WRCI": 28.45,
+        "WRCI": 30.85,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1745m: 100% Sandstone (litho ASCII aggregate) TG 64.5U (drill-gas ASCII)"
@@ -682,7 +684,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.7115666530121587,
-        "WRCI": 28.46,
+        "WRCI": 30.86,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1750m: 100% Sandstone (litho ASCII aggregate) TG 85.2U (drill-gas ASCII)"
@@ -705,7 +707,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.7108783405931575,
-        "WRCI": 28.44,
+        "WRCI": 30.84,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1755m: 100% Sandstone (litho ASCII aggregate) TG 91.0U (drill-gas ASCII)"
@@ -728,7 +730,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.7067670537986864,
-        "WRCI": 28.27,
+        "WRCI": 30.67,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1760m: 100% Sandstone (litho ASCII aggregate) TG 86.8U (drill-gas ASCII)"
@@ -751,7 +753,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5895154643413723,
-        "WRCI": 23.58,
+        "WRCI": 25.98,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1765m: 100% Sandstone (litho ASCII aggregate) TG 78.9U (drill-gas ASCII)"
@@ -774,7 +776,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5946061084947513,
-        "WRCI": 23.78,
+        "WRCI": 26.18,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1770m: 100% Sandstone (litho ASCII aggregate) TG 75.4U (drill-gas ASCII)"
@@ -797,7 +799,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.573319688012254,
-        "WRCI": 22.93,
+        "WRCI": 25.33,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1775m: 100% Sandstone (litho ASCII aggregate) TG 70.8U (drill-gas ASCII)"
@@ -820,7 +822,7 @@
         "loose_hardness": false,
         "fluor": 78.11764705882354,
         "RQI": 0.5683946818299406,
-        "WRCI": 22.74,
+        "WRCI": 27.11,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1780m: 100% Sandstone (litho ASCII aggregate) TG 59.5U (drill-gas ASCII)"
@@ -843,9 +845,11 @@
         "loose_hardness": false,
         "fluor": 68.5,
         "RQI": 0.5356783932928976,
-        "WRCI": 23.16,
-        "risk_class": "Low",
-        "flags": [],
+        "WRCI": 27.73,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowfluor"
+        ],
         "long_desc": "Sample 1785m: 100% Sandstone (litho ASCII aggregate) TG 58.6U (drill-gas ASCII)"
       },
       "detail_markdown": "### 1785 m MD — Interval 1782.5 – 1787.5 m\n\n**Sample Description (spreadsheet):** Sample 1785m: 100% Sandstone (litho ASCII aggregate) TG 58.6U (drill-gas ASCII)\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | nan (max: nan) |\n| Porosity Class | fr |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | mod wl (0.60) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 68.5% mod bri-mnr bri yel/grn SPP:1196-1696 psi evn ptchy,slw diff-v slw bldg FLOW:434-533 gpm 5850 cut,mod blu/wh ptchy flm r |\n| Total Gas | 58.6375 U |\n| mTVDss | -1196.47 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1771m: clr-trnsl,off wh, v pl brn,mnr pl gry,pred vf aggs, mnr f,rr med lse grs,mod wl srt, 5820 frm-mod sil cmt,mnr kaol mtx,tr liths/carb spks,fri-v frm aggs,occ\n- **SILTSTONE** @ ~1777m: pl-med gry,vf aren, arg i/p,com micmic,carb spks,frm, (4073) 5840 sbblky-sbfiss.\n- _(4 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.5 | 33 |\n| RES_DEEP (ohm.m) | 30.57 | 33 |",
@@ -866,7 +870,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5605861957397349,
-        "WRCI": 22.42,
+        "WRCI": 24.82,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1790m: 100% Sandstone (litho ASCII aggregate) TG 65.2U (drill-gas ASCII)"
@@ -889,7 +893,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5508348746430913,
-        "WRCI": 22.03,
+        "WRCI": 24.43,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1795m: 100% Sandstone (litho ASCII aggregate) TG 62.5U (drill-gas ASCII)"
@@ -912,7 +916,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5742203357856664,
-        "WRCI": 22.97,
+        "WRCI": 25.37,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1800m: 100% Sandstone (litho ASCII aggregate) TG 81.5U (drill-gas ASCII)"
@@ -935,7 +939,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5949319976275647,
-        "WRCI": 23.8,
+        "WRCI": 26.2,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1805m: 100% Sandstone (litho ASCII aggregate) TG 106.1U (drill-gas ASCII)"
@@ -958,7 +962,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.598340629826749,
-        "WRCI": 23.93,
+        "WRCI": 26.33,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1810m: 100% Sandstone (litho ASCII aggregate) TG 93.6U (drill-gas ASCII)"
@@ -981,7 +985,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.6039581408780772,
-        "WRCI": 24.16,
+        "WRCI": 26.56,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1815m: 100% Sandstone (litho ASCII aggregate) TG 88.1U (drill-gas ASCII)"
@@ -1004,7 +1008,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.597541633883828,
-        "WRCI": 23.9,
+        "WRCI": 26.3,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1820m: 100% Sandstone (litho ASCII aggregate) TG 86.9U (drill-gas ASCII)"
@@ -1027,7 +1031,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5263638169189346,
-        "WRCI": 21.05,
+        "WRCI": 23.45,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1825m: 100% Sandstone (litho ASCII aggregate) TG 77.2U (drill-gas ASCII)"
@@ -1050,7 +1054,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5742973838807736,
-        "WRCI": 22.97,
+        "WRCI": 25.37,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1830m: 100% Sandstone (litho ASCII aggregate) TG 77.2U (drill-gas ASCII)"
@@ -1073,7 +1077,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5850000000000001,
-        "WRCI": 23.4,
+        "WRCI": 25.8,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1835m: 100% Sandstone (litho ASCII aggregate) TG 64.5U (drill-gas ASCII)"
@@ -1096,7 +1100,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.6351032100452028,
-        "WRCI": 25.4,
+        "WRCI": 27.8,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1840m: 100% Sandstone (litho ASCII aggregate) TG 77.3U (drill-gas ASCII)"
@@ -1119,7 +1123,7 @@
         "loose_hardness": false,
         "fluor": 88.70588235294117,
         "RQI": 0.6449328724427312,
-        "WRCI": 25.8,
+        "WRCI": 28.06,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1845m: 100% Sandstone (litho ASCII aggregate) TG 68.3U (drill-gas ASCII)"
@@ -1142,7 +1146,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.6414398676052279,
-        "WRCI": 25.66,
+        "WRCI": 28.06,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1850m: 100% Sandstone (litho ASCII aggregate) TG 66.5U (drill-gas ASCII)"
@@ -1165,7 +1169,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.6402001830492043,
-        "WRCI": 25.61,
+        "WRCI": 28.01,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1855m: 100% Sandstone (litho ASCII aggregate) TG 73.9U (drill-gas ASCII)"
@@ -1188,7 +1192,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.645,
-        "WRCI": 25.8,
+        "WRCI": 28.2,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1860m: 100% Sandstone (litho ASCII aggregate) TG 79.3U (drill-gas ASCII)"
@@ -1211,7 +1215,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.6728120481948784,
-        "WRCI": 26.91,
+        "WRCI": 29.31,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1865m: 100% Sandstone (litho ASCII aggregate) TG 75.8U (drill-gas ASCII)"
@@ -1234,7 +1238,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.6718142498090106,
-        "WRCI": 26.87,
+        "WRCI": 29.27,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1870m: 100% Sandstone (litho ASCII aggregate) TG 72.5U (drill-gas ASCII)"
@@ -1257,7 +1261,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.375,
-        "WRCI": 15.0,
+        "WRCI": 17.4,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1935m: 100% Sandstone (litho ASCII aggregate) TG 44.4U (drill-gas ASCII)"
@@ -1280,7 +1284,7 @@
         "loose_hardness": false,
         "fluor": 88.70588235294117,
         "RQI": 0.375,
-        "WRCI": 15.0,
+        "WRCI": 17.26,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1940m: 100% Sandstone (litho ASCII aggregate) TG 68.2U (drill-gas ASCII)"
@@ -1303,7 +1307,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.43762124276215464,
-        "WRCI": 17.5,
+        "WRCI": 19.9,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1945m: 100% Sandstone (litho ASCII aggregate) TG 77.2U (drill-gas ASCII)"
@@ -1326,7 +1330,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5892685298664341,
-        "WRCI": 23.57,
+        "WRCI": 25.97,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1950m: 100% Sandstone (litho ASCII aggregate) TG 85.7U (drill-gas ASCII)"
@@ -1349,7 +1353,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5629888396750972,
-        "WRCI": 22.52,
+        "WRCI": 24.92,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1955m: 100% Sandstone (litho ASCII aggregate) TG 95.5U (drill-gas ASCII)"
@@ -1372,7 +1376,7 @@
         "loose_hardness": false,
         "fluor": 88.75,
         "RQI": 0.5767411828114084,
-        "WRCI": 23.07,
+        "WRCI": 25.32,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1960m: 100% Sandstone (litho ASCII aggregate) TG 87.1U (drill-gas ASCII)"
@@ -1395,7 +1399,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.6353413897311845,
-        "WRCI": 25.41,
+        "WRCI": 27.81,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1965m: 29% Sandstone (litho ASCII aggregate) TG 103.6U (drill-gas ASCII)"
@@ -1418,7 +1422,7 @@
         "loose_hardness": false,
         "fluor": 88.75,
         "RQI": 0.645,
-        "WRCI": 25.8,
+        "WRCI": 28.05,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1970m: 21% Sandstone (litho ASCII aggregate) TG 106.7U (drill-gas ASCII)"
@@ -1441,7 +1445,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.5662705443056152,
-        "WRCI": 22.65,
+        "WRCI": 25.05,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 1975m: 43% Sandstone (litho ASCII aggregate) TG 123.3U (drill-gas ASCII)"
@@ -1464,7 +1468,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.355,
-        "WRCI": 14.2,
+        "WRCI": 16.6,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 2035m: 100% Sandstone (litho ASCII aggregate) TG 149.5U (drill-gas ASCII)"
@@ -1487,7 +1491,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.4867266109502145,
-        "WRCI": 19.47,
+        "WRCI": 21.87,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 2040m: 100% Sandstone (litho ASCII aggregate) TG 151.0U (drill-gas ASCII)"
@@ -1510,7 +1514,7 @@
         "loose_hardness": false,
         "fluor": 88.0,
         "RQI": 0.41595365729900413,
-        "WRCI": 16.64,
+        "WRCI": 19.04,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 2045m: 100% Sandstone (litho ASCII aggregate) TG 128.0U (drill-gas ASCII)"
@@ -1533,7 +1537,7 @@
         "loose_hardness": false,
         "fluor": 85.0,
         "RQI": 0.42165580723400475,
-        "WRCI": 16.87,
+        "WRCI": 19.87,
         "risk_class": "Low",
         "flags": [],
         "long_desc": "Sample 2050m: 100% Sandstone (litho ASCII aggregate) TG 110.0U (drill-gas ASCII)"
@@ -1556,9 +1560,11 @@
         "loose_hardness": false,
         "fluor": 64.0,
         "RQI": 0.5164427076710124,
-        "WRCI": 23.59,
-        "risk_class": "Low",
-        "flags": [],
+        "WRCI": 27.86,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowfluor"
+        ],
         "long_desc": "Sample 2055m: 100% Sandstone (litho ASCII aggregate) TG 97.4U (drill-gas ASCII)"
       },
       "detail_markdown": "### 2055 m MD — Interval 2052.5 – 2057.5 m\n\n**Sample Description (spreadsheet):** Sample 2055m: 100% Sandstone (litho ASCII aggregate) TG 97.4U (drill-gas ASCII)\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | nan (max: nan) |\n| Porosity Class | none |\n| Sorting | mod wl (0.60) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.68) |\n| Fluorescence | 64.0% dll-mod bri blu grn ptchy- WOB:9-18 klbs evn,v slw blu wh bldng cut,thk RPM:66-100 |\n| Total Gas | 97.42941176470588 U |\n| mTVDss | -1192.23 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2042m: med-dk gry,med brn, aren,rr arg,micmic,occ-loc com\n- **SANDSTONE** @ ~2050m: pl brn,off wh-v pl yel,opq,dom f,mnr vf-med mod wl srt,sbang-sbrnd,mod wk sil cmt, 02-02-2016 com wh arg mtx,rr carb spks,rr\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 97.3 | 33 |\n| RES_DEEP (ohm.m) | 26.09 | 33 |",
@@ -1579,9 +1585,11 @@
         "loose_hardness": false,
         "fluor": 64.0,
         "RQI": 0.5034016757173571,
-        "WRCI": 23.07,
-        "risk_class": "Low",
-        "flags": [],
+        "WRCI": 27.34,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowfluor"
+        ],
         "long_desc": "Sample 2060m: 100% Sandstone (litho ASCII aggregate) TG 93.2U (drill-gas ASCII)"
       },
       "detail_markdown": "### 2060 m MD — Interval 2057.5 – 2062.5 m\n\n**Sample Description (spreadsheet):** Sample 2060m: 100% Sandstone (litho ASCII aggregate) TG 93.2U (drill-gas ASCII)\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | nan (max: nan) |\n| Porosity Class | none |\n| Sorting | mod wl (0.60) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.68) |\n| Fluorescence | 64.0% None |\n| Total Gas | 93.1875 U |\n| mTVDss | -1192.48 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2050m: pl brn,off wh-v pl yel,opq,dom f,mnr vf-med mod wl srt,sbang-sbrnd,mod wk sil cmt, 02-02-2016 com wh arg mtx,rr carb spks,rr\n- **SANDSTONE** @ ~2057m: off wh-pl brn,occ trnsl, vf-f,occ med,mod wl srt,dom sbrnd- 6760 sbang,mod sil cmt,com wh arg mtx,\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.3 | 20 |\n| RES_DEEP (ohm.m) | 22.60 | 6 |",
@@ -1602,9 +1610,11 @@
         "loose_hardness": false,
         "fluor": 64.0,
         "RQI": 0.5492957746478873,
-        "WRCI": 24.91,
-        "risk_class": "Low",
-        "flags": [],
+        "WRCI": 29.17,
+        "risk_class": "Elevated",
+        "flags": [
+          "lowfluor"
+        ],
         "long_desc": "Sample 2065m: 100% Sandstone (litho ASCII aggregate) TG 106.2U (drill-gas ASCII)"
       },
       "detail_markdown": "### 2065 m MD — Interval 2062.5 – 2067.5 m\n\n**Sample Description (spreadsheet):** Sample 2065m: 100% Sandstone (litho ASCII aggregate) TG 106.2U (drill-gas ASCII)\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | nan (max: nan) |\n| Porosity Class | none |\n| Sorting | mod wl (0.60) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.68) |\n| Fluorescence | 64.0% None |\n| Total Gas | 106.15294117647058 U |\n| mTVDss | -1192.73 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2050m: pl brn,off wh-v pl yel,opq,dom f,mnr vf-med mod wl srt,sbang-sbrnd,mod wk sil cmt, 02-02-2016 com wh arg mtx,rr carb spks,rr\n- **SANDSTONE** @ ~2057m: off wh-pl brn,occ trnsl, vf-f,occ med,mod wl srt,dom sbrnd- 6760 sbang,mod sil cmt,com wh arg mtx,\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n\n---\n\n## 5. Summary Statistics (McKinlay Member)\n\n| Metric | Value |\n|--------|-------|\n| Intervals analysed | 70 |\n| Depth range | 1605 – 2065 m |\n| Avg % Sandstone | 97.0% |\n| Mudlog matches | 70 / 70 |",

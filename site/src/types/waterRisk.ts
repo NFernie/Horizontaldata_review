@@ -9,8 +9,10 @@ export interface FlaggedZoneEvidence {
   avg_GR: number | null;
   avg_RES_DEEP: number | null;
   mTVDss: number | null;
+  hafwl_m: number | null;
   owc_distance_m: number | null;
   owc_near: "High" | "Elevated" | "Low" | null;
+  isolated: boolean;
 }
 
 export interface FlaggedZone {
@@ -21,6 +23,7 @@ export interface FlaggedZone {
   RQI: number | null;
   risk_class: RiskClass;
   flags: string[];
+  isolated?: boolean;
   evidence: FlaggedZoneEvidence;
 }
 

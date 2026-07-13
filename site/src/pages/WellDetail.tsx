@@ -8,7 +8,7 @@ import { RiskBadge } from "@/components/RiskBadge";
 import { WellSelect } from "@/components/WellSelect";
 import { useWells } from "@/hooks/useWells";
 import { readStoredWell, writeStoredWell } from "@/hooks/useWellSelection";
-import { fetchJson, formatDepthMd, formatNumber, formatPercent } from "@/lib/utils";
+import { fetchJson, formatHafwl, formatNumber, formatPercent } from "@/lib/utils";
 import type { IntervalRecord, IntervalsPayload } from "@/types/intervals";
 import type { ZonesPayload } from "@/types/zones";
 
@@ -53,10 +53,24 @@ export function WellDetail() {
     () => [
       {
         key: "depth",
-        header: "Depth (MD · TVDss)",
+        header: "Depth (MD)",
         align: "right",
         mono: true,
-        render: (r) => formatDepthMd(r.depth, r.mTVDss, 0),
+        render: (r) => `${r.depth.toFixed(0)} m MD`,
+      },
+      {
+        key: "mtvds",
+        header: "mTVDss",
+        align: "right",
+        mono: true,
+        render: (r) => formatNumber(r.mTVDss, 1),
+      },
+      {
+        key: "hafwl",
+        header: "HAFWL",
+        align: "right",
+        mono: true,
+        render: (r) => formatHafwl(r.hafwl_m),
       },
       {
         key: "pct_ss",
@@ -110,6 +124,17 @@ export function WellDetail() {
         header: "Risk",
         align: "center",
         render: (r) => <RiskBadge risk={r.risk_class} />,
+      },
+      {
+        key: "isolated",
+        header: "Isolated",
+        align: "center",
+        render: (r) =>
+          r.isolated ? (
+            <span className="rounded px-1.5 py-0.5 text-xs font-medium text-emerald-400">Yes</span>
+          ) : (
+            <span className="text-text-muted">—</span>
+          ),
       },
       {
         key: "flags",
@@ -174,12 +199,17 @@ export function WellDetail() {
         </Link>
       </header>
 
-      <DepthTracks intervals={intervals.intervals} zones={zones.zones} />
+      <DepthTracks
+        intervals={intervals.intervals}
+        zones={zones.zones}
+        isolationDepths={intervals.isolation_depths}
+      />
 
       <Legend
         title="Track legend"
         items={[
           { label: "Overburden", color: "rgba(147,161,176,0.35)", description: "excluded zones" },
+          { label: "Isolation", color: "rgba(52,211,153,0.35)", description: "mechanical isolation" },
           { label: "RES deep", color: "var(--res-high)" },
           { label: "RES shallow", color: "var(--res-low)" },
           { label: "WRCI High", color: "var(--risk-high)" },
