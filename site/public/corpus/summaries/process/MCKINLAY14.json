@@ -1,0 +1,8 @@
+{
+  "alias": "MCKINLAY14",
+  "display": "MCKINLAY 14",
+  "type": "process_summary",
+  "title": "Process Summary — MCKINLAY 14",
+  "markdown": "# MCKINLAY 14 Analysis — Process Summary\n\n**Date:** 2026-07-13\n\n## Objective\n\nIntegrate mudlog, sample descriptions, formation tops, and LAS data for **McKinlay Member** on MCKINLAY 14.\n\n## Data Files Used\n\n| File | Purpose |\n|------|---------|\n| `McKinlay 14_Mudlog_Spud-8674ft_Final.pdf` | Mudlog cuttings |\n| `Mckinlay 14_Litho_Spud-8674ft (TD).txt`, `Mckinlay 14_Drill-Gas_Spud-8674ft (TD).txt` | Litho + drill-gas ASCII (5 m bins) |\n| `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |\n| `Mck_14` | GR / resistivity |\n| `Mck_14_trajectory` | Trajectory → mTVDss |\n\n## Formation Top Results\n\n- DC30: **1832.76 m** | McKinlay start: **1832.76 m** | TD: **2644 m**\n- Overburden entry pairs: **5**\n- Overburden exclusion intervals: **5**\n- Excluded samples: pre-reservoir 0, overburden 49\n- **113** McKinlay intervals retained\n\n## Key Findings\n\n- Depth range: **1835 – 2640 m MD**\n- Average sandstone: **100.0%**\n- Mudlog matched: **113 / 113** intervals\n\n## Limitations\n\nSee interpretation file Section 3 for full list.\n",
+  "source": "output/MCKINLAY14_Process_Summary.md"
+}

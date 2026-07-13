@@ -14,6 +14,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 | `Biala 19 Hz Section Samples Descriptions_Rev3.xlsx` → Input Sheet | Sample intervals |
 | `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |
 | `Biala_19` | GR / resistivity |
+| `Biala_19_trajectory` | Trajectory → mTVDss |
 
 ## Formation Top Results
 
@@ -27,7 +28,6 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 - Depth range: **1735 – 3730 m MD**
 - Average sandstone: **95.1%**
-- Δ Res range: **-0.7 – 46.5 ohm.m** (avg 5.7)
 - Mudlog matched: **237 / 237** intervals
 
 ## Limitations

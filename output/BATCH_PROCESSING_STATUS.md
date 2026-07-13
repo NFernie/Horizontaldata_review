@@ -1,36 +1,44 @@
 # Batch McKinlay Member Processing — Status
 
-**Generated:** 2026-07-12 (updated — bar-only fluorescence: McKinlay 10–15)
+**Generated:** 2026-07-13 (Phase 6 full pipeline rerun — RQI v2, WRCI v2, ZOI, OWC, trajectory on all wells)
 
 ## Wells Completed (23 / 23 with data in repository)
 
 | Well | Tops Name (Mck_Murta) | Intervals | Mudlog Match | mTVDss | Ingest | Fluor source | Cuttings pay (m) | Output |
 |------|----------------------|-----------|--------------|--------|--------|--------------|------------------|--------|
-| JENA 31 | JENA 31 OPS | 201 | 200/201 | — | Excel | Spreadsheet | 940 | `JENA31_*` |
-| JENA 31DW1 | JENA 31DW1 | 182 | 182/182 | — | Excel | Spreadsheet | 1180 | `JENA31DW1_*` |
-| BIALA 19 | BIALA 19 | 219 | 218/219 | — | Excel | Spreadsheet | 1692 | `BIALA19_*` |
-| BIALA 20 | BIALA 20 | 175 | 173/175 | — | Excel | Spreadsheet | 1202 | `BIALA20_*` |
-| BIALA 21 | BIALA 21 | 145 | 144/145 | — | Excel | Spreadsheet | 910 | `BIALA21_*` |
-| FROSTILLICUS 2 | FROSTILLICUS 2 | 370 | 248/370 | — | Excel | Spreadsheet | 1677 | `FROSTILLICUS2_*` |
-| GRANCHIO 4 | GRANCHIO 4 | 126 | 93/126 | — | Excel | Spreadsheet | 990 | `GRANCHIO4_*` |
-| HOBBES 5 | HOBBES 5 | 114 | 60/114 | — | Excel | Spreadsheet | 407 | `HOBBES5_*` |
-| HOBBES 6 | HOBBES 6 | 81 | 55/81 | — | Excel | Spreadsheet | 466 | `HOBBES6_*` |
+| JENA 31 | JENA 31 OPS | 197 | 197/197 | 197/197 | Excel | Spreadsheet | 940 | `JENA31_*` |
+| JENA 31DW1 | JENA 31DW1 | 165 | 165/165 | 165/165 | Excel | Spreadsheet | 1180 | `JENA31DW1_*` |
+| BIALA 19 | BIALA 19 | 237 | 237/237 | 237/237 | Excel | Spreadsheet | 1692 | `BIALA19_*` |
+| BIALA 20 | BIALA 20 | 156 | 156/156 | 156/156 | Excel | Spreadsheet | 1202.5 | `BIALA20_*` |
+| BIALA 21 | BIALA 21 | 134 | 133/134 | 134/134 | Excel | Spreadsheet | 910.5 | `BIALA21_*` |
+| FROSTILLICUS 2 | FROSTILLICUS 2 | 373 | 285/373 | 373/373 | Excel | Spreadsheet | 1677 | `FROSTILLICUS2_*` |
+| GRANCHIO 4 | GRANCHIO 4 | 127 | 109/127 | 127/127 | Excel | Spreadsheet | 990 | `GRANCHIO4_*` |
+| HOBBES 5 | HOBBES 5 | 96 | 72/96 | 96/96 | Excel | Spreadsheet | 407 | `HOBBES5_*` |
+| HOBBES 6 | HOBBES 6 | 78 | 62/78 | 78/78 | Excel | Spreadsheet | 466 | `HOBBES6_*` |
 | MCKINLAY 10 | MCKINLAY 10 | 96 | 96/96 | 96/96 | Litho+gas | **Bar-only** | **260** | `MCKINLAY10_*` |
 | MCKINLAY 11 | MCKINLAY 11 | 70 | 70/70 | 70/70 | Litho+gas | **Bar-only** | **310** | `MCKINLAY11_*` |
 | MCKINLAY 12 | MCKINLAY 12 | 172 | 172/172 | 172/172 | Litho+gas | **Text max** | **795** | `MCKINLAY12_*` |
 | MCKINLAY 13 | MCKINLAY 13 | 247 | 247/247 | 247/247 | Litho+gas | **Text max** | **1035** | `MCKINLAY13_*` |
 | MCKINLAY 14 | MCKINLAY 14 | 113 | 113/113 | 113/113 | Litho+gas | **Text max** | **440** | `MCKINLAY14_*` |
 | MCKINLAY 15 | MCKINLAY 15 | 57 | 57/57 | 57/57 | Litho+gas | **Text max** | **170** | `MCKINLAY15_*` |
-| MCKINLAY 20 | MCKINLAY 20 | 276 | 211/276 | — | Excel | Spreadsheet | 1168 | `MCKINLAY20_*` |
-| MCKINLAY 21 | MCKINLAY 21 | 118 | 81/118 | — | Excel | Spreadsheet | 470 | `MCKINLAY21_*` |
-| MCKINLAY 22 | MCKINLAY 22 | 306 | 221/306 | — | Excel | Spreadsheet | 1302 | `MCKINLAY22_*` |
-| MCKINLAY 23 | MCKINLAY 23 | 180 | 78/180 | — | Excel | Spreadsheet | 870 | `MCKINLAY23_*` |
-| MCKINLAY 24 | MCKINLAY 24 | 167 | 125/167 | — | Excel | Spreadsheet | 749 | `MCKINLAY24_*` |
-| STIMPEE 6 | STIMPEE 6 | 143 | 115/143 | — | Excel | Spreadsheet | 1158 | `STIMPEE6_*` |
-| STIMPEE 7 | STIMPEE 7 | 93 | 81/93 | — | Excel | Spreadsheet | 707 | `STIMPEE7_*` |
-| TERINGIE 6 | TERINGIE 6 | 166 | 165/166 | — | Excel | Spreadsheet | 955 | `TERINGIE6_*` |
+| MCKINLAY 20 | MCKINLAY 20 | 275 | 225/275 | 275/275 | Excel | Spreadsheet | 1168 | `MCKINLAY20_*` |
+| MCKINLAY 21 | MCKINLAY 21 | 124 | 104/124 | 124/124 | Excel | Spreadsheet | 470 | `MCKINLAY21_*` |
+| MCKINLAY 22 | MCKINLAY 22 | 309 | 253/309 | 309/309 | Excel | Spreadsheet | 1302 | `MCKINLAY22_*` |
+| MCKINLAY 23 | MCKINLAY 23 | 183 | 111/183 | 183/183 | Excel | Spreadsheet | 870 | `MCKINLAY23_*` |
+| MCKINLAY 24 | MCKINLAY 24 | 164 | 138/164 | 164/164 | Excel | Spreadsheet | 749.5 | `MCKINLAY24_*` |
+| STIMPEE 6 | STIMPEE 6 | 130 | 116/130 | 130/130 | Excel | Spreadsheet | 1158.5 | `STIMPEE6_*` |
+| STIMPEE 7 | STIMPEE 7 | 84 | 79/84 | 84/84 | Excel | Spreadsheet | 707.5 | `STIMPEE7_*` |
+| TERINGIE 6 | TERINGIE 6 | 159 | 159/159 | 159/159 | Excel | Spreadsheet | 955 | `TERINGIE6_*` |
 
-**Total McKinlay intervals analysed:** 3,647
+**Total McKinlay intervals analysed:** 3,746
+
+### Phase 6 export flags (all 23 wells)
+
+- **RQI v2** (8 components) and **WRCI v2** (`0.40·RQI + 0.20·lowres + 0.20·lowfluor + 0.20·owc_severity`)
+- **ZOI** — ±3 neighbour window; ≥2 metrics drop >15% vs neighbours
+- **OWC proximity** — `mTVDss` from Petrel `*_trajectory`; tiers from `Oil_Water_Contact.csv`
+- **Retired:** `res_sep`, `highperm`, ΔRes — absent from JSON and site
+- **Spot-check:** JENA 31 @ 2500 m MD — `mTVDss` −1194.2, `owc_distance_m` 3.79, `owc_near` High, RQI 0.657
 
 ## Well Awaiting Data Upload
 
@@ -45,6 +53,7 @@
 | Standard Excel | Jena, Biala, Granchio, Hobbes, Stimpee, Teringie | `Input Sheet` |
 | McKinlay legacy Excel | Frostillicus 2, McKinlay 20–24 | `Sheet1` (F=TG, G=%SS, H=%fluoro + col A text) |
 | **Litho + drill-gas ASCII/TXT** | **McKinlay 10–15** | Petrel litho + drill-gas exports (ft → m); **5 m bins**; mudlog PDF; Petrel `*_trajectory` → **mTVDss** |
+| Trajectory → mTVDss | **All 23 wells** | Petrel `*_trajectory` ASCII; OWC distance computed at export |
 
 ### Litho/gas wells — data gaps
 

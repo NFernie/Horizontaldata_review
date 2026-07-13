@@ -1,6 +1,6 @@
 # FROSTILLICUS 2 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 00:51 UTC  
+**Generated:** 2026-07-13 02:05 UTC  
 **Well:** FROSTILLICUS 2 (FROSTILLICUS 2)  
 **TD:** 3724 m MD  
 
@@ -14,6 +14,7 @@
 | Sample Descriptions | `Frostillicus 2 Hz Section Samples Descriptions.xlsx` (Sheet1 (cols F=TG, G=%SS, H=%fluoro + col A descriptions)) | Depth intervals & sample properties |
 | Formation Tops | `DC30.xlsx`, `Mck_Murta.xlsx` | Reservoir entry & overburden identification |
 | Wireline Log (LAS) | `Frosti_2` | GR, RES_DEEP, RES_SHALLOW |
+| Trajectory | `Frosti_2_trajectory` | mTVDss (Z subsea) |
 
 ## 2. Formation Top Analysis
 
@@ -57,7 +58,7 @@
 2. **Formation top discrepancies** between Mck_Murta.xlsx and mudlog PDF picks are noted where present.
 3. **Well name mapping:** FROSTILLICUS 2 → `FROSTILLICUS 2` (verified by TD and LAS WELL header).
 4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
-5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
+5. **Water-risk flags** use RQI, fluorescence, resistivity, GR, ZOI, and OWC proximity (see export).
 6. **NULL LAS values** (-999.25) excluded from averages.
 7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if none mapped). Later entry pairs inside an existing exclusion interval are treated as the same overburden excursion. Initial DC30/McKinlay reservoir entry is not excluded.
 8. **Input Sheet only** — Calculations Sheet not used.
@@ -81,6 +82,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 1.0% siderite in 60% Siltstone, minor siderite in 40% very fine to fine Sandstone, Trace pale to moderately bright |
 | Total Gas | 7.0 U |
+| mTVDss | -1220.30 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -94,10 +96,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 110.2 | 20 |
 | RES_DEEP (ohm.m) | 25.01 | 20 |
 | RES_SHALLOW (ohm.m) | 17.05 | 20 |
-| **Δ Res (Deep − Shallow)** | **7.95** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -117,6 +115,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 1.0% pale to moderately bright |
 | Total Gas | 7.0 U |
+| mTVDss | -1220.43 m |
 | FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
@@ -130,10 +129,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 118.4 | 19 |
 | RES_DEEP (ohm.m) | 36.08 | 19 |
 | RES_SHALLOW (ohm.m) | 23.46 | 19 |
-| **Δ Res (Deep − Shallow)** | **12.62** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -153,6 +148,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 10.0% siderite in 30% very finefine to fine Sandstone, 10% pale to moderately bright |
 | Total Gas | 5.0 U |
+| mTVDss | -1220.55 m |
 | FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
@@ -166,10 +162,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 112.4 | 20 |
 | RES_DEEP (ohm.m) | 36.36 | 20 |
 | RES_SHALLOW (ohm.m) | 24.11 | 20 |
-| **Δ Res (Deep − Shallow)** | **12.25** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -189,6 +181,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 80.0% siderite in 20% Siltstone, 80% very fine to medium, trace coarse to very coarse Sandstone, 80% moderately bright |
 | Total Gas | 77.0 U |
+| mTVDss | -1220.66 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -202,10 +195,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 105.4 | 20 |
 | RES_DEEP (ohm.m) | 50.06 | 20 |
 | RES_SHALLOW (ohm.m) | 36.17 | 20 |
-| **Δ Res (Deep − Shallow)** | **13.88** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -225,6 +214,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 100.0 U |
+| mTVDss | -1220.76 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1630m: lt trnsl brn,tr off wh-lt gry, clr-trnsl,f-med,mnr crs-v crs,pr srt,sbrnd- sbang,mod sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por, fr-gd inf por,fluor.
@@ -237,10 +227,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 84.3 | 19 |
 | RES_DEEP (ohm.m) | 43.91 | 19 |
 | RES_SHALLOW (ohm.m) | 33.99 | 19 |
-| **Δ Res (Deep − Shallow)** | **9.92** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -260,6 +246,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 94.0 U |
+| mTVDss | -1220.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1630m: lt trnsl brn,tr off wh-lt gry, clr-trnsl,f-med,mnr crs-v crs,pr srt,sbrnd- sbang,mod sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por, fr-gd inf por,fluor.
@@ -272,10 +259,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.9 | 20 |
 | RES_DEEP (ohm.m) | 41.60 | 20 |
 | RES_SHALLOW (ohm.m) | 38.57 | 20 |
-| **Δ Res (Deep − Shallow)** | **3.02** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -295,6 +278,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 102.0 U |
+| mTVDss | -1220.98 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1630m: lt trnsl brn,tr off wh-lt gry, clr-trnsl,f-med,mnr crs-v crs,pr srt,sbrnd- sbang,mod sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por, fr-gd inf por,fluor.
@@ -307,10 +291,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.5 | 26 |
 | RES_DEEP (ohm.m) | 38.27 | 26 |
 | RES_SHALLOW (ohm.m) | 34.06 | 26 |
-| **Δ Res (Deep − Shallow)** | **4.21** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -330,6 +310,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 100.0 U |
+| mTVDss | -1221.16 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1630m: lt trnsl brn,tr off wh-lt gry, clr-trnsl,f-med,mnr crs-v crs,pr srt,sbrnd- sbang,mod sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por, fr-gd inf por,fluor.
@@ -342,10 +323,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.3 | 33 |
 | RES_DEEP (ohm.m) | 36.25 | 33 |
 | RES_SHALLOW (ohm.m) | 25.44 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.81** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -365,6 +342,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% pale to moderately bright |
 | Total Gas | 144.0 U |
+| mTVDss | -1221.27 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1630m: lt trnsl brn,tr off wh-lt gry, clr-trnsl,f-med,mnr crs-v crs,pr srt,sbrnd- sbang,mod sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por, fr-gd inf por,fluor.
@@ -377,10 +355,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 89.7 | 33 |
 | RES_DEEP (ohm.m) | 33.81 | 33 |
 | RES_SHALLOW (ohm.m) | 22.54 | 33 |
-| **Δ Res (Deep − Shallow)** | **11.27** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -400,6 +374,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 70.0 U |
+| mTVDss | -1221.36 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1650m: med gry,med brn gry,vf aren g/t vf SST,tr micmic,frm-mod hd,sbblky. 73 / 6 / 5 / 7 / 952 U
@@ -412,10 +387,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.9 | 33 |
 | RES_DEEP (ohm.m) | 30.80 | 33 |
 | RES_SHALLOW (ohm.m) | 20.47 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.33** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -435,6 +406,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 42.0 U |
+| mTVDss | -1221.46 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1650m: med gry,med brn gry,vf aren g/t vf SST,tr micmic,frm-mod hd,sbblky. 73 / 6 / 5 / 7 / 952 U
@@ -447,10 +419,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 116.8 | 32 |
 | RES_DEEP (ohm.m) | 27.87 | 32 |
 | RES_SHALLOW (ohm.m) | 20.26 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.61** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -470,6 +438,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 52.0 U |
+| mTVDss | -1221.55 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1650m: med gry,med brn gry,vf aren g/t vf SST,tr micmic,frm-mod hd,sbblky. 73 / 6 / 5 / 7 / 952 U
@@ -482,10 +451,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.8 | 33 |
 | RES_DEEP (ohm.m) | 29.40 | 33 |
 | RES_SHALLOW (ohm.m) | 25.00 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.40** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -505,6 +470,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 67.0 U |
+| mTVDss | -1221.54 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1650m: med gry,med brn gry,vf aren g/t vf SST,tr micmic,frm-mod hd,sbblky. 73 / 6 / 5 / 7 / 952 U
@@ -517,10 +483,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.8 | 33 |
 | RES_DEEP (ohm.m) | 31.18 | 33 |
 | RES_SHALLOW (ohm.m) | 27.69 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.49** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -540,6 +502,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% medium Sandstone, 90% moderately bright |
 | Total Gas | 75.0 U |
+| mTVDss | -1221.50 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1660m: lt trnsl brn,clr-trnsl,vf-f, wl srt,sbang-sbrnd,mod-wk sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por,pr-fr inf por,fluor. 77 / 6 / 4 / 6 / 7 102 U
@@ -552,10 +515,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.6 | 33 |
 | RES_DEEP (ohm.m) | 28.53 | 33 |
 | RES_SHALLOW (ohm.m) | 26.59 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.94** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -575,6 +534,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 118.0 U |
+| mTVDss | -1221.47 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1660m: lt trnsl brn,clr-trnsl,vf-f, wl srt,sbang-sbrnd,mod-wk sil cmt,mnr lt gry arg mtx,tr carb spks,mod hd,tr disagg grs,pr vis por,pr-fr inf por,fluor. 77 / 6 / 4 / 6 / 7 102 U
@@ -587,10 +547,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 89.2 | 33 |
 | RES_DEEP (ohm.m) | 28.44 | 33 |
 | RES_SHALLOW (ohm.m) | 25.64 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.80** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -610,6 +566,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 121.0 U |
+| mTVDss | -1221.44 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1670m: med gry brn,med-dk gry, vf aren,tr micmic,mod hd-hd,sbblky. 1680 SURVEY @ 1680.2m INC: 91.0° AZI: 216.6°G
@@ -622,10 +579,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.1 | 33 |
 | RES_DEEP (ohm.m) | 31.63 | 33 |
 | RES_SHALLOW (ohm.m) | 27.48 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.15** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -645,6 +598,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 140.0 U |
+| mTVDss | -1221.35 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1670m: med gry brn,med-dk gry, vf aren,tr micmic,mod hd-hd,sbblky. 1680 SURVEY @ 1680.2m INC: 91.0° AZI: 216.6°G
@@ -657,10 +611,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.7 | 32 |
 | RES_DEEP (ohm.m) | 32.32 | 32 |
 | RES_SHALLOW (ohm.m) | 27.96 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.36** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -676,6 +626,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 148.0 U |
+| mTVDss | -1221.26 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -685,10 +636,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 78.7 | 33 |
 | RES_DEEP (ohm.m) | 34.74 | 33 |
 | RES_SHALLOW (ohm.m) | 31.75 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.99** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -708,6 +655,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
+| mTVDss | -1221.17 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med gry brn,med-dk gry i/p, aren,tr micmic,tr carb spks,mod hd-frm, sbblky-blky.
@@ -720,10 +668,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.2 | 33 |
 | RES_DEEP (ohm.m) | 36.67 | 33 |
 | RES_SHALLOW (ohm.m) | 33.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.99** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -743,6 +687,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright |
 | Total Gas | 209.0 U |
+| mTVDss | -1221.09 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med gry brn,med-dk gry i/p, aren,tr micmic,tr carb spks,mod hd-frm, sbblky-blky.
@@ -755,10 +700,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.5 | 33 |
 | RES_DEEP (ohm.m) | 43.69 | 33 |
 | RES_SHALLOW (ohm.m) | 39.95 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.73** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -778,6 +719,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 239.0 U |
+| mTVDss | -1221.04 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med gry brn,med-dk gry i/p, aren,tr micmic,tr carb spks,mod hd-frm, sbblky-blky.
@@ -790,10 +732,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 106.8 | 33 |
 | RES_DEEP (ohm.m) | 53.39 | 33 |
 | RES_SHALLOW (ohm.m) | 38.57 | 33 |
-| **Δ Res (Deep − Shallow)** | **14.83** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -813,6 +751,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright |
 | Total Gas | 221.0 U |
+| mTVDss | -1220.99 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med gry brn,med-dk gry i/p, aren,tr micmic,tr carb spks,mod hd-frm, sbblky-blky.
@@ -825,10 +764,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 111.5 | 32 |
 | RES_DEEP (ohm.m) | 49.20 | 32 |
 | RES_SHALLOW (ohm.m) | 33.39 | 32 |
-| **Δ Res (Deep − Shallow)** | **15.81** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -848,6 +783,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 199.0 U |
+| mTVDss | -1220.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1710m: med gry brn,med-dk gry i/p, aren,tr micmic,tr carb spks,mod hd-frm, sbblky-blky.
@@ -860,10 +796,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 118.9 | 33 |
 | RES_DEEP (ohm.m) | 37.62 | 33 |
 | RES_SHALLOW (ohm.m) | 25.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **11.63** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -883,6 +815,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 146.0 U |
+| mTVDss | -1221.47 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1770m: med-dk gry,med gry brn,med brn,aren,rr sid,tr micmic,tr carb spks,mod hd-frm,hd i/p,sbblky-blky.
@@ -894,10 +827,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 111.4 | 32 |
 | RES_DEEP (ohm.m) | 64.39 | 32 |
 | RES_SHALLOW (ohm.m) | 38.48 | 32 |
-| **Δ Res (Deep − Shallow)** | **25.91** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -917,6 +846,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 214.0 U |
+| mTVDss | -1221.64 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1770m: med-dk gry,med gry brn,med brn,aren,rr sid,tr micmic,tr carb spks,mod hd-frm,hd i/p,sbblky-blky.
@@ -929,10 +859,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 111.1 | 33 |
 | RES_DEEP (ohm.m) | 49.85 | 33 |
 | RES_SHALLOW (ohm.m) | 33.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **15.85** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -952,6 +878,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 242.0 U |
+| mTVDss | -1221.82 m |
 | FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
@@ -965,10 +892,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 105.5 | 33 |
 | RES_DEEP (ohm.m) | 40.83 | 33 |
 | RES_SHALLOW (ohm.m) | 33.12 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.71** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -988,6 +911,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% bright |
 | Total Gas | 235.0 U |
+| mTVDss | -1221.99 m |
 | FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1001,10 +925,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 89.3 | 33 |
 | RES_DEEP (ohm.m) | 45.53 | 33 |
 | RES_SHALLOW (ohm.m) | 39.21 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.32** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1024,6 +944,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 288.0 U |
+| mTVDss | -1222.19 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1770m: med-dk gry,med gry brn,med brn,aren,rr sid,tr micmic,tr carb spks,mod hd-frm,hd i/p,sbblky-blky.
@@ -1036,10 +957,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 78.0 | 33 |
 | RES_DEEP (ohm.m) | 41.50 | 33 |
 | RES_SHALLOW (ohm.m) | 40.06 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.44** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1059,6 +976,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 253.0 U |
+| mTVDss | -1222.40 m |
 | FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1072,10 +990,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 73.1 | 33 |
 | RES_DEEP (ohm.m) | 33.26 | 33 |
 | RES_SHALLOW (ohm.m) | 33.55 | 33 |
-| **Δ Res (Deep − Shallow)** | **-0.29** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1095,6 +1009,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, rare medium to coarse Sandstone, 100% bright |
 | Total Gas | 262.0 U |
+| mTVDss | -1222.61 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1780m: 55 SANDSTONE:v lt gry-wh,pl brn,vf-med, PV: 14 tr crs-v crs,mod-pr srt,sbang-sbrnd,tr YP: 17 ang,wk-mod sil cmt,mnr wh arg mtx,tr Gel: 6/8/9 carb spks,fri,mnr disagg,pr vis por,fr-gd WL: 4.8 inf por,fluor.
@@ -1107,10 +1022,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 76.5 | 32 |
 | RES_DEEP (ohm.m) | 33.40 | 32 |
 | RES_SHALLOW (ohm.m) | 30.88 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.52** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1130,6 +1041,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 242.0 U |
+| mTVDss | -1222.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1780m: 55 SANDSTONE:v lt gry-wh,pl brn,vf-med, PV: 14 tr crs-v crs,mod-pr srt,sbang-sbrnd,tr YP: 17 ang,wk-mod sil cmt,mnr wh arg mtx,tr Gel: 6/8/9 carb spks,fri,mnr disagg,pr vis por,fr-gd WL: 4.8 inf por,fluor.
@@ -1142,10 +1054,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 95.2 | 33 |
 | RES_DEEP (ohm.m) | 36.13 | 33 |
 | RES_SHALLOW (ohm.m) | 30.35 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.78** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1165,6 +1073,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% siderite in 85% very fine to fine, trace medium to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 174.0 U |
+| mTVDss | -1222.99 m |
 | FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1178,10 +1087,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 81.1 | 33 |
 | RES_DEEP (ohm.m) | 34.77 | 33 |
 | RES_SHALLOW (ohm.m) | 34.02 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.75** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1201,6 +1106,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 211.0 U |
+| mTVDss | -1223.16 m |
 | FeCO₃ in Siltstone | common |
 
 **Mudlog Cuttings Description (PDF):**
@@ -1214,10 +1120,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.4 | 33 |
 | RES_DEEP (ohm.m) | 30.92 | 33 |
 | RES_SHALLOW (ohm.m) | 27.23 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.69** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1233,6 +1135,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 60.0% nan |
 | Total Gas | 164.0 U |
+| mTVDss | -1223.32 m |
 | FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1243,10 +1146,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.1 | 33 |
 | RES_DEEP (ohm.m) | 25.84 | 33 |
 | RES_SHALLOW (ohm.m) | 23.40 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.45** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1262,6 +1161,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% siderite in 10% Siltstone, 90% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 240.0 U |
+| mTVDss | -1223.48 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -1272,10 +1172,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.8 | 32 |
 | RES_DEEP (ohm.m) | 25.01 | 32 |
 | RES_SHALLOW (ohm.m) | 23.00 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.01** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1291,6 +1187,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 299.0 U |
+| mTVDss | -1223.53 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -1300,10 +1197,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.3 | 33 |
 | RES_DEEP (ohm.m) | 24.54 | 33 |
 | RES_SHALLOW (ohm.m) | 22.39 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.15** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1323,6 +1216,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 275.0 U |
+| mTVDss | -1223.58 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: pl brn,pl gry brn,v lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,tr med-crs, mod-pr srt,sbang-sbrnd,wk-loc mod sil cmt,mnr gry brn-wh arg mtx,tr slty lams & carb spks,fri,mnr mod hd,com disagg,v pr
@@ -1335,10 +1229,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 77.4 | 33 |
 | RES_DEEP (ohm.m) | 23.43 | 33 |
 | RES_SHALLOW (ohm.m) | 17.96 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.48** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1358,6 +1248,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 293.0 U |
+| mTVDss | -1223.63 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: pl brn,pl gry brn,v lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,tr med-crs, mod-pr srt,sbang-sbrnd,wk-loc mod sil cmt,mnr gry brn-wh arg mtx,tr slty lams & carb spks,fri,mnr mod hd,com disagg,v pr
@@ -1370,10 +1261,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 78.1 | 33 |
 | RES_DEEP (ohm.m) | 24.03 | 33 |
 | RES_SHALLOW (ohm.m) | 14.74 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.28** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1393,6 +1280,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, rare medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 80.0 U |
+| mTVDss | -1223.68 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: pl brn,pl gry brn,v lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,tr med-crs, mod-pr srt,sbang-sbrnd,wk-loc mod sil cmt,mnr gry brn-wh arg mtx,tr slty lams & carb spks,fri,mnr mod hd,com disagg,v pr
@@ -1405,10 +1293,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 80.8 | 33 |
 | RES_DEEP (ohm.m) | 23.61 | 33 |
 | RES_SHALLOW (ohm.m) | 18.29 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.32** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1428,6 +1312,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 128.0 U |
+| mTVDss | -1223.63 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: pl brn,pl gry brn,v lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,tr med-crs, mod-pr srt,sbang-sbrnd,wk-loc mod sil cmt,mnr gry brn-wh arg mtx,tr slty lams & carb spks,fri,mnr mod hd,com disagg,v pr
@@ -1440,10 +1325,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.3 | 32 |
 | RES_DEEP (ohm.m) | 21.32 | 32 |
 | RES_SHALLOW (ohm.m) | 18.28 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.04** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1463,6 +1344,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 50.0% medium to coarse Sandstone, 50% moderately bright |
 | Total Gas | 61.0 U |
+| mTVDss | -1223.57 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: pl brn,pl gry brn,v lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,tr med-crs, mod-pr srt,sbang-sbrnd,wk-loc mod sil cmt,mnr gry brn-wh arg mtx,tr slty lams & carb spks,fri,mnr mod hd,com disagg,v pr
@@ -1475,10 +1357,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 104.5 | 33 |
 | RES_DEEP (ohm.m) | 21.64 | 33 |
 | RES_SHALLOW (ohm.m) | 18.26 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.38** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1498,6 +1376,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 45.0% medium to coarse Sandstone, 45% moderately bright |
 | Total Gas | 60.0 U |
+| mTVDss | -1223.52 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: pl brn,pl gry brn,v lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,tr med-crs, mod-pr srt,sbang-sbrnd,wk-loc mod sil cmt,mnr gry brn-wh arg mtx,tr slty lams & carb spks,fri,mnr mod hd,com disagg,v pr
@@ -1510,10 +1389,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 105.7 | 33 |
 | RES_DEEP (ohm.m) | 22.37 | 33 |
 | RES_SHALLOW (ohm.m) | 18.77 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.60** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1533,6 +1408,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 60.0% medium to coarse Sandstone, 60% moderately bright |
 | Total Gas | 78.0 U |
+| mTVDss | -1223.47 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1840m: pl brn,pl gry brn,v lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,tr med-crs, mod-pr srt,sbang-sbrnd,wk-loc mod sil cmt,mnr gry brn-wh arg mtx,tr slty lams & carb spks,fri,mnr mod hd,com disagg,v pr
@@ -1545,10 +1421,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 100.0 | 33 |
 | RES_DEEP (ohm.m) | 23.02 | 33 |
 | RES_SHALLOW (ohm.m) | 18.89 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.13** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1568,6 +1440,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 55.00000000000001% nan |
 | Total Gas | 74.0 U |
+| mTVDss | -1223.42 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1860m: lt gry,lt gry brn,v lt gry-wh, clr,trnsl,vf-med,tr crs,mod-wl srt,sbang- sbrnd,wk-loc mod sil cmt,mnr-loc com gry slty-wh arg mtx,tr carb spks & flks,tr lith incls,fri,mnr mod hd,com disagg,pr-
@@ -1580,10 +1453,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.8 | 33 |
 | RES_DEEP (ohm.m) | 22.54 | 33 |
 | RES_SHALLOW (ohm.m) | 17.86 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.68** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1603,6 +1472,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 55.00000000000001% nan |
 | Total Gas | 63.0 U |
+| mTVDss | -1223.38 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1860m: lt gry,lt gry brn,v lt gry-wh, clr,trnsl,vf-med,tr crs,mod-wl srt,sbang- sbrnd,wk-loc mod sil cmt,mnr-loc com gry slty-wh arg mtx,tr carb spks & flks,tr lith incls,fri,mnr mod hd,com disagg,pr-
@@ -1615,10 +1485,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 101.1 | 32 |
 | RES_DEEP (ohm.m) | 23.54 | 32 |
 | RES_SHALLOW (ohm.m) | 18.95 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.60** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1638,6 +1504,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% coarse Sandstone, 75% moderately bright |
 | Total Gas | 95.0 U |
+| mTVDss | -1223.33 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1860m: lt gry,lt gry brn,v lt gry-wh, clr,trnsl,vf-med,tr crs,mod-wl srt,sbang- sbrnd,wk-loc mod sil cmt,mnr-loc com gry slty-wh arg mtx,tr carb spks & flks,tr lith incls,fri,mnr mod hd,com disagg,pr-
@@ -1650,10 +1517,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.8 | 33 |
 | RES_DEEP (ohm.m) | 21.88 | 33 |
 | RES_SHALLOW (ohm.m) | 17.92 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.96** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1673,6 +1536,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% coarse Sandstone, 75% moderately bright |
 | Total Gas | 91.0 U |
+| mTVDss | -1223.30 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1860m: lt gry,lt gry brn,v lt gry-wh, clr,trnsl,vf-med,tr crs,mod-wl srt,sbang- sbrnd,wk-loc mod sil cmt,mnr-loc com gry slty-wh arg mtx,tr carb spks & flks,tr lith incls,fri,mnr mod hd,com disagg,pr-
@@ -1685,10 +1549,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.6 | 33 |
 | RES_DEEP (ohm.m) | 21.08 | 33 |
 | RES_SHALLOW (ohm.m) | 16.92 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.16** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1708,6 +1568,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 116.0 U |
+| mTVDss | -1223.29 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1870m: med gry,med gry brn,med lt gry,g/t aren SST i/p,mnr carb spks & flks, tr brn lith incls,tr micmic,frm,mnr mod hd,sbblky. SURVEY @ 1873.7m
@@ -1720,10 +1581,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.0 | 33 |
 | RES_DEEP (ohm.m) | 24.69 | 33 |
 | RES_SHALLOW (ohm.m) | 20.14 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.55** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1743,6 +1600,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 118.0 U |
+| mTVDss | -1223.28 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1870m: med gry,med gry brn,med lt gry,g/t aren SST i/p,mnr carb spks & flks, tr brn lith incls,tr micmic,frm,mnr mod hd,sbblky. SURVEY @ 1873.7m
@@ -1755,10 +1613,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 86.6 | 33 |
 | RES_DEEP (ohm.m) | 25.84 | 33 |
 | RES_SHALLOW (ohm.m) | 20.78 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.05** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1774,6 +1628,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 119.0 U |
+| mTVDss | -1223.27 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -1783,10 +1638,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 89.6 | 32 |
 | RES_DEEP (ohm.m) | 31.43 | 32 |
 | RES_SHALLOW (ohm.m) | 23.53 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.90** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1802,6 +1653,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
+| mTVDss | -1223.24 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -1811,10 +1663,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.3 | 33 |
 | RES_DEEP (ohm.m) | 31.46 | 33 |
 | RES_SHALLOW (ohm.m) | 23.69 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.77** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1830,6 +1678,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
+| mTVDss | -1223.19 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -1839,10 +1688,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.5 | 33 |
 | RES_DEEP (ohm.m) | 43.08 | 33 |
 | RES_SHALLOW (ohm.m) | 29.32 | 33 |
-| **Δ Res (Deep − Shallow)** | **13.76** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1862,6 +1707,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 163.0 U |
+| mTVDss | -1223.14 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: pl brn,lt-med gry brn,lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,wl srt, sbang-sbrnd,wk-mod sil cmt,mnr gry brn arg mtx,tr carb spks,tr mic flks,fri-mod hd,mnr disagg,v pr-pr vis por,fr inf por,
@@ -1873,10 +1719,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.1 | 33 |
 | RES_DEEP (ohm.m) | 51.83 | 33 |
 | RES_SHALLOW (ohm.m) | 37.53 | 33 |
-| **Δ Res (Deep − Shallow)** | **14.30** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1896,6 +1738,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 201.0 U |
+| mTVDss | -1223.09 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: pl brn,lt-med gry brn,lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,wl srt, sbang-sbrnd,wk-mod sil cmt,mnr gry brn arg mtx,tr carb spks,tr mic flks,fri-mod hd,mnr disagg,v pr-pr vis por,fr inf por,
@@ -1907,10 +1750,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 81.5 | 33 |
 | RES_DEEP (ohm.m) | 52.22 | 33 |
 | RES_SHALLOW (ohm.m) | 36.55 | 33 |
-| **Δ Res (Deep − Shallow)** | **15.67** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1930,6 +1769,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
+| mTVDss | -1223.02 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: pl brn,lt-med gry brn,lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,wl srt, sbang-sbrnd,wk-mod sil cmt,mnr gry brn arg mtx,tr carb spks,tr mic flks,fri-mod hd,mnr disagg,v pr-pr vis por,fr inf por,
@@ -1942,10 +1782,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.7 | 33 |
 | RES_DEEP (ohm.m) | 40.86 | 33 |
 | RES_SHALLOW (ohm.m) | 30.32 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.54** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -1965,6 +1801,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 127.0 U |
+| mTVDss | -1222.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: pl brn,lt-med gry brn,lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,wl srt, sbang-sbrnd,wk-mod sil cmt,mnr gry brn arg mtx,tr carb spks,tr mic flks,fri-mod hd,mnr disagg,v pr-pr vis por,fr inf por,
@@ -1977,10 +1814,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 95.3 | 32 |
 | RES_DEEP (ohm.m) | 34.34 | 32 |
 | RES_SHALLOW (ohm.m) | 26.60 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.74** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2000,6 +1833,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 116.0 U |
+| mTVDss | -1222.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: pl brn,lt-med gry brn,lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,wl srt, sbang-sbrnd,wk-mod sil cmt,mnr gry brn arg mtx,tr carb spks,tr mic flks,fri-mod hd,mnr disagg,v pr-pr vis por,fr inf por,
@@ -2012,10 +1846,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.0 | 33 |
 | RES_DEEP (ohm.m) | 28.16 | 33 |
 | RES_SHALLOW (ohm.m) | 21.74 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.42** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2035,6 +1865,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 121.0 U |
+| mTVDss | -1222.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: pl brn,lt-med gry brn,lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,wl srt, sbang-sbrnd,wk-mod sil cmt,mnr gry brn arg mtx,tr carb spks,tr mic flks,fri-mod hd,mnr disagg,v pr-pr vis por,fr inf por,
@@ -2047,10 +1878,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.8 | 33 |
 | RES_DEEP (ohm.m) | 24.07 | 33 |
 | RES_SHALLOW (ohm.m) | 19.47 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.60** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2070,6 +1897,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 60.0% medium to coarse Sandstone, 60% moderately bright |
 | Total Gas | 130.0 U |
+| mTVDss | -1222.71 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1920m: pl brn,lt-med gry brn,lt gry, clr,trnsl,vf-f,g/t aren SLTST i/p,wl srt, sbang-sbrnd,wk-mod sil cmt,mnr gry brn arg mtx,tr carb spks,tr mic flks,fri-mod hd,mnr disagg,v pr-pr vis por,fr inf por,
@@ -2082,10 +1910,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 101.1 | 33 |
 | RES_DEEP (ohm.m) | 23.25 | 33 |
 | RES_SHALLOW (ohm.m) | 19.02 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.23** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2105,6 +1929,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% siderite in 70% very fine to fine, g/t slty SST Sandstone, 70% moderately bright |
 | Total Gas | 117.0 U |
+| mTVDss | -1222.59 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -2118,10 +1943,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.2 | 33 |
 | RES_DEEP (ohm.m) | 23.78 | 33 |
 | RES_SHALLOW (ohm.m) | 19.77 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.01** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2141,6 +1962,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 175.0 U |
+| mTVDss | -1222.47 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1930m: pl brn-med brn,lt-med gry brn,lt gry,clr,trnsl,vf-f,g/t aren SLTST i/p, wl srt,sbang-sbrnd,wk-mod sil cmt,tr sid cmt,mnr gry brn arg mtx,tr carb spks,tr mic flks,mod hd-fri,mnr hd,mnr disagg,v
@@ -2153,10 +1975,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.1 | 32 |
 | RES_DEEP (ohm.m) | 28.25 | 32 |
 | RES_SHALLOW (ohm.m) | 21.11 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.14** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2172,6 +1990,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 206.0 U |
+| mTVDss | -1222.35 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -2181,10 +2000,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 74.9 | 33 |
 | RES_DEEP (ohm.m) | 35.54 | 33 |
 | RES_SHALLOW (ohm.m) | 27.29 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.25** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2200,6 +2015,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 242.0 U |
+| mTVDss | -1222.25 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -2209,10 +2025,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 69.5 | 33 |
 | RES_DEEP (ohm.m) | 41.32 | 33 |
 | RES_SHALLOW (ohm.m) | 35.17 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.16** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2228,6 +2040,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
+| mTVDss | -1222.15 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -2237,10 +2050,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 68.5 | 33 |
 | RES_DEEP (ohm.m) | 41.41 | 33 |
 | RES_SHALLOW (ohm.m) | 39.89 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.52** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2260,6 +2069,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 231.0 U |
+| mTVDss | -1222.05 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1980m: lt trnsl brn,lt gry,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,mod- wk sil cmt,com lt gry brn slty mtx,tr carb lams & spks,mod hd-fri,tr disagg grs,pr vis por,fr inf por,fluor.
@@ -2270,10 +2080,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.9 | 33 |
 | RES_DEEP (ohm.m) | 40.89 | 33 |
 | RES_SHALLOW (ohm.m) | 39.35 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.54** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2293,6 +2099,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 242.0 U |
+| mTVDss | -1221.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1980m: lt trnsl brn,lt gry,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,mod- wk sil cmt,com lt gry brn slty mtx,tr carb lams & spks,mod hd-fri,tr disagg grs,pr vis por,fr inf por,fluor.
@@ -2303,10 +2110,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.4 | 32 |
 | RES_DEEP (ohm.m) | 41.36 | 32 |
 | RES_SHALLOW (ohm.m) | 38.08 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.28** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2326,6 +2129,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
+| mTVDss | -1221.93 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1980m: lt trnsl brn,lt gry,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,mod- wk sil cmt,com lt gry brn slty mtx,tr carb lams & spks,mod hd-fri,tr disagg grs,pr vis por,fr inf por,fluor.
@@ -2338,10 +2142,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 81.8 | 33 |
 | RES_DEEP (ohm.m) | 40.69 | 33 |
 | RES_SHALLOW (ohm.m) | 38.83 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.87** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2361,6 +2161,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 179.0 U |
+| mTVDss | -1221.92 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1980m: lt trnsl brn,lt gry,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,mod- wk sil cmt,com lt gry brn slty mtx,tr carb lams & spks,mod hd-fri,tr disagg grs,pr vis por,fr inf por,fluor.
@@ -2373,10 +2174,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 93.6 | 33 |
 | RES_DEEP (ohm.m) | 45.27 | 33 |
 | RES_SHALLOW (ohm.m) | 40.69 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.58** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2396,6 +2193,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 177.0 U |
+| mTVDss | -1221.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1980m: lt trnsl brn,lt gry,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,mod- wk sil cmt,com lt gry brn slty mtx,tr carb lams & spks,mod hd-fri,tr disagg grs,pr vis por,fr inf por,fluor.
@@ -2408,10 +2206,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.0 | 33 |
 | RES_DEEP (ohm.m) | 42.37 | 33 |
 | RES_SHALLOW (ohm.m) | 34.57 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.81** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2431,6 +2225,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 80.0% very coarse Sandstone, 80% moderately bright to bright |
 | Total Gas | 172.0 U |
+| mTVDss | -1221.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1980m: lt trnsl brn,lt gry,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,mod- wk sil cmt,com lt gry brn slty mtx,tr carb lams & spks,mod hd-fri,tr disagg grs,pr vis por,fr inf por,fluor.
@@ -2443,10 +2238,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 101.3 | 33 |
 | RES_DEEP (ohm.m) | 44.39 | 33 |
 | RES_SHALLOW (ohm.m) | 36.81 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.58** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2466,6 +2257,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 183.0 U |
+| mTVDss | -1221.99 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~1980m: lt trnsl brn,lt gry,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,mod- wk sil cmt,com lt gry brn slty mtx,tr carb lams & spks,mod hd-fri,tr disagg grs,pr vis por,fr inf por,fluor.
@@ -2478,10 +2270,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 95.1 | 32 |
 | RES_DEEP (ohm.m) | 45.83 | 32 |
 | RES_SHALLOW (ohm.m) | 38.10 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.73** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2501,6 +2289,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% very coarse Sandstone, 80% moderately bright to bright |
 | Total Gas | 160.0 U |
+| mTVDss | -1222.08 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1990m: med gry brn,med-dk gry, aren,g/t SST i/p,tr arg,tr micmic,mnr carb spks,mod hd-hd,sbblky-blky.
@@ -2513,10 +2302,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.9 | 33 |
 | RES_DEEP (ohm.m) | 43.84 | 33 |
 | RES_SHALLOW (ohm.m) | 37.16 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.68** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2538,6 +2323,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 191.0 U |
+| mTVDss | -1222.16 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~1990m: med gry brn,med-dk gry, aren,g/t SST i/p,tr arg,tr micmic,mnr carb spks,mod hd-hd,sbblky-blky.
@@ -2550,10 +2336,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 75.4 | 33 |
 | RES_DEEP (ohm.m) | 33.95 | 33 |
 | RES_SHALLOW (ohm.m) | 31.01 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.94** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2573,6 +2355,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
+| mTVDss | -1222.26 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med-dk gry,med gry brn, aren,g/t SST i/p,tr micmic,tr carb spks, mod hd,blky-sbblky. ADD 1% STARGLIDE TO MUD.
@@ -2585,10 +2368,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.2 | 33 |
 | RES_DEEP (ohm.m) | 38.36 | 33 |
 | RES_SHALLOW (ohm.m) | 33.69 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.67** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2608,6 +2387,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 179.0 U |
+| mTVDss | -1222.39 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med-dk gry,med gry brn, aren,g/t SST i/p,tr micmic,tr carb spks, mod hd,blky-sbblky. ADD 1% STARGLIDE TO MUD.
@@ -2620,10 +2400,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 85.9 | 33 |
 | RES_DEEP (ohm.m) | 38.31 | 33 |
 | RES_SHALLOW (ohm.m) | 30.82 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.49** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2643,6 +2419,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 186.0 U |
+| mTVDss | -1222.52 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med-dk gry,med gry brn, aren,g/t SST i/p,tr micmic,tr carb spks, mod hd,blky-sbblky. ADD 1% STARGLIDE TO MUD.
@@ -2655,10 +2432,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 97.6 | 32 |
 | RES_DEEP (ohm.m) | 37.42 | 32 |
 | RES_SHALLOW (ohm.m) | 28.35 | 32 |
-| **Δ Res (Deep − Shallow)** | **9.07** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2678,6 +2451,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% coarse to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 155.0 U |
+| mTVDss | -1222.65 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med-dk gry,med gry brn, aren,g/t SST i/p,tr micmic,tr carb spks, mod hd,blky-sbblky. ADD 1% STARGLIDE TO MUD.
@@ -2690,10 +2464,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 90.2 | 33 |
 | RES_DEEP (ohm.m) | 35.11 | 33 |
 | RES_SHALLOW (ohm.m) | 28.64 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.47** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2713,6 +2483,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 80.0% coarse Sandstone, 80% moderately bright to pale |
 | Total Gas | 197.0 U |
+| mTVDss | -1222.76 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med-dk gry,med gry brn, aren,g/t SST i/p,tr micmic,tr carb spks, mod hd,blky-sbblky. ADD 1% STARGLIDE TO MUD.
@@ -2725,10 +2496,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 85.2 | 33 |
 | RES_DEEP (ohm.m) | 32.44 | 33 |
 | RES_SHALLOW (ohm.m) | 27.50 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.94** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2748,6 +2515,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
+| mTVDss | -1222.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2020m: med-dk gry,med gry brn, aren,g/t SST i/p,tr micmic,tr carb spks, mod hd,blky-sbblky. ADD 1% STARGLIDE TO MUD.
@@ -2760,10 +2528,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 88.4 | 33 |
 | RES_DEEP (ohm.m) | 31.55 | 33 |
 | RES_SHALLOW (ohm.m) | 28.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.87** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2783,6 +2547,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 186.0 U |
+| mTVDss | -1222.86 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2040m: med gry brn,med-dk gry,aren, g/t SST i/p,micmic i/p,tr carb spks,frm- 73 / 6 / 5 / 7 / 9 232 U mod hd,sbblky-blky. SURVEY @ 2047.0m INC: 89.7° AZI: 221.0°G
@@ -2795,10 +2560,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 78.8 | 33 |
 | RES_DEEP (ohm.m) | 38.07 | 33 |
 | RES_SHALLOW (ohm.m) | 30.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.42** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2818,6 +2579,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 230.0 U |
+| mTVDss | -1222.92 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2040m: med gry brn,med-dk gry,aren, g/t SST i/p,micmic i/p,tr carb spks,frm- 73 / 6 / 5 / 7 / 9 232 U mod hd,sbblky-blky. SURVEY @ 2047.0m INC: 89.7° AZI: 221.0°G
@@ -2830,10 +2592,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 80.5 | 33 |
 | RES_DEEP (ohm.m) | 44.50 | 33 |
 | RES_SHALLOW (ohm.m) | 37.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.13** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2853,6 +2611,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 190.0 U |
+| mTVDss | -1222.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2040m: med gry brn,med-dk gry,aren, g/t SST i/p,micmic i/p,tr carb spks,frm- 73 / 6 / 5 / 7 / 9 232 U mod hd,sbblky-blky. SURVEY @ 2047.0m INC: 89.7° AZI: 221.0°G
@@ -2865,10 +2624,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 88.0 | 32 |
 | RES_DEEP (ohm.m) | 41.64 | 32 |
 | RES_SHALLOW (ohm.m) | 36.28 | 32 |
-| **Δ Res (Deep − Shallow)** | **5.36** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2888,6 +2643,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 211.0 U |
+| mTVDss | -1222.97 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2040m: med gry brn,med-dk gry,aren, g/t SST i/p,micmic i/p,tr carb spks,frm- 73 / 6 / 5 / 7 / 9 232 U mod hd,sbblky-blky. SURVEY @ 2047.0m INC: 89.7° AZI: 221.0°G
@@ -2900,10 +2656,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 87.8 | 33 |
 | RES_DEEP (ohm.m) | 39.79 | 33 |
 | RES_SHALLOW (ohm.m) | 35.59 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.19** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2923,6 +2675,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 195.0 U |
+| mTVDss | -1223.00 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2070m: med brn,med-dk gry brn, aren,g/t SST i/p,micmic i/p,tr carb spks, mod hd,sbblky-sbfiss. 73 / 6 / 5 / 7 / 9 208 U
@@ -2934,10 +2687,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 79.2 | 33 |
 | RES_DEEP (ohm.m) | 51.21 | 33 |
 | RES_SHALLOW (ohm.m) | 43.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.56** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2957,6 +2706,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 219.0 U |
+| mTVDss | -1223.02 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2070m: med brn,med-dk gry brn, aren,g/t SST i/p,micmic i/p,tr carb spks, mod hd,sbblky-sbfiss. 73 / 6 / 5 / 7 / 9 208 U
@@ -2969,10 +2719,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 86.2 | 33 |
 | RES_DEEP (ohm.m) | 44.86 | 33 |
 | RES_SHALLOW (ohm.m) | 39.59 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.27** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -2992,6 +2738,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 172.0 U |
+| mTVDss | -1223.01 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2070m: med brn,med-dk gry brn, aren,g/t SST i/p,micmic i/p,tr carb spks, mod hd,sbblky-sbfiss. 73 / 6 / 5 / 7 / 9 208 U
@@ -3004,10 +2751,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 89.4 | 33 |
 | RES_DEEP (ohm.m) | 41.80 | 33 |
 | RES_SHALLOW (ohm.m) | 38.57 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.23** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3027,6 +2770,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 207.0 U |
+| mTVDss | -1222.99 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2070m: med brn,med-dk gry brn, aren,g/t SST i/p,micmic i/p,tr carb spks, mod hd,sbblky-sbfiss. 73 / 6 / 5 / 7 / 9 208 U
@@ -3039,10 +2783,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 97.5 | 32 |
 | RES_DEEP (ohm.m) | 36.19 | 32 |
 | RES_SHALLOW (ohm.m) | 32.05 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.14** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3062,6 +2802,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 198.0 U |
+| mTVDss | -1222.98 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2070m: med brn,med-dk gry brn, aren,g/t SST i/p,micmic i/p,tr carb spks, mod hd,sbblky-sbfiss. 73 / 6 / 5 / 7 / 9 208 U
@@ -3074,10 +2815,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 79.1 | 33 |
 | RES_DEEP (ohm.m) | 36.41 | 33 |
 | RES_SHALLOW (ohm.m) | 30.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.48** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3097,6 +2834,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 182.0 U |
+| mTVDss | -1222.96 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2070m: med brn,med-dk gry brn, aren,g/t SST i/p,micmic i/p,tr carb spks, mod hd,sbblky-sbfiss. 73 / 6 / 5 / 7 / 9 208 U
@@ -3109,10 +2847,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.5 | 33 |
 | RES_DEEP (ohm.m) | 41.35 | 33 |
 | RES_SHALLOW (ohm.m) | 33.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.36** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3132,6 +2866,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 192.0 U |
+| mTVDss | -1222.94 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2080m: lt brn gry,lt trnsl brn,clr- trnsl,vf-f,tr med-crs,mod srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,fri-mod hd,mnr disagg grs,pr vis por,fr-pr inf por,fluor.
@@ -3144,10 +2879,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 75.3 | 33 |
 | RES_DEEP (ohm.m) | 47.21 | 33 |
 | RES_SHALLOW (ohm.m) | 42.60 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.61** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3167,6 +2898,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 184.0 U |
+| mTVDss | -1222.91 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2080m: lt brn gry,lt trnsl brn,clr- trnsl,vf-f,tr med-crs,mod srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,fri-mod hd,mnr disagg grs,pr vis por,fr-pr inf por,fluor.
@@ -3179,10 +2911,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 81.1 | 33 |
 | RES_DEEP (ohm.m) | 51.08 | 33 |
 | RES_SHALLOW (ohm.m) | 50.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.71** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3198,6 +2926,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 212.0 U |
+| mTVDss | -1222.89 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3207,10 +2936,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 82.7 | 32 |
 | RES_DEEP (ohm.m) | 47.34 | 32 |
 | RES_SHALLOW (ohm.m) | 41.09 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.24** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3226,6 +2951,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 206.0 U |
+| mTVDss | -1222.87 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3235,10 +2961,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 82.3 | 33 |
 | RES_DEEP (ohm.m) | 45.79 | 33 |
 | RES_SHALLOW (ohm.m) | 43.51 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.28** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3254,6 +2976,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 227.0 U |
+| mTVDss | -1222.88 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3263,10 +2986,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 80.0 | 33 |
 | RES_DEEP (ohm.m) | 50.34 | 33 |
 | RES_SHALLOW (ohm.m) | 47.77 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.57** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3282,6 +3001,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 195.0 U |
+| mTVDss | -1222.89 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3291,10 +3011,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 77.7 | 33 |
 | RES_DEEP (ohm.m) | 46.67 | 33 |
 | RES_SHALLOW (ohm.m) | 40.01 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.66** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3310,6 +3026,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 197.0 U |
+| mTVDss | -1222.91 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3319,10 +3036,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 75.4 | 33 |
 | RES_DEEP (ohm.m) | 43.78 | 33 |
 | RES_SHALLOW (ohm.m) | 39.20 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.58** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3338,6 +3051,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 199.0 U |
+| mTVDss | -1222.93 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3347,10 +3061,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 79.0 | 32 |
 | RES_DEEP (ohm.m) | 47.16 | 32 |
 | RES_SHALLOW (ohm.m) | 44.56 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.60** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3366,6 +3076,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 244.0 U |
+| mTVDss | -1222.99 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3375,10 +3086,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 78.4 | 33 |
 | RES_DEEP (ohm.m) | 39.71 | 33 |
 | RES_SHALLOW (ohm.m) | 37.41 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.30** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3394,6 +3101,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
+| mTVDss | -1223.05 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3403,10 +3111,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 74.2 | 30 |
 | RES_DEEP (ohm.m) | 38.61 | 30 |
 | RES_SHALLOW (ohm.m) | 31.29 | 30 |
-| **Δ Res (Deep − Shallow)** | **7.32** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3422,6 +3126,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 185.0 U |
+| mTVDss | -1223.09 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3431,10 +3136,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.5 | 16 |
 | RES_DEEP (ohm.m) | 40.28 | 16 |
 | RES_SHALLOW (ohm.m) | 28.00 | 16 |
-| **Δ Res (Deep − Shallow)** | **12.27** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3450,6 +3151,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 133.0 U |
+| mTVDss | -1223.10 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3459,10 +3161,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 77.6 | 20 |
 | RES_DEEP (ohm.m) | 37.22 | 20 |
 | RES_SHALLOW (ohm.m) | 27.46 | 20 |
-| **Δ Res (Deep − Shallow)** | **9.76** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3478,6 +3176,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 177.0 U |
+| mTVDss | -1223.17 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3487,10 +3186,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 90.1 | 33 |
 | RES_DEEP (ohm.m) | 38.77 | 33 |
 | RES_SHALLOW (ohm.m) | 30.36 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.41** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3506,6 +3201,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 179.0 U |
+| mTVDss | -1223.24 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3515,10 +3211,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 92.6 | 33 |
 | RES_DEEP (ohm.m) | 44.13 | 33 |
 | RES_SHALLOW (ohm.m) | 35.20 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.93** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3534,6 +3226,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 90.0% nan |
 | Total Gas | 142.0 U |
+| mTVDss | -1223.31 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3543,10 +3236,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 93.5 | 32 |
 | RES_DEEP (ohm.m) | 46.24 | 32 |
 | RES_SHALLOW (ohm.m) | 33.83 | 32 |
-| **Δ Res (Deep − Shallow)** | **12.41** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3562,6 +3251,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 90.0% medium to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 143.0 U |
+| mTVDss | -1223.39 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -3571,10 +3261,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 89.2 | 33 |
 | RES_DEEP (ohm.m) | 53.40 | 33 |
 | RES_SHALLOW (ohm.m) | 38.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **14.72** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3594,6 +3280,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 85.0% medium to very coarse Sandstone, 85% moderately bright |
 | Total Gas | 151.0 U |
+| mTVDss | -1223.43 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2180m: med lt gry-med gry,med gry brn,aren,mnr sandy lams,tr carb & lith spks,tr micmic,frm-mod hd,sbblky. SURVEY @ 2181.7m INC: 90.6° AZI: 221.2°G
@@ -3606,10 +3293,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 89.0 | 33 |
 | RES_DEEP (ohm.m) | 49.61 | 33 |
 | RES_SHALLOW (ohm.m) | 37.64 | 33 |
-| **Δ Res (Deep − Shallow)** | **11.97** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3629,6 +3312,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% coarse Sandstone, 80% moderately bright |
 | Total Gas | 146.0 U |
+| mTVDss | -1223.44 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2180m: med lt gry-med gry,med gry brn,aren,mnr sandy lams,tr carb & lith spks,tr micmic,frm-mod hd,sbblky. SURVEY @ 2181.7m INC: 90.6° AZI: 221.2°G
@@ -3641,10 +3325,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 89.3 | 33 |
 | RES_DEEP (ohm.m) | 44.38 | 33 |
 | RES_SHALLOW (ohm.m) | 31.79 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.58** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3664,6 +3344,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 85.0% coarse to very coarse Sandstone, 85% moderately bright to bright |
 | Total Gas | 150.0 U |
+| mTVDss | -1223.44 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2180m: med lt gry-med gry,med gry brn,aren,mnr sandy lams,tr carb & lith spks,tr micmic,frm-mod hd,sbblky. SURVEY @ 2181.7m INC: 90.6° AZI: 221.2°G
@@ -3676,10 +3357,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 91.9 | 33 |
 | RES_DEEP (ohm.m) | 44.53 | 33 |
 | RES_SHALLOW (ohm.m) | 29.25 | 33 |
-| **Δ Res (Deep − Shallow)** | **15.28** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3699,6 +3376,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 75.0% coarse Sandstone, 75% moderately bright to dull |
 | Total Gas | 125.0 U |
+| mTVDss | -1223.45 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2180m: med lt gry-med gry,med gry brn,aren,mnr sandy lams,tr carb & lith spks,tr micmic,frm-mod hd,sbblky. SURVEY @ 2181.7m INC: 90.6° AZI: 221.2°G
@@ -3711,10 +3389,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 86.7 | 32 |
 | RES_DEEP (ohm.m) | 46.87 | 32 |
 | RES_SHALLOW (ohm.m) | 37.30 | 32 |
-| **Δ Res (Deep − Shallow)** | **9.57** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3734,6 +3408,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 70.0% medium to coarse Sandstone, 70% moderately bright to dull |
 | Total Gas | 93.0 U |
+| mTVDss | -1223.41 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2180m: med lt gry-med gry,med gry brn,aren,mnr sandy lams,tr carb & lith spks,tr micmic,frm-mod hd,sbblky. SURVEY @ 2181.7m INC: 90.6° AZI: 221.2°G
@@ -3746,10 +3421,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 82.6 | 33 |
 | RES_DEEP (ohm.m) | 42.77 | 33 |
 | RES_SHALLOW (ohm.m) | 37.61 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.15** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3769,6 +3440,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 103.0 U |
+| mTVDss | -1223.36 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2180m: med lt gry-med gry,med gry brn,aren,mnr sandy lams,tr carb & lith spks,tr micmic,frm-mod hd,sbblky. SURVEY @ 2181.7m INC: 90.6° AZI: 221.2°G
@@ -3781,10 +3453,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 89.0 | 33 |
 | RES_DEEP (ohm.m) | 37.09 | 33 |
 | RES_SHALLOW (ohm.m) | 33.88 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.21** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3804,6 +3472,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 75.0% medium to coarse Sandstone, 75% moderately bright |
 | Total Gas | 110.0 U |
+| mTVDss | -1223.30 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2180m: med lt gry-med gry,med gry brn,aren,mnr sandy lams,tr carb & lith spks,tr micmic,frm-mod hd,sbblky. SURVEY @ 2181.7m INC: 90.6° AZI: 221.2°G
@@ -3816,10 +3485,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 86.8 | 33 |
 | RES_DEEP (ohm.m) | 38.09 | 33 |
 | RES_SHALLOW (ohm.m) | 33.58 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.51** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3839,6 +3504,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 65.0% medium Sandstone, 65% moderately bright to dull |
 | Total Gas | 113.0 U |
+| mTVDss | -1223.25 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2200m: lt gry brn,pl-lt brn,clr,trnsl, vf-f,mnr med-v crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,tr-mnr gry brn slty mtx,rr slty lams,tr carb spks,fri,mnr mod hd,mnr-com disagg grs,pr vis por,fr inf
@@ -3851,10 +3517,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 88.3 | 33 |
 | RES_DEEP (ohm.m) | 40.34 | 33 |
 | RES_SHALLOW (ohm.m) | 33.84 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.49** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3874,6 +3536,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% nan |
 | Total Gas | 137.0 U |
+| mTVDss | -1223.17 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2200m: lt gry brn,pl-lt brn,clr,trnsl, vf-f,mnr med-v crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,tr-mnr gry brn slty mtx,rr slty lams,tr carb spks,fri,mnr mod hd,mnr-com disagg grs,pr vis por,fr inf
@@ -3886,10 +3549,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 79.1 | 32 |
 | RES_DEEP (ohm.m) | 41.06 | 32 |
 | RES_SHALLOW (ohm.m) | 37.76 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.30** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3909,6 +3568,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 123.0 U |
+| mTVDss | -1223.09 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2200m: lt gry brn,pl-lt brn,clr,trnsl, vf-f,mnr med-v crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,tr-mnr gry brn slty mtx,rr slty lams,tr carb spks,fri,mnr mod hd,mnr-com disagg grs,pr vis por,fr inf
@@ -3921,10 +3581,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 93.2 | 33 |
 | RES_DEEP (ohm.m) | 28.43 | 33 |
 | RES_SHALLOW (ohm.m) | 23.39 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.04** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3944,6 +3600,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 124.0 U |
+| mTVDss | -1223.01 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2200m: lt gry brn,pl-lt brn,clr,trnsl, vf-f,mnr med-v crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,tr-mnr gry brn slty mtx,rr slty lams,tr carb spks,fri,mnr mod hd,mnr-com disagg grs,pr vis por,fr inf
@@ -3956,10 +3613,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 97.4 | 33 |
 | RES_DEEP (ohm.m) | 23.25 | 33 |
 | RES_SHALLOW (ohm.m) | 18.84 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.41** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -3979,6 +3632,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% coarse Sandstone, 80% moderately bright |
 | Total Gas | 106.0 U |
+| mTVDss | -1222.94 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2220m: lt gry brn,lt brn,med lt gry, clr,trnsl,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,wk-mod sil cmt,tr-mnr gry brn slty mtx,rr slty lams,tr carb spks,fri, mnr mod hd,mnr-com disagg grs,pr vis
@@ -3991,10 +3645,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 97.5 | 33 |
 | RES_DEEP (ohm.m) | 34.71 | 33 |
 | RES_SHALLOW (ohm.m) | 28.52 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.19** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4014,6 +3664,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% coarse to very coarse Sandstone, 75% moderately bright |
 | Total Gas | 95.0 U |
+| mTVDss | -1222.83 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2220m: lt gry brn,lt brn,med lt gry, clr,trnsl,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,wk-mod sil cmt,tr-mnr gry brn slty mtx,rr slty lams,tr carb spks,fri, mnr mod hd,mnr-com disagg grs,pr vis
@@ -4026,10 +3677,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 99.6 | 33 |
 | RES_DEEP (ohm.m) | 40.68 | 33 |
 | RES_SHALLOW (ohm.m) | 32.00 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.68** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4049,6 +3696,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 95.0% coarse to very coarse Sandstone, 95% moderately bright |
 | Total Gas | 145.0 U |
+| mTVDss | -1222.73 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2220m: lt gry brn,lt brn,med lt gry, clr,trnsl,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,wk-mod sil cmt,tr-mnr gry brn slty mtx,rr slty lams,tr carb spks,fri, mnr mod hd,mnr-com disagg grs,pr vis
@@ -4061,10 +3709,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 91.3 | 32 |
 | RES_DEEP (ohm.m) | 40.27 | 32 |
 | RES_SHALLOW (ohm.m) | 31.12 | 32 |
-| **Δ Res (Deep − Shallow)** | **9.16** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4084,6 +3728,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 95.0% medium to coarse Sandstone, 95% moderately bright |
 | Total Gas | 149.0 U |
+| mTVDss | -1222.63 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2220m: lt gry brn,lt brn,med lt gry, clr,trnsl,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,wk-mod sil cmt,tr-mnr gry brn slty mtx,rr slty lams,tr carb spks,fri, mnr mod hd,mnr-com disagg grs,pr vis
@@ -4096,10 +3741,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 92.6 | 33 |
 | RES_DEEP (ohm.m) | 45.69 | 33 |
 | RES_SHALLOW (ohm.m) | 32.47 | 33 |
-| **Δ Res (Deep − Shallow)** | **13.22** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4119,6 +3760,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 155.0 U |
+| mTVDss | -1222.53 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2240m: med lt gry,med gry,aren,tr sandy lams,rr-loc com carb spks & brn liths,frm,mod hd,sbblky.
@@ -4131,10 +3773,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 93.1 | 33 |
 | RES_DEEP (ohm.m) | 46.90 | 33 |
 | RES_SHALLOW (ohm.m) | 34.88 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.03** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4154,6 +3792,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 95.0% coarse to very coarse Sandstone, 95% moderately bright |
 | Total Gas | 160.0 U |
+| mTVDss | -1222.42 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2240m: med lt gry,med gry,aren,tr sandy lams,rr-loc com carb spks & brn liths,frm,mod hd,sbblky.
@@ -4166,10 +3805,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 93.9 | 33 |
 | RES_DEEP (ohm.m) | 48.79 | 33 |
 | RES_SHALLOW (ohm.m) | 38.26 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.53** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4189,6 +3824,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% medium Sandstone, 80% moderately bright |
 | Total Gas | 138.0 U |
+| mTVDss | -1222.31 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2240m: med lt gry,med gry,aren,tr sandy lams,rr-loc com carb spks & brn liths,frm,mod hd,sbblky.
@@ -4201,10 +3837,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 91.6 | 33 |
 | RES_DEEP (ohm.m) | 54.21 | 33 |
 | RES_SHALLOW (ohm.m) | 43.30 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.91** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4224,6 +3856,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 116.0 U |
+| mTVDss | -1222.20 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2240m: med lt gry,med gry,aren,tr sandy lams,rr-loc com carb spks & brn liths,frm,mod hd,sbblky.
@@ -4236,10 +3869,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 93.3 | 32 |
 | RES_DEEP (ohm.m) | 48.33 | 32 |
 | RES_SHALLOW (ohm.m) | 38.10 | 32 |
-| **Δ Res (Deep − Shallow)** | **10.24** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4259,6 +3888,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 149.0 U |
+| mTVDss | -1222.10 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2260m: pl-lt brn,med lt gry-lt gry, clr,trnsl,vf-crs,rr v crs,v pr srt,sbang- sbrnd,wk-mod sil cmt,tr-loc com gry brn slty mtx,loc com slty lams,tr carb spks,fri, mnr mod hd,com disagg grs,pr vis por,fr-
@@ -4271,10 +3901,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 91.0 | 33 |
 | RES_DEEP (ohm.m) | 48.24 | 33 |
 | RES_SHALLOW (ohm.m) | 37.77 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.47** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4294,6 +3920,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
+| mTVDss | -1222.03 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2260m: pl-lt brn,med lt gry-lt gry, clr,trnsl,vf-crs,rr v crs,v pr srt,sbang- sbrnd,wk-mod sil cmt,tr-loc com gry brn slty mtx,loc com slty lams,tr carb spks,fri, mnr mod hd,com disagg grs,pr vis por,fr-
@@ -4306,10 +3933,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 80.4 | 33 |
 | RES_DEEP (ohm.m) | 48.88 | 33 |
 | RES_SHALLOW (ohm.m) | 38.81 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.07** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4329,6 +3952,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 188.0 U |
+| mTVDss | -1221.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2260m: pl-lt brn,med lt gry-lt gry, clr,trnsl,vf-crs,rr v crs,v pr srt,sbang- sbrnd,wk-mod sil cmt,tr-loc com gry brn slty mtx,loc com slty lams,tr carb spks,fri, mnr mod hd,com disagg grs,pr vis por,fr-
@@ -4341,10 +3965,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 74.7 | 33 |
 | RES_DEEP (ohm.m) | 42.34 | 33 |
 | RES_SHALLOW (ohm.m) | 34.10 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.24** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4364,6 +3984,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 170.0 U |
+| mTVDss | -1221.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2260m: pl-lt brn,med lt gry-lt gry, clr,trnsl,vf-crs,rr v crs,v pr srt,sbang- sbrnd,wk-mod sil cmt,tr-loc com gry brn slty mtx,loc com slty lams,tr carb spks,fri, mnr mod hd,com disagg grs,pr vis por,fr-
@@ -4376,10 +3997,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 72.2 | 33 |
 | RES_DEEP (ohm.m) | 43.80 | 33 |
 | RES_SHALLOW (ohm.m) | 35.98 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.82** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4395,6 +4012,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% medium to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 166.0 U |
+| mTVDss | -1221.85 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4404,10 +4022,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 71.7 | 33 |
 | RES_DEEP (ohm.m) | 46.16 | 33 |
 | RES_SHALLOW (ohm.m) | 39.24 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.92** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4423,6 +4037,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 225.0 U |
+| mTVDss | -1221.86 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4432,10 +4047,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 72.0 | 32 |
 | RES_DEEP (ohm.m) | 46.80 | 32 |
 | RES_SHALLOW (ohm.m) | 40.30 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.50** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4451,6 +4062,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 175.0 U |
+| mTVDss | -1221.87 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4460,10 +4072,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.0 | 33 |
 | RES_DEEP (ohm.m) | 46.06 | 33 |
 | RES_SHALLOW (ohm.m) | 37.04 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.02** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4479,6 +4087,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 201.0 U |
+| mTVDss | -1221.89 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4488,10 +4097,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 71.5 | 33 |
 | RES_DEEP (ohm.m) | 45.32 | 33 |
 | RES_SHALLOW (ohm.m) | 36.39 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.93** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4507,6 +4112,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 206.0 U |
+| mTVDss | -1221.91 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4516,10 +4122,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 72.7 | 33 |
 | RES_DEEP (ohm.m) | 46.53 | 33 |
 | RES_SHALLOW (ohm.m) | 41.05 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.48** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4535,6 +4137,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 178.0 U |
+| mTVDss | -1221.94 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4544,10 +4147,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.3 | 33 |
 | RES_DEEP (ohm.m) | 45.83 | 33 |
 | RES_SHALLOW (ohm.m) | 39.80 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.03** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4563,6 +4162,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 166.0 U |
+| mTVDss | -1221.97 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4572,10 +4172,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 74.0 | 32 |
 | RES_DEEP (ohm.m) | 43.95 | 32 |
 | RES_SHALLOW (ohm.m) | 36.02 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.94** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4591,6 +4187,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 176.0 U |
+| mTVDss | -1221.99 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4600,10 +4197,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 71.0 | 33 |
 | RES_DEEP (ohm.m) | 37.37 | 33 |
 | RES_SHALLOW (ohm.m) | 31.62 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.75** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4619,6 +4212,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 203.0 U |
+| mTVDss | -1222.01 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4628,10 +4222,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 70.5 | 33 |
 | RES_DEEP (ohm.m) | 40.28 | 33 |
 | RES_SHALLOW (ohm.m) | 36.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.60** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4647,6 +4237,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 174.0 U |
+| mTVDss | -1222.03 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4656,10 +4247,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 70.3 | 33 |
 | RES_DEEP (ohm.m) | 39.06 | 33 |
 | RES_SHALLOW (ohm.m) | 34.57 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.50** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4675,6 +4262,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 176.0 U |
+| mTVDss | -1222.04 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4684,10 +4272,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 70.9 | 33 |
 | RES_DEEP (ohm.m) | 39.85 | 33 |
 | RES_SHALLOW (ohm.m) | 33.56 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.29** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4703,6 +4287,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 175.0 U |
+| mTVDss | -1222.06 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4712,10 +4297,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 68.5 | 32 |
 | RES_DEEP (ohm.m) | 37.44 | 32 |
 | RES_SHALLOW (ohm.m) | 32.57 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.88** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4731,6 +4312,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 199.0 U |
+| mTVDss | -1222.08 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4740,10 +4322,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 69.7 | 33 |
 | RES_DEEP (ohm.m) | 37.25 | 33 |
 | RES_SHALLOW (ohm.m) | 31.74 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.51** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4759,6 +4337,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
+| mTVDss | -1222.09 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4768,10 +4347,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 71.0 | 33 |
 | RES_DEEP (ohm.m) | 40.75 | 33 |
 | RES_SHALLOW (ohm.m) | 34.05 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.70** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4787,6 +4362,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
+| mTVDss | -1222.11 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4796,10 +4372,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 70.8 | 33 |
 | RES_DEEP (ohm.m) | 42.82 | 33 |
 | RES_SHALLOW (ohm.m) | 35.62 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.20** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4815,6 +4387,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 206.0 U |
+| mTVDss | -1222.13 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4824,10 +4397,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 69.4 | 33 |
 | RES_DEEP (ohm.m) | 48.17 | 33 |
 | RES_SHALLOW (ohm.m) | 41.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.27** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4843,6 +4412,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 243.0 U |
+| mTVDss | -1222.16 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -4852,10 +4422,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 69.1 | 32 |
 | RES_DEEP (ohm.m) | 48.49 | 32 |
 | RES_SHALLOW (ohm.m) | 43.96 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.53** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4875,6 +4441,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 230.0 U |
+| mTVDss | -1222.18 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: lt trnsl brn,lt gry brn,clr- trnsl,vf-f,tr med-crs,mod-pr srt,sbang- sbrnd,mod sil cmt,com lt gry brn slty mtx,tr carb spks & lams,fri,com disagg, pr vis por,fr inf por,fluor.
@@ -4887,10 +4454,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 78.0 | 33 |
 | RES_DEEP (ohm.m) | 47.79 | 33 |
 | RES_SHALLOW (ohm.m) | 43.21 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.58** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4910,6 +4473,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 229.0 U |
+| mTVDss | -1222.21 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: lt trnsl brn,lt gry brn,clr- trnsl,vf-f,tr med-crs,mod-pr srt,sbang- sbrnd,mod sil cmt,com lt gry brn slty mtx,tr carb spks & lams,fri,com disagg, pr vis por,fr inf por,fluor.
@@ -4922,10 +4486,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.0 | 33 |
 | RES_DEEP (ohm.m) | 46.97 | 33 |
 | RES_SHALLOW (ohm.m) | 39.03 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.94** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4945,6 +4505,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 172.0 U |
+| mTVDss | -1222.25 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: lt trnsl brn,lt gry brn,clr- trnsl,vf-f,tr med-crs,mod-pr srt,sbang- sbrnd,mod sil cmt,com lt gry brn slty mtx,tr carb spks & lams,fri,com disagg, pr vis por,fr inf por,fluor.
@@ -4957,10 +4518,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.3 | 33 |
 | RES_DEEP (ohm.m) | 44.66 | 33 |
 | RES_SHALLOW (ohm.m) | 38.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.29** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -4980,6 +4537,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% bright |
 | Total Gas | 224.0 U |
+| mTVDss | -1222.38 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: lt trnsl brn,lt gry brn,clr- trnsl,vf-f,tr med-crs,mod-pr srt,sbang- sbrnd,mod sil cmt,com lt gry brn slty mtx,tr carb spks & lams,fri,com disagg, pr vis por,fr inf por,fluor.
@@ -4992,10 +4550,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 71.3 | 33 |
 | RES_DEEP (ohm.m) | 44.38 | 33 |
 | RES_SHALLOW (ohm.m) | 41.11 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.26** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5015,6 +4569,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 229.0 U |
+| mTVDss | -1222.50 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: lt trnsl brn,lt gry brn,clr- trnsl,vf-f,tr med-crs,mod-pr srt,sbang- sbrnd,mod sil cmt,com lt gry brn slty mtx,tr carb spks & lams,fri,com disagg, pr vis por,fr inf por,fluor.
@@ -5027,10 +4582,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 67.3 | 33 |
 | RES_DEEP (ohm.m) | 42.68 | 33 |
 | RES_SHALLOW (ohm.m) | 36.41 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.27** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5050,6 +4601,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 227.0 U |
+| mTVDss | -1222.63 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: lt trnsl brn,lt gry brn,clr- trnsl,vf-f,tr med-crs,mod-pr srt,sbang- sbrnd,mod sil cmt,com lt gry brn slty mtx,tr carb spks & lams,fri,com disagg, pr vis por,fr inf por,fluor.
@@ -5062,10 +4614,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 66.4 | 32 |
 | RES_DEEP (ohm.m) | 43.45 | 32 |
 | RES_SHALLOW (ohm.m) | 36.51 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.95** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5085,6 +4633,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 233.0 U |
+| mTVDss | -1222.76 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2380m: lt trnsl brn,lt gry brn,clr- trnsl,vf-f,tr med-crs,mod-pr srt,sbang- sbrnd,mod sil cmt,com lt gry brn slty mtx,tr carb spks & lams,fri,com disagg, pr vis por,fr inf por,fluor.
@@ -5097,10 +4646,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 69.2 | 33 |
 | RES_DEEP (ohm.m) | 41.10 | 33 |
 | RES_SHALLOW (ohm.m) | 34.40 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.70** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5116,6 +4661,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% medium Sandstone, 100% bright |
 | Total Gas | 226.0 U |
+| mTVDss | -1222.91 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -5125,10 +4671,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 69.4 | 33 |
 | RES_DEEP (ohm.m) | 41.91 | 33 |
 | RES_SHALLOW (ohm.m) | 34.87 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.04** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5148,6 +4690,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1223.06 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr-trnsl,lt trnsl brn,lt gry brn,vf-f,wl srt,sbang-sbrnd,mod sil cmt, com lt gry brn slty mtx,tr carb spks & lams,fri,mnr disagg,pr vis por,fr-gd inf por,fluor.
@@ -5160,10 +4703,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 69.5 | 33 |
 | RES_DEEP (ohm.m) | 38.69 | 33 |
 | RES_SHALLOW (ohm.m) | 32.02 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.66** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5183,6 +4722,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 218.0 U |
+| mTVDss | -1223.20 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr-trnsl,lt trnsl brn,lt gry brn,vf-f,wl srt,sbang-sbrnd,mod sil cmt, com lt gry brn slty mtx,tr carb spks & lams,fri,mnr disagg,pr vis por,fr-gd inf por,fluor.
@@ -5195,10 +4735,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 70.7 | 33 |
 | RES_DEEP (ohm.m) | 38.91 | 33 |
 | RES_SHALLOW (ohm.m) | 31.87 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.04** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5218,6 +4754,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
+| mTVDss | -1223.32 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr-trnsl,lt trnsl brn,lt gry brn,vf-f,wl srt,sbang-sbrnd,mod sil cmt, com lt gry brn slty mtx,tr carb spks & lams,fri,mnr disagg,pr vis por,fr-gd inf por,fluor.
@@ -5230,10 +4767,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 75.0 | 32 |
 | RES_DEEP (ohm.m) | 39.23 | 32 |
 | RES_SHALLOW (ohm.m) | 31.84 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.39** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5253,6 +4786,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 198.0 U |
+| mTVDss | -1223.41 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr-trnsl,lt trnsl brn,lt gry brn,vf-f,wl srt,sbang-sbrnd,mod sil cmt, com lt gry brn slty mtx,tr carb spks & lams,fri,mnr disagg,pr vis por,fr-gd inf por,fluor.
@@ -5265,10 +4799,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.0 | 33 |
 | RES_DEEP (ohm.m) | 32.41 | 33 |
 | RES_SHALLOW (ohm.m) | 28.33 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.08** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5288,6 +4818,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 199.0 U |
+| mTVDss | -1223.50 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr-trnsl,lt trnsl brn,lt gry brn,vf-f,wl srt,sbang-sbrnd,mod sil cmt, com lt gry brn slty mtx,tr carb spks & lams,fri,mnr disagg,pr vis por,fr-gd inf por,fluor.
@@ -5300,10 +4831,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.7 | 33 |
 | RES_DEEP (ohm.m) | 34.31 | 33 |
 | RES_SHALLOW (ohm.m) | 26.76 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.55** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5323,6 +4850,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 220.0 U |
+| mTVDss | -1223.59 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr-trnsl,lt trnsl brn,lt gry brn,vf-f,wl srt,sbang-sbrnd,mod sil cmt, com lt gry brn slty mtx,tr carb spks & lams,fri,mnr disagg,pr vis por,fr-gd inf por,fluor.
@@ -5335,10 +4863,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 74.7 | 33 |
 | RES_DEEP (ohm.m) | 35.00 | 33 |
 | RES_SHALLOW (ohm.m) | 26.55 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.44** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5358,6 +4882,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 243.0 U |
+| mTVDss | -1223.66 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2420m: clr-trnsl,lt trnsl brn,lt gry brn,vf-f,wl srt,sbang-sbrnd,mod sil cmt, com lt gry brn slty mtx,tr carb spks & lams,fri,mnr disagg,pr vis por,fr-gd inf por,fluor.
@@ -5370,10 +4895,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 77.4 | 33 |
 | RES_DEEP (ohm.m) | 32.45 | 33 |
 | RES_SHALLOW (ohm.m) | 26.04 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.41** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5393,6 +4914,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 236.0 U |
+| mTVDss | -1223.73 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2440m: lt gry,clr-trnsl,tr lt trnsl brn, vf-f,tr med,mod-wl srt,sbang-sbrnd,wk sil cmt,mnr lt gry brn slty mtx,tr carb spks, fri,com disagg,pr vis por,fr inf por,fluor.
@@ -5405,10 +4927,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 78.8 | 32 |
 | RES_DEEP (ohm.m) | 31.28 | 32 |
 | RES_SHALLOW (ohm.m) | 24.75 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.52** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5428,6 +4946,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 220.0 U |
+| mTVDss | -1223.79 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2440m: lt gry,clr-trnsl,tr lt trnsl brn, vf-f,tr med,mod-wl srt,sbang-sbrnd,wk sil cmt,mnr lt gry brn slty mtx,tr carb spks, fri,com disagg,pr vis por,fr inf por,fluor.
@@ -5440,10 +4959,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 77.4 | 33 |
 | RES_DEEP (ohm.m) | 34.40 | 33 |
 | RES_SHALLOW (ohm.m) | 25.00 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.40** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5463,6 +4978,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 237.0 U |
+| mTVDss | -1223.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2440m: lt gry,clr-trnsl,tr lt trnsl brn, vf-f,tr med,mod-wl srt,sbang-sbrnd,wk sil cmt,mnr lt gry brn slty mtx,tr carb spks, fri,com disagg,pr vis por,fr inf por,fluor.
@@ -5475,10 +4991,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 78.4 | 33 |
 | RES_DEEP (ohm.m) | 37.42 | 33 |
 | RES_SHALLOW (ohm.m) | 24.70 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.72** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5498,6 +5010,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
+| mTVDss | -1223.89 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2440m: lt gry,clr-trnsl,tr lt trnsl brn, vf-f,tr med,mod-wl srt,sbang-sbrnd,wk sil cmt,mnr lt gry brn slty mtx,tr carb spks, fri,com disagg,pr vis por,fr inf por,fluor.
@@ -5510,10 +5023,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 75.5 | 33 |
 | RES_DEEP (ohm.m) | 34.79 | 33 |
 | RES_SHALLOW (ohm.m) | 27.54 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.25** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5529,6 +5038,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 236.0 U |
+| mTVDss | -1223.91 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -5538,10 +5048,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 73.1 | 33 |
 | RES_DEEP (ohm.m) | 33.02 | 33 |
 | RES_SHALLOW (ohm.m) | 26.71 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.32** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5561,6 +5067,7 @@ Looks like we are back in the good sands.
 | Cement | mnr wk sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 231.0 U |
+| mTVDss | -1223.93 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2480m: clr-trnsl,mnr lt gry,vf,occ f,v wl srt,sbang-sbrnd,mnr wk sil cmt,tr lt gry arg mtx,fri,dom disagg,pr vis por, gd-fr inf por,fluor.
@@ -5573,10 +5080,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 69.1 | 32 |
 | RES_DEEP (ohm.m) | 34.20 | 32 |
 | RES_SHALLOW (ohm.m) | 29.96 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.24** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5596,6 +5099,7 @@ Looks like we are back in the good sands.
 | Cement | mnr wk sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 247.0 U |
+| mTVDss | -1223.96 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2480m: clr-trnsl,mnr lt gry,vf,occ f,v wl srt,sbang-sbrnd,mnr wk sil cmt,tr lt gry arg mtx,fri,dom disagg,pr vis por, gd-fr inf por,fluor.
@@ -5608,10 +5112,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 68.5 | 33 |
 | RES_DEEP (ohm.m) | 33.62 | 33 |
 | RES_SHALLOW (ohm.m) | 29.97 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.65** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5631,6 +5131,7 @@ Looks like we are back in the good sands.
 | Cement | mnr wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 254.0 U |
+| mTVDss | -1223.97 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2480m: clr-trnsl,mnr lt gry,vf,occ f,v wl srt,sbang-sbrnd,mnr wk sil cmt,tr lt gry arg mtx,fri,dom disagg,pr vis por, gd-fr inf por,fluor.
@@ -5643,10 +5144,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 64.6 | 33 |
 | RES_DEEP (ohm.m) | 34.79 | 33 |
 | RES_SHALLOW (ohm.m) | 33.54 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.25** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5666,6 +5163,7 @@ Looks like we are back in the good sands.
 | Cement | mnr wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1223.98 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2480m: clr-trnsl,mnr lt gry,vf,occ f,v wl srt,sbang-sbrnd,mnr wk sil cmt,tr lt gry arg mtx,fri,dom disagg,pr vis por, gd-fr inf por,fluor.
@@ -5678,10 +5176,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 65.0 | 33 |
 | RES_DEEP (ohm.m) | 36.77 | 33 |
 | RES_SHALLOW (ohm.m) | 33.89 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.88** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5701,6 +5195,7 @@ Looks like we are back in the good sands.
 | Cement | mnr wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 238.0 U |
+| mTVDss | -1223.99 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2480m: clr-trnsl,mnr lt gry,vf,occ f,v wl srt,sbang-sbrnd,mnr wk sil cmt,tr lt gry arg mtx,fri,dom disagg,pr vis por, gd-fr inf por,fluor.
@@ -5713,10 +5208,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 65.0 | 33 |
 | RES_DEEP (ohm.m) | 35.55 | 33 |
 | RES_SHALLOW (ohm.m) | 32.91 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.64** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5736,6 +5227,7 @@ Looks like we are back in the good sands.
 | Cement | mnr wk sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 251.0 U |
+| mTVDss | -1223.99 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2480m: clr-trnsl,mnr lt gry,vf,occ f,v wl srt,sbang-sbrnd,mnr wk sil cmt,tr lt gry arg mtx,fri,dom disagg,pr vis por, gd-fr inf por,fluor.
@@ -5748,10 +5240,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 64.6 | 32 |
 | RES_DEEP (ohm.m) | 35.76 | 32 |
 | RES_SHALLOW (ohm.m) | 35.01 | 32 |
-| **Δ Res (Deep − Shallow)** | **0.75** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5771,6 +5259,7 @@ Looks like we are back in the good sands.
 | Cement | mnr wk sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 295.0 U |
+| mTVDss | -1223.99 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2480m: clr-trnsl,mnr lt gry,vf,occ f,v wl srt,sbang-sbrnd,mnr wk sil cmt,tr lt gry arg mtx,fri,dom disagg,pr vis por, gd-fr inf por,fluor.
@@ -5783,10 +5272,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 64.4 | 33 |
 | RES_DEEP (ohm.m) | 29.91 | 33 |
 | RES_SHALLOW (ohm.m) | 33.15 | 33 |
-| **Δ Res (Deep − Shallow)** | **-3.24** | — |
-
-**Permeability Proxy:** Low inferred permeability (tight/cemented)
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5802,6 +5287,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 282.0 U |
+| mTVDss | -1224.00 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -5811,10 +5297,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 68.0 | 33 |
 | RES_DEEP (ohm.m) | 33.79 | 33 |
 | RES_SHALLOW (ohm.m) | 32.07 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.73** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5830,6 +5312,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1224.00 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -5839,10 +5322,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 72.7 | 33 |
 | RES_DEEP (ohm.m) | 36.24 | 33 |
 | RES_SHALLOW (ohm.m) | 32.87 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.36** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5858,6 +5337,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% siderite in 10% Siltstone, trace siderite in 90% very fine to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 232.0 U |
+| mTVDss | -1224.00 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5868,10 +5348,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 94.6 | 33 |
 | RES_DEEP (ohm.m) | 37.78 | 33 |
 | RES_SHALLOW (ohm.m) | 33.87 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.91** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5887,6 +5363,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% siderite in 10% Siltstone, trace siderite in 90% very fine to coarse, rare very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 301.0 U |
+| mTVDss | -1224.00 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5897,10 +5374,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 106.4 | 33 |
 | RES_DEEP (ohm.m) | 43.27 | 33 |
 | RES_SHALLOW (ohm.m) | 36.06 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.21** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5916,6 +5389,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% siderite in 10% Siltstone, trace siderite in 90% very fine to medium, trace coarse to very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 274.0 U |
+| mTVDss | -1224.01 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5926,10 +5400,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 118.4 | 32 |
 | RES_DEEP (ohm.m) | 51.42 | 32 |
 | RES_SHALLOW (ohm.m) | 36.83 | 32 |
-| **Δ Res (Deep − Shallow)** | **14.58** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5945,6 +5415,7 @@ Looks like we are back in the good sands.
 | Porosity Class | none |
 | Fluorescence | 100.0% siderite in 15% Siltstone, trace siderite in 85% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 203.0 U |
+| mTVDss | -1224.01 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -5955,10 +5426,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 117.4 | 33 |
 | RES_DEEP (ohm.m) | 45.06 | 33 |
 | RES_SHALLOW (ohm.m) | 31.45 | 33 |
-| **Δ Res (Deep − Shallow)** | **13.61** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -5978,6 +5445,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 1.0% siderite in 60% very fine to fine, trace coarse to very coarse Sandstone, Trace |
 | Total Gas | 45.0 U |
+| mTVDss | -1224.63 m |
 | FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
@@ -5991,10 +5459,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 91.8 | 33 |
 | RES_DEEP (ohm.m) | 41.85 | 33 |
 | RES_SHALLOW (ohm.m) | 25.43 | 33 |
-| **Δ Res (Deep − Shallow)** | **16.42** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6014,6 +5478,7 @@ Looks like we are back in the good sands.
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 1.0% dull to moderately bright |
 | Total Gas | 56.0 U |
+| mTVDss | -1224.70 m |
 | FeCO₃ in Siltstone | common |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6027,10 +5492,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 108.9 | 33 |
 | RES_DEEP (ohm.m) | 52.35 | 33 |
 | RES_SHALLOW (ohm.m) | 30.15 | 33 |
-| **Δ Res (Deep − Shallow)** | **22.19** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6050,6 +5511,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 75.0% siderite in 70% very fine to very coarse Sandstone, 75% moderately bright to dull |
 | Total Gas | 111.0 U |
+| mTVDss | -1224.76 m |
 | FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6063,10 +5525,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 108.8 | 33 |
 | RES_DEEP (ohm.m) | 51.59 | 33 |
 | RES_SHALLOW (ohm.m) | 33.80 | 33 |
-| **Δ Res (Deep − Shallow)** | **17.79** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6086,6 +5544,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% siderite in 80% very fine to very coarse Sandstone, 80% moderately bright |
 | Total Gas | 147.0 U |
+| mTVDss | -1224.81 m |
 | FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6099,10 +5558,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 93.7 | 33 |
 | RES_DEEP (ohm.m) | 41.81 | 33 |
 | RES_SHALLOW (ohm.m) | 31.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.82** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6122,6 +5577,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% siderite in 85% very fine to very coarse Sandstone, 90% moderately bright |
 | Total Gas | 193.0 U |
+| mTVDss | -1224.87 m |
 | FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6135,10 +5591,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 78.1 | 32 |
 | RES_DEEP (ohm.m) | 39.21 | 32 |
 | RES_SHALLOW (ohm.m) | 35.92 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.28** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6158,6 +5610,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% siderite in 85% very fine to very coarse Sandstone, 90% bright to moderately bright |
 | Total Gas | 232.0 U |
+| mTVDss | -1224.88 m |
 | FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6171,10 +5624,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 67.4 | 33 |
 | RES_DEEP (ohm.m) | 35.54 | 33 |
 | RES_SHALLOW (ohm.m) | 31.21 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.32** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6194,6 +5643,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 175.0 U |
+| mTVDss | -1224.88 m |
 | FeCO₃ in Siltstone | minor |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6206,10 +5656,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 71.8 | 33 |
 | RES_DEEP (ohm.m) | 43.33 | 33 |
 | RES_SHALLOW (ohm.m) | 34.47 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.86** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6229,6 +5675,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% siderite in 5% Siltstone, 95% very fine to medium, trace coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 184.0 U |
+| mTVDss | -1224.88 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6242,10 +5689,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 76.6 | 33 |
 | RES_DEEP (ohm.m) | 36.27 | 33 |
 | RES_SHALLOW (ohm.m) | 27.39 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.88** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6265,6 +5708,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 178.0 U |
+| mTVDss | -1224.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2720m: lt gry,lt trnsl brn,clr- FROM 2720m-2769m trnsl,vf-med,mnr crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,mod hd,pr vis por,fluor.
@@ -6277,10 +5721,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 95.6 | 33 |
 | RES_DEEP (ohm.m) | 33.62 | 33 |
 | RES_SHALLOW (ohm.m) | 23.46 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.16** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6300,6 +5740,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% coarse Sandstone, 90% moderately bright |
 | Total Gas | 104.0 U |
+| mTVDss | -1224.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2720m: lt gry,lt trnsl brn,clr- FROM 2720m-2769m trnsl,vf-med,mnr crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,mod hd,pr vis por,fluor.
@@ -6312,10 +5753,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 100.7 | 32 |
 | RES_DEEP (ohm.m) | 46.97 | 32 |
 | RES_SHALLOW (ohm.m) | 36.01 | 32 |
-| **Δ Res (Deep − Shallow)** | **10.96** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6335,6 +5772,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 107.0 U |
+| mTVDss | -1224.73 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2720m: lt gry,lt trnsl brn,clr- FROM 2720m-2769m trnsl,vf-med,mnr crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,mod hd,pr vis por,fluor.
@@ -6347,10 +5785,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 86.6 | 33 |
 | RES_DEEP (ohm.m) | 56.35 | 33 |
 | RES_SHALLOW (ohm.m) | 42.01 | 33 |
-| **Δ Res (Deep − Shallow)** | **14.34** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6370,6 +5804,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 60.0% nan |
 | Total Gas | 90.0 U |
+| mTVDss | -1224.64 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2720m: lt gry,lt trnsl brn,clr- FROM 2720m-2769m trnsl,vf-med,mnr crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,mod hd,pr vis por,fluor.
@@ -6382,10 +5817,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 108.0 | 33 |
 | RES_DEEP (ohm.m) | 40.33 | 33 |
 | RES_SHALLOW (ohm.m) | 28.31 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.02** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6405,6 +5836,7 @@ Looks like we are back in the good sands.
 | Cement | sil cmt (0.68) |
 | Fluorescence | 70.0% nan |
 | Total Gas | 97.0 U |
+| mTVDss | -1224.56 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2730m: lt gry,lt trnsl brn,clr- trnsl,vf-med,mnr crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,mod hd,tr disagg,pr vis por,pr-fr inf por,fluor.
@@ -6417,10 +5849,6 @@ Looks like we are back in the good sands.
 | GR (gAPI) | 95.9 | 33 |
 | RES_DEEP (ohm.m) | 33.19 | 33 |
 | RES_SHALLOW (ohm.m) | 22.66 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.53** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6442,6 +5870,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
+| mTVDss | -1224.42 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2730m: lt gry,lt trnsl brn,clr- trnsl,vf-med,mnr crs,mod-pr srt,sbang- sbrnd,wk-mod sil cmt,com lt gry arg mtx,tr carb spks & lams,mod hd,tr disagg,pr vis por,pr-fr inf por,fluor.
@@ -6454,10 +5883,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 85.8 | 33 |
 | RES_DEEP (ohm.m) | 33.21 | 33 |
 | RES_SHALLOW (ohm.m) | 23.98 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.22** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6473,6 +5898,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 133.0 U |
+| mTVDss | -1224.27 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -6482,10 +5908,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 73.8 | 33 |
 | RES_DEEP (ohm.m) | 35.18 | 33 |
 | RES_SHALLOW (ohm.m) | 26.59 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.59** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6501,6 +5923,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 125.0 U |
+| mTVDss | -1224.13 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -6510,10 +5933,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 70.4 | 32 |
 | RES_DEEP (ohm.m) | 38.44 | 32 |
 | RES_SHALLOW (ohm.m) | 29.80 | 32 |
-| **Δ Res (Deep − Shallow)** | **8.64** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6529,6 +5948,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 141.0 U |
+| mTVDss | -1223.99 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -6538,10 +5958,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 70.3 | 33 |
 | RES_DEEP (ohm.m) | 36.98 | 33 |
 | RES_SHALLOW (ohm.m) | 29.46 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.52** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6561,6 +5977,7 @@ Gas seems to be holding between 130-140U
 | Cement | tr wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 143.0 U |
+| mTVDss | -1223.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2780m: med-dk brn,med-dk gry, aren,tr micmic,mod hd-frm,sbblky-blky. CONTROL DRILL @ 15M/HR 73 / 6 / 5 / 8 / 8 153 U FROM 2782m-2894m Rmf: 0.05 ohm @ 75°F
@@ -6573,10 +5990,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 68.9 | 33 |
 | RES_DEEP (ohm.m) | 39.99 | 33 |
 | RES_SHALLOW (ohm.m) | 33.70 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.28** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6596,6 +6009,7 @@ Gas seems to be holding between 130-140U
 | Cement | tr wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 136.0 U |
+| mTVDss | -1223.75 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~2780m: med-dk brn,med-dk gry, aren,tr micmic,mod hd-frm,sbblky-blky. CONTROL DRILL @ 15M/HR 73 / 6 / 5 / 8 / 8 153 U FROM 2782m-2894m Rmf: 0.05 ohm @ 75°F
@@ -6608,10 +6022,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 88.2 | 33 |
 | RES_DEEP (ohm.m) | 41.66 | 33 |
 | RES_SHALLOW (ohm.m) | 41.35 | 33 |
-| **Δ Res (Deep − Shallow)** | **0.31** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6631,6 +6041,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 60.0% siderite in 80% very fine to fine, trace coarse Sandstone, 60% pale to moderately bright |
 | Total Gas | 146.0 U |
+| mTVDss | -1223.47 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -6643,10 +6054,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 103.3 | 33 |
 | RES_DEEP (ohm.m) | 51.53 | 33 |
 | RES_SHALLOW (ohm.m) | 35.07 | 33 |
-| **Δ Res (Deep − Shallow)** | **16.46** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6666,6 +6073,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 80.0% very coarse Sandstone, 80% moderately bright |
 | Total Gas | 151.0 U |
+| mTVDss | -1223.52 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2810m: lt gry,lt trnsl brn,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,wk-mod sil cmt,com lt gry slty mtx,fri-mod hd,mnr 2820 disagg,pr vis por,fr inf por,fluor.
@@ -6678,10 +6086,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 95.9 | 33 |
 | RES_DEEP (ohm.m) | 55.83 | 33 |
 | RES_SHALLOW (ohm.m) | 38.70 | 33 |
-| **Δ Res (Deep − Shallow)** | **17.13** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6701,6 +6105,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 154.0 U |
+| mTVDss | -1223.59 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2810m: lt gry,lt trnsl brn,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,wk-mod sil cmt,com lt gry slty mtx,fri-mod hd,mnr 2820 disagg,pr vis por,fr inf por,fluor.
@@ -6713,10 +6118,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 78.3 | 33 |
 | RES_DEEP (ohm.m) | 49.29 | 33 |
 | RES_SHALLOW (ohm.m) | 38.98 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.31** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6736,6 +6137,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 149.0 U |
+| mTVDss | -1223.67 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2810m: lt gry,lt trnsl brn,clr-trnsl, vf-crs,tr v crs,pr srt,sbang-sbrnd,wk-mod sil cmt,com lt gry slty mtx,fri-mod hd,mnr 2820 disagg,pr vis por,fr inf por,fluor.
@@ -6748,10 +6150,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 70.0 | 33 |
 | RES_DEEP (ohm.m) | 44.67 | 33 |
 | RES_SHALLOW (ohm.m) | 35.17 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.50** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6771,6 +6169,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
+| mTVDss | -1223.75 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2830m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,wk sil cmt,tr lt gry slty mtx, dom disagg,fri aggs,pr vis,por,fr inf por, fluor. SURVEY @ 2835.5m
@@ -6783,10 +6182,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 68.8 | 32 |
 | RES_DEEP (ohm.m) | 43.82 | 32 |
 | RES_SHALLOW (ohm.m) | 35.52 | 32 |
-| **Δ Res (Deep − Shallow)** | **8.30** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6806,6 +6201,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 146.0 U |
+| mTVDss | -1223.84 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2830m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,wk sil cmt,tr lt gry slty mtx, dom disagg,fri aggs,pr vis,por,fr inf por, fluor. SURVEY @ 2835.5m
@@ -6818,10 +6214,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 74.6 | 33 |
 | RES_DEEP (ohm.m) | 43.31 | 33 |
 | RES_SHALLOW (ohm.m) | 32.20 | 33 |
-| **Δ Res (Deep − Shallow)** | **11.12** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6841,6 +6233,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 156.0 U |
+| mTVDss | -1223.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2830m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,wk sil cmt,tr lt gry slty mtx, dom disagg,fri aggs,pr vis,por,fr inf por, fluor. SURVEY @ 2835.5m
@@ -6853,10 +6246,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 83.0 | 33 |
 | RES_DEEP (ohm.m) | 38.18 | 33 |
 | RES_SHALLOW (ohm.m) | 29.77 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.41** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6876,6 +6265,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 152.0 U |
+| mTVDss | -1223.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2830m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,wk sil cmt,tr lt gry slty mtx, dom disagg,fri aggs,pr vis,por,fr inf por, fluor. SURVEY @ 2835.5m
@@ -6888,10 +6278,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 91.3 | 33 |
 | RES_DEEP (ohm.m) | 38.27 | 33 |
 | RES_SHALLOW (ohm.m) | 29.04 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.24** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6911,6 +6297,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 144.0 U |
+| mTVDss | -1223.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2860m: lt gry,pl-lt brn,v lt gry-wh, clr,trnsl,vf-f,tr med,wl srt,sbang-sbrnd,wk sil cmt,tr gry-brn slty & wh arg mtx,tr carb spks,fri-disagg,pr vis por,fr inf por,fluor.
@@ -6923,10 +6310,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.3 | 33 |
 | RES_DEEP (ohm.m) | 43.13 | 33 |
 | RES_SHALLOW (ohm.m) | 30.52 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.61** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6946,6 +6329,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 157.0 U |
+| mTVDss | -1223.86 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2860m: lt gry,pl-lt brn,v lt gry-wh, clr,trnsl,vf-f,tr med,wl srt,sbang-sbrnd,wk sil cmt,tr gry-brn slty & wh arg mtx,tr carb spks,fri-disagg,pr vis por,fr inf por,fluor.
@@ -6958,10 +6342,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 87.4 | 33 |
 | RES_DEEP (ohm.m) | 42.29 | 33 |
 | RES_SHALLOW (ohm.m) | 32.31 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.98** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -6981,6 +6361,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 166.0 U |
+| mTVDss | -1223.84 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2860m: lt gry,pl-lt brn,v lt gry-wh, clr,trnsl,vf-f,tr med,wl srt,sbang-sbrnd,wk sil cmt,tr gry-brn slty & wh arg mtx,tr carb spks,fri-disagg,pr vis por,fr inf por,fluor.
@@ -6993,10 +6374,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 92.2 | 33 |
 | RES_DEEP (ohm.m) | 41.82 | 33 |
 | RES_SHALLOW (ohm.m) | 29.80 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.02** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7016,6 +6393,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 151.0 U |
+| mTVDss | -1223.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2860m: lt gry,pl-lt brn,v lt gry-wh, clr,trnsl,vf-f,tr med,wl srt,sbang-sbrnd,wk sil cmt,tr gry-brn slty & wh arg mtx,tr carb spks,fri-disagg,pr vis por,fr inf por,fluor.
@@ -7028,10 +6406,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 93.3 | 33 |
 | RES_DEEP (ohm.m) | 42.58 | 33 |
 | RES_SHALLOW (ohm.m) | 29.53 | 33 |
-| **Δ Res (Deep − Shallow)** | **13.05** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7051,6 +6425,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 156.0 U |
+| mTVDss | -1223.79 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2860m: lt gry,pl-lt brn,v lt gry-wh, clr,trnsl,vf-f,tr med,wl srt,sbang-sbrnd,wk sil cmt,tr gry-brn slty & wh arg mtx,tr carb spks,fri-disagg,pr vis por,fr inf por,fluor.
@@ -7063,10 +6438,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 87.1 | 33 |
 | RES_DEEP (ohm.m) | 44.05 | 33 |
 | RES_SHALLOW (ohm.m) | 30.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **13.68** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7086,6 +6457,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 173.0 U |
+| mTVDss | -1223.77 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2860m: lt gry,pl-lt brn,v lt gry-wh, clr,trnsl,vf-f,tr med,wl srt,sbang-sbrnd,wk sil cmt,tr gry-brn slty & wh arg mtx,tr carb spks,fri-disagg,pr vis por,fr inf por,fluor.
@@ -7098,10 +6470,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 93.5 | 33 |
 | RES_DEEP (ohm.m) | 43.62 | 33 |
 | RES_SHALLOW (ohm.m) | 31.17 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.46** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7117,6 +6485,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse Sandstone, 100% moderately bright |
 | Total Gas | 186.0 U |
+| mTVDss | -1223.78 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7126,10 +6495,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 84.2 | 33 |
 | RES_DEEP (ohm.m) | 41.97 | 33 |
 | RES_SHALLOW (ohm.m) | 30.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **11.04** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7145,6 +6510,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 161.0 U |
+| mTVDss | -1223.80 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7154,10 +6520,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 78.0 | 32 |
 | RES_DEEP (ohm.m) | 48.65 | 32 |
 | RES_SHALLOW (ohm.m) | 33.48 | 32 |
-| **Δ Res (Deep − Shallow)** | **15.17** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7173,6 +6535,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 147.0 U |
+| mTVDss | -1223.81 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7182,10 +6545,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 75.1 | 33 |
 | RES_DEEP (ohm.m) | 53.06 | 33 |
 | RES_SHALLOW (ohm.m) | 36.94 | 33 |
-| **Δ Res (Deep − Shallow)** | **16.12** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7201,6 +6560,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 170.0 U |
+| mTVDss | -1223.82 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7210,10 +6570,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 73.4 | 33 |
 | RES_DEEP (ohm.m) | 52.34 | 33 |
 | RES_SHALLOW (ohm.m) | 39.47 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.86** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7229,6 +6585,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 235.0 U |
+| mTVDss | -1223.81 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7238,10 +6595,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 76.7 | 33 |
 | RES_DEEP (ohm.m) | 53.09 | 33 |
 | RES_SHALLOW (ohm.m) | 40.53 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.56** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7257,6 +6610,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 204.0 U |
+| mTVDss | -1223.80 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7266,10 +6620,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 78.6 | 33 |
 | RES_DEEP (ohm.m) | 49.49 | 33 |
 | RES_SHALLOW (ohm.m) | 37.23 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.26** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7285,6 +6635,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 212.0 U |
+| mTVDss | -1223.79 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7294,10 +6645,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 80.4 | 32 |
 | RES_DEEP (ohm.m) | 50.21 | 32 |
 | RES_SHALLOW (ohm.m) | 38.25 | 32 |
-| **Δ Res (Deep − Shallow)** | **11.96** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7317,6 +6664,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 195.0 U |
+| mTVDss | -1223.77 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2930m: pl-lt brn,lt gry,clr,trnsl,vf- crs,pr srt,sbang-sbrnd,tr ang,wk sil cmt, mnr gry-brn slty mtx,tr slty lams,tr carb spks,fri-disagg,pr vis por,gd-fr inf por 78 / 6 / 4 / 6 / 6 236 U fluor.
@@ -7329,10 +6677,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 81.4 | 33 |
 | RES_DEEP (ohm.m) | 49.14 | 33 |
 | RES_SHALLOW (ohm.m) | 39.15 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.99** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7352,6 +6696,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 193.0 U |
+| mTVDss | -1223.74 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2930m: pl-lt brn,lt gry,clr,trnsl,vf- crs,pr srt,sbang-sbrnd,tr ang,wk sil cmt, mnr gry-brn slty mtx,tr slty lams,tr carb spks,fri-disagg,pr vis por,gd-fr inf por 78 / 6 / 4 / 6 / 6 236 U fluor.
@@ -7364,10 +6709,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 84.5 | 33 |
 | RES_DEEP (ohm.m) | 48.61 | 33 |
 | RES_SHALLOW (ohm.m) | 38.22 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.39** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7387,6 +6728,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 195.0 U |
+| mTVDss | -1223.72 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2930m: pl-lt brn,lt gry,clr,trnsl,vf- crs,pr srt,sbang-sbrnd,tr ang,wk sil cmt, mnr gry-brn slty mtx,tr slty lams,tr carb spks,fri-disagg,pr vis por,gd-fr inf por 78 / 6 / 4 / 6 / 6 236 U fluor.
@@ -7399,10 +6741,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 81.5 | 33 |
 | RES_DEEP (ohm.m) | 55.55 | 33 |
 | RES_SHALLOW (ohm.m) | 40.00 | 33 |
-| **Δ Res (Deep − Shallow)** | **15.55** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7422,6 +6760,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 208.0 U |
+| mTVDss | -1223.69 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2930m: pl-lt brn,lt gry,clr,trnsl,vf- crs,pr srt,sbang-sbrnd,tr ang,wk sil cmt, mnr gry-brn slty mtx,tr slty lams,tr carb spks,fri-disagg,pr vis por,gd-fr inf por 78 / 6 / 4 / 6 / 6 236 U fluor.
@@ -7434,10 +6773,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 83.6 | 33 |
 | RES_DEEP (ohm.m) | 48.57 | 33 |
 | RES_SHALLOW (ohm.m) | 33.54 | 33 |
-| **Δ Res (Deep − Shallow)** | **15.04** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7457,6 +6792,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, minor coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 202.0 U |
+| mTVDss | -1223.67 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2930m: pl-lt brn,lt gry,clr,trnsl,vf- crs,pr srt,sbang-sbrnd,tr ang,wk sil cmt, mnr gry-brn slty mtx,tr slty lams,tr carb spks,fri-disagg,pr vis por,gd-fr inf por 78 / 6 / 4 / 6 / 6 236 U fluor.
@@ -7469,10 +6805,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 91.5 | 32 |
 | RES_DEEP (ohm.m) | 51.83 | 32 |
 | RES_SHALLOW (ohm.m) | 38.38 | 32 |
-| **Δ Res (Deep − Shallow)** | **13.46** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7492,6 +6824,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 235.0 U |
+| mTVDss | -1223.65 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2930m: pl-lt brn,lt gry,clr,trnsl,vf- crs,pr srt,sbang-sbrnd,tr ang,wk sil cmt, mnr gry-brn slty mtx,tr slty lams,tr carb spks,fri-disagg,pr vis por,gd-fr inf por 78 / 6 / 4 / 6 / 6 236 U fluor.
@@ -7504,10 +6837,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 94.2 | 33 |
 | RES_DEEP (ohm.m) | 53.05 | 33 |
 | RES_SHALLOW (ohm.m) | 39.53 | 33 |
-| **Δ Res (Deep − Shallow)** | **13.52** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7527,6 +6856,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 203.0 U |
+| mTVDss | -1223.63 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2930m: pl-lt brn,lt gry,clr,trnsl,vf- crs,pr srt,sbang-sbrnd,tr ang,wk sil cmt, mnr gry-brn slty mtx,tr slty lams,tr carb spks,fri-disagg,pr vis por,gd-fr inf por 78 / 6 / 4 / 6 / 6 236 U fluor.
@@ -7539,10 +6869,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.4 | 33 |
 | RES_DEEP (ohm.m) | 52.21 | 33 |
 | RES_SHALLOW (ohm.m) | 36.08 | 33 |
-| **Δ Res (Deep − Shallow)** | **16.13** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7558,6 +6884,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 217.0 U |
+| mTVDss | -1223.61 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7567,10 +6894,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 82.9 | 33 |
 | RES_DEEP (ohm.m) | 46.92 | 33 |
 | RES_SHALLOW (ohm.m) | 33.20 | 33 |
-| **Δ Res (Deep − Shallow)** | **13.73** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7590,6 +6913,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 207.0 U |
+| mTVDss | -1223.60 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: clr,trnsl,pl-lt brn,lt gry,f-v crs,v pr srt,sbang-sbrnd,mnr ang,wk sil cmt,tr gry-brn slty mtx,pred disagg,mnr fri,v gd inf por,pr vis por,fluor. 77 / 6 / 5 / 6 / 6 209 U
@@ -7602,10 +6926,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 81.9 | 33 |
 | RES_DEEP (ohm.m) | 43.93 | 33 |
 | RES_SHALLOW (ohm.m) | 32.45 | 33 |
-| **Δ Res (Deep − Shallow)** | **11.47** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7625,6 +6945,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 251.0 U |
+| mTVDss | -1223.60 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: clr,trnsl,pl-lt brn,lt gry,f-v crs,v pr srt,sbang-sbrnd,mnr ang,wk sil cmt,tr gry-brn slty mtx,pred disagg,mnr fri,v gd inf por,pr vis por,fluor. 77 / 6 / 5 / 6 / 6 209 U
@@ -7637,10 +6958,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 74.4 | 32 |
 | RES_DEEP (ohm.m) | 47.81 | 32 |
 | RES_SHALLOW (ohm.m) | 36.83 | 32 |
-| **Δ Res (Deep − Shallow)** | **10.98** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7660,6 +6977,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 209.0 U |
+| mTVDss | -1223.59 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: clr,trnsl,pl-lt brn,lt gry,f-v crs,v pr srt,sbang-sbrnd,mnr ang,wk sil cmt,tr gry-brn slty mtx,pred disagg,mnr fri,v gd inf por,pr vis por,fluor. 77 / 6 / 5 / 6 / 6 209 U
@@ -7672,10 +6990,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 68.5 | 33 |
 | RES_DEEP (ohm.m) | 50.20 | 33 |
 | RES_SHALLOW (ohm.m) | 39.28 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.92** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7695,6 +7009,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 154.0 U |
+| mTVDss | -1223.59 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: clr,trnsl,pl-lt brn,lt gry,f-v crs,v pr srt,sbang-sbrnd,mnr ang,wk sil cmt,tr gry-brn slty mtx,pred disagg,mnr fri,v gd inf por,pr vis por,fluor. 77 / 6 / 5 / 6 / 6 209 U
@@ -7707,10 +7022,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 66.6 | 33 |
 | RES_DEEP (ohm.m) | 47.05 | 33 |
 | RES_SHALLOW (ohm.m) | 40.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.40** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7730,6 +7041,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 209.0 U |
+| mTVDss | -1223.61 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: clr,trnsl,pl-lt brn,lt gry,f-v crs,v pr srt,sbang-sbrnd,mnr ang,wk sil cmt,tr gry-brn slty mtx,pred disagg,mnr fri,v gd inf por,pr vis por,fluor. 77 / 6 / 5 / 6 / 6 209 U
@@ -7742,10 +7054,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 65.4 | 33 |
 | RES_DEEP (ohm.m) | 51.93 | 33 |
 | RES_SHALLOW (ohm.m) | 45.25 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.68** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7765,6 +7073,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 183.0 U |
+| mTVDss | -1223.63 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: clr,trnsl,pl-lt brn,lt gry,f-v crs,v pr srt,sbang-sbrnd,mnr ang,wk sil cmt,tr gry-brn slty mtx,pred disagg,mnr fri,v gd inf por,pr vis por,fluor. 77 / 6 / 5 / 6 / 6 209 U
@@ -7777,10 +7086,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 65.3 | 33 |
 | RES_DEEP (ohm.m) | 58.04 | 33 |
 | RES_SHALLOW (ohm.m) | 49.24 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.80** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7800,6 +7105,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 190.0 U |
+| mTVDss | -1223.65 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2970m: clr,trnsl,pl-lt brn,lt gry,f-v crs,v pr srt,sbang-sbrnd,mnr ang,wk sil cmt,tr gry-brn slty mtx,pred disagg,mnr fri,v gd inf por,pr vis por,fluor. 77 / 6 / 5 / 6 / 6 209 U
@@ -7812,10 +7118,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 70.6 | 33 |
 | RES_DEEP (ohm.m) | 56.52 | 33 |
 | RES_SHALLOW (ohm.m) | 43.51 | 33 |
-| **Δ Res (Deep − Shallow)** | **13.00** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7835,6 +7137,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 202.0 U |
+| mTVDss | -1223.68 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2990m: pl-lt brn,lt gry,clr,trnsl,vf- med,tr crs-v crs,mod-pr srt,sbang-sbrnd, tr ang,wk sil cmt,tr gry-brn slty mtx,tr carb spks,fri,com disagg,pr vis por,fr inf por, fluor.
@@ -7847,10 +7150,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 75.2 | 32 |
 | RES_DEEP (ohm.m) | 44.48 | 32 |
 | RES_SHALLOW (ohm.m) | 35.99 | 32 |
-| **Δ Res (Deep − Shallow)** | **8.49** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7870,6 +7169,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 236.0 U |
+| mTVDss | -1223.69 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2990m: pl-lt brn,lt gry,clr,trnsl,vf- med,tr crs-v crs,mod-pr srt,sbang-sbrnd, tr ang,wk sil cmt,tr gry-brn slty mtx,tr carb spks,fri,com disagg,pr vis por,fr inf por, fluor.
@@ -7882,10 +7182,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 73.6 | 33 |
 | RES_DEEP (ohm.m) | 45.13 | 33 |
 | RES_SHALLOW (ohm.m) | 34.66 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.47** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7905,6 +7201,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 197.0 U |
+| mTVDss | -1223.70 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2990m: pl-lt brn,lt gry,clr,trnsl,vf- med,tr crs-v crs,mod-pr srt,sbang-sbrnd, tr ang,wk sil cmt,tr gry-brn slty mtx,tr carb spks,fri,com disagg,pr vis por,fr inf por, fluor.
@@ -7917,10 +7214,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 75.5 | 33 |
 | RES_DEEP (ohm.m) | 45.87 | 33 |
 | RES_SHALLOW (ohm.m) | 34.29 | 33 |
-| **Δ Res (Deep − Shallow)** | **11.57** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7940,6 +7233,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 151.0 U |
+| mTVDss | -1223.71 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~2990m: pl-lt brn,lt gry,clr,trnsl,vf- med,tr crs-v crs,mod-pr srt,sbang-sbrnd, tr ang,wk sil cmt,tr gry-brn slty mtx,tr carb spks,fri,com disagg,pr vis por,fr inf por, fluor.
@@ -7952,10 +7246,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 77.1 | 33 |
 | RES_DEEP (ohm.m) | 42.37 | 33 |
 | RES_SHALLOW (ohm.m) | 33.69 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.68** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -7971,6 +7261,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 175.0 U |
+| mTVDss | -1223.72 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -7980,10 +7271,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 81.7 | 33 |
 | RES_DEEP (ohm.m) | 45.63 | 33 |
 | RES_SHALLOW (ohm.m) | 39.94 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.70** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8003,6 +7290,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 215.0 U |
+| mTVDss | -1223.74 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3030m: med-dk gry,med-dk gry brn, v dk gry,aren,mnr arg,tr sandy lams,tr micmic,tr carb spks,frm-mod hd,hd i/p, sbblky-sbfiss.
@@ -8015,10 +7303,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 82.3 | 32 |
 | RES_DEEP (ohm.m) | 48.59 | 32 |
 | RES_SHALLOW (ohm.m) | 43.97 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.62** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8038,6 +7322,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 193.0 U |
+| mTVDss | -1223.75 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3030m: med-dk gry,med-dk gry brn, v dk gry,aren,mnr arg,tr sandy lams,tr micmic,tr carb spks,frm-mod hd,hd i/p, sbblky-sbfiss.
@@ -8050,10 +7335,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 85.3 | 33 |
 | RES_DEEP (ohm.m) | 44.63 | 33 |
 | RES_SHALLOW (ohm.m) | 39.59 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.04** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8073,6 +7354,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 185.0 U |
+| mTVDss | -1223.77 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3030m: med-dk gry,med-dk gry brn, v dk gry,aren,mnr arg,tr sandy lams,tr micmic,tr carb spks,frm-mod hd,hd i/p, sbblky-sbfiss.
@@ -8085,10 +7367,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 87.3 | 33 |
 | RES_DEEP (ohm.m) | 47.66 | 33 |
 | RES_SHALLOW (ohm.m) | 39.85 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.81** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8108,6 +7386,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 175.0 U |
+| mTVDss | -1223.78 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3030m: med-dk gry,med-dk gry brn, v dk gry,aren,mnr arg,tr sandy lams,tr micmic,tr carb spks,frm-mod hd,hd i/p, sbblky-sbfiss.
@@ -8120,10 +7399,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 84.0 | 33 |
 | RES_DEEP (ohm.m) | 41.78 | 33 |
 | RES_SHALLOW (ohm.m) | 35.44 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.34** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8143,6 +7418,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 173.0 U |
+| mTVDss | -1223.79 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3030m: med-dk gry,med-dk gry brn, v dk gry,aren,mnr arg,tr sandy lams,tr micmic,tr carb spks,frm-mod hd,hd i/p, sbblky-sbfiss.
@@ -8155,10 +7431,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 87.9 | 33 |
 | RES_DEEP (ohm.m) | 44.35 | 33 |
 | RES_SHALLOW (ohm.m) | 38.98 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.37** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8178,6 +7450,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 190.0 U |
+| mTVDss | -1223.80 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3030m: med-dk gry,med-dk gry brn, v dk gry,aren,mnr arg,tr sandy lams,tr micmic,tr carb spks,frm-mod hd,hd i/p, sbblky-sbfiss.
@@ -8190,10 +7463,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 92.8 | 32 |
 | RES_DEEP (ohm.m) | 37.33 | 32 |
 | RES_SHALLOW (ohm.m) | 30.03 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.31** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8213,6 +7482,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 198.0 U |
+| mTVDss | -1223.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3030m: med-dk gry,med-dk gry brn, v dk gry,aren,mnr arg,tr sandy lams,tr micmic,tr carb spks,frm-mod hd,hd i/p, sbblky-sbfiss.
@@ -8225,10 +7495,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 92.5 | 33 |
 | RES_DEEP (ohm.m) | 40.03 | 33 |
 | RES_SHALLOW (ohm.m) | 31.25 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.78** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8244,6 +7510,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 187.0 U |
+| mTVDss | -1223.83 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8253,10 +7520,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 94.1 | 33 |
 | RES_DEEP (ohm.m) | 40.47 | 33 |
 | RES_SHALLOW (ohm.m) | 34.97 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.50** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8272,6 +7535,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 80.0% nan |
 | Total Gas | 214.0 U |
+| mTVDss | -1223.84 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8281,10 +7545,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 95.9 | 33 |
 | RES_DEEP (ohm.m) | 37.48 | 33 |
 | RES_SHALLOW (ohm.m) | 33.33 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.15** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8300,6 +7560,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 90.0% very coarse Sandstone, 90% moderately bright |
 | Total Gas | 178.0 U |
+| mTVDss | -1223.85 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -8309,10 +7570,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 92.3 | 33 |
 | RES_DEEP (ohm.m) | 38.67 | 33 |
 | RES_SHALLOW (ohm.m) | 33.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.77** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8332,6 +7589,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 155.0 U |
+| mTVDss | -1223.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3080m: clr-trnsl,lt gry,lt gry brn, vf-med,mod srt,sbang-sbrnd,wk-mod sil cmt,mnr lt gry slty mtx,fri,com disagg, pr vis por,fr inf por,fluor. SURVEY @ 3086.8m
@@ -8343,10 +7601,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 90.3 | 32 |
 | RES_DEEP (ohm.m) | 36.67 | 32 |
 | RES_SHALLOW (ohm.m) | 31.39 | 32 |
-| **Δ Res (Deep − Shallow)** | **5.28** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8366,6 +7620,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 204.0 U |
+| mTVDss | -1223.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3080m: clr-trnsl,lt gry,lt gry brn, vf-med,mod srt,sbang-sbrnd,wk-mod sil cmt,mnr lt gry slty mtx,fri,com disagg, pr vis por,fr inf por,fluor. SURVEY @ 3086.8m
@@ -8377,10 +7632,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 88.6 | 33 |
 | RES_DEEP (ohm.m) | 35.04 | 33 |
 | RES_SHALLOW (ohm.m) | 32.33 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.71** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8400,6 +7651,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 235.0 U |
+| mTVDss | -1223.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3080m: clr-trnsl,lt gry,lt gry brn, vf-med,mod srt,sbang-sbrnd,wk-mod sil cmt,mnr lt gry slty mtx,fri,com disagg, pr vis por,fr inf por,fluor. SURVEY @ 3086.8m
@@ -8412,10 +7664,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 89.3 | 33 |
 | RES_DEEP (ohm.m) | 33.78 | 33 |
 | RES_SHALLOW (ohm.m) | 30.69 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.09** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8435,6 +7683,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 169.0 U |
+| mTVDss | -1223.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3080m: clr-trnsl,lt gry,lt gry brn, vf-med,mod srt,sbang-sbrnd,wk-mod sil cmt,mnr lt gry slty mtx,fri,com disagg, pr vis por,fr inf por,fluor. SURVEY @ 3086.8m
@@ -8447,10 +7696,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 89.6 | 33 |
 | RES_DEEP (ohm.m) | 33.76 | 33 |
 | RES_SHALLOW (ohm.m) | 28.18 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.58** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8470,6 +7715,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 190.0 U |
+| mTVDss | -1223.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3080m: clr-trnsl,lt gry,lt gry brn, vf-med,mod srt,sbang-sbrnd,wk-mod sil cmt,mnr lt gry slty mtx,fri,com disagg, pr vis por,fr inf por,fluor. SURVEY @ 3086.8m
@@ -8482,10 +7728,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 89.6 | 33 |
 | RES_DEEP (ohm.m) | 33.61 | 33 |
 | RES_SHALLOW (ohm.m) | 27.41 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.20** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8505,6 +7747,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 187.0 U |
+| mTVDss | -1223.86 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3080m: clr-trnsl,lt gry,lt gry brn, vf-med,mod srt,sbang-sbrnd,wk-mod sil cmt,mnr lt gry slty mtx,fri,com disagg, pr vis por,fr inf por,fluor. SURVEY @ 3086.8m
@@ -8517,10 +7760,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 87.6 | 32 |
 | RES_DEEP (ohm.m) | 35.68 | 32 |
 | RES_SHALLOW (ohm.m) | 29.54 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.14** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8540,6 +7779,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 205.0 U |
+| mTVDss | -1223.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3080m: clr-trnsl,lt gry,lt gry brn, vf-med,mod srt,sbang-sbrnd,wk-mod sil cmt,mnr lt gry slty mtx,fri,com disagg, pr vis por,fr inf por,fluor. SURVEY @ 3086.8m
@@ -8552,10 +7792,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 81.1 | 33 |
 | RES_DEEP (ohm.m) | 35.06 | 33 |
 | RES_SHALLOW (ohm.m) | 29.54 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.52** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8575,6 +7811,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 194.0 U |
+| mTVDss | -1223.78 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3090m: clr-trnsl,lt gry,lt gry brn,vf- f,wl srt,sbang-sbrnd,wk-mod sil cmt,mnr lt gry slty mtx,fri,com disagg,pr vis por, fr inf por,fluor.
@@ -8587,10 +7824,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.5 | 33 |
 | RES_DEEP (ohm.m) | 34.67 | 33 |
 | RES_SHALLOW (ohm.m) | 27.60 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.08** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8610,6 +7843,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 183.0 U |
+| mTVDss | -1223.74 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3090m: clr-trnsl,lt gry,lt gry brn,vf- f,wl srt,sbang-sbrnd,wk-mod sil cmt,mnr lt gry slty mtx,fri,com disagg,pr vis por, fr inf por,fluor.
@@ -8622,10 +7856,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 87.0 | 33 |
 | RES_DEEP (ohm.m) | 33.86 | 33 |
 | RES_SHALLOW (ohm.m) | 26.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.93** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8645,6 +7875,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 199.0 U |
+| mTVDss | -1223.69 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3110m: lt gry,lt gry brn,vf-f,wl srt, sbrnd-sbang,wk sil cmt,com lt gry slty mtx,tr carb spks,fri,tr disagg,pr vis por, fr inf por,fluor.
@@ -8657,10 +7888,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 92.0 | 33 |
 | RES_DEEP (ohm.m) | 33.63 | 33 |
 | RES_SHALLOW (ohm.m) | 27.82 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.81** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8680,6 +7907,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 135.0 U |
+| mTVDss | -1223.64 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3110m: lt gry,lt gry brn,vf-f,wl srt, sbrnd-sbang,wk sil cmt,com lt gry slty mtx,tr carb spks,fri,tr disagg,pr vis por, fr inf por,fluor.
@@ -8692,10 +7920,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.5 | 33 |
 | RES_DEEP (ohm.m) | 35.05 | 33 |
 | RES_SHALLOW (ohm.m) | 29.03 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.01** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8715,6 +7939,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 184.0 U |
+| mTVDss | -1223.60 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3110m: lt gry,lt gry brn,vf-f,wl srt, sbrnd-sbang,wk sil cmt,com lt gry slty mtx,tr carb spks,fri,tr disagg,pr vis por, fr inf por,fluor.
@@ -8727,10 +7952,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 94.8 | 32 |
 | RES_DEEP (ohm.m) | 34.97 | 32 |
 | RES_SHALLOW (ohm.m) | 28.07 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.91** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8750,6 +7971,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 199.0 U |
+| mTVDss | -1223.55 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3110m: lt gry,lt gry brn,vf-f,wl srt, sbrnd-sbang,wk sil cmt,com lt gry slty mtx,tr carb spks,fri,tr disagg,pr vis por, fr inf por,fluor.
@@ -8762,10 +7984,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 95.8 | 33 |
 | RES_DEEP (ohm.m) | 35.95 | 33 |
 | RES_SHALLOW (ohm.m) | 30.18 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.77** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8785,6 +8003,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, trace coarse Sandstone, 100% moderately bright |
 | Total Gas | 174.0 U |
+| mTVDss | -1223.50 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3120m: lt gry,lt gry brn,vf-f,wl srt, sbang-sbrnd,wk-mod sil cmt com lt gry brn slty mtx,tr carb spks,fri-mod hd,dom disagg,pr vis por,fr inf por,fluor. SURVEY @ 3125.2m
@@ -8797,10 +8016,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 97.4 | 33 |
 | RES_DEEP (ohm.m) | 34.65 | 33 |
 | RES_SHALLOW (ohm.m) | 30.89 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.76** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8820,6 +8035,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, 100% moderately bright |
 | Total Gas | 158.0 U |
+| mTVDss | -1223.44 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3120m: lt gry,lt gry brn,vf-f,wl srt, sbang-sbrnd,wk-mod sil cmt com lt gry brn slty mtx,tr carb spks,fri-mod hd,dom disagg,pr vis por,fr inf por,fluor. SURVEY @ 3125.2m
@@ -8832,10 +8048,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 97.3 | 33 |
 | RES_DEEP (ohm.m) | 32.45 | 33 |
 | RES_SHALLOW (ohm.m) | 28.59 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.86** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8855,6 +8067,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 121.0 U |
+| mTVDss | -1223.39 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3130m: clr-trnsl,tr lt gry,vf-f,wl srt,sbrnd-sbang,mod-wk si cmt,com lt gry slty mtx,tr carb spks,dom disagg, fri aggs,pr vis por,pr-fr inf por,fluor. INCREASE STARGLIDE TO 1.5%
@@ -8867,10 +8080,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 98.4 | 33 |
 | RES_DEEP (ohm.m) | 33.31 | 33 |
 | RES_SHALLOW (ohm.m) | 29.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.41** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8890,6 +8099,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 113.0 U |
+| mTVDss | -1223.34 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3130m: clr-trnsl,tr lt gry,vf-f,wl srt,sbrnd-sbang,mod-wk si cmt,com lt gry slty mtx,tr carb spks,dom disagg, fri aggs,pr vis por,pr-fr inf por,fluor. INCREASE STARGLIDE TO 1.5%
@@ -8902,10 +8112,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 99.3 | 32 |
 | RES_DEEP (ohm.m) | 33.48 | 32 |
 | RES_SHALLOW (ohm.m) | 30.04 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.45** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8925,6 +8131,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 151.0 U |
+| mTVDss | -1223.27 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3140m: clr-trnsl,tr lt gry,vf-crs,pr srt,sbrnd-sbang,mod-wk si cmt,com lt gry slty mtx,tr carb spks,dom disagg,fri aggs,pr vis por,pr-fr inf por,fluor. SURVEY @ 3144.7m
@@ -8937,10 +8144,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 95.9 | 33 |
 | RES_DEEP (ohm.m) | 32.47 | 33 |
 | RES_SHALLOW (ohm.m) | 29.27 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.20** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8960,6 +8163,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 133.0 U |
+| mTVDss | -1223.21 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3140m: clr-trnsl,tr lt gry,vf-crs,pr srt,sbrnd-sbang,mod-wk si cmt,com lt gry slty mtx,tr carb spks,dom disagg,fri aggs,pr vis por,pr-fr inf por,fluor. SURVEY @ 3144.7m
@@ -8972,10 +8176,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 98.7 | 33 |
 | RES_DEEP (ohm.m) | 32.35 | 33 |
 | RES_SHALLOW (ohm.m) | 28.44 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.91** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -8995,6 +8195,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 137.0 U |
+| mTVDss | -1223.13 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3160m: clr-trnsl,tr lt gry,lt brn gry, vf-med,mnr crs,mod-pr srt,sbrnd-sbang, tr lt gry slty mtx,dom disagg,mnr fri aggs, pr vis por,fr inf por,fluor.
@@ -9007,10 +8208,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 100.7 | 33 |
 | RES_DEEP (ohm.m) | 33.51 | 33 |
 | RES_SHALLOW (ohm.m) | 28.13 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.39** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9030,6 +8227,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 119.0 U |
+| mTVDss | -1223.04 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3160m: clr-trnsl,tr lt gry,lt brn gry, vf-med,mnr crs,mod-pr srt,sbrnd-sbang, tr lt gry slty mtx,dom disagg,mnr fri aggs, pr vis por,fr inf por,fluor.
@@ -9042,10 +8240,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 94.2 | 33 |
 | RES_DEEP (ohm.m) | 34.36 | 33 |
 | RES_SHALLOW (ohm.m) | 26.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.00** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9065,6 +8259,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 147.0 U |
+| mTVDss | -1222.95 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3160m: clr-trnsl,tr lt gry,lt brn gry, vf-med,mnr crs,mod-pr srt,sbrnd-sbang, tr lt gry slty mtx,dom disagg,mnr fri aggs, pr vis por,fr inf por,fluor.
@@ -9077,10 +8272,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 93.1 | 32 |
 | RES_DEEP (ohm.m) | 33.52 | 32 |
 | RES_SHALLOW (ohm.m) | 26.49 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.02** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9100,6 +8291,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 180.0 U |
+| mTVDss | -1222.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3160m: clr-trnsl,tr lt gry,lt brn gry, vf-med,mnr crs,mod-pr srt,sbrnd-sbang, tr lt gry slty mtx,dom disagg,mnr fri aggs, pr vis por,fr inf por,fluor.
@@ -9112,10 +8304,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 91.5 | 33 |
 | RES_DEEP (ohm.m) | 34.26 | 33 |
 | RES_SHALLOW (ohm.m) | 26.37 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.88** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9131,6 +8319,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 191.0 U |
+| mTVDss | -1222.73 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9140,10 +8329,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 103.1 | 33 |
 | RES_DEEP (ohm.m) | 36.08 | 33 |
 | RES_SHALLOW (ohm.m) | 26.72 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.36** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9159,6 +8344,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 157.0 U |
+| mTVDss | -1222.62 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9168,10 +8354,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 78.0 | 33 |
 | RES_DEEP (ohm.m) | 35.29 | 33 |
 | RES_SHALLOW (ohm.m) | 24.36 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.93** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9187,6 +8369,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 166.0 U |
+| mTVDss | -1222.51 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9196,10 +8379,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 73.2 | 33 |
 | RES_DEEP (ohm.m) | 33.43 | 33 |
 | RES_SHALLOW (ohm.m) | 27.92 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.51** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9219,6 +8398,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
+| mTVDss | -1222.40 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3210m: clr-trnsl,lt gry,vf-f,mnr crs,mod srt,sbang-sbrnd,mod sil cmt, com lt gry slty mtx,tr carb spks,mod hd, com disagg,pr vis por,fr inf por,fluor.
@@ -9231,10 +8411,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 68.4 | 32 |
 | RES_DEEP (ohm.m) | 44.26 | 32 |
 | RES_SHALLOW (ohm.m) | 35.89 | 32 |
-| **Δ Res (Deep − Shallow)** | **8.37** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9254,6 +8430,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 159.0 U |
+| mTVDss | -1222.31 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3210m: clr-trnsl,lt gry,vf-f,mnr crs,mod srt,sbang-sbrnd,mod sil cmt, com lt gry slty mtx,tr carb spks,mod hd, com disagg,pr vis por,fr inf por,fluor.
@@ -9266,10 +8443,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 69.5 | 33 |
 | RES_DEEP (ohm.m) | 44.69 | 33 |
 | RES_SHALLOW (ohm.m) | 33.09 | 33 |
-| **Δ Res (Deep − Shallow)** | **11.59** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9289,6 +8462,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 134.0 U |
+| mTVDss | -1222.24 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3210m: clr-trnsl,lt gry,vf-f,mnr crs,mod srt,sbang-sbrnd,mod sil cmt, com lt gry slty mtx,tr carb spks,mod hd, com disagg,pr vis por,fr inf por,fluor.
@@ -9301,10 +8475,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 69.2 | 33 |
 | RES_DEEP (ohm.m) | 47.16 | 33 |
 | RES_SHALLOW (ohm.m) | 38.06 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.10** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9324,6 +8494,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 170.0 U |
+| mTVDss | -1222.17 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3210m: clr-trnsl,lt gry,vf-f,mnr crs,mod srt,sbang-sbrnd,mod sil cmt, com lt gry slty mtx,tr carb spks,mod hd, com disagg,pr vis por,fr inf por,fluor.
@@ -9336,10 +8507,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 70.0 | 33 |
 | RES_DEEP (ohm.m) | 48.10 | 33 |
 | RES_SHALLOW (ohm.m) | 42.12 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.98** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9359,6 +8526,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 175.0 U |
+| mTVDss | -1222.14 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3210m: clr-trnsl,lt gry,vf-f,mnr crs,mod srt,sbang-sbrnd,mod sil cmt, com lt gry slty mtx,tr carb spks,mod hd, com disagg,pr vis por,fr inf por,fluor.
@@ -9371,10 +8539,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 74.1 | 33 |
 | RES_DEEP (ohm.m) | 37.49 | 33 |
 | RES_SHALLOW (ohm.m) | 31.04 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.45** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9394,6 +8558,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 180.0 U |
+| mTVDss | -1222.11 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3210m: clr-trnsl,lt gry,vf-f,mnr crs,mod srt,sbang-sbrnd,mod sil cmt, com lt gry slty mtx,tr carb spks,mod hd, com disagg,pr vis por,fr inf por,fluor.
@@ -9406,10 +8571,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 66.5 | 33 |
 | RES_DEEP (ohm.m) | 40.12 | 33 |
 | RES_SHALLOW (ohm.m) | 34.81 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.30** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9429,6 +8590,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 155.0 U |
+| mTVDss | -1222.09 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3210m: clr-trnsl,lt gry,vf-f,mnr crs,mod srt,sbang-sbrnd,mod sil cmt, com lt gry slty mtx,tr carb spks,mod hd, com disagg,pr vis por,fr inf por,fluor.
@@ -9441,10 +8603,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 61.0 | 32 |
 | RES_DEEP (ohm.m) | 44.09 | 32 |
 | RES_SHALLOW (ohm.m) | 37.64 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.45** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9460,6 +8618,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 170.0 U |
+| mTVDss | -1222.06 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9469,10 +8628,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 62.0 | 33 |
 | RES_DEEP (ohm.m) | 45.65 | 33 |
 | RES_SHALLOW (ohm.m) | 39.07 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.57** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9488,6 +8643,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 137.0 U |
+| mTVDss | -1222.02 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9497,10 +8653,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 70.3 | 33 |
 | RES_DEEP (ohm.m) | 40.14 | 33 |
 | RES_SHALLOW (ohm.m) | 35.93 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.21** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9516,6 +8668,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright |
 | Total Gas | 151.0 U |
+| mTVDss | -1222.00 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9525,10 +8678,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 71.3 | 33 |
 | RES_DEEP (ohm.m) | 39.32 | 33 |
 | RES_SHALLOW (ohm.m) | 32.24 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.09** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9548,6 +8697,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to dull |
 | Total Gas | 153.0 U |
+| mTVDss | -1221.98 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3260m: dk gry-v dk gry,med gry-gry brn,aren,tr sandy lams,micmic i/p,tr carb spks,frm-mod hd,sbblky-sbfiss. 77 / 6 / 4 / 6 / 7 155 U SURVEY @ 3263.8m
@@ -9560,10 +8710,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 69.4 | 33 |
 | RES_DEEP (ohm.m) | 39.43 | 33 |
 | RES_SHALLOW (ohm.m) | 34.15 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.29** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9583,6 +8729,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 163.0 U |
+| mTVDss | -1221.97 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3260m: dk gry-v dk gry,med gry-gry brn,aren,tr sandy lams,micmic i/p,tr carb spks,frm-mod hd,sbblky-sbfiss. 77 / 6 / 4 / 6 / 7 155 U SURVEY @ 3263.8m
@@ -9595,10 +8742,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 77.6 | 32 |
 | RES_DEEP (ohm.m) | 42.03 | 32 |
 | RES_SHALLOW (ohm.m) | 35.84 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.19** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9618,6 +8761,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 163.0 U |
+| mTVDss | -1222.01 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3260m: dk gry-v dk gry,med gry-gry brn,aren,tr sandy lams,micmic i/p,tr carb spks,frm-mod hd,sbblky-sbfiss. 77 / 6 / 4 / 6 / 7 155 U SURVEY @ 3263.8m
@@ -9630,10 +8774,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 73.9 | 33 |
 | RES_DEEP (ohm.m) | 46.06 | 33 |
 | RES_SHALLOW (ohm.m) | 40.84 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.22** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9653,6 +8793,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
+| mTVDss | -1222.05 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3260m: dk gry-v dk gry,med gry-gry brn,aren,tr sandy lams,micmic i/p,tr carb spks,frm-mod hd,sbblky-sbfiss. 77 / 6 / 4 / 6 / 7 155 U SURVEY @ 3263.8m
@@ -9665,10 +8806,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 80.2 | 33 |
 | RES_DEEP (ohm.m) | 45.10 | 33 |
 | RES_SHALLOW (ohm.m) | 40.09 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.01** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9688,6 +8825,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 154.0 U |
+| mTVDss | -1222.11 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3260m: dk gry-v dk gry,med gry-gry brn,aren,tr sandy lams,micmic i/p,tr carb spks,frm-mod hd,sbblky-sbfiss. 77 / 6 / 4 / 6 / 7 155 U SURVEY @ 3263.8m
@@ -9700,10 +8838,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 79.8 | 33 |
 | RES_DEEP (ohm.m) | 48.25 | 33 |
 | RES_SHALLOW (ohm.m) | 45.23 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.02** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9723,6 +8857,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 145.0 U |
+| mTVDss | -1222.20 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3260m: dk gry-v dk gry,med gry-gry brn,aren,tr sandy lams,micmic i/p,tr carb spks,frm-mod hd,sbblky-sbfiss. 77 / 6 / 4 / 6 / 7 155 U SURVEY @ 3263.8m
@@ -9735,10 +8870,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 76.9 | 33 |
 | RES_DEEP (ohm.m) | 40.19 | 33 |
 | RES_SHALLOW (ohm.m) | 35.81 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.37** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9758,6 +8889,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 151.0 U |
+| mTVDss | -1222.29 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3260m: dk gry-v dk gry,med gry-gry brn,aren,tr sandy lams,micmic i/p,tr carb spks,frm-mod hd,sbblky-sbfiss. 77 / 6 / 4 / 6 / 7 155 U SURVEY @ 3263.8m
@@ -9770,10 +8902,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 66.1 | 32 |
 | RES_DEEP (ohm.m) | 36.05 | 32 |
 | RES_SHALLOW (ohm.m) | 28.96 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.09** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9789,6 +8917,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 146.0 U |
+| mTVDss | -1222.39 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9798,10 +8927,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 68.5 | 33 |
 | RES_DEEP (ohm.m) | 31.03 | 33 |
 | RES_SHALLOW (ohm.m) | 23.88 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.15** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9817,6 +8942,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 143.0 U |
+| mTVDss | -1222.49 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9826,10 +8952,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 67.3 | 33 |
 | RES_DEEP (ohm.m) | 32.75 | 33 |
 | RES_SHALLOW (ohm.m) | 27.45 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.30** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9845,6 +8967,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 155.0 U |
+| mTVDss | -1222.60 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -9854,10 +8977,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 71.7 | 33 |
 | RES_DEEP (ohm.m) | 34.99 | 33 |
 | RES_SHALLOW (ohm.m) | 29.00 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.00** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9877,6 +8996,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 164.0 U |
+| mTVDss | -1222.71 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3310m: lt-med brn,lt gry brn,clr, trnsl,opq,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,rr ang,wk-mod sil cmt,mnr brn-tr gry slty mtx,tr slty lams,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr
@@ -9889,10 +9009,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 80.8 | 33 |
 | RES_DEEP (ohm.m) | 32.30 | 33 |
 | RES_SHALLOW (ohm.m) | 27.64 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.66** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9912,6 +9028,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 166.0 U |
+| mTVDss | -1222.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3310m: lt-med brn,lt gry brn,clr, trnsl,opq,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,rr ang,wk-mod sil cmt,mnr brn-tr gry slty mtx,tr slty lams,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr
@@ -9924,10 +9041,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 92.0 | 32 |
 | RES_DEEP (ohm.m) | 29.96 | 32 |
 | RES_SHALLOW (ohm.m) | 27.23 | 32 |
-| **Δ Res (Deep − Shallow)** | **2.73** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9947,6 +9060,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 141.0 U |
+| mTVDss | -1222.91 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3310m: lt-med brn,lt gry brn,clr, trnsl,opq,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,rr ang,wk-mod sil cmt,mnr brn-tr gry slty mtx,tr slty lams,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr
@@ -9959,10 +9073,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 97.5 | 33 |
 | RES_DEEP (ohm.m) | 29.06 | 33 |
 | RES_SHALLOW (ohm.m) | 25.48 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.58** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -9982,6 +9092,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 192.0 U |
+| mTVDss | -1222.98 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3310m: lt-med brn,lt gry brn,clr, trnsl,opq,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,rr ang,wk-mod sil cmt,mnr brn-tr gry slty mtx,tr slty lams,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr
@@ -9994,10 +9105,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 90.7 | 33 |
 | RES_DEEP (ohm.m) | 28.10 | 33 |
 | RES_SHALLOW (ohm.m) | 23.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.11** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10017,6 +9124,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 176.0 U |
+| mTVDss | -1223.04 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3310m: lt-med brn,lt gry brn,clr, trnsl,opq,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,rr ang,wk-mod sil cmt,mnr brn-tr gry slty mtx,tr slty lams,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr
@@ -10029,10 +9137,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 82.7 | 33 |
 | RES_DEEP (ohm.m) | 27.99 | 33 |
 | RES_SHALLOW (ohm.m) | 24.34 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.65** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10052,6 +9156,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, minor coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 202.0 U |
+| mTVDss | -1223.08 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3310m: lt-med brn,lt gry brn,clr, trnsl,opq,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,rr ang,wk-mod sil cmt,mnr brn-tr gry slty mtx,tr slty lams,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr
@@ -10064,10 +9169,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.0 | 33 |
 | RES_DEEP (ohm.m) | 27.97 | 33 |
 | RES_SHALLOW (ohm.m) | 23.43 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.53** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10087,6 +9188,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, rare coarse to very coarse Sandstone, 101% moderately bright to bright |
 | Total Gas | 200.0 U |
+| mTVDss | -1223.07 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3310m: lt-med brn,lt gry brn,clr, trnsl,opq,vf-med,tr crs-v crs,mod-pr srt, sbang-sbrnd,rr ang,wk-mod sil cmt,mnr brn-tr gry slty mtx,tr slty lams,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr
@@ -10099,10 +9201,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 82.5 | 32 |
 | RES_DEEP (ohm.m) | 36.14 | 32 |
 | RES_SHALLOW (ohm.m) | 29.91 | 32 |
-| **Δ Res (Deep − Shallow)** | **6.23** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10122,6 +9220,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, minor coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 196.0 U |
+| mTVDss | -1223.07 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3340m: pl-lt brn,lt gry brn,clr,trnsl, vf-f,rr med-crs,mod-wl srt,sbang-sbrnd, wk-mod sil cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr inf por,fluor.
@@ -10134,10 +9233,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 87.4 | 33 |
 | RES_DEEP (ohm.m) | 32.96 | 33 |
 | RES_SHALLOW (ohm.m) | 26.67 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.29** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10157,6 +9252,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
+| mTVDss | -1223.04 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3340m: pl-lt brn,lt gry brn,clr,trnsl, vf-f,rr med-crs,mod-wl srt,sbang-sbrnd, wk-mod sil cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr inf por,fluor.
@@ -10169,10 +9265,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 91.2 | 33 |
 | RES_DEEP (ohm.m) | 29.43 | 33 |
 | RES_SHALLOW (ohm.m) | 23.53 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.90** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10192,6 +9284,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% moderately bright |
 | Total Gas | 136.0 U |
+| mTVDss | -1223.00 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3340m: pl-lt brn,lt gry brn,clr,trnsl, vf-f,rr med-crs,mod-wl srt,sbang-sbrnd, wk-mod sil cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr inf por,fluor.
@@ -10204,10 +9297,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 90.7 | 33 |
 | RES_DEEP (ohm.m) | 23.23 | 33 |
 | RES_SHALLOW (ohm.m) | 18.39 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.84** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10227,6 +9316,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 132.0 U |
+| mTVDss | -1222.96 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3340m: pl-lt brn,lt gry brn,clr,trnsl, vf-f,rr med-crs,mod-wl srt,sbang-sbrnd, wk-mod sil cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr inf por,fluor.
@@ -10239,10 +9329,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.6 | 33 |
 | RES_DEEP (ohm.m) | 30.29 | 33 |
 | RES_SHALLOW (ohm.m) | 25.36 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.93** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10262,6 +9348,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 175.0 U |
+| mTVDss | -1222.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3340m: pl-lt brn,lt gry brn,clr,trnsl, vf-f,rr med-crs,mod-wl srt,sbang-sbrnd, wk-mod sil cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr inf por,fluor.
@@ -10274,10 +9361,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.5 | 33 |
 | RES_DEEP (ohm.m) | 28.65 | 33 |
 | RES_SHALLOW (ohm.m) | 24.11 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.54** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10297,6 +9380,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 162.0 U |
+| mTVDss | -1222.84 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3340m: pl-lt brn,lt gry brn,clr,trnsl, vf-f,rr med-crs,mod-wl srt,sbang-sbrnd, wk-mod sil cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,mnr disagg,pr vis por,fr inf por,fluor.
@@ -10309,10 +9393,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.4 | 32 |
 | RES_DEEP (ohm.m) | 27.48 | 32 |
 | RES_SHALLOW (ohm.m) | 24.01 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.47** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10332,6 +9412,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 166.0 U |
+| mTVDss | -1222.77 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3360m: pl-lt brn,lt gry brn,med brn, clr,trnsl,vf-crs,tr v crs,mod-v pr srt,sbang- sbrnd,tr ang,wk-mod sil cmt,loc strg sil cmt,tr sid cmt,mnr brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,mnr disagg,pr-v pr
@@ -10344,10 +9425,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 80.4 | 33 |
 | RES_DEEP (ohm.m) | 28.20 | 33 |
 | RES_SHALLOW (ohm.m) | 26.60 | 33 |
-| **Δ Res (Deep − Shallow)** | **1.60** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10367,6 +9444,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% siderite in 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 174.0 U |
+| mTVDss | -1222.70 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -10380,10 +9458,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 82.3 | 33 |
 | RES_DEEP (ohm.m) | 31.35 | 33 |
 | RES_SHALLOW (ohm.m) | 27.00 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.35** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10403,6 +9477,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% siderite in 100% very fine to medium, minor coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 195.0 U |
+| mTVDss | -1222.63 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -10416,10 +9491,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.5 | 33 |
 | RES_DEEP (ohm.m) | 30.36 | 33 |
 | RES_SHALLOW (ohm.m) | 25.26 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.10** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10439,6 +9510,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.55) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 202.0 U |
+| mTVDss | -1222.55 m |
 | FeCO₃ in Siltstone | rare |
 
 **Mudlog Cuttings Description (PDF):**
@@ -10452,10 +9524,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 95.7 | 33 |
 | RES_DEEP (ohm.m) | 27.65 | 33 |
 | RES_SHALLOW (ohm.m) | 22.05 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.60** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10475,6 +9543,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 100.0% siderite in 100% very fine to medium, rare coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 159.0 U |
+| mTVDss | -1222.47 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -10488,10 +9557,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 91.6 | 32 |
 | RES_DEEP (ohm.m) | 28.06 | 32 |
 | RES_SHALLOW (ohm.m) | 24.48 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.58** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10511,6 +9576,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 80.0% siderite in 90% very fine to fine, rare medium to coarse Sandstone, 80% moderately bright |
 | Total Gas | 148.0 U |
+| mTVDss | -1222.39 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -10524,10 +9590,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 96.2 | 33 |
 | RES_DEEP (ohm.m) | 31.68 | 33 |
 | RES_SHALLOW (ohm.m) | 27.98 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.70** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10547,6 +9609,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 75.0% siderite in 75% very fine to medium, trace coarse Sandstone, 75% moderately bright |
 | Total Gas | 127.0 U |
+| mTVDss | -1222.30 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -10560,10 +9623,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 105.5 | 33 |
 | RES_DEEP (ohm.m) | 35.07 | 33 |
 | RES_SHALLOW (ohm.m) | 28.46 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.61** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10583,6 +9642,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 100.0% siderite in 85% very fine to very coarse Sandstone, 100% moderately bright |
 | Total Gas | 159.0 U |
+| mTVDss | -1222.20 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -10596,10 +9656,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 96.4 | 33 |
 | RES_DEEP (ohm.m) | 35.18 | 33 |
 | RES_SHALLOW (ohm.m) | 27.07 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.11** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10619,6 +9675,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 100.0% siderite in 95% very fine to medium, minor coarse to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 200.0 U |
+| mTVDss | -1222.10 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):**
@@ -10632,10 +9689,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 81.3 | 33 |
 | RES_DEEP (ohm.m) | 35.11 | 33 |
 | RES_SHALLOW (ohm.m) | 27.41 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.71** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10655,6 +9708,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.55) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 197.0 U |
+| mTVDss | -1221.99 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3390m: pl-lt brn,lt-med gry brn,med brn,clr,trnsl,vf-v crs,v pr srt,sbang-sbrnd, ang i/p,mod-wk sil cmt,loc strg sil cmt,tr sid cmt,mnr-loc com brn-gry slty mtx,tr carb spks,fri-mod hd,hd i/p,com disagg,
@@ -10667,10 +9721,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 71.3 | 32 |
 | RES_DEEP (ohm.m) | 33.63 | 32 |
 | RES_SHALLOW (ohm.m) | 29.22 | 32 |
-| **Δ Res (Deep − Shallow)** | **4.42** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10686,6 +9736,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, rare medium to very coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 196.0 U |
+| mTVDss | -1221.87 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -10695,10 +9746,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 65.0 | 33 |
 | RES_DEEP (ohm.m) | 35.22 | 33 |
 | RES_SHALLOW (ohm.m) | 31.83 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.39** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10718,6 +9765,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 214.0 U |
+| mTVDss | -1221.76 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3430m: med dk gry-dk gry,aren, carb spks,micmic,frm-mod hd,sbblky.
@@ -10730,10 +9778,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 63.7 | 33 |
 | RES_DEEP (ohm.m) | 39.10 | 33 |
 | RES_SHALLOW (ohm.m) | 33.68 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.42** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10753,6 +9797,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% moderately bright |
 | Total Gas | 188.0 U |
+| mTVDss | -1221.64 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3430m: med dk gry-dk gry,aren, carb spks,micmic,frm-mod hd,sbblky.
@@ -10765,10 +9810,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 76.6 | 33 |
 | RES_DEEP (ohm.m) | 40.49 | 33 |
 | RES_SHALLOW (ohm.m) | 36.23 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.26** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10788,6 +9829,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 95.0% nan |
 | Total Gas | 172.0 U |
+| mTVDss | -1221.53 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3430m: med dk gry-dk gry,aren, carb spks,micmic,frm-mod hd,sbblky.
@@ -10800,10 +9842,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 93.5 | 33 |
 | RES_DEEP (ohm.m) | 39.68 | 33 |
 | RES_SHALLOW (ohm.m) | 34.73 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.95** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10823,6 +9861,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 80.0% nan |
 | Total Gas | 137.0 U |
+| mTVDss | -1221.49 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3430m: med dk gry-dk gry,aren, carb spks,micmic,frm-mod hd,sbblky.
@@ -10835,10 +9874,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 109.3 | 32 |
 | RES_DEEP (ohm.m) | 42.77 | 32 |
 | RES_SHALLOW (ohm.m) | 31.59 | 32 |
-| **Δ Res (Deep − Shallow)** | **11.18** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10858,6 +9893,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 95.0% nan |
 | Total Gas | 174.0 U |
+| mTVDss | -1221.44 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3430m: med dk gry-dk gry,aren, carb spks,micmic,frm-mod hd,sbblky.
@@ -10870,10 +9906,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 109.1 | 33 |
 | RES_DEEP (ohm.m) | 44.17 | 33 |
 | RES_SHALLOW (ohm.m) | 28.99 | 33 |
-| **Δ Res (Deep − Shallow)** | **15.18** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10893,6 +9925,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 135.0 U |
+| mTVDss | -1221.43 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3430m: med dk gry-dk gry,aren, carb spks,micmic,frm-mod hd,sbblky.
@@ -10905,10 +9938,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 111.2 | 33 |
 | RES_DEEP (ohm.m) | 46.92 | 33 |
 | RES_SHALLOW (ohm.m) | 28.76 | 33 |
-| **Δ Res (Deep − Shallow)** | **18.17** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10928,6 +9957,7 @@ Gas seems to be holding between 130-140U
 | Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% nan |
 | Total Gas | 147.0 U |
+| mTVDss | -1221.50 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3430m: med dk gry-dk gry,aren, carb spks,micmic,frm-mod hd,sbblky.
@@ -10940,10 +9970,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 114.1 | 33 |
 | RES_DEEP (ohm.m) | 46.06 | 33 |
 | RES_SHALLOW (ohm.m) | 28.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **17.41** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10959,6 +9985,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 114.0 U |
+| mTVDss | -1221.56 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -10968,10 +9995,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 113.4 | 33 |
 | RES_DEEP (ohm.m) | 62.52 | 33 |
 | RES_SHALLOW (ohm.m) | 35.19 | 33 |
-| **Δ Res (Deep − Shallow)** | **27.33** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -10987,6 +10010,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright |
 | Total Gas | 146.0 U |
+| mTVDss | -1221.65 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -10996,10 +10020,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 108.3 | 33 |
 | RES_DEEP (ohm.m) | 63.09 | 33 |
 | RES_SHALLOW (ohm.m) | 32.94 | 33 |
-| **Δ Res (Deep − Shallow)** | **30.14** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11015,6 +10035,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright |
 | Total Gas | 119.0 U |
+| mTVDss | -1221.75 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -11024,10 +10045,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 112.5 | 32 |
 | RES_DEEP (ohm.m) | 42.38 | 32 |
 | RES_SHALLOW (ohm.m) | 27.28 | 32 |
-| **Δ Res (Deep − Shallow)** | **15.10** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11043,6 +10060,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 121.0 U |
+| mTVDss | -1221.86 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -11052,10 +10070,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 111.2 | 33 |
 | RES_DEEP (ohm.m) | 52.72 | 33 |
 | RES_SHALLOW (ohm.m) | 29.26 | 33 |
-| **Δ Res (Deep − Shallow)** | **23.46** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11071,6 +10085,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 134.0 U |
+| mTVDss | -1221.99 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -11080,10 +10095,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 110.1 | 33 |
 | RES_DEEP (ohm.m) | 52.27 | 33 |
 | RES_SHALLOW (ohm.m) | 29.87 | 33 |
-| **Δ Res (Deep − Shallow)** | **22.40** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11103,6 +10114,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 166.0 U |
+| mTVDss | -1222.13 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3490m: med dk gry,med dk brn gry aren,micmic,mod hd,sbblky-blky. 75 / 6 / 5 / 7 / 7 150 U
@@ -11115,10 +10127,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 109.3 | 33 |
 | RES_DEEP (ohm.m) | 55.93 | 33 |
 | RES_SHALLOW (ohm.m) | 35.31 | 33 |
-| **Δ Res (Deep − Shallow)** | **20.62** | — |
-
-**Permeability Proxy:** Moderate-high inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11138,6 +10146,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% bright to moderately bright |
 | Total Gas | 177.0 U |
+| mTVDss | -1222.29 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3490m: med dk gry,med dk brn gry aren,micmic,mod hd,sbblky-blky. 75 / 6 / 5 / 7 / 7 150 U
@@ -11150,10 +10159,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 102.5 | 33 |
 | RES_DEEP (ohm.m) | 50.47 | 33 |
 | RES_SHALLOW (ohm.m) | 35.77 | 33 |
-| **Δ Res (Deep − Shallow)** | **14.71** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11173,6 +10178,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 135.0 U |
+| mTVDss | -1222.48 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3490m: med dk gry,med dk brn gry aren,micmic,mod hd,sbblky-blky. 75 / 6 / 5 / 7 / 7 150 U
@@ -11185,10 +10191,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 95.8 | 32 |
 | RES_DEEP (ohm.m) | 48.07 | 32 |
 | RES_SHALLOW (ohm.m) | 35.79 | 32 |
-| **Δ Res (Deep − Shallow)** | **12.28** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11208,6 +10210,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 136.0 U |
+| mTVDss | -1222.68 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3490m: med dk gry,med dk brn gry aren,micmic,mod hd,sbblky-blky. 75 / 6 / 5 / 7 / 7 150 U
@@ -11220,10 +10223,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 79.6 | 33 |
 | RES_DEEP (ohm.m) | 44.61 | 33 |
 | RES_SHALLOW (ohm.m) | 35.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.96** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11243,6 +10242,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 123.0 U |
+| mTVDss | -1222.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3490m: med dk gry,med dk brn gry aren,micmic,mod hd,sbblky-blky. 75 / 6 / 5 / 7 / 7 150 U
@@ -11255,10 +10255,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 72.5 | 33 |
 | RES_DEEP (ohm.m) | 35.84 | 33 |
 | RES_SHALLOW (ohm.m) | 29.10 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.74** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11278,6 +10274,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 153.0 U |
+| mTVDss | -1223.09 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3490m: med dk gry,med dk brn gry aren,micmic,mod hd,sbblky-blky. 75 / 6 / 5 / 7 / 7 150 U
@@ -11290,10 +10287,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 67.7 | 33 |
 | RES_DEEP (ohm.m) | 34.16 | 33 |
 | RES_SHALLOW (ohm.m) | 27.82 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.34** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11313,6 +10306,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 173.0 U |
+| mTVDss | -1223.30 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SILTSTONE** @ ~3490m: med dk gry,med dk brn gry aren,micmic,mod hd,sbblky-blky. 75 / 6 / 5 / 7 / 7 150 U
@@ -11325,10 +10319,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 69.5 | 33 |
 | RES_DEEP (ohm.m) | 32.42 | 33 |
 | RES_SHALLOW (ohm.m) | 26.23 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.18** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11344,6 +10334,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 180.0 U |
+| mTVDss | -1223.43 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -11353,10 +10344,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 76.6 | 32 |
 | RES_DEEP (ohm.m) | 31.84 | 32 |
 | RES_SHALLOW (ohm.m) | 24.68 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.16** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11372,6 +10359,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 167.0 U |
+| mTVDss | -1223.56 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -11381,10 +10369,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 88.8 | 33 |
 | RES_DEEP (ohm.m) | 34.05 | 33 |
 | RES_SHALLOW (ohm.m) | 23.70 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.35** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11400,6 +10384,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 174.0 U |
+| mTVDss | -1223.67 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -11409,10 +10394,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 85.7 | 33 |
 | RES_DEEP (ohm.m) | 32.52 | 33 |
 | RES_SHALLOW (ohm.m) | 23.08 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.44** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11432,6 +10413,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 161.0 U |
+| mTVDss | -1223.71 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3540m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,tr mod sil cmt,tr lt gry slty mtx,dom disagg,tr fri aggs pr vis por,fr-gd inf por,fluor. 31-10-2021
@@ -11444,10 +10426,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 89.7 | 33 |
 | RES_DEEP (ohm.m) | 35.06 | 33 |
 | RES_SHALLOW (ohm.m) | 27.48 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.58** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11467,6 +10445,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 156.0 U |
+| mTVDss | -1223.76 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3540m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,tr mod sil cmt,tr lt gry slty mtx,dom disagg,tr fri aggs pr vis por,fr-gd inf por,fluor. 31-10-2021
@@ -11479,10 +10458,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 94.9 | 33 |
 | RES_DEEP (ohm.m) | 36.21 | 33 |
 | RES_SHALLOW (ohm.m) | 26.09 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.13** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11502,6 +10477,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
+| mTVDss | -1223.78 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3540m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,tr mod sil cmt,tr lt gry slty mtx,dom disagg,tr fri aggs pr vis por,fr-gd inf por,fluor. 31-10-2021
@@ -11514,10 +10490,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 89.9 | 32 |
 | RES_DEEP (ohm.m) | 36.11 | 32 |
 | RES_SHALLOW (ohm.m) | 25.68 | 32 |
-| **Δ Res (Deep − Shallow)** | **10.43** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11537,6 +10509,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 196.0 U |
+| mTVDss | -1223.79 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3540m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,tr mod sil cmt,tr lt gry slty mtx,dom disagg,tr fri aggs pr vis por,fr-gd inf por,fluor. 31-10-2021
@@ -11549,10 +10522,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 76.8 | 33 |
 | RES_DEEP (ohm.m) | 36.08 | 33 |
 | RES_SHALLOW (ohm.m) | 26.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.18** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11572,6 +10541,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
+| mTVDss | -1223.80 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3540m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,tr mod sil cmt,tr lt gry slty mtx,dom disagg,tr fri aggs pr vis por,fr-gd inf por,fluor. 31-10-2021
@@ -11584,10 +10554,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 72.1 | 33 |
 | RES_DEEP (ohm.m) | 42.15 | 33 |
 | RES_SHALLOW (ohm.m) | 31.86 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.29** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11607,6 +10573,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% bright to moderately bright |
 | Total Gas | 191.0 U |
+| mTVDss | -1223.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3540m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,tr mod sil cmt,tr lt gry slty mtx,dom disagg,tr fri aggs pr vis por,fr-gd inf por,fluor. 31-10-2021
@@ -11619,10 +10586,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 73.0 | 33 |
 | RES_DEEP (ohm.m) | 35.24 | 33 |
 | RES_SHALLOW (ohm.m) | 28.09 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.15** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11642,6 +10605,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 188.0 U |
+| mTVDss | -1223.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3540m: clr-trnsl,lt gry,vf-crs,pr srt,sbang-sbrnd,tr mod sil cmt,tr lt gry slty mtx,dom disagg,tr fri aggs pr vis por,fr-gd inf por,fluor. 31-10-2021
@@ -11654,10 +10618,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 70.4 | 33 |
 | RES_DEEP (ohm.m) | 31.47 | 33 |
 | RES_SHALLOW (ohm.m) | 26.33 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.14** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11677,6 +10637,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 206.0 U |
+| mTVDss | -1223.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3560m: clr-trnsl,lt gry,vf-f,tr med, mod-wl srt,sbang-sbrnd,tr mod sil cmt tr lt gry slty mtx,dom disagg,tr fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -11689,10 +10650,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 67.3 | 32 |
 | RES_DEEP (ohm.m) | 35.08 | 32 |
 | RES_SHALLOW (ohm.m) | 27.66 | 32 |
-| **Δ Res (Deep − Shallow)** | **7.42** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11712,6 +10669,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% bright to moderately bright |
 | Total Gas | 199.0 U |
+| mTVDss | -1223.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3560m: clr-trnsl,lt gry,vf-f,tr med, mod-wl srt,sbang-sbrnd,tr mod sil cmt tr lt gry slty mtx,dom disagg,tr fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -11724,10 +10682,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 66.9 | 33 |
 | RES_DEEP (ohm.m) | 34.32 | 33 |
 | RES_SHALLOW (ohm.m) | 28.04 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.28** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11747,6 +10701,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 208.0 U |
+| mTVDss | -1223.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3560m: clr-trnsl,lt gry,vf-f,tr med, mod-wl srt,sbang-sbrnd,tr mod sil cmt tr lt gry slty mtx,dom disagg,tr fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -11759,10 +10714,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 67.2 | 33 |
 | RES_DEEP (ohm.m) | 36.72 | 33 |
 | RES_SHALLOW (ohm.m) | 31.10 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.62** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11782,6 +10733,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 198.0 U |
+| mTVDss | -1223.81 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3560m: clr-trnsl,lt gry,vf-f,tr med, mod-wl srt,sbang-sbrnd,tr mod sil cmt tr lt gry slty mtx,dom disagg,tr fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -11794,10 +10746,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 67.0 | 33 |
 | RES_DEEP (ohm.m) | 35.67 | 33 |
 | RES_SHALLOW (ohm.m) | 31.02 | 33 |
-| **Δ Res (Deep − Shallow)** | **4.66** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11817,6 +10765,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 200.0 U |
+| mTVDss | -1223.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3570m: clr-trnsl,lt gry,vf-f,tr med- crs,mod-wl srt,sbang-sbrnd,tr mod sil cmt, tr lt gry slty mtx,dom disagg,tr fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -11829,10 +10778,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 66.4 | 33 |
 | RES_DEEP (ohm.m) | 36.99 | 33 |
 | RES_SHALLOW (ohm.m) | 33.30 | 33 |
-| **Δ Res (Deep − Shallow)** | **3.69** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11852,6 +10797,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 199.0 U |
+| mTVDss | -1223.82 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3570m: clr-trnsl,lt gry,vf-f,tr med- crs,mod-wl srt,sbang-sbrnd,tr mod sil cmt, tr lt gry slty mtx,dom disagg,tr fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -11864,10 +10810,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 67.9 | 33 |
 | RES_DEEP (ohm.m) | 37.42 | 33 |
 | RES_SHALLOW (ohm.m) | 29.66 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.77** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11887,6 +10829,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 194.0 U |
+| mTVDss | -1223.83 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3580m: clr-trnsl,mnr lt gry,tr lt gry brn,vf-crs,pr srt,sbang-sbrnd,mod sil cmt, mnr lt gry slty mtx,dom disagg,com fri aggs, pr vis por,fr-gd inf por,fluor.
@@ -11899,10 +10842,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 67.1 | 32 |
 | RES_DEEP (ohm.m) | 40.61 | 32 |
 | RES_SHALLOW (ohm.m) | 30.82 | 32 |
-| **Δ Res (Deep − Shallow)** | **9.79** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11922,6 +10861,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, 100% bright to moderately bright |
 | Total Gas | 180.0 U |
+| mTVDss | -1223.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3580m: clr-trnsl,mnr lt gry,tr lt gry brn,vf-crs,pr srt,sbang-sbrnd,mod sil cmt, mnr lt gry slty mtx,dom disagg,com fri aggs, pr vis por,fr-gd inf por,fluor.
@@ -11934,10 +10874,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 70.4 | 33 |
 | RES_DEEP (ohm.m) | 39.38 | 33 |
 | RES_SHALLOW (ohm.m) | 31.26 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.12** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11957,6 +10893,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright to bright |
 | Total Gas | 201.0 U |
+| mTVDss | -1223.85 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3590m: clr-trnsl,mnr lt gry,tr lt gry brn,vf-f,wl srt,sbang-sbrnd,mod sil cmt, mnr lt gry slty mtx,dom disagg,fri aggs, pr vis por,fr-gd inf por,fluor. 79 / 6 / 4 / 6 / 5 216 U
@@ -11969,10 +10906,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 74.5 | 33 |
 | RES_DEEP (ohm.m) | 37.45 | 33 |
 | RES_SHALLOW (ohm.m) | 28.90 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.55** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -11992,6 +10925,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 207.0 U |
+| mTVDss | -1223.86 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3590m: clr-trnsl,mnr lt gry,tr lt gry brn,vf-f,wl srt,sbang-sbrnd,mod sil cmt, mnr lt gry slty mtx,dom disagg,fri aggs, pr vis por,fr-gd inf por,fluor. 79 / 6 / 4 / 6 / 5 216 U
@@ -12004,10 +10938,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 74.9 | 33 |
 | RES_DEEP (ohm.m) | 37.07 | 33 |
 | RES_SHALLOW (ohm.m) | 28.34 | 33 |
-| **Δ Res (Deep − Shallow)** | **8.73** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12027,6 +10957,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium Sandstone, 100% moderately bright to bright |
 | Total Gas | 143.0 U |
+| mTVDss | -1223.86 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3610m: clr-trnsl,mnr lt gry,tr lt gry brn,vf-f,tr med-crs,mod-wl srt,sbang- sbrnd,wk-mod sil cmt,mnr lt gry slty mtx, 77 / 6 / 4 / 6 / 7 182 U dom disagg,com fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -12039,10 +10970,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 73.4 | 33 |
 | RES_DEEP (ohm.m) | 36.93 | 33 |
 | RES_SHALLOW (ohm.m) | 29.64 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.29** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12062,6 +10989,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 182.0 U |
+| mTVDss | -1223.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3610m: clr-trnsl,mnr lt gry,tr lt gry brn,vf-f,tr med-crs,mod-wl srt,sbang- sbrnd,wk-mod sil cmt,mnr lt gry slty mtx, 77 / 6 / 4 / 6 / 7 182 U dom disagg,com fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -12074,10 +11002,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 81.2 | 32 |
 | RES_DEEP (ohm.m) | 33.83 | 32 |
 | RES_SHALLOW (ohm.m) | 28.51 | 32 |
-| **Δ Res (Deep − Shallow)** | **5.32** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12097,6 +11021,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 176.0 U |
+| mTVDss | -1223.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3610m: clr-trnsl,mnr lt gry,tr lt gry brn,vf-f,tr med-crs,mod-wl srt,sbang- sbrnd,wk-mod sil cmt,mnr lt gry slty mtx, 77 / 6 / 4 / 6 / 7 182 U dom disagg,com fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -12109,10 +11034,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.5 | 33 |
 | RES_DEEP (ohm.m) | 33.95 | 33 |
 | RES_SHALLOW (ohm.m) | 27.87 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.08** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12132,6 +11053,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 209.0 U |
+| mTVDss | -1223.89 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3610m: clr-trnsl,mnr lt gry,tr lt gry brn,vf-f,tr med-crs,mod-wl srt,sbang- sbrnd,wk-mod sil cmt,mnr lt gry slty mtx, 77 / 6 / 4 / 6 / 7 182 U dom disagg,com fri aggs,pr vis por,fr-gd inf por,fluor.
@@ -12144,10 +11066,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 98.3 | 33 |
 | RES_DEEP (ohm.m) | 34.58 | 33 |
 | RES_SHALLOW (ohm.m) | 23.63 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.95** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12167,6 +11085,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 175.0 U |
+| mTVDss | -1223.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3630m: clr,trnsl,lt gry,lt gry brn,vf- f,mnr med,wl srt,sbang-sbrnd,wk-mod sil cmt,mnr gry-brn slty mtx,pred disagg,mnr fri aggs,pr vis por,fr inf por,fluor.
@@ -12179,10 +11098,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 87.9 | 33 |
 | RES_DEEP (ohm.m) | 34.66 | 33 |
 | RES_SHALLOW (ohm.m) | 24.07 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.59** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12202,6 +11117,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% medium to coarse Sandstone, 100% moderately bright to bright |
 | Total Gas | 166.0 U |
+| mTVDss | -1223.91 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3630m: clr,trnsl,lt gry,lt gry brn,vf- f,mnr med,wl srt,sbang-sbrnd,wk-mod sil cmt,mnr gry-brn slty mtx,pred disagg,mnr fri aggs,pr vis por,fr inf por,fluor.
@@ -12214,10 +11130,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 85.9 | 33 |
 | RES_DEEP (ohm.m) | 35.57 | 33 |
 | RES_SHALLOW (ohm.m) | 25.54 | 33 |
-| **Δ Res (Deep − Shallow)** | **10.03** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12237,6 +11149,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to fine, minor medium Sandstone, 100% moderately bright |
 | Total Gas | 161.0 U |
+| mTVDss | -1223.90 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3630m: clr,trnsl,lt gry,lt gry brn,vf- f,mnr med,wl srt,sbang-sbrnd,wk-mod sil cmt,mnr gry-brn slty mtx,pred disagg,mnr fri aggs,pr vis por,fr inf por,fluor.
@@ -12249,10 +11162,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 76.1 | 32 |
 | RES_DEEP (ohm.m) | 34.87 | 32 |
 | RES_SHALLOW (ohm.m) | 25.65 | 32 |
-| **Δ Res (Deep − Shallow)** | **9.22** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12272,6 +11181,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 163.0 U |
+| mTVDss | -1223.89 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3630m: clr,trnsl,lt gry,lt gry brn,vf- f,mnr med,wl srt,sbang-sbrnd,wk-mod sil cmt,mnr gry-brn slty mtx,pred disagg,mnr fri aggs,pr vis por,fr inf por,fluor.
@@ -12284,10 +11194,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 71.5 | 33 |
 | RES_DEEP (ohm.m) | 34.79 | 33 |
 | RES_SHALLOW (ohm.m) | 24.92 | 33 |
-| **Δ Res (Deep − Shallow)** | **9.87** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12307,6 +11213,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% nan |
 | Total Gas | 177.0 U |
+| mTVDss | -1223.88 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3640m: clr,trnsl,lt gry,lt gry brn,vf- f,wl srt,sbang-sbrnd,mod sil cmt,mnr gry- brn slty mtx,pred disagg,com fri,mnr mod hd,aggs,pr vis por,fr inf por,fluor.
@@ -12319,10 +11226,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 67.8 | 33 |
 | RES_DEEP (ohm.m) | 30.67 | 33 |
 | RES_SHALLOW (ohm.m) | 23.96 | 33 |
-| **Δ Res (Deep − Shallow)** | **6.71** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12342,6 +11245,7 @@ Gas seems to be holding between 130-140U
 | Cement | sil cmt (0.68) |
 | Fluorescence | 100.0% Siltstone, 100% very fine to medium, trace coarse Sandstone, 100% moderately bright |
 | Total Gas | 159.0 U |
+| mTVDss | -1223.87 m |
 
 **Mudlog Cuttings Description (PDF):**
 - **SANDSTONE** @ ~3640m: clr,trnsl,lt gry,lt gry brn,vf- f,wl srt,sbang-sbrnd,mod sil cmt,mnr gry- brn slty mtx,pred disagg,com fri,mnr mod hd,aggs,pr vis por,fr inf por,fluor.
@@ -12354,10 +11258,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 64.7 | 33 |
 | RES_DEEP (ohm.m) | 36.10 | 33 |
 | RES_SHALLOW (ohm.m) | 28.84 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.26** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12373,6 +11273,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 210.0 U |
+| mTVDss | -1223.87 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -12382,10 +11283,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 66.0 | 33 |
 | RES_DEEP (ohm.m) | 29.82 | 33 |
 | RES_SHALLOW (ohm.m) | 27.12 | 33 |
-| **Δ Res (Deep − Shallow)** | **2.69** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12401,6 +11298,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% nan |
 | Total Gas | 245.0 U |
+| mTVDss | -1223.87 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -12410,10 +11308,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 70.9 | 32 |
 | RES_DEEP (ohm.m) | 38.74 | 32 |
 | RES_SHALLOW (ohm.m) | 35.13 | 32 |
-| **Δ Res (Deep − Shallow)** | **3.61** | — |
-
-**Permeability Proxy:** Low-moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12429,6 +11323,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% Siltstone, 100% very fine to very coarse Sandstone, 100% bright to moderately bright |
 | Total Gas | 250.0 U |
+| mTVDss | -1223.88 m |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
 
@@ -12438,10 +11333,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 86.5 | 33 |
 | RES_DEEP (ohm.m) | 42.97 | 33 |
 | RES_SHALLOW (ohm.m) | 35.52 | 33 |
-| **Δ Res (Deep − Shallow)** | **7.45** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12457,6 +11348,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% siderite in 5% Siltstone, 95% very fine to coarse Sandstone, 100% moderately bright |
 | Total Gas | 235.0 U |
+| mTVDss | -1223.89 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -12467,10 +11359,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 99.8 | 33 |
 | RES_DEEP (ohm.m) | 42.93 | 33 |
 | RES_SHALLOW (ohm.m) | 37.12 | 33 |
-| **Δ Res (Deep − Shallow)** | **5.81** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12486,6 +11374,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% siderite in 20% Siltstone, 80% very fine to coarse, trace very coarse Sandstone, 100% moderately bright |
 | Total Gas | 240.0 U |
+| mTVDss | -1223.91 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -12496,10 +11385,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 114.9 | 33 |
 | RES_DEEP (ohm.m) | 40.58 | 33 |
 | RES_SHALLOW (ohm.m) | 27.58 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.99** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12515,6 +11400,7 @@ Gas seems to be holding between 130-140U
 | Porosity Class | none |
 | Fluorescence | 100.0% siderite in 15% Siltstone, 85% very fine to medium Sandstone, 100% moderately bright |
 | Total Gas | 172.0 U |
+| mTVDss | -1223.92 m |
 | FeCO₃ in Siltstone | trace |
 
 **Mudlog Cuttings Description (PDF):** _No matching entry found_
@@ -12525,10 +11411,6 @@ Gas seems to be holding between 130-140U
 | GR (gAPI) | 108.8 | 33 |
 | RES_DEEP (ohm.m) | 38.26 | 33 |
 | RES_SHALLOW (ohm.m) | 25.65 | 33 |
-| **Δ Res (Deep − Shallow)** | **12.61** | — |
-
-**Permeability Proxy:** Moderate inferred permeability
-> Greater deep-shallow resistivity separation → higher inferred permeability.
 
 ---
 
@@ -12539,7 +11421,4 @@ Gas seems to be holding between 130-140U
 | Intervals analysed | 373 |
 | Depth range | 1617 – 3685 m |
 | Avg % Sandstone | 93.0% |
-| Avg Δ Res (Deep−Shallow) | 7.64 ohm.m |
-| Max Δ Res | 30.14 ohm.m |
-| Min Δ Res | -3.24 ohm.m |
 | Mudlog matches | 285 / 373 |

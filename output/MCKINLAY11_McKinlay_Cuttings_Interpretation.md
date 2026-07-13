@@ -1,6 +1,6 @@
 # MCKINLAY 11 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 00:55 UTC  
+**Generated:** 2026-07-13 02:09 UTC  
 **Well:** MCKINLAY 11 (MCKINLAY 11)  
 **TD:** 2068 m MD  
 
@@ -55,7 +55,7 @@
 2. **Formation top discrepancies** between Mck_Murta.xlsx and mudlog PDF picks are noted where present.
 3. **Well name mapping:** MCKINLAY 11 → `MCKINLAY 11` (verified by TD and LAS WELL header).
 4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.
-5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).
+5. **Water-risk flags** use RQI, fluorescence, resistivity, GR, ZOI, and OWC proximity (see export).
 6. **NULL LAS values** (-999.25) excluded from averages.
 7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay re-entry below (or entry + 50 m MD if none mapped). Later entry pairs inside an existing exclusion interval are treated as the same overburden excursion. Initial DC30/McKinlay reservoir entry is not excluded.
 8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes. **Fluorescence %** from mudlog PDF graphics bar track only (raw fill, full McKinlay MD window). Text block % values are not used; brightness descriptions from text where matched.
@@ -93,7 +93,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 104.7 | 32 |
 | RES_DEEP (ohm.m) | 62.94 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1610 m MD — Interval 1607.5 – 1612.5 m
@@ -124,7 +123,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 75.9 | 33 |
 | RES_DEEP (ohm.m) | 58.03 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1615 m MD — Interval 1612.5 – 1617.5 m
@@ -155,7 +153,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.5 | 33 |
 | RES_DEEP (ohm.m) | 45.33 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1620 m MD — Interval 1617.5 – 1622.5 m
@@ -186,7 +183,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.9 | 33 |
 | RES_DEEP (ohm.m) | 37.46 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1625 m MD — Interval 1622.5 – 1627.5 m
@@ -217,7 +213,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 107.5 | 33 |
 | RES_DEEP (ohm.m) | 39.15 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1630 m MD — Interval 1627.5 – 1632.5 m
@@ -248,7 +243,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.2 | 32 |
 | RES_DEEP (ohm.m) | 41.27 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1635 m MD — Interval 1632.5 – 1637.5 m
@@ -279,7 +273,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.4 | 33 |
 | RES_DEEP (ohm.m) | 39.75 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1640 m MD — Interval 1637.5 – 1642.5 m
@@ -310,7 +303,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.9 | 33 |
 | RES_DEEP (ohm.m) | 40.28 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1645 m MD — Interval 1642.5 – 1647.5 m
@@ -341,7 +333,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 98.2 | 33 |
 | RES_DEEP (ohm.m) | 35.69 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1650 m MD — Interval 1647.5 – 1652.5 m
@@ -372,7 +363,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.0 | 33 |
 | RES_DEEP (ohm.m) | 29.85 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1655 m MD — Interval 1652.5 – 1657.5 m
@@ -403,7 +393,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.2 | 32 |
 | RES_DEEP (ohm.m) | 28.21 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1660 m MD — Interval 1657.5 – 1662.5 m
@@ -434,7 +423,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 105.0 | 33 |
 | RES_DEEP (ohm.m) | 26.92 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1665 m MD — Interval 1662.5 – 1667.5 m
@@ -465,7 +453,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 108.0 | 33 |
 | RES_DEEP (ohm.m) | 27.88 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1670 m MD — Interval 1667.5 – 1672.5 m
@@ -496,7 +483,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 108.2 | 33 |
 | RES_DEEP (ohm.m) | 29.29 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1675 m MD — Interval 1672.5 – 1677.5 m
@@ -527,7 +513,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 105.8 | 33 |
 | RES_DEEP (ohm.m) | 30.94 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1680 m MD — Interval 1677.5 – 1682.5 m
@@ -558,7 +543,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 101.9 | 33 |
 | RES_DEEP (ohm.m) | 28.17 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1685 m MD — Interval 1682.5 – 1687.5 m
@@ -589,7 +573,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 102.1 | 32 |
 | RES_DEEP (ohm.m) | 32.24 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1690 m MD — Interval 1687.5 – 1692.5 m
@@ -620,7 +603,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 106.6 | 33 |
 | RES_DEEP (ohm.m) | 31.39 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1695 m MD — Interval 1692.5 – 1697.5 m
@@ -651,7 +633,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 109.1 | 33 |
 | RES_DEEP (ohm.m) | 31.37 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1700 m MD — Interval 1697.5 – 1702.5 m
@@ -682,7 +663,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.5 | 33 |
 | RES_DEEP (ohm.m) | 37.28 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1705 m MD — Interval 1702.5 – 1707.5 m
@@ -713,7 +693,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.7 | 33 |
 | RES_DEEP (ohm.m) | 41.06 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1710 m MD — Interval 1707.5 – 1712.5 m
@@ -744,7 +723,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 95.8 | 32 |
 | RES_DEEP (ohm.m) | 39.92 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1715 m MD — Interval 1712.5 – 1717.5 m
@@ -775,7 +753,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.5 | 33 |
 | RES_DEEP (ohm.m) | 41.22 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1720 m MD — Interval 1717.5 – 1722.5 m
@@ -806,7 +783,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.9 | 33 |
 | RES_DEEP (ohm.m) | 34.59 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1725 m MD — Interval 1722.5 – 1727.5 m
@@ -837,7 +813,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.8 | 33 |
 | RES_DEEP (ohm.m) | 38.17 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1730 m MD — Interval 1727.5 – 1732.5 m
@@ -868,7 +843,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 101.7 | 33 |
 | RES_DEEP (ohm.m) | 42.15 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1735 m MD — Interval 1732.5 – 1737.5 m
@@ -899,7 +873,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 103.8 | 32 |
 | RES_DEEP (ohm.m) | 40.19 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1740 m MD — Interval 1737.5 – 1742.5 m
@@ -930,7 +903,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.8 | 33 |
 | RES_DEEP (ohm.m) | 39.13 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1745 m MD — Interval 1742.5 – 1747.5 m
@@ -961,7 +933,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.0 | 33 |
 | RES_DEEP (ohm.m) | 36.01 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1750 m MD — Interval 1747.5 – 1752.5 m
@@ -992,7 +963,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.0 | 33 |
 | RES_DEEP (ohm.m) | 35.86 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1755 m MD — Interval 1752.5 – 1757.5 m
@@ -1023,7 +993,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.1 | 33 |
 | RES_DEEP (ohm.m) | 37.49 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1760 m MD — Interval 1757.5 – 1762.5 m
@@ -1054,7 +1023,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.8 | 32 |
 | RES_DEEP (ohm.m) | 39.37 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1765 m MD — Interval 1762.5 – 1767.5 m
@@ -1085,7 +1053,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.3 | 33 |
 | RES_DEEP (ohm.m) | 35.86 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1770 m MD — Interval 1767.5 – 1772.5 m
@@ -1116,7 +1083,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 84.4 | 33 |
 | RES_DEEP (ohm.m) | 33.60 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1775 m MD — Interval 1772.5 – 1777.5 m
@@ -1147,7 +1113,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.1 | 33 |
 | RES_DEEP (ohm.m) | 30.46 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1780 m MD — Interval 1777.5 – 1782.5 m
@@ -1178,7 +1143,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 88.9 | 33 |
 | RES_DEEP (ohm.m) | 30.14 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1785 m MD — Interval 1782.5 – 1787.5 m
@@ -1209,7 +1173,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.5 | 33 |
 | RES_DEEP (ohm.m) | 30.57 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1790 m MD — Interval 1787.5 – 1792.5 m
@@ -1240,7 +1203,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 90.3 | 32 |
 | RES_DEEP (ohm.m) | 31.18 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1795 m MD — Interval 1792.5 – 1797.5 m
@@ -1271,7 +1233,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 91.9 | 33 |
 | RES_DEEP (ohm.m) | 31.45 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1800 m MD — Interval 1797.5 – 1802.5 m
@@ -1302,7 +1263,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.9 | 33 |
 | RES_DEEP (ohm.m) | 30.52 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1805 m MD — Interval 1802.5 – 1807.5 m
@@ -1333,7 +1293,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 84.4 | 33 |
 | RES_DEEP (ohm.m) | 31.75 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1810 m MD — Interval 1807.5 – 1812.5 m
@@ -1364,7 +1323,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 83.8 | 33 |
 | RES_DEEP (ohm.m) | 36.64 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1815 m MD — Interval 1812.5 – 1817.5 m
@@ -1395,7 +1353,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 82.8 | 32 |
 | RES_DEEP (ohm.m) | 36.83 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1820 m MD — Interval 1817.5 – 1822.5 m
@@ -1426,7 +1383,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 87.4 | 33 |
 | RES_DEEP (ohm.m) | 34.05 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1825 m MD — Interval 1822.5 – 1827.5 m
@@ -1457,7 +1413,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 89.3 | 33 |
 | RES_DEEP (ohm.m) | 35.21 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1830 m MD — Interval 1827.5 – 1832.5 m
@@ -1488,7 +1443,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 81.1 | 33 |
 | RES_DEEP (ohm.m) | 37.20 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1835 m MD — Interval 1832.5 – 1837.5 m
@@ -1519,7 +1473,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 78.6 | 33 |
 | RES_DEEP (ohm.m) | 40.56 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1840 m MD — Interval 1837.5 – 1842.5 m
@@ -1550,7 +1503,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 80.9 | 32 |
 | RES_DEEP (ohm.m) | 38.97 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1845 m MD — Interval 1842.5 – 1847.5 m
@@ -1581,7 +1533,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.2 | 33 |
 | RES_DEEP (ohm.m) | 40.51 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1850 m MD — Interval 1847.5 – 1852.5 m
@@ -1612,7 +1563,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.8 | 33 |
 | RES_DEEP (ohm.m) | 41.28 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1855 m MD — Interval 1852.5 – 1857.5 m
@@ -1643,7 +1593,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 80.1 | 33 |
 | RES_DEEP (ohm.m) | 43.33 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1860 m MD — Interval 1857.5 – 1862.5 m
@@ -1674,7 +1623,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 79.2 | 33 |
 | RES_DEEP (ohm.m) | 41.21 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1865 m MD — Interval 1862.5 – 1867.5 m
@@ -1705,7 +1653,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 81.3 | 32 |
 | RES_DEEP (ohm.m) | 39.80 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1870 m MD — Interval 1867.5 – 1872.5 m
@@ -1736,7 +1683,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 81.5 | 33 |
 | RES_DEEP (ohm.m) | 37.03 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1935 m MD — Interval 1932.5 – 1937.5 m
@@ -1767,7 +1713,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 112.1 | 33 |
 | RES_DEEP (ohm.m) | 24.38 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1940 m MD — Interval 1937.5 – 1942.5 m
@@ -1798,7 +1743,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 108.5 | 33 |
 | RES_DEEP (ohm.m) | 31.32 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1945 m MD — Interval 1942.5 – 1947.5 m
@@ -1829,7 +1773,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.6 | 32 |
 | RES_DEEP (ohm.m) | 32.77 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1950 m MD — Interval 1947.5 – 1952.5 m
@@ -1860,7 +1803,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.2 | 33 |
 | RES_DEEP (ohm.m) | 36.34 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1955 m MD — Interval 1952.5 – 1957.5 m
@@ -1891,7 +1833,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.7 | 33 |
 | RES_DEEP (ohm.m) | 44.08 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1960 m MD — Interval 1957.5 – 1962.5 m
@@ -1922,7 +1863,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 94.3 | 33 |
 | RES_DEEP (ohm.m) | 46.52 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1965 m MD — Interval 1962.5 – 1967.5 m
@@ -1953,7 +1893,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 84.3 | 33 |
 | RES_DEEP (ohm.m) | 47.11 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1970 m MD — Interval 1967.5 – 1972.5 m
@@ -1984,7 +1923,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 72.2 | 32 |
 | RES_DEEP (ohm.m) | 47.73 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 1975 m MD — Interval 1972.5 – 1977.5 m
@@ -2015,7 +1953,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 92.7 | 33 |
 | RES_DEEP (ohm.m) | 59.87 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 2035 m MD — Interval 2032.5 – 2037.5 m
@@ -2046,7 +1983,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 112.4 | 33 |
 | RES_DEEP (ohm.m) | 45.10 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 2040 m MD — Interval 2037.5 – 2042.5 m
@@ -2077,7 +2013,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 85.8 | 33 |
 | RES_DEEP (ohm.m) | 44.28 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 2045 m MD — Interval 2042.5 – 2047.5 m
@@ -2108,7 +2043,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.9 | 33 |
 | RES_DEEP (ohm.m) | 40.55 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 2050 m MD — Interval 2047.5 – 2052.5 m
@@ -2139,7 +2073,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 96.9 | 32 |
 | RES_DEEP (ohm.m) | 31.30 | 32 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 2055 m MD — Interval 2052.5 – 2057.5 m
@@ -2169,7 +2102,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 97.3 | 33 |
 | RES_DEEP (ohm.m) | 26.09 | 33 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 2060 m MD — Interval 2057.5 – 2062.5 m
@@ -2198,7 +2130,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | GR (gAPI) | 99.3 | 20 |
 | RES_DEEP (ohm.m) | 22.60 | 6 |
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ### 2065 m MD — Interval 2062.5 – 2067.5 m
@@ -2225,7 +2156,6 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | Curve | Average | Data Points |
 |-------|---------|-------------|
 
-**Permeability Proxy:** Insufficient resistivity data
 ---
 
 ## 5. Summary Statistics (McKinlay Member)

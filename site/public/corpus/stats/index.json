@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07 23:35 UTC",
+  "generated_at": "2026-07-13 02:23 UTC",
   "entries": [
     {
       "id": "stats:correlations",
@@ -143,6 +143,48 @@
       "path": "data/water_risk/TERINGIE6.json",
       "type": "stats",
       "alias": "TERINGIE6"
+    },
+    {
+      "id": "water_risk:MCKINLAY10",
+      "label": "Water-risk flagged zones — MCKINLAY 10",
+      "path": "data/water_risk/MCKINLAY10.json",
+      "type": "stats",
+      "alias": "MCKINLAY10"
+    },
+    {
+      "id": "water_risk:MCKINLAY11",
+      "label": "Water-risk flagged zones — MCKINLAY 11",
+      "path": "data/water_risk/MCKINLAY11.json",
+      "type": "stats",
+      "alias": "MCKINLAY11"
+    },
+    {
+      "id": "water_risk:MCKINLAY12",
+      "label": "Water-risk flagged zones — MCKINLAY 12",
+      "path": "data/water_risk/MCKINLAY12.json",
+      "type": "stats",
+      "alias": "MCKINLAY12"
+    },
+    {
+      "id": "water_risk:MCKINLAY13",
+      "label": "Water-risk flagged zones — MCKINLAY 13",
+      "path": "data/water_risk/MCKINLAY13.json",
+      "type": "stats",
+      "alias": "MCKINLAY13"
+    },
+    {
+      "id": "water_risk:MCKINLAY14",
+      "label": "Water-risk flagged zones — MCKINLAY 14",
+      "path": "data/water_risk/MCKINLAY14.json",
+      "type": "stats",
+      "alias": "MCKINLAY14"
+    },
+    {
+      "id": "water_risk:MCKINLAY15",
+      "label": "Water-risk flagged zones — MCKINLAY 15",
+      "path": "data/water_risk/MCKINLAY15.json",
+      "type": "stats",
+      "alias": "MCKINLAY15"
     }
   ]
 }

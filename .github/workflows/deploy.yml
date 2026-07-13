@@ -36,8 +36,11 @@ jobs:
           WORKSPACE: ${{ github.workspace }}
         run: |
           python3 scripts/process_mckinlay_wells.py
+          python3 scripts/compute_pay_summary.py
           python3 scripts/export_web_data.py
           python3 scripts/build_corpus_index.py
+          python3 scripts/test_zoi.py
+          python3 scripts/test_pay_overburden.py
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -50,6 +53,7 @@ jobs:
         working-directory: site
         run: |
           npm ci
+          npm test
           npm run build
 
       - name: Upload Pages artifact

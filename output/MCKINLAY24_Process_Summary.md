@@ -14,6 +14,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 | `McKinlay 24 Hz Section Samples Descriptions.xlsx` → Sheet1 (cols F=TG, G=%SS, H=%fluoro + col A descriptions) | Sample intervals |
 | `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |
 | `Mck_24` | GR / resistivity |
+| `Mck_24_trajectory` | Trajectory → mTVDss |
 
 ## Formation Top Results
 
@@ -27,7 +28,6 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 - Depth range: **1630 – 2598 m MD**
 - Average sandstone: **90.0%**
-- Δ Res range: **-1.3 – 15.6 ohm.m** (avg 2.5)
 - Mudlog matched: **138 / 164** intervals
 
 ## Limitations

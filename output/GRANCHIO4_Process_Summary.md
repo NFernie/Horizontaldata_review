@@ -14,6 +14,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 | `Granchio 4 Hz Section Samples Descriptions_Rev3.xlsx` → Input Sheet | Sample intervals |
 | `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |
 | `Granchio_4` | GR / resistivity |
+| `Granchio_4_trajectory` | Trajectory → mTVDss |
 
 ## Formation Top Results
 
@@ -27,7 +28,6 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 - Depth range: **1680 – 2825 m MD**
 - Average sandstone: **97.0%**
-- Δ Res range: **0.6 – 47.1 ohm.m** (avg 9.8)
 - Mudlog matched: **109 / 127** intervals
 
 ## Limitations

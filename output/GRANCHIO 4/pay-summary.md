@@ -1,6 +1,6 @@
 # GRANCHIO 4 — McKinlay Pay Summary
 
-**Generated:** 2026-07-13 00:25 UTC  
+**Generated:** 2026-07-13 02:11 UTC  
 **Formation tops name:** GRANCHIO 4  
 **McKinlay window:** 1678.1 – 2825.0 m MD  
 **DC30 top:** 1678.34 m MD  

@@ -14,6 +14,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 | `Frostillicus 2 Hz Section Samples Descriptions.xlsx` → Sheet1 (cols F=TG, G=%SS, H=%fluoro + col A descriptions) | Sample intervals |
 | `DC30.xlsx`, `Mck_Murta.xlsx` | Formation tops |
 | `Frosti_2` | GR / resistivity |
+| `Frosti_2_trajectory` | Trajectory → mTVDss |
 
 ## Formation Top Results
 
@@ -27,7 +28,6 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 
 - Depth range: **1617 – 3685 m MD**
 - Average sandstone: **93.0%**
-- Δ Res range: **-3.2 – 30.1 ohm.m** (avg 7.6)
 - Mudlog matched: **285 / 373** intervals
 
 ## Limitations
