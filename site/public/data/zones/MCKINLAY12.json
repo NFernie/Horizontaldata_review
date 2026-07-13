@@ -1,0 +1,34 @@
+{
+  "alias": "MCKINLAY12",
+  "display": "MCKINLAY 12",
+  "zones": [
+    {
+      "entry": 1859.4,
+      "murta": 1857.95,
+      "re_entry": 1872.08,
+      "length": 12.679999999999836,
+      "default_reentry": false
+    },
+    {
+      "entry": 2199.74,
+      "murta": 2198.71,
+      "re_entry": 2289.66,
+      "length": 89.92000000000007,
+      "default_reentry": false
+    },
+    {
+      "entry": 2642.01,
+      "murta": 2644.32,
+      "re_entry": 2658.77,
+      "length": 16.759999999999764,
+      "default_reentry": false
+    },
+    {
+      "entry": 2671.57,
+      "murta": 2673.45,
+      "re_entry": 2892.25,
+      "length": 220.67999999999984,
+      "default_reentry": false
+    }
+  ]
+}

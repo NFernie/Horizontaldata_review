@@ -1,6 +1,6 @@
 # GRANCHIO 4 Analysis — Process Summary
 
-**Date:** 2026-07-07
+**Date:** 2026-07-13
 
 ## Objective
 
@@ -28,7 +28,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 - Depth range: **1680 – 2825 m MD**
 - Average sandstone: **97.0%**
 - Δ Res range: **0.6 – 47.1 ohm.m** (avg 9.8)
-- Mudlog matched: **93 / 127** intervals
+- Mudlog matched: **109 / 127** intervals
 
 ## Limitations
 

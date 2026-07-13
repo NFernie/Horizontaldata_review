@@ -480,21 +480,185 @@ def parse_porosity(text):
     return "none"
 
 
-def parse_loose_grains(text):
-    """Return True when loose-grain indicators appear in cuttings description text."""
+def parse_sorting(text):
+    """Parse sorting class from cuttings text; return 0–1 lookup score or None."""
     if not isinstance(text, str) or not text.strip():
-        return False
+        return None
+    t = text.lower()
+    gap = r"(?:\d+\s+)*"
+    patterns = (
+        (rf"v\s+pr\s+{gap}srt", "v pr"),
+        (rf"v\s+wl\s+{gap}srt", "v wl"),
+        (rf"mod\s+wl\s+{gap}srt", "mod wl"),
+        (rf"mod\s+{gap}srt", "mod"),
+        (rf"wl\s+{gap}srt", "wl"),
+        (rf"pr\s+{gap}srt", "pr"),
+    )
+    from config import SORTING_SCORES
+
+    for pattern, key in patterns:
+        if re.search(pattern, t):
+            return SORTING_SCORES[key]
+    return None
+
+
+def parse_angularity(text):
+    """Parse angularity from cuttings text; return 0–1 lookup score or None."""
+    if not isinstance(text, str) or not text.strip():
+        return None
     t = text.lower()
     patterns = (
-        r"\bloose\s+grains?\b",
-        r"\blse\s+grn\b",
-        r"\blse\s+med\b",
-        r"\blse[\s\-](?:mod|med|fri|crs|qtz|hd|aggs)",
-        r"\blse\s*(?:&|and)\s*cln\b",
-        # Shorthand "lse" is often comma-attached (e.g. "liths,lse & cln") with no word space.
-        r"\blse\b",
+        (r"v\s+wl\s+rnd", "v wl rnd"),
+        (r"sbrnd", "sbrnd"),
+        (r"sbang", "sbang"),
+        (r"\brnd\b", "rnd"),
+        (r"\bang\b", "ang"),
     )
-    return any(re.search(p, t) for p in patterns)
+    from config import ANGULARITY_SCORES
+
+    for pattern, key in patterns:
+        if re.search(pattern, t):
+            return ANGULARITY_SCORES[key]
+    return None
+
+
+def _hardness_token_score(token: str) -> float | None:
+    from config import HARDNESS_SCORES
+
+    token = re.sub(r"\s+", " ", token.strip().lower())
+    return HARDNESS_SCORES.get(token)
+
+
+def parse_hardness(text):
+    """Parse hardness from cuttings text; return 0–1 reservoir-quality score or None."""
+    if not isinstance(text, str) or not text.strip():
+        return None
+    t = text.lower()
+    range_m = re.search(
+        r"(lse|uncons|fri|mod\s+hd|v\s+hd|hd)\s*-\s*(lse|uncons|fri|mod\s+hd|v\s+hd|hd)",
+        t,
+    )
+    if range_m:
+        a = _hardness_token_score(range_m.group(1))
+        b = _hardness_token_score(range_m.group(2))
+        if a is not None and b is not None:
+            return (a + b) / 2.0
+    patterns = (
+        (r"\blse\b", "lse"),
+        (r"\buncons\b", "uncons"),
+        (r"\bfri\b", "fri"),
+        (r"\bmod\s+hd\b", "mod hd"),
+        (r"\bv\s+hd\b", "v hd"),
+        (r"\bhd\b", "hd"),
+    )
+    for pattern, key in patterns:
+        if re.search(pattern, t):
+            return _hardness_token_score(key)
+    return None
+
+
+def parse_cement(text):
+    """Parse cal/sil/arg cement from cuttings text; return 0–1 RQ score or None."""
+    if not isinstance(text, str) or not text.strip():
+        return None
+    from config import (
+        CEMENT_AMOUNT_MULT,
+        CEMENT_DEFAULT_AMOUNT_MULT,
+        CEMENT_DEFAULT_STRENGTH_MULT,
+        CEMENT_STRENGTH_MULT,
+        CEMENT_TYPE_PENALTY,
+    )
+
+    t = text.lower()
+    worst_penalty = None
+    for match in re.finditer(
+        r"(?:(tr|rr|mnr|com)\s+)?(?:(wk|strg)\s+)?(arg|sil|calc)\s+cmt",
+        t,
+    ):
+        amount = match.group(1)
+        strength = match.group(2)
+        ctype = match.group(3)
+        penalty = (
+            CEMENT_TYPE_PENALTY[ctype]
+            * CEMENT_AMOUNT_MULT.get(amount, CEMENT_DEFAULT_AMOUNT_MULT)
+            * CEMENT_STRENGTH_MULT.get(strength, CEMENT_DEFAULT_STRENGTH_MULT)
+        )
+        worst_penalty = penalty if worst_penalty is None else max(worst_penalty, penalty)
+    if worst_penalty is None:
+        return None
+    return 1.0 - min(worst_penalty, 1.0)
+
+
+def parse_hardness_class(text):
+    """Return human-readable hardness label for interpretation output."""
+    score = parse_hardness(text)
+    if score is None:
+        return None
+    if score >= 0.95:
+        return "lse"
+    if score >= 0.85:
+        return "uncons"
+    if score >= 0.65:
+        return "fri"
+    if score >= 0.45:
+        return "fri-mod hd"
+    if score >= 0.3:
+        return "mod hd"
+    if score >= 0.15:
+        return "hd"
+    return "v hd"
+
+
+def parse_sorting_class(text):
+    """Return sorting label for interpretation output."""
+    if not isinstance(text, str) or not text.strip():
+        return None
+    t = text.lower()
+    gap = r"(?:\d+\s+)*"
+    labels = (
+        (rf"v\s+pr\s+{gap}srt", "v pr"),
+        (rf"v\s+wl\s+{gap}srt", "v wl"),
+        (rf"mod\s+wl\s+{gap}srt", "mod wl"),
+        (rf"mod\s+{gap}srt", "mod"),
+        (rf"wl\s+{gap}srt", "wl"),
+        (rf"pr\s+{gap}srt", "pr"),
+    )
+    for pattern, label in labels:
+        if re.search(pattern, t):
+            return label
+    return None
+
+
+def parse_angularity_class(text):
+    """Return angularity label for interpretation output."""
+    if not isinstance(text, str) or not text.strip():
+        return None
+    t = text.lower()
+    labels = (
+        (r"v\s+wl\s+rnd", "v wl rnd"),
+        (r"sbrnd", "sbrnd"),
+        (r"sbang", "sbang"),
+        (r"\brnd\b", "rnd"),
+        (r"\bang\b", "ang"),
+    )
+    for pattern, label in labels:
+        if re.search(pattern, t):
+            return label
+    return None
+
+
+def parse_cement_class(text):
+    """Return dominant cement phrase for interpretation output."""
+    if not isinstance(text, str) or not text.strip():
+        return None
+    t = text.lower()
+    match = re.search(
+        r"((?:tr|rr|mnr|com)\s+)?(?:(wk|strg)\s+)?(arg|sil|calc)\s+cmt",
+        t,
+    )
+    if not match:
+        return None
+    return match.group(0).strip()
 
 
 def _grain_token_ordinal(token):
@@ -1062,7 +1226,14 @@ def process_well(cfg, dc30_df, mck_murta_df):
                 "log": log_stats,
                 "perm": perm_proxy(log_stats["res_sep"] if log_stats else None),
                 "poro_class": parse_porosity(desc_text),
-                "loose_grains": parse_loose_grains(desc_text),
+                "hardness_score": parse_hardness(desc_text),
+                "hardness_class": parse_hardness_class(desc_text),
+                "sorting_score": parse_sorting(desc_text),
+                "sorting_class": parse_sorting_class(desc_text),
+                "angularity_score": parse_angularity(desc_text),
+                "angularity_class": parse_angularity_class(desc_text),
+                "cement_score": parse_cement(desc_text),
+                "cement_class": parse_cement_class(desc_text),
                 "grain_ordinal": grain_ordinal(row["Grain_Size"], row["Max_Grain_Size"]),
                 "mtvds": mtvds,
             }
@@ -1262,7 +1433,22 @@ def write_interpretation(meta, path):
             lines.append(f"| Grain Ordinal | {item['grain_ordinal']} |")
         poro = item.get("poro_class")
         lines.append(f"| Porosity Class | {poro if poro else '—'} |")
-        lines.append(f"| Loose Grains | {'Yes' if item.get('loose_grains') else 'No'} |")
+        if item.get("hardness_class"):
+            hs = item.get("hardness_score")
+            hs_txt = f" ({hs:.2f})" if hs is not None else ""
+            lines.append(f"| Hardness | {item['hardness_class']}{hs_txt} |")
+        if item.get("sorting_class"):
+            ss = item.get("sorting_score")
+            ss_txt = f" ({ss:.2f})" if ss is not None else ""
+            lines.append(f"| Sorting | {item['sorting_class']}{ss_txt} |")
+        if item.get("angularity_class"):
+            ang = item.get("angularity_score")
+            ang_txt = f" ({ang:.2f})" if ang is not None else ""
+            lines.append(f"| Angularity | {item['angularity_class']}{ang_txt} |")
+        if item.get("cement_class"):
+            cs = item.get("cement_score")
+            cs_txt = f" ({cs:.2f})" if cs is not None else ""
+            lines.append(f"| Cement | {item['cement_class']}{cs_txt} |")
         if pd.notna(item["fluor"]):
             lines.append(f"| Fluorescence | {item['fluor']}% {item['bright']} |")
         if pd.notna(item["gas"]):

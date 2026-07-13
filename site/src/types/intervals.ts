@@ -20,7 +20,6 @@ export interface IntervalRecord {
   max_grain?: string | null;
   grain_ordinal: number;
   poro_class: string | null;
-  loose_grains: boolean;
   fluor: number | null;
   bright?: string | null;
   gas?: number | null;

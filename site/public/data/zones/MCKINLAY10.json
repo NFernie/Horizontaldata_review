@@ -1,0 +1,20 @@
+{
+  "alias": "MCKINLAY10",
+  "display": "MCKINLAY 10",
+  "zones": [
+    {
+      "entry": 1881.53,
+      "murta": 1880.91,
+      "re_entry": 1911.71,
+      "length": 30.180000000000064,
+      "default_reentry": false
+    },
+    {
+      "entry": 2003.15,
+      "murta": 2001.78,
+      "re_entry": 2015.34,
+      "length": 12.189999999999827,
+      "default_reentry": false
+    }
+  ]
+}

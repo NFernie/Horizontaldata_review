@@ -156,28 +156,65 @@ def build_enriched_intervals(results):
 
 
 def compute_rqi_components(rows):
+    w = config.RQI_WEIGHTS
+    optional = set(config.RQI_OPTIONAL_COMPONENTS)
+
     pct_ss = [r.get("pct_ss") for r in rows]
     grain_ord = [r.get("grain_ordinal") for r in rows]
     gr = [r.get("avg_GR") for r in rows]
     poro = [config.PORO_SCORES.get(r.get("poro_class") or "none", 0.0) for r in rows]
-    loose = [1.0 if r.get("loose_grains") else 0.0 for r in rows]
+    hardness = [r.get("hardness_score") for r in rows]
+    cement = [r.get("cement_score") for r in rows]
+    sorting = [r.get("sorting_score") for r in rows]
+    angularity = [r.get("angularity_score") for r in rows]
 
     n_pct = robust_norm(pct_ss)
     n_grain = robust_norm(grain_ord)
     n_low_gr = robust_norm([1.0 - x if pd.notna(x) else np.nan for x in gr])
+    n_hardness = robust_norm(hardness)
+    n_cement = robust_norm(cement)
+    n_sorting = robust_norm(sorting)
+    n_angularity = robust_norm(angularity)
     n_poro = pd.Series(poro)
-    n_loose = pd.Series(loose)
 
-    w = config.RQI_WEIGHTS
-    rqi = (
-        w["pct_ss"] * n_pct
-        + w["grain_ordinal"] * n_grain
-        + w["low_gr"] * n_low_gr
-        + w["porosity"] * n_poro
-        + w["loose_grains"] * n_loose
-    )
+    series = {
+        "pct_ss": n_pct,
+        "grain_ordinal": n_grain,
+        "low_gr": n_low_gr,
+        "porosity": n_poro,
+        "hardness": n_hardness,
+        "cement": n_cement,
+        "sorting": n_sorting,
+        "angularity": n_angularity,
+    }
+
+    optional_scores = {
+        "hardness": "hardness_score",
+        "cement": "cement_score",
+        "sorting": "sorting_score",
+        "angularity": "angularity_score",
+    }
+
     for i, row in enumerate(rows):
-        row["RQI"] = float(rqi.iloc[i]) if pd.notna(rqi.iloc[i]) else None
+        terms = []
+        weights = []
+        for key, weight in w.items():
+            raw = row.get(optional_scores.get(key, key))
+            if key in optional and (raw is None or pd.isna(raw)):
+                continue
+            val = series[key].iloc[i]
+            if val is None or pd.isna(val):
+                continue
+            terms.append(float(val) * weight)
+            weights.append(weight)
+        if not weights:
+            row["RQI"] = None
+        else:
+            row["RQI"] = sum(terms) / sum(weights)
+        hs = row.get("hardness_score")
+        row["flag_loose_hardness"] = (
+            hs is not None and not pd.isna(hs) and float(hs) >= config.LOOSE_HARDNESS_SCORE
+        )
     return rows
 
 
@@ -313,7 +350,7 @@ def jaccard_sets(rows):
         "matching_pay": lambda r: r.get("matching_pay"),
         "coarse_grain": lambda r: (r.get("grain_ordinal") or 0) >= config.COARSE_GRAIN_ORDINAL,
         "low_GR": lambda r: r.get("avg_GR") is not None and gr_p25 is not None and not math.isnan(gr_p25) and r.get("avg_GR") <= gr_p25,
-        "loose_grains": lambda r: r.get("loose_grains"),
+        "loose_hardness": lambda r: r.get("flag_loose_hardness"),
     }
     for feat, fn in checks.items():
         if pct_true(fn) >= thresholds:
@@ -405,7 +442,6 @@ def serialize_interval(row):
         "max_grain": row.get("max_grain") if pd.notna(row.get("max_grain")) else None,
         "grain_ordinal": row.get("grain_ordinal"),
         "poro_class": row.get("poro_class"),
-        "loose_grains": row.get("loose_grains"),
         "fluor": clean_scalar(row.get("fluor")),
         "bright": row.get("bright") if pd.notna(row.get("bright")) else None,
         "gas": clean_scalar(row.get("gas")),
@@ -443,7 +479,7 @@ def water_risk_payload(rows):
                 "pct_ss": r.get("pct_ss"),
                 "grain_ordinal": r.get("grain_ordinal"),
                 "poro_class": r.get("poro_class"),
-                "loose_grains": r.get("loose_grains"),
+                "hardness_score": r.get("hardness_score"),
                 "fluor": r.get("fluor"),
                 "avg_GR": r.get("avg_GR"),
                 "avg_RES_DEEP": r.get("avg_RES_DEEP"),

@@ -1,6 +1,6 @@
 # BIALA 19 Analysis — Process Summary
 
-**Date:** 2026-07-07
+**Date:** 2026-07-13
 
 ## Objective
 
@@ -28,7 +28,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 - Depth range: **1735 – 3730 m MD**
 - Average sandstone: **95.1%**
 - Δ Res range: **-0.7 – 46.5 ohm.m** (avg 5.7)
-- Mudlog matched: **236 / 237** intervals
+- Mudlog matched: **237 / 237** intervals
 
 ## Limitations
 

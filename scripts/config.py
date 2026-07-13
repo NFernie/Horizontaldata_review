@@ -21,13 +21,69 @@ RES_DEEP_CUTOFF = 20.0
 # Rock Quality Index (RQI) — OpusPlanR1 §1.1 Step A
 # ---------------------------------------------------------------------------
 RQI_WEIGHTS = {
-    "pct_ss": 0.30,
-    "grain_ordinal": 0.25,
-    "low_gr": 0.20,
-    "porosity": 0.15,
-    "loose_grains": 0.10,
+    "pct_ss": 0.20,
+    "low_gr": 0.17,
+    "grain_ordinal": 0.14,
+    "porosity": 0.13,
+    "hardness": 0.12,
+    "cement": 0.10,
+    "sorting": 0.08,
+    "angularity": 0.06,
 }
-"""Component weights for RQI (must sum to 1.0)."""
+"""Component weights for RQI v2 (must sum to 1.0)."""
+
+RQI_OPTIONAL_COMPONENTS = ("hardness", "cement", "sorting", "angularity")
+"""Text-derived components omitted per interval when parser returns None."""
+
+SORTING_SCORES = {
+    "v pr": 0.0,
+    "pr": 0.2,
+    "mod": 0.4,
+    "mod wl": 0.6,
+    "wl": 0.8,
+    "v wl": 1.0,
+}
+
+ANGULARITY_SCORES = {
+    "ang": 0.0,
+    "sbang": 0.25,
+    "sbrnd": 0.5,
+    "rnd": 0.75,
+    "v wl rnd": 1.0,
+}
+
+HARDNESS_SCORES = {
+    "lse": 1.0,
+    "uncons": 0.9,
+    "fri": 0.7,
+    "mod hd": 0.4,
+    "hd": 0.2,
+    "v hd": 0.0,
+}
+
+CEMENT_TYPE_PENALTY = {
+    "arg": 1.0,
+    "sil": 0.65,
+    "calc": 0.35,
+}
+
+CEMENT_AMOUNT_MULT = {
+    "tr": 0.25,
+    "rr": 0.5,
+    "mnr": 0.75,
+    "com": 1.0,
+}
+
+CEMENT_STRENGTH_MULT = {
+    "wk": 0.6,
+    "strg": 1.4,
+}
+
+CEMENT_DEFAULT_AMOUNT_MULT = 0.5
+CEMENT_DEFAULT_STRENGTH_MULT = 1.0
+
+LOOSE_HARDNESS_SCORE = 0.7
+"""Hardness lookup score >= this counts as loose_hardness for Jaccard (fri / lse tier)."""
 
 RQI_THRESHOLD = 0.6
 """Intervals with RQI >= this value are considered 'good rock' for red-flag logic."""
@@ -133,7 +189,7 @@ JACCARD_FEATURES = (
     "matching_pay",
     "coarse_grain",
     "low_GR",
-    "loose_grains",
+    "loose_hardness",
 )
 """Binary feature vocabulary for inter-well Jaccard similarity."""
 

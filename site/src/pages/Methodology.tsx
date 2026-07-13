@@ -51,9 +51,14 @@ export function Methodology() {
         <div className="space-y-4 text-sm text-text-muted">
           <FormulaBlock title="Step A — Rock Quality Index (RQI), 0–1">
             <p>
-              RQI = {RQI_WEIGHTS.pct_ss}·norm(%SS) + {RQI_WEIGHTS.grain_ordinal}·norm(grain) +{" "}
-              {RQI_WEIGHTS.low_gr}·norm(1−GR) + {RQI_WEIGHTS.porosity}·porosity_score +{" "}
-              {RQI_WEIGHTS.loose_grains}·loose_grain_flag
+              RQI = {RQI_WEIGHTS.pct_ss}·norm(%SS) + {RQI_WEIGHTS.low_gr}·norm(1−GR) +{" "}
+              {RQI_WEIGHTS.grain_ordinal}·norm(grain) + {RQI_WEIGHTS.porosity}·porosity_score +{" "}
+              {RQI_WEIGHTS.hardness}·norm(hardness) + {RQI_WEIGHTS.cement}·norm(cement) +{" "}
+              {RQI_WEIGHTS.sorting}·norm(sorting) + {RQI_WEIGHTS.angularity}·norm(angularity)
+            </p>
+            <p>
+              Optional text-derived components (hardness, cement, sorting, angularity) are omitted
+              when not parsed; remaining weights are renormalised per interval.
             </p>
             <p>norm() clips to P{ROBUST_NORM_PERCENTILES[0]}–P{ROBUST_NORM_PERCENTILES[1]} within each well.</p>
             <p>

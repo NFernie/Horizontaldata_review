@@ -3,7 +3,7 @@ import type { AssistantIntent } from "@/types/assistant";
 export type SummaryType = "pay_summary" | "process_summary";
 
 export interface IntervalFilter {
-  looseGrains?: boolean;
+  looseHardness?: boolean;
   minWrci?: number;
   maxWrci?: number;
   minRqi?: number;

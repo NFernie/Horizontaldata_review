@@ -1,6 +1,6 @@
 # TERINGIE 6 Analysis — Process Summary
 
-**Date:** 2026-07-07
+**Date:** 2026-07-13
 
 ## Objective
 
@@ -28,7 +28,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 - Depth range: **1670 – 3441 m MD**
 - Average sandstone: **97.8%**
 - Δ Res range: **0.6 – 13.5 ohm.m** (avg 3.0)
-- Mudlog matched: **158 / 159** intervals
+- Mudlog matched: **159 / 159** intervals
 
 ## Limitations
 

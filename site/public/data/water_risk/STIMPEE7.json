@@ -3,11 +3,33 @@
   "display": "STIMPEE 7",
   "flagged_zones": [
     {
+      "depth": 2680.0,
+      "top": 2675.0,
+      "bot": 2685.0,
+      "WRCI": 46.99,
+      "RQI": 0.6348147498688392,
+      "risk_class": "Elevated",
+      "flags": [
+        "highperm",
+        "lowfluor"
+      ],
+      "evidence": {
+        "pct_ss": 90.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 60,
+        "avg_GR": 82.2047041691212,
+        "avg_RES_DEEP": 50.29518936619697,
+        "res_sep": 16.707665067757574
+      }
+    },
+    {
       "depth": 1725.0,
       "top": 1722.5,
       "bot": 1727.5,
-      "WRCI": 46.35,
-      "RQI": 0.65869579341036,
+      "WRCI": 46.31,
+      "RQI": 0.6576449517356667,
       "risk_class": "Elevated",
       "flags": [
         "highperm"
@@ -16,7 +38,7 @@
         "pct_ss": 100.0,
         "grain_ordinal": 2,
         "poro_class": "fr",
-        "loose_grains": false,
+        "hardness_score": 0.7,
         "fluor": 100,
         "avg_GR": 95.75323000775757,
         "avg_RES_DEEP": 57.228796641,
@@ -27,8 +49,8 @@
       "depth": 1730.0,
       "top": 1727.5,
       "bot": 1732.5,
-      "WRCI": 43.12,
-      "RQI": 0.635982313317065,
+      "WRCI": 43.76,
+      "RQI": 0.6520884936563661,
       "risk_class": "Elevated",
       "flags": [
         "highperm"
@@ -37,7 +59,7 @@
         "pct_ss": 95.0,
         "grain_ordinal": 2,
         "poro_class": "fr",
-        "loose_grains": false,
+        "hardness_score": 0.7,
         "fluor": 100,
         "avg_GR": 86.45386042742425,
         "avg_RES_DEEP": 51.66420595575758,
@@ -45,11 +67,30 @@
       }
     },
     {
-      "depth": 2330.0,
-      "top": 2325.0,
-      "bot": 2335.0,
-      "WRCI": 38.89,
-      "RQI": 0.6060915318884206,
+      "depth": 2170.0,
+      "top": 2165.0,
+      "bot": 2175.0,
+      "WRCI": 42.9,
+      "RQI": 0.5724839459913097,
+      "risk_class": "Elevated",
+      "flags": [],
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr",
+        "hardness_score": 0.7,
+        "fluor": 80,
+        "avg_GR": 88.2819064802154,
+        "avg_RES_DEEP": 55.18269841124615,
+        "res_sep": 20.57764006395385
+      }
+    },
+    {
+      "depth": 2070.0,
+      "top": 2065.0,
+      "bot": 2075.0,
+      "WRCI": 40.15,
+      "RQI": 0.6565642455432907,
       "risk_class": "Elevated",
       "flags": [
         "highperm"
@@ -58,11 +99,116 @@
         "pct_ss": 100.0,
         "grain_ordinal": 0,
         "poro_class": "fr",
-        "loose_grains": true,
+        "hardness_score": 1.0,
+        "fluor": 100,
+        "avg_GR": 72.6935579704394,
+        "avg_RES_DEEP": 40.51380463804546,
+        "res_sep": 13.864221341696975
+      }
+    },
+    {
+      "depth": 2330.0,
+      "top": 2325.0,
+      "bot": 2335.0,
+      "WRCI": 39.69,
+      "RQI": 0.626145615156304,
+      "risk_class": "Elevated",
+      "flags": [
+        "highperm"
+      ],
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr",
+        "hardness_score": 0.85,
         "fluor": 100,
         "avg_GR": 78.4310029925909,
         "avg_RES_DEEP": 49.34864512362121,
         "res_sep": 14.442613341621204
+      }
+    },
+    {
+      "depth": 2350.0,
+      "top": 2345.0,
+      "bot": 2355.0,
+      "WRCI": 39.51,
+      "RQI": 0.6158754899344403,
+      "risk_class": "Elevated",
+      "flags": [
+        "highperm"
+      ],
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr",
+        "hardness_score": 0.85,
+        "fluor": 100,
+        "avg_GR": 80.57992465695384,
+        "avg_RES_DEEP": 46.715786215,
+        "res_sep": 14.621995544446165
+      }
+    },
+    {
+      "depth": 2690.0,
+      "top": 2685.0,
+      "bot": 2695.0,
+      "WRCI": 38.79,
+      "RQI": 0.7502870310378669,
+      "risk_class": "Elevated",
+      "flags": [
+        "highperm"
+      ],
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 80,
+        "avg_GR": 80.4169687125077,
+        "avg_RES_DEEP": 42.55062766443076,
+        "res_sep": 9.954333906907692
+      }
+    },
+    {
+      "depth": 2100.0,
+      "top": 2095.0,
+      "bot": 2105.0,
+      "WRCI": 35.47,
+      "RQI": 0.6173902344763229,
+      "risk_class": "Elevated",
+      "flags": [
+        "highperm"
+      ],
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr",
+        "hardness_score": 1.0,
+        "fluor": 90,
+        "avg_GR": 80.89033057478788,
+        "avg_RES_DEEP": 44.306372497999995,
+        "res_sep": 11.47878909828787
+      }
+    },
+    {
+      "depth": 1970.0,
+      "top": 1965.0,
+      "bot": 1975.0,
+      "WRCI": 31.29,
+      "RQI": 0.6676779431498288,
+      "risk_class": "Elevated",
+      "flags": [
+        "lowfluor"
+      ],
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr",
+        "hardness_score": 1.0,
+        "fluor": 70,
+        "avg_GR": 75.94786222053031,
+        "avg_RES_DEEP": 29.69793016260606,
+        "res_sep": 5.716789303393938
       }
     }
   ]

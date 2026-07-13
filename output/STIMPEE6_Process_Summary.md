@@ -1,6 +1,6 @@
 # STIMPEE 6 Analysis — Process Summary
 
-**Date:** 2026-07-07
+**Date:** 2026-07-13
 
 ## Objective
 
@@ -28,7 +28,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 - Depth range: **1635 – 3186 m MD**
 - Average sandstone: **93.3%**
 - Δ Res range: **-1.2 – 35.0 ohm.m** (avg 7.5)
-- Mudlog matched: **102 / 130** intervals
+- Mudlog matched: **116 / 130** intervals
 
 ## Limitations
 

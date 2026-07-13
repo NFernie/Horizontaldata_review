@@ -4,7 +4,7 @@ export interface FlaggedZoneEvidence {
   pct_ss: number | null;
   grain_ordinal: number | null;
   poro_class: string | null;
-  loose_grains: boolean | null;
+  hardness_score: number | null;
   fluor: number | null;
   avg_GR: number | null;
   avg_RES_DEEP: number | null;

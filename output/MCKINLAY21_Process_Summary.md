@@ -1,6 +1,6 @@
 # MCKINLAY 21 Analysis — Process Summary
 
-**Date:** 2026-07-07
+**Date:** 2026-07-13
 
 ## Objective
 
@@ -28,7 +28,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 - Depth range: **1775 – 2415 m MD**
 - Average sandstone: **87.2%**
 - Δ Res range: **-0.3 – 12.3 ohm.m** (avg 3.6)
-- Mudlog matched: **87 / 124** intervals
+- Mudlog matched: **104 / 124** intervals
 
 ## Limitations
 

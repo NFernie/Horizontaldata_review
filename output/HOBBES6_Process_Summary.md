@@ -1,6 +1,6 @@
 # HOBBES 6 Analysis — Process Summary
 
-**Date:** 2026-07-07
+**Date:** 2026-07-13
 
 ## Objective
 
@@ -28,7 +28,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 - Depth range: **1686 – 2500 m MD**
 - Average sandstone: **80.1%**
 - Δ Res range: **-0.8 – 7.5 ohm.m** (avg 2.0)
-- Mudlog matched: **51 / 78** intervals
+- Mudlog matched: **62 / 78** intervals
 
 ## Limitations
 

@@ -1,6 +1,6 @@
 # MCKINLAY 14 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 00:25 UTC  
+**Generated:** 2026-07-13 00:56 UTC  
 **Well:** MCKINLAY 14 (MCKINLAY 14)  
 **TD:** 2644 m MD  
 
@@ -80,7 +80,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | wl (0.80) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 60.0% mod bri yel wh ptchy |
 | Total Gas | 259.51875 U |
 | mTVDss | -1199.19 m |
@@ -112,7 +115,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | sil cmt (0.55) |
 | Fluorescence | 80.0% mod bri yel wh ptchy |
 | Total Gas | 328.74375000000003 U |
 | mTVDss | -1199.37 m |
@@ -144,7 +150,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | sil cmt (0.55) |
 | Fluorescence | 80.0% mod bri yel wh ptchy |
 | Total Gas | 437.02352941176474 U |
 | mTVDss | -1199.49 m |
@@ -176,7 +185,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | sil cmt (0.55) |
 | Fluorescence | 80.0% mod bri yel wh ptchy |
 | Total Gas | 406.39375 U |
 | mTVDss | -1199.61 m |
@@ -208,7 +220,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | sil cmt (0.55) |
 | Fluorescence | 80.0% mod bri yel wh ptchy |
 | Total Gas | 298.3235294117647 U |
 | mTVDss | -1199.74 m |
@@ -240,7 +255,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 80.0% mod bri yel wh ptchy |
 | Total Gas | 262.86875 U |
 | mTVDss | -1199.86 m |
@@ -272,7 +290,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 80.0% mod bri yel wh ptchy |
 | Total Gas | 357.25 U |
 | mTVDss | -1199.99 m |
@@ -304,7 +325,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 80.0% None |
 | Total Gas | 343.67058823529413 U |
 | mTVDss | -1200.08 m |
@@ -336,7 +360,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 80.0% None |
 | Total Gas | 303.6 U |
 | mTVDss | -1200.08 m |
@@ -368,7 +395,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 213.9941176470588 U |
 | mTVDss | -1200.08 m |
@@ -400,7 +430,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 218.04375000000002 U |
 | mTVDss | -1200.08 m |
@@ -432,7 +465,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 309.6125 U |
 | mTVDss | -1200.08 m |
@@ -464,7 +500,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 281.5529411764706 U |
 | mTVDss | -1200.07 m |
@@ -496,7 +535,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 326.3625 U |
 | mTVDss | -1200.00 m |
@@ -528,7 +570,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 331.1117647058823 U |
 | mTVDss | -1199.88 m |
@@ -560,7 +605,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 363.925 U |
 | mTVDss | -1199.76 m |
@@ -592,7 +640,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 271.7647058823529 U |
 | mTVDss | -1199.64 m |
@@ -624,7 +675,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 328.98125 U |
 | mTVDss | -1199.52 m |
@@ -656,7 +710,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 393.6875 U |
 | mTVDss | -1199.40 m |
@@ -688,7 +745,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 440.11176470588236 U |
 | mTVDss | -1199.28 m |
@@ -720,7 +780,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 445.61249999999995 U |
 | mTVDss | -1199.16 m |
@@ -751,7 +814,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr sil cmt (0.80) |
 | Fluorescence | 80.0% , bri yel wh evn,inst bri wh cut,thk bri wh r/r |
 | Total Gas | 381.94117647058823 U |
 | mTVDss | -1199.04 m |
@@ -782,7 +848,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 0.0% None |
 | Total Gas | 235.73125 U |
 | mTVDss | -1198.82 m |
@@ -814,7 +883,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 70.0% None |
 | Total Gas | 243.35294117647058 U |
 | mTVDss | -1198.89 m |
@@ -846,7 +918,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 70.0% None |
 | Total Gas | 377.65625 U |
 | mTVDss | -1198.97 m |
@@ -878,7 +953,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 70.0% None |
 | Total Gas | 431.8941176470588 U |
 | mTVDss | -1199.05 m |
@@ -910,7 +988,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 70.0% None |
 | Total Gas | 382.44374999999997 U |
 | mTVDss | -1199.16 m |
@@ -942,7 +1023,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 70.0% None |
 | Total Gas | 366.05625 U |
 | mTVDss | -1199.26 m |
@@ -974,7 +1058,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.68) |
 | Fluorescence | 70.0% None |
 | Total Gas | 410.2941176470588 U |
 | mTVDss | -1199.37 m |
@@ -1006,7 +1093,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.68) |
 | Fluorescence | 70.0% None |
 | Total Gas | 405.4375 U |
 | mTVDss | -1199.47 m |
@@ -1038,7 +1128,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% None |
 | Total Gas | 402.14374999999995 U |
 | mTVDss | -1200.45 m |
@@ -1070,7 +1163,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% None |
 | Total Gas | 376.8352941176471 U |
 | mTVDss | -1200.50 m |
@@ -1102,7 +1198,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% None |
 | Total Gas | 368.26875 U |
 | mTVDss | -1200.55 m |
@@ -1134,7 +1233,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 392.1941176470589 U |
 | mTVDss | -1200.61 m |
@@ -1166,7 +1268,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 442.83124999999995 U |
 | mTVDss | -1200.66 m |
@@ -1198,7 +1303,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 408.96875 U |
 | mTVDss | -1200.72 m |
@@ -1230,7 +1338,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 441.38823529411764 U |
 | mTVDss | -1200.77 m |
@@ -1262,7 +1373,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 449.03125 U |
 | mTVDss | -1200.82 m |
@@ -1294,7 +1408,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 412.2058823529412 U |
 | mTVDss | -1200.87 m |
@@ -1326,7 +1443,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% None |
 | Total Gas | 370.08124999999995 U |
 | mTVDss | -1200.93 m |
@@ -1358,7 +1478,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% None |
 | Total Gas | 396.1117647058823 U |
 | mTVDss | -1200.98 m |
@@ -1390,7 +1513,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% None |
 | Total Gas | 407.7375 U |
 | mTVDss | -1201.03 m |
@@ -1422,7 +1548,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% None |
 | Total Gas | 446.0 U |
 | mTVDss | -1201.07 m |
@@ -1454,7 +1583,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% None |
 | Total Gas | 437.38823529411764 U |
 | mTVDss | -1201.09 m |
@@ -1486,7 +1618,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.84) |
 | Fluorescence | 90.0% None |
 | Total Gas | 476.8 U |
 | mTVDss | -1201.48 m |
@@ -1518,7 +1652,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.84) |
 | Fluorescence | 90.0% None |
 | Total Gas | 566.8352941176472 U |
 | mTVDss | -1201.54 m |
@@ -1550,7 +1687,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.84) |
 | Fluorescence | 90.0% None |
 | Total Gas | 556.89375 U |
 | mTVDss | -1201.60 m |
@@ -1582,7 +1722,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr sil cmt (0.84) |
 | Fluorescence | 90.0% None |
 | Total Gas | 482.4764705882353 U |
 | mTVDss | -1201.65 m |
@@ -1614,7 +1757,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr sil cmt (0.84) |
 | Fluorescence | 90.0% None |
 | Total Gas | 424.61875 U |
 | mTVDss | -1201.71 m |
@@ -1646,7 +1792,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr sil cmt (0.84) |
 | Fluorescence | 90.0% None |
 | Total Gas | 470.3125 U |
 | mTVDss | -1201.76 m |
@@ -1678,7 +1827,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr sil cmt (0.84) |
 | Fluorescence | 90.0% None |
 | Total Gas | 465.3764705882353 U |
 | mTVDss | -1201.81 m |
@@ -1710,7 +1862,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% None |
 | Total Gas | 483.51250000000005 U |
 | mTVDss | -1201.86 m |
@@ -1742,7 +1897,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% None |
 | Total Gas | 496.05882352941177 U |
 | mTVDss | -1201.87 m |
@@ -1773,7 +1931,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 461.63125 U |
 | mTVDss | -1201.86 m |
@@ -1805,7 +1966,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 431.74375 U |
 | mTVDss | -1201.86 m |
@@ -1837,7 +2001,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 498.3117647058823 U |
 | mTVDss | -1201.86 m |
@@ -1869,7 +2036,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% None |
 | Total Gas | 534.18125 U |
 | mTVDss | -1201.85 m |
@@ -1901,7 +2071,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.68) |
 | Fluorescence | 90.0% None |
 | Total Gas | 575.6705882352941 U |
 | mTVDss | -1201.85 m |
@@ -1933,7 +2106,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% None |
 | Total Gas | 612.73125 U |
 | mTVDss | -1201.84 m |
@@ -1965,7 +2141,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.68) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 554.65625 U |
 | mTVDss | -1201.83 m |
@@ -1997,7 +2176,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.68) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 512.3764705882353 U |
 | mTVDss | -1201.83 m |
@@ -2029,7 +2211,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.68) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 566.48125 U |
 | mTVDss | -1201.82 m |
@@ -2061,7 +2246,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 633.3764705882354 U |
 | mTVDss | -1201.81 m |
@@ -2093,7 +2281,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | sil cmt (0.68) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 707.29375 U |
 | mTVDss | -1201.80 m |
@@ -2125,7 +2316,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 713.85 U |
 | mTVDss | -1201.77 m |
@@ -2156,7 +2349,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 550.2823529411764 U |
 | mTVDss | -1201.75 m |
@@ -2187,7 +2382,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.90) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 499.80625000000003 U |
 | mTVDss | -1201.73 m |
@@ -2219,7 +2416,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod wl (0.60) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 453.18823529411765 U |
 | mTVDss | -1201.70 m |
@@ -2251,7 +2451,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod wl (0.60) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 474.29999999999995 U |
 | mTVDss | -1201.68 m |
@@ -2283,7 +2486,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod wl (0.60) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 574.03125 U |
 | mTVDss | -1201.65 m |
@@ -2315,7 +2521,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod wl (0.60) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 529.1529411764706 U |
 | mTVDss | -1201.59 m |
@@ -2347,7 +2556,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod wl (0.60) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 556.69375 U |
 | mTVDss | -1201.54 m |
@@ -2379,7 +2591,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod wl (0.60) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 560.0117647058823 U |
 | mTVDss | -1201.49 m |
@@ -2411,7 +2626,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod wl (0.60) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 493.63749999999993 U |
 | mTVDss | -1201.44 m |
@@ -2443,7 +2661,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 633.95 U |
 | mTVDss | -1201.39 m |
@@ -2475,7 +2696,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 698.8882352941175 U |
 | mTVDss | -1201.32 m |
@@ -2507,7 +2731,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 599.2647058823529 U |
 | mTVDss | -1201.25 m |
@@ -2538,7 +2765,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 617.1823529411764 U |
 | mTVDss | -1201.18 m |
@@ -2569,7 +2799,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | rr wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh ptchy-evn |
 | Total Gas | 623.29375 U |
 | mTVDss | -1201.11 m |
@@ -2599,7 +2832,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | rr wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh evn |
 | Total Gas | 581.7882352941176 U |
 | mTVDss | -1201.03 m |
@@ -2631,7 +2867,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | rr wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri-bri yel wh evn |
 | Total Gas | 626.64375 U |
 | mTVDss | -1200.96 m |
@@ -2663,7 +2902,9 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
 | Fluorescence | 90.0% mod bri-bri yel wh evn |
 | Total Gas | 666.325 U |
 | mTVDss | -1200.94 m |
@@ -2694,7 +2935,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 90.0% mod bri-bri yel wh evn |
 | Total Gas | 161.38235294117646 U |
 | mTVDss | -1201.22 m |
@@ -2726,7 +2970,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 90.0% mod bri-bri yel wh evn |
 | Total Gas | 178.14375 U |
 | mTVDss | -1201.27 m |
@@ -2758,7 +3005,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 90.0% mod bri yel wh ptchy evn |
 | Total Gas | 191.1823529411765 U |
 | mTVDss | -1201.32 m |
@@ -2790,7 +3040,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
-| Loose Grains | Yes |
+| Hardness | fri-mod hd (0.55) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 90.0% mod bri yel wh ptchy evn |
 | Total Gas | 187.34375 U |
 | mTVDss | -1201.38 m |
@@ -2822,7 +3075,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | com wk sil cmt (0.61) |
 | Fluorescence | 90.0% mod bri yel wh ptchy evn |
 | Total Gas | 193.02499999999998 U |
 | mTVDss | -1201.43 m |
@@ -2854,7 +3110,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | com wk sil cmt (0.61) |
 | Fluorescence | 90.0% mod bri yel wh ptchy evn |
 | Total Gas | 251.48823529411766 U |
 | mTVDss | -1201.48 m |
@@ -2886,7 +3145,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | wl (0.80) |
+| Angularity | sbrnd (0.50) |
+| Cement | com wk sil cmt (0.61) |
 | Fluorescence | 90.0% mod bri yel wh ptchy evn |
 | Total Gas | 295.01250000000005 U |
 | mTVDss | -1201.53 m |
@@ -2918,7 +3180,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | wl (0.80) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri yel wh ptchy evn |
 | Total Gas | 308.40000000000003 U |
 | mTVDss | -1201.56 m |
@@ -2949,7 +3214,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | wl (0.80) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri yel wh ptchy evn |
 | Total Gas | 264.7875 U |
 | mTVDss | -1201.59 m |
@@ -2980,7 +3248,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | fr-gd |
-| Loose Grains | Yes |
+| Hardness | uncons (0.85) |
+| Sorting | wl (0.80) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri yel wh |
 | Total Gas | 313.9125 U |
 | mTVDss | -1201.63 m |
@@ -3012,7 +3283,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | wl (0.80) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri yel wh |
 | Total Gas | 360.20000000000005 U |
 | mTVDss | -1201.66 m |
@@ -3043,7 +3317,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | wl (0.80) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 90.0% mod bri yel wh |
 | Total Gas | 362.625 U |
 | mTVDss | -1201.70 m |
@@ -3074,7 +3351,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.80) |
 | Fluorescence | 80.0% mod bri yel wh |
 | Total Gas | 374.65882352941173 U |
 | mTVDss | -1201.73 m |
@@ -3106,7 +3386,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.80) |
 | Fluorescence | 80.0% mod bri yel wh |
 | Total Gas | 760.2875 U |
 | mTVDss | -1201.77 m |
@@ -3137,7 +3420,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | gd |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | tr wk sil cmt (0.71) |
 | Fluorescence | 90.0% ,bri |
 | Total Gas | 587.54375 U |
 | mTVDss | -1201.80 m |
@@ -3169,7 +3455,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | p-fr |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 50.0% ,bri |
 | Total Gas | 214.0375 U |
 | mTVDss | -1202.10 m |
@@ -3201,7 +3490,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | p-fr |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 50.0% ,bri |
 | Total Gas | 221.00625 U |
 | mTVDss | -1202.09 m |
@@ -3233,7 +3525,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | p-fr |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.71) |
 | Fluorescence | 50.0% ,bri |
 | Total Gas | 222.27058823529413 U |
 | mTVDss | -1202.09 m |
@@ -3265,7 +3560,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | p-fr |
-| Loose Grains | Yes |
+| Hardness | lse (1.00) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | wk sil cmt (0.55) |
 | Fluorescence | 50.0% None |
 | Total Gas | 203.375 U |
 | mTVDss | -1202.08 m |
@@ -3297,7 +3595,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | mnr wk sil cmt (0.55) |
 | Fluorescence | 50.0% None |
 | Total Gas | 184.55882352941177 U |
 | mTVDss | -1202.08 m |
@@ -3329,7 +3630,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | mnr wk sil cmt (0.55) |
 | Fluorescence | 50.0% None |
 | Total Gas | 189.31875 U |
 | mTVDss | -1202.07 m |
@@ -3361,7 +3665,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | mnr wk sil cmt (0.55) |
 | Fluorescence | 50.0% None |
 | Total Gas | 208.08749999999998 U |
 | mTVDss | -1202.07 m |
@@ -3393,7 +3700,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | mnr wk sil cmt (0.55) |
 | Fluorescence | 50.0% None |
 | Total Gas | 183.8235294117647 U |
 | mTVDss | -1202.06 m |
@@ -3425,7 +3735,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | mnr wk sil cmt (0.55) |
 | Fluorescence | 50.0% None |
 | Total Gas | 161.54375 U |
 | mTVDss | -1202.04 m |
@@ -3457,7 +3770,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | mod (0.40) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 0.0% None |
 | Total Gas | 136.35882352941175 U |
 | mTVDss | -1202.03 m |
@@ -3489,7 +3805,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 0.0% None |
 | Total Gas | 119.55624999999999 U |
 | mTVDss | -1202.02 m |
@@ -3520,7 +3839,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 0.0% None |
 | Total Gas | 123.57058823529411 U |
 | mTVDss | -1202.00 m |
@@ -3552,7 +3874,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 0.0% None |
 | Total Gas | 122.5625 U |
 | mTVDss | -1201.99 m |
@@ -3584,7 +3909,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 0.0% None |
 | Total Gas | 128.51875 U |
 | mTVDss | -1201.99 m |
@@ -3615,7 +3943,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 0.0% None |
 | Total Gas | 121.02352941176471 U |
 | mTVDss | -1201.99 m |
@@ -3646,7 +3977,10 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 | % Sandstone | 100.0 |
 | Grain Size | nan (max: nan) |
 | Porosity Class | none |
-| Loose Grains | No |
+| Hardness | fri (0.70) |
+| Sorting | pr (0.20) |
+| Angularity | sbrnd (0.50) |
+| Cement | strg sil cmt (0.55) |
 | Fluorescence | 0.0% None |
 | Total Gas | 98.59375 U |
 | mTVDss | -1201.99 m |

@@ -35,7 +35,7 @@ export interface CorpusIntervalSummary {
   pct_ss: number | null;
   grain: string | null;
   poro_class: string | null;
-  loose_grains: boolean;
+  loose_hardness: boolean;
   fluor: number | null;
   RQI: number | null;
   WRCI: number | null;

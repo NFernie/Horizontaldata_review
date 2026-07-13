@@ -76,8 +76,10 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
           <dd className="text-text">{ev.poro_class ?? "—"}</dd>
         </div>
         <div>
-          <dt className="text-text-muted">Loose grains</dt>
-          <dd className="text-text">{ev.loose_grains ? "Yes" : "No"}</dd>
+          <dt className="text-text-muted">Hardness score</dt>
+          <dd className="font-mono text-text">
+            {ev.hardness_score != null ? formatNumber(ev.hardness_score, 2) : "—"}
+          </dd>
         </div>
       </dl>
     </article>

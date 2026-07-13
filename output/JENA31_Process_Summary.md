@@ -1,6 +1,6 @@
 # JENA 31 Analysis — Process Summary
 
-**Date:** 2026-07-07
+**Date:** 2026-07-13
 
 ## Objective
 
@@ -28,7 +28,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 - Depth range: **2255 – 3390 m MD**
 - Average sandstone: **89.1%**
 - Δ Res range: **3.4 – 303.3 ohm.m** (avg 20.5)
-- Mudlog matched: **196 / 197** intervals
+- Mudlog matched: **197 / 197** intervals
 
 ## Limitations
 

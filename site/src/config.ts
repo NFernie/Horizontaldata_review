@@ -7,11 +7,14 @@ export const FLUOR_CUTOFF = 75.0;
 export const RES_DEEP_CUTOFF = 20.0;
 
 export const RQI_WEIGHTS = {
-  pct_ss: 0.3,
-  grain_ordinal: 0.25,
-  low_gr: 0.2,
-  porosity: 0.15,
-  loose_grains: 0.1,
+  pct_ss: 0.2,
+  low_gr: 0.17,
+  grain_ordinal: 0.14,
+  porosity: 0.13,
+  hardness: 0.12,
+  cement: 0.1,
+  sorting: 0.08,
+  angularity: 0.06,
 } as const;
 
 export const RQI_THRESHOLD = 0.6;
@@ -24,6 +27,8 @@ export const PORO_SCORES = {
   "fr-gd": 0.75,
   gd: 1.0,
 } as const;
+
+export const LOOSE_HARDNESS_SCORE = 0.7;
 
 export const ROBUST_NORM_PERCENTILES = [5, 95] as const;
 
@@ -78,7 +83,7 @@ export const JACCARD_FEATURES = [
   "matching_pay",
   "coarse_grain",
   "low_GR",
-  "loose_grains",
+  "loose_hardness",
 ] as const;
 
 export const COARSE_GRAIN_ORDINAL = 4;

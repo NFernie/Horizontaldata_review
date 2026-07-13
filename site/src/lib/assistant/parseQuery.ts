@@ -67,7 +67,7 @@ function detectStatsTopic(
 function detectIntervalFilter(query: string): IntervalFilter | undefined {
   const filter: IntervalFilter = {};
   if (/\bloose\s+grains?\b/i.test(query) || /\blse\b/i.test(query) || /\bloose\b/i.test(query)) {
-    filter.looseGrains = true;
+    filter.looseHardness = true;
   }
   if (/\bhigh\s+risk\b/i.test(query)) {
     filter.riskClass = "High";

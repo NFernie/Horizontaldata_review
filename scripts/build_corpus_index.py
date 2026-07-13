@@ -106,7 +106,7 @@ def build_interval_summary(interval: dict) -> dict:
         "pct_ss": interval.get("pct_ss"),
         "grain": interval.get("grain"),
         "poro_class": interval.get("poro_class"),
-        "loose_grains": bool(interval.get("loose_grains")),
+        "loose_hardness": bool(interval.get("flag_loose_hardness")),
         "fluor": interval.get("fluor"),
         "RQI": interval.get("RQI"),
         "WRCI": interval.get("WRCI"),

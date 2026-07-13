@@ -14,7 +14,7 @@ function intervalSummaryRows(
     "%SS": s.pct_ss,
     Grain: s.grain,
     Porosity: s.poro_class,
-    "Loose grains": s.loose_grains ? "Yes" : "No",
+    "Loose hardness": s.loose_hardness ? "Yes" : "No",
     Fluorescence: s.fluor != null ? formatPercent(s.fluor, 0) : null,
     RQI: s.RQI != null ? formatNumber(s.RQI, 3) : null,
     WRCI: s.WRCI != null ? formatNumber(s.WRCI, 1) : null,
@@ -74,7 +74,7 @@ export async function handleIntervalFilter(parsed: ParsedQuery): Promise<Assista
   const { filter } = parsed;
   let matches = payload.intervals.filter((record) => {
     const s = record.summary;
-    if (filter.looseGrains && !s.loose_grains) return false;
+    if (filter.looseHardness && !s.loose_hardness) return false;
     if (filter.riskClass && s.risk_class !== filter.riskClass) return false;
     if (filter.minWrci != null && (s.WRCI == null || s.WRCI < filter.minWrci)) return false;
     if (filter.maxWrci != null && (s.WRCI == null || s.WRCI > filter.maxWrci)) return false;

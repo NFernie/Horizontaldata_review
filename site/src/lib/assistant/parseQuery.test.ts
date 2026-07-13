@@ -55,7 +55,7 @@ describe("parseQuery", () => {
     expect(parsed.intent).toBe("INTERVAL_FILTER");
     expect(parsed.alias).toBe("JENA31");
     expect(parsed.depth).toBe(2500);
-    expect(parsed.filter?.looseGrains).toBe(true);
+    expect(parsed.filter?.looseHardness).toBe(true);
   });
 
   it("parses RQI threshold filter on a well", () => {

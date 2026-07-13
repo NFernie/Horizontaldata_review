@@ -1,6 +1,6 @@
 # FROSTILLICUS 2 Analysis — Process Summary
 
-**Date:** 2026-07-07
+**Date:** 2026-07-13
 
 ## Objective
 
@@ -28,7 +28,7 @@ Integrate mudlog, sample descriptions, formation tops, and LAS data for **McKinl
 - Depth range: **1617 – 3685 m MD**
 - Average sandstone: **93.0%**
 - Δ Res range: **-3.2 – 30.1 ohm.m** (avg 7.6)
-- Mudlog matched: **251 / 373** intervals
+- Mudlog matched: **285 / 373** intervals
 
 ## Limitations
 
