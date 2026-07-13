@@ -15,7 +15,57 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      pipeline: ${{ steps.pipeline.outputs.run }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect pipeline-affecting changes
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            pipeline:
+              - 'scripts/**'
+              - 'requirements.txt'
+              - 'Oil_Water_Contact.csv'
+              - 'DC30.xlsx'
+              - 'Mck_Murta.xlsx'
+              - 'New Statistical Methods.md'
+              - 'pay-rules.md'
+              - '**/*.pdf'
+              - '**/*_trajectory'
+              - 'Jena_*'
+              - 'Biala_*'
+              - 'Frosti_*'
+              - 'Granchio_*'
+              - 'Hobbes_*'
+              - 'Stimpee_*'
+              - 'Teringie_*'
+              - 'Mck_*'
+              - 'McKinlay*'
+              - 'McKINLAY*'
+              - 'JENA*'
+              - 'BIALA*'
+
+      - name: Set pipeline flag
+        id: pipeline
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ steps.filter.outputs.pipeline }}" = "true" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
   build:
+    needs: changes
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,24 +74,24 @@ jobs:
           lfs: true
 
       - name: Setup Python
+        if: needs.changes.outputs.pipeline == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install Python dependencies
+        if: needs.changes.outputs.pipeline == 'true'
         run: pip install -r requirements.txt
 
       - name: Generate well data
+        if: needs.changes.outputs.pipeline == 'true'
         env:
           WORKSPACE: ${{ github.workspace }}
         run: |
-          python3 scripts/process_mckinlay_wells.py
-          python3 scripts/compute_pay_summary.py
           python3 scripts/export_web_data.py
           python3 scripts/build_corpus_index.py
           python3 scripts/test_zoi.py
           python3 scripts/test_owc.py
-          python3 scripts/test_pay_overburden.py
 
       - name: Setup Node
         uses: actions/setup-node@v4

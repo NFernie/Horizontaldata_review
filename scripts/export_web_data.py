@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Export McKinlay well statistics and interval data as JSON for the static site."""
+"""Export McKinlay well statistics and interval data as JSON for the static site.
+
+This is the single CI entrypoint for data regeneration: one ``process_well`` pass
+per well, interpretation markdown for the corpus, and JSON under site/public/data/.
+"""
 
 from __future__ import annotations
 
@@ -33,9 +37,15 @@ from owc import (  # noqa: E402
     owc_severity,
 )
 from isolation import attach_isolation, load_isolation_by_alias  # noqa: E402
-from process_mckinlay_wells import WELLS, process_well  # noqa: E402
+from process_mckinlay_wells import (  # noqa: E402
+    WELLS,
+    process_well,
+    write_interpretation,
+    write_summary,
+)
 
 DATA_ROOT = os.path.join(WORKSPACE, config.DATA_DIR)
+OUTPUT_DIR = os.path.join(WORKSPACE, "output")
 
 
 def clean_scalar(val):
@@ -688,11 +698,18 @@ def main():
     enriched_by_alias = {}
     jaccard_feature_sets = {}
 
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
     for cfg in WELLS:
-        print(f"Exporting {cfg['display']}...")
+        print(f"Processing {cfg['display']}...")
         meta = process_well(cfg, dc30_df, mck_murta_df)
         pay = analyze_well(cfg, dc30_df, mck_murta_df)
         alias = cfg["alias"]
+
+        write_interpretation(
+            meta, os.path.join(OUTPUT_DIR, f"{alias}_McKinlay_Cuttings_Interpretation.md")
+        )
+        write_summary(meta, os.path.join(OUTPUT_DIR, f"{alias}_Process_Summary.md"))
 
         rows = build_enriched_intervals(meta["results"])
         rows.sort(key=lambda r: r["depth"])
