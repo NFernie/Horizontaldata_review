@@ -5,6 +5,7 @@ import type { ExclusionZone } from "@/types/zones";
 import { cn, formatNumber } from "@/lib/utils";
 
 const TRACK_WIDTH = 64;
+const ISOLATION_TRACK_WIDTH = TRACK_WIDTH * 0.5;
 const DEPTH_AXIS_WIDTH = 118;
 const HEADER_HEIGHT = 28;
 const FOOTER_HEIGHT = 8;
@@ -173,7 +174,10 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
     [domains],
   );
 
-  const totalWidth = DEPTH_AXIS_WIDTH + tracks.length * TRACK_WIDTH;
+  const totalWidth =
+    DEPTH_AXIS_WIDTH + tracks.length * TRACK_WIDTH + ISOLATION_TRACK_WIDTH;
+  const plotWidth = tracks.length * TRACK_WIDTH;
+  const isolationX = DEPTH_AXIS_WIDTH + plotWidth;
   const totalHeight = HEADER_HEIGHT + PLOT_HEIGHT + FOOTER_HEIGHT;
 
   const depthToY = (d: number) =>
@@ -236,24 +240,11 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
               key={`${z.entry}-${z.re_entry}`}
               x={DEPTH_AXIS_WIDTH}
               y={depthToY(z.entry)}
-              width={tracks.length * TRACK_WIDTH}
+              width={plotWidth}
               height={Math.max(1, depthToY(z.re_entry) - depthToY(z.entry))}
               fill="rgba(147,161,176,0.18)"
               stroke="rgba(147,161,176,0.35)"
               strokeWidth={0.5}
-            />
-          ))}
-          {isolationDepths.map((iso) => (
-            <rect
-              key={`iso-${iso.top_md}-${iso.bot_md}`}
-              x={DEPTH_AXIS_WIDTH}
-              y={depthToY(iso.top_md)}
-              width={tracks.length * TRACK_WIDTH}
-              height={Math.max(1, depthToY(iso.bot_md) - depthToY(iso.top_md))}
-              fill="rgba(52,211,153,0.12)"
-              stroke="rgba(52,211,153,0.45)"
-              strokeWidth={0.5}
-              strokeDasharray="4 3"
             />
           ))}
         </g>
@@ -431,10 +422,48 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
             </g>
           );
         })}
+
+        <g>
+          <rect
+            x={isolationX}
+            y={0}
+            width={ISOLATION_TRACK_WIDTH}
+            height={HEADER_HEIGHT}
+            fill="var(--surface-2)"
+          />
+          <text
+            x={isolationX + ISOLATION_TRACK_WIDTH / 2}
+            y={14}
+            textAnchor="middle"
+            fontSize={9}
+            fontWeight={600}
+            fill="var(--text)"
+          >
+            Iso
+          </text>
+          <line
+            x1={isolationX}
+            x2={isolationX}
+            y1={HEADER_HEIGHT}
+            y2={HEADER_HEIGHT + PLOT_HEIGHT}
+            stroke="var(--border)"
+          />
+          {isolationDepths.map((iso) => (
+            <rect
+              key={`iso-${iso.top_md}-${iso.bot_md}`}
+              x={isolationX + 1}
+              y={depthToY(iso.top_md)}
+              width={ISOLATION_TRACK_WIDTH - 2}
+              height={Math.max(1, depthToY(iso.bot_md) - depthToY(iso.top_md))}
+              fill="rgba(52,211,153,0.72)"
+              rx={1}
+            />
+          ))}
+        </g>
       </svg>
       <p className="border-t border-border px-3 py-2 text-xs text-text-muted">
         Depth axis: MD and TVDss on separate lines — hover the axis for exact values. Grey bands =
-        overburden exclusion; green dashed = mechanical isolation.
+        overburden exclusion; green Iso track (right of WRCI) = mechanical isolation.
       </p>
     </div>
   );

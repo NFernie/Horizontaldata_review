@@ -40,11 +40,11 @@ Text-derived components (hardness, cement, sorting, angularity) are omitted when
 
 | Flag | ID | Condition | WRCI term? |
 |------|-----|-----------|------------|
-| Low resistivity | `lowres` | `avg_RES_DEEP < 20` Ω·m **and** RQI ≥ 0.5 | severity |
-| Low fluorescence | `lowfluor` | `fluor < 75%` **and** RQI ≥ 0.5 | severity |
-| Low GR | `low_GR` | `avg_GR < 70` gAPI **and** RQI ≥ 0.5 | boolean only |
+| Low resistivity | `lowres` | `avg_RES_DEEP < 20` Ω·m **and** RQI ≥ 0.6 | severity |
+| Low fluorescence | `lowfluor` | `fluor < 75%` **and** RQI ≥ 0.6 | severity |
+| Low GR | `low_GR` | `avg_GR < 70` gAPI **and** RQI ≥ 0.6 | boolean only |
 | Zone of interest | `ZOI` | Along-wellbore deterioration (±3 neighbours; ≥2 metrics drop >15%) | independent |
-| OWC proximity | `owc_near` | Tier from `abs(mTVDss − OWC_field)` on good rock (RQI ≥ 0.5 or ZOI); poor rock always Low; &lt;4 m High, 4–6 m Elevated, &gt;6 m Low | severity |
+| OWC proximity | `owc_near` | Tier from `abs(mTVDss − OWC_field)` on good rock (RQI ≥ 0.6 or ZOI); poor rock always Low; &lt;4 m High, 4–5 m Elevated, &gt;5 m Low | severity |
 
 ZOI fires above pay cutoffs; intervals below fluor/res pay cutoffs use standard `lowres` / `lowfluor` flags instead.
 
@@ -64,7 +64,7 @@ WRCI = 100 × ( 0.40·RQI + 0.20·lowres_severity + 0.20·lowfluor_severity + 0.
 
 | Class | Rule |
 |-------|------|
-| **High** | WRCI ≥ 60 **and** (OWC High **or** ≥1 of `{lowres, lowfluor, low_GR}`) **or** (ZOI **and** WRCI ≥ 60) |
+| **High** | WRCI ≥ 60 **and** (OWC High **or** ≥1 of `{lowres, lowfluor, low_GR}`) **or** ≥2 red flags **or** (ZOI **and** WRCI ≥ 60); suppressed when RES_DEEP &gt; 30 Ω·m |
 | **Elevated** | WRCI 40–60 **or** 1 of `{lowres, lowfluor, low_GR}` **or** OWC Elevated **or** (ZOI **and** WRCI ≥ 40) |
 | **Low** | Otherwise |
 
@@ -176,7 +176,7 @@ Measure how similar two wells are in the **character of their flagged / geologic
 
 Each well is represented as a set of binary features that are “present” if they fire on ≥ **10%** of that well’s intervals:
 
-- `good_rock` (RQI ≥ 0.5)
+- `good_rock` (RQI ≥ 0.6)
 - `lowres_over_good`
 - `lowfluor_over_good`
 - `low_GR` (GR < 70 gAPI on good rock)

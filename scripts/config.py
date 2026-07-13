@@ -85,7 +85,7 @@ CEMENT_DEFAULT_STRENGTH_MULT = 1.0
 LOOSE_HARDNESS_SCORE = 0.7
 """Hardness lookup score >= this counts as loose_hardness for Jaccard (fri / lse tier)."""
 
-RQI_THRESHOLD = 0.5
+RQI_THRESHOLD = 0.6
 """Intervals with RQI >= this value are considered 'good rock' for red-flag logic."""
 
 PORO_SCORES = {
@@ -131,8 +131,8 @@ ZOI_RQI_NEIGHBOUR_TOLERANCE = 0.9
 # ---------------------------------------------------------------------------
 # OWC proximity — updated-plan §5.2
 # ---------------------------------------------------------------------------
-OWC_BANDS_GOOD = {"high_lt": 4.0, "elevated_lt": 6.0}
-"""Distance bands (m) for RQI >= RQI_THRESHOLD or ZOI intervals: <4 High, 4–6 Elevated, >6 Low."""
+OWC_BANDS_GOOD = {"high_lt": 4.0, "elevated_lt": 5.0}
+"""Distance bands (m) for RQI >= RQI_THRESHOLD or ZOI intervals: <4 High, 4–5 Elevated, >5 Low."""
 
 OWC_BANDS_POOR = {"high_lt": 2.0, "elevated_lt": 4.0}
 """Legacy poor-rock bands — unused; poor rock always returns OWC tier Low."""
@@ -163,6 +163,9 @@ WRCI_ELEVATED_THRESHOLD = 40.0
 
 WRCI_HIGH_MIN_FLAGS = 1
 """Minimum count of {lowres, lowfluor, low_GR} booleans for High risk when WRCI >= WRCI_HIGH_THRESHOLD."""
+
+WRCI_HIGH_MULTI_FLAGS = 2
+"""≥ this many red flags → High water risk regardless of WRCI (suppressed when RES_DEEP > OWC_RES_SUPPRESS)."""
 
 LOWRES_SEVERITY_REF = RES_DEEP_CUTOFF
 """Reference RES_DEEP (ohm.m) for low-resistivity severity: clamp((ref − RES)/ref, 0, 1)."""

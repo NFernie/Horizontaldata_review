@@ -12,11 +12,11 @@ from owc import apply_owc_res_suppress, owc_proximity_tier
 class TestOwcProximity(unittest.TestCase):
     def test_good_rock_bands(self):
         self.assertEqual(owc_proximity_tier(3.9, 0.65, False), "High")
-        self.assertEqual(owc_proximity_tier(5.0, 0.65, False), "Elevated")
-        self.assertEqual(owc_proximity_tier(6.5, 0.65, False), "Low")
+        self.assertEqual(owc_proximity_tier(4.5, 0.65, False), "Elevated")
+        self.assertEqual(owc_proximity_tier(5.5, 0.65, False), "Low")
 
     def test_good_rock_at_rqi_threshold(self):
-        self.assertEqual(owc_proximity_tier(3.0, 0.5, False), "High")
+        self.assertEqual(owc_proximity_tier(3.0, 0.6, False), "High")
 
     def test_poor_rock_no_owc_flags(self):
         self.assertEqual(owc_proximity_tier(1.9, 0.4, False), "Low")

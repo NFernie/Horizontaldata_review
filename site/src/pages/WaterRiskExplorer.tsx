@@ -228,27 +228,34 @@ export function WaterRiskExplorer() {
     () => new Set(activeWells.map((w) => w.alias)),
     [activeWells],
   );
-  const defaultLeft = activeWells[0]?.alias ?? "JENA31";
-  const defaultRight = activeWells.find((w) => w.alias !== defaultLeft)?.alias ?? "JENA31DW1";
 
-  const [leftAlias, setLeftAlias] = useState(() =>
-    resolveAlias(readStoredWaterRiskLeft(readStoredWell(defaultLeft)), activeAliasSet, defaultLeft),
-  );
-  const [rightAlias, setRightAlias] = useState(() =>
-    resolveAlias(readStoredWaterRiskRight(defaultRight), activeAliasSet, defaultRight),
-  );
+  const [leftAlias, setLeftAlias] = useState("");
+  const [rightAlias, setRightAlias] = useState("");
   const [cache, setCache] = useState<Record<string, WaterRiskPayload>>({});
   const [loadingAliases, setLoadingAliases] = useState<Set<string>>(new Set());
   const [error, setError] = useState<string | null>(null);
   const cacheRef = useRef(cache);
-  const inFlightRef = useRef<Set<string>>(new Set());
   cacheRef.current = cache;
 
   useEffect(() => {
     if (!activeWells.length) return;
-    setLeftAlias((prev) => resolveAlias(prev, activeAliasSet, defaultLeft));
-    setRightAlias((prev) => resolveAlias(prev, activeAliasSet, defaultRight));
-  }, [activeWells, activeAliasSet, defaultLeft, defaultRight]);
+    const defaultLeft = activeWells[0]?.alias ?? "JENA31";
+    const defaultRight =
+      activeWells.find((w) => w.alias !== defaultLeft)?.alias ?? defaultLeft;
+    const storedLeft = readStoredWaterRiskLeft(readStoredWell(defaultLeft));
+    const storedRight = readStoredWaterRiskRight(defaultRight);
+
+    setLeftAlias((prev) =>
+      prev && activeAliasSet.has(prev)
+        ? prev
+        : resolveAlias(storedLeft, activeAliasSet, defaultLeft),
+    );
+    setRightAlias((prev) =>
+      prev && activeAliasSet.has(prev)
+        ? prev
+        : resolveAlias(storedRight, activeAliasSet, defaultRight),
+    );
+  }, [activeWells, activeAliasSet]);
 
   const handleLeftChange = useCallback((alias: string) => {
     setLeftAlias(alias);
@@ -262,45 +269,43 @@ export function WaterRiskExplorer() {
   }, []);
 
   useEffect(() => {
-    if (!activeWells.length) return;
+    if (!leftAlias || !rightAlias) return;
 
     const aliases = [...new Set([leftAlias, rightAlias])];
-    let active = true;
+    let cancelled = false;
 
-    aliases.forEach((alias) => {
-      if (cacheRef.current[alias] || inFlightRef.current.has(alias)) return;
+    for (const alias of aliases) {
+      if (cacheRef.current[alias]) continue;
 
-      inFlightRef.current.add(alias);
       setLoadingAliases((prev) => new Set(prev).add(alias));
 
       fetchJson<WaterRiskPayload>(`data/water_risk/${alias}.json`)
         .then((payload) => {
-          if (!active) return;
-          cacheRef.current = { ...cacheRef.current, [alias]: payload };
+          if (cancelled) return;
           setCache((prev) => ({ ...prev, [alias]: payload }));
           setError(null);
         })
         .catch((err: Error) => {
-          if (!active) return;
+          if (cancelled) return;
           setError(`${alias}: ${err.message}`);
         })
         .finally(() => {
-          inFlightRef.current.delete(alias);
-          if (!active) return;
           setLoadingAliases((prev) => {
             const next = new Set(prev);
             next.delete(alias);
             return next;
           });
         });
-    });
+    }
 
     return () => {
-      active = false;
+      cancelled = true;
     };
-  }, [activeWells, leftAlias, rightAlias]);
+  }, [leftAlias, rightAlias]);
 
-  if (wellsLoading) return <p className="text-text-muted">Loading wells…</p>;
+  if (wellsLoading || !leftAlias || !rightAlias) {
+    return <p className="text-text-muted">Loading wells…</p>;
+  }
 
   if (wellsError) {
     return (

@@ -683,10 +683,8 @@
         "fluor": 90.0,
         "RQI": 0.5078774752663973,
         "WRCI": 22.83,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres"
-        ],
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 1800m: 10% Siltstone. 90% very fine Sandstone. 90% mod bri FLUOR in SST, TG 104U"
       },
       "detail_markdown": "### 1800 m MD — Interval 1797.5 – 1802.5 m\n\n**Sample Description (spreadsheet):** Sample 1800m: 10% Siltstone. 90% very fine Sandstone. 90% mod bri FLUOR in SST, TG 104U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | very fine (max: nan) |\n| Grain Ordinal | 1 |\n| Porosity Class | fr-gd |\n| Hardness | mod hd (0.30) |\n| Sorting | mod wl (0.60) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.80) |\n| Fluorescence | 90.0% nan |\n| Total Gas | 104.0 U |\n| mTVDss | -1194.72 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~1790m: clr-trnsl,pl trnsl brn,vf-f,rr med-crs,mod srt,sbang- sbrnd,wk sil cmt,mnr pl gry arg mtx,com lse,fr inf por,pr vis por, fluor.\n- **SANDSTONE** @ ~1790m: clr-trnsl,pl trnsl brn,vf-f,rr med,mod srt,sbang- 82 / 5 / 3 / 4 / 6 114 U sbrnd,wk sil cmt,mnr pl gry arg mtx,fri aggs,com lse,fr inf por,\n- _(3 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 96.5 | 33 |\n| RES_DEEP (ohm.m) | 19.48 | 33 |\n| RES_SHALLOW (ohm.m) | 16.60 | 33 |",
@@ -1707,10 +1705,8 @@
         "fluor": 100.0,
         "RQI": 0.5678742717335074,
         "WRCI": 22.81,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres"
-        ],
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2025m: 20% Siltstone, 80% very fine to fine, mnr medium Sandstone. 100% bri FLUOR in SST, TG 200U"
       },
       "detail_markdown": "### 2025 m MD — Interval 2022.5 – 2027.5 m\n\n**Sample Description (spreadsheet):** Sample 2025m: 20% Siltstone, 80% very fine to fine, mnr medium Sandstone. 100% bri FLUOR in SST, TG 200U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80.0 |\n| Grain Size | very fine to fine, mnr medium (max: nan) |\n| Grain Ordinal | 3 |\n| Porosity Class | fr-gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 200.0 U |\n| mTVDss | -1195.14 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2020m: med dk gry-dk gry,aren, com vf sndy lams,tr carb spks,tr- loc com micmic,sbblky-sbfiss. SURVEY @ 2025.0m INC: 89.90° AZI: 85.91°G\n- **SANDSTONE** @ ~2020m: v pl brn,lt brnsh gry,clr- trnsl,vf-med,tr crs,tr slty lams,mod-pr 0 0.5 1 4 14 2030 1 10 100 1K srt,sbang-sbrnd,mod-wk sil cmt,mnr 14 18 28 1K 10K gry-brn arg mtx,fri,mnr mod hd,com disagg grs,pr-fr vis por,fr-gd inf por,fluor.\n- _(7 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 82.1 | 33 |\n| RES_DEEP (ohm.m) | 19.91 | 33 |\n| RES_SHALLOW (ohm.m) | 19.14 | 33 |",
@@ -1782,10 +1778,8 @@
         "fluor": 100.0,
         "RQI": 0.5680253462119651,
         "WRCI": 22.87,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres"
-        ],
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2040m: 5% Siltstone, 95% very fine to medium Sandstone. 100% bri FLUOR in SST, TG 167U"
       },
       "detail_markdown": "### 2040 m MD — Interval 2037.5 – 2042.5 m\n\n**Sample Description (spreadsheet):** Sample 2040m: 5% Siltstone, 95% very fine to medium Sandstone. 100% bri FLUOR in SST, TG 167U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to medium (max: nan) |\n| Grain Ordinal | 3 |\n| Porosity Class | fr-gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 167.0 U |\n| mTVDss | -1195.53 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2040m: clr-trnsl,v pl brn,lt brnsh gry,vf-med,rr crs-v crs,tr-loc com slty lams,pr srt,sbang-sbrnd,wk-mod sil cmt, mnr-loc com brn-gry arg mtx,tr micmic, disagg,fri-mod hd aggs,fr-gd inf por,pr\n- **SANDSTONE** @ ~2040m: clr-trnsl,v lt brn,lt brnsh gry,f-med,rr crs-v crs,pr srt,tr-loc com slty lams,sbang-sbrnd,wk-mod sil cmt, mnr loc com brn-gry arg mtx,disagg, fri-mod hd aggs,fr-gd inf por,pr vis por,\n- _(4 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 100.8 | 33 |\n| RES_DEEP (ohm.m) | 19.85 | 33 |\n| RES_SHALLOW (ohm.m) | 20.24 | 33 |",
@@ -2014,10 +2008,8 @@
         "fluor": 95.0,
         "RQI": 0.53843162310318,
         "WRCI": 23.42,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres"
-        ],
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2090m: 5% Siltstone, 95% very fine to fine Sandstone, 95% bri-dull FLUOR in SST, TG 191U"
       },
       "detail_markdown": "### 2090 m MD — Interval 2087.5 – 2092.5 m\n\n**Sample Description (spreadsheet):** Sample 2090m: 5% Siltstone, 95% very fine to fine Sandstone, 95% bri-dull FLUOR in SST, TG 191U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine (max: nan) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 95.0% nan |\n| Total Gas | 191.0 U |\n| mTVDss | -1196.82 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2080m: lt brnsh gry,clr,trnsl,vf-f, g/t aren SLTST i/p,tr slty lams,wl srt, sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,mnr disagg f qtz grs,v pr vis por,fr inf por\n- **SANDSTONE** @ ~2090m: lt brnsh gry,lt gry,clr,trnsl, vf-f,g/t aren SLTST i/p,tr slty lams,wl srt,sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,mnr disagg f qtz grs,v pr vis por,fr inf por,\n- _(7 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 91.8 | 33 |\n| RES_DEEP (ohm.m) | 19.11 | 33 |\n| RES_SHALLOW (ohm.m) | 17.60 | 33 |",
@@ -2039,10 +2031,8 @@
         "fluor": 100.0,
         "RQI": 0.5298490914398867,
         "WRCI": 23.22,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres"
-        ],
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2095m: 5% Siltstone, 95% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 190U"
       },
       "detail_markdown": "### 2095 m MD — Interval 2092.5 – 2097.5 m\n\n**Sample Description (spreadsheet):** Sample 2095m: 5% Siltstone, 95% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 190U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine (max: nan) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 190.0 U |\n| mTVDss | -1196.92 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2080m: lt brnsh gry,clr,trnsl,vf-f, g/t aren SLTST i/p,tr slty lams,wl srt, sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,mnr disagg f qtz grs,v pr vis por,fr inf por\n- **SANDSTONE** @ ~2090m: lt brnsh gry,lt gry,clr,trnsl, vf-f,g/t aren SLTST i/p,tr slty lams,wl srt,sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,mnr disagg f qtz grs,v pr vis por,fr inf por,\n- _(7 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 93.8 | 33 |\n| RES_DEEP (ohm.m) | 17.98 | 33 |\n| RES_SHALLOW (ohm.m) | 16.87 | 33 |",
@@ -2063,12 +2053,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5312591998144814,
-        "WRCI": 32.6,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 22.6,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2100m: 5% Siltstone, 95% very fine to fine Sandstone, 100% mod bri-dull FLUOR in SST, TG 182U"
       },
       "detail_markdown": "### 2100 m MD — Interval 2097.5 – 2102.5 m\n\n**Sample Description (spreadsheet):** Sample 2100m: 5% Siltstone, 95% very fine to fine Sandstone, 100% mod bri-dull FLUOR in SST, TG 182U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine (max: nan) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 182.0 U |\n| mTVDss | -1197.02 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2090m: lt brnsh gry,lt gry,clr,trnsl, vf-f,g/t aren SLTST i/p,tr slty lams,wl srt,sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,mnr disagg f qtz grs,v pr vis por,fr inf por,\n- **SANDSTONE** @ ~2090m: lt brnsh gry,lt gry,vf,g/t aren SLTST i/p,mnr slty lams,wl srt, sbang-sbrnd,mod sil cmt,com-loc abdt gry-brn slty mtx,fri-mod hd,v pr\n- _(6 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 93.5 | 32 |\n| RES_DEEP (ohm.m) | 18.65 | 32 |\n| RES_SHALLOW (ohm.m) | 17.66 | 32 |",
@@ -2158,12 +2145,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5153497524418781,
-        "WRCI": 32.68,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 22.68,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2120m: Trace Siltstone, 100% very fine to fine Sandstone, 100% mod bri to dull FLUOR in SST, TG 184U"
       },
       "detail_markdown": "### 2120 m MD — Interval 2117.5 – 2122.5 m\n\n**Sample Description (spreadsheet):** Sample 2120m: Trace Siltstone, 100% very fine to fine Sandstone, 100% mod bri to dull FLUOR in SST, TG 184U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | very fine to fine (max: nan) |\n| Grain Ordinal | 2 |\n| Porosity Class | none |\n| Fluorescence | 100.0% Siltstone, 100% very fine to fine Sandstone, 100% mod bri to dull |\n| Total Gas | 184.0 U |\n| mTVDss | -1197.37 m |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.2 | 33 |\n| RES_DEEP (ohm.m) | 17.93 | 33 |\n| RES_SHALLOW (ohm.m) | 16.35 | 33 |",
@@ -2184,11 +2168,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6708924642293849,
-        "WRCI": 39.3,
+        "WRCI": 29.3,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2125m: Trace Siltstone, 100% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 181U"
       },
@@ -2210,11 +2193,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6389932528397576,
-        "WRCI": 38.0,
+        "WRCI": 28.0,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2130m: 5% Siltstone, 95% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 177U"
       },
@@ -2236,11 +2218,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6581122478536489,
-        "WRCI": 37.84,
+        "WRCI": 27.84,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2135m: 100% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 126U"
       },
@@ -2262,11 +2243,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6528554120777349,
-        "WRCI": 37.69,
+        "WRCI": 27.69,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2140m: 100% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 144U"
       },
@@ -2288,11 +2268,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6041338392953813,
-        "WRCI": 35.88,
+        "WRCI": 25.88,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2145m: 100% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 140U"
       },
@@ -2314,12 +2293,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5864777930403143,
-        "WRCI": 34.75,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 24.75,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2150m: trace Siltstone100% very fine Sandstone, 100% mod bri FLUOR in SST, TG 94U"
       },
       "detail_markdown": "### 2150 m MD — Interval 2147.5 – 2152.5 m\n\n**Sample Description (spreadsheet):** Sample 2150m: trace Siltstone100% very fine Sandstone, 100% mod bri FLUOR in SST, TG 94U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | very fine (max: nan) |\n| Grain Ordinal | 1 |\n| Porosity Class | gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.68) |\n| Fluorescence | 100.0% Siltstone100% very fine Sandstone, 100% mod bri |\n| Total Gas | 94.0 U |\n| mTVDss | -1197.55 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2140m: pl brn,pl gry,vf,v wl srt,sbang-sbrnd,mod wk sil cmt,abdt pl gry slty/arg mtx,tr carb spks,tr slty lams,fri-mod hd, pr vis por,fluor.\n- **SANDSTONE** @ ~2140m: 1475-1885psi SANDSTONE:pl brn,pl gry,clr-trnsl, FLW: 241-271gpm vf-f,v wl srt,sbng-sbrnd,mod wk sil cmt,com pl gry-off wh arg mtx,tr carb spks,tr slty lams,mnr-occ lse qtz grs, fri-mod hd aggs,gd inf por,pr vis por,\n- _(3 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 93.8 | 33 |\n| RES_DEEP (ohm.m) | 18.70 | 33 |\n| RES_SHALLOW (ohm.m) | 17.31 | 33 |",
@@ -2340,11 +2316,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5497578360517056,
-        "WRCI": 31.99,
-        "risk_class": "Elevated",
-        "flags": [
-          "owc_elevated"
-        ],
+        "WRCI": 21.99,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2155m: 5% Siltstone. 95% very fine Sandstone, 100% mod bri FLUOR in SST, TG 115U"
       },
       "detail_markdown": "### 2155 m MD — Interval 2152.5 – 2157.5 m\n\n**Sample Description (spreadsheet):** Sample 2155m: 5% Siltstone. 95% very fine Sandstone, 100% mod bri FLUOR in SST, TG 115U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine (max: nan) |\n| Grain Ordinal | 1 |\n| Porosity Class | gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 115.0 U |\n| mTVDss | -1197.58 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2140m: pl brn,pl gry,vf,v wl srt,sbang-sbrnd,mod wk sil cmt,abdt pl gry slty/arg mtx,tr carb spks,tr slty lams,fri-mod hd, pr vis por,fluor.\n- **SANDSTONE** @ ~2140m: 1475-1885psi SANDSTONE:pl brn,pl gry,clr-trnsl, FLW: 241-271gpm vf-f,v wl srt,sbng-sbrnd,mod wk sil cmt,com pl gry-off wh arg mtx,tr carb spks,tr slty lams,mnr-occ lse qtz grs, fri-mod hd aggs,gd inf por,pr vis por,\n- _(3 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 96.2 | 32 |\n| RES_DEEP (ohm.m) | 20.34 | 32 |\n| RES_SHALLOW (ohm.m) | 18.71 | 32 |",
@@ -2365,11 +2339,9 @@
         "loose_hardness": false,
         "fluor": 90.0,
         "RQI": 0.598728644269345,
-        "WRCI": 35.95,
-        "risk_class": "Elevated",
-        "flags": [
-          "owc_elevated"
-        ],
+        "WRCI": 25.95,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2160m: trace Siltstone. 100% very fine Sandstone, 90% mod bri to pale FLUOR in SST, TG 156U"
       },
       "detail_markdown": "### 2160 m MD — Interval 2157.5 – 2162.5 m\n\n**Sample Description (spreadsheet):** Sample 2160m: trace Siltstone. 100% very fine Sandstone, 90% mod bri to pale FLUOR in SST, TG 156U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | very fine (max: nan) |\n| Grain Ordinal | 1 |\n| Porosity Class | gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | wl (0.80) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 90.0% Siltstone. 100% very fine Sandstone, 90% mod bri to pale |\n| Total Gas | 156.0 U |\n| mTVDss | -1197.61 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2160m: pl brn,pl gry,clr-trnsl,vf- f,mnr crs,wl srt,sbng-sbrnd,mod wk sil 2170 cmt,com pl gry-off wh arg mtx,tr carb spks,rr tr slty lams,occ lse qtz grs, occ qtz ovgths,fri-mod hd aggs,gd\n- **SANDSTONE** @ ~2160m: clr-trnsl,pl brn gry,vf-f, mnr crs,sbang-sbrnd,mod sil cmt,com pl gry-off wharg mtx,mnr carb spks,mnr slty lams,mnr qtz ovgths,fri-mod hd, occ lse qtz grs,gd inf por,pr vis por,\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 87.0 | 33 |\n| RES_DEEP (ohm.m) | 20.59 | 33 |\n| RES_SHALLOW (ohm.m) | 18.96 | 33 |",
@@ -2390,11 +2362,10 @@
         "loose_hardness": false,
         "fluor": 90.0,
         "RQI": 0.62997665974052,
-        "WRCI": 38.11,
+        "WRCI": 28.11,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2165m: 100% very fine to fine Sandstone, 90% bri FLUOR in SST, TG 137U"
       },
@@ -2416,11 +2387,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7326529417018626,
-        "WRCI": 41.77,
+        "WRCI": 31.77,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2170m: 100% very fine to fine, minor coarse Sandstone, 100% bri FLUOR in SST, TG 104U"
       },
@@ -2442,11 +2412,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7061453920218874,
-        "WRCI": 41.23,
+        "WRCI": 31.23,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2175m: 100% very fine to fine, mnr coarse Sandstone, 100% bri FLUOR in SST, TG 108U"
       },
@@ -2468,11 +2437,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6144602561800238,
-        "WRCI": 37.1,
+        "WRCI": 27.1,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2180m: 5% siltstone. 95% very fine to fine, mnr coarse Sandstone, 100% bri FLUOR in SST, TG 76U"
       },
@@ -2494,12 +2462,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5898021667761666,
-        "WRCI": 35.27,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 25.27,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2185m: 5% siltstone. 95% very fine to fine, occasional medium to coarse Sandstone, 100% bri FLUOR in SST, TG 140U"
       },
       "detail_markdown": "### 2185 m MD — Interval 2182.5 – 2187.5 m\n\n**Sample Description (spreadsheet):** Sample 2185m: 5% siltstone. 95% very fine to fine, occasional medium to coarse Sandstone, 100% bri FLUOR in SST, TG 140U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine, occasional medium to coarse (max: nan) |\n| Grain Ordinal | 4 |\n| Porosity Class | gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | mod wl (0.60) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 140.0 U |\n| mTVDss | -1197.68 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2180m: clr-trnsl,pl brn gry,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,occ pl gry arg mtx,occ- com qtz ovgths,abdt lse qtz grs,mod hd aggs,gd inf por,pr vis por,fluor.\n- **SANDSTONE** @ ~2180m: clr-trnsl,f-med,occ crs, 2190 mod srt,sbang-sbrnd,mod sil cmt,occ pl gry-off wh arg mtx,occ qtz ovgths, abdt lse cln qtz grs,mod hd-fri aggs, gd inf por,fr vis por,fluor.\n- _(4 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 104.1 | 33 |\n| RES_DEEP (ohm.m) | 18.32 | 33 |\n| RES_SHALLOW (ohm.m) | 16.85 | 33 |",
@@ -2520,12 +2485,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5917819885136328,
-        "WRCI": 35.51,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 25.51,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2190m: 10% siltstone. 90% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 195U"
       },
       "detail_markdown": "### 2190 m MD — Interval 2187.5 – 2192.5 m\n\n**Sample Description (spreadsheet):** Sample 2190m: 10% siltstone. 90% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 195U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | very fine to fine, occasional medium to coarse (max: nan) |\n| Grain Ordinal | 4 |\n| Porosity Class | gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | mod wl (0.60) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 195.0 U |\n| mTVDss | -1197.68 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2180m: clr-trnsl,pl brn gry,vf-f, occ med-crs,mod wl srt,sbang-sbrnd, mod sil cmt,occ pl gry arg mtx,occ- com qtz ovgths,abdt lse qtz grs,mod hd aggs,gd inf por,pr vis por,fluor.\n- **SANDSTONE** @ ~2180m: clr-trnsl,f-med,occ crs, 2190 mod srt,sbang-sbrnd,mod sil cmt,occ pl gry-off wh arg mtx,occ qtz ovgths, abdt lse cln qtz grs,mod hd-fri aggs, gd inf por,fr vis por,fluor.\n- _(4 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 97.3 | 33 |\n| RES_DEEP (ohm.m) | 18.16 | 33 |\n| RES_SHALLOW (ohm.m) | 15.80 | 33 |",
@@ -2546,11 +2508,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6252571220785945,
-        "WRCI": 36.32,
+        "WRCI": 26.32,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2195m: 100% fine to medium, occasional coarse sandstone. 100% bright FLUOR in SST. TG 242U"
       },
@@ -2572,11 +2533,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7579579030823245,
-        "WRCI": 42.85,
+        "WRCI": 32.85,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2200m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 240U"
       },
@@ -2598,11 +2558,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.78010289412185,
-        "WRCI": 42.81,
+        "WRCI": 32.81,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2205m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 230U"
       },
@@ -2624,11 +2583,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7608735788416887,
-        "WRCI": 43.28,
+        "WRCI": 33.28,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2210m: 5% siltstone. 95% very fine to fine, minor medium to coarse sandstone. 100% bright FLUOR in SST. TG 200U"
       },
@@ -2650,11 +2608,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7815700052449438,
-        "WRCI": 43.79,
+        "WRCI": 33.79,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2215m: 5% siltstone. 95% very fine to fine, common medium to coarse sandstone. 100% bright FLUOR in SST. TG 156U"
       },
@@ -2676,11 +2633,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7886644351990738,
-        "WRCI": 44.28,
+        "WRCI": 34.28,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2220m: 100% very fine to fine, common medium to coarse sandstone. 100% bright FLUOR in SST. TG 217U"
       },
@@ -2702,11 +2658,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7845520272650089,
-        "WRCI": 44.15,
+        "WRCI": 34.15,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2225m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 170U"
       },
@@ -2728,11 +2683,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.8058715543559332,
-        "WRCI": 45.88,
+        "WRCI": 35.88,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2230m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 270U"
       },
@@ -2754,11 +2708,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7956288740447915,
-        "WRCI": 44.15,
+        "WRCI": 34.15,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2235m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 270U"
       },
@@ -2780,11 +2733,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.696322802691743,
-        "WRCI": 39.34,
+        "WRCI": 29.34,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2240m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 282U"
       },
@@ -2806,12 +2758,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5691686865097328,
-        "WRCI": 34.75,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 24.75,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2245m: 10% siltstone. 90% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 258U"
       },
       "detail_markdown": "### 2245 m MD — Interval 2242.5 – 2247.5 m\n\n**Sample Description (spreadsheet):** Sample 2245m: 10% siltstone. 90% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 258U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | very fine to fine, occasional medium to coarse (max: nan) |\n| Grain Ordinal | 4 |\n| Porosity Class | none |\n| Fluorescence | 100.0% nan |\n| Total Gas | 258.0 U |\n| mTVDss | -1197.97 m |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 90.1 | 33 |\n| RES_DEEP (ohm.m) | 18.02 | 33 |\n| RES_SHALLOW (ohm.m) | 18.93 | 33 |",
@@ -2832,12 +2781,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5429069071650153,
-        "WRCI": 34.92,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 24.92,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2250m: 10% siltstone. 90% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 230U"
       },
       "detail_markdown": "### 2250 m MD — Interval 2247.5 – 2252.5 m\n\n**Sample Description (spreadsheet):** Sample 2250m: 10% siltstone. 90% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 230U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | very fine to fine, occasional medium to coarse (max: nan) |\n| Grain Ordinal | 4 |\n| Porosity Class | none |\n| Fluorescence | 100.0% nan |\n| Total Gas | 230.0 U |\n| mTVDss | -1197.97 m |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.1 | 33 |\n| RES_DEEP (ohm.m) | 16.80 | 33 |\n| RES_SHALLOW (ohm.m) | 17.34 | 33 |",
@@ -2858,12 +2804,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5708978491084252,
-        "WRCI": 36.12,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 26.12,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2255m: 10% siltstone. 90% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 200U"
       },
       "detail_markdown": "### 2255 m MD — Interval 2252.5 – 2257.5 m\n\n**Sample Description (spreadsheet):** Sample 2255m: 10% siltstone. 90% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 200U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 90.0 |\n| Grain Size | very fine to fine, occasional medium to coarse (max: nan) |\n| Grain Ordinal | 4 |\n| Porosity Class | none |\n| Fluorescence | 100.0% nan |\n| Total Gas | 200.0 U |\n| mTVDss | -1197.96 m |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 89.8 | 32 |\n| RES_DEEP (ohm.m) | 16.72 | 32 |\n| RES_SHALLOW (ohm.m) | 16.77 | 32 |",
@@ -2884,11 +2827,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6497495305072513,
-        "WRCI": 38.79,
+        "WRCI": 28.79,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2260m: 5% siltstone. 95% fine to medium, occasional coarse sandstone. 100% bright FLUOR in SST. TG 260U"
       },
@@ -2910,11 +2852,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7635830136935217,
-        "WRCI": 43.03,
+        "WRCI": 33.03,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2265m: 5% siltstone. 95% fine to medium, occasional coarse sandstone. 100% bright FLUOR in SST. TG 220U"
       },
@@ -2936,11 +2877,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.8052311731291681,
-        "WRCI": 44.33,
+        "WRCI": 34.33,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2270m: 100% fine to medium, occasional coarse sandstone. 100% bright FLUOR in SST. TG 265U"
       },
@@ -2962,11 +2902,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7698288303549702,
-        "WRCI": 42.02,
+        "WRCI": 32.02,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2275m: 100% very fine to fine, occasional medium sandstone. 100% bright FLUOR in SST. TG 273U"
       },
@@ -2988,11 +2927,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7743435995089925,
-        "WRCI": 42.32,
+        "WRCI": 32.32,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2280m: 100% very fine to fine, occasional medium sandstone. 100% bright FLUOR in SST. TG 281U"
       },
@@ -3014,11 +2952,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.732670617280319,
-        "WRCI": 40.81,
+        "WRCI": 30.81,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2285m: 100% very fine to fine, sandstone. 100% bright FLUOR in SST. TG 235U"
       },
@@ -3040,11 +2977,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7221338577505156,
-        "WRCI": 39.94,
+        "WRCI": 29.94,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2290m: 100% very fine to fine, sandstone. 100% bright FLUOR in SST. TG 258U"
       },
@@ -3066,11 +3002,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.664331962048243,
-        "WRCI": 37.4,
+        "WRCI": 27.4,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2295m: 5% siltstone, 95% very fine to fine, sandstone. 100% bright FLUOR in SST. TG 247U"
       },
@@ -3092,11 +3027,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6837574776717746,
-        "WRCI": 38.55,
+        "WRCI": 28.55,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2300m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 253U"
       },
@@ -3118,11 +3052,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6821482318094776,
-        "WRCI": 37.47,
+        "WRCI": 27.47,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2305m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 235U"
       },
@@ -3144,11 +3077,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7066177190042516,
-        "WRCI": 38.26,
-        "risk_class": "Elevated",
-        "flags": [
-          "owc_elevated"
-        ],
+        "WRCI": 28.26,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2310m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 273U"
       },
       "detail_markdown": "### 2310 m MD — Interval 2307.5 – 2312.5 m\n\n**Sample Description (spreadsheet):** Sample 2310m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 273U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine, occasional medium to coarse (max: nan) |\n| Grain Ordinal | 4 |\n| Porosity Class | gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 273.0 U |\n| mTVDss | -1197.60 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2300m: clr-trnsl,vf-f,mnr-occ med-crs,sbang-sbrnd,mod sil cmt,mnr pl gry arg mtx,mod hd aggs,pred lse cln qtz grs,gd inf por,fr vis por,fluor.\n- **SILTSTONE** @ ~2310m: med dk gry,dk gry,aren, occ sndy lams,tr carb spks,sft-frm sbblky-blky. 63 / 6 / 5 / 10 / 16 286 U\n- _(8 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 83.9 | 32 |\n| RES_DEEP (ohm.m) | 20.11 | 32 |\n| RES_SHALLOW (ohm.m) | 19.65 | 32 |",
@@ -3169,11 +3100,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6759795490385637,
-        "WRCI": 38.12,
+        "WRCI": 28.12,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2315m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 250U"
       },
@@ -3195,11 +3125,10 @@
         "loose_hardness": false,
         "fluor": 90.0,
         "RQI": 0.6248685326157897,
-        "WRCI": 37.45,
+        "WRCI": 27.45,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2320m: 100% very fine to fine, occasional medium to coarse sandstone. 90% bright FLUOR in SST. TG 253U"
       },
@@ -3221,11 +3150,9 @@
         "loose_hardness": false,
         "fluor": 75.0,
         "RQI": 0.5884950669300675,
-        "WRCI": 38.54,
-        "risk_class": "Elevated",
-        "flags": [
-          "owc_elevated"
-        ],
+        "WRCI": 28.54,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2325m: 5% siltstone 95% very fine to fine, occasional medium to coarse sandstone. 75% bright FLUOR in SST. TG 240U"
       },
       "detail_markdown": "### 2325 m MD — Interval 2322.5 – 2327.5 m\n\n**Sample Description (spreadsheet):** Sample 2325m: 5% siltstone 95% very fine to fine, occasional medium to coarse sandstone. 75% bright FLUOR in SST. TG 240U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine, occasional medium to coarse (max: nan) |\n| Grain Ordinal | 4 |\n| Porosity Class | fr |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 75.0% nan |\n| Total Gas | 240.0 U |\n| mTVDss | -1197.38 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~2310m: med dk gry,dk gry,aren, occ sndy lams,tr carb spks,sft-frm sbblky-blky. 63 / 6 / 5 / 10 / 16 286 U\n- **SANDSTONE** @ ~2310m: pl gry brn,clr-trnsl,vf-f, tr med,v wl srt,sbang-sbrnd,mod sil cmt,mnrpl gry arg mtx,mod hd aggs, mnr lse,cln qtz grs,fr inf por,pr vis por,fluor.\n- _(7 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 96.5 | 33 |\n| RES_DEEP (ohm.m) | 21.60 | 33 |\n| RES_SHALLOW (ohm.m) | 19.25 | 33 |",
@@ -3269,11 +3196,9 @@
         "loose_hardness": false,
         "fluor": 80.0,
         "RQI": 0.516323012535342,
-        "WRCI": 34.65,
-        "risk_class": "Elevated",
-        "flags": [
-          "owc_elevated"
-        ],
+        "WRCI": 24.65,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2335m: 5% siltstone, 95% very fine to fine, trace medium sandstone. 80% mod bright to bright FLUOR in SST. TG 270U"
       },
       "detail_markdown": "### 2335 m MD — Interval 2332.5 – 2337.5 m\n\n**Sample Description (spreadsheet):** Sample 2335m: 5% siltstone, 95% very fine to fine, trace medium sandstone. 80% mod bright to bright FLUOR in SST. TG 270U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine, trace medium (max: nan) |\n| Grain Ordinal | 3 |\n| Porosity Class | none |\n| Fluorescence | 80.0% medium sandstone. 80% mod bright to bright |\n| Total Gas | 270.0 U |\n| mTVDss | -1197.23 m |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 96.1 | 32 |\n| RES_DEEP (ohm.m) | 24.77 | 32 |\n| RES_SHALLOW (ohm.m) | 22.99 | 32 |",
@@ -3317,11 +3242,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5283774705337616,
-        "WRCI": 31.14,
-        "risk_class": "Elevated",
-        "flags": [
-          "owc_elevated"
-        ],
+        "WRCI": 21.14,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2345m: 5% siltstone, 95% very fine to fine, trace medium sandstone. 100% mod bright to bright FLUOR in SST. TG 270U"
       },
       "detail_markdown": "### 2345 m MD — Interval 2342.5 – 2347.5 m\n\n**Sample Description (spreadsheet):** Sample 2345m: 5% siltstone, 95% very fine to fine, trace medium sandstone. 100% mod bright to bright FLUOR in SST. TG 270U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine, trace medium (max: nan) |\n| Grain Ordinal | 3 |\n| Porosity Class | none |\n| Fluorescence | 100.0% medium sandstone. 100% mod bright to bright |\n| Total Gas | 270.0 U |\n| mTVDss | -1197.05 m |\n\n**Mudlog Cuttings Description (PDF):** _No matching entry found_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 94.2 | 33 |\n| RES_DEEP (ohm.m) | 23.78 | 33 |\n| RES_SHALLOW (ohm.m) | 21.45 | 33 |",
@@ -3366,10 +3289,8 @@
         "fluor": 100.0,
         "RQI": 0.5718133786769724,
         "WRCI": 24.65,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres"
-        ],
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2355m: 15% siltstone, 85% very fine to fine, trace medium sandstone. 100% bright to mod bright FLUOR in SST. TG 285U"
       },
       "detail_markdown": "### 2355 m MD — Interval 2352.5 – 2357.5 m\n\n**Sample Description (spreadsheet):** Sample 2355m: 15% siltstone, 85% very fine to fine, trace medium sandstone. 100% bright to mod bright FLUOR in SST. TG 285U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 85.0 |\n| Grain Size | very fine to fine, trace medium (max: nan) |\n| Grain Ordinal | 3 |\n| Porosity Class | fr |\n| Hardness | fri (0.70) |\n| Sorting | wl (0.80) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.80) |\n| Fluorescence | 100.0% medium sandstone. 100% bright to mod bright |\n| Total Gas | 285.0 U |\n| mTVDss | -1196.80 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2370m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,com intrlams w/ SLTST,wl srt,sbang-sbrnd,mod-wk sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd aggs,mnr disagg qtz grs,pr vis por,fr\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 97.3 | 33 |\n| RES_DEEP (ohm.m) | 18.23 | 33 |\n| RES_SHALLOW (ohm.m) | 17.58 | 33 |",
@@ -3391,10 +3312,8 @@
         "fluor": 100.0,
         "RQI": 0.562281563404733,
         "WRCI": 24.58,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres"
-        ],
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2360m: 15% siltstone, 85% very fine to fine, trace medium sandstone. 100% mod bright to bright FLUOR in SST. TG 268U"
       },
       "detail_markdown": "### 2360 m MD — Interval 2357.5 – 2362.5 m\n\n**Sample Description (spreadsheet):** Sample 2360m: 15% siltstone, 85% very fine to fine, trace medium sandstone. 100% mod bright to bright FLUOR in SST. TG 268U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 85.0 |\n| Grain Size | very fine to fine, trace medium (max: nan) |\n| Grain Ordinal | 3 |\n| Porosity Class | fr |\n| Hardness | fri (0.70) |\n| Sorting | wl (0.80) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.80) |\n| Fluorescence | 100.0% medium sandstone. 100% mod bright to bright |\n| Total Gas | 268.0 U |\n| mTVDss | -1196.66 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2370m: lt-med gry brn,clr-trnsl, vf-f,g/t aren SLTST i/p,com intrlams w/ SLTST,wl srt,sbang-sbrnd,mod-wk sil cmt,mnr gry-brn arg mtx,fri,mnr mod hd aggs,mnr disagg qtz grs,pr vis por,fr\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.5 | 32 |\n| RES_DEEP (ohm.m) | 17.91 | 32 |\n| RES_SHALLOW (ohm.m) | 17.23 | 32 |",
@@ -4419,9 +4338,7 @@
         "RQI": 0.551685735830761,
         "WRCI": 26.07,
         "risk_class": "Low",
-        "flags": [
-          "ZOI"
-        ],
+        "flags": [],
         "long_desc": "Sample 2580m: 15% siltstone, 85% very fine sandstone. 80% mod bright FLUOR in SST. TG 248U"
       },
       "detail_markdown": "### 2580 m MD — Interval 2577.5 – 2582.5 m\n\n**Sample Description (spreadsheet):** Sample 2580m: 15% siltstone, 85% very fine sandstone. 80% mod bright FLUOR in SST. TG 248U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 85.0 |\n| Grain Size | very fine (max: nan) |\n| Grain Ordinal | 1 |\n| Porosity Class | fr |\n| Hardness | lse (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.80) |\n| Fluorescence | 80.0% nan |\n| Total Gas | 248.0 U |\n| mTVDss | -1193.45 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2570m: pl brn,pl brn gry,clr-trnsl, vf g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,fri-rr mod hd,v pr-pr vis,por, fluor.\n- **SANDSTONE** @ ~2580m: pl brn,pl brn gry,clr-trnsl, 63 / 6 / 6 / 10 / 15 302 U vf-f,g/t aren SLTST,sbang-sbrnd,mod wk sil cmt,occ pl gry arg mtx,occ carb spks,mnr lse,fri-rr mod hd,pr vis & inf por,fluor.\n- _(1 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.7 | 33 |\n| RES_DEEP (ohm.m) | 26.96 | 33 |\n| RES_SHALLOW (ohm.m) | 21.91 | 33 |",
@@ -6939,10 +6856,8 @@
         "fluor": 100.0,
         "RQI": 0.5743218078589439,
         "WRCI": 23.75,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres"
-        ],
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 3125m: 5% Siltstone, 95% very fine to fine Sandstone, common loose. 100% bright FLUOR in SST. TG 311U"
       },
       "detail_markdown": "### 3125 m MD — Interval 3122.5 – 3127.5 m\n\n**Sample Description (spreadsheet):** Sample 3125m: 5% Siltstone, 95% very fine to fine Sandstone, common loose. 100% bright FLUOR in SST. TG 311U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine (max: nan) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr-gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v pr (0.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 311.0 U |\n| mTVDss | -1196.41 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~3110m: v pl gry brn,clr,trnsl,vf-f, v wl srt,sbang-sbrnd,mod sil cmt,com pl gry arg mtx,fri-mod hd,com vf-f disagg qtz grs,com lse fri,mnr mod hd, pr vis por,fr-gd inf por,fluor.\n- **SANDSTONE** @ ~3110m: v pl gry brn,clr,trnsl,vf-f, tr med,wl srt,sbang-sbrnd,mod sil cmt, com pl gry arg mtx,tr slty lams,fri,mnr mod hd,com disagg,pr vis por,fr-gd inf por,fluor.\n- _(7 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 71.9 | 33 |\n| RES_DEEP (ohm.m) | 19.22 | 33 |\n| RES_SHALLOW (ohm.m) | 19.75 | 33 |",
@@ -7138,12 +7053,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5651035625787222,
-        "WRCI": 34.59,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 24.59,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 3165m: 5% Siltstone, 95% very fine to fine Sandstone, common loose. 100% bright FLUOR in SST. TG 259U"
       },
       "detail_markdown": "### 3165 m MD — Interval 3162.5 – 3167.5 m\n\n**Sample Description (spreadsheet):** Sample 3165m: 5% Siltstone, 95% very fine to fine Sandstone, common loose. 100% bright FLUOR in SST. TG 259U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine (max: nan) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr-gd |\n| Hardness | fri (0.70) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 259.0 U |\n| mTVDss | -1197.04 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~3170m: grysh blk-v dk gry, arg,aren i/p,frm,mnr mod hd,sbfiss. SURVEY @ 3175.4m INC: 88.56° AZI: 82.14°G\n- **SANDSTONE** @ ~3170m: lt-med gry,pl gry brn,clr, trnsl,vf-f,mnr med,mnr slty lams,wl srt,sbang-sbrnd,mod-wk sil cmt,com gry-brn slty mtx,fri,mnr mod hd,mnr f- med disagg qtz grs,pr-v pr vis por,fr-gd\n- _(5 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 102.7 | 33 |\n| RES_DEEP (ohm.m) | 18.01 | 33 |\n| RES_SHALLOW (ohm.m) | 17.94 | 33 |",
@@ -7164,12 +7076,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.5562870172215839,
-        "WRCI": 34.13,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "owc_elevated"
-        ],
+        "WRCI": 24.13,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 3170m: 5% Siltstone, 95% very fine to fine Sandstone, minor Medium, common loose. 100% bright FLUOR in SST. TG 263U"
       },
       "detail_markdown": "### 3170 m MD — Interval 3167.5 – 3172.5 m\n\n**Sample Description (spreadsheet):** Sample 3170m: 5% Siltstone, 95% very fine to fine Sandstone, minor Medium, common loose. 100% bright FLUOR in SST. TG 263U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine (max: nan) |\n| Grain Ordinal | 2 |\n| Porosity Class | fr-gd |\n| Hardness | fri (0.70) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 263.0 U |\n| mTVDss | -1197.18 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~3170m: grysh blk-v dk gry, arg,aren i/p,frm,mnr mod hd,sbfiss. SURVEY @ 3175.4m INC: 88.56° AZI: 82.14°G\n- **SANDSTONE** @ ~3170m: lt-med gry,pl gry brn,clr, trnsl,vf-f,mnr med,mnr slty lams,wl srt,sbang-sbrnd,mod-wk sil cmt,com gry-brn slty mtx,fri,mnr mod hd,mnr f- med disagg qtz grs,pr-v pr vis por,fr-gd\n- _(5 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 104.8 | 32 |\n| RES_DEEP (ohm.m) | 18.12 | 32 |\n| RES_SHALLOW (ohm.m) | 18.17 | 32 |",
@@ -7236,13 +7145,9 @@
         "loose_hardness": false,
         "fluor": 35.0,
         "RQI": 0.5358137063954074,
-        "WRCI": 48.17,
-        "risk_class": "Elevated",
-        "flags": [
-          "lowres",
-          "lowfluor",
-          "owc_elevated"
-        ],
+        "WRCI": 38.17,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 3185m: 20% Siltstone, 80% very fine to fine, minor medium Sandstone, predominantly aggregates. 35% dull to moderately bright FLUOR in SST. TG 175U"
       },
       "detail_markdown": "### 3185 m MD — Interval 3182.5 – 3187.5 m\n\n**Sample Description (spreadsheet):** Sample 3185m: 20% Siltstone, 80% very fine to fine, minor medium Sandstone, predominantly aggregates. 35% dull to moderately bright FLUOR in SST. TG 175U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 80.0 |\n| Grain Size | very fine to fine, minor medium (max: nan) |\n| Grain Ordinal | 3 |\n| Porosity Class | fr-gd |\n| Hardness | fri (0.70) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | wk sil cmt (0.68) |\n| Fluorescence | 35.0% nan |\n| Total Gas | 175.0 U |\n| mTVDss | -1197.52 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SILTSTONE** @ ~3170m: grysh blk-v dk gry, arg,aren i/p,frm,mnr mod hd,sbfiss. SURVEY @ 3175.4m INC: 88.56° AZI: 82.14°G\n- **SANDSTONE** @ ~3170m: lt-med gry,pl gry brn,clr, trnsl,vf-f,mnr med,mnr slty lams,wl srt,sbang-sbrnd,mod-wk sil cmt,com gry-brn slty mtx,fri,mnr mod hd,mnr f- med disagg qtz grs,pr-v pr vis por,fr-gd\n- _(5 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 99.2 | 33 |\n| RES_DEEP (ohm.m) | 16.27 | 33 |\n| RES_SHALLOW (ohm.m) | 14.14 | 33 |",

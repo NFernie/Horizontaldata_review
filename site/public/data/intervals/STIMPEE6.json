@@ -343,11 +343,8 @@
       "matching_pay": true,
       "RQI": 0.5183333333333333,
       "WRCI": 20.73,
-      "risk_class": "Elevated",
-      "flags": [
-        "low_GR",
-        "ZOI"
-      ],
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1208.8177693190153,
       "hafwl_m": 5.1822306809847305,
       "owc_distance_m": 5.1822306809847305,
@@ -390,10 +387,8 @@
       "matching_pay": true,
       "RQI": 0.5183333333333333,
       "WRCI": 20.73,
-      "risk_class": "Elevated",
-      "flags": [
-        "low_GR"
-      ],
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1208.7868586892178,
       "hafwl_m": 5.213141310782248,
       "owc_distance_m": 5.213141310782248,
@@ -2437,9 +2432,7 @@
       "RQI": 0.5277789390488367,
       "WRCI": 21.11,
       "risk_class": "Low",
-      "flags": [
-        "ZOI"
-      ],
+      "flags": [],
       "mTVDss": -1205.218244110997,
       "hafwl_m": 8.78175588900308,
       "owc_distance_m": 8.78175588900308,
@@ -3451,15 +3444,13 @@
       },
       "matching_pay": true,
       "RQI": 0.556474743285451,
-      "WRCI": 42.26,
-      "risk_class": "Elevated",
-      "flags": [
-        "owc_high"
-      ],
+      "WRCI": 22.26,
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1210.297133313253,
       "hafwl_m": 3.7028666867470292,
       "owc_distance_m": 3.7028666867470292,
-      "owc_near": "High",
+      "owc_near": "Low",
       "isolated": false,
       "z_scores": {
         "avg_RES_DEEP": -1.096,
@@ -3497,15 +3488,13 @@
       },
       "matching_pay": true,
       "RQI": 0.5150586708538355,
-      "WRCI": 40.6,
-      "risk_class": "Elevated",
-      "flags": [
-        "owc_high"
-      ],
+      "WRCI": 20.6,
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1210.4263448915917,
       "hafwl_m": 3.573655108408275,
       "owc_distance_m": 3.573655108408275,
-      "owc_near": "High",
+      "owc_near": "Low",
       "isolated": false,
       "z_scores": {
         "avg_RES_DEEP": -0.839,
@@ -3543,15 +3532,13 @@
       },
       "matching_pay": true,
       "RQI": 0.5843999143200086,
-      "WRCI": 43.38,
-      "risk_class": "Elevated",
-      "flags": [
-        "owc_high"
-      ],
+      "WRCI": 23.38,
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1210.564219032258,
       "hafwl_m": 3.435780967741948,
       "owc_distance_m": 3.435780967741948,
-      "owc_near": "High",
+      "owc_near": "Low",
       "isolated": false,
       "z_scores": {
         "avg_RES_DEEP": -1.015,
@@ -3589,15 +3576,13 @@
       },
       "matching_pay": true,
       "RQI": 0.5869517277990989,
-      "WRCI": 43.48,
-      "risk_class": "Elevated",
-      "flags": [
-        "owc_high"
-      ],
+      "WRCI": 23.48,
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1210.6921140515462,
       "hafwl_m": 3.307885948453759,
       "owc_distance_m": 3.307885948453759,
-      "owc_near": "High",
+      "owc_near": "Low",
       "isolated": false,
       "z_scores": {
         "avg_RES_DEEP": -1.352,
@@ -3635,16 +3620,13 @@
       },
       "matching_pay": true,
       "RQI": 0.5315840029102229,
-      "WRCI": 45.26,
-      "risk_class": "Elevated",
-      "flags": [
-        "ZOI",
-        "owc_high"
-      ],
+      "WRCI": 25.26,
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1210.8177738453608,
       "hafwl_m": 3.1822261546392383,
       "owc_distance_m": 3.1822261546392383,
-      "owc_near": "High",
+      "owc_near": "Low",
       "isolated": false,
       "z_scores": {
         "avg_RES_DEEP": -1.301,
@@ -3728,9 +3710,7 @@
       "RQI": 0.5231272258356643,
       "WRCI": 24.93,
       "risk_class": "Low",
-      "flags": [
-        "ZOI"
-      ],
+      "flags": [],
       "mTVDss": -1210.8053863507107,
       "hafwl_m": 3.1946136492892947,
       "owc_distance_m": 3.1946136492892947,
@@ -3905,10 +3885,8 @@
       "matching_pay": true,
       "RQI": 0.5463888888888889,
       "WRCI": 21.86,
-      "risk_class": "Elevated",
-      "flags": [
-        "low_GR"
-      ],
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1210.764704089958,
       "hafwl_m": 3.235295910041941,
       "owc_distance_m": 3.235295910041941,
@@ -5358,15 +5336,13 @@
       },
       "matching_pay": true,
       "RQI": 0.561327484431097,
-      "WRCI": 42.45,
-      "risk_class": "Elevated",
-      "flags": [
-        "owc_high"
-      ],
+      "WRCI": 22.45,
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1211.7242912853471,
       "hafwl_m": 2.2757087146528647,
       "owc_distance_m": 2.2757087146528647,
-      "owc_near": "High",
+      "owc_near": "Low",
       "isolated": false,
       "z_scores": {
         "avg_RES_DEEP": -0.878,
@@ -5404,16 +5380,13 @@
       },
       "matching_pay": true,
       "RQI": 0.5572222222222222,
-      "WRCI": 44.29,
-      "risk_class": "Elevated",
-      "flags": [
-        "ZOI",
-        "owc_high"
-      ],
+      "WRCI": 24.29,
+      "risk_class": "Low",
+      "flags": [],
       "mTVDss": -1211.5149360416667,
       "hafwl_m": 2.485063958333285,
       "owc_distance_m": 2.485063958333285,
-      "owc_near": "High",
+      "owc_near": "Low",
       "isolated": false,
       "z_scores": {
         "avg_RES_DEEP": -1.281,

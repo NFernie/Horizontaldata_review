@@ -17,7 +17,7 @@ export const RQI_WEIGHTS = {
   angularity: 0.06,
 } as const;
 
-export const RQI_THRESHOLD = 0.5;
+export const RQI_THRESHOLD = 0.6;
 
 export const PORO_SCORES = {
   none: 0.0,
@@ -41,7 +41,7 @@ export const ZOI_DROP_PCT = 0.15;
 export const ZOI_MIN_DROPS = 2;
 export const ZOI_RQI_NEIGHBOUR_TOLERANCE = 0.9;
 
-export const OWC_BANDS_GOOD = { high_lt: 4.0, elevated_lt: 6.0 } as const;
+export const OWC_BANDS_GOOD = { high_lt: 4.0, elevated_lt: 5.0 } as const;
 export const OWC_BANDS_POOR = { high_lt: 2.0, elevated_lt: 4.0 } as const;
 export const OWC_RES_SUPPRESS = 30.0;
 export const OWC_SEVERITY_HIGH = 1.0;
@@ -58,6 +58,7 @@ export const WRCI_WEIGHTS = {
 export const WRCI_HIGH_THRESHOLD = 60.0;
 export const WRCI_ELEVATED_THRESHOLD = 40.0;
 export const WRCI_HIGH_MIN_FLAGS = 1;
+export const WRCI_HIGH_MULTI_FLAGS = 2;
 
 export const LOWRES_SEVERITY_REF = RES_DEEP_CUTOFF;
 export const LOWFLUOR_SEVERITY_REF = 100.0;

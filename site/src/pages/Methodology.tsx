@@ -24,6 +24,7 @@ import {
   LOWFLUOR_SEVERITY_REF,
   WRCI_ELEVATED_THRESHOLD,
   WRCI_HIGH_MIN_FLAGS,
+  WRCI_HIGH_MULTI_FLAGS,
   WRCI_HIGH_THRESHOLD,
   WRCI_WEIGHTS,
   ZOI_DROP_PCT,
@@ -140,8 +141,9 @@ export function Methodology() {
             <ul className="list-disc space-y-1 pl-4 font-sans">
               <li>
                 <strong className="text-risk-high">{RISK_LABELS.High}</strong> — WRCI ≥ {WRCI_HIGH_THRESHOLD}{" "}
-                and (OWC High or ≥{WRCI_HIGH_MIN_FLAGS} of lowres/lowfluor/low_GR) or (ZOI and WRCI ≥{" "}
-                {WRCI_HIGH_THRESHOLD})
+                and (OWC High or ≥{WRCI_HIGH_MIN_FLAGS} of lowres/lowfluor/low_GR), or ≥{WRCI_HIGH_MULTI_FLAGS}{" "}
+                red flags regardless of WRCI, or (ZOI and WRCI ≥ {WRCI_HIGH_THRESHOLD}). Suppressed when
+                avg_RES_DEEP &gt; {OWC_RES_SUPPRESS} Ω·m.
               </li>
               <li>
                 <strong className="text-risk-elev">{RISK_LABELS.Elevated}</strong> — WRCI{" "}

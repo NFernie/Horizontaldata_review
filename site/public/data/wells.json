@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13 10:27 UTC",
+  "generated": "2026-07-13 11:58 UTC",
   "well_count": 23,
   "wells": [
     {
@@ -12,7 +12,7 @@
       "interval_count": 197,
       "pay_pct": 80.4,
       "high_risk_count": 0,
-      "elevated_risk_count": 57,
+      "elevated_risk_count": 25,
       "cluster_id": 1,
       "data_missing": false
     },
@@ -26,8 +26,8 @@
       "interval_count": 165,
       "pay_pct": 73.56,
       "high_risk_count": 0,
-      "elevated_risk_count": 69,
-      "cluster_id": 2,
+      "elevated_risk_count": 18,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -39,9 +39,9 @@
       "lateral": 1999.6,
       "interval_count": 237,
       "pay_pct": 78.81,
-      "high_risk_count": 0,
-      "elevated_risk_count": 89,
-      "cluster_id": 2,
+      "high_risk_count": 1,
+      "elevated_risk_count": 84,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -54,8 +54,8 @@
       "interval_count": 156,
       "pay_pct": 69.45,
       "high_risk_count": 0,
-      "elevated_risk_count": 28,
-      "cluster_id": 2,
+      "elevated_risk_count": 25,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -67,9 +67,9 @@
       "lateral": 1357.6,
       "interval_count": 134,
       "pay_pct": 55.25,
-      "high_risk_count": 0,
-      "elevated_risk_count": 66,
-      "cluster_id": 2,
+      "high_risk_count": 18,
+      "elevated_risk_count": 34,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -82,8 +82,8 @@
       "interval_count": 373,
       "pay_pct": 79.48,
       "high_risk_count": 0,
-      "elevated_risk_count": 80,
-      "cluster_id": 2,
+      "elevated_risk_count": 58,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -96,7 +96,7 @@
       "interval_count": 127,
       "pay_pct": 83.29,
       "high_risk_count": 0,
-      "elevated_risk_count": 23,
+      "elevated_risk_count": 16,
       "cluster_id": 1,
       "data_missing": false
     },
@@ -110,7 +110,7 @@
       "interval_count": 96,
       "pay_pct": 28.8,
       "high_risk_count": 0,
-      "elevated_risk_count": 40,
+      "elevated_risk_count": 12,
       "cluster_id": 3,
       "data_missing": false
     },
@@ -124,7 +124,7 @@
       "interval_count": 78,
       "pay_pct": 57.21,
       "high_risk_count": 0,
-      "elevated_risk_count": 43,
+      "elevated_risk_count": 20,
       "cluster_id": 3,
       "data_missing": false
     },
@@ -137,8 +137,8 @@
       "lateral": 1366.8,
       "interval_count": 275,
       "pay_pct": 54.58,
-      "high_risk_count": 0,
-      "elevated_risk_count": 82,
+      "high_risk_count": 2,
+      "elevated_risk_count": 49,
       "cluster_id": 3,
       "data_missing": false
     },
@@ -151,8 +151,8 @@
       "lateral": 647.3,
       "interval_count": 124,
       "pay_pct": 61.79,
-      "high_risk_count": 0,
-      "elevated_risk_count": 16,
+      "high_risk_count": 2,
+      "elevated_risk_count": 6,
       "cluster_id": 3,
       "data_missing": false
     },
@@ -166,7 +166,7 @@
       "interval_count": 309,
       "pay_pct": 60.08,
       "high_risk_count": 0,
-      "elevated_risk_count": 94,
+      "elevated_risk_count": 69,
       "cluster_id": 3,
       "data_missing": false
     },
@@ -180,8 +180,8 @@
       "interval_count": 183,
       "pay_pct": 93.26,
       "high_risk_count": 0,
-      "elevated_risk_count": 37,
-      "cluster_id": 2,
+      "elevated_risk_count": 26,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -193,8 +193,8 @@
       "lateral": 964.5,
       "interval_count": 164,
       "pay_pct": 56.45,
-      "high_risk_count": 0,
-      "elevated_risk_count": 58,
+      "high_risk_count": 12,
+      "elevated_risk_count": 20,
       "cluster_id": 3,
       "data_missing": false
     },
@@ -208,7 +208,7 @@
       "interval_count": 130,
       "pay_pct": 74.15,
       "high_risk_count": 0,
-      "elevated_risk_count": 13,
+      "elevated_risk_count": 3,
       "cluster_id": 1,
       "data_missing": false
     },
@@ -222,8 +222,8 @@
       "interval_count": 84,
       "pay_pct": 62.3,
       "high_risk_count": 0,
-      "elevated_risk_count": 21,
-      "cluster_id": 2,
+      "elevated_risk_count": 13,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -235,8 +235,8 @@
       "lateral": 1864.4,
       "interval_count": 159,
       "pay_pct": 43.45,
-      "high_risk_count": 25,
-      "elevated_risk_count": 107,
+      "high_risk_count": 30,
+      "elevated_risk_count": 63,
       "cluster_id": 4,
       "data_missing": false
     },
@@ -250,7 +250,7 @@
       "interval_count": 96,
       "pay_pct": 48.93,
       "high_risk_count": 0,
-      "elevated_risk_count": 10,
+      "elevated_risk_count": 4,
       "cluster_id": 3,
       "data_missing": false
     },
@@ -264,8 +264,8 @@
       "interval_count": 70,
       "pay_pct": 66.24,
       "high_risk_count": 0,
-      "elevated_risk_count": 4,
-      "cluster_id": 1,
+      "elevated_risk_count": 0,
+      "cluster_id": 2,
       "data_missing": false
     },
     {
@@ -277,9 +277,9 @@
       "lateral": 1223.2,
       "interval_count": 172,
       "pay_pct": 60.91,
-      "high_risk_count": 0,
-      "elevated_risk_count": 45,
-      "cluster_id": 1,
+      "high_risk_count": 2,
+      "elevated_risk_count": 12,
+      "cluster_id": 2,
       "data_missing": false
     },
     {
@@ -292,8 +292,8 @@
       "interval_count": 247,
       "pay_pct": 66.92,
       "high_risk_count": 0,
-      "elevated_risk_count": 10,
-      "cluster_id": 1,
+      "elevated_risk_count": 0,
+      "cluster_id": 2,
       "data_missing": false
     },
     {
@@ -306,8 +306,8 @@
       "interval_count": 113,
       "pay_pct": 52.42,
       "high_risk_count": 0,
-      "elevated_risk_count": 39,
-      "cluster_id": 1,
+      "elevated_risk_count": 31,
+      "cluster_id": 2,
       "data_missing": false
     },
     {
@@ -320,8 +320,8 @@
       "interval_count": 57,
       "pay_pct": 16.07,
       "high_risk_count": 0,
-      "elevated_risk_count": 22,
-      "cluster_id": 3,
+      "elevated_risk_count": 19,
+      "cluster_id": 2,
       "data_missing": false
     },
     {
