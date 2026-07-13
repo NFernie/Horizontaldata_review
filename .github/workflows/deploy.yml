@@ -36,6 +36,7 @@ jobs:
               - 'Oil_Water_Contact.csv'
               - 'DC30.xlsx'
               - 'Mck_Murta.xlsx'
+              - 'Isolation_Depths.xlsx'
               - 'New Statistical Methods.md'
               - 'pay-rules.md'
               - '**/*.pdf'
