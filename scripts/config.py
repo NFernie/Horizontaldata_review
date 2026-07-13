@@ -2,7 +2,7 @@
 Central configuration for McKinlay water-risk statistics and web export.
 
 All tunable weights, cutoffs, and thresholds used by export_web_data.py.
-Mirror these values in site/src/config.ts when the static site is built (Phase 3).
+Mirror these values in site/src/config.ts when the static site is built.
 """
 
 # ---------------------------------------------------------------------------
@@ -102,10 +102,10 @@ ROBUST_NORM_PERCENTILES = (5, 95)
 """P5–P95 clipping range for within-well robust min–max normalisation."""
 
 # ---------------------------------------------------------------------------
-# Red-flag booleans — OpusPlanR1 §1.1 Step B
+# Red-flag booleans — updated-plan §3B
 # ---------------------------------------------------------------------------
-FLAG_RES_SEP_PERCENTILE = 75
-"""Well-relative percentile for high-permeability (res_sep) red flag."""
+FLAG_LOW_GR = 65.0
+"""avg_GR below this (gAPI) triggers low_GR boolean on RQI >= RQI_THRESHOLD intervals."""
 
 FLAG_LOWRES_RES_DEEP = RES_DEEP_CUTOFF
 """avg_RES_DEEP below this (ohm.m) triggers low-resistivity red flag over good rock."""
@@ -114,24 +114,49 @@ FLAG_LOWFLUOR_PCT = FLUOR_CUTOFF
 """Fluorescence below this (%) triggers low-fluor red flag over good rock."""
 
 # ---------------------------------------------------------------------------
-# Water-Risk Composite Index (WRCI) — OpusPlanR1 §1.1 Step C
+# Zone of Interest (ZOI) — updated-plan §4.2
+# ---------------------------------------------------------------------------
+ZOI_NEIGHBOUR_WINDOW = 3
+"""Number of shallower and deeper intervals in the reference window."""
+
+ZOI_DROP_PCT = 0.15
+"""Minimum fractional drop vs neighbour average to count as deterioration."""
+
+ZOI_MIN_DROPS = 2
+"""Minimum metrics (fluor, gas, RES_DEEP) that must drop > ZOI_DROP_PCT."""
+
+ZOI_RQI_NEIGHBOUR_TOLERANCE = 0.9
+"""RQI must be >= neighbour RQI average × this factor (or strictly higher)."""
+
+# ---------------------------------------------------------------------------
+# OWC proximity — updated-plan §5.2
+# ---------------------------------------------------------------------------
+OWC_BANDS_GOOD = {"high_lt": 4.0, "elevated_lt": 6.0}
+"""Distance bands (m) for RQI >= RQI_THRESHOLD or ZOI intervals."""
+
+OWC_BANDS_POOR = {"high_lt": 3.0, "elevated_lt": 5.0}
+"""Distance bands (m) for poor rock (RQI < RQI_THRESHOLD, not ZOI)."""
+
+OWC_SEVERITY_HIGH = 1.0
+OWC_SEVERITY_ELEVATED = 0.5
+OWC_SEVERITY_LOW = 0.0
+
+# ---------------------------------------------------------------------------
+# Water-Risk Composite Index (WRCI) — updated-plan §3B
 # ---------------------------------------------------------------------------
 WRCI_WEIGHTS = {
     "rqi": 0.40,
-    "highperm": 0.20,
     "lowres_severity": 0.20,
     "lowfluor_severity": 0.20,
+    "owc_severity": 0.20,
 }
 """Component weights for WRCI (must sum to 1.0)."""
 
 WRCI_HIGH_THRESHOLD = 66.0
-"""WRCI >= this value (with sufficient flags) → High water risk."""
+"""WRCI >= this value (with sufficient flags / OWC / ZOI) → High water risk."""
 
 WRCI_ELEVATED_THRESHOLD = 40.0
-"""WRCI in [this, WRCI_HIGH) or 1 flag → Elevated water risk."""
-
-WRCI_HIGH_MIN_FLAGS = 2
-"""Minimum red-flag count required for High risk class."""
+"""WRCI in [this, WRCI_HIGH) or qualifying flags → Elevated water risk."""
 
 LOWRES_SEVERITY_REF = RES_DEEP_CUTOFF
 """Reference RES_DEEP (ohm.m) for low-resistivity severity: clamp((ref − RES)/ref, 0, 1)."""
@@ -143,12 +168,12 @@ LOWFLUOR_SEVERITY_REF = FLUOR_CUTOFF
 # Robust Z-score anomaly detection — OpusPlanR1 §1.2
 # ---------------------------------------------------------------------------
 ZSCORE_METRICS = (
-    "res_sep",
     "avg_RES_DEEP",
     "avg_GR",
     "pct_ss",
     "fluor",
     "grain_ordinal",
+    "gas",
 )
 """Interval metrics for modified z-score anomaly detection."""
 
@@ -165,7 +190,6 @@ SPEARMAN_VARS = (
     "pct_ss",
     "grain_ordinal",
     "avg_GR",
-    "res_sep",
     "avg_RES_DEEP",
     "fluor",
     "gas",
@@ -183,21 +207,18 @@ JACCARD_DEPTH_BINS = 20
 
 JACCARD_FEATURES = (
     "good_rock",
-    "highperm",
     "lowres_over_good",
     "lowfluor_over_good",
+    "low_GR",
+    "ZOI",
     "matching_pay",
     "coarse_grain",
-    "low_GR",
     "loose_hardness",
 )
 """Binary feature vocabulary for inter-well Jaccard similarity."""
 
 COARSE_GRAIN_ORDINAL = 4
 """grain_ordinal >= this value counts as coarse_grain for Jaccard."""
-
-LOW_GR_PERCENTILE = 25
-"""avg_GR below this well-relative percentile counts as low_GR."""
 
 # ---------------------------------------------------------------------------
 # Clustering + KS — OpusPlanR1 §1.5
@@ -206,11 +227,11 @@ CLUSTER_FEATURES = (
     "mean_pct_ss",
     "mean_grain_ordinal",
     "mean_avg_GR",
-    "mean_res_sep",
     "mean_RES_DEEP",
     "pay_pct",
     "mean_WRCI",
     "pct_high_risk",
+    "pct_zoi",
 )
 """Per-well aggregate features for cosine/Euclidean clustering."""
 
@@ -218,7 +239,6 @@ KS_PROPERTIES = (
     "pct_ss",
     "grain_ordinal",
     "avg_GR",
-    "res_sep",
     "avg_RES_DEEP",
     "fluor",
     "WRCI",

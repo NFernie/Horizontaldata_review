@@ -2,14 +2,16 @@ import type { ReactNode } from "react";
 import { Card } from "@/components/Card";
 import {
   FLAG_LABELS,
+  FLAG_LOW_GR,
   FLAG_LOWFLUOR_PCT,
   FLAG_LOWRES_RES_DEEP,
-  FLAG_RES_SEP_PERCENTILE,
   JACCARD_DEPTH_BINS,
   JACCARD_FEATURES,
   JACCARD_PRESENCE_PCT,
   KS_PROPERTIES,
   MAD_SCALE,
+  OWC_BANDS_GOOD,
+  OWC_BANDS_POOR,
   PORO_SCORES,
   RES_DEEP_CUTOFF,
   RISK_LABELS,
@@ -20,9 +22,11 @@ import {
   SS_CUTOFF,
   FLUOR_CUTOFF,
   WRCI_ELEVATED_THRESHOLD,
-  WRCI_HIGH_MIN_FLAGS,
   WRCI_HIGH_THRESHOLD,
   WRCI_WEIGHTS,
+  ZOI_DROP_PCT,
+  ZOI_MIN_DROPS,
+  ZOI_NEIGHBOUR_WINDOW,
   ZSCORE_METRICS,
   ZSCORE_THRESHOLD,
 } from "@/config";
@@ -47,7 +51,7 @@ export function Methodology() {
         </p>
       </header>
 
-      <Card title="Water-Risk Composite Index (WRCI)" description="OpusPlanR1 §1.1 — intra-well scoring">
+      <Card title="Water-Risk Composite Index (WRCI)" description="updated-plan §3B — intra-well scoring">
         <div className="space-y-4 text-sm text-text-muted">
           <FormulaBlock title="Step A — Rock Quality Index (RQI), 0–1">
             <p>
@@ -69,12 +73,8 @@ export function Methodology() {
             </p>
           </FormulaBlock>
 
-          <FormulaBlock title={`Step B — Red flags (only when RQI ≥ ${RQI_THRESHOLD})`}>
+          <FormulaBlock title={`Step B — Red flags (RQI ≥ ${RQI_THRESHOLD} unless noted)`}>
             <ul className="list-disc space-y-1 pl-4 font-sans">
-              <li>
-                <strong className="text-text">{FLAG_LABELS.highperm}</strong> — res_sep ≥ P
-                {FLAG_RES_SEP_PERCENTILE} (well-relative)
-              </li>
               <li>
                 <strong className="text-text">{FLAG_LABELS.lowres}</strong> — avg_RES_DEEP &lt;{" "}
                 {FLAG_LOWRES_RES_DEEP} ohm.m
@@ -82,25 +82,37 @@ export function Methodology() {
               <li>
                 <strong className="text-text">{FLAG_LABELS.lowfluor}</strong> — fluor &lt; {FLAG_LOWFLUOR_PCT}%
               </li>
+              <li>
+                <strong className="text-text">{FLAG_LABELS.low_GR}</strong> — avg_GR &lt; {FLAG_LOW_GR} gAPI
+                (boolean only; not a WRCI severity term)
+              </li>
+              <li>
+                <strong className="text-text">{FLAG_LABELS.ZOI}</strong> — along-wellbore deterioration
+                (±{ZOI_NEIGHBOUR_WINDOW} neighbours; ≥{ZOI_MIN_DROPS} metrics drop &gt;{ZOI_DROP_PCT * 100}%)
+              </li>
+              <li>
+                <strong className="text-text">OWC proximity</strong> — tiers from trajectory mTVDss vs field
+                OWC (good rock: &lt;{OWC_BANDS_GOOD.high_lt}m High; poor rock: &lt;{OWC_BANDS_POOR.high_lt}m
+                High)
+              </li>
             </ul>
           </FormulaBlock>
 
           <FormulaBlock title="Step C — WRCI (0–100)">
             <p>
-              WRCI = 100 × ({WRCI_WEIGHTS.rqi}·RQI + {WRCI_WEIGHTS.highperm}·highperm_norm +{" "}
-              {WRCI_WEIGHTS.lowres_severity}·lowres_severity + {WRCI_WEIGHTS.lowfluor_severity}
-              ·lowfluor_severity)
+              WRCI = 100 × ({WRCI_WEIGHTS.rqi}·RQI + {WRCI_WEIGHTS.lowres_severity}·lowres_severity +{" "}
+              {WRCI_WEIGHTS.lowfluor_severity}·lowfluor_severity + {WRCI_WEIGHTS.owc_severity}·owc_severity)
             </p>
             <p>lowres_severity = clamp(({RES_DEEP_CUTOFF} − RES_DEEP) / {RES_DEEP_CUTOFF}, 0, 1)</p>
             <p>lowfluor_severity = clamp(({FLUOR_CUTOFF} − fluor) / {FLUOR_CUTOFF}, 0, 1)</p>
             <ul className="list-disc space-y-1 pl-4 font-sans">
               <li>
                 <strong className="text-risk-high">{RISK_LABELS.High}</strong> — WRCI ≥ {WRCI_HIGH_THRESHOLD}{" "}
-                and ≥ {WRCI_HIGH_MIN_FLAGS} flags
+                and (OWC High or ≥2 of lowres/lowfluor/low_GR) or (ZOI and WRCI ≥ {WRCI_HIGH_THRESHOLD})
               </li>
               <li>
-                <strong className="text-risk-elev">{RISK_LABELS.Elevated}</strong> — WRCI {WRCI_ELEVATED_THRESHOLD}
-                –{WRCI_HIGH_THRESHOLD} or 1 flag
+                <strong className="text-risk-elev">{RISK_LABELS.Elevated}</strong> — WRCI{" "}
+                {WRCI_ELEVATED_THRESHOLD}–{WRCI_HIGH_THRESHOLD}, or qualifying flags / OWC Elevated / ZOI
               </li>
               <li>
                 <strong className="text-risk-low">{RISK_LABELS.Low}</strong> — otherwise
@@ -144,12 +156,12 @@ export function Methodology() {
       <Card title="Data quality caveats" description="OpusPlanR1 §6">
         <ul className="space-y-3 text-sm text-text-muted">
           <li>
-            <strong className="text-text">LAS curve order</strong> — mnemonic-based parsing (P1) required;
+            <strong className="text-text">LAS curve order</strong> — mnemonic-based parsing required;
             fixed column order corrupts GR/RES for several wells including Jena 31DW1.
           </li>
           <li>
-            <strong className="text-text">Porosity / loose grains</strong> — parsed from free text only;
-            coverage varies by well.
+            <strong className="text-text">Text-derived RQI components</strong> — hardness, cement, sorting,
+            angularity parsed from free text; coverage varies by well.
           </li>
           <li>
             <strong className="text-text">Legacy Excel wells</strong> — McKinlay 20–24 and Frostillicus 2
@@ -165,10 +177,6 @@ export function Methodology() {
           </li>
           <li>
             <strong className="text-text">HOBBES 4</strong> — no data files; excluded from analysis.
-          </li>
-          <li>
-            <strong className="text-text">GitHub Pages</strong> — HashRouter + base path{" "}
-            <code className="text-accent">/Horizontaldata_review/</code> avoid deep-link 404s.
           </li>
         </ul>
       </Card>

@@ -1,7 +1,7 @@
 # Statistical Methods — McKinlay Water-Risk Review
 
 **Purpose:** Canonical corpus document for the Corpus Assistant and human reference.  
-**Scope:** Five statistical methods applied to **non-excluded McKinlay Member intervals** across 17 horizontal wells.  
+**Scope:** Five statistical methods applied to **non-excluded McKinlay Member intervals** across **23** horizontal wells.  
 **Implementation:** `scripts/config.py` (Python) and `site/src/config.ts` (site); computed in `scripts/export_web_data.py`.
 
 **Type key**
@@ -21,79 +21,56 @@
 
 ### Objective
 
-Score each sample interval for **water influx risk** by combining rock quality with three red-flag families: high inferred permeability (resistivity separation), low deep resistivity over good rock, and low fluorescence over good rock.
+Score each sample interval for **water influx risk** by combining rock quality (RQI v2) with red-flag families: low deep resistivity, low fluorescence, low GR (boolean), along-wellbore Zone of Interest (ZOI), and oil–water contact (OWC) proximity.
 
-### Step A — Rock Quality Index (RQI), 0–1
+### Step A — Rock Quality Index (RQI), 0–1 (v2)
 
-RQI blends signals that indicate “good reservoir rock”:
+Eight-component RQI per `RQI_Update-Plan.md`:
 
 ```
-RQI = 0.30 · norm(pct_ss)
-    + 0.25 · norm(grain_ordinal)
-    + 0.20 · norm(1 − GR_scaled)
-    + 0.15 · porosity_score
-    + 0.10 · loose_grain_flag
+RQI = 0.20·norm(%SS) + 0.17·norm(1−GR) + 0.14·norm(grain) + 0.13·porosity_score
+    + 0.12·norm(hardness) + 0.10·norm(cement) + 0.08·norm(sorting) + 0.06·norm(angularity)
 ```
 
-| Component | Source | Notes |
-|-----------|--------|-------|
-| `pct_ss` | Cuttings % sandstone | Higher = better |
-| `grain_ordinal` | Grain / max grain text | vf=1 … vc=5; coarser = better |
-| `1 − GR_scaled` | LAS avg gamma ray | Lower GR = cleaner sand |
-| `porosity_score` | Parsed from `long_desc` / mudlog | none/poor=0, p-fr=0.33, fr=0.5, fr-gd=0.75, gd=1.0 |
-| `loose_grain_flag` | Parsed from description text | 1 if loose-grain indicators (`lse`, `loose grain`, etc.) |
+Text-derived components (hardness, cement, sorting, angularity) are omitted when not parsed; remaining weights are renormalised per interval.
 
 `norm()` is **robust within-well normalisation**: clip each metric to P5–P95 for that well, then min–max scale to 0–1.
 
-### Step B — Red-flag booleans (only when RQI ≥ 0.6)
+### Step B — Red flags
 
-Red flags apply only where rock quality is already “good” (RQI ≥ 0.6):
+| Flag | ID | Condition | WRCI term? |
+|------|-----|-----------|------------|
+| Low resistivity | `lowres` | `avg_RES_DEEP < 20` Ω·m **and** RQI ≥ 0.6 | severity |
+| Low fluorescence | `lowfluor` | `fluor < 75%` **and** RQI ≥ 0.6 | severity |
+| Low GR | `low_GR` | `avg_GR < 65` gAPI **and** RQI ≥ 0.6 | boolean only |
+| Zone of interest | `ZOI` | Along-wellbore deterioration (±3 neighbours; ≥2 metrics drop >15%) | independent |
+| OWC proximity | `owc_near` | Tier from `abs(mTVDss − OWC_field)` | severity |
 
-| Flag | ID | Condition |
-|------|-----|-----------|
-| High permeability | `highperm` | `res_sep ≥ P75(res_sep)` within the well **and** RQI ≥ 0.6 |
-| Low resistivity | `lowres` | `avg_RES_DEEP < 20` ohm·m **and** RQI ≥ 0.6 |
-| Low fluorescence | `lowfluor` | `fluor < 75%` **and** RQI ≥ 0.6 |
-
-`res_sep` (ΔRes) = `avg_RES_DEEP − avg_RES_SHALLOW` (absolute difference in ohm·m).
+ZOI fires above pay cutoffs; intervals below fluor/res pay cutoffs use standard `lowres` / `lowfluor` flags instead.
 
 ### Step C — WRCI (0–100)
 
 ```
-WRCI = 100 × ( 0.40·RQI + 0.20·highperm_norm + 0.20·lowres_severity + 0.20·lowfluor_severity )
+WRCI = 100 × ( 0.40·RQI + 0.20·lowres_severity + 0.20·lowfluor_severity + 0.20·owc_severity )
 ```
 
 | Severity term | Formula |
 |---------------|---------|
-| `highperm_norm` | Within-well robust normalisation of `res_sep` |
 | `lowres_severity` | `clamp((20 − RES_DEEP) / 20, 0, 1)` |
 | `lowfluor_severity` | `clamp((75 − fluor) / 75, 0, 1)` |
+| `owc_severity` | High → 1.0, Elevated → 0.5, Low → 0.0 |
 
 ### Risk classification
 
 | Class | Rule |
 |-------|------|
-| **High** | WRCI ≥ 66 **and** ≥ 2 flags |
-| **Elevated** | WRCI 40–66 **or** exactly 1 flag |
+| **High** | WRCI ≥ 66 **and** (OWC High **or** ≥2 of `{lowres, lowfluor, low_GR}`) **or** (ZOI **and** WRCI ≥ 66) |
+| **Elevated** | WRCI 40–66 **or** 1 of `{lowres, lowfluor, low_GR}` **or** OWC Elevated **or** (ZOI **and** WRCI ≥ 40) |
 | **Low** | Otherwise |
-
-### Permeability proxy (interpretation text only)
-
-Qualitative label in interpretation markdown (`perm` field) uses **absolute** ΔRes bands (not well-relative):
-
-| ΔRes (ohm·m) | Label |
-|--------------|-------|
-| > 50 | High inferred permeability |
-| > 20 | Moderate-high inferred permeability |
-| > 5 | Moderate inferred permeability |
-| > 0 | Low-moderate inferred permeability |
-| ≤ 0 | Low inferred permeability (tight/cemented) |
-
-**Note:** The `highperm` **red flag** uses well-relative P75 of ΔRes; the text `perm` label uses fixed absolute cutoffs.
 
 ### Water-risk mapping
 
-Primary deliverable for Jena 31 / Jena 31DW1: depth-ordered flagged zones with explicit flag reasoning.
+Primary deliverable for Jena 31 / Jena 31DW1: depth-ordered flagged zones with RQI, WRCI, `mTVDss`, OWC distance, and explicit flag reasoning.
 
 ---
 
@@ -113,11 +90,12 @@ Find intervals that are **statistically unusual within their own well** — surf
 
 For each interval, modified z-scores are computed for:
 
-- `res_sep`
 - `avg_RES_DEEP`
 - `avg_GR`
 - `pct_ss`
 - `fluor`
+- `grain_ordinal`
+- `gas`
 - `grain_ordinal`
 
 ### Formula
@@ -134,7 +112,7 @@ z_i = 0.6745 × (x_i − median(x)) / MAD(x)
 
 ### Diagnostic pattern
 
-An interval with **anomalously high `res_sep`**, **anomalously low `avg_RES_DEEP`**, and **high `pct_ss`** is a classic water-zone signature (good, permeable rock without hydrocarbon charge).
+An interval with **anomalously low `avg_RES_DEEP`**, **anomalously high `avg_GR`**, and **high `pct_ss`** is a classic water-zone signature (good rock without hydrocarbon charge).
 
 ### Outputs
 
@@ -157,7 +135,7 @@ Quantify **relationships between petrophysical variables** within each well usin
 
 ### Variables
 
-`pct_ss`, `grain_ordinal`, `avg_GR`, `res_sep`, `avg_RES_DEEP`, `fluor`, `gas`
+`pct_ss`, `grain_ordinal`, `avg_GR`, `avg_RES_DEEP`, `fluor`, `gas`
 
 ### Method
 
@@ -169,8 +147,8 @@ Quantify **relationships between petrophysical variables** within each well usin
 
 | Pattern | Interpretation |
 |---------|----------------|
-| Positive RQI ↔ `res_sep` | Permeability proxy behaves as expected |
-| Negative / weak `res_sep` ↔ `avg_RES_DEEP` | Permeability decoupled from resistivity (water charge suspicion) |
+| Positive RQI ↔ `avg_RES_DEEP` | Rock quality tracks resistivity |
+| Negative RQI ↔ `avg_GR` | Cleaner sand vs higher gamma ray |
 | Negative / weak RQI ↔ `fluor` | Good rock without fluorescence |
 
 **Decoupling** of permeability from hydrocarbon indicators suggests water-prone zones.
@@ -199,13 +177,13 @@ Measure how similar two wells are in the **character of their flagged / geologic
 Each well is represented as a set of binary features that are “present” if they fire on ≥ **10%** of that well’s intervals:
 
 - `good_rock` (RQI ≥ 0.6)
-- `highperm`
 - `lowres_over_good`
 - `lowfluor_over_good`
+- `low_GR` (GR < 65 gAPI on good rock)
+- `ZOI`
 - `matching_pay`
 - `coarse_grain` (grain_ordinal ≥ 4)
-- `low_GR` (GR below well P25)
-- `loose_grains`
+- `loose_hardness`
 
 ### Formula
 
@@ -252,11 +230,11 @@ Per-well aggregate feature vector (standardised):
 - `mean_pct_ss`
 - `mean_grain_ordinal`
 - `mean_avg_GR`
-- `mean_res_sep`
 - `mean_RES_DEEP`
 - `pay_pct`
 - `mean_WRCI`
 - `pct_high_risk`
+- `pct_zoi`
 
 **Method:**
 
@@ -269,7 +247,7 @@ Per-well aggregate feature vector (standardised):
 
 For each property distribution, compare **Jena 31** and **Jena 31DW1** against each analog well (and portfolio):
 
-**Properties tested:** `pct_ss`, `grain_ordinal`, `avg_GR`, `res_sep`, `avg_RES_DEEP`, `fluor`, `WRCI`
+**Properties tested:** `pct_ss`, `grain_ordinal`, `avg_GR`, `avg_RES_DEEP`, `fluor`, `WRCI`
 
 **Reported:** D-statistic and p-value per (focus well, analog, property).
 

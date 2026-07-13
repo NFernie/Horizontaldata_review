@@ -24,6 +24,7 @@ sys.path.insert(0, os.path.join(WORKSPACE, "scripts"))
 
 import config  # noqa: E402
 from compute_pay_summary import analyze_well, pct_of_lateral  # noqa: E402
+from owc import owc_distance_m, owc_for_alias, owc_proximity_tier, owc_severity  # noqa: E402
 from process_mckinlay_wells import WELLS, process_well  # noqa: E402
 
 DATA_ROOT = os.path.join(WORKSPACE, config.DATA_DIR)
@@ -138,7 +139,6 @@ def build_enriched_intervals(results):
             "avg_GR": interval_log_value(item, "avg_GR"),
             "avg_RES_DEEP": interval_log_value(item, "avg_RES_DEEP"),
             "avg_RES_SHALLOW": interval_log_value(item, "avg_RES_SHALLOW"),
-            "res_sep": interval_log_value(item, "res_sep"),
         }
         ss = row.get("pct_ss")
         fluor = row.get("fluor")
@@ -153,6 +153,127 @@ def build_enriched_intervals(results):
         )
         rows.append(row)
     return rows
+
+
+def _metric_drop_fraction(ref, cur):
+    if ref is None or cur is None or pd.isna(ref) or pd.isna(cur):
+        return None
+    ref_f = float(ref)
+    cur_f = float(cur)
+    if ref_f <= 0:
+        return None
+    return (ref_f - cur_f) / ref_f
+
+
+def _neighbour_mean(rows, indices, key):
+    vals = []
+    for j in indices:
+        v = rows[j].get(key)
+        if v is None or pd.isna(v):
+            continue
+        try:
+            vals.append(float(v))
+        except (TypeError, ValueError):
+            continue
+    return sum(vals) / len(vals) if vals else None
+
+
+def compute_zoi(rows):
+    """Along-wellbore Zone of Interest per updated-plan §4.2."""
+    if not rows:
+        return rows
+    n = len(rows)
+    metrics = ("fluor", "gas", "avg_RES_DEEP")
+    window = config.ZOI_NEIGHBOUR_WINDOW
+
+    for i, row in enumerate(rows):
+        row["flag_zoi"] = False
+        rqi = row.get("RQI")
+        if rqi is None or float(rqi) < config.RQI_THRESHOLD:
+            continue
+
+        fluor = pd.to_numeric(row.get("fluor"), errors="coerce")
+        res_deep = row.get("avg_RES_DEEP")
+        below_pay = (
+            (fluor is not None and not pd.isna(fluor) and fluor < config.FLUOR_CUTOFF)
+            or (res_deep is not None and res_deep < config.RES_DEEP_CUTOFF)
+        )
+        if below_pay:
+            continue
+
+        shallow_idx = list(range(max(0, i - window), i))
+        deep_idx = list(range(i + 1, min(n, i + window + 1)))
+        triggered = False
+
+        for neighbour_idx in (shallow_idx, deep_idx):
+            if not neighbour_idx:
+                continue
+            rqi_avg = _neighbour_mean(rows, neighbour_idx, "RQI")
+            if rqi_avg is None:
+                continue
+            rqi_f = float(rqi)
+            rqi_ok = rqi_f >= config.RQI_THRESHOLD and (
+                rqi_f >= rqi_avg * config.ZOI_RQI_NEIGHBOUR_TOLERANCE or rqi_f > rqi_avg
+            )
+            if not rqi_ok:
+                continue
+
+            drops = 0
+            for metric in metrics:
+                ref = _neighbour_mean(rows, neighbour_idx, metric)
+                cur = row.get(metric)
+                if cur is None or pd.isna(cur):
+                    continue
+                try:
+                    cur_f = float(cur)
+                except (TypeError, ValueError):
+                    continue
+                drop = _metric_drop_fraction(ref, cur_f)
+                if drop is not None and drop > config.ZOI_DROP_PCT:
+                    drops += 1
+            if drops >= config.ZOI_MIN_DROPS:
+                triggered = True
+                break
+
+        row["flag_zoi"] = triggered
+    return rows
+
+
+def attach_owc(rows, alias):
+    """Attach mTVDss, OWC distance, and proximity tier per updated-plan §5."""
+    owc_field = owc_for_alias(alias)
+    for row in rows:
+        mtvds = row.get("mtvds")
+        row["mTVDss"] = mtvds
+        dist = owc_distance_m(mtvds, owc_field)
+        row["owc_distance_m"] = dist
+        row["owc_near"] = owc_proximity_tier(
+            dist, row.get("RQI"), bool(row.get("flag_zoi"))
+        )
+    return rows
+
+
+def classify_risk_class(wrci, has_lowres, has_lowfluor, has_low_gr, owc_near, flag_zoi):
+    """Risk class per updated-plan §3B locked table."""
+    wrci = wrci or 0.0
+    bool_count = sum((has_lowres, has_lowfluor, has_low_gr))
+    owc_high = owc_near == "High"
+    owc_elev = owc_near == "Elevated"
+
+    if (wrci >= config.WRCI_HIGH_THRESHOLD and (owc_high or bool_count >= 2)) or (
+        flag_zoi and wrci >= config.WRCI_HIGH_THRESHOLD
+    ):
+        return "High"
+
+    if (
+        config.WRCI_ELEVATED_THRESHOLD <= wrci < config.WRCI_HIGH_THRESHOLD
+        or bool_count >= 1
+        or owc_elev
+        or (flag_zoi and wrci >= config.WRCI_ELEVATED_THRESHOLD)
+    ):
+        return "Elevated"
+
+    return "Low"
 
 
 def compute_rqi_components(rows):
@@ -219,52 +340,67 @@ def compute_rqi_components(rows):
 
 
 def compute_flags_and_wrci(rows):
-    res_sep_vals = [r.get("res_sep") for r in rows]
-    res_sep_p75 = percentile_value(res_sep_vals, config.FLAG_RES_SEP_PERCENTILE)
-    highperm_norm = robust_norm(res_sep_vals)
-
-    for i, row in enumerate(rows):
+    for row in rows:
         rqi = row.get("RQI")
         good = rqi is not None and rqi >= config.RQI_THRESHOLD
-        res_sep = row.get("res_sep")
         res_deep = row.get("avg_RES_DEEP")
+        gr = row.get("avg_GR")
         fluor = pd.to_numeric(row.get("fluor"), errors="coerce")
+        flag_zoi = bool(row.get("flag_zoi"))
+        owc_near = row.get("owc_near")
 
         flags = []
+        has_lowres = False
+        has_lowfluor = False
+        has_low_gr = False
+
         if good:
-            if res_sep is not None and res_sep_p75 is not None and not math.isnan(res_sep_p75):
-                if res_sep >= res_sep_p75:
-                    flags.append("highperm")
             if res_deep is not None and res_deep < config.FLAG_LOWRES_RES_DEEP:
                 flags.append("lowres")
+                has_lowres = True
             if fluor is not None and not pd.isna(fluor) and fluor < config.FLAG_LOWFLUOR_PCT:
                 flags.append("lowfluor")
+                has_lowfluor = True
+            if gr is not None and gr < config.FLAG_LOW_GR:
+                flags.append("low_GR")
+                has_low_gr = True
+
+        if flag_zoi:
+            flags.append("ZOI")
+
+        if owc_near == "High":
+            flags.append("owc_high")
+        elif owc_near == "Elevated":
+            flags.append("owc_elevated")
 
         row["flags"] = flags
-        row["flag_highperm"] = "highperm" in flags
-        row["flag_lowres"] = "lowres" in flags
-        row["flag_lowfluor"] = "lowfluor" in flags
+        row["flag_lowres"] = has_lowres
+        row["flag_lowfluor"] = has_lowfluor
+        row["flag_low_gr"] = has_low_gr
 
-        hp_norm = float(highperm_norm.iloc[i]) if pd.notna(highperm_norm.iloc[i]) else 0.0
-        lowres_sev = clamp((config.LOWRES_SEVERITY_REF - res_deep) / config.LOWRES_SEVERITY_REF) if res_deep is not None else 0.0
-        lowfluor_sev = clamp((config.LOWFLUOR_SEVERITY_REF - fluor) / config.LOWFLUOR_SEVERITY_REF) if fluor is not None and not pd.isna(fluor) else 0.0
+        lowres_sev = (
+            clamp((config.LOWRES_SEVERITY_REF - res_deep) / config.LOWRES_SEVERITY_REF)
+            if res_deep is not None
+            else 0.0
+        )
+        lowfluor_sev = (
+            clamp((config.LOWFLUOR_SEVERITY_REF - fluor) / config.LOWFLUOR_SEVERITY_REF)
+            if fluor is not None and not pd.isna(fluor)
+            else 0.0
+        )
+        owc_sev = owc_severity(owc_near)
 
         ww = config.WRCI_WEIGHTS
         wrci = 100.0 * (
             ww["rqi"] * (rqi or 0.0)
-            + ww["highperm"] * hp_norm
             + ww["lowres_severity"] * lowres_sev
             + ww["lowfluor_severity"] * lowfluor_sev
+            + ww["owc_severity"] * owc_sev
         )
         row["WRCI"] = round(wrci, 2)
-
-        flag_count = len(flags)
-        if wrci >= config.WRCI_HIGH_THRESHOLD and flag_count >= config.WRCI_HIGH_MIN_FLAGS:
-            row["risk_class"] = "High"
-        elif wrci >= config.WRCI_ELEVATED_THRESHOLD or flag_count >= 1:
-            row["risk_class"] = "Elevated"
-        else:
-            row["risk_class"] = "Low"
+        row["risk_class"] = classify_risk_class(
+            wrci, has_lowres, has_lowfluor, has_low_gr, owc_near, flag_zoi
+        )
 
     return rows
 
@@ -335,7 +471,6 @@ def jaccard_sets(rows):
     if n == 0:
         return set()
 
-    gr_p25 = percentile_value([r.get("avg_GR") for r in rows], config.LOW_GR_PERCENTILE)
     present = set()
     thresholds = config.JACCARD_PRESENCE_PCT / 100.0
 
@@ -344,12 +479,12 @@ def jaccard_sets(rows):
 
     checks = {
         "good_rock": lambda r: (r.get("RQI") or 0) >= config.RQI_THRESHOLD,
-        "highperm": lambda r: r.get("flag_highperm"),
         "lowres_over_good": lambda r: r.get("flag_lowres"),
         "lowfluor_over_good": lambda r: r.get("flag_lowfluor"),
+        "low_GR": lambda r: r.get("flag_low_gr"),
+        "ZOI": lambda r: r.get("flag_zoi"),
         "matching_pay": lambda r: r.get("matching_pay"),
         "coarse_grain": lambda r: (r.get("grain_ordinal") or 0) >= config.COARSE_GRAIN_ORDINAL,
-        "low_GR": lambda r: r.get("avg_GR") is not None and gr_p25 is not None and not math.isnan(gr_p25) and r.get("avg_GR") <= gr_p25,
         "loose_hardness": lambda r: r.get("flag_loose_hardness"),
     }
     for feat, fn in checks.items():
@@ -397,17 +532,18 @@ def well_cluster_vector(rows, pay_pct):
         return float(vals.mean()) if len(vals) else 0.0
 
     high_risk = sum(1 for r in rows if r.get("risk_class") == "High")
+    zoi = sum(1 for r in rows if r.get("flag_zoi"))
     n = len(rows) or 1
     return np.array(
         [
             mean_of("pct_ss"),
             mean_of("grain_ordinal"),
             mean_of("avg_GR"),
-            mean_of("res_sep"),
             mean_of("avg_RES_DEEP"),
             pay_pct,
             mean_of("WRCI"),
             100.0 * high_risk / n,
+            100.0 * zoi / n,
         ],
         dtype=float,
     )
@@ -449,12 +585,14 @@ def serialize_interval(row):
         "fec03_sst": row.get("fec03_sst") if pd.notna(row.get("fec03_sst")) else None,
         "long_desc": row.get("long_desc"),
         "log": clean_log,
-        "perm": row.get("perm"),
         "matching_pay": row.get("matching_pay"),
         "RQI": clean_scalar(row.get("RQI")),
         "WRCI": clean_scalar(row.get("WRCI")),
         "risk_class": row.get("risk_class"),
         "flags": row.get("flags", []),
+        "mTVDss": clean_scalar(row.get("mTVDss")),
+        "owc_distance_m": clean_scalar(row.get("owc_distance_m")),
+        "owc_near": row.get("owc_near"),
         "z_scores": {k: clean_scalar(v) for k, v in row.get("z_scores", {}).items()},
         "anomalies": row.get("anomalies", []),
     }
@@ -483,7 +621,9 @@ def water_risk_payload(rows):
                 "fluor": r.get("fluor"),
                 "avg_GR": r.get("avg_GR"),
                 "avg_RES_DEEP": r.get("avg_RES_DEEP"),
-                "res_sep": r.get("res_sep"),
+                "mTVDss": r.get("mTVDss"),
+                "owc_distance_m": r.get("owc_distance_m"),
+                "owc_near": r.get("owc_near"),
             },
         }
         for r in flagged
@@ -530,13 +670,16 @@ def main():
         print(f"Exporting {cfg['display']}...")
         meta = process_well(cfg, dc30_df, mck_murta_df)
         pay = analyze_well(cfg, dc30_df, mck_murta_df)
+        alias = cfg["alias"]
 
         rows = build_enriched_intervals(meta["results"])
+        rows.sort(key=lambda r: r["depth"])
         rows = compute_rqi_components(rows)
+        rows = compute_zoi(rows)
+        rows = attach_owc(rows, alias)
         rows = compute_flags_and_wrci(rows)
         rows = modified_zscores(rows)
 
-        alias = cfg["alias"]
         enriched_by_alias[alias] = rows
         jaccard_feature_sets[alias] = jaccard_sets(rows)
 

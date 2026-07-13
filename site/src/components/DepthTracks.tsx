@@ -53,12 +53,10 @@ function computeDomains(intervals: IntervalRecord[]) {
   const resD = intervals.map((i) => i.log?.avg_RES_DEEP).filter((v): v is number => v != null && v > 0);
   const resS = intervals.map((i) => i.log?.avg_RES_SHALLOW).filter((v): v is number => v != null && v > 0);
   const resAll = [...resD, ...resS];
-  const sep = intervals.map((i) => i.log?.res_sep).filter((v): v is number => v != null);
 
   return {
     gr: [0, Math.max(120, ...(gr.length ? gr : [120]))] as [number, number],
     res: [0.5, Math.max(10, ...(resAll.length ? resAll : [100]))] as [number, number],
-    sep: [0, Math.max(5, ...(sep.length ? sep : [20]))] as [number, number],
   };
 }
 
@@ -122,13 +120,12 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
         primaryColor: "var(--rock-quality-end)",
       },
       {
-        id: "sep",
-        label: "ΔRes",
-        unit: "ohm.m",
+        id: "rqi",
+        label: "RQI",
         scale: "linear",
-        domain: domains.sep,
-        getPrimary: (i) => i.log?.res_sep,
-        primaryColor: "#f472b6",
+        domain: [0, 1],
+        getPrimary: (i) => i.RQI,
+        primaryColor: "var(--accent)",
       },
       {
         id: "wrci",

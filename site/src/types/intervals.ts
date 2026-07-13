@@ -7,7 +7,6 @@ export interface IntervalLog {
   n_RES_DEEP?: number;
   avg_RES_SHALLOW?: number | null;
   n_RES_SHALLOW?: number;
-  res_sep?: number | null;
 }
 
 export interface IntervalRecord {
@@ -25,12 +24,14 @@ export interface IntervalRecord {
   gas?: number | null;
   long_desc?: string;
   log: IntervalLog | null;
-  perm?: string;
   matching_pay?: boolean;
   RQI: number | null;
   WRCI: number | null;
   risk_class: RiskClass;
   flags: string[];
+  mTVDss?: number | null;
+  owc_distance_m?: number | null;
+  owc_near?: "High" | "Elevated" | "Low" | null;
   z_scores: Record<string, number | null>;
   anomalies: string[];
 }

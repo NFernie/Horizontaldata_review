@@ -83,11 +83,11 @@ export function WellDetail() {
         render: (r) => formatNumber(r.log?.avg_RES_DEEP, 1),
       },
       {
-        key: "sep",
-        header: "ΔRes",
+        key: "rqi",
+        header: "RQI",
         align: "right",
         mono: true,
-        render: (r) => formatNumber(r.log?.res_sep, 2),
+        render: (r) => formatNumber(r.RQI, 2),
       },
       {
         key: "wrci",
@@ -108,7 +108,7 @@ export function WellDetail() {
         render: (r) => (
           <div className="flex flex-wrap gap-1">
             {r.flags.map((f) => (
-              <RiskBadge key={f} flag={f as "highperm" | "lowres" | "lowfluor"} />
+              <RiskBadge key={f} flag={f} />
             ))}
             {!r.flags.length ? <span className="text-text-muted">—</span> : null}
           </div>

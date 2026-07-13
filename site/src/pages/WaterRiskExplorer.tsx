@@ -35,7 +35,7 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
       <div className="mt-3 flex flex-wrap gap-1.5">
         {zone.flags.length > 0 ? (
           zone.flags.map((f) => (
-            <RiskBadge key={f} flag={f as "highperm" | "lowres" | "lowfluor"} />
+            <RiskBadge key={f} flag={f} />
           ))
         ) : (
           <span className="text-xs text-text-muted">No red flags (elevated by WRCI)</span>
@@ -64,8 +64,14 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
           <dd className="font-mono text-text">{formatNumber(ev.avg_RES_DEEP, 1)}</dd>
         </div>
         <div>
-          <dt className="text-text-muted">ΔRes</dt>
-          <dd className="font-mono text-text">{formatNumber(ev.res_sep, 2)}</dd>
+          <dt className="text-text-muted">OWC dist</dt>
+          <dd className="font-mono text-text">
+            {ev.owc_distance_m != null ? `${formatNumber(ev.owc_distance_m, 1)} m` : "—"}
+          </dd>
+        </div>
+        <div>
+          <dt className="text-text-muted">mTVDss</dt>
+          <dd className="font-mono text-text">{formatNumber(ev.mTVDss, 1)}</dd>
         </div>
         <div>
           <dt className="text-text-muted">Fluor</dt>

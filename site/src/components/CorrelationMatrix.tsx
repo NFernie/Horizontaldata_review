@@ -6,7 +6,6 @@ const LABELS: Record<SpearmanVar, string> = {
   pct_ss: "%SS",
   grain_ordinal: "Grain",
   avg_GR: "GR",
-  res_sep: "ΔRes",
   avg_RES_DEEP: "RES",
   fluor: "Fluor",
   gas: "Gas",

@@ -8,7 +8,9 @@ export interface FlaggedZoneEvidence {
   fluor: number | null;
   avg_GR: number | null;
   avg_RES_DEEP: number | null;
-  res_sep: number | null;
+  mTVDss: number | null;
+  owc_distance_m: number | null;
+  owc_near: "High" | "Elevated" | "Low" | null;
 }
 
 export interface FlaggedZone {

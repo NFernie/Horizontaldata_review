@@ -50,6 +50,7 @@ WELLS = [
         "pdf": "JENA 31_ML_Mudlog_Spud-3394_MD_Final.pdf",
         "xlsx": "Jena 31- Hz Section Samples Descriptions_3394_TD.xlsx",
         "las": "Jena_31",
+        "trajectory": "Jena_31_trajectory",
     },
     {
         "alias": "JENA31DW1",
@@ -58,6 +59,7 @@ WELLS = [
         "pdf": "JENA 31DW1_ML_Mudlog_Spud-3658_MD_Final.pdf",
         "xlsx": "Jena 31DW1- Hz Section Samples Descriptions.xlsx",
         "las": "Jena_31DW1",
+        "trajectory": "Jena_31DW1_trajectory",
     },
     {
         "alias": "BIALA19",
@@ -66,6 +68,7 @@ WELLS = [
         "pdf": "BIALA 19_ML_Mudlog_Spud-3730_MD_Final.pdf",
         "xlsx": "Biala 19 Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Biala_19",
+        "trajectory": "Biala_19_trajectory",
     },
     {
         "alias": "BIALA20",
@@ -74,6 +77,7 @@ WELLS = [
         "pdf": "BIALA 20_ML_Mudlog_Spud-3315_MD_Final.pdf",
         "xlsx": "Biala 20 Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Biala_20",
+        "trajectory": "Biala_20_trajectory",
     },
     {
         "alias": "BIALA21",
@@ -82,6 +86,7 @@ WELLS = [
         "pdf": "BIALA 21_ML_Mudlog_Spud-3278_MD_Final.pdf",
         "xlsx": "Biala 21 Hz Section Samples Descriptions_Rev3-fernc.xlsx",
         "las": "Biala_21",
+        "trajectory": "Biala_21_trajectory",
     },
     {
         "alias": "FROSTILLICUS2",
@@ -90,6 +95,7 @@ WELLS = [
         "pdf": "Frostillicus 2_Mudlog_Spud-3724m_TD_Field_Final.pdf",
         "xlsx": "Frostillicus 2 Hz Section Samples Descriptions.xlsx",
         "las": "Frosti_2",
+        "trajectory": "Frosti_2_trajectory",
     },
     {
         "alias": "GRANCHIO4",
@@ -98,6 +104,7 @@ WELLS = [
         "pdf": "Granchio 4_Mudlog_Spud-2825m_TD_Field Final.pdf",
         "xlsx": "Granchio 4 Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Granchio_4",
+        "trajectory": "Granchio_4_trajectory",
     },
     {
         "alias": "HOBBES5",
@@ -106,6 +113,7 @@ WELLS = [
         "pdf": "Hobbes 5_Mudlog_Spud-2590m_TD_Field Final.pdf",
         "xlsx": "Hobbes 5_Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Hobbes_5",
+        "trajectory": "Hobbes_5_trajectory",
     },
     {
         "alias": "HOBBES6",
@@ -114,6 +122,7 @@ WELLS = [
         "pdf": "Hobbes 6_Mudlog_Spud-2500m_TD_Field Final.pdf",
         "xlsx": "Hobbes 6 Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Hobbes_6",
+        "trajectory": "Hobbes_6_trajectory",
     },
     {
         "alias": "MCKINLAY20",
@@ -122,6 +131,7 @@ WELLS = [
         "pdf": "McKinlay 20_Mudlog_Spud-3000m_TD_Field Final.pdf",
         "xlsx": "McKinlay 20 Hz Section samples descriptions.xlsx",
         "las": "Mck_20",
+        "trajectory": "Mck_20_trajectory",
     },
     {
         "alias": "MCKINLAY21",
@@ -130,6 +140,7 @@ WELLS = [
         "pdf": "McKinlay 21_Mudlog_Spud-2417m_TD.pdf",
         "xlsx": "McKinlay 21 Hz Section Samples Descriptions.xlsx",
         "las": "Mck_21",
+        "trajectory": "Mck_21_trajectory",
     },
     {
         "alias": "MCKINLAY22",
@@ -138,6 +149,7 @@ WELLS = [
         "pdf": "Mckinlay 22_Mudlog_SPUD-3206.4m(TD).pdf",
         "xlsx": "McKinlay 22 Hz Section samples descriptions.xlsx",
         "las": "Mck_22",
+        "trajectory": "Mck_22_trajectory",
     },
     {
         "alias": "MCKINLAY23",
@@ -146,6 +158,7 @@ WELLS = [
         "pdf": "McKinlay 23_Mudlog_Spud-2590m_TD_Field Final.pdf",
         "xlsx": "McKinlay 23 Hz Section Samples Descriptions.xlsx",
         "las": "Mck_23",
+        "trajectory": "Mck_23_trajectory",
     },
     {
         "alias": "MCKINLAY24",
@@ -154,6 +167,7 @@ WELLS = [
         "pdf": "McKinlay 24_Mudlog_Spud-2598m_TD_Field Final.pdf",
         "xlsx": "McKinlay 24 Hz Section Samples Descriptions.xlsx",
         "las": "Mck_24",
+        "trajectory": "Mck_24_trajectory",
     },
     {
         "alias": "STIMPEE6",
@@ -162,6 +176,7 @@ WELLS = [
         "pdf": "Stimpee 6_Mudlog_Spud-3186m_TD_Field_Final.pdf",
         "xlsx": "Stimpee 6_Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Stimpee_6",
+        "trajectory": "Stimpee_6_trajectory",
     },
     {
         "alias": "STIMPEE7",
@@ -170,6 +185,7 @@ WELLS = [
         "pdf": "Stimpee 7_Mudlog_Spud-2840m_TD_Field Final.pdf",
         "xlsx": "Stimpee 7_Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Stimpee_7",
+        "trajectory": "Stimpee_7_trajectory",
     },
     {
         "alias": "TERINGIE6",
@@ -178,6 +194,7 @@ WELLS = [
         "pdf": "TERINGIE 6_ML_Mudlog_Spud-3441.4_MD_Final.pdf",
         "xlsx": "Teringie 6 Hz Section Samples Descriptions_Rev3.xlsx",
         "las": "Teringie_6",
+        "trajectory": "Terignie_6_trajectory",
     },
     {
         "alias": "MCKINLAY10",
@@ -375,18 +392,16 @@ def interval_excluded(top, bot, zones):
     return False
 
 
-def perm_proxy(sep):
-    if sep is None or (isinstance(sep, float) and np.isnan(sep)):
-        return "Insufficient resistivity data"
-    if sep > 50:
-        return "High inferred permeability"
-    if sep > 20:
-        return "Moderate-high inferred permeability"
-    if sep > 5:
-        return "Moderate inferred permeability"
-    if sep > 0:
-        return "Low-moderate inferred permeability"
-    return "Low inferred permeability (tight/cemented)"
+def avg_log(df, top, bot):
+    sub = df[(df["depth"] >= top) & (df["depth"] <= bot)]
+    if sub.empty:
+        return None
+    result = {}
+    for col in ["GR", "RES_DEEP", "RES_SHALLOW"]:
+        vals = sub[col].replace(NULL, np.nan).dropna()
+        result[f"avg_{col}"] = float(vals.mean()) if len(vals) else None
+        result[f"n_{col}"] = int(len(vals))
+    return result
 
 
 def extract_mudlog_text(pdf_path):
@@ -397,6 +412,14 @@ def extract_mudlog_text(pdf_path):
             if text:
                 chunks.append(text)
     return "\n".join(chunks)
+
+
+def parse_las_td(las_path):
+    with open(las_path) as f:
+        for line in f:
+            if line.strip().startswith("STOP"):
+                return float(line.split(".m")[1].split(":")[0].strip())
+    return None
 
 
 LAS_CURVE_ALIASES = {
@@ -705,30 +728,6 @@ def _interval_descriptor_text(long_desc, mud_matches):
         if isinstance(txt, str) and txt.strip():
             parts.append(txt.strip())
     return " ".join(parts)
-
-
-def avg_log(df, top, bot):
-    sub = df[(df["depth"] >= top) & (df["depth"] <= bot)]
-    if sub.empty:
-        return None
-    result = {}
-    for col in ["GR", "RES_DEEP", "RES_SHALLOW"]:
-        vals = sub[col].replace(NULL, np.nan).dropna()
-        result[f"avg_{col}"] = float(vals.mean()) if len(vals) else None
-        result[f"n_{col}"] = int(len(vals))
-    if result.get("avg_RES_DEEP") is not None and result.get("avg_RES_SHALLOW") is not None:
-        result["res_sep"] = result["avg_RES_DEEP"] - result["avg_RES_SHALLOW"]
-    else:
-        result["res_sep"] = None
-    return result
-
-
-def parse_las_td(las_path):
-    with open(las_path) as f:
-        for line in f:
-            if line.strip().startswith("STOP"):
-                return float(line.split(".m")[1].split(":")[0].strip())
-    return None
 
 
 def _find_col(columns, *names):
@@ -1224,7 +1223,6 @@ def process_well(cfg, dc30_df, mck_murta_df):
                 "long_desc": long_map.get(depth, ""),
                 "mudlog": mud_matches,
                 "log": log_stats,
-                "perm": perm_proxy(log_stats["res_sep"] if log_stats else None),
                 "poro_class": parse_porosity(desc_text),
                 "hardness_score": parse_hardness(desc_text),
                 "hardness_class": parse_hardness_class(desc_text),
@@ -1356,7 +1354,7 @@ def write_interpretation(meta, path):
         "2. **Formation top discrepancies** between Mck_Murta.xlsx and mudlog PDF picks are noted where present.",
         f"3. **Well name mapping:** {alias} → `{meta['tops_name']}` (verified by TD and LAS WELL header).",
         "4. **Sample intervals** are midpoints between consecutive sample depths — variable widths where spacing is irregular.",
-        "5. **Resistivity permeability proxy** is qualitative only (Δ Res = RES_DEEP − RES_SHALLOW).",
+        "5. **Water-risk flags** use RQI, fluorescence, resistivity, GR, ZOI, and OWC proximity (see export).",
         "6. **NULL LAS values** (-999.25) excluded from averages.",
         f"7. **Exclusion zones** span from each Murta/McKinlay overburden entry to the next lone McKinlay "
         f"re-entry below (or entry + {DEFAULT_REENTRY_OFFSET:.0f} m MD if none mapped). Later entry pairs "
@@ -1483,18 +1481,11 @@ def write_interpretation(meta, path):
                 lines.append(f"| RES_DEEP (ohm.m) | {lg['avg_RES_DEEP']:.2f} | {lg['n_RES_DEEP']} |")
             if lg.get("avg_RES_SHALLOW") is not None:
                 lines.append(f"| RES_SHALLOW (ohm.m) | {lg['avg_RES_SHALLOW']:.2f} | {lg['n_RES_SHALLOW']} |")
-            if lg.get("res_sep") is not None:
-                lines.append(f"| **Δ Res (Deep − Shallow)** | **{lg['res_sep']:.2f}** | — |")
-            lines.append(f"\n**Permeability Proxy:** {item['perm']}")
-            if lg.get("res_sep") is not None:
-                lines.append(
-                    "> Greater deep-shallow resistivity separation → higher inferred permeability.\n"
-                )
+            lines.append("")
         else:
             lines.append("**Wireline Log Averages:** _No log data in interval_\n")
         lines.append("---\n")
 
-    res_seps = [x["log"]["res_sep"] for x in r if x["log"] and x["log"].get("res_sep") is not None]
     ss_vals = [x["pct_ss"] for x in r if pd.notna(x["pct_ss"])]
     lines += ["## 5. Summary Statistics (McKinlay Member)\n", "| Metric | Value |", "|--------|-------|"]
     lines.append(f"| Intervals analysed | {len(r)} |")
@@ -1502,10 +1493,6 @@ def write_interpretation(meta, path):
         lines.append(f"| Depth range | {min(x['depth'] for x in r):.0f} – {max(x['depth'] for x in r):.0f} m |")
     if ss_vals:
         lines.append(f"| Avg % Sandstone | {np.mean(ss_vals):.1f}% |")
-    if res_seps:
-        lines.append(f"| Avg Δ Res (Deep−Shallow) | {np.mean(res_seps):.2f} ohm.m |")
-        lines.append(f"| Max Δ Res | {max(res_seps):.2f} ohm.m |")
-        lines.append(f"| Min Δ Res | {min(res_seps):.2f} ohm.m |")
     lines.append(f"| Mudlog matches | {sum(1 for x in r if x['mudlog'])} / {len(r)} |")
     lines.append("")
 
@@ -1515,7 +1502,6 @@ def write_interpretation(meta, path):
 
 def write_summary(meta, path):
     r = meta["results"]
-    res_seps = [x["log"]["res_sep"] for x in r if x["log"] and x["log"].get("res_sep") is not None]
     ss_vals = [x["pct_ss"] for x in r if pd.notna(x["pct_ss"])]
     alias = meta["alias"]
     lines = [
@@ -1558,10 +1544,6 @@ def write_summary(meta, path):
         )
     if ss_vals:
         lines.append(f"- Average sandstone: **{np.mean(ss_vals):.1f}%**")
-    if res_seps:
-        lines.append(
-            f"- Δ Res range: **{min(res_seps):.1f} – {max(res_seps):.1f} ohm.m** (avg {np.mean(res_seps):.1f})"
-        )
     lines.append(
         f"- Mudlog matched: **{sum(1 for x in r if x['mudlog'])} / {len(r)}** intervals\n"
     )

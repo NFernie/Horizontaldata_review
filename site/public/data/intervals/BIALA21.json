@@ -25,22 +25,23 @@
         "avg_RES_DEEP": 35.199233430878785,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 33.6809755960303,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 1.5182578348484839
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.4297441720382925,
-      "WRCI": 18.81,
+      "WRCI": 17.19,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.3473199101124,
+      "owc_distance_m": 8.652680089887554,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.427,
         "avg_RES_DEEP": 0.321,
         "avg_GR": -0.215,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.533
       },
       "anomalies": []
     },
@@ -66,22 +67,23 @@
         "avg_RES_DEEP": 30.927409143030303,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 29.95609688045455,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.9713122625757542
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.432440226206272,
-      "WRCI": 18.29,
+      "WRCI": 17.3,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.5592816143499,
+      "owc_distance_m": 8.440718385650143,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.594,
         "avg_RES_DEEP": 0.092,
         "avg_GR": -0.889,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.439
       },
       "anomalies": []
     },
@@ -107,22 +109,23 @@
         "avg_RES_DEEP": 28.947100032424242,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 27.030193906818184,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 1.916906125606058
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.4532751665838016,
-      "WRCI": 20.21,
+      "WRCI": 18.13,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.6945207772794,
+      "owc_distance_m": 8.305479222720578,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.305,
         "avg_RES_DEEP": -0.014,
         "avg_GR": -0.769,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.314
       },
       "anomalies": []
     },
@@ -148,22 +151,23 @@
         "avg_RES_DEEP": 26.56529085560606,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 24.842327233454547,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 1.7229636221515143
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.4212769460451228,
-      "WRCI": 18.71,
+      "WRCI": 16.85,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.8297599402092,
+      "owc_distance_m": 8.170240059790785,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.364,
         "avg_RES_DEEP": -0.142,
         "avg_GR": -0.271,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.031
       },
       "anomalies": []
     },
@@ -189,22 +193,23 @@
         "avg_RES_DEEP": 24.398471772625,
         "n_RES_DEEP": 32,
         "avg_RES_SHALLOW": 21.82065618040625,
-        "n_RES_SHALLOW": 32,
-        "res_sep": 2.5778155922187516
+        "n_RES_SHALLOW": 32
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.34821292396935377,
-      "WRCI": 16.77,
+      "WRCI": 13.93,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.964999103139,
+      "owc_distance_m": 8.035000896860993,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.103,
         "avg_RES_DEEP": -0.258,
         "avg_GR": -0.023,
         "pct_ss": -1.799,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.439
       },
       "anomalies": []
     },
@@ -230,22 +235,23 @@
         "avg_RES_DEEP": 21.469281976878786,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 19.172630425636363,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 2.296651551242423
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.3301527006394784,
-      "WRCI": 15.72,
+      "WRCI": 13.21,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.1002382660688,
+      "owc_distance_m": 7.8997617339312,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.189,
         "avg_RES_DEEP": -0.415,
         "avg_GR": 0.703,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.784
       },
       "anomalies": []
     },
@@ -271,22 +277,23 @@
         "avg_RES_DEEP": 19.800324295484845,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 17.877478801848486,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 1.922845493636359
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.30951354402704895,
-      "WRCI": 14.67,
+      "WRCI": 12.58,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.2354774289986,
+      "owc_distance_m": 7.764522571001407,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.303,
         "avg_RES_DEEP": -0.505,
         "avg_GR": 1.024,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.973
       },
       "anomalies": []
     },
@@ -312,22 +319,23 @@
         "avg_RES_DEEP": 19.123390775727273,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 17.710139303454547,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 1.4132514722727265
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.4581654380196018,
-      "WRCI": 20.71,
+      "WRCI": 19.2,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.2312153944401,
+      "owc_distance_m": 7.768784605559858,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.459,
         "avg_RES_DEEP": -0.541,
         "avg_GR": 1.023,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.067
       },
       "anomalies": []
     },
@@ -353,22 +361,23 @@
         "avg_RES_DEEP": 18.53186977269697,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 17.065363623757573,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 1.4665061489393985
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.5791490083052386,
-      "WRCI": 26.2,
+      "WRCI": 24.63,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.1967450713748,
+      "owc_distance_m": 7.803254928625165,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.443,
         "avg_RES_DEEP": -0.573,
         "avg_GR": 0.937,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.973
       },
       "anomalies": []
     },
@@ -394,22 +403,23 @@
         "avg_RES_DEEP": 18.00691246984375,
         "n_RES_DEEP": 32,
         "avg_RES_SHALLOW": 16.132565498375,
-        "n_RES_SHALLOW": 32,
-        "res_sep": 1.87434697146875
+        "n_RES_SHALLOW": 32
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.5621357769653045,
-      "WRCI": 27.84,
+      "WRCI": 25.81,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.1622747483095,
+      "owc_distance_m": 7.837725251690472,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.318,
         "avg_RES_DEEP": -0.601,
         "avg_GR": 1.202,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.129
       },
       "anomalies": []
     },
@@ -435,22 +445,23 @@
         "avg_RES_DEEP": 17.89380567217647,
         "n_RES_DEEP": 17,
         "avg_RES_SHALLOW": 16.107588319235298,
-        "n_RES_SHALLOW": 17,
-        "res_sep": 1.786217352941172
+        "n_RES_SHALLOW": 17
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.5982990640331317,
-      "WRCI": 29.3,
+      "WRCI": 27.37,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.1278044252442,
+      "owc_distance_m": 7.872195574755779,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.345,
         "avg_RES_DEEP": -0.607,
         "avg_GR": 1.084,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.161
       },
       "anomalies": []
     },
@@ -476,22 +487,23 @@
         "avg_RES_DEEP": 17.5838376283125,
         "n_RES_DEEP": 16,
         "avg_RES_SHALLOW": 16.2108187675,
-        "n_RES_SHALLOW": 16,
-        "res_sep": 1.3730188608125005
+        "n_RES_SHALLOW": 16
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.5888736826234668,
-      "WRCI": 31.43,
+      "WRCI": 29.97,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.1278044252442,
+      "owc_distance_m": 7.872195574755779,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.471,
         "avg_RES_DEEP": -0.624,
         "avg_GR": 1.231,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.224
       },
       "anomalies": []
     },
@@ -517,22 +529,23 @@
         "avg_RES_DEEP": 18.204139420424244,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 16.461078759454544,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 1.7430606609697001
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.5975046366248867,
-      "WRCI": 31.58,
+      "WRCI": 29.7,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.0933341021787,
+      "owc_distance_m": 7.906665897821313,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.358,
         "avg_RES_DEEP": -0.591,
         "avg_GR": 1.096,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.192
       },
       "anomalies": []
     },
@@ -558,22 +571,23 @@
         "avg_RES_DEEP": 19.537893873272726,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 17.42119083990909,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 2.1167030333636347
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.5909855324985119,
-      "WRCI": 30.41,
+      "WRCI": 28.1,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.9906527511416,
+      "owc_distance_m": 8.009347248858376,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.244,
         "avg_RES_DEEP": -0.519,
         "avg_GR": 1.198,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.129
       },
       "anomalies": []
     },
@@ -599,24 +613,25 @@
         "avg_RES_DEEP": 21.230454589424244,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 19.097912297060606,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 2.132542292363638
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.6132631214825457,
-      "WRCI": 30.86,
+      "WRCI": 28.53,
       "risk_class": "Elevated",
       "flags": [
         "lowfluor"
       ],
+      "mTVDss": -1196.8192124923896,
+      "owc_distance_m": 8.180787507610376,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.239,
         "avg_RES_DEEP": -0.428,
         "avg_GR": 0.851,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.067
       },
       "anomalies": []
     },
@@ -642,22 +657,23 @@
         "avg_RES_DEEP": 21.86913126703125,
         "n_RES_DEEP": 32,
         "avg_RES_SHALLOW": 19.793056130375,
-        "n_RES_SHALLOW": 32,
-        "res_sep": 2.07607513665625
+        "n_RES_SHALLOW": 32
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6383291393187891,
-      "WRCI": 27.8,
+      "WRCI": 25.53,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.6477722336379,
+      "owc_distance_m": 8.352227766362148,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.256,
         "avg_RES_DEEP": -0.394,
         "avg_GR": 0.461,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.659
       },
       "anomalies": []
     },
@@ -683,22 +699,25 @@
         "avg_RES_DEEP": 23.070063934299995,
         "n_RES_DEEP": 50,
         "avg_RES_SHALLOW": 22.159380035399998,
-        "n_RES_SHALLOW": 50,
-        "res_sep": 0.9106838988999968
+        "n_RES_SHALLOW": 50
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6588843465914627,
-      "WRCI": 27.28,
+      "WRCI": 26.36,
       "risk_class": "Low",
-      "flags": [],
+      "flags": [
+        "ZOI"
+      ],
+      "mTVDss": -1196.4763319748859,
+      "owc_distance_m": 8.523668025114148,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.613,
         "avg_RES_DEEP": -0.33,
         "avg_GR": -0.357,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.471
       },
       "anomalies": []
     },
@@ -724,22 +743,26 @@
         "avg_RES_DEEP": 24.463501563369228,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 24.172352336076923,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 0.29114922729230486
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6660270680453478,
-      "WRCI": 26.86,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 26.64,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR",
+        "ZOI"
+      ],
+      "mTVDss": -1196.1298630118695,
+      "owc_distance_m": 8.870136988130525,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.802,
         "avg_RES_DEEP": -0.255,
         "avg_GR": -0.913,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.345
       },
       "anomalies": []
     },
@@ -765,22 +788,25 @@
         "avg_RES_DEEP": 27.28433025245455,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 27.24362876198485,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 0.04070149046969718
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6416892403271236,
       "WRCI": 25.67,
       "risk_class": "Low",
-      "flags": [],
+      "flags": [
+        "ZOI"
+      ],
+      "mTVDss": -1195.7573259198814,
+      "owc_distance_m": 9.242674080118604,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.878,
         "avg_RES_DEEP": -0.104,
         "avg_GR": -0.312,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.314
       },
       "anomalies": []
     },
@@ -806,22 +832,23 @@
         "avg_RES_DEEP": 31.24670303230303,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 29.19104685925758,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 2.0556561730454526
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.41850452635469504,
-      "WRCI": 18.98,
+      "WRCI": 16.74,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.384788827893,
+      "owc_distance_m": 9.61521117210691,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.263,
         "avg_RES_DEEP": 0.109,
         "avg_GR": 0.182,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.69
       },
       "anomalies": []
     },
@@ -847,22 +874,23 @@
         "avg_RES_DEEP": 48.375472083446155,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 36.76757539606154,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 11.607896687384617
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.40367465250176116,
-      "WRCI": 29.34,
+      "WRCI": 16.15,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.1196418894033,
+      "owc_distance_m": 9.880358110596717,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.657,
         "avg_RES_DEEP": 1.028,
         "avg_GR": 0.413,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 2.541
       },
       "anomalies": []
     },
@@ -888,26 +916,25 @@
         "avg_RES_DEEP": 68.24540005303031,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 46.55123184665152,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 21.69416820637879
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate-high inferred permeability",
       "matching_pay": true,
       "RQI": 0.3572682619811144,
-      "WRCI": 34.29,
+      "WRCI": 14.29,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.9997875115287,
+      "owc_distance_m": 10.000212488471334,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 5.741,
         "avg_RES_DEEP": 2.094,
         "avg_GR": 0.913,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 2.196
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 2060.0,
@@ -931,22 +958,23 @@
         "avg_RES_DEEP": 48.83799532375384,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 45.60169384296923,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 3.2363014807846042
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.4398864135273201,
-      "WRCI": 21.19,
+      "WRCI": 17.6,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.879933133654,
+      "owc_distance_m": 10.120066866345951,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.098,
         "avg_RES_DEEP": 1.053,
         "avg_GR": 0.133,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 2.949
       },
       "anomalies": []
     },
@@ -972,22 +1000,23 @@
         "avg_RES_DEEP": 41.892131747606065,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 34.45871829987879,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 7.4334134477272755
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.46927862285443855,
-      "WRCI": 27.18,
+      "WRCI": 18.77,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.869093564935,
+      "owc_distance_m": 10.130906435065071,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.381,
         "avg_RES_DEEP": 0.68,
         "avg_GR": -0.324,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 3.294
       },
       "anomalies": []
     },
@@ -1013,22 +1042,23 @@
         "avg_RES_DEEP": 28.32585924319697,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 22.70362119960606,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 5.622238043590908
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.36410483394712934,
-      "WRCI": 20.89,
+      "WRCI": 14.56,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.8897308787568,
+      "owc_distance_m": 10.110269121243164,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.828,
         "avg_RES_DEEP": -0.048,
         "avg_GR": 0.868,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 2.039
       },
       "anomalies": []
     },
@@ -1054,22 +1084,23 @@
         "avg_RES_DEEP": 20.287555489215382,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 17.46345082793846,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 2.824104661276923
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.4361522260404428,
-      "WRCI": 20.57,
+      "WRCI": 17.45,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.8791813224925,
+      "owc_distance_m": 10.120818677507486,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.028,
         "avg_RES_DEEP": -0.479,
         "avg_GR": 1.303,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.125
       },
       "anomalies": []
     },
@@ -1095,22 +1126,23 @@
         "avg_RES_DEEP": 21.003193826378787,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 18.068757635181818,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 2.934436191196969
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.46582803584490495,
-      "WRCI": 21.88,
+      "WRCI": 18.63,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.6083525607417,
+      "owc_distance_m": 10.39164743925835,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.006,
         "avg_RES_DEEP": -0.44,
         "avg_GR": 1.286,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.031
       },
       "anomalies": []
     },
@@ -1136,22 +1168,23 @@
         "avg_RES_DEEP": 23.312319916953847,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 19.35233383178462,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 3.959986085169227
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.3979687638868343,
-      "WRCI": 21.68,
+      "WRCI": 17.25,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.3375237989906,
+      "owc_distance_m": 10.66247620100944,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.32,
         "avg_RES_DEEP": -0.317,
         "avg_GR": 1.453,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.22
       },
       "anomalies": []
     },
@@ -1177,22 +1210,23 @@
         "avg_RES_DEEP": 24.670666636833335,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 21.324507597727273,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 3.3461590391060625
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.42343172301721044,
-      "WRCI": 20.66,
+      "WRCI": 16.94,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1193.9830936258002,
+      "owc_distance_m": 11.016906374199834,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.132,
         "avg_RES_DEEP": -0.244,
         "avg_GR": 0.995,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.627
       },
       "anomalies": []
     },
@@ -1218,22 +1252,23 @@
         "avg_RES_DEEP": 24.11782123098485,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 22.37298951012121,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 1.7448317208636368
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.505180100189611,
-      "WRCI": 22.09,
+      "WRCI": 20.21,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1193.5355079779638,
+      "owc_distance_m": 11.464492022036211,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.358,
         "avg_RES_DEEP": -0.273,
         "avg_GR": -0.277,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.533
       },
       "anomalies": []
     },
@@ -1259,22 +1294,23 @@
         "avg_RES_DEEP": 25.298321533215386,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 25.9078662286,
-        "n_RES_SHALLOW": 65,
-        "res_sep": -0.6095446953846135
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low inferred permeability (tight/cemented)",
       "matching_pay": true,
       "RQI": 0.5398571428571429,
       "WRCI": 21.59,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1193.0879223301272,
+      "owc_distance_m": 11.912077669872815,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -1.077,
         "avg_RES_DEEP": -0.21,
         "avg_GR": -1.254,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.161
       },
       "anomalies": []
     },
@@ -1300,22 +1336,23 @@
         "avg_RES_DEEP": 29.773606011348487,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 28.19869841957576,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 1.5749075917727282
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.5317533400310775,
-      "WRCI": 22.96,
+      "WRCI": 21.27,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1192.8526935300697,
+      "owc_distance_m": 12.1473064699303,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.409,
         "avg_RES_DEEP": 0.03,
         "avg_GR": -0.442,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.82
       },
       "anomalies": []
     },
@@ -1341,22 +1378,23 @@
         "avg_RES_DEEP": 30.05278934131818,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 27.105842416893942,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 2.946946924424239
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.47610391072360264,
-      "WRCI": 22.31,
+      "WRCI": 19.04,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1192.6634580321515,
+      "owc_distance_m": 12.336541967848461,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.01,
         "avg_RES_DEEP": 0.045,
         "avg_GR": 0.896,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 2.478
       },
       "anomalies": []
     },
@@ -1382,22 +1420,23 @@
         "avg_RES_DEEP": 31.447347611692308,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 25.546804516184615,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 5.900543095507693
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.36002776021568067,
-      "WRCI": 21.05,
+      "WRCI": 14.4,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1192.504738744538,
+      "owc_distance_m": 12.495261255462083,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.913,
         "avg_RES_DEEP": 0.12,
         "avg_GR": 1.591,
         "pct_ss": -1.799,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.251
       },
       "anomalies": []
     },
@@ -1423,22 +1462,23 @@
         "avg_RES_DEEP": 34.3025507706923,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 29.149552418615386,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 5.152998352076914
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.3991987844241465,
-      "WRCI": 21.76,
+      "WRCI": 15.97,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1193.3315352358986,
+      "owc_distance_m": 11.668464764101373,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.684,
         "avg_RES_DEEP": 0.273,
         "avg_GR": 0.732,
         "pct_ss": -1.799,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.0
       },
       "anomalies": []
     },
@@ -1464,22 +1504,23 @@
         "avg_RES_DEEP": 30.11805603721212,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 28.53829236471212,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 1.5797636725000004
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.4933943704471041,
-      "WRCI": 21.43,
+      "WRCI": 19.74,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1193.6606422124519,
+      "owc_distance_m": 11.339357787548124,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.408,
         "avg_RES_DEEP": 0.049,
         "avg_GR": -0.289,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.408
       },
       "anomalies": []
     },
@@ -1505,22 +1546,25 @@
         "avg_RES_DEEP": 26.875173862153844,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 27.894243005615383,
-        "n_RES_SHALLOW": 65,
-        "res_sep": -1.0190691434615395
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low inferred permeability (tight/cemented)",
       "matching_pay": true,
       "RQI": 0.6477142857142857,
       "WRCI": 25.91,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "mTVDss": -1194.0061239550157,
+      "owc_distance_m": 10.99387604498429,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -1.202,
         "avg_RES_DEEP": -0.125,
         "avg_GR": -1.312,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.282
       },
       "anomalies": []
     },
@@ -1546,22 +1590,25 @@
         "avg_RES_DEEP": 26.125598560681816,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 26.111681822560605,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 0.013916738121210415
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6179112601728827,
       "WRCI": 24.72,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "mTVDss": -1194.3335227046855,
+      "owc_distance_m": 10.666477295314508,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.887,
         "avg_RES_DEEP": -0.166,
         "avg_GR": -0.771,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.063
       },
       "anomalies": []
     },
@@ -1587,22 +1634,25 @@
         "avg_RES_DEEP": 24.333993882863634,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 23.32375139178788,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 1.0102424910757541
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6259902298190377,
-      "WRCI": 26.08,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 25.04,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "mTVDss": -1194.5498088362149,
+      "owc_distance_m": 10.45019116378512,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.582,
         "avg_RES_DEEP": -0.262,
         "avg_GR": -0.674,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.094
       },
       "anomalies": []
     },
@@ -1628,22 +1678,23 @@
         "avg_RES_DEEP": 22.85577386713846,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 20.74428931016923,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 2.1114845569692307
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.5919506106680823,
-      "WRCI": 25.98,
+      "WRCI": 23.68,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.766094967744,
+      "owc_distance_m": 10.233905032255961,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.245,
         "avg_RES_DEEP": -0.341,
         "avg_GR": -0.394,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.345
       },
       "anomalies": []
     },
@@ -1669,22 +1720,25 @@
         "avg_RES_DEEP": 24.520913702060604,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 22.624003063530303,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 1.8969106385303007
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7447192380918038,
-      "WRCI": 31.85,
+      "WRCI": 29.79,
       "risk_class": "Low",
-      "flags": [],
+      "flags": [
+        "ZOI"
+      ],
+      "mTVDss": -1194.9389057481117,
+      "owc_distance_m": 10.061094251888335,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.311,
         "avg_RES_DEEP": -0.252,
         "avg_GR": -0.406,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.157
       },
       "anomalies": []
     },
@@ -1710,22 +1764,25 @@
         "avg_RES_DEEP": 28.400401491136364,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 26.582845456651512,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 1.817556034484852
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7301350382873325,
-      "WRCI": 31.17,
+      "WRCI": 29.21,
       "risk_class": "Low",
-      "flags": [],
+      "flags": [
+        "ZOI"
+      ],
+      "mTVDss": -1195.0709278515878,
+      "owc_distance_m": 9.92907214841216,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.335,
         "avg_RES_DEEP": -0.044,
         "avg_GR": -0.179,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.0
       },
       "anomalies": []
     },
@@ -1751,22 +1808,23 @@
         "avg_RES_DEEP": 39.49558299141539,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 35.293296901938454,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 4.202286089476935
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7344340049878421,
-      "WRCI": 34.08,
+      "WRCI": 29.38,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.202949955064,
+      "owc_distance_m": 9.797050044935986,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.394,
         "avg_RES_DEEP": 0.552,
         "avg_GR": -0.246,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.443
       },
       "anomalies": []
     },
@@ -1792,22 +1850,23 @@
         "avg_RES_DEEP": 39.439807776181816,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 35.43977725862121,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 4.000030517560603
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7224322350373549,
-      "WRCI": 33.37,
+      "WRCI": 28.9,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.2905641814746,
+      "owc_distance_m": 9.709435818525435,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.332,
         "avg_RES_DEEP": 0.549,
         "avg_GR": -0.059,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 2.635
       },
       "anomalies": []
     },
@@ -1833,22 +1892,23 @@
         "avg_RES_DEEP": 39.2198600476,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 34.668233900800004,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 4.551626146799997
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6437983912553946,
-      "WRCI": 30.85,
+      "WRCI": 25.75,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.368231478261,
+      "owc_distance_m": 9.631768521739104,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.5,
         "avg_RES_DEEP": 0.537,
         "avg_GR": 0.0,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 2.259
       },
       "anomalies": []
     },
@@ -1874,22 +1934,25 @@
         "avg_RES_DEEP": 50.6892529690303,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 47.774722764,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 2.914530205030296
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7228535031288607,
-      "WRCI": 32.14,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 28.91,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "mTVDss": -1195.4319395304808,
+      "owc_distance_m": 9.568060469519196,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.0,
         "avg_RES_DEEP": 1.152,
         "avg_GR": -0.786,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.412
       },
       "anomalies": []
     },
@@ -1915,22 +1978,23 @@
         "avg_RES_DEEP": 53.4125544230303,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 47.561363277984846,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 5.851191145045455
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6495592892418688,
-      "WRCI": 32.57,
+      "WRCI": 25.98,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.4284484286256,
+      "owc_distance_m": 9.571551571374357,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.898,
         "avg_RES_DEEP": 1.298,
         "avg_GR": 0.577,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.125
       },
       "anomalies": []
     },
@@ -1956,24 +2020,23 @@
         "avg_RES_DEEP": 57.721845714861544,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 47.76872769864615,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 9.953118016215392
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.656549184500442,
-      "WRCI": 37.56,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 26.26,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1195.4249573267703,
+      "owc_distance_m": 9.575042673229746,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.152,
         "avg_RES_DEEP": 1.529,
         "avg_GR": 0.469,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.314
       },
       "anomalies": []
     },
@@ -1999,24 +2062,23 @@
         "avg_RES_DEEP": 48.260732072787874,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 39.24913805180302,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 9.011594020984852
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6680840878969665,
-      "WRCI": 36.94,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 26.72,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1195.3927372383075,
+      "owc_distance_m": 9.607262761692482,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.864,
         "avg_RES_DEEP": 1.022,
         "avg_GR": 0.067,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.69
       },
       "anomalies": []
     },
@@ -2042,24 +2104,23 @@
         "avg_RES_DEEP": 54.80159049396923,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 45.25728463389231,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 9.544305860076918
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6203793560810504,
-      "WRCI": 35.64,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 24.82,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1195.335142583519,
+      "owc_distance_m": 9.664857416481027,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.027,
         "avg_RES_DEEP": 1.373,
         "avg_GR": -0.202,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.91
       },
       "anomalies": []
     },
@@ -2085,22 +2146,25 @@
         "avg_RES_DEEP": 49.11073638457576,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 45.152522636166665,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 3.9582137484090936
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6620640024236146,
-      "WRCI": 30.9,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 26.48,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "mTVDss": -1195.2775479287307,
+      "owc_distance_m": 9.722452071269345,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.319,
         "avg_RES_DEEP": 1.067,
         "avg_GR": -0.629,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.816
       },
       "anomalies": []
     },
@@ -2126,22 +2190,23 @@
         "avg_RES_DEEP": 41.85947574263636,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 38.122675808984845,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 3.7367999336515183
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6073165305040714,
-      "WRCI": 28.46,
+      "WRCI": 24.29,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.2601245475114,
+      "owc_distance_m": 9.739875452488604,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.251,
         "avg_RES_DEEP": 0.678,
         "avg_GR": 0.001,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.255
       },
       "anomalies": []
     },
@@ -2167,22 +2232,23 @@
         "avg_RES_DEEP": 56.47789523781538,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 52.30630610536923,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 4.171589132446151
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6060787549595477,
-      "WRCI": 28.91,
+      "WRCI": 24.24,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.2505242458521,
+      "owc_distance_m": 9.749475754147852,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.384,
         "avg_RES_DEEP": 1.463,
         "avg_GR": -0.425,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.69
       },
       "anomalies": []
     },
@@ -2208,24 +2274,25 @@
         "avg_RES_DEEP": 57.49862283654545,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 46.81356054363636,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 10.685062292909087
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7117872227207084,
-      "WRCI": 40.61,
+      "WRCI": 28.47,
       "risk_class": "Elevated",
       "flags": [
-        "highperm"
+        "low_GR"
       ],
+      "mTVDss": -1195.2281709028832,
+      "owc_distance_m": 9.771829097116779,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.375,
         "avg_RES_DEEP": 1.517,
         "avg_GR": -0.614,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.349
       },
       "anomalies": []
     },
@@ -2251,28 +2318,25 @@
         "avg_RES_DEEP": 65.36245005060606,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 49.18349682198486,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 16.178953228621197
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7014816701651968,
-      "WRCI": 46.5,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 28.06,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1195.149635242792,
+      "owc_distance_m": 9.850364757207899,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 4.055,
         "avg_RES_DEEP": 1.939,
         "avg_GR": -0.514,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.878
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 2430.0,
@@ -2296,24 +2360,23 @@
         "avg_RES_DEEP": 58.178349186846155,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 44.44012932406153,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 13.738219862784625
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6577422129629037,
-      "WRCI": 41.95,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 26.31,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1195.071099582701,
+      "owc_distance_m": 9.928900417299019,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 3.309,
         "avg_RES_DEEP": 1.554,
         "avg_GR": -0.083,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.757
       },
       "anomalies": []
     },
@@ -2339,24 +2402,25 @@
         "avg_RES_DEEP": 49.06047098566667,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 39.451152917136355,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 9.609318068530314
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.688740681593902,
-      "WRCI": 38.45,
+      "WRCI": 27.55,
       "risk_class": "Elevated",
       "flags": [
-        "highperm"
+        "low_GR"
       ],
+      "mTVDss": -1194.933148768197,
+      "owc_distance_m": 10.066851231802957,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.046,
         "avg_RES_DEEP": 1.065,
         "avg_GR": -0.565,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.255
       },
       "anomalies": []
     },
@@ -2382,22 +2446,26 @@
         "avg_RES_DEEP": 44.89493226275384,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 41.32793221107692,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 3.5670000516769207
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6833360118291053,
-      "WRCI": 31.31,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 27.33,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR",
+        "ZOI"
+      ],
+      "mTVDss": -1194.7463887831282,
+      "owc_distance_m": 10.253611216871832,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.199,
         "avg_RES_DEEP": 0.841,
         "avg_GR": -0.703,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.941
       },
       "anomalies": []
     },
@@ -2423,22 +2491,23 @@
         "avg_RES_DEEP": 54.07490770748484,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 46.33851496386363,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 7.736392743621209
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6648260495011264,
-      "WRCI": 35.35,
+      "WRCI": 26.59,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.559628798059,
+      "owc_distance_m": 10.440371201940934,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.474,
         "avg_RES_DEEP": 1.334,
         "avg_GR": -0.132,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.945
       },
       "anomalies": []
     },
@@ -2464,22 +2533,23 @@
         "avg_RES_DEEP": 59.92440714977272,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 56.29437122924243,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 3.6300359205302897
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6674170124792972,
-      "WRCI": 30.74,
+      "WRCI": 26.7,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.3835147522523,
+      "owc_distance_m": 10.616485247747733,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.219,
         "avg_RES_DEEP": 1.648,
         "avg_GR": -0.172,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.286
       },
       "anomalies": []
     },
@@ -2505,28 +2575,25 @@
         "avg_RES_DEEP": 75.16811570387692,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 53.08037402810769,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 22.08774167576923
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate-high inferred permeability",
       "matching_pay": true,
       "RQI": 0.648845878716181,
-      "WRCI": 45.95,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 25.95,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1194.208991478979,
+      "owc_distance_m": 10.791008521021013,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 5.861,
         "avg_RES_DEEP": 2.465,
         "avg_GR": 0.117,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.6
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 2565.0,
@@ -2550,26 +2617,25 @@
         "avg_RES_DEEP": 46.34623036233334,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 29.92420612690909,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 16.422024235424246
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.41861141274610186,
-      "WRCI": 36.79,
+      "WRCI": 18.08,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.7913370820784,
+      "owc_distance_m": 9.208662917921629,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 4.129,
         "avg_RES_DEEP": 0.919,
         "avg_GR": 0.943,
         "pct_ss": -1.799,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.282
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 2570.0,
@@ -2593,22 +2659,23 @@
         "avg_RES_DEEP": 40.36973083015624,
         "n_RES_DEEP": 32,
         "avg_RES_SHALLOW": 28.73395329715625,
-        "n_RES_SHALLOW": 32,
-        "res_sep": 11.635777532999992
+        "n_RES_SHALLOW": 32
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.41297687498691915,
-      "WRCI": 31.08,
+      "WRCI": 17.85,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.0352925310735,
+      "owc_distance_m": 8.964707468926463,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.666,
         "avg_RES_DEEP": 0.598,
         "avg_GR": 1.031,
         "pct_ss": -1.799,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.376
       },
       "anomalies": []
     },
@@ -2634,22 +2701,23 @@
         "avg_RES_DEEP": 41.21581534178788,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 33.9587847970303,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 7.257030544757583
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.49111886310265646,
-      "WRCI": 29.18,
+      "WRCI": 20.98,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.314420591337,
+      "owc_distance_m": 8.685579408662988,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.327,
         "avg_RES_DEEP": 0.644,
         "avg_GR": 0.26,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.627
       },
       "anomalies": []
     },
@@ -2675,22 +2743,23 @@
         "avg_RES_DEEP": 34.99978487421212,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 31.233466581848482,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 3.7663182923636356
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.47367719675315845,
-      "WRCI": 23.15,
+      "WRCI": 18.95,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.5935486516007,
+      "owc_distance_m": 8.406451348399287,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.26,
         "avg_RES_DEEP": 0.31,
         "avg_GR": -0.136,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.345
       },
       "anomalies": []
     },
@@ -2716,22 +2785,23 @@
         "avg_RES_DEEP": 35.06806679939393,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 32.32214846748485,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 2.745918331909081
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.5081529668430683,
-      "WRCI": 23.36,
+      "WRCI": 20.33,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.8726767118644,
+      "owc_distance_m": 8.127323288135585,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.052,
         "avg_RES_DEEP": 0.314,
         "avg_GR": -0.673,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.408
       },
       "anomalies": []
     },
@@ -2757,22 +2827,23 @@
         "avg_RES_DEEP": 30.72007861287879,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 27.27946668678788,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 3.4406119260909094
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6161218893173582,
-      "WRCI": 28.47,
+      "WRCI": 24.64,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.1518047721281,
+      "owc_distance_m": 7.848195227871884,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.161,
         "avg_RES_DEEP": 0.081,
         "avg_GR": -0.485,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.627
       },
       "anomalies": []
     },
@@ -2798,22 +2869,23 @@
         "avg_RES_DEEP": 24.561015784718748,
         "n_RES_DEEP": 32,
         "avg_RES_SHALLOW": 21.502384424187497,
-        "n_RES_SHALLOW": 32,
-        "res_sep": 3.058631360531251
+        "n_RES_SHALLOW": 32
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.603483485149202,
-      "WRCI": 27.53,
+      "WRCI": 24.14,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.4203789054911,
+      "owc_distance_m": 7.579621094508866,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.044,
         "avg_RES_DEEP": -0.25,
         "avg_GR": -0.066,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.157
       },
       "anomalies": []
     },
@@ -2839,22 +2911,23 @@
         "avg_RES_DEEP": 20.188915079272725,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 17.780194022424244,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 2.4087210568484814
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.5893099422079104,
-      "WRCI": 26.22,
+      "WRCI": 23.57,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.6607057639148,
+      "owc_distance_m": 7.339294236085152,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.155,
         "avg_RES_DEEP": -0.484,
         "avg_GR": 0.43,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.0
       },
       "anomalies": []
     },
@@ -2880,22 +2953,23 @@
         "avg_RES_DEEP": 17.403372562212123,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 16.44760296563636,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.9557695965757631
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.5792959927477488,
-      "WRCI": 26.75,
+      "WRCI": 25.77,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.9010326223386,
+      "owc_distance_m": 7.098967377661438,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.599,
         "avg_RES_DEEP": -0.634,
         "avg_GR": 0.835,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.031
       },
       "anomalies": []
     },
@@ -2921,24 +2995,25 @@
         "avg_RES_DEEP": 16.921721313909092,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 15.78608787421212,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 1.1356334396969725
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.6983382964842185,
-      "WRCI": 32.2,
+      "WRCI": 31.01,
       "risk_class": "Elevated",
       "flags": [
         "lowres"
       ],
+      "mTVDss": -1198.141359480762,
+      "owc_distance_m": 6.858640519237952,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.544,
         "avg_RES_DEEP": -0.659,
         "avg_GR": 1.161,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.157
       },
       "anomalies": []
     },
@@ -2964,24 +3039,25 @@
         "avg_RES_DEEP": 16.517448425242424,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 15.879539403151515,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.6379090220909092
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.6909309568329984,
-      "WRCI": 31.73,
+      "WRCI": 31.12,
       "risk_class": "Elevated",
       "flags": [
         "lowres"
       ],
+      "mTVDss": -1198.3816863391858,
+      "owc_distance_m": 6.618313660814238,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.696,
         "avg_RES_DEEP": -0.681,
         "avg_GR": 0.832,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.251
       },
       "anomalies": []
     },
@@ -3007,24 +3083,26 @@
         "avg_RES_DEEP": 16.285281816999998,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 15.551275686727275,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.7340061302727232
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.73,
-      "WRCI": 33.64,
+      "WRCI": 32.91,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
+      "mTVDss": -1198.6220131976092,
+      "owc_distance_m": 6.377986802390751,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.667,
         "avg_RES_DEEP": -0.694,
         "avg_GR": -1.159,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.345
       },
       "anomalies": []
     },
@@ -3050,24 +3128,26 @@
         "avg_RES_DEEP": 16.18724381928125,
         "n_RES_DEEP": 32,
         "avg_RES_SHALLOW": 15.65859687325,
-        "n_RES_SHALLOW": 32,
-        "res_sep": 0.52864694603125
+        "n_RES_SHALLOW": 32
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8978642726233343,
-      "WRCI": 40.21,
+      "WRCI": 39.73,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
+      "mTVDss": -1198.7258240368008,
+      "owc_distance_m": 6.274175963199241,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.729,
         "avg_RES_DEEP": -0.699,
         "avg_GR": -1.002,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.345
       },
       "anomalies": []
     },
@@ -3093,24 +3173,25 @@
         "avg_RES_DEEP": 16.346093842454547,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 15.692703073636363,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.6533907688181841
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8660319516133006,
-      "WRCI": 38.93,
+      "WRCI": 38.3,
       "risk_class": "Elevated",
       "flags": [
         "lowres"
       ],
+      "mTVDss": -1198.8174406346227,
+      "owc_distance_m": 6.182559365377301,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.691,
         "avg_RES_DEEP": -0.69,
         "avg_GR": -0.506,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.188
       },
       "anomalies": []
     },
@@ -3136,24 +3217,25 @@
         "avg_RES_DEEP": 16.52927283090909,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 16.000893997363637,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.5283788335454531
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8164331457763313,
-      "WRCI": 36.62,
+      "WRCI": 36.13,
       "risk_class": "Elevated",
       "flags": [
         "lowres"
       ],
+      "mTVDss": -1198.9090572324446,
+      "owc_distance_m": 6.090942767555362,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.729,
         "avg_RES_DEEP": -0.68,
         "avg_GR": -0.24,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.345
       },
       "anomalies": []
     },
@@ -3179,24 +3261,26 @@
         "avg_RES_DEEP": 16.271106136020407,
         "n_RES_DEEP": 49,
         "avg_RES_SHALLOW": 15.75945513587755,
-        "n_RES_SHALLOW": 49,
-        "res_sep": 0.5116510001428569
+        "n_RES_SHALLOW": 49
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8154112412634472,
-      "WRCI": 36.81,
+      "WRCI": 46.35,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "owc_elevated"
       ],
+      "mTVDss": -1199.0006738302666,
+      "owc_distance_m": 5.999326169733422,
+      "owc_near": "Elevated",
       "z_scores": {
-        "res_sep": -0.735,
         "avg_RES_DEEP": -0.694,
         "avg_GR": -0.224,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.282
       },
       "anomalies": []
     },
@@ -3222,24 +3306,26 @@
         "avg_RES_DEEP": 15.242522716545455,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 14.696790868606062,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 0.5457318479393933
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8007856980740192,
-      "WRCI": 37.3,
+      "WRCI": 46.79,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "owc_elevated"
       ],
+      "mTVDss": -1199.0947988125467,
+      "owc_distance_m": 5.905201187453258,
+      "owc_near": "Elevated",
       "z_scores": {
-        "res_sep": -0.724,
         "avg_RES_DEEP": -0.75,
         "avg_GR": 0.893,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.408
       },
       "anomalies": []
     },
@@ -3265,24 +3351,25 @@
         "avg_RES_DEEP": 14.949684627230768,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 14.490052296615383,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 0.4596323306153849
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.6007424714177256,
-      "WRCI": 29.49,
+      "WRCI": 29.08,
       "risk_class": "Elevated",
       "flags": [
         "lowres"
       ],
+      "mTVDss": -1198.976990746826,
+      "owc_distance_m": 6.023009253173996,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.75,
         "avg_RES_DEEP": -0.765,
         "avg_GR": 0.911,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.439
       },
       "anomalies": []
     },
@@ -3308,25 +3395,26 @@
         "avg_RES_DEEP": 15.360715100227274,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 15.050930326666666,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 0.3097847735606081
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.6895254378307263,
-      "WRCI": 36.46,
+      "WRCI": 36.22,
       "risk_class": "Elevated",
       "flags": [
         "lowres",
         "lowfluor"
       ],
+      "mTVDss": -1198.8591826811053,
+      "owc_distance_m": 6.140817318894733,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.796,
         "avg_RES_DEEP": -0.743,
         "avg_GR": 1.264,
         "pct_ss": -1.799,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.565
       },
       "anomalies": []
     },
@@ -3352,10 +3440,8 @@
         "avg_RES_DEEP": 15.734833327151515,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 15.638512091212123,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 0.09632123593939212
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.7734789718605339,
       "WRCI": 36.54,
@@ -3364,13 +3450,16 @@
         "lowres",
         "lowfluor"
       ],
+      "mTVDss": -1198.6468958566381,
+      "owc_distance_m": 6.353104143361861,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.861,
         "avg_RES_DEEP": -0.723,
         "avg_GR": 0.908,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.188
       },
       "anomalies": []
     },
@@ -3396,10 +3485,8 @@
         "avg_RES_DEEP": 15.006892321661537,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 14.898470790569231,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 0.10842153109230601
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8338154456126708,
       "WRCI": 38.35,
@@ -3407,13 +3494,16 @@
       "flags": [
         "lowres"
       ],
+      "mTVDss": -1198.3762095405184,
+      "owc_distance_m": 6.623790459481597,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.858,
         "avg_RES_DEEP": -0.762,
         "avg_GR": 0.858,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.314
       },
       "anomalies": []
     },
@@ -3439,24 +3529,25 @@
         "avg_RES_DEEP": 14.919046965530304,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 14.653768192651516,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 0.26527877287878887
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8140454910810162,
-      "WRCI": 37.83,
+      "WRCI": 37.64,
       "risk_class": "Elevated",
       "flags": [
         "lowres"
       ],
+      "mTVDss": -1198.105523224399,
+      "owc_distance_m": 6.894476775601106,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.81,
         "avg_RES_DEEP": -0.767,
         "avg_GR": 1.192,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.439
       },
       "anomalies": []
     },
@@ -3482,25 +3573,26 @@
         "avg_RES_DEEP": 15.231975394046154,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 13.899846179646154,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 1.3321292144
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8,
-      "WRCI": 47.51,
+      "WRCI": 46.1,
       "risk_class": "Elevated",
       "flags": [
         "lowres",
         "lowfluor"
       ],
+      "mTVDss": -1197.76853531481,
+      "owc_distance_m": 7.231464685190076,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.484,
         "avg_RES_DEEP": -0.75,
         "avg_GR": 1.758,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.533
       },
       "anomalies": []
     },
@@ -3526,25 +3618,26 @@
         "avg_RES_DEEP": 16.640898357727274,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 14.242368221333333,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 2.3985301363939406
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.6180946597048386,
-      "WRCI": 42.72,
+      "WRCI": 40.08,
       "risk_class": "Elevated",
       "flags": [
         "lowres",
         "lowfluor"
       ],
+      "mTVDss": -1197.4291402633885,
+      "owc_distance_m": 7.57085973661151,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.158,
         "avg_RES_DEEP": -0.674,
         "avg_GR": 1.596,
         "pct_ss": -2.698,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.816
       },
       "anomalies": []
     },
@@ -3570,22 +3663,23 @@
         "avg_RES_DEEP": 19.235848542393942,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 15.479245445939394,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 3.7566030964545476
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.41357142857142853,
-      "WRCI": 36.16,
+      "WRCI": 31.97,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1197.1106502548116,
+      "owc_distance_m": 7.889349745188383,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.257,
         "avg_RES_DEEP": -0.535,
         "avg_GR": 1.793,
         "pct_ss": -4.497,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.91
       },
       "anomalies": [
         "pct_ss"
@@ -3613,22 +3707,23 @@
         "avg_RES_DEEP": 21.315881582384616,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 16.475530683107692,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 4.840350899276924
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.385,
-      "WRCI": 38.17,
+      "WRCI": 32.73,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.8583809669933,
+      "owc_distance_m": 8.141619033006691,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.589,
         "avg_RES_DEEP": -0.424,
         "avg_GR": 1.793,
         "pct_ss": -5.396,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.973
       },
       "anomalies": [
         "pct_ss"
@@ -3656,22 +3751,23 @@
         "avg_RES_DEEP": 19.186487891439395,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 15.18457120837879,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 4.001916683060605
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.385,
-      "WRCI": 38.02,
+      "WRCI": 33.55,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.6061116791752,
+      "owc_distance_m": 8.393888320824772,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.332,
         "avg_RES_DEEP": -0.538,
         "avg_GR": 1.84,
         "pct_ss": -5.396,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.098
       },
       "anomalies": [
         "pct_ss"
@@ -3699,22 +3795,23 @@
         "avg_RES_DEEP": 18.17721210822727,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 14.990077235500003,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 3.187134872727267
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.385,
-      "WRCI": 38.09,
+      "WRCI": 34.56,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.3380372133915,
+      "owc_distance_m": 8.661962786608456,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.083,
         "avg_RES_DEEP": -0.592,
         "avg_GR": 2.076,
         "pct_ss": -5.846,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.067
       },
       "anomalies": [
         "pct_ss"
@@ -3742,22 +3839,23 @@
         "avg_RES_DEEP": 20.755818440384616,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 16.693178396984614,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 4.062640043400002
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.385,
-      "WRCI": 39.91,
+      "WRCI": 35.37,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1196.058562507676,
+      "owc_distance_m": 8.941437492323985,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.351,
         "avg_RES_DEEP": -0.454,
         "avg_GR": 1.638,
         "pct_ss": -7.195,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.098
       },
       "anomalies": [
         "pct_ss"
@@ -3785,22 +3883,23 @@
         "avg_RES_DEEP": 25.44687421390909,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 20.325784885530304,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 5.121089328378787
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.3889479074987741,
-      "WRCI": 41.29,
-      "risk_class": "Elevated",
+      "WRCI": 35.53,
+      "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.7790878019607,
+      "owc_distance_m": 9.220912198039287,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.674,
         "avg_RES_DEEP": -0.202,
         "avg_GR": 1.572,
         "pct_ss": -7.195,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.098
       },
       "anomalies": [
         "pct_ss"
@@ -3828,22 +3927,23 @@
         "avg_RES_DEEP": 31.847059895446154,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 23.445707849353848,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 8.401352046092306
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.38521426156633504,
-      "WRCI": 44.9,
-      "risk_class": "Elevated",
+      "WRCI": 35.38,
+      "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1195.3349815981255,
+      "owc_distance_m": 9.665018401874477,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.677,
         "avg_RES_DEEP": 0.141,
         "avg_GR": 1.63,
         "pct_ss": -7.644,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.129
       },
       "anomalies": [
         "pct_ss"
@@ -3871,22 +3971,23 @@
         "avg_RES_DEEP": 37.96924683543939,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 29.48331668166667,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 8.485930153772724
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.465,
-      "WRCI": 48.19,
-      "risk_class": "Elevated",
+      "WRCI": 38.57,
+      "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.8779066709162,
+      "owc_distance_m": 10.122093329083782,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.703,
         "avg_RES_DEEP": 0.47,
         "avg_GR": 1.983,
         "pct_ss": -7.644,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -1.161
       },
       "anomalies": [
         "pct_ss"
@@ -3914,24 +4015,25 @@
         "avg_RES_DEEP": 44.846219438469696,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 37.878078663015145,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 6.96814077545455
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.6327024888025186,
-      "WRCI": 53.15,
+      "WRCI": 45.28,
       "risk_class": "Elevated",
       "flags": [
         "lowfluor"
       ],
+      "mTVDss": -1194.4378530772142,
+      "owc_distance_m": 10.562146922785814,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.239,
         "avg_RES_DEEP": 0.839,
         "avg_GR": 0.113,
         "pct_ss": -7.195,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.282
       },
       "anomalies": [
         "pct_ss"
@@ -3959,22 +4061,23 @@
         "avg_RES_DEEP": 52.780363053507685,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 52.55349379315384,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 0.22686926035384403
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.5363318889869061,
-      "WRCI": 21.59,
+      "WRCI": 21.45,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1194.047009019682,
+      "owc_distance_m": 10.952990980317963,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.822,
         "avg_RES_DEEP": 1.264,
         "avg_GR": -0.371,
         "pct_ss": -4.497,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.188
       },
       "anomalies": [
         "pct_ss"
@@ -4002,24 +4105,23 @@
         "avg_RES_DEEP": 57.815762086363634,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 49.969228802318185,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 7.846533284045449
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6112844434738994,
-      "WRCI": 33.33,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 24.45,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1193.65616496215,
+      "owc_distance_m": 11.343835037850113,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.508,
         "avg_RES_DEEP": 1.534,
         "avg_GR": -0.203,
         "pct_ss": -1.799,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.314
       },
       "anomalies": []
     },
@@ -4045,26 +4147,25 @@
         "avg_RES_DEEP": 56.82371221678461,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 42.32839232223077,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 14.495319894553838
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.5420818134151373,
-      "WRCI": 38.19,
+      "WRCI": 21.68,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1193.3618688876277,
+      "owc_distance_m": 11.63813111237232,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 3.54,
         "avg_RES_DEEP": 1.481,
         "avg_GR": 0.429,
         "pct_ss": -2.698,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.565
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 2850.0,
@@ -4088,26 +4189,25 @@
         "avg_RES_DEEP": 66.4727027199697,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 36.86693948689393,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 29.60576323307577
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate-high inferred permeability",
       "matching_pay": true,
       "RQI": 0.3439013409493408,
-      "WRCI": 33.76,
+      "WRCI": 13.76,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1193.1280134203557,
+      "owc_distance_m": 11.871986579644272,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 8.159,
         "avg_RES_DEEP": 1.999,
         "avg_GR": 1.344,
         "pct_ss": -1.799,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.094
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 2900.0,
@@ -4131,26 +4231,25 @@
         "avg_RES_DEEP": 89.67142304670769,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 49.76258941063077,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 39.90883363607692
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate-high inferred permeability",
       "matching_pay": true,
       "RQI": 0.5287695683777608,
-      "WRCI": 41.15,
-      "risk_class": "Elevated",
+      "WRCI": 21.15,
+      "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1192.5852996006029,
+      "owc_distance_m": 12.414700399397134,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 11.308,
         "avg_RES_DEEP": 3.243,
         "avg_GR": 0.84,
         "pct_ss": -1.799,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.188
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 2910.0,
@@ -4174,28 +4273,25 @@
         "avg_RES_DEEP": 76.64892722636364,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 51.92886051987879,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 24.72006670648485
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate-high inferred permeability",
       "matching_pay": true,
       "RQI": 0.611364302922007,
-      "WRCI": 44.45,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 24.45,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1192.617590482291,
+      "owc_distance_m": 12.382409517708993,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 6.666,
         "avg_RES_DEEP": 2.545,
         "avg_GR": -0.001,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.255
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 2920.0,
@@ -4219,22 +4315,25 @@
         "avg_RES_DEEP": 61.99247401307692,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 59.45382303101538,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 2.53865098206154
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6763571428571429,
-      "WRCI": 29.85,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 27.05,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "mTVDss": -1192.7225941735849,
+      "owc_distance_m": 12.277405826415134,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.115,
         "avg_RES_DEEP": 1.758,
         "avg_GR": -1.029,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.6
       },
       "anomalies": []
     },
@@ -4260,22 +4359,23 @@
         "avg_RES_DEEP": 55.14938498992424,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 59.994386268348485,
-        "n_RES_SHALLOW": 66,
-        "res_sep": -4.845001278424242
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low inferred permeability (tight/cemented)",
       "matching_pay": true,
       "RQI": 0.6435829035485918,
       "WRCI": 25.74,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1192.8665790792454,
+      "owc_distance_m": 12.133420920754588,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -2.372,
         "avg_RES_DEEP": 1.391,
         "avg_GR": -0.503,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.286
       },
       "anomalies": []
     },
@@ -4301,24 +4401,23 @@
         "avg_RES_DEEP": 50.70689842925758,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 41.51887295459091,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 9.188025474666667
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6614178761181437,
-      "WRCI": 36.88,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 26.46,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1193.010434837989,
+      "owc_distance_m": 11.989565162011104,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.918,
         "avg_RES_DEEP": 1.153,
         "avg_GR": -0.335,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.192
       },
       "anomalies": []
     },
@@ -4344,24 +4443,25 @@
         "avg_RES_DEEP": 46.43458932730769,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 34.28584905773846,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 12.148740269569231
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.649399407382302,
-      "WRCI": 39.79,
-      "risk_class": "Elevated",
+      "WRCI": 25.98,
+      "risk_class": "Low",
       "flags": [
-        "highperm"
+        "ZOI"
       ],
+      "mTVDss": -1193.0252728268156,
+      "owc_distance_m": 11.97472717318442,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.823,
         "avg_RES_DEEP": 0.924,
         "avg_GR": 0.296,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.0
       },
       "anomalies": []
     },
@@ -4387,24 +4487,25 @@
         "avg_RES_DEEP": 39.08283933006061,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 31.103278709166666,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 7.979560620893942
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6669310911397428,
-      "WRCI": 35.71,
-      "risk_class": "Elevated",
+      "WRCI": 26.68,
+      "risk_class": "Low",
       "flags": [
-        "highperm"
+        "ZOI"
       ],
+      "mTVDss": -1193.0401108156425,
+      "owc_distance_m": 11.959889184357507,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.548,
         "avg_RES_DEEP": 0.529,
         "avg_GR": 0.529,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.125
       },
       "anomalies": []
     },
@@ -4430,28 +4531,25 @@
         "avg_RES_DEEP": 54.421804574784616,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 38.5292922974,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 15.892512277384618
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6488638132883493,
-      "WRCI": 44.06,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 25.95,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1193.0246127245282,
+      "owc_distance_m": 11.975387275471803,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 3.967,
         "avg_RES_DEEP": 1.352,
         "avg_GR": 0.305,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.0
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 2980.0,
@@ -4475,24 +4573,23 @@
         "avg_RES_DEEP": 43.848324399999996,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 32.24723795683334,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 11.601086443166658
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6180181944944392,
-      "WRCI": 37.91,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 24.72,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1192.9434504603773,
+      "owc_distance_m": 12.056549539622665,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.655,
         "avg_RES_DEEP": 0.785,
         "avg_GR": 0.785,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.69
       },
       "anomalies": []
     },
@@ -4518,22 +4615,23 @@
         "avg_RES_DEEP": 45.89629242630303,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 33.12579836987878,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 12.770494056424248
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.5987652084329597,
-      "WRCI": 38.48,
+      "WRCI": 23.95,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1192.8622881962265,
+      "owc_distance_m": 12.137711803773527,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 3.013,
         "avg_RES_DEEP": 0.895,
         "avg_GR": 0.195,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.125
       },
       "anomalies": []
     },
@@ -4559,24 +4657,25 @@
         "avg_RES_DEEP": 45.6878892752,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 36.167964407092306,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 9.519924868107694
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.70506379308439,
-      "WRCI": 39.0,
+      "WRCI": 28.2,
       "risk_class": "Elevated",
       "flags": [
-        "highperm"
+        "low_GR"
       ],
+      "mTVDss": -1192.8293681838734,
+      "owc_distance_m": 12.170631816126615,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.019,
         "avg_RES_DEEP": 0.884,
         "avg_GR": -0.57,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.255
       },
       "anomalies": []
     },
@@ -4602,28 +4701,25 @@
         "avg_RES_DEEP": 53.01799548757576,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 33.82697258578788,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 19.191022901787882
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6783243254427358,
-      "WRCI": 47.13,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 27.13,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1192.8206417332328,
+      "owc_distance_m": 12.179358266767167,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 4.975,
         "avg_RES_DEEP": 1.277,
         "avg_GR": 0.352,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.255
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 3020.0,
@@ -4647,28 +4743,25 @@
         "avg_RES_DEEP": 53.83326229912121,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 36.75050001434848,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 17.082762284772727
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7067370720322008,
-      "WRCI": 47.74,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 28.27,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1192.810899486986,
+      "owc_distance_m": 12.189100513013955,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 4.331,
         "avg_RES_DEEP": 1.321,
         "avg_GR": -0.09,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.192
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 3030.0,
@@ -4692,24 +4785,23 @@
         "avg_RES_DEEP": 63.999700047384614,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 52.693750821646155,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 11.305949225738459
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7130696077270187,
-      "WRCI": 41.37,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 28.52,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1192.7175234024896,
+      "owc_distance_m": 12.282476597510367,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.565,
         "avg_RES_DEEP": 1.866,
         "avg_GR": -0.189,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.941
       },
       "anomalies": []
     },
@@ -4735,28 +4827,25 @@
         "avg_RES_DEEP": 60.56845913512121,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 45.30886528713636,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 15.259593847984846
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6808530317157114,
-      "WRCI": 44.62,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 27.23,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1192.6241473179932,
+      "owc_distance_m": 12.37585268200678,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 3.774,
         "avg_RES_DEEP": 1.682,
         "avg_GR": -0.132,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.38
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 3050.0,
@@ -4780,26 +4869,25 @@
         "avg_RES_DEEP": 58.84503836996923,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 40.617055570215385,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 18.227982799753846
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.598165689730653,
-      "WRCI": 43.93,
-      "risk_class": "Elevated",
+      "WRCI": 23.93,
+      "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1192.4948458642912,
+      "owc_distance_m": 12.505154135708835,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 4.681,
         "avg_RES_DEEP": 1.59,
         "avg_GR": 0.366,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.412
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 3060.0,
@@ -4823,26 +4911,25 @@
         "avg_RES_DEEP": 60.747797070151506,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 45.14692861386364,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 15.600868456287863
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.496308118090047,
-      "WRCI": 38.96,
+      "WRCI": 21.19,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1192.3019535216074,
+      "owc_distance_m": 12.698046478392598,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 3.878,
         "avg_RES_DEEP": 1.692,
         "avg_GR": 1.284,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.094
       },
-      "anomalies": [
-        "res_sep"
-      ]
+      "anomalies": []
     },
     {
       "depth": 3070.0,
@@ -4866,22 +4953,23 @@
         "avg_RES_DEEP": 58.66168455643939,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 48.39258321127273,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 10.26910134516666
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.5563734918832745,
-      "WRCI": 35.25,
+      "WRCI": 23.59,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1192.1090611789234,
+      "owc_distance_m": 12.890938821076588,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.248,
         "avg_RES_DEEP": 1.58,
         "avg_GR": 0.794,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.816
       },
       "anomalies": []
     },
@@ -4907,22 +4995,23 @@
         "avg_RES_DEEP": 59.63554135832308,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 53.242361450215384,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 6.393179908107697
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6815018040336627,
-      "WRCI": 34.47,
+      "WRCI": 27.26,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1191.9313391688215,
+      "owc_distance_m": 13.068660831178477,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 1.063,
         "avg_RES_DEEP": 1.632,
         "avg_GR": 0.08,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.129
       },
       "anomalies": []
     },
@@ -4948,22 +5037,25 @@
         "avg_RES_DEEP": 68.00055463389394,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 65.03229701886364,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 2.9682576150302964
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7393906443695226,
-      "WRCI": 32.86,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 29.58,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "mTVDss": -1191.7594293055042,
+      "owc_distance_m": 13.240570694495773,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 0.016,
         "avg_RES_DEEP": 2.081,
         "avg_GR": -0.821,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.286
       },
       "anomalies": []
     },
@@ -4989,22 +5081,25 @@
         "avg_RES_DEEP": 69.52066941693941,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 68.7449609005606,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 0.7757085163788133
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7508921564798196,
-      "WRCI": 30.81,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 30.04,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "mTVDss": -1191.5907451916912,
+      "owc_distance_m": 13.409254808308788,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.654,
         "avg_RES_DEEP": 2.162,
         "avg_GR": -0.777,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 1.788
       },
       "anomalies": []
     },
@@ -5030,24 +5125,23 @@
         "avg_RES_DEEP": 43.4052560979697,
         "n_RES_DEEP": 66,
         "avg_RES_SHALLOW": 31.331096967090904,
-        "n_RES_SHALLOW": 66,
-        "res_sep": 12.074159130878794
+        "n_RES_SHALLOW": 66
       },
-      "perm": "Moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.6274468548707519,
-      "WRCI": 38.83,
-      "risk_class": "Elevated",
-      "flags": [
-        "highperm"
-      ],
+      "WRCI": 25.1,
+      "risk_class": "Low",
+      "flags": [],
+      "mTVDss": -1195.3664721680923,
+      "owc_distance_m": 9.633527831907713,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": 2.8,
         "avg_RES_DEEP": 0.761,
         "avg_GR": 0.524,
         "pct_ss": -0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.408
       },
       "anomalies": []
     },
@@ -5073,22 +5167,26 @@
         "avg_RES_DEEP": 29.213716312387756,
         "n_RES_DEEP": 49,
         "avg_RES_SHALLOW": 28.785448813918368,
-        "n_RES_SHALLOW": 49,
-        "res_sep": 0.4282674984693884
+        "n_RES_SHALLOW": 49
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7261428571428572,
-      "WRCI": 29.42,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 29.05,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR",
+        "ZOI"
+      ],
+      "mTVDss": -1196.0568099061209,
+      "owc_distance_m": 8.943190093879139,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.76,
         "avg_RES_DEEP": 0.0,
         "avg_GR": -1.175,
         "pct_ss": -0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": 0.471
       },
       "anomalies": []
     },
@@ -5114,22 +5212,26 @@
         "avg_RES_DEEP": 24.109924316484847,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 24.38746059303031,
-        "n_RES_SHALLOW": 33,
-        "res_sep": -0.27753627654546165
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low inferred permeability (tight/cemented)",
       "matching_pay": true,
       "RQI": 0.769,
       "WRCI": 30.76,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR",
+        "ZOI"
+      ],
+      "mTVDss": -1196.3811903041683,
+      "owc_distance_m": 8.618809695831715,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.976,
         "avg_RES_DEEP": -0.274,
         "avg_GR": -1.257,
         "pct_ss": 0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.376
       },
       "anomalies": []
     },
@@ -5155,22 +5257,26 @@
         "avg_RES_DEEP": 22.834848403969698,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 21.835139245757574,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.9997091582121236
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.8747142857142858,
-      "WRCI": 36.02,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 34.99,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR",
+        "ZOI"
+      ],
+      "mTVDss": -1196.7055707022155,
+      "owc_distance_m": 8.294429297784518,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.585,
         "avg_RES_DEEP": -0.342,
         "avg_GR": -1.172,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.345
       },
       "anomalies": []
     },
@@ -5196,22 +5302,26 @@
         "avg_RES_DEEP": 20.759096954727273,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 20.175709002,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.5833879527272714
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": true,
       "RQI": 0.7114329285998483,
-      "WRCI": 29.01,
-      "risk_class": "Low",
-      "flags": [],
+      "WRCI": 28.46,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR",
+        "ZOI"
+      ],
+      "mTVDss": -1197.029951100263,
+      "owc_distance_m": 7.970048899737094,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.713,
         "avg_RES_DEEP": -0.454,
         "avg_GR": -0.873,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.376
       },
       "anomalies": []
     },
@@ -5237,24 +5347,26 @@
         "avg_RES_DEEP": 18.692221265757578,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 17.895197030212124,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.7970242355454538
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8236754658219567,
-      "WRCI": 35.05,
+      "WRCI": 34.25,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
+      "mTVDss": -1197.349422799548,
+      "owc_distance_m": 7.650577200452062,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.647,
         "avg_RES_DEEP": -0.564,
         "avg_GR": -0.885,
         "pct_ss": -0.899,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.533
       },
       "anomalies": []
     },
@@ -5280,24 +5392,26 @@
         "avg_RES_DEEP": 17.43600314859375,
         "n_RES_DEEP": 32,
         "avg_RES_SHALLOW": 16.985809445374997,
-        "n_RES_SHALLOW": 32,
-        "res_sep": 0.4501937032187513
+        "n_RES_SHALLOW": 32
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8567038805642004,
-      "WRCI": 37.23,
+      "WRCI": 36.83,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
+      "mTVDss": -1197.567092354936,
+      "owc_distance_m": 7.432907645064006,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.753,
         "avg_RES_DEEP": -0.632,
         "avg_GR": -0.955,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.627
       },
       "anomalies": []
     },
@@ -5323,24 +5437,26 @@
         "avg_RES_DEEP": 17.108736298212126,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 16.19395455451515,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.9147817436969738
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8385910147226496,
-      "WRCI": 37.37,
+      "WRCI": 36.43,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
+      "mTVDss": -1197.784761910324,
+      "owc_distance_m": 7.21523808967595,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.611,
         "avg_RES_DEEP": -0.649,
         "avg_GR": -0.673,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.722
       },
       "anomalies": []
     },
@@ -5366,24 +5482,26 @@
         "avg_RES_DEEP": 16.544287883969695,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 15.622130394,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.9221574899696954
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8364060865506759,
-      "WRCI": 37.85,
+      "WRCI": 36.91,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
+      "mTVDss": -1198.002431465712,
+      "owc_distance_m": 6.997568534287893,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.609,
         "avg_RES_DEEP": -0.68,
         "avg_GR": -0.639,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.69
       },
       "anomalies": []
     },
@@ -5409,24 +5527,26 @@
         "avg_RES_DEEP": 16.384548187303032,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 15.646733255121214,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.7378149321818182
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8389490741601977,
-      "WRCI": 37.9,
+      "WRCI": 37.17,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
+      "mTVDss": -1198.2201010211002,
+      "owc_distance_m": 6.779898978899837,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.665,
         "avg_RES_DEEP": -0.688,
         "avg_GR": -0.678,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.596
       },
       "anomalies": []
     },
@@ -5452,24 +5572,25 @@
         "avg_RES_DEEP": 15.90732132309091,
         "n_RES_DEEP": 33,
         "avg_RES_SHALLOW": 15.234475771575758,
-        "n_RES_SHALLOW": 33,
-        "res_sep": 0.6728455515151524
+        "n_RES_SHALLOW": 33
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8424951277493545,
-      "WRCI": 38.45,
+      "WRCI": 37.79,
       "risk_class": "Elevated",
       "flags": [
         "lowres"
       ],
+      "mTVDss": -1198.4377705764882,
+      "owc_distance_m": 6.562229423511781,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.685,
         "avg_RES_DEEP": -0.714,
         "avg_GR": -0.511,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.816
       },
       "anomalies": []
     },
@@ -5495,24 +5616,26 @@
         "avg_RES_DEEP": 16.130465390734695,
         "n_RES_DEEP": 49,
         "avg_RES_SHALLOW": 15.415104087571429,
-        "n_RES_SHALLOW": 49,
-        "res_sep": 0.7153613031632666
+        "n_RES_SHALLOW": 49
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.8459624336293058,
-      "WRCI": 38.41,
+      "WRCI": 37.71,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
+      "mTVDss": -1198.639993174503,
+      "owc_distance_m": 6.3600068254970665,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": -0.672,
         "avg_RES_DEEP": -0.702,
         "avg_GR": -0.787,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.816
       },
       "anomalies": []
     },
@@ -5538,24 +5661,26 @@
         "avg_RES_DEEP": 15.022399990399999,
         "n_RES_DEEP": 65,
         "avg_RES_SHALLOW": 14.180658487123079,
-        "n_RES_SHALLOW": 65,
-        "res_sep": 0.8417415032769195
+        "n_RES_SHALLOW": 65
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.6298973630465866,
-      "WRCI": 31.02,
+      "WRCI": 40.17,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "owc_elevated"
       ],
+      "mTVDss": -1199.0334706121805,
+      "owc_distance_m": 5.966529387819492,
+      "owc_near": "Elevated",
       "z_scores": {
-        "res_sep": -0.634,
         "avg_RES_DEEP": -0.761,
         "avg_GR": -0.351,
         "pct_ss": 0.0,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.784
       },
       "anomalies": []
     },
@@ -5581,24 +5706,27 @@
         "avg_RES_DEEP": 15.095299857,
         "n_RES_DEEP": 7,
         "avg_RES_SHALLOW": 14.03706532253846,
-        "n_RES_SHALLOW": 26,
-        "res_sep": 1.0582345344615405
+        "n_RES_SHALLOW": 26
       },
-      "perm": "Low-moderate inferred permeability",
       "matching_pay": false,
       "RQI": 0.6590868984893913,
-      "WRCI": 32.36,
+      "WRCI": 41.27,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR",
+        "owc_elevated"
       ],
+      "mTVDss": -1199.4269480498579,
+      "owc_distance_m": 5.573051950142144,
+      "owc_near": "Elevated",
       "z_scores": {
-        "res_sep": -0.567,
         "avg_RES_DEEP": -0.757,
         "avg_GR": -0.583,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.722
       },
       "anomalies": []
     },
@@ -5624,22 +5752,23 @@
         "avg_RES_DEEP": null,
         "n_RES_DEEP": 0,
         "avg_RES_SHALLOW": null,
-        "n_RES_SHALLOW": 0,
-        "res_sep": null
+        "n_RES_SHALLOW": 0
       },
-      "perm": "Insufficient resistivity data",
       "matching_pay": false,
       "RQI": 0.3951367781155015,
       "WRCI": 15.81,
       "risk_class": "Low",
       "flags": [],
+      "mTVDss": -1199.74173,
+      "owc_distance_m": 5.258270000000039,
+      "owc_near": "Low",
       "z_scores": {
-        "res_sep": null,
         "avg_RES_DEEP": null,
         "avg_GR": null,
         "pct_ss": 0.45,
         "fluor": null,
-        "grain_ordinal": null
+        "grain_ordinal": null,
+        "gas": -0.69
       },
       "anomalies": []
     }

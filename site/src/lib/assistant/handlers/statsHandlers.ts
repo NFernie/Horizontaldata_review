@@ -40,7 +40,7 @@ async function handleCorrelations(alias: string, display: string): Promise<Assis
     throw new Error(`No correlation data for ${alias}.`);
   }
 
-  const vars = ["pct_ss", "res_sep", "avg_RES_DEEP", "fluor", "avg_GR"] as const;
+  const vars = ["pct_ss", "avg_RES_DEEP", "fluor", "avg_GR", "gas"] as const;
   const pairs = vars
     .flatMap((a, index) =>
       vars.slice(index + 1).map((b) => {

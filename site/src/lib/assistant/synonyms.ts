@@ -1,7 +1,7 @@
 /** Synonym groups for query expansion (Phase 4). */
 const SYNONYM_GROUPS: string[][] = [
   ["loose", "lse", "grains", "loosegrain"],
-  ["perm", "permeability", "res_sep", "separation", "deltares"],
+  ["perm", "permeability", "low_gr", "zoi", "owc"],
   ["water", "risk", "wrci", "waterrisk"],
   ["rqi", "rock", "quality", "rockquality"],
   ["cuttings", "description", "sample", "interval", "mudlog", "lithology"],
