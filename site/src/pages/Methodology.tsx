@@ -125,8 +125,9 @@ export function Methodology() {
               <li>
                 <strong className="text-text">OWC proximity</strong> — tiers from trajectory mTVDss vs field
                 OWC (good rock only: &lt;{OWC_BANDS_GOOD.high_lt}m High, {OWC_BANDS_GOOD.high_lt}–
-                {OWC_BANDS_GOOD.elevated_lt}m Elevated; poor rock never flagged). Suppressed when
-                avg_RES_DEEP &gt; {OWC_RES_SUPPRESS} Ω·m.
+                {OWC_BANDS_GOOD.elevated_lt}m Elevated; poor rock never flagged). OWC flags always
+                apply from proximity; avg_RES_DEEP &gt; {OWC_RES_SUPPRESS} Ω·m suppresses OWC WRCI
+                severity and High risk only.
               </li>
             </ul>
           </FormulaBlock>
@@ -142,8 +143,8 @@ export function Methodology() {
               <li>
                 <strong className="text-risk-high">{RISK_LABELS.High}</strong> — WRCI ≥ {WRCI_HIGH_THRESHOLD}{" "}
                 and (OWC High or ≥{WRCI_HIGH_MIN_FLAGS} of lowres/lowfluor/low_GR), or ≥{WRCI_HIGH_MULTI_FLAGS}{" "}
-                red flags regardless of WRCI, or (ZOI and WRCI ≥ {WRCI_HIGH_THRESHOLD}). Suppressed when
-                avg_RES_DEEP &gt; {OWC_RES_SUPPRESS} Ω·m.
+                of lowres/lowfluor/low_GR/OWC High, or (ZOI and WRCI ≥ {WRCI_HIGH_THRESHOLD}). High risk
+                suppressed when avg_RES_DEEP &gt; {OWC_RES_SUPPRESS} Ω·m (flags unchanged).
               </li>
               <li>
                 <strong className="text-risk-elev">{RISK_LABELS.Elevated}</strong> — WRCI{" "}

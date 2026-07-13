@@ -165,7 +165,7 @@ WRCI_HIGH_MIN_FLAGS = 1
 """Minimum count of {lowres, lowfluor, low_GR} booleans for High risk when WRCI >= WRCI_HIGH_THRESHOLD."""
 
 WRCI_HIGH_MULTI_FLAGS = 2
-"""≥ this many red flags → High water risk regardless of WRCI (suppressed when RES_DEEP > OWC_RES_SUPPRESS)."""
+"""≥ this many of {lowres, lowfluor, low_GR, owc_high} → High regardless of WRCI (suppressed when RES_DEEP > OWC_RES_SUPPRESS)."""
 
 LOWRES_SEVERITY_REF = RES_DEEP_CUTOFF
 """Reference RES_DEEP (ohm.m) for low-resistivity severity: clamp((ref − RES)/ref, 0, 1)."""

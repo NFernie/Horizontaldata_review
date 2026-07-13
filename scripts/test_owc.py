@@ -31,6 +31,12 @@ class TestOwcProximity(unittest.TestCase):
         self.assertEqual(apply_owc_res_suppress("High", 22.9), "High")
         self.assertEqual(apply_owc_res_suppress("High", config.OWC_RES_SUPPRESS), "High")
 
+    def test_res_suppress_for_wrci_only_not_flags(self):
+        """Raw tier stays High for flags; suppressed tier is Low for WRCI severity."""
+        raw = owc_proximity_tier(3.0, 0.65, False)
+        self.assertEqual(raw, "High")
+        self.assertEqual(apply_owc_res_suppress(raw, 35.0), "Low")
+
     def test_res_suppress_missing_res_unchanged(self):
         self.assertEqual(apply_owc_res_suppress("High", None), "High")
 

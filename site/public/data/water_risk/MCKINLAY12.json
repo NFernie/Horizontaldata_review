@@ -341,6 +341,32 @@
       }
     },
     {
+      "depth": 2610.0,
+      "top": 2607.5,
+      "bot": 2612.5,
+      "WRCI": 26.2,
+      "RQI": 0.6048804733588555,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_elevated"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 85.49198751742423,
+        "avg_RES_DEEP": 36.75226650818182,
+        "mTVDss": -1198.1727595623954,
+        "hafwl_m": 4.827240437604587,
+        "owc_distance_m": 4.827240437604587,
+        "owc_near": "Elevated",
+        "isolated": false
+      }
+    },
+    {
       "depth": 1980.0,
       "top": 1977.5,
       "bot": 1982.5,

@@ -7236,12 +7236,14 @@
       "matching_pay": true,
       "RQI": 0.6048804733588555,
       "WRCI": 26.2,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_elevated"
+      ],
       "mTVDss": -1198.1727595623954,
       "hafwl_m": 4.827240437604587,
       "owc_distance_m": 4.827240437604587,
-      "owc_near": "Low",
+      "owc_near": "Elevated",
       "isolated": false,
       "z_scores": {
         "avg_RES_DEEP": 1.652,

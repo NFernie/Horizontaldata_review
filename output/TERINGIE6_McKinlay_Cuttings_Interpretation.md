@@ -1,6 +1,6 @@
 # TERINGIE 6 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 02:08 UTC  
+**Generated:** 2026-07-13 23:17 UTC  
 **Well:** TERINGIE 6 (TERINGIE 6)  
 **TD:** 3444 m MD  
 

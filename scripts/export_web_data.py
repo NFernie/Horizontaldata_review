@@ -275,16 +275,30 @@ def attach_owc(rows, alias):
         dist = owc_distance_m(mtvds, owc_mtvds)
         row["owc_distance_m"] = dist
         tier = owc_proximity_tier(dist, row.get("RQI"), bool(row.get("flag_zoi")))
-        row["owc_near"] = apply_owc_res_suppress(tier, row.get("avg_RES_DEEP"))
+        row["owc_tier"] = tier
+        row["owc_near"] = tier
+        row["owc_severity_tier"] = apply_owc_res_suppress(tier, row.get("avg_RES_DEEP"))
     return rows
 
 
-def classify_risk_class(wrci, has_lowres, has_lowfluor, has_low_gr, owc_near, flag_zoi, res_deep=None):
+def classify_risk_class(
+    wrci,
+    has_lowres,
+    has_lowfluor,
+    has_low_gr,
+    owc_tier,
+    owc_severity_tier,
+    flag_zoi,
+    res_deep=None,
+):
     """Risk class per updated-plan §3B locked table."""
     wrci = wrci or 0.0
     bool_count = sum((has_lowres, has_lowfluor, has_low_gr))
-    owc_high = owc_near == "High"
-    owc_elev = owc_near == "Elevated"
+    owc_high = owc_tier == "High"
+    owc_elev = owc_tier == "Elevated"
+    owc_high_wrci = owc_severity_tier == "High"
+
+    red_flag_count = bool_count + (1 if owc_high else 0)
 
     res_suppress_high = False
     if res_deep is not None:
@@ -294,10 +308,10 @@ def classify_risk_class(wrci, has_lowres, has_lowfluor, has_low_gr, owc_near, fl
             pass
 
     high_candidate = (
-        bool_count >= config.WRCI_HIGH_MULTI_FLAGS
+        red_flag_count >= config.WRCI_HIGH_MULTI_FLAGS
         or (
             wrci >= config.WRCI_HIGH_THRESHOLD
-            and (owc_high or bool_count >= config.WRCI_HIGH_MIN_FLAGS)
+            and (owc_high_wrci or bool_count >= config.WRCI_HIGH_MIN_FLAGS)
         )
         or (flag_zoi and wrci >= config.WRCI_HIGH_THRESHOLD)
     )
@@ -307,6 +321,7 @@ def classify_risk_class(wrci, has_lowres, has_lowfluor, has_low_gr, owc_near, fl
     if (
         config.WRCI_ELEVATED_THRESHOLD <= wrci < config.WRCI_HIGH_THRESHOLD
         or bool_count >= 1
+        or owc_high
         or owc_elev
         or (flag_zoi and wrci >= config.WRCI_ELEVATED_THRESHOLD)
         or (high_candidate and res_suppress_high)
@@ -387,7 +402,8 @@ def compute_flags_and_wrci(rows):
         gr = row.get("avg_GR")
         fluor = pd.to_numeric(row.get("fluor"), errors="coerce")
         flag_zoi = bool(row.get("flag_zoi"))
-        owc_near = row.get("owc_near")
+        owc_tier = row.get("owc_tier") or row.get("owc_near")
+        owc_severity_tier = row.get("owc_severity_tier") or owc_tier
 
         flags = []
         has_lowres = False
@@ -408,9 +424,9 @@ def compute_flags_and_wrci(rows):
         if flag_zoi:
             flags.append("ZOI")
 
-        if owc_near == "High":
+        if owc_tier == "High":
             flags.append("owc_high")
-        elif owc_near == "Elevated":
+        elif owc_tier == "Elevated":
             flags.append("owc_elevated")
 
         row["flags"] = flags
@@ -428,7 +444,7 @@ def compute_flags_and_wrci(rows):
             if fluor is not None and not pd.isna(fluor)
             else 0.0
         )
-        owc_sev = owc_severity(owc_near)
+        owc_sev = owc_severity(owc_severity_tier)
 
         ww = config.WRCI_WEIGHTS
         wrci = 100.0 * (
@@ -439,7 +455,14 @@ def compute_flags_and_wrci(rows):
         )
         row["WRCI"] = round(wrci, 2)
         row["risk_class"] = classify_risk_class(
-            wrci, has_lowres, has_lowfluor, has_low_gr, owc_near, flag_zoi, res_deep
+            wrci,
+            has_lowres,
+            has_lowfluor,
+            has_low_gr,
+            owc_tier,
+            owc_severity_tier,
+            flag_zoi,
+            res_deep,
         )
 
     return rows

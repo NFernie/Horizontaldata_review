@@ -3595,7 +3595,7 @@
         "fluor": 100.0,
         "RQI": 0.6405971144992932,
         "WRCI": 45.62,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "low_GR",
           "owc_high"

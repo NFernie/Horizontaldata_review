@@ -1,6 +1,6 @@
 # FROSTILLICUS 2 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 02:05 UTC  
+**Generated:** 2026-07-13 23:15 UTC  
 **Well:** FROSTILLICUS 2 (FROSTILLICUS 2)  
 **TD:** 3724 m MD  
 

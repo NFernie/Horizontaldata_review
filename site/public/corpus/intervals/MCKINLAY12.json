@@ -3789,8 +3789,10 @@
         "fluor": 90.0,
         "RQI": 0.6048804733588555,
         "WRCI": 26.2,
-        "risk_class": "Low",
-        "flags": [],
+        "risk_class": "Elevated",
+        "flags": [
+          "owc_elevated"
+        ],
         "long_desc": "Sample 2610m: 100% Sandstone (litho ASCII aggregate) TG 353.5U (drill-gas ASCII)"
       },
       "detail_markdown": "### 2610 m MD — Interval 2607.5 – 2612.5 m\n\n**Sample Description (spreadsheet):** Sample 2610m: 100% Sandstone (litho ASCII aggregate) TG 353.5U (drill-gas ASCII)\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 100.0 |\n| Grain Size | nan (max: nan) |\n| Porosity Class | fr |\n| Hardness | lse (1.00) |\n| Sorting | mod (0.40) |\n| Angularity | sbrnd (0.50) |\n| Cement | tr wk sil cmt (0.90) |\n| Fluorescence | 90.0% mod bri yel/grn ptchy-evn |\n| Total Gas | 353.5352941176471 U |\n| mTVDss | -1198.17 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2594m: clr,trnsl,tr v lt 8520 brnsh gry,f-crs,pred med,fr srt, sbang-sbrnd,tr wk sil cmt,tr v lt brnsh gry arg mtx,occ crab spks & incl,pred cln lse grs,fri aggs,fr-\n- **SILTSTONE** @ ~2609m: med gry,med brnsh gry,aren,rr carb spks & frags,micmic, frm-mod hd,sbblky.\n- _(2 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 85.5 | 33 |\n| RES_DEEP (ohm.m) | 36.75 | 33 |\n| RES_SHALLOW (ohm.m) | 22.36 | 33 |",

@@ -1089,7 +1089,7 @@
       "matching_pay": false,
       "RQI": 0.6178571428571429,
       "WRCI": 50.71,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "lowfluor",
         "owc_high"
@@ -1532,7 +1532,7 @@
       "matching_pay": false,
       "RQI": 0.6103688921260184,
       "WRCI": 49.12,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "lowres",
         "owc_high"
@@ -1579,7 +1579,7 @@
       "matching_pay": false,
       "RQI": 0.735,
       "WRCI": 54.36,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "lowres",
         "owc_high"

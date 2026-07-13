@@ -64,7 +64,7 @@ WRCI = 100 × ( 0.40·RQI + 0.20·lowres_severity + 0.20·lowfluor_severity + 0.
 
 | Class | Rule |
 |-------|------|
-| **High** | WRCI ≥ 60 **and** (OWC High **or** ≥1 of `{lowres, lowfluor, low_GR}`) **or** ≥2 red flags **or** (ZOI **and** WRCI ≥ 60); suppressed when RES_DEEP &gt; 30 Ω·m |
+| **High** | WRCI ≥ 60 **and** (OWC High **or** ≥1 of `{lowres, lowfluor, low_GR}`) **or** ≥2 of `{lowres, lowfluor, low_GR, owc_high}` **or** (ZOI **and** WRCI ≥ 60); High risk suppressed when RES_DEEP &gt; 30 Ω·m (OWC flags still apply) |
 | **Elevated** | WRCI 40–60 **or** 1 of `{lowres, lowfluor, low_GR}` **or** OWC Elevated **or** (ZOI **and** WRCI ≥ 40) |
 | **Low** | Otherwise |
 

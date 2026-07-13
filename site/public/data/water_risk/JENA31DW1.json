@@ -8,7 +8,7 @@
       "bot": 3605.0,
       "WRCI": 45.62,
       "RQI": 0.6405971144992932,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "low_GR",
         "owc_high"

@@ -106,7 +106,10 @@ def owc_severity(tier: str | None) -> float:
 
 
 def apply_owc_res_suppress(tier: str | None, res_deep: float | None) -> str | None:
-    """Clear OWC tier when deep resistivity indicates good electrical rock."""
+    """Reduce OWC severity tier for WRCI when deep resistivity indicates good electrical rock.
+
+    Does not affect proximity flags (owc_high / owc_elevated) — those use the raw tier.
+    """
     if tier is None or res_deep is None:
         return tier
     try:

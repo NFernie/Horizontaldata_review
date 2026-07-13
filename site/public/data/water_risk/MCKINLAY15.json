@@ -8,7 +8,7 @@
       "bot": 2032.5,
       "WRCI": 54.36,
       "RQI": 0.735,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "lowres",
         "owc_high"
@@ -61,7 +61,7 @@
       "bot": 1977.5,
       "WRCI": 50.71,
       "RQI": 0.6178571428571429,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "lowfluor",
         "owc_high"
@@ -88,7 +88,7 @@
       "bot": 2027.5,
       "WRCI": 49.12,
       "RQI": 0.6103688921260184,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "lowres",
         "owc_high"

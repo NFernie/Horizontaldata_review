@@ -787,7 +787,7 @@
         "fluor": 30,
         "RQI": 0.6105711151688096,
         "WRCI": 58.42,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -882,7 +882,7 @@
         "fluor": 30,
         "RQI": 0.6324870549844603,
         "WRCI": 59.3,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -1089,7 +1089,8 @@
         "WRCI": 40.61,
         "risk_class": "Elevated",
         "flags": [
-          "lowfluor"
+          "lowfluor",
+          "owc_high"
         ],
         "long_desc": "Sample 2110m: 0% Siltstone, 100% very fine to medium Sandstone, 30% dull to moderately bright FLUOR in SST. TG 221U"
       },
@@ -1181,7 +1182,7 @@
         "fluor": 40,
         "RQI": 0.6101371075158745,
         "WRCI": 56.41,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -1852,7 +1853,7 @@
         "fluor": 60,
         "RQI": 0.6093712520317499,
         "WRCI": 52.37,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -1878,7 +1879,7 @@
         "fluor": 60,
         "RQI": 0.6257545387598908,
         "WRCI": 53.03,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -1904,7 +1905,7 @@
         "fluor": 70,
         "RQI": 0.6836970935588783,
         "WRCI": 53.35,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -2104,7 +2105,7 @@
         "fluor": 50,
         "RQI": 0.6346684649314037,
         "WRCI": 55.39,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -2639,7 +2640,7 @@
         "fluor": 90,
         "RQI": 0.6685552047414964,
         "WRCI": 50.11,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowres",
           "owc_high"
@@ -2665,7 +2666,7 @@
         "fluor": 80,
         "RQI": 0.6082189986480637,
         "WRCI": 52.03,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowres",
           "owc_high"
@@ -2718,7 +2719,7 @@
         "fluor": 100,
         "RQI": 0.6393660375293561,
         "WRCI": 49.86,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowres",
           "owc_high"
@@ -2744,7 +2745,7 @@
         "fluor": 100,
         "RQI": 0.6367882260297152,
         "WRCI": 49.35,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowres",
           "owc_high"
@@ -2912,7 +2913,7 @@
         "fluor": 100,
         "RQI": 0.6390511836765255,
         "WRCI": 46.61,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowres",
           "owc_high"
@@ -2938,7 +2939,7 @@
         "fluor": 100,
         "RQI": 0.7342085923703652,
         "WRCI": 50.81,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowres",
           "owc_high"
@@ -2964,7 +2965,7 @@
         "fluor": 100,
         "RQI": 0.7475,
         "WRCI": 50.37,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowres",
           "owc_high"
@@ -3072,7 +3073,7 @@
         "fluor": 80,
         "RQI": 0.7475,
         "WRCI": 53.9,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "low_GR",
           "owc_high"
@@ -3153,7 +3154,7 @@
         "fluor": 60,
         "RQI": 0.6924329845374766,
         "WRCI": 55.7,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -3202,7 +3203,7 @@
         "fluor": 70,
         "RQI": 0.6909682536851728,
         "WRCI": 53.64,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -3301,7 +3302,7 @@
         "fluor": 60,
         "RQI": 0.7238162665554311,
         "WRCI": 56.95,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -3327,7 +3328,7 @@
         "fluor": 60,
         "RQI": 0.7520633984018884,
         "WRCI": 58.08,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"
@@ -3405,7 +3406,7 @@
         "fluor": 40,
         "RQI": 0.6932460980366723,
         "WRCI": 59.73,
-        "risk_class": "Elevated",
+        "risk_class": "High",
         "flags": [
           "lowfluor",
           "owc_high"

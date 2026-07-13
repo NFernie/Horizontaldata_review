@@ -1,6 +1,6 @@
 # BIALA 21 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 02:05 UTC  
+**Generated:** 2026-07-13 23:14 UTC  
 **Well:** BIALA 21 (BIALA 21)  
 **TD:** 3278 m MD  
 

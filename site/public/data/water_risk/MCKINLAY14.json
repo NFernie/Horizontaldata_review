@@ -164,7 +164,7 @@
       "bot": 2242.5,
       "WRCI": 50.4,
       "RQI": 0.6839865892812127,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "lowres",
         "owc_high"
@@ -269,7 +269,7 @@
       "bot": 2237.5,
       "WRCI": 49.94,
       "RQI": 0.6884848484848485,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "lowres",
         "owc_high"
@@ -348,7 +348,7 @@
       "bot": 2232.5,
       "WRCI": 49.64,
       "RQI": 0.6884200561805056,
-      "risk_class": "Elevated",
+      "risk_class": "High",
       "flags": [
         "lowres",
         "owc_high"
@@ -807,6 +807,864 @@
         "mTVDss": -1201.7969103908672,
         "hafwl_m": 1.2030896091328032,
         "owc_distance_m": 1.2030896091328032,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2505.0,
+      "top": 2502.5,
+      "bot": 2507.5,
+      "WRCI": 32.91,
+      "RQI": 0.7726869993781087,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 81.30446347327273,
+        "avg_RES_DEEP": 49.51434857921212,
+        "mTVDss": -1201.697892684428,
+        "hafwl_m": 1.3021073155719023,
+        "owc_distance_m": 1.3021073155719023,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2510.0,
+      "top": 2507.5,
+      "bot": 2512.5,
+      "WRCI": 32.78,
+      "RQI": 0.7193939393939394,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 80.0,
+        "avg_GR": 81.03223673506061,
+        "avg_RES_DEEP": 46.12650934857576,
+        "mTVDss": -1201.732362733058,
+        "hafwl_m": 1.2676372669420743,
+        "owc_distance_m": 1.2676372669420743,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2500.0,
+      "top": 2497.5,
+      "bot": 2502.5,
+      "WRCI": 32.21,
+      "RQI": 0.7552983911625769,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 85.88455408269697,
+        "avg_RES_DEEP": 45.63309074166667,
+        "mTVDss": -1201.6634227528734,
+        "hafwl_m": 1.33657724712657,
+        "owc_distance_m": 1.33657724712657,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2150.0,
+      "top": 2147.5,
+      "bot": 2152.5,
+      "WRCI": 31.7,
+      "RQI": 0.7424183734669235,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 82.41283925372727,
+        "avg_RES_DEEP": 34.7309180750303,
+        "mTVDss": -1200.9769369144258,
+        "hafwl_m": 2.023063085574222,
+        "owc_distance_m": 2.023063085574222,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2515.0,
+      "top": 2512.5,
+      "bot": 2517.5,
+      "WRCI": 31.63,
+      "RQI": 0.6907367994251853,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 80.0,
+        "avg_GR": 88.84203292396968,
+        "avg_RES_DEEP": 40.119760686666666,
+        "mTVDss": -1201.7668328790012,
+        "hafwl_m": 1.2331671209988144,
+        "owc_distance_m": 1.2331671209988144,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2145.0,
+      "top": 2142.5,
+      "bot": 2147.5,
+      "WRCI": 31.25,
+      "RQI": 0.7312853614823184,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 85.3452305649394,
+        "avg_RES_DEEP": 37.17834229909091,
+        "mTVDss": -1200.925451256147,
+        "hafwl_m": 2.074548743853029,
+        "owc_distance_m": 2.074548743853029,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 1910.0,
+      "top": 1907.5,
+      "bot": 1912.5,
+      "WRCI": 30.48,
+      "RQI": 0.6621096693683787,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 80.0,
+        "avg_GR": 96.38230572342424,
+        "avg_RES_DEEP": 30.77032725018182,
+        "mTVDss": -1199.7621676999113,
+        "hafwl_m": 3.237832300088712,
+        "owc_distance_m": 3.237832300088712,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2155.0,
+      "top": 2152.5,
+      "bot": 2157.5,
+      "WRCI": 30.41,
+      "RQI": 0.7101269642743256,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 90.9182686805625,
+        "avg_RES_DEEP": 35.708615779812504,
+        "mTVDss": -1201.0284225727048,
+        "hafwl_m": 1.9715774272951876,
+        "owc_distance_m": 1.9715774272951876,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2365.0,
+      "top": 2362.5,
+      "bot": 2367.5,
+      "WRCI": 29.99,
+      "RQI": 0.6997973352444787,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 86.45552363536363,
+        "avg_RES_DEEP": 39.35657871130303,
+        "mTVDss": -1201.3218378314648,
+        "hafwl_m": 1.6781621685352093,
+        "owc_distance_m": 1.6781621685352093,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2140.0,
+      "top": 2137.5,
+      "bot": 2142.5,
+      "WRCI": 29.68,
+      "RQI": 0.6919902486455776,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 81.48798485966667,
+        "avg_RES_DEEP": 34.025063370151514,
+        "mTVDss": -1200.873965597868,
+        "hafwl_m": 2.1260344021320634,
+        "owc_distance_m": 2.1260344021320634,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2370.0,
+      "top": 2367.5,
+      "bot": 2372.5,
+      "WRCI": 29.67,
+      "RQI": 0.691851881123917,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 88.54832481612121,
+        "avg_RES_DEEP": 44.75170886884849,
+        "mTVDss": -1201.2498449531843,
+        "hafwl_m": 1.7501550468157347,
+        "owc_distance_m": 1.7501550468157347,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2135.0,
+      "top": 2132.5,
+      "bot": 2137.5,
+      "WRCI": 29.61,
+      "RQI": 0.6902852795500468,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 81.93706697406061,
+        "avg_RES_DEEP": 35.040348284181825,
+        "mTVDss": -1200.8224799395891,
+        "hafwl_m": 2.1775200604108704,
+        "owc_distance_m": 2.1775200604108704,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 1915.0,
+      "top": 1912.5,
+      "bot": 1917.5,
+      "WRCI": 29.42,
+      "RQI": 0.6355766289959944,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 80.0,
+        "avg_GR": 103.37100358484848,
+        "avg_RES_DEEP": 32.76995456578787,
+        "mTVDss": -1199.641316059697,
+        "hafwl_m": 3.358683940303081,
+        "owc_distance_m": 3.358683940303081,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2130.0,
+      "top": 2127.5,
+      "bot": 2132.5,
+      "WRCI": 29.38,
+      "RQI": 0.6845395364443759,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 83.45047297621214,
+        "avg_RES_DEEP": 35.19750294542424,
+        "mTVDss": -1200.77099428131,
+        "hafwl_m": 2.229005718689905,
+        "owc_distance_m": 2.229005718689905,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2355.0,
+      "top": 2352.5,
+      "bot": 2357.5,
+      "WRCI": 29.36,
+      "RQI": 0.6840007646906754,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 97.6401723219394,
+        "avg_RES_DEEP": 34.9416761109697,
+        "mTVDss": -1201.4379890096234,
+        "hafwl_m": 1.5620109903766206,
+        "owc_distance_m": 1.5620109903766206,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2345.0,
+      "top": 2342.5,
+      "bot": 2347.5,
+      "WRCI": 29.24,
+      "RQI": 0.6810495204283217,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 98.41751838463635,
+        "avg_RES_DEEP": 33.027069611939396,
+        "mTVDss": -1201.5418373691828,
+        "hafwl_m": 1.4581626308172417,
+        "owc_distance_m": 1.4581626308172417,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2360.0,
+      "top": 2357.5,
+      "bot": 2362.5,
+      "WRCI": 29.15,
+      "RQI": 0.6787461643448095,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 92.00031876559375,
+        "avg_RES_DEEP": 38.7934936285625,
+        "mTVDss": -1201.3860648298437,
+        "hafwl_m": 1.61393517015631,
+        "owc_distance_m": 1.61393517015631,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2375.0,
+      "top": 2372.5,
+      "bot": 2377.5,
+      "WRCI": 29.05,
+      "RQI": 0.6763132467394849,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 92.64113963748486,
+        "avg_RES_DEEP": 45.87743354566667,
+        "mTVDss": -1201.1778520749037,
+        "hafwl_m": 1.8221479250962602,
+        "owc_distance_m": 1.8221479250962602,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2390.0,
+      "top": 2387.5,
+      "bot": 2392.5,
+      "WRCI": 28.99,
+      "RQI": 0.6746856523000564,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 86.04594707490625,
+        "avg_RES_DEEP": 40.183540701843754,
+        "mTVDss": -1200.9618734400622,
+        "hafwl_m": 2.0381265599378366,
+        "owc_distance_m": 2.0381265599378366,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2160.0,
+      "top": 2157.5,
+      "bot": 2162.5,
+      "WRCI": 28.98,
+      "RQI": 0.6744504399819408,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 100.31532403215151,
+        "avg_RES_DEEP": 35.69344549469697,
+        "mTVDss": -1201.0717998838686,
+        "hafwl_m": 1.9282001161313929,
+        "owc_distance_m": 1.9282001161313929,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2125.0,
+      "top": 2122.5,
+      "bot": 2127.5,
+      "WRCI": 28.5,
+      "RQI": 0.662474834209697,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 89.26222825025,
+        "avg_RES_DEEP": 36.8752436638125,
+        "mTVDss": -1200.7170575853152,
+        "hafwl_m": 2.2829424146848396,
+        "owc_distance_m": 2.2829424146848396,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2350.0,
+      "top": 2347.5,
+      "bot": 2352.5,
+      "WRCI": 28.49,
+      "RQI": 0.6623579164840473,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 103.34081291396969,
+        "avg_RES_DEEP": 31.319087982181813,
+        "mTVDss": -1201.489913189403,
+        "hafwl_m": 1.5100868105969312,
+        "owc_distance_m": 1.5100868105969312,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 1845.0,
+      "top": 1842.5,
+      "bot": 1847.5,
+      "WRCI": 28.34,
+      "RQI": 0.6084765447567205,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 80.0,
+        "avg_GR": 84.32908815327275,
+        "avg_RES_DEEP": 39.392775448939396,
+        "mTVDss": -1199.4904633071922,
+        "hafwl_m": 3.509536692807842,
+        "owc_distance_m": 3.509536692807842,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2485.0,
+      "top": 2482.5,
+      "bot": 2487.5,
+      "WRCI": 28.01,
+      "RQI": 0.650224420413517,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "hardness_score": 0.85,
+        "fluor": 90.0,
+        "avg_GR": 94.46440910560605,
+        "avg_RES_DEEP": 41.45028154778788,
+        "mTVDss": -1201.560012958209,
+        "hafwl_m": 1.4399870417910279,
+        "owc_distance_m": 1.4399870417910279,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2120.0,
+      "top": 2117.5,
+      "bot": 2122.5,
+      "WRCI": 27.93,
+      "RQI": 0.6483271179028036,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 92.9886807528788,
+        "avg_RES_DEEP": 37.75759691181818,
+        "mTVDss": -1200.6629534491829,
+        "hafwl_m": 2.337046550817149,
+        "owc_distance_m": 2.337046550817149,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2495.0,
+      "top": 2492.5,
+      "bot": 2497.5,
+      "WRCI": 27.8,
+      "RQI": 0.6450813762271187,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "hardness_score": 0.85,
+        "fluor": 90.0,
+        "avg_GR": 95.8190665968788,
+        "avg_RES_DEEP": 41.390027479636366,
+        "mTVDss": -1201.6289528213185,
+        "hafwl_m": 1.371047178681465,
+        "owc_distance_m": 1.371047178681465,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2490.0,
+      "top": 2487.5,
+      "bot": 2492.5,
+      "WRCI": 27.53,
+      "RQI": 0.6382240392725511,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "hardness_score": 0.85,
+        "fluor": 90.0,
+        "avg_GR": 97.62526202103125,
+        "avg_RES_DEEP": 44.601881265687496,
+        "mTVDss": -1201.5944828897639,
+        "hafwl_m": 1.4055171102361328,
+        "owc_distance_m": 1.4055171102361328,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2395.0,
+      "top": 2392.5,
+      "bot": 2397.5,
+      "WRCI": 27.29,
+      "RQI": 0.6321390623303921,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 94.746767449,
+        "avg_RES_DEEP": 46.537075851848485,
+        "mTVDss": -1200.941031611814,
+        "hafwl_m": 2.058968388186031,
+        "owc_distance_m": 2.058968388186031,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2520.0,
+      "top": 2517.5,
+      "bot": 2522.5,
+      "WRCI": 27.13,
+      "RQI": 0.6283128178682472,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 98.10073423353126,
+        "avg_RES_DEEP": 40.678624987625,
+        "mTVDss": -1201.8013030249444,
+        "hafwl_m": 1.1986969750555545,
+        "owc_distance_m": 1.1986969750555545,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2115.0,
+      "top": 2112.5,
+      "bot": 2117.5,
+      "WRCI": 26.84,
+      "RQI": 0.6209308533684436,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 100.20474844339394,
+        "avg_RES_DEEP": 40.99594532363636,
+        "mTVDss": -1200.6088493130503,
+        "hafwl_m": 2.391150686949686,
+        "owc_distance_m": 2.391150686949686,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2210.0,
+      "top": 2207.5,
+      "bot": 2212.5,
+      "WRCI": 26.75,
+      "RQI": 0.6187266171480152,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 0.85,
+        "fluor": 90.0,
+        "avg_GR": 105.68161473051515,
+        "avg_RES_DEEP": 30.228009021575758,
+        "mTVDss": -1201.4783827848082,
+        "hafwl_m": 1.5216172151917817,
+        "owc_distance_m": 1.5216172151917817,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2380.0,
+      "top": 2377.5,
+      "bot": 2382.5,
+      "WRCI": 26.57,
+      "RQI": 0.6142059653501964,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 101.97605734172726,
+        "avg_RES_DEEP": 46.970179008757576,
+        "mTVDss": -1201.1058591966232,
+        "hafwl_m": 1.8941408033767857,
+        "owc_distance_m": 1.8941408033767857,
+        "owc_near": "High",
+        "isolated": false
+      }
+    },
+    {
+      "depth": 2385.0,
+      "top": 2382.5,
+      "bot": 2387.5,
+      "WRCI": 26.57,
+      "RQI": 0.6141939516944501,
+      "risk_class": "Elevated",
+      "flags": [
+        "owc_high"
+      ],
+      "isolated": false,
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "gd",
+        "hardness_score": 1.0,
+        "fluor": 90.0,
+        "avg_GR": 101.97922169112121,
+        "avg_RES_DEEP": 45.95241511948485,
+        "mTVDss": -1201.0338663183427,
+        "hafwl_m": 1.9661336816573112,
+        "owc_distance_m": 1.9661336816573112,
         "owc_near": "High",
         "isolated": false
       }
