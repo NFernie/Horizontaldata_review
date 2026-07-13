@@ -100,3 +100,16 @@ def owc_severity(tier: str | None) -> float:
     if tier == "Elevated":
         return config.OWC_SEVERITY_ELEVATED
     return config.OWC_SEVERITY_LOW
+
+
+def apply_owc_res_suppress(tier: str | None, res_deep: float | None) -> str | None:
+    """Clear OWC tier when deep resistivity indicates good electrical rock."""
+    if tier is None or res_deep is None:
+        return tier
+    try:
+        res = float(res_deep)
+    except (TypeError, ValueError):
+        return tier
+    if res > config.OWC_RES_SUPPRESS:
+        return "Low"
+    return tier

@@ -41,8 +41,9 @@ export const ZOI_DROP_PCT = 0.15;
 export const ZOI_MIN_DROPS = 2;
 export const ZOI_RQI_NEIGHBOUR_TOLERANCE = 0.9;
 
-export const OWC_BANDS_GOOD = { high_lt: 4.0, elevated_lt: 6.0 } as const;
-export const OWC_BANDS_POOR = { high_lt: 3.0, elevated_lt: 5.0 } as const;
+export const OWC_BANDS_GOOD = { high_lt: 3.0, elevated_lt: 5.0 } as const;
+export const OWC_BANDS_POOR = { high_lt: 2.0, elevated_lt: 4.0 } as const;
+export const OWC_RES_SUPPRESS = 30.0;
 export const OWC_SEVERITY_HIGH = 1.0;
 export const OWC_SEVERITY_ELEVATED = 0.5;
 export const OWC_SEVERITY_LOW = 0.0;

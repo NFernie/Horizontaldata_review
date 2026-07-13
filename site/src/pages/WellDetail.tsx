@@ -7,21 +7,25 @@ import { Legend } from "@/components/Legend";
 import { RiskBadge } from "@/components/RiskBadge";
 import { WellSelect } from "@/components/WellSelect";
 import { useWells } from "@/hooks/useWells";
-import { fetchJson, formatNumber, formatPercent } from "@/lib/utils";
+import { readStoredWell, writeStoredWell } from "@/hooks/useWellSelection";
+import { fetchJson, formatDepthMd, formatNumber, formatPercent } from "@/lib/utils";
 import type { IntervalRecord, IntervalsPayload } from "@/types/intervals";
 import type { ZonesPayload } from "@/types/zones";
 
 export function WellDetail() {
   const { alias: routeAlias } = useParams<{ alias: string }>();
   const { activeWells, loading: wellsLoading } = useWells();
-  const [alias, setAlias] = useState(routeAlias ?? "JENA31DW1");
+  const [alias, setAlias] = useState(() => routeAlias ?? readStoredWell("JENA31"));
   const [intervals, setIntervals] = useState<IntervalsPayload | null>(null);
   const [zones, setZones] = useState<ZonesPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (routeAlias) setAlias(routeAlias);
+    if (routeAlias) {
+      setAlias(routeAlias);
+      writeStoredWell(routeAlias);
+    }
   }, [routeAlias]);
 
   useEffect(() => {
@@ -40,14 +44,19 @@ export function WellDetail() {
       .finally(() => setLoading(false));
   }, [alias]);
 
+  const handleWellChange = (next: string) => {
+    setAlias(next);
+    writeStoredWell(next);
+  };
+
   const columns: DataTableColumn<IntervalRecord>[] = useMemo(
     () => [
       {
         key: "depth",
-        header: "Depth",
+        header: "Depth (MD · TVDss)",
         align: "right",
         mono: true,
-        render: (r) => `${r.depth.toFixed(0)} m`,
+        render: (r) => formatDepthMd(r.depth, r.mTVDss, 0),
       },
       {
         key: "pct_ss",
@@ -107,10 +116,10 @@ export function WellDetail() {
         header: "Flags",
         render: (r) => (
           <div className="flex flex-wrap gap-1">
-            {r.flags.map((f) => (
+            {(r.flags ?? []).map((f) => (
               <RiskBadge key={f} flag={f} />
             ))}
-            {!r.flags.length ? <span className="text-text-muted">—</span> : null}
+            {!r.flags?.length ? <span className="text-text-muted">—</span> : null}
           </div>
         ),
       },
@@ -130,6 +139,11 @@ export function WellDetail() {
     );
   }
 
+  const owcLabel =
+    intervals.owc_mtvds != null
+      ? `Field OWC${intervals.owc_field ? ` (${intervals.owc_field})` : ""}: ${formatNumber(intervals.owc_mtvds, 1)} m TVDss`
+      : null;
+
   return (
     <div className="space-y-6">
       <header className="flex flex-col gap-4">
@@ -139,11 +153,14 @@ export function WellDetail() {
             <p className="mt-1 text-sm text-text-muted">
               McKinlay Member depth tracks — {intervals.interval_count} retained intervals
             </p>
+            {owcLabel ? (
+              <p className="mt-1 font-mono text-sm text-accent">{owcLabel}</p>
+            ) : null}
           </div>
           <WellSelect
             wells={activeWells}
             value={alias}
-            onChange={setAlias}
+            onChange={handleWellChange}
             label="Well"
             className="w-full sm:w-56"
           />
@@ -163,6 +180,7 @@ export function WellDetail() {
         title="Track legend"
         items={[
           { label: "Overburden", color: "rgba(147,161,176,0.35)", description: "excluded zones" },
+          { label: "TVDss", color: "#38bdf8" },
           { label: "RES deep", color: "var(--res-high)" },
           { label: "RES shallow", color: "var(--res-low)" },
           { label: "WRCI High", color: "var(--risk-high)" },
@@ -178,7 +196,6 @@ export function WellDetail() {
           caption={`${intervals.display} McKinlay intervals`}
         />
       </Card>
-
     </div>
   );
 }

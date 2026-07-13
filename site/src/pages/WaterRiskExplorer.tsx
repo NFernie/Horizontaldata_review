@@ -3,9 +3,17 @@ import { RiskBadge } from "@/components/RiskBadge";
 import { StatTile } from "@/components/StatTile";
 import { WellSelect } from "@/components/WellSelect";
 import { useWells } from "@/hooks/useWells";
-import { fetchJson, formatNumber, formatPercent } from "@/lib/utils";
+import {
+  readStoredWaterRiskLeft,
+  readStoredWaterRiskRight,
+  readStoredWell,
+  writeStoredWaterRiskLeft,
+  writeStoredWaterRiskRight,
+  writeStoredWell,
+} from "@/hooks/useWellSelection";
+import { fetchJson, formatDepthMd, formatNumber, formatPercent } from "@/lib/utils";
 import type { FlaggedZone, WaterRiskPayload } from "@/types/waterRisk";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Bar,
   BarChart,
@@ -23,20 +31,18 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
           <p className="font-mono text-sm font-semibold text-text">
-            {zone.depth.toFixed(0)} m MD
+            {formatDepthMd(zone.depth, ev.mTVDss, 0)}
           </p>
           <p className="text-xs text-text-muted">
-            {zone.top.toFixed(0)} – {zone.bot.toFixed(0)} m
+            {zone.top.toFixed(0)} – {zone.bot.toFixed(0)} m MD
           </p>
         </div>
         <RiskBadge risk={zone.risk_class} />
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1.5">
-        {zone.flags.length > 0 ? (
-          zone.flags.map((f) => (
-            <RiskBadge key={f} flag={f} />
-          ))
+        {(zone.flags ?? []).length > 0 ? (
+          zone.flags.map((f) => <RiskBadge key={f} flag={f} />)
         ) : (
           <span className="text-xs text-text-muted">No red flags (elevated by WRCI)</span>
         )}
@@ -109,6 +115,12 @@ function WellRiskPanel({
   label,
   loading,
 }: WellRiskPanelProps) {
+  const [showAll, setShowAll] = useState(false);
+  const visibleZones = useMemo(() => {
+    const zones = payload?.flagged_zones ?? [];
+    return showAll ? zones : zones.slice(0, 40);
+  }, [payload, showAll]);
+
   const topChart = useMemo(
     () =>
       (payload?.flagged_zones ?? []).slice(0, 8).map((z) => ({
@@ -177,9 +189,20 @@ function WellRiskPanel({
             {payload.flagged_zones.length === 0 ? (
               <p className="text-sm text-text-muted">No elevated or high-risk zones identified.</p>
             ) : (
-              payload.flagged_zones.map((zone) => (
-                <ZoneCard key={`${zone.depth}-${zone.top}`} zone={zone} />
-              ))
+              <>
+                {visibleZones.map((zone) => (
+                  <ZoneCard key={`${zone.depth}-${zone.top}`} zone={zone} />
+                ))}
+                {payload.flagged_zones.length > 40 && !showAll ? (
+                  <button
+                    type="button"
+                    onClick={() => setShowAll(true)}
+                    className="w-full rounded-card border border-border bg-surface-2 px-4 py-2 text-sm text-accent hover:border-accent/40"
+                  >
+                    Show all {payload.flagged_zones.length} zones
+                  </button>
+                ) : null}
+              </>
             )}
           </div>
         </div>
@@ -190,19 +213,36 @@ function WellRiskPanel({
 
 export function WaterRiskExplorer() {
   const { activeWells, loading: wellsLoading, error: wellsError } = useWells();
-  const [leftAlias, setLeftAlias] = useState("JENA31");
-  const [rightAlias, setRightAlias] = useState("JENA31DW1");
+  const [leftAlias, setLeftAlias] = useState(() =>
+    readStoredWaterRiskLeft(readStoredWell("JENA31")),
+  );
+  const [rightAlias, setRightAlias] = useState(() => readStoredWaterRiskRight("JENA31DW1"));
   const [cache, setCache] = useState<Record<string, WaterRiskPayload>>({});
   const [loadingAliases, setLoadingAliases] = useState<Set<string>>(new Set());
   const [error, setError] = useState<string | null>(null);
+  const cacheRef = useRef(cache);
+  cacheRef.current = cache;
+
+  const handleLeftChange = useCallback((alias: string) => {
+    setLeftAlias(alias);
+    writeStoredWaterRiskLeft(alias);
+    writeStoredWell(alias);
+  }, []);
+
+  const handleRightChange = useCallback((alias: string) => {
+    setRightAlias(alias);
+    writeStoredWaterRiskRight(alias);
+  }, []);
 
   useEffect(() => {
     if (!activeWells.length) return;
     const aliases = [...new Set([leftAlias, rightAlias])];
-    const missing = aliases.filter((a) => !cache[a] && !loadingAliases.has(a));
+    const missing = aliases.filter((a) => !cacheRef.current[a] && !loadingAliases.has(a));
     if (!missing.length) return;
 
     setLoadingAliases((prev) => new Set([...prev, ...missing]));
+    let cancelled = false;
+
     Promise.all(
       missing.map((alias) =>
         fetchJson<WaterRiskPayload>(`data/water_risk/${alias}.json`)
@@ -213,6 +253,7 @@ export function WaterRiskExplorer() {
       ),
     )
       .then((results) => {
+        if (cancelled) return;
         setCache((prev) => {
           const next = { ...prev };
           results.forEach(({ alias, payload }) => {
@@ -221,15 +262,22 @@ export function WaterRiskExplorer() {
           return next;
         });
       })
-      .catch((err: Error) => setError(err.message))
+      .catch((err: Error) => {
+        if (!cancelled) setError(err.message);
+      })
       .finally(() => {
+        if (cancelled) return;
         setLoadingAliases((prev) => {
           const next = new Set(prev);
           missing.forEach((a) => next.delete(a));
           return next;
         });
       });
-  }, [activeWells, leftAlias, rightAlias, cache, loadingAliases]);
+
+    return () => {
+      cancelled = true;
+    };
+  }, [activeWells, leftAlias, rightAlias]);
 
   if (wellsLoading) return <p className="text-text-muted">Loading wells…</p>;
 
@@ -246,8 +294,8 @@ export function WaterRiskExplorer() {
       <header>
         <h1 className="text-xl font-semibold text-text sm:text-2xl">Water-Risk Explorer</h1>
         <p className="mt-1 max-w-3xl text-sm text-text-muted">
-          Compare flagged McKinlay intervals side-by-side for any two wells. Defaults to Jena 31
-          and Jena 31DW1; use the selectors above each column to switch wells.
+          Compare flagged McKinlay intervals side-by-side for any two wells. Your last selected
+          wells are remembered as you move between pages.
         </p>
       </header>
 
@@ -256,7 +304,7 @@ export function WaterRiskExplorer() {
           label="Left well"
           alias={leftAlias}
           wells={activeWells}
-          onAliasChange={setLeftAlias}
+          onAliasChange={handleLeftChange}
           payload={cache[leftAlias] ?? null}
           loading={loadingAliases.has(leftAlias)}
         />
@@ -264,7 +312,7 @@ export function WaterRiskExplorer() {
           label="Right well"
           alias={rightAlias}
           wells={activeWells}
-          onAliasChange={setRightAlias}
+          onAliasChange={handleRightChange}
           payload={cache[rightAlias] ?? null}
           loading={loadingAliases.has(rightAlias)}
         />

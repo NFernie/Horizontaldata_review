@@ -2,6 +2,8 @@
   "alias": "BIALA21",
   "display": "BIALA 21",
   "interval_count": 134,
+  "owc_field": "Biala",
+  "owc_mtvds": -1205.0,
   "intervals": [
     {
       "depth": 1925.0,
@@ -3265,15 +3267,14 @@
       },
       "matching_pay": false,
       "RQI": 0.8154112412634472,
-      "WRCI": 46.35,
+      "WRCI": 36.35,
       "risk_class": "Elevated",
       "flags": [
-        "lowres",
-        "owc_elevated"
+        "lowres"
       ],
       "mTVDss": -1199.0006738302666,
       "owc_distance_m": 5.999326169733422,
-      "owc_near": "Elevated",
+      "owc_near": "Low",
       "z_scores": {
         "avg_RES_DEEP": -0.694,
         "avg_GR": -0.224,
@@ -3310,15 +3311,14 @@
       },
       "matching_pay": false,
       "RQI": 0.8007856980740192,
-      "WRCI": 46.79,
+      "WRCI": 36.79,
       "risk_class": "Elevated",
       "flags": [
-        "lowres",
-        "owc_elevated"
+        "lowres"
       ],
       "mTVDss": -1199.0947988125467,
       "owc_distance_m": 5.905201187453258,
-      "owc_near": "Elevated",
+      "owc_near": "Low",
       "z_scores": {
         "avg_RES_DEEP": -0.75,
         "avg_GR": 0.893,
@@ -5665,15 +5665,14 @@
       },
       "matching_pay": false,
       "RQI": 0.6298973630465866,
-      "WRCI": 40.17,
+      "WRCI": 30.17,
       "risk_class": "Elevated",
       "flags": [
-        "lowres",
-        "owc_elevated"
+        "lowres"
       ],
       "mTVDss": -1199.0334706121805,
       "owc_distance_m": 5.966529387819492,
-      "owc_near": "Elevated",
+      "owc_near": "Low",
       "z_scores": {
         "avg_RES_DEEP": -0.761,
         "avg_GR": -0.351,
@@ -5710,16 +5709,15 @@
       },
       "matching_pay": false,
       "RQI": 0.6590868984893913,
-      "WRCI": 41.27,
+      "WRCI": 31.27,
       "risk_class": "Elevated",
       "flags": [
         "lowres",
-        "low_GR",
-        "owc_elevated"
+        "low_GR"
       ],
       "mTVDss": -1199.4269480498579,
       "owc_distance_m": 5.573051950142144,
-      "owc_near": "Elevated",
+      "owc_near": "Low",
       "z_scores": {
         "avg_RES_DEEP": -0.757,
         "avg_GR": -0.583,

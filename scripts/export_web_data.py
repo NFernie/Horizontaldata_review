@@ -24,7 +24,14 @@ sys.path.insert(0, os.path.join(WORKSPACE, "scripts"))
 
 import config  # noqa: E402
 from compute_pay_summary import analyze_well, pct_of_lateral  # noqa: E402
-from owc import owc_distance_m, owc_for_alias, owc_proximity_tier, owc_severity  # noqa: E402
+from owc import (  # noqa: E402
+    apply_owc_res_suppress,
+    field_for_alias,
+    owc_distance_m,
+    owc_for_alias,
+    owc_proximity_tier,
+    owc_severity,
+)
 from process_mckinlay_wells import WELLS, process_well  # noqa: E402
 
 DATA_ROOT = os.path.join(WORKSPACE, config.DATA_DIR)
@@ -48,6 +55,11 @@ def clean_scalar(val):
         return int(val)
     if isinstance(val, (np.bool_,)):
         return bool(val)
+    if isinstance(val, str):
+        num = pd.to_numeric(val, errors="coerce")
+        if pd.notna(num):
+            return clean_scalar(float(num))
+        return None
     return val
 
 
@@ -247,9 +259,8 @@ def attach_owc(rows, alias):
         row["mTVDss"] = mtvds
         dist = owc_distance_m(mtvds, owc_field)
         row["owc_distance_m"] = dist
-        row["owc_near"] = owc_proximity_tier(
-            dist, row.get("RQI"), bool(row.get("flag_zoi"))
-        )
+        tier = owc_proximity_tier(dist, row.get("RQI"), bool(row.get("flag_zoi")))
+        row["owc_near"] = apply_owc_res_suppress(tier, row.get("avg_RES_DEEP"))
     return rows
 
 
@@ -618,7 +629,7 @@ def water_risk_payload(rows):
                 "grain_ordinal": r.get("grain_ordinal"),
                 "poro_class": r.get("poro_class"),
                 "hardness_score": r.get("hardness_score"),
-                "fluor": r.get("fluor"),
+                "fluor": clean_scalar(r.get("fluor")),
                 "avg_GR": r.get("avg_GR"),
                 "avg_RES_DEEP": r.get("avg_RES_DEEP"),
                 "mTVDss": r.get("mTVDss"),
@@ -687,12 +698,15 @@ def main():
         meta["pay"] = pay
         well_metas.append(meta)
 
+        owc_mtvds = owc_for_alias(alias)
         write_json(
             os.path.join(DATA_ROOT, "intervals", f"{alias}.json"),
             {
                 "alias": alias,
                 "display": cfg["display"],
                 "interval_count": len(rows),
+                "owc_field": field_for_alias(alias),
+                "owc_mtvds": clean_scalar(owc_mtvds),
                 "intervals": [serialize_interval(r) for r in rows],
             },
         )

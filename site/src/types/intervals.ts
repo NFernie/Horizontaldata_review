@@ -40,5 +40,7 @@ export interface IntervalsPayload {
   alias: string;
   display: string;
   interval_count: number;
+  owc_field?: string | null;
+  owc_mtvds?: number | null;
   intervals: IntervalRecord[];
 }

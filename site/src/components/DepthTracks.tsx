@@ -1,10 +1,10 @@
 import { useMemo } from "react";
 import type { IntervalRecord } from "@/types/intervals";
 import type { ExclusionZone } from "@/types/zones";
-import { cn } from "@/lib/utils";
+import { cn, formatDepthMd } from "@/lib/utils";
 
 const TRACK_WIDTH = 64;
-const DEPTH_AXIS_WIDTH = 52;
+const DEPTH_AXIS_WIDTH = 88;
 const HEADER_HEIGHT = 28;
 const FOOTER_HEIGHT = 8;
 const PLOT_HEIGHT = 520;
@@ -48,16 +48,46 @@ function riskColor(wrci: number | null, riskClass: string) {
   return "var(--risk-low)";
 }
 
+function toNumeric(val: number | null | undefined): number | null {
+  if (val == null || Number.isNaN(val)) return null;
+  return val;
+}
+
 function computeDomains(intervals: IntervalRecord[]) {
   const gr = intervals.map((i) => i.log?.avg_GR).filter((v): v is number => v != null);
-  const resD = intervals.map((i) => i.log?.avg_RES_DEEP).filter((v): v is number => v != null && v > 0);
-  const resS = intervals.map((i) => i.log?.avg_RES_SHALLOW).filter((v): v is number => v != null && v > 0);
+  const resD = intervals
+    .map((i) => i.log?.avg_RES_DEEP)
+    .filter((v): v is number => v != null && v > 0);
+  const resS = intervals
+    .map((i) => i.log?.avg_RES_SHALLOW)
+    .filter((v): v is number => v != null && v > 0);
   const resAll = [...resD, ...resS];
+  const mtvds = intervals
+    .map((i) => i.mTVDss)
+    .filter((v): v is number => v != null && !Number.isNaN(v));
+
+  const mtvdsMin = mtvds.length ? Math.min(...mtvds) : -1300;
+  const mtvdsMax = mtvds.length ? Math.max(...mtvds) : -1100;
 
   return {
     gr: [0, Math.max(120, ...(gr.length ? gr : [120]))] as [number, number],
     res: [0.5, Math.max(10, ...(resAll.length ? resAll : [100]))] as [number, number],
+    mtvds: [mtvdsMin, mtvdsMax] as [number, number],
   };
+}
+
+function nearestMtvds(intervals: IntervalRecord[], md: number): number | null {
+  let best: IntervalRecord | null = null;
+  let bestDist = Infinity;
+  for (const iv of intervals) {
+    const mid = (iv.top + iv.bot) / 2;
+    const d = Math.abs(mid - md);
+    if (d < bestDist) {
+      bestDist = d;
+      best = iv;
+    }
+  }
+  return best?.mTVDss ?? null;
 }
 
 interface DepthTracksProps {
@@ -74,6 +104,15 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
 
   const tracks: TrackDef[] = useMemo(
     () => [
+      {
+        id: "mtvds",
+        label: "TVDss",
+        unit: "m",
+        scale: "linear",
+        domain: domains.mtvds,
+        getPrimary: (i) => i.mTVDss,
+        primaryColor: "#38bdf8",
+      },
       {
         id: "gr",
         label: "GR",
@@ -99,7 +138,7 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
         label: "%SS",
         scale: "linear",
         domain: [0, 100],
-        getPrimary: (i) => i.pct_ss,
+        getPrimary: (i) => toNumeric(i.pct_ss),
         primaryColor: "var(--rock-quality-start)",
       },
       {
@@ -108,7 +147,7 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
         unit: "%",
         scale: "linear",
         domain: [0, 100],
-        getPrimary: (i) => i.fluor,
+        getPrimary: (i) => toNumeric(i.fluor),
         primaryColor: "#a78bfa",
       },
       {
@@ -164,7 +203,6 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
         aria-label="Depth tracks for wireline and cuttings properties"
         className="min-w-full"
       >
-        {/* Overburden shading across plot area */}
         <g>
           {zones.map((z) => (
             <rect
@@ -180,30 +218,31 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
           ))}
         </g>
 
-        {/* Depth axis */}
-        <g fontSize={10} fill="var(--text-muted)" fontFamily="JetBrains Mono, monospace">
+        <g fontSize={9} fill="var(--text-muted)" fontFamily="JetBrains Mono, monospace">
           <text x={8} y={14} fontSize={11} fill="var(--text)" fontWeight={600}>
-            MD (m)
+            Depth
           </text>
-          {ticks.map((d) => (
-            <g key={d}>
-              <line
-                x1={DEPTH_AXIS_WIDTH - 4}
-                x2={totalWidth}
-                y1={depthToY(d)}
-                y2={depthToY(d)}
-                stroke="var(--border)"
-                strokeWidth={0.5}
-                strokeDasharray="2 4"
-              />
-              <text x={4} y={depthToY(d) + 3}>
-                {d}
-              </text>
-            </g>
-          ))}
+          {ticks.map((d) => {
+            const mtvds = nearestMtvds(intervals, d);
+            return (
+              <g key={d}>
+                <line
+                  x1={DEPTH_AXIS_WIDTH - 4}
+                  x2={totalWidth}
+                  y1={depthToY(d)}
+                  y2={depthToY(d)}
+                  stroke="var(--border)"
+                  strokeWidth={0.5}
+                  strokeDasharray="2 4"
+                />
+                <text x={4} y={depthToY(d) + 3}>
+                  {formatDepthMd(d, mtvds, 0)}
+                </text>
+              </g>
+            );
+          })}
         </g>
 
-        {/* Tracks */}
         {tracks.map((track, idx) => {
           const x = DEPTH_AXIS_WIDTH + idx * TRACK_WIDTH;
           return (
@@ -340,8 +379,8 @@ export function DepthTracks({ intervals, zones, className }: DepthTracksProps) {
         })}
       </svg>
       <p className="border-t border-border px-3 py-2 text-xs text-text-muted">
-        Shaded horizontal bands = overburden exclusion zones. RES track: deep (left) vs shallow
-        (right), log-scaled.
+        Depth axis shows MD and TVDss. TVDss track from trajectory; shaded bands = overburden
+        exclusion. RES track: deep (left) vs shallow (right), log-scaled.
       </p>
     </div>
   );

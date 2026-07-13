@@ -12,6 +12,7 @@ import {
   MAD_SCALE,
   OWC_BANDS_GOOD,
   OWC_BANDS_POOR,
+  OWC_RES_SUPPRESS,
   PORO_SCORES,
   RES_DEEP_CUTOFF,
   RISK_LABELS,
@@ -121,8 +122,10 @@ export function Methodology() {
               </li>
               <li>
                 <strong className="text-text">OWC proximity</strong> — tiers from trajectory mTVDss vs field
-                OWC (good rock: &lt;{OWC_BANDS_GOOD.high_lt}m High; poor rock: &lt;{OWC_BANDS_POOR.high_lt}m
-                High)
+                OWC (good rock: &lt;{OWC_BANDS_GOOD.high_lt}m High, {OWC_BANDS_GOOD.high_lt}–
+                {OWC_BANDS_GOOD.elevated_lt}m Elevated; poor rock: &lt;{OWC_BANDS_POOR.high_lt}m High,{" "}
+                {OWC_BANDS_POOR.high_lt}–{OWC_BANDS_POOR.elevated_lt}m Elevated). Suppressed when
+                avg_RES_DEEP &gt; {OWC_RES_SUPPRESS} Ω·m.
               </li>
             </ul>
           </FormulaBlock>

@@ -2,6 +2,8 @@
   "alias": "MCKINLAY11",
   "display": "MCKINLAY 11",
   "interval_count": 70,
+  "owc_field": "McKinlay",
+  "owc_mtvds": -1203.0,
   "intervals": [
     {
       "depth": 1605.0,

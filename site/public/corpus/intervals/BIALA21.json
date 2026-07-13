@@ -1807,11 +1807,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.8154112412634472,
-        "WRCI": 46.35,
+        "WRCI": 36.35,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2640m: 0.374305555555556 siderite in 0% Siltstone, 100% very fine to fine Sandstone, 100% dull FLUOR in SST. TG 41U"
       },
@@ -1833,11 +1832,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.8007856980740192,
-        "WRCI": 46.79,
+        "WRCI": 36.79,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2650m: 0.399305555555556 siderite in 5% Siltstone, 95% very fine to fine Sandstone, 100% dull FLUOR in SST. TG 37U"
       },
@@ -3142,11 +3140,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6298973630465866,
-        "WRCI": 40.17,
+        "WRCI": 30.17,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 3260m: 10% Siltstone, 90% very fine to coarse Sandstone, 100% moderately bright  to  bright FLUOR in SST. TG 25U"
       },
@@ -3168,12 +3165,11 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6590868984893913,
-        "WRCI": 41.27,
+        "WRCI": 31.27,
         "risk_class": "Elevated",
         "flags": [
           "lowres",
-          "low_GR",
-          "owc_elevated"
+          "low_GR"
         ],
         "long_desc": "Sample 3270m: 5% Siltstone, 95% medium to coarse Sandstone, 100% moderately bright FLUOR in SST. TG 27U"
       },

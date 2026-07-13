@@ -7,21 +7,25 @@ import { Legend } from "@/components/Legend";
 import { RiskBadge } from "@/components/RiskBadge";
 import { WellSelect } from "@/components/WellSelect";
 import { useWells } from "@/hooks/useWells";
-import { fetchJson, formatNumber } from "@/lib/utils";
+import { readStoredWell, writeStoredWell } from "@/hooks/useWellSelection";
+import { fetchJson, formatDepthMd, formatNumber } from "@/lib/utils";
 import type { CorrelationsPayload } from "@/types/correlations";
 import type { IntervalRecord, IntervalsPayload } from "@/types/intervals";
 
 export function IntraWellStats() {
   const { alias: routeAlias } = useParams<{ alias: string }>();
   const { activeWells, loading: wellsLoading } = useWells();
-  const [alias, setAlias] = useState(routeAlias ?? "JENA31DW1");
+  const [alias, setAlias] = useState(() => routeAlias ?? readStoredWell("JENA31"));
   const [intervals, setIntervals] = useState<IntervalsPayload | null>(null);
   const [correlations, setCorrelations] = useState<CorrelationsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (routeAlias) setAlias(routeAlias);
+    if (routeAlias) {
+      setAlias(routeAlias);
+      writeStoredWell(routeAlias);
+    }
   }, [routeAlias]);
 
   useEffect(() => {
@@ -48,10 +52,10 @@ export function IntraWellStats() {
     () => [
       {
         key: "depth",
-        header: "Depth",
+        header: "Depth (MD · TVDss)",
         align: "right",
         mono: true,
-        render: (r) => `${r.depth.toFixed(0)} m`,
+        render: (r) => formatDepthMd(r.depth, r.mTVDss, 0),
       },
       {
         key: "anomalies",
@@ -112,7 +116,10 @@ export function IntraWellStats() {
         <WellSelect
           wells={activeWells}
           value={alias}
-          onChange={setAlias}
+          onChange={(next) => {
+            setAlias(next);
+            writeStoredWell(next);
+          }}
           label="Well"
           className="w-full sm:w-56"
         />

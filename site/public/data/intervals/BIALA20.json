@@ -2,6 +2,8 @@
   "alias": "BIALA20",
   "display": "BIALA 20",
   "interval_count": 156,
+  "owc_field": "Biala",
+  "owc_mtvds": -1205.0,
   "intervals": [
     {
       "depth": 1585.0,

@@ -40,6 +40,7 @@ jobs:
           python3 scripts/export_web_data.py
           python3 scripts/build_corpus_index.py
           python3 scripts/test_zoi.py
+          python3 scripts/test_owc.py
           python3 scripts/test_pay_overburden.py
 
       - name: Setup Node

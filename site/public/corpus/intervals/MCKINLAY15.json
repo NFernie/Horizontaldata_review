@@ -567,11 +567,11 @@
         "loose_hardness": false,
         "fluor": 70.0,
         "RQI": 0.6178571428571429,
-        "WRCI": 46.05,
+        "WRCI": 36.05,
         "risk_class": "Elevated",
         "flags": [
           "lowfluor",
-          "owc_high"
+          "owc_elevated"
         ],
         "long_desc": "Sample 1975m: 100% Sandstone (litho ASCII aggregate) TG 151.3U (drill-gas ASCII)"
       },
@@ -668,10 +668,10 @@
         "loose_hardness": false,
         "fluor": 80.0,
         "RQI": 0.38816863104409866,
-        "WRCI": 35.53,
-        "risk_class": "Low",
+        "WRCI": 25.53,
+        "risk_class": "Elevated",
         "flags": [
-          "owc_high"
+          "owc_elevated"
         ],
         "long_desc": "Sample 1995m: 100% Sandstone (litho ASCII aggregate) TG 147.6U (drill-gas ASCII)"
       },
@@ -693,10 +693,10 @@
         "loose_hardness": false,
         "fluor": 80.0,
         "RQI": 0.4059405946580617,
-        "WRCI": 36.24,
-        "risk_class": "Low",
+        "WRCI": 26.24,
+        "risk_class": "Elevated",
         "flags": [
-          "owc_high"
+          "owc_elevated"
         ],
         "long_desc": "Sample 2000m: 100% Sandstone (litho ASCII aggregate) TG 164.2U (drill-gas ASCII)"
       },
@@ -718,10 +718,10 @@
         "loose_hardness": false,
         "fluor": 80.0,
         "RQI": 0.3822819717567913,
-        "WRCI": 35.29,
-        "risk_class": "Low",
+        "WRCI": 25.29,
+        "risk_class": "Elevated",
         "flags": [
-          "owc_high"
+          "owc_elevated"
         ],
         "long_desc": "Sample 2005m: 100% Sandstone (litho ASCII aggregate) TG 147.6U (drill-gas ASCII)"
       },
@@ -743,10 +743,10 @@
         "loose_hardness": false,
         "fluor": 80.0,
         "RQI": 0.3893369015174442,
-        "WRCI": 36.27,
-        "risk_class": "Low",
+        "WRCI": 26.27,
+        "risk_class": "Elevated",
         "flags": [
-          "owc_high"
+          "owc_elevated"
         ],
         "long_desc": "Sample 2010m: 100% Sandstone (litho ASCII aggregate) TG 146.7U (drill-gas ASCII)"
       },
@@ -768,10 +768,10 @@
         "loose_hardness": false,
         "fluor": 80.0,
         "RQI": 0.46654696237565696,
-        "WRCI": 39.61,
-        "risk_class": "Low",
+        "WRCI": 29.61,
+        "risk_class": "Elevated",
         "flags": [
-          "owc_high"
+          "owc_elevated"
         ],
         "long_desc": "Sample 2015m: 100% Sandstone (litho ASCII aggregate) TG 146.8U (drill-gas ASCII)"
       },
@@ -793,10 +793,10 @@
         "loose_hardness": false,
         "fluor": 80.0,
         "RQI": 0.43217170667334837,
-        "WRCI": 38.24,
-        "risk_class": "Low",
+        "WRCI": 28.24,
+        "risk_class": "Elevated",
         "flags": [
-          "owc_high"
+          "owc_elevated"
         ],
         "long_desc": "Sample 2020m: 100% Sandstone (litho ASCII aggregate) TG 151.1U (drill-gas ASCII)"
       },
@@ -895,10 +895,10 @@
         "loose_hardness": false,
         "fluor": 80.0,
         "RQI": 0.5479864651926486,
-        "WRCI": 41.92,
+        "WRCI": 31.92,
         "risk_class": "Elevated",
         "flags": [
-          "owc_high"
+          "owc_elevated"
         ],
         "long_desc": "Sample 2040m: 100% Sandstone (litho ASCII aggregate) TG 205.9U (drill-gas ASCII)"
       },
@@ -920,10 +920,10 @@
         "loose_hardness": false,
         "fluor": 80.0,
         "RQI": 0.582128031151345,
-        "WRCI": 45.69,
+        "WRCI": 35.69,
         "risk_class": "Elevated",
         "flags": [
-          "owc_high"
+          "owc_elevated"
         ],
         "long_desc": "Sample 2045m: 100% Sandstone (litho ASCII aggregate) TG 143.3U (drill-gas ASCII)"
       },

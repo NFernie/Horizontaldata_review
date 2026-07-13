@@ -2166,11 +2166,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6708924642293849,
-        "WRCI": 39.3,
+        "WRCI": 29.3,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2125m: Trace Siltstone, 100% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 181U"
       },
@@ -2192,11 +2191,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6389932528397576,
-        "WRCI": 38.0,
+        "WRCI": 28.0,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2130m: 5% Siltstone, 95% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 177U"
       },
@@ -2218,11 +2216,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6581122478536489,
-        "WRCI": 37.84,
+        "WRCI": 27.84,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2135m: 100% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 126U"
       },
@@ -2244,11 +2241,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6528554120777349,
-        "WRCI": 37.69,
+        "WRCI": 27.69,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2140m: 100% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 144U"
       },
@@ -2270,11 +2266,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6041338392953813,
-        "WRCI": 35.88,
+        "WRCI": 25.88,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2145m: 100% very fine to fine Sandstone, 100% mod bri FLUOR in SST, TG 140U"
       },
@@ -2365,11 +2360,10 @@
         "loose_hardness": false,
         "fluor": 90.0,
         "RQI": 0.62997665974052,
-        "WRCI": 36.11,
+        "WRCI": 26.11,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2165m: 100% very fine to fine Sandstone, 90% bri FLUOR in SST, TG 137U"
       },
@@ -2391,11 +2385,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7326529417018626,
-        "WRCI": 41.77,
+        "WRCI": 31.77,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2170m: 100% very fine to fine, minor coarse Sandstone, 100% bri FLUOR in SST, TG 104U"
       },
@@ -2417,11 +2410,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7061453920218874,
-        "WRCI": 41.23,
+        "WRCI": 31.23,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2175m: 100% very fine to fine, mnr coarse Sandstone, 100% bri FLUOR in SST, TG 108U"
       },
@@ -2443,11 +2435,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6144602561800238,
-        "WRCI": 37.1,
+        "WRCI": 27.1,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2180m: 5% siltstone. 95% very fine to fine, mnr coarse Sandstone, 100% bri FLUOR in SST, TG 76U"
       },
@@ -2515,11 +2506,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6252571220785945,
-        "WRCI": 36.32,
+        "WRCI": 26.32,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2195m: 100% fine to medium, occasional coarse sandstone. 100% bright FLUOR in SST. TG 242U"
       },
@@ -2541,11 +2531,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7579579030823245,
-        "WRCI": 42.85,
+        "WRCI": 32.85,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2200m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 240U"
       },
@@ -2567,11 +2556,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.78010289412185,
-        "WRCI": 42.81,
+        "WRCI": 32.81,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2205m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 230U"
       },
@@ -2593,11 +2581,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7608735788416887,
-        "WRCI": 43.28,
+        "WRCI": 33.28,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2210m: 5% siltstone. 95% very fine to fine, minor medium to coarse sandstone. 100% bright FLUOR in SST. TG 200U"
       },
@@ -2619,11 +2606,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7815700052449438,
-        "WRCI": 43.79,
+        "WRCI": 33.79,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2215m: 5% siltstone. 95% very fine to fine, common medium to coarse sandstone. 100% bright FLUOR in SST. TG 156U"
       },
@@ -2645,11 +2631,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7886644351990738,
-        "WRCI": 44.28,
+        "WRCI": 34.28,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2220m: 100% very fine to fine, common medium to coarse sandstone. 100% bright FLUOR in SST. TG 217U"
       },
@@ -2671,11 +2656,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7845520272650089,
-        "WRCI": 44.15,
+        "WRCI": 34.15,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2225m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 170U"
       },
@@ -2697,11 +2681,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.8058715543559332,
-        "WRCI": 45.88,
+        "WRCI": 35.88,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2230m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 270U"
       },
@@ -2723,11 +2706,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7956288740447915,
-        "WRCI": 44.15,
+        "WRCI": 34.15,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2235m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 270U"
       },
@@ -2749,11 +2731,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.696322802691743,
-        "WRCI": 39.34,
+        "WRCI": 29.34,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2240m: 100% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 282U"
       },
@@ -2844,11 +2825,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6497495305072513,
-        "WRCI": 38.79,
+        "WRCI": 28.79,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2260m: 5% siltstone. 95% fine to medium, occasional coarse sandstone. 100% bright FLUOR in SST. TG 260U"
       },
@@ -2870,11 +2850,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7635830136935217,
-        "WRCI": 43.03,
+        "WRCI": 33.03,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2265m: 5% siltstone. 95% fine to medium, occasional coarse sandstone. 100% bright FLUOR in SST. TG 220U"
       },
@@ -2896,11 +2875,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.8052311731291681,
-        "WRCI": 44.33,
+        "WRCI": 34.33,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2270m: 100% fine to medium, occasional coarse sandstone. 100% bright FLUOR in SST. TG 265U"
       },
@@ -2922,11 +2900,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7698288303549702,
-        "WRCI": 42.02,
+        "WRCI": 32.02,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2275m: 100% very fine to fine, occasional medium sandstone. 100% bright FLUOR in SST. TG 273U"
       },
@@ -2948,11 +2925,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7743435995089925,
-        "WRCI": 42.32,
+        "WRCI": 32.32,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2280m: 100% very fine to fine, occasional medium sandstone. 100% bright FLUOR in SST. TG 281U"
       },
@@ -2974,11 +2950,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.732670617280319,
-        "WRCI": 40.81,
+        "WRCI": 30.81,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2285m: 100% very fine to fine, sandstone. 100% bright FLUOR in SST. TG 235U"
       },
@@ -3000,11 +2975,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7221338577505156,
-        "WRCI": 39.94,
+        "WRCI": 29.94,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2290m: 100% very fine to fine, sandstone. 100% bright FLUOR in SST. TG 258U"
       },
@@ -3026,11 +3000,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.664331962048243,
-        "WRCI": 37.4,
+        "WRCI": 27.4,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2295m: 5% siltstone, 95% very fine to fine, sandstone. 100% bright FLUOR in SST. TG 247U"
       },
@@ -3052,11 +3025,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6837574776717746,
-        "WRCI": 38.55,
+        "WRCI": 28.55,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2300m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 253U"
       },
@@ -3078,11 +3050,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6821482318094776,
-        "WRCI": 37.47,
+        "WRCI": 27.47,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2305m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 235U"
       },
@@ -3104,11 +3075,9 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.7066177190042516,
-        "WRCI": 38.26,
-        "risk_class": "Elevated",
-        "flags": [
-          "owc_elevated"
-        ],
+        "WRCI": 28.26,
+        "risk_class": "Low",
+        "flags": [],
         "long_desc": "Sample 2310m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 273U"
       },
       "detail_markdown": "### 2310 m MD — Interval 2307.5 – 2312.5 m\n\n**Sample Description (spreadsheet):** Sample 2310m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 273U\n\n| Property | Value |\n|----------|-------|\n| % Sandstone | 95.0 |\n| Grain Size | very fine to fine, occasional medium to coarse (max: nan) |\n| Grain Ordinal | 4 |\n| Porosity Class | gd |\n| Hardness | fri-mod hd (0.55) |\n| Sorting | v wl (1.00) |\n| Angularity | sbrnd (0.50) |\n| Cement | sil cmt (0.68) |\n| Fluorescence | 100.0% nan |\n| Total Gas | 273.0 U |\n| mTVDss | -1197.60 m |\n\n**Mudlog Cuttings Description (PDF):**\n- **SANDSTONE** @ ~2300m: clr-trnsl,vf-f,mnr-occ med-crs,sbang-sbrnd,mod sil cmt,mnr pl gry arg mtx,mod hd aggs,pred lse cln qtz grs,gd inf por,fr vis por,fluor.\n- **SILTSTONE** @ ~2310m: med dk gry,dk gry,aren, occ sndy lams,tr carb spks,sft-frm sbblky-blky. 63 / 6 / 5 / 10 / 16 286 U\n- _(8 additional mudlog entries in interval)_\n\n**Wireline Log Averages (LAS):**\n| Curve | Average | Data Points |\n|-------|---------|-------------|\n| GR (gAPI) | 83.9 | 32 |\n| RES_DEEP (ohm.m) | 20.11 | 32 |\n| RES_SHALLOW (ohm.m) | 19.65 | 32 |",
@@ -3129,11 +3098,10 @@
         "loose_hardness": false,
         "fluor": 100.0,
         "RQI": 0.6759795490385637,
-        "WRCI": 38.12,
+        "WRCI": 28.12,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2315m: 5% siltstone, 95% very fine to fine, occasional medium to coarse sandstone. 100% bright FLUOR in SST. TG 250U"
       },
@@ -3155,11 +3123,10 @@
         "loose_hardness": false,
         "fluor": 90.0,
         "RQI": 0.6248685326157897,
-        "WRCI": 35.45,
+        "WRCI": 25.45,
         "risk_class": "Elevated",
         "flags": [
-          "lowres",
-          "owc_elevated"
+          "lowres"
         ],
         "long_desc": "Sample 2320m: 100% very fine to fine, occasional medium to coarse sandstone. 90% bright FLUOR in SST. TG 253U"
       },

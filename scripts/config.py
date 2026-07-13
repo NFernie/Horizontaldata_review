@@ -131,11 +131,14 @@ ZOI_RQI_NEIGHBOUR_TOLERANCE = 0.9
 # ---------------------------------------------------------------------------
 # OWC proximity — updated-plan §5.2
 # ---------------------------------------------------------------------------
-OWC_BANDS_GOOD = {"high_lt": 4.0, "elevated_lt": 6.0}
+OWC_BANDS_GOOD = {"high_lt": 3.0, "elevated_lt": 5.0}
 """Distance bands (m) for RQI >= RQI_THRESHOLD or ZOI intervals."""
 
-OWC_BANDS_POOR = {"high_lt": 3.0, "elevated_lt": 5.0}
+OWC_BANDS_POOR = {"high_lt": 2.0, "elevated_lt": 4.0}
 """Distance bands (m) for poor rock (RQI < RQI_THRESHOLD, not ZOI)."""
+
+OWC_RES_SUPPRESS = 30.0
+"""Suppress OWC proximity flags when avg_RES_DEEP exceeds this (ohm.m)."""
 
 OWC_SEVERITY_HIGH = 1.0
 OWC_SEVERITY_ELEVATED = 0.5
