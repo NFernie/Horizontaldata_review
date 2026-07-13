@@ -1,6 +1,6 @@
 # BIALA 21 — McKinlay Pay Summary
 
-**Generated:** 2026-07-12 23:41 UTC  
+**Generated:** 2026-07-13 00:25 UTC  
 **Formation tops name:** BIALA 21  
 **McKinlay window:** 1922.0 – 3278.1 m MD  
 **DC30 top:** 1920.57 m MD  

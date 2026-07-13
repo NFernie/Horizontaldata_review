@@ -21,10 +21,12 @@ _FORMATION_TOP_M = re.compile(
     r"(MCKINLAY MEMBER|MURTA[^:]*|DC30):\s*(\d+\.?\d*)mMDRT",
     re.I,
 )
-_FLUOR_RANGE = re.compile(
-    r"FLUOR:(\d+)'?-(\d+)'?[:;](\d+)-(\d+)%",
+_FLUOR_BLOCK = re.compile(
+    r"FLUOR:(\d+)'?-(\d+)'?[:;](\d+)(?:\s*-\s*(\d+))?%",
     re.I,
 )
+# Legacy alias used in mudlog text continuation checks.
+_FLUOR_RANGE = _FLUOR_BLOCK
 _FLUORESCENCE_RANGE = re.compile(
     r"FLUORESCENCE:\s*(\d+)-(\d+)'?:",
     re.I,
@@ -187,17 +189,17 @@ def parse_fluorescence_entries(text: str, depth_unit: str = "ft") -> list[dict]:
     lines = text.split("\n")
 
     for i, line in enumerate(lines):
-        fluor_m = _FLUOR_RANGE.search(line)
+        fluor_m = _FLUOR_BLOCK.search(line)
         if fluor_m:
             top_raw = float(fluor_m.group(1))
             bot_raw = float(fluor_m.group(2))
             pct_lo = float(fluor_m.group(3))
-            pct_hi = float(fluor_m.group(4))
+            pct_hi = float(fluor_m.group(4)) if fluor_m.group(4) else pct_lo
             tail = line[fluor_m.end() :].strip()
             desc_parts = [tail] if tail and len(tail) > 3 else []
             for j in range(i + 1, min(i + 5, len(lines))):
                 nl = lines[j].strip()
-                if _FLUOR_RANGE.search(nl) or _FLUORESCENCE_RANGE.search(nl):
+                if _FLUOR_BLOCK.search(nl) or _FLUORESCENCE_RANGE.search(nl):
                     break
                 if LITH_TYPES.search(nl) and ":" in nl:
                     break
@@ -224,7 +226,7 @@ def parse_fluorescence_entries(text: str, depth_unit: str = "ft") -> list[dict]:
             desc_parts = []
             for j in range(i + 1, min(i + 5, len(lines))):
                 nl = lines[j].strip()
-                if _FLUORESCENCE_RANGE.search(nl) or _FLUOR_RANGE.search(nl):
+                if _FLUORESCENCE_RANGE.search(nl) or _FLUOR_BLOCK.search(nl):
                     break
                 if LITH_TYPES.search(nl) and ":" in nl and j > i + 1:
                     break
@@ -266,7 +268,7 @@ def match_fluorescence(top_m: float, bot_m: float, fluor_entries: list[dict]) ->
         return None
     mid_m = (top_m + bot_m) / 2.0
     best: dict | None = None
-    best_score = -1.0
+    best_key = (-1.0, -1.0)  # overlap score, pct_max
     for entry in fluor_entries:
         overlap = min(bot_m, entry["bot_m"]) - max(top_m, entry["top_m"])
         if overlap <= 0 and not (entry["top_m"] <= mid_m <= entry["bot_m"]):
@@ -274,7 +276,46 @@ def match_fluorescence(top_m: float, bot_m: float, fluor_entries: list[dict]) ->
         score = overlap if overlap > 0 else 0.1
         if mid_m < entry["top_m"] or mid_m > entry["bot_m"]:
             score *= 0.5
-        if score > best_score:
-            best_score = score
+        key = (score, float(entry["pct_max"]))
+        if key > best_key:
+            best_key = key
             best = entry
     return best
+
+
+def bridge_block_gaps(
+    fluor_entries: list[dict],
+    bridge_gap_m: float = 55.0,
+) -> list[dict]:
+    """Add synthetic entries for short gaps between consecutive FLUOR blocks."""
+    if not fluor_entries:
+        return []
+    blocks = sorted(fluor_entries, key=lambda e: e["top_m"])
+    bridged = list(blocks)
+    for i in range(len(blocks) - 1):
+        left, right = blocks[i], blocks[i + 1]
+        gap = right["top_m"] - left["bot_m"]
+        if 0 < gap <= bridge_gap_m:
+            bridged.append(
+                {
+                    "top_m": left["bot_m"],
+                    "bot_m": right["top_m"],
+                    "pct_min": min(left["pct_min"], right["pct_min"]),
+                    "pct_max": max(left["pct_max"], right["pct_max"]),
+                    "pct_mid": max(left["pct_mid"], right["pct_mid"]),
+                    "brightness": left.get("brightness") or right.get("brightness"),
+                    "text": f"bridged gap {left['bot_m']:.1f}-{right['top_m']:.1f} m",
+                }
+            )
+    return bridged
+
+
+def fill_fluorescence_gaps(samples) -> "pd.DataFrame":
+    """Ensure every sample row has a numeric fluorescence % (0 outside FLUOR zones)."""
+    import pandas as pd
+
+    if samples.empty or "Pct_Fluor" not in samples.columns:
+        return samples
+    out = samples.copy()
+    out["Pct_Fluor"] = out["Pct_Fluor"].fillna(0.0)
+    return out

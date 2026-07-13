@@ -17,6 +17,8 @@ if SCRIPTS_DIR not in sys.path:
 
 from litho_gas_ingest import build_sample_intervals  # noqa: E402
 from mudlog_parser import (  # noqa: E402
+    bridge_block_gaps,
+    fill_fluorescence_gaps,
     find_mudlog,
     match_fluorescence,
     parse_fluorescence_entries,
@@ -853,6 +855,8 @@ def enrich_samples_from_mudlog(
             )
 
     fluor_entries = parse_fluorescence_entries(mudlog_text, depth_unit=depth_unit)
+    if text_max and fluor_entries:
+        fluor_entries = bridge_block_gaps(fluor_entries)
     if not bar_series and not fluor_entries:
         return samples
 
@@ -899,6 +903,9 @@ def enrich_samples_from_mudlog(
             if (pd.isna(out.at[idx, "Brightness"]) or not out.at[idx, "Brightness"]) and text_match:
                 if text_match.get("brightness"):
                     out.at[idx, "Brightness"] = text_match["brightness"]
+
+    if text_max and fluor_entries:
+        out = fill_fluorescence_gaps(out)
 
     return out
 
@@ -1198,7 +1205,8 @@ def write_interpretation(meta, path):
             lines += [
                 "8. **Litho/gas ASCII ingestion:** 5 m bins from ft→m MD; %SS from lithology codes. "
                 "**Fluorescence %** from mudlog PDF text blocks (`FLUOR:` / `FLUORESCENCE:` ranges, ft→m); "
-                "upper bound of each range used (e.g. 60–90% → 90%), not the midpoint.",
+                "upper bound of each range used (e.g. 60–90% → 90%), not the midpoint. "
+                "Gaps ≤55 m between consecutive `FLUOR:` blocks are bridged; intervals outside all blocks/zones are set to 0%.",
                 "9. **Grain size** not parsed from litho ASCII — derived from mudlog lithology text where matched.",
                 "",
             ]

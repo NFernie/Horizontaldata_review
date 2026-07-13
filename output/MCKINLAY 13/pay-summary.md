@@ -1,6 +1,6 @@
 # MCKINLAY 13 — McKinlay Pay Summary
 
-**Generated:** 2026-07-12 23:42 UTC  
+**Generated:** 2026-07-13 00:27 UTC  
 **Formation tops name:** MCKINLAY 13  
 **McKinlay window:** 1831.5 – 3228.7 m MD  
 **DC30 top:** 1831.54 m MD  

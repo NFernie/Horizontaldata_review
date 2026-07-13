@@ -1,6 +1,6 @@
 # STIMPEE 6 — McKinlay Pay Summary
 
-**Generated:** 2026-07-12 23:41 UTC  
+**Generated:** 2026-07-13 00:25 UTC  
 **Formation tops name:** STIMPEE 6  
 **McKinlay window:** 1632.4 – 3186.1 m MD  
 **DC30 top:** 1631.04 m MD  
