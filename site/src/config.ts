@@ -32,7 +32,7 @@ export const LOOSE_HARDNESS_SCORE = 0.7;
 
 export const ROBUST_NORM_PERCENTILES = [5, 95] as const;
 
-export const FLAG_LOW_GR = 65.0;
+export const FLAG_LOW_GR = 70.0;
 export const FLAG_LOWRES_RES_DEEP = RES_DEEP_CUTOFF;
 export const FLAG_LOWFLUOR_PCT = FLUOR_CUTOFF;
 
@@ -57,6 +57,7 @@ export const WRCI_WEIGHTS = {
 
 export const WRCI_HIGH_THRESHOLD = 66.0;
 export const WRCI_ELEVATED_THRESHOLD = 40.0;
+export const WRCI_HIGH_MIN_FLAGS = 1;
 
 export const LOWRES_SEVERITY_REF = RES_DEEP_CUTOFF;
 export const LOWFLUOR_SEVERITY_REF = FLUOR_CUTOFF;

@@ -15,9 +15,9 @@ class TestOwcProximity(unittest.TestCase):
         self.assertEqual(owc_proximity_tier(3.5, 0.65, False), "Elevated")
         self.assertEqual(owc_proximity_tier(5.5, 0.65, False), "Low")
 
-    def test_poor_rock_bands_tightened(self):
-        self.assertEqual(owc_proximity_tier(1.9, 0.4, False), "High")
-        self.assertEqual(owc_proximity_tier(3.0, 0.4, False), "Elevated")
+    def test_poor_rock_no_owc_flags(self):
+        self.assertEqual(owc_proximity_tier(1.9, 0.4, False), "Low")
+        self.assertEqual(owc_proximity_tier(3.0, 0.4, False), "Low")
         self.assertEqual(owc_proximity_tier(4.5, 0.4, False), "Low")
 
     def test_res_suppress_clears_high_tier(self):

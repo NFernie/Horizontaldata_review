@@ -1426,8 +1426,10 @@
       "matching_pay": true,
       "RQI": 0.7766666666666667,
       "WRCI": 31.07,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
       "mTVDss": -1191.206473033777,
       "owc_distance_m": 11.793526966222998,
       "owc_near": "Low",
@@ -1468,8 +1470,10 @@
       "matching_pay": true,
       "RQI": 0.7566666666666667,
       "WRCI": 30.27,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
       "mTVDss": -1191.1756180573184,
       "owc_distance_m": 11.824381942681612,
       "owc_near": "Low",

@@ -426,7 +426,8 @@
       "RQI": 0.7244427139467159,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
       "evidence": {
         "pct_ss": 100.0,
@@ -449,7 +450,8 @@
       "RQI": 0.7183076004133168,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
       "evidence": {
         "pct_ss": 100.0,
@@ -472,7 +474,8 @@
       "RQI": 0.7131220203934857,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
       "evidence": {
         "pct_ss": 100.0,
@@ -590,7 +593,8 @@
       "RQI": 0.682533718806316,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
       "evidence": {
         "pct_ss": 100.0,
@@ -637,7 +641,8 @@
       "RQI": 0.674759159556693,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
       "evidence": {
         "pct_ss": 100.0,
@@ -660,7 +665,8 @@
       "RQI": 0.6297866669529888,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
       "evidence": {
         "pct_ss": 95.0,
@@ -743,6 +749,29 @@
         "avg_RES_DEEP": 18.344615184878787,
         "mTVDss": -1197.18711786653,
         "owc_distance_m": 5.8128821334701115,
+        "owc_near": "Low"
+      }
+    },
+    {
+      "depth": 1640.0,
+      "top": 1637.5,
+      "bot": 1642.5,
+      "WRCI": 26.4,
+      "RQI": 0.6599651769641169,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "evidence": {
+        "pct_ss": 90.0,
+        "grain_ordinal": 4,
+        "poro_class": "gd",
+        "hardness_score": 0.30000000000000004,
+        "fluor": 100.0,
+        "avg_GR": 65.36431803851515,
+        "avg_RES_DEEP": 22.13549376972727,
+        "mTVDss": -1196.367310874657,
+        "owc_distance_m": 6.632689125342949,
         "owc_near": "Low"
       }
     },

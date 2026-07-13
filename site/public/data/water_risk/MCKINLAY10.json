@@ -3,6 +3,52 @@
   "display": "MCKINLAY 10",
   "flagged_zones": [
     {
+      "depth": 1820.0,
+      "top": 1817.5,
+      "bot": 1822.5,
+      "WRCI": 29.27,
+      "RQI": 0.7317857142857144,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "evidence": {
+        "pct_ss": 57.142857142857146,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "hardness_score": 1.0,
+        "fluor": 100.0,
+        "avg_GR": 67.20280005718182,
+        "avg_RES_DEEP": 53.22327573378788,
+        "mTVDss": -1189.7141894565884,
+        "owc_distance_m": 13.285810543411571,
+        "owc_near": "Low"
+      }
+    },
+    {
+      "depth": 1805.0,
+      "top": 1802.5,
+      "bot": 1807.5,
+      "WRCI": 27.87,
+      "RQI": 0.6966666666666668,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "evidence": {
+        "pct_ss": 100.0,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "hardness_score": 0.55,
+        "fluor": 100.0,
+        "avg_GR": 67.61456090754544,
+        "avg_RES_DEEP": 65.98397884945454,
+        "mTVDss": -1189.8185301376293,
+        "owc_distance_m": 13.181469862370705,
+        "owc_near": "Low"
+      }
+    },
+    {
       "depth": 2095.0,
       "top": 2092.5,
       "bot": 2097.5,
@@ -22,6 +68,29 @@
         "avg_RES_DEEP": 70.50302459251516,
         "mTVDss": -1195.241116019277,
         "owc_distance_m": 7.7588839807231125,
+        "owc_near": "Low"
+      }
+    },
+    {
+      "depth": 2090.0,
+      "top": 2087.5,
+      "bot": 2092.5,
+      "WRCI": 24.03,
+      "RQI": 0.6006329562364072,
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
+      "evidence": {
+        "pct_ss": 21.428571428571427,
+        "grain_ordinal": 0,
+        "poro_class": "fr-gd",
+        "hardness_score": 1.0,
+        "fluor": 100.0,
+        "avg_GR": 69.34626076439395,
+        "avg_RES_DEEP": 83.05170001384847,
+        "mTVDss": -1195.1638889253463,
+        "owc_distance_m": 7.836111074653672,
         "owc_near": "Low"
       }
     }

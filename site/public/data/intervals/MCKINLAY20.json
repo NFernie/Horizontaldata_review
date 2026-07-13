@@ -288,8 +288,10 @@
       "matching_pay": true,
       "RQI": 0.6928571428571428,
       "WRCI": 27.71,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
       "mTVDss": -1196.407443220814,
       "owc_distance_m": 6.592556779185998,
       "owc_near": "Low",
@@ -3325,8 +3327,10 @@
       "matching_pay": true,
       "RQI": 0.6738571428571429,
       "WRCI": 26.95,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
       "mTVDss": -1191.8307983427228,
       "owc_distance_m": 11.169201657277199,
       "owc_near": "Low",
@@ -3367,8 +3371,10 @@
       "matching_pay": true,
       "RQI": 0.6738571428571429,
       "WRCI": 26.95,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
       "mTVDss": -1191.8377795633803,
       "owc_distance_m": 11.162220436619691,
       "owc_near": "Low",
@@ -4839,8 +4845,10 @@
       "matching_pay": true,
       "RQI": 0.7355238095238096,
       "WRCI": 29.42,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
       "mTVDss": -1191.2459985204769,
       "owc_distance_m": 11.75400147952314,
       "owc_near": "Low",
@@ -4927,8 +4935,10 @@
       "matching_pay": true,
       "RQI": 0.7321904761904763,
       "WRCI": 29.29,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
       "mTVDss": -1191.0413315558033,
       "owc_distance_m": 11.958668444196746,
       "owc_near": "Low",
@@ -5059,8 +5069,10 @@
       "matching_pay": true,
       "RQI": 0.6510416666666666,
       "WRCI": 26.04,
-      "risk_class": "Low",
-      "flags": [],
+      "risk_class": "Elevated",
+      "flags": [
+        "low_GR"
+      ],
       "mTVDss": -1190.912867225109,
       "owc_distance_m": 12.08713277489096,
       "owc_near": "Low",
@@ -8815,7 +8827,8 @@
       "WRCI": 27.86,
       "risk_class": "Elevated",
       "flags": [
-        "lowres"
+        "lowres",
+        "low_GR"
       ],
       "mTVDss": -1194.744226138573,
       "owc_distance_m": 8.255773861427087,

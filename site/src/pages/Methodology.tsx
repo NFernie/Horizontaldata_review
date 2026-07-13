@@ -11,7 +11,6 @@ import {
   KS_PROPERTIES,
   MAD_SCALE,
   OWC_BANDS_GOOD,
-  OWC_BANDS_POOR,
   OWC_RES_SUPPRESS,
   PORO_SCORES,
   RES_DEEP_CUTOFF,
@@ -23,6 +22,7 @@ import {
   SS_CUTOFF,
   FLUOR_CUTOFF,
   WRCI_ELEVATED_THRESHOLD,
+  WRCI_HIGH_MIN_FLAGS,
   WRCI_HIGH_THRESHOLD,
   WRCI_WEIGHTS,
   ZOI_DROP_PCT,
@@ -122,9 +122,8 @@ export function Methodology() {
               </li>
               <li>
                 <strong className="text-text">OWC proximity</strong> — tiers from trajectory mTVDss vs field
-                OWC (good rock: &lt;{OWC_BANDS_GOOD.high_lt}m High, {OWC_BANDS_GOOD.high_lt}–
-                {OWC_BANDS_GOOD.elevated_lt}m Elevated; poor rock: &lt;{OWC_BANDS_POOR.high_lt}m High,{" "}
-                {OWC_BANDS_POOR.high_lt}–{OWC_BANDS_POOR.elevated_lt}m Elevated). Suppressed when
+                OWC (good rock only: &lt;{OWC_BANDS_GOOD.high_lt}m High, {OWC_BANDS_GOOD.high_lt}–
+                {OWC_BANDS_GOOD.elevated_lt}m Elevated; poor rock never flagged). Suppressed when
                 avg_RES_DEEP &gt; {OWC_RES_SUPPRESS} Ω·m.
               </li>
             </ul>
@@ -140,7 +139,8 @@ export function Methodology() {
             <ul className="list-disc space-y-1 pl-4 font-sans">
               <li>
                 <strong className="text-risk-high">{RISK_LABELS.High}</strong> — WRCI ≥ {WRCI_HIGH_THRESHOLD}{" "}
-                and (OWC High or ≥2 of lowres/lowfluor/low_GR) or (ZOI and WRCI ≥ {WRCI_HIGH_THRESHOLD})
+                and (OWC High or ≥{WRCI_HIGH_MIN_FLAGS} of lowres/lowfluor/low_GR) or (ZOI and WRCI ≥{" "}
+                {WRCI_HIGH_THRESHOLD})
               </li>
               <li>
                 <strong className="text-risk-elev">{RISK_LABELS.Elevated}</strong> — WRCI{" "}

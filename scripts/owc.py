@@ -80,12 +80,15 @@ def owc_proximity_tier(distance_m: float | None, rqi: float | None, is_zoi: bool
     """
     Return High / Elevated / Low tier per updated-plan §5.2.
 
-    Good-rock bands (RQI >= threshold or ZOI) vs tighter poor-rock bands.
+    Good-rock bands (RQI >= threshold or ZOI). Poor rock (RQI < threshold, not ZOI)
+    never receives OWC proximity flags — always Low.
     """
     if distance_m is None:
         return None
     good = (rqi is not None and rqi >= config.RQI_THRESHOLD) or is_zoi
-    bands = config.OWC_BANDS_GOOD if good else config.OWC_BANDS_POOR
+    if not good:
+        return "Low"
+    bands = config.OWC_BANDS_GOOD
     d = float(distance_m)
     if d < bands["high_lt"]:
         return "High"

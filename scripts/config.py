@@ -104,7 +104,7 @@ ROBUST_NORM_PERCENTILES = (5, 95)
 # ---------------------------------------------------------------------------
 # Red-flag booleans — updated-plan §3B
 # ---------------------------------------------------------------------------
-FLAG_LOW_GR = 65.0
+FLAG_LOW_GR = 70.0
 """avg_GR below this (gAPI) triggers low_GR boolean on RQI >= RQI_THRESHOLD intervals."""
 
 FLAG_LOWRES_RES_DEEP = RES_DEEP_CUTOFF
@@ -135,7 +135,7 @@ OWC_BANDS_GOOD = {"high_lt": 3.0, "elevated_lt": 5.0}
 """Distance bands (m) for RQI >= RQI_THRESHOLD or ZOI intervals."""
 
 OWC_BANDS_POOR = {"high_lt": 2.0, "elevated_lt": 4.0}
-"""Distance bands (m) for poor rock (RQI < RQI_THRESHOLD, not ZOI)."""
+"""Legacy poor-rock bands — unused; poor rock always returns OWC tier Low."""
 
 OWC_RES_SUPPRESS = 30.0
 """Suppress OWC proximity flags when avg_RES_DEEP exceeds this (ohm.m)."""
@@ -160,6 +160,9 @@ WRCI_HIGH_THRESHOLD = 66.0
 
 WRCI_ELEVATED_THRESHOLD = 40.0
 """WRCI in [this, WRCI_HIGH) or qualifying flags → Elevated water risk."""
+
+WRCI_HIGH_MIN_FLAGS = 1
+"""Minimum count of {lowres, lowfluor, low_GR} booleans for High risk when WRCI >= WRCI_HIGH_THRESHOLD."""
 
 LOWRES_SEVERITY_REF = RES_DEEP_CUTOFF
 """Reference RES_DEEP (ohm.m) for low-resistivity severity: clamp((ref − RES)/ref, 0, 1)."""

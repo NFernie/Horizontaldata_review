@@ -271,7 +271,7 @@ def classify_risk_class(wrci, has_lowres, has_lowfluor, has_low_gr, owc_near, fl
     owc_high = owc_near == "High"
     owc_elev = owc_near == "Elevated"
 
-    if (wrci >= config.WRCI_HIGH_THRESHOLD and (owc_high or bool_count >= 2)) or (
+    if (wrci >= config.WRCI_HIGH_THRESHOLD and (owc_high or bool_count >= config.WRCI_HIGH_MIN_FLAGS)) or (
         flag_zoi and wrci >= config.WRCI_HIGH_THRESHOLD
     ):
         return "High"
