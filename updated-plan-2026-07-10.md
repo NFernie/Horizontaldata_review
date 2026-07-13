@@ -1,8 +1,9 @@
 # Updated Pipeline Plan — RQI v2, New Wells, Along-Wellbore Flags & OWC Proximity
 
 **Date:** 2026-07-10  
-**Status:** **Approved for implementation** — §9 stakeholder answers locked (2026-07-10)  
+**Status:** **In progress** — Phases 0–2 **complete** on `main`; **ready for Phases 3+4+5** (combined)  
 **Branch:** Commit directly to `main` (single PR)  
+**Last updated:** 2026-07-13  
 **Supersedes (in part):** `res_sep_fix-plan.md` (**suspended**), OpusPlanR1 `highperm` / ΔRes red-flag logic  
 **Implements:** `RQI_Update-Plan.md` §3 locked decisions (8-component RQI)  
 **New inputs:** trajectory files (`*_trajectory`), `Oil_Water_Contact.csv`, McKinlay 10–15 datasets
@@ -23,6 +24,20 @@ This plan coordinates a **single major release** covering:
 8. **Confirm overburden exclusion** in all net-pay calculations (unchanged logic; re-verify after rerun).
 
 **Phased execution is required** — see §4. Do not merge partial phases.
+
+### Implementation progress (2026-07-13)
+
+| Phase | Status | Commit / notes |
+|-------|--------|----------------|
+| **0** Planning lock-in | ✅ Complete | §9 locked 2026-07-10 |
+| **1** McKinlay 10–15 + trajectory | ✅ Complete | On `main` — `scripts/trajectory.py`, litho+gas ingest, 23-well `BATCH_PROCESSING_STATUS.md`, pay summaries |
+| **2** RQI v2 (8-component) | ✅ Complete | `acddeee` — parsers, weights, `loose_hardness`; all 23 wells reprocessed + export regenerated |
+| **3** Remove ΔRes; flag framework | ⏳ **Next** | `res_sep` / `highperm` still in code, config, site UI, JSON |
+| **4** ZOI along-wellbore | ⏳ Pending | Not started — combine with Phase 3 per §12 |
+| **5** OWC proximity | ⏳ Pending | `mTVDss` on Mck 10–15 process records only; not yet in export JSON for all wells |
+| **6** Full rerun + CI deploy | ⏳ Pending | After 3+4+5 |
+
+**Phase 3 readiness:** **Yes** — Phases 1 and 2 acceptance gates passed. Proceed with the **combined Phases 3+4+5 prompt** (§12), not Phase 3 in isolation. See §4B for pre-flight notes.
 
 ---
 
@@ -67,7 +82,7 @@ This plan coordinates a **single major release** covering:
 | McKinlay 14 | `Mck_14` | `Mck_14_trajectory` | ✓ | `.txt` | `.txt` | **✗ missing** |
 | McKinlay 15 | `Mck_15` | `Mck_15_trajectory` | ✓ | `.ASC` | `.ASC` | **✗ missing** |
 
-**Blocker:** Current pipeline requires **Hz Section Samples Descriptions** Excel (`Input Sheet`). McKinlay 10–15 have mudlog + LAS + ASCII litho/gas only. **Phase 1 must define an alternate ingestion path** (see §5 Q1).
+**Resolved (Phase 1):** Alternate ingestion implemented — mudlog PDF + litho ASCII + drill-gas, 5 m bins, ft→m. Sample Excel still absent; fluorescence from bar track (Mck 10–11) or text `FLUOR` blocks (Mck 12–15).
 
 ### 3.2 Trajectory files (all wells)
 
@@ -128,7 +143,7 @@ This plan coordinates a **single major release** covering:
 
 ---
 
-### Phase 1 — Batch new wells into summaries
+### Phase 1 — Batch new wells into summaries ✅ **Complete** (2026-07-12)
 
 **Goal:** McKinlay 10–15 produce the same output artefacts as existing wells.
 
@@ -143,14 +158,16 @@ This plan coordinates a **single major release** covering:
 | 1.7 | Run `compute_pay_summary.py`; update `ALL_WELLS_PAY_SUMMARY.md` |
 | 1.8 | Update `BATCH_PROCESSING_STATUS.md`, `REUSABLE_WORKFLOW_PROMPT.md` |
 
-**Acceptance:**
+**Acceptance:** ✅ All met
 - 6 new `output/MCKINLAY{10–15}_*.md` interpretation + process summaries exist  
-- Pay summaries exclude overburden (spot-check one new well)  
-- `mTVDss` present on every retained interval JSON field (Phase 1b or deferred to Phase 3)
+- Pay summaries exclude overburden — `ALL_WELLS_PAY_SUMMARY.md` includes Mck 10–15  
+- `mTVDss` on **McKinlay 10–15** process records (96/96 … 57/57); export JSON + Excel wells deferred to Phases 3+5  
+
+**Deliverables:** `scripts/trajectory.py`, `output/BATCH_PROCESSING_STATUS.md` (23 wells), `REUSABLE_WORKFLOW_PROMPT.md` updated.
 
 ---
 
-### Phase 2 — RQI v2 (8-component)
+### Phase 2 — RQI v2 (8-component) ✅ **Complete** (2026-07-13, `acddeee`)
 
 **Goal:** Implement `RQI_Update-Plan.md` §3–4 parsers and weights.
 
@@ -162,11 +179,40 @@ This plan coordinates a **single major release** covering:
 | 2.4 | Remove `loose_grains` boolean everywhere |
 | 2.5 | Mirror `scripts/config.py` → `site/src/config.ts` |
 
-**Acceptance:** Spot-check JENA 31 @ 2500 m — hardness/sorting/cement parsed from mudlog text; RQI differs from current 5-component value.
+**Acceptance:** ✅ All met
+- JENA 31 @ 2500 m — Hardness `mod hd (0.30)`, Sorting `wl (0.80)`, Cement `wk sil cmt (0.80)` in interpretation MD  
+- RQI changed: 2500 m **0.746 → 0.657** (−0.089); portfolio mean 0.542 → 0.548, stdev 0.109 → 0.087  
+- No `loose_grains` in `site/public/data/intervals/`; Jaccard uses `loose_hardness`  
+- `npm run build` succeeds; `scripts/config.py` ↔ `site/src/config.ts` mirrored for RQI v2  
+- WRCI / `res_sep` **unchanged** (intentional — Phase 3 scope)
 
 ---
 
-### Phase 3 — Remove ΔRes; new flag framework
+### 4B. Phase 3+4+5 readiness (2026-07-13)
+
+**Verdict: Ready to proceed** with the combined **Phases 3+4+5** agent prompt (§12). Prerequisites (Phases 1 and 2 on `main`) are satisfied.
+
+| Pre-flight item | Status | Notes |
+|-----------------|--------|-------|
+| RQI v2 fields in process + export | ✅ | 8-component formula live; `loose_hardness` replaces `loose_grains` |
+| McKinlay 10–15 in portfolio | ✅ | 23 wells in `BATCH_PROCESSING_STATUS.md` and `wells.json` |
+| Trajectory module | ✅ | `scripts/trajectory.py` — **wired for Mck 10–15 only** in `WELLS` registry |
+| Trajectory files at repo root | ✅ | All 23 `*_trajectory` files present — **add paths for remaining 17 wells** during Phase 5 |
+| `mTVDss` in export JSON | ❌ | Process-internal for Mck 10–15; Phase 5 must serialize `mtvds`, `owc_distance_m`, `owc_near` |
+| `res_sep` / `highperm` removal | ❌ | Still in `config.py`, `export_web_data.py`, site UI — **Phase 3 scope** |
+| WRCI v2 formula | ❌ | Still `0.40·RQI + 0.20·highperm + …` — **Phase 3 scope** |
+| ZOI / OWC flags | ❌ | Not implemented — **Phases 4 and 5 scope** |
+| `New Statistical Methods.md` | ❌ | Not updated — Phase 3 deliverable |
+| `res_sep_fix-plan.md` SUSPENDED banner | ❌ | Phase 3 deliverable |
+| CI `compute_pay_summary.py` | ❌ | Phase 6 scope |
+
+**Recommended next step:** Run the **Phases 3+4+5 combined prompt** (§12) in a single agent session — do **not** run Phase 3 alone. After 3+4+5, run the optional debugging pass (§14), then Phase 6 for full rerun + CI.
+
+**Expected impact:** WRCI values will shift materially once `highperm` is removed and `owc_severity` is added; risk classes may change for intervals near field OWC. Site will need UI updates (remove `res_sep` track, add `low_GR` / ZOI / OWC chips, ensure RQI column in Well Detail).
+
+---
+
+### Phase 3 — Remove ΔRes; new flag framework ⏳ **Next (combine with 4+5)**
 
 **Goal:** Retire `res_sep` analysis; implement replacement flags.
 
@@ -220,7 +266,7 @@ Add `RQI` column alongside `WRCI` and `risk_class` in:
 
 ---
 
-### Phase 4 — Along-wellbore Zone of Interest (ZOI)
+### Phase 4 — Along-wellbore Zone of Interest (ZOI) ⏳ **Pending (combine with 3+5)**
 
 **Goal:** Flag intervals where reservoir quality is good but show properties **suddenly deteriorate** vs neighbours along the lateral.
 
@@ -284,7 +330,7 @@ ZOI = side_triggers_shallow OR side_triggers_deep
 
 ---
 
-### Phase 5 — OWC proximity flags
+### Phase 5 — OWC proximity flags ⏳ **Pending (combine with 3+4)**
 
 **Goal:** Flag intervals by vertical distance to field oil–water contact.
 
@@ -324,7 +370,7 @@ ZOI = side_triggers_shallow OR side_triggers_deep
 
 ---
 
-### Phase 6 — Full pipeline rerun & site deploy
+### Phase 6 — Full pipeline rerun & site deploy ⏳ **Pending (after 3+4+5)**
 
 **Execute only after Phases 1–5 pass acceptance gates.**
 
@@ -781,9 +827,9 @@ Only commit code fixes if clearly broken; otherwise report only.
 **Suggested workflow:**
 
 ```
-Phase 1 → spot-check MCKINLAY10
-Phase 2 → spot-check JENA31 @ 2500 m RQI
-Phases 3+4+5 → optional debugging pass → fix blockers
+Phase 1 ✅ → spot-check MCKINLAY10
+Phase 2 ✅ → spot-check JENA31 @ 2500 m RQI
+Phases 3+4+5 ⏳ → optional debugging pass → fix blockers
 Phase 6 → full rerun → optional debugging pass → merge
 ```
 
@@ -805,3 +851,4 @@ Phase 6 → full rerun → optional debugging pass → merge
 |------|--------|
 | 2026-07-10 | Initial plan — RQI v2 rerun, McKinlay 10–15 batching, ΔRes removal, ZOI + OWC flags, private repo guidance |
 | 2026-07-10 | §9 answers locked; §4A summary; §12 implementation prompts; §13 parallelisation; §14 debugging guidance; WRCI rebalanced with OWC severity |
+| 2026-07-13 | Phases 1–2 marked complete; §4B Phase 3+4+5 readiness; JENA31 RQI v2 acceptance recorded (`acddeee`) |
