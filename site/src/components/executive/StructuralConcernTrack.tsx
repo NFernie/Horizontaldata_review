@@ -4,7 +4,6 @@ import { SvgPopoverAnchor } from "@/components/Popover";
 import { explainInterval } from "@/lib/flagExplain";
 import { isConcernInterval } from "@/lib/concernZones";
 import {
-  STRUCTURAL_MIN_PLOT_HEIGHT,
   STRUCTURAL_MIN_TICK_FONT,
   computePlotArea,
   computeYRange,
@@ -23,7 +22,8 @@ import type { IntervalRecord, IsolationDepth } from "@/types/intervals";
 import type { TrajectoryPayload } from "@/types/trajectory";
 import { cn } from "@/lib/utils";
 
-const MIN_CHART_WIDTH = 200;
+const MIN_CHART_WIDTH = 280;
+const DEFAULT_VIEW_HEIGHT = structuralViewHeight();
 
 interface StructuralConcernTrackProps {
   label: string;
@@ -39,10 +39,9 @@ interface StructuralConcernTrackProps {
   embedded?: boolean;
 }
 
-function useContainerSize() {
+function useChartSize() {
   const ref = useRef<HTMLDivElement>(null);
-  const minHeight = structuralViewHeight(STRUCTURAL_MIN_PLOT_HEIGHT);
-  const [size, setSize] = useState({ width: MIN_CHART_WIDTH, height: minHeight });
+  const [size, setSize] = useState({ width: MIN_CHART_WIDTH, height: DEFAULT_VIEW_HEIGHT });
 
   useEffect(() => {
     const el = ref.current;
@@ -50,7 +49,7 @@ function useContainerSize() {
 
     const update = () => {
       const width = Math.max(MIN_CHART_WIDTH, Math.round(el.clientWidth));
-      const height = Math.max(minHeight, Math.round(el.clientHeight));
+      const height = Math.max(DEFAULT_VIEW_HEIGHT, Math.round(el.clientHeight));
       setSize((prev) =>
         prev.width === width && prev.height === height ? prev : { width, height },
       );
@@ -60,7 +59,7 @@ function useContainerSize() {
     observer.observe(el);
     update();
     return () => observer.disconnect();
-  }, [minHeight]);
+  }, []);
 
   return { ref, ...size };
 }
@@ -78,7 +77,7 @@ export function StructuralConcernTrack({
   embedded = false,
 }: StructuralConcernTrackProps) {
   const uid = useId().replace(/:/g, "");
-  const { ref, width, height } = useContainerSize();
+  const { ref, width, height } = useChartSize();
 
   const concerns = useMemo(() => intervals.filter(isConcernInterval), [intervals]);
   const hasConcerns = concerns.length > 0;
@@ -134,34 +133,28 @@ export function StructuralConcernTrack({
   }, [owc, lateralStations, lateralWindow, width, height]);
 
   const shellClass = embedded
-    ? "flex min-h-0 flex-1 flex-col overflow-hidden"
-    : "flex min-h-[420px] flex-col overflow-hidden rounded-card border border-border bg-surface-2";
+    ? "flex min-h-0 flex-col"
+    : "flex min-h-[420px] flex-col rounded-card border border-border bg-surface-2 p-4";
 
   return (
     <div className={cn(shellClass, className)}>
-      <p
-        className={cn(
-          "shrink-0 font-semibold text-text",
-          embedded ? "px-2 pb-1 pt-2 text-xs" : "px-3 pb-1 pt-3 text-sm",
-        )}
-      >
+      <p className={cn("font-semibold text-text", embedded ? "mb-2 text-xs" : "mb-3 text-sm")}>
         {label}
       </p>
 
       {!intervals.length ? (
-        <p className="flex flex-1 items-center justify-center px-3 text-sm text-text-muted">
+        <p className="flex flex-1 items-center justify-center text-sm text-text-muted">
           No interval data
         </p>
       ) : owc == null || !chart ? (
-        <p className="flex flex-1 items-center justify-center px-3 text-sm text-text-muted">
+        <p className="flex flex-1 items-center justify-center text-sm text-text-muted">
           Trajectory / OWC data unavailable
         </p>
       ) : (
-        <div ref={ref} className="min-h-0 w-full flex-1">
+        <div ref={ref} className="min-h-[210px] w-full flex-1">
           <svg
             viewBox={`0 0 ${width} ${height}`}
             className="block h-full w-full"
-            preserveAspectRatio="none"
             role="img"
             aria-label={`${label} structural concern track MD versus mTVDss`}
           >
@@ -178,8 +171,6 @@ export function StructuralConcernTrack({
               </pattern>
             </defs>
 
-            <rect x={0} y={0} width={width} height={height} fill="var(--surface-2)" />
-
             {/* Plot frame */}
             <rect
               x={chart.plotLeft}
@@ -189,6 +180,7 @@ export function StructuralConcernTrack({
               fill="var(--surface)"
               stroke="var(--border)"
               strokeWidth="1"
+              rx="2"
             />
 
             {/* Y-axis ticks + labels */}
@@ -398,12 +390,10 @@ export function StructuralConcernTrack({
       )}
 
       {!hasConcerns ? (
-        <p className="shrink-0 px-3 pb-2 pt-1 text-sm text-text-muted">No Elevated or High intervals</p>
+        <p className="mt-2 text-sm text-text-muted">No Elevated or High intervals</p>
       ) : null}
       {!hasIsolation && intervals.length > 0 ? (
-        <p className="shrink-0 px-3 pb-2 text-xs text-text-muted/80">
-          No mechanical isolation on file
-        </p>
+        <p className="mt-1 text-xs text-text-muted/80">No mechanical isolation on file</p>
       ) : null}
     </div>
   );
