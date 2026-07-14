@@ -16,6 +16,11 @@ interface DataTableProps<T> {
   caption?: string;
   emptyMessage?: string;
   className?: string;
+  stickyFirstColumn?: boolean;
+  /** Vertical scroll max-height, e.g. "70vh" or "60vh". Omit for horizontal-only scroll. */
+  scrollMaxHeight?: string;
+  /** First-column min-width class when sticky (depth vs well name). */
+  stickyMinWidth?: string;
 }
 
 export function DataTable<T>({
@@ -25,56 +30,72 @@ export function DataTable<T>({
   caption,
   emptyMessage = "No data available.",
   className,
+  stickyFirstColumn = false,
+  scrollMaxHeight,
+  stickyMinWidth = "min-w-[7.5rem]",
 }: DataTableProps<T>) {
+  const scrollStyle = scrollMaxHeight ? { maxHeight: scrollMaxHeight } : undefined;
+
   return (
-    <div className={cn("overflow-x-auto rounded-card border border-border", className)}>
-      <table className="min-w-full divide-y divide-border text-sm">
-        {caption ? <caption className="sr-only">{caption}</caption> : null}
-        <thead className="bg-surface-2">
-          <tr>
-            {columns.map((col) => (
-              <th
-                key={col.key}
-                scope="col"
-                className={cn(
-                  "px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wide text-text-muted",
-                  col.align === "right" && "text-right",
-                  col.align === "center" && "text-center",
-                )}
-              >
-                {col.header}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-border bg-surface">
-          {rows.length === 0 ? (
+    <div className={cn("rounded-card border border-border", className)}>
+      <div
+        className={cn(
+          "data-table-scroll overflow-auto",
+          stickyFirstColumn && "data-table-sticky-first",
+        )}
+        style={scrollStyle}
+      >
+        <table className="min-w-full divide-y divide-border text-sm">
+          {caption ? <caption className="sr-only">{caption}</caption> : null}
+          <thead className="bg-surface-2">
             <tr>
-              <td colSpan={columns.length} className="px-3 py-8 text-center text-text-muted">
-                {emptyMessage}
-              </td>
+              {columns.map((col, colIndex) => (
+                <th
+                  key={col.key}
+                  scope="col"
+                  className={cn(
+                    "px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wide text-text-muted",
+                    col.align === "right" && "text-right",
+                    col.align === "center" && "text-center",
+                    stickyFirstColumn && colIndex === 0 && stickyMinWidth,
+                  )}
+                >
+                  {col.header}
+                </th>
+              ))}
             </tr>
-          ) : (
-            rows.map((row) => (
-              <tr key={rowKey(row)} className="transition-colors hover:bg-surface-2/60">
-                {columns.map((col) => (
-                  <td
-                    key={col.key}
-                    className={cn(
-                      "px-3 py-2.5 text-text",
-                      col.mono && "font-mono tabular-nums",
-                      col.align === "right" && "text-right",
-                      col.align === "center" && "text-center",
-                    )}
-                  >
-                    {col.render(row)}
-                  </td>
-                ))}
+          </thead>
+          <tbody className="divide-y divide-border bg-surface">
+            {rows.length === 0 ? (
+              <tr>
+                <td colSpan={columns.length} className="px-3 py-8 text-center text-text-muted">
+                  {emptyMessage}
+                </td>
               </tr>
-            ))
-          )}
-        </tbody>
-      </table>
+            ) : (
+              rows.map((row) => (
+                <tr key={rowKey(row)} className="transition-colors hover:bg-surface-2/60">
+                  {columns.map((col, colIndex) => (
+                    <td
+                      key={col.key}
+                      scope={stickyFirstColumn && colIndex === 0 ? "row" : undefined}
+                      className={cn(
+                        "px-3 py-2.5 text-text",
+                        col.mono && "font-mono tabular-nums",
+                        col.align === "right" && "text-right",
+                        col.align === "center" && "text-center",
+                        stickyFirstColumn && colIndex === 0 && stickyMinWidth,
+                      )}
+                    >
+                      {col.render(row)}
+                    </td>
+                  ))}
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

@@ -1,15 +1,12 @@
-import type { ReactNode } from "react";
 import { Card } from "@/components/Card";
+import { FormulaBlock } from "@/components/FormulaBlock";
+import { MethodologyMethodsSection } from "@/components/methodology/MethodologyMethodsSection";
 import {
   FLAG_LABELS,
   FLAG_LOW_GR,
   FLAG_LOWFLUOR_PCT,
   FLAG_LOWRES_RES_DEEP,
-  JACCARD_DEPTH_BINS,
-  JACCARD_FEATURES,
-  JACCARD_PRESENCE_PCT,
-  KS_PROPERTIES,
-  MAD_SCALE,
+  LOWFLUOR_SEVERITY_REF,
   OWC_BANDS_GOOD,
   OWC_RES_SUPPRESS,
   PORO_SCORES,
@@ -18,10 +15,8 @@ import {
   ROBUST_NORM_PERCENTILES,
   RQI_THRESHOLD,
   RQI_WEIGHTS,
-  SPEARMAN_VARS,
   SS_CUTOFF,
   FLUOR_CUTOFF,
-  LOWFLUOR_SEVERITY_REF,
   WRCI_ELEVATED_THRESHOLD,
   WRCI_HIGH_MIN_FLAGS,
   WRCI_HIGH_MULTI_FLAGS,
@@ -30,20 +25,12 @@ import {
   ZOI_DROP_PCT,
   ZOI_MIN_DROPS,
   ZOI_NEIGHBOUR_WINDOW,
-  ZSCORE_METRICS,
-  ZSCORE_THRESHOLD,
 } from "@/config";
-
-function FormulaBlock({ title, children }: { title: string; children: ReactNode }) {
-  return (
-    <div className="rounded-card border border-border bg-surface-2 p-4">
-      <h3 className="text-sm font-semibold text-text">{title}</h3>
-      <div className="mt-2 space-y-2 font-mono text-xs leading-relaxed text-text-muted">{children}</div>
-    </div>
-  );
-}
+import { useScrollRestore } from "@/hooks/usePageState";
 
 export function Methodology() {
+  useScrollRestore();
+
   return (
     <div className="space-y-6">
       <header>
@@ -158,27 +145,23 @@ export function Methodology() {
         </div>
       </Card>
 
-      <Card title="Other statistical methods">
-        <div className="grid gap-4 md:grid-cols-2">
-          <FormulaBlock title="§1.2 Robust Z-scores">
-            <p>z = {MAD_SCALE} × (x − median) / MAD</p>
-            <p>Metrics: {ZSCORE_METRICS.join(", ")}</p>
-            <p>Flag when |z| &gt; {ZSCORE_THRESHOLD}</p>
-          </FormulaBlock>
-          <FormulaBlock title="§1.3 Spearman correlations">
-            <p>Variables: {SPEARMAN_VARS.join(", ")}</p>
-            <p>Rank-based ρ and p-value per well (n = interval count).</p>
-          </FormulaBlock>
-          <FormulaBlock title="§1.4 Jaccard similarity">
-            <p>Features: {JACCARD_FEATURES.join(", ")}</p>
-            <p>Present when ≥ {JACCARD_PRESENCE_PCT}% of intervals fire the feature.</p>
-            <p>Depth-binned variant uses {JACCARD_DEPTH_BINS} normalized lateral bins.</p>
-          </FormulaBlock>
-          <FormulaBlock title="§1.5 Clustering + KS">
-            <p>Cosine/Euclidean on standardized well aggregates; Ward hierarchical clustering.</p>
-            <p>KS properties: {KS_PROPERTIES.join(", ")}</p>
-          </FormulaBlock>
-        </div>
+      <Card title="Metric colour legend" description="RQI and WRCI threshold tints in tables">
+        <p className="text-sm text-text-muted">
+          <span className="metric-cell metric-cell--rqi-high inline-block rounded-md px-2 py-0.5 font-mono text-sm">
+            RQI red
+          </span>{" "}
+          = good rock (≥ {RQI_THRESHOLD}) — favourable reservoir quality, not bad data.{" "}
+          <span className="metric-cell metric-cell--wrci-high inline-block rounded-md px-2 py-0.5 font-mono text-sm">
+            WRCI red
+          </span>{" "}
+          = high composite score (&gt; {WRCI_HIGH_THRESHOLD}). Green tints indicate below-threshold values.
+          Hover table cells for full tooltips. Depth tracks use continuous / risk-class scales — not these
+          threshold tints.
+        </p>
+      </Card>
+
+      <Card title="Other statistical methods (2–5)">
+        <MethodologyMethodsSection />
       </Card>
 
       <Card title="Pay cutoffs & overburden">

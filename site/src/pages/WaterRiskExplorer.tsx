@@ -1,4 +1,5 @@
 import { Card } from "@/components/Card";
+import { MetricCell } from "@/components/MetricCell";
 import { RiskBadge } from "@/components/RiskBadge";
 import { StatTile } from "@/components/StatTile";
 import { WellSelect } from "@/components/WellSelect";
@@ -11,6 +12,7 @@ import {
   writeStoredWaterRiskRight,
   writeStoredWell,
 } from "@/hooks/useWellSelection";
+import { useScrollRestore } from "@/hooks/usePageState";
 import { fetchJson, formatDepthMd, formatHafwl, formatNumber, formatPercent } from "@/lib/utils";
 import type { FlaggedZone, WaterRiskPayload } from "@/types/waterRisk";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -58,11 +60,15 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
       <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 text-xs sm:grid-cols-3">
         <div>
           <dt className="text-text-muted">WRCI</dt>
-          <dd className="font-mono text-text">{formatNumber(zone.WRCI, 1)}</dd>
+          <dd>
+            <MetricCell metric="wrci" value={zone.WRCI} />
+          </dd>
         </div>
         <div>
           <dt className="text-text-muted">RQI</dt>
-          <dd className="font-mono text-text">{formatNumber(zone.RQI, 2)}</dd>
+          <dd>
+            <MetricCell metric="rqi" value={zone.RQI} />
+          </dd>
         </div>
         <div>
           <dt className="text-text-muted">%SS</dt>
@@ -223,6 +229,7 @@ function WellRiskPanel({
 }
 
 export function WaterRiskExplorer() {
+  useScrollRestore();
   const { activeWells, loading: wellsLoading, error: wellsError } = useWells();
   const activeAliasSet = useMemo(
     () => new Set(activeWells.map((w) => w.alias)),

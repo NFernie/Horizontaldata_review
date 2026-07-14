@@ -17,6 +17,12 @@
   --rock-quality-end: #f59e0b;
   --res-low: #3b82f6;
   --res-high: #ef4444;
+  --metric-rqi-high: var(--risk-high);
+  --metric-rqi-low: var(--risk-low);
+  --metric-wrci-high: var(--risk-high);
+  --metric-wrci-low: var(--risk-low);
+  --metric-bg-alpha: 0.14;
+  --metric-border-alpha: 0.35;
   --radius-card: 12px;
   --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4);
 }

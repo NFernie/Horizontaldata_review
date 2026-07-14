@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 import { routeQuery } from "@/lib/assistant/router";
+import { globalStateKey, usePersistedState } from "@/hooks/usePageState";
 import { cn } from "@/lib/utils";
 import { AssistantPanel } from "./AssistantPanel";
 import type { AssistantMessage } from "./MessageList";
@@ -12,7 +13,7 @@ function nextMessageId(): string {
 }
 
 export function AssistantWidget() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = usePersistedState(globalStateKey("assistantOpen"), false);
   const [messages, setMessages] = useState<AssistantMessage[]>([]);
   const [loading, setLoading] = useState(false);
 

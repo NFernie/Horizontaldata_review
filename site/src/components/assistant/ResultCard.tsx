@@ -1,4 +1,6 @@
+import type { ReactNode } from "react";
 import type { AssistantResult, KeywordHit } from "@/types/assistant";
+import { MetricCell } from "@/components/MetricCell";
 import { cn } from "@/lib/utils";
 import { CitationLink } from "./CitationLink";
 import { INTENT_LABELS } from "./constants";
@@ -37,6 +39,19 @@ function SummaryGrid({ summary }: { summary: Record<string, string | number | bo
       {Object.entries(summary).map(([key, value]) => {
         const text = value == null ? "—" : String(value);
         const isLong = text.length > 120;
+        const metricKey = key.toUpperCase();
+        const numericValue = typeof value === "number" ? value : null;
+
+        let content: ReactNode = isLong
+          ? `${text.slice(0, 200)}${text.length > 200 ? "…" : ""}`
+          : text;
+
+        if (metricKey === "RQI" && numericValue != null) {
+          content = <MetricCell metric="rqi" value={numericValue} />;
+        } else if (metricKey === "WRCI" && numericValue != null) {
+          content = <MetricCell metric="wrci" value={numericValue} />;
+        }
+
         return (
           <div key={key} className={cn(isLong && "sm:col-span-2")}>
             <dt className="text-xs font-medium uppercase tracking-wide text-text-muted">{key}</dt>
@@ -46,7 +61,7 @@ function SummaryGrid({ summary }: { summary: Record<string, string | number | bo
                 key === "Description" || isLong ? "font-sans leading-relaxed" : "font-mono",
               )}
             >
-              {isLong ? `${text.slice(0, 200)}${text.length > 200 ? "…" : ""}` : text}
+              {content}
             </dd>
           </div>
         );

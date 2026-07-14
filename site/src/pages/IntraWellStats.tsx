@@ -4,8 +4,10 @@ import { Card } from "@/components/Card";
 import { CorrelationMatrix } from "@/components/CorrelationMatrix";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
 import { Legend } from "@/components/Legend";
+import { MetricCell } from "@/components/MetricCell";
 import { RiskBadge } from "@/components/RiskBadge";
 import { WellSelect } from "@/components/WellSelect";
+import { useScrollRestore } from "@/hooks/usePageState";
 import { useWells } from "@/hooks/useWells";
 import { readStoredWell, writeStoredWell } from "@/hooks/useWellSelection";
 import { fetchJson, formatDepthMd, formatNumber } from "@/lib/utils";
@@ -14,6 +16,7 @@ import type { IntervalRecord, IntervalsPayload } from "@/types/intervals";
 
 export function IntraWellStats() {
   const { alias: routeAlias } = useParams<{ alias: string }>();
+  useScrollRestore();
   const { activeWells, loading: wellsLoading } = useWells();
   const [alias, setAlias] = useState(() => routeAlias ?? readStoredWell("JENA31"));
   const [intervals, setIntervals] = useState<IntervalsPayload | null>(null);
@@ -77,8 +80,7 @@ export function IntraWellStats() {
         key: "wrci",
         header: "WRCI",
         align: "right",
-        mono: true,
-        render: (r) => formatNumber(r.WRCI, 1),
+        render: (r) => <MetricCell metric="wrci" value={r.WRCI} />,
       },
       {
         key: "risk",
@@ -157,6 +159,8 @@ export function IntraWellStats() {
           rowKey={(r) => String(r.depth)}
           emptyMessage="No statistically anomalous intervals in this well."
           caption={`${intervals?.display ?? alias} anomaly list`}
+          stickyFirstColumn
+          scrollMaxHeight="60vh"
         />
       </Card>
     </div>

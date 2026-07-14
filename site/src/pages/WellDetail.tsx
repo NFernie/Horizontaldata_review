@@ -4,8 +4,10 @@ import { Card } from "@/components/Card";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
 import { DepthTracks } from "@/components/DepthTracks";
 import { Legend } from "@/components/Legend";
+import { MetricCell } from "@/components/MetricCell";
 import { RiskBadge } from "@/components/RiskBadge";
 import { WellSelect } from "@/components/WellSelect";
+import { useScrollRestore } from "@/hooks/usePageState";
 import { useWells } from "@/hooks/useWells";
 import { readStoredWell, writeStoredWell } from "@/hooks/useWellSelection";
 import { fetchJson, formatHafwl, formatNumber, formatPercent } from "@/lib/utils";
@@ -14,6 +16,7 @@ import type { ZonesPayload } from "@/types/zones";
 
 export function WellDetail() {
   const { alias: routeAlias } = useParams<{ alias: string }>();
+  useScrollRestore();
   const { activeWells, loading: wellsLoading } = useWells();
   const [alias, setAlias] = useState(() => routeAlias ?? readStoredWell("JENA31"));
   const [intervals, setIntervals] = useState<IntervalsPayload | null>(null);
@@ -109,15 +112,13 @@ export function WellDetail() {
         key: "rqi",
         header: "RQI",
         align: "right",
-        mono: true,
-        render: (r) => formatNumber(r.RQI, 2),
+        render: (r) => <MetricCell metric="rqi" value={r.RQI} />,
       },
       {
         key: "wrci",
         header: "WRCI",
         align: "right",
-        mono: true,
-        render: (r) => formatNumber(r.WRCI, 1),
+        render: (r) => <MetricCell metric="wrci" value={r.WRCI} />,
       },
       {
         key: "risk",
@@ -214,6 +215,11 @@ export function WellDetail() {
           { label: "RES shallow", color: "var(--res-low)" },
           { label: "WRCI High", color: "var(--risk-high)" },
           { label: "WRCI Elevated", color: "var(--risk-elev)" },
+          {
+            label: "Table RQI/WRCI",
+            color: "var(--metric-rqi-high)",
+            description: "threshold tints; tracks use continuous/risk-class scales",
+          },
         ]}
       />
 
@@ -223,6 +229,8 @@ export function WellDetail() {
           rows={intervals.intervals}
           rowKey={(r) => String(r.depth)}
           caption={`${intervals.display} McKinlay intervals`}
+          stickyFirstColumn
+          scrollMaxHeight="70vh"
         />
       </Card>
     </div>

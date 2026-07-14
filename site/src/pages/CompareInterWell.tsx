@@ -6,16 +6,21 @@ import { KsGrid } from "@/components/KsGrid";
 import { Legend } from "@/components/Legend";
 import { StatTile } from "@/components/StatTile";
 import { KS_FOCUS_ALIASES, JACCARD_PRESENCE_PCT } from "@/config";
+import { pageStateKey, usePersistedState, useScrollRestore } from "@/hooks/usePageState";
 import { fetchJson } from "@/lib/utils";
 import type { ClustersPayload, JaccardPayload, KsPayload } from "@/types/stats";
 
 export function CompareInterWell() {
+  useScrollRestore();
+  const [matrixMode, setMatrixMode] = usePersistedState<"feature" | "depth">(
+    pageStateKey("/compare", "matrixMode"),
+    "feature",
+  );
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
   const [jaccard, setJaccard] = useState<JaccardPayload | null>(null);
   const [clusters, setClusters] = useState<ClustersPayload | null>(null);
   const [ks, setKs] = useState<KsPayload | null>(null);
-  const [matrixMode, setMatrixMode] = useState<"feature" | "depth">("feature");
-  const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     Promise.all([
@@ -88,9 +93,15 @@ export function CompareInterWell() {
         title="Jaccard similarity matrix"
         description={`Feature presence ≥ ${JACCARD_PRESENCE_PCT}% of intervals per well`}
       >
-        <div className="mb-4 flex gap-2">
+        <div
+          className="mb-4 flex gap-2"
+          role="tablist"
+          aria-label="Jaccard matrix mode"
+        >
           <button
             type="button"
+            role="tab"
+            aria-selected={matrixMode === "feature"}
             onClick={() => setMatrixMode("feature")}
             className={`cursor-pointer rounded-card border px-3 py-1.5 text-sm transition-colors ${
               matrixMode === "feature"
@@ -102,6 +113,8 @@ export function CompareInterWell() {
           </button>
           <button
             type="button"
+            role="tab"
+            aria-selected={matrixMode === "depth"}
             onClick={() => setMatrixMode("depth")}
             className={`cursor-pointer rounded-card border px-3 py-1.5 text-sm transition-colors ${
               matrixMode === "depth"

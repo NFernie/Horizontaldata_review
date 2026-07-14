@@ -5,10 +5,13 @@ import { DataTable, type DataTableColumn } from "@/components/DataTable";
 import { Legend } from "@/components/Legend";
 import { RiskBadge } from "@/components/RiskBadge";
 import { StatTile } from "@/components/StatTile";
+import { WRCI_ELEVATED_THRESHOLD, WRCI_HIGH_THRESHOLD } from "@/config";
+import { useScrollRestore } from "@/hooks/usePageState";
 import { fetchJson, formatNumber, formatPercent } from "@/lib/utils";
 import type { WellRecord, WellsPayload } from "@/types/wells";
 
 export function PortfolioDashboard() {
+  useScrollRestore();
   const [payload, setPayload] = useState<WellsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -167,6 +170,8 @@ export function PortfolioDashboard() {
           rows={activeWells}
           rowKey={(row) => row.alias}
           caption="McKinlay horizontal well portfolio comparison"
+          stickyFirstColumn
+          stickyMinWidth="min-w-[10rem]"
         />
       </Card>
 
@@ -185,8 +190,12 @@ export function PortfolioDashboard() {
       <Legend
         title="Risk classification"
         items={[
-          { label: "High", color: "var(--risk-high)", description: "WRCI ≥ 66, ≥ 2 flags" },
-          { label: "Elevated", color: "var(--risk-elev)", description: "WRCI 40–66 or 1 flag" },
+          { label: "High", color: "var(--risk-high)", description: `WRCI ≥ ${WRCI_HIGH_THRESHOLD}` },
+          {
+            label: "Elevated",
+            color: "var(--risk-elev)",
+            description: `WRCI ${WRCI_ELEVATED_THRESHOLD}–${WRCI_HIGH_THRESHOLD} or flags`,
+          },
           { label: "Low", color: "var(--risk-low)", description: "Below thresholds" },
         ]}
       />
