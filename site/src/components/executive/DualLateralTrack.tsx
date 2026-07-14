@@ -5,6 +5,7 @@ import { fetchJson } from "@/lib/utils";
 import type { IntervalRecord, IsolationDepth } from "@/types/intervals";
 import type { TrajectoryPayload } from "@/types/trajectory";
 import type { WellRecord } from "@/types/wells";
+import type { ExclusionZone } from "@/types/zones";
 import { cn } from "@/lib/utils";
 
 const LATERAL_COLOURS: Record<string, string> = {
@@ -44,20 +45,29 @@ export function DualLateralTrack({
   showHigh = true,
 }: DualLateralTrackProps) {
   const [trajectories, setTrajectories] = useState<Record<string, TrajectoryPayload | null>>({});
+  const [zonesByAlias, setZonesByAlias] = useState<Record<string, ExclusionZone[]>>({});
 
   useEffect(() => {
     let cancelled = false;
     Promise.all(
       JENA31_DUAL_CONSTITUENTS.map((alias) =>
-        fetchJson<TrajectoryPayload>(`data/trajectory/${alias}.json`).catch(() => null),
+        Promise.all([
+          fetchJson<TrajectoryPayload>(`data/trajectory/${alias}.json`).catch(() => null),
+          fetchJson<{ zones: ExclusionZone[] }>(`data/zones/${alias}.json`)
+            .then((payload) => payload.zones)
+            .catch(() => []),
+        ]),
       ),
     ).then((results) => {
       if (cancelled) return;
-      const map: Record<string, TrajectoryPayload | null> = {};
+      const trajMap: Record<string, TrajectoryPayload | null> = {};
+      const zoneMap: Record<string, ExclusionZone[]> = {};
       JENA31_DUAL_CONSTITUENTS.forEach((alias, i) => {
-        map[alias] = results[i];
+        trajMap[alias] = results[i][0];
+        zoneMap[alias] = results[i][1];
       });
-      setTrajectories(map);
+      setTrajectories(trajMap);
+      setZonesByAlias(zoneMap);
     });
     return () => {
       cancelled = true;
@@ -73,17 +83,21 @@ export function DualLateralTrack({
           const mid = (band.top_md + band.bot_md) / 2;
           return mid >= dc30 && mid <= td;
         });
+        const lateralOb = (zonesByAlias[alias] ?? []).filter(
+          (zone) => zone.re_entry >= dc30 && zone.entry <= td,
+        );
         return {
           alias,
           display: alias === "JENA31" ? "JENA 31" : "JENA 31DW1",
           intervals: lateralIntervals,
           isolationDepths: lateralIso,
+          overburdenZones: lateralOb,
           trajectory: trajectories[alias] ?? null,
           dc30,
           td,
         };
       }),
-    [intervals, isolationDepths, trajectories, wells],
+    [intervals, isolationDepths, trajectories, zonesByAlias, wells],
   );
 
   const hasConcerns = intervals.some((iv) => iv.risk_class === "Elevated" || iv.risk_class === "High");
@@ -110,6 +124,7 @@ export function DualLateralTrack({
               label={lat.display}
               intervals={lat.intervals}
               isolationDepths={lat.isolationDepths}
+              overburdenZones={lat.overburdenZones}
               trajectory={lat.trajectory}
               owcMtvds={owcMtvds ?? lat.trajectory?.owc_mtvds}
               mdStart={lat.dc30}

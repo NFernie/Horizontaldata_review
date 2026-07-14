@@ -98,6 +98,11 @@ export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
           { label: "Hard floor (+3 m)", color: "var(--hard-floor-line)", description: "shallower than OWC" },
           { label: "Trajectory", color: "var(--trajectory-line)", description: "lateral well path" },
           {
+            label: "Overburden",
+            color: "var(--overburden-corridor)",
+            description: "Murta excursion along path",
+          },
+          {
             label: "Mechanical isolation",
             color: "var(--isolation-hatch-stripe)",
             description: "grey/white hatch along path corridor",

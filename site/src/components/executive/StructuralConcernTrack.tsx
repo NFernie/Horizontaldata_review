@@ -23,6 +23,7 @@ import {
 } from "@/lib/structuralChart";
 import type { IntervalRecord, IsolationDepth } from "@/types/intervals";
 import type { TrajectoryPayload } from "@/types/trajectory";
+import type { ExclusionZone } from "@/types/zones";
 import { cn } from "@/lib/utils";
 
 const MIN_PARENT_WIDTH = STRUCTURAL_CHART_WIDTH_MIN;
@@ -52,6 +53,7 @@ interface StructuralConcernTrackProps {
   label: string;
   intervals: IntervalRecord[];
   isolationDepths?: IsolationDepth[];
+  overburdenZones?: ExclusionZone[];
   trajectory: TrajectoryPayload | null;
   owcMtvds?: number | null;
   mdStart?: number;
@@ -72,6 +74,7 @@ export function StructuralConcernTrack({
   label,
   intervals,
   isolationDepths = [],
+  overburdenZones = [],
   trajectory,
   owcMtvds,
   mdStart,
@@ -343,6 +346,28 @@ export function StructuralConcernTrack({
             >
               OWC
             </text>
+
+            {overburdenZones.map((zone) => {
+              const corridor = isolationCorridorPath(
+                lateralStations.length ? lateralStations : stations,
+                zone.entry,
+                zone.re_entry,
+                chart.xScale,
+                chart.yScale,
+              );
+              if (!corridor) return null;
+              return (
+                <path
+                  key={`ob-${zone.entry}-${zone.re_entry}`}
+                  d={corridor}
+                  fill="var(--overburden-corridor)"
+                  fillOpacity="0.82"
+                  stroke="var(--overburden-corridor)"
+                  strokeOpacity="0.95"
+                  strokeWidth="1"
+                />
+              );
+            })}
 
             {isolationDepths.map((band) => {
               const corridor = isolationCorridorPath(

@@ -21,6 +21,7 @@ import type { IntervalsPayload } from "@/types/intervals";
 import type { TrajectoryPayload } from "@/types/trajectory";
 import type { ClustersPayload } from "@/types/stats";
 import type { WellRecord } from "@/types/wells";
+import type { ExclusionZone } from "@/types/zones";
 
 interface DualLateralPanelProps {
   wells: WellRecord[];
@@ -38,6 +39,13 @@ function wellWindow(wells: WellRecord[], alias: string) {
   };
 }
 
+function zonesInMdWindow(zones: ExclusionZone[], mdStart?: number, mdEnd?: number) {
+  if (mdStart == null || mdEnd == null) return zones;
+  const lo = Math.min(mdStart, mdEnd);
+  const hi = Math.max(mdStart, mdEnd);
+  return zones.filter((zone) => zone.re_entry >= lo && zone.entry <= hi);
+}
+
 export function DualLateralPanel({
   wells,
   clusters,
@@ -50,6 +58,7 @@ export function DualLateralPanel({
   const [focusData, setFocusData] = useState<IntervalsPayload | null>(null);
   const [compareData, setCompareData] = useState<IntervalsPayload | null>(null);
   const [compareTrajectory, setCompareTrajectory] = useState<TrajectoryPayload | null>(null);
+  const [compareZones, setCompareZones] = useState<ExclusionZone[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const initializedRef = useRef(false);
@@ -89,12 +98,16 @@ export function DualLateralPanel({
       fetchJson<IntervalsPayload>(`data/intervals/${JENA31_DUAL_ALIAS}.json`),
       fetchJson<IntervalsPayload>(`data/intervals/${compareAlias}.json`),
       fetchJson<TrajectoryPayload>(`data/trajectory/${compareAlias}.json`).catch(() => null),
+      fetchJson<{ zones: ExclusionZone[] }>(`data/zones/${compareAlias}.json`)
+        .then((payload) => payload.zones)
+        .catch(() => []),
     ])
-      .then(([focus, compare, compareTraj]) => {
+      .then(([focus, compare, compareTraj, compareOb]) => {
         if (cancelled) return;
         setFocusData(focus);
         setCompareData(compare);
         setCompareTrajectory(compareTraj);
+        setCompareZones(compareOb);
       })
       .catch((err: Error) => {
         if (cancelled) return;
@@ -173,6 +186,11 @@ export function DualLateralPanel({
           owcMtvds={compareData?.owc_mtvds}
           mdStart={compareWindow.mdStart}
           mdEnd={compareWindow.mdEnd}
+          overburdenZones={zonesInMdWindow(
+            compareZones,
+            compareWindow.mdStart,
+            compareWindow.mdEnd,
+          )}
           showElevated={showElevated}
           showHigh={showHigh}
         />

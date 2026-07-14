@@ -31,6 +31,7 @@
   --owc-line: #38bdf8;
   --hard-floor-line: #fbbf24;
   --trajectory-line: color-mix(in srgb, var(--accent) 65%, var(--text-muted));
+  --overburden-corridor: #166534;
   --metric-border-alpha: 0.35;
   --radius-card: 12px;
   --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4);
