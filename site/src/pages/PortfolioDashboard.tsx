@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { Card } from "@/components/Card";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
+import { ExecutiveSummary } from "@/components/executive/ExecutiveSummary";
 import { Legend } from "@/components/Legend";
 import { RiskBadge } from "@/components/RiskBadge";
 import { StatTile } from "@/components/StatTile";
@@ -15,6 +16,7 @@ export function PortfolioDashboard() {
   const [payload, setPayload] = useState<WellsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [tableOpen, setTableOpen] = useState(false);
 
   useEffect(() => {
     fetchJson<WellsPayload>("data/wells.json")
@@ -133,10 +135,12 @@ export function PortfolioDashboard() {
       <header>
         <h1 className="text-xl font-semibold text-text sm:text-2xl">Portfolio Dashboard</h1>
         <p className="mt-1 max-w-3xl text-sm text-text-muted">
-          McKinlay Member horizontal wells — pay coverage, water-risk counts, and lateral extent.
+          McKinlay Member horizontal wells — executive concern hub, pay coverage, and lateral extent.
           Data generated {payload?.generated ?? "—"}.
         </p>
       </header>
+
+      <ExecutiveSummary wells={activeWells} />
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatTile label="Active wells" value={activeWells.length} hint="Excludes data-missing" />
@@ -161,18 +165,35 @@ export function PortfolioDashboard() {
         />
       </div>
 
-      <Card
-        title="Well comparison"
-        description={`${activeWells.length} wells with McKinlay interval statistics`}
-      >
-        <DataTable
-          columns={columns}
-          rows={activeWells}
-          rowKey={(row) => row.alias}
-          caption="McKinlay horizontal well portfolio comparison"
-          stickyFirstColumn
-          stickyMinWidth="min-w-[10rem]"
-        />
+      <Card className="p-0">
+        <button
+          type="button"
+          onClick={() => setTableOpen((open) => !open)}
+          aria-expanded={tableOpen}
+          className="flex w-full cursor-pointer items-center justify-between rounded-card px-4 py-4 text-left transition-colors hover:bg-surface-2/60 sm:px-5"
+        >
+          <div>
+            <h2 className="text-lg font-semibold text-text">Full portfolio table</h2>
+            <p className="mt-1 text-sm text-text-muted">
+              {activeWells.length} wells with McKinlay interval statistics
+            </p>
+          </div>
+          <span className="text-accent" aria-hidden>
+            {tableOpen ? "▾" : "▸"}
+          </span>
+        </button>
+        {tableOpen ? (
+          <div className="border-t border-border px-4 pb-4 pt-2 sm:px-5">
+            <DataTable
+              columns={columns}
+              rows={activeWells}
+              rowKey={(row) => row.alias}
+              caption="McKinlay horizontal well portfolio comparison"
+              stickyFirstColumn
+              stickyMinWidth="min-w-[10rem]"
+            />
+          </div>
+        ) : null}
       </Card>
 
       {missingWells.length > 0 ? (
