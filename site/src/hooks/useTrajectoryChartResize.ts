@@ -2,6 +2,8 @@ import { useCallback, useEffect, useMemo, useState, type PointerEvent as ReactPo
 import {
   STRUCTURAL_CHART_HEIGHT_MAX,
   STRUCTURAL_CHART_HEIGHT_MIN,
+  STRUCTURAL_CHART_WIDTH_MAX,
+  STRUCTURAL_CHART_WIDTH_MIN,
   defaultChartHeight,
 } from "@/lib/structuralChart";
 
@@ -9,7 +11,11 @@ function clamp(n: number, lo: number, hi: number) {
   return Math.max(lo, Math.min(hi, n));
 }
 
-function readStoredHeight(key: string | undefined): number | null {
+function storageSuffix(key: string | undefined, dim: "w" | "h") {
+  return key ? `${key}:${dim}` : undefined;
+}
+
+function readStored(key: string | undefined): number | null {
   if (!key) return null;
   try {
     const raw = sessionStorage.getItem(key);
@@ -21,7 +27,13 @@ function readStoredHeight(key: string | undefined): number | null {
   }
 }
 
-function writeStoredHeight(key: string | undefined, value: number | null) {
+function readStoredHeight(heightKey: string | undefined, legacyKey: string | undefined): number | null {
+  const stored = readStored(heightKey);
+  if (stored != null) return stored;
+  return readStored(legacyKey);
+}
+
+function writeStored(key: string | undefined, value: number | null) {
   if (!key) return;
   try {
     if (value == null) sessionStorage.removeItem(key);
@@ -31,36 +43,54 @@ function writeStoredHeight(key: string | undefined, value: number | null) {
   }
 }
 
-export function useTrajectoryChartResize(storageKey: string | undefined, containerWidth: number) {
-  const autoHeight = useMemo(
-    () => defaultChartHeight(containerWidth),
-    [containerWidth],
-  );
+export function useTrajectoryChartResize(storageKey: string | undefined, parentWidth: number) {
+  const widthKey = storageSuffix(storageKey, "w");
+  const heightKey = storageSuffix(storageKey, "h");
 
-  const [override, setOverride] = useState<number | null>(() => {
-    const stored = readStoredHeight(storageKey);
+  const [widthOverride, setWidthOverride] = useState<number | null>(() => {
+    const stored = readStored(widthKey);
+    if (stored == null) return null;
+    return clamp(stored, STRUCTURAL_CHART_WIDTH_MIN, STRUCTURAL_CHART_WIDTH_MAX);
+  });
+
+  const [heightOverride, setHeightOverride] = useState<number | null>(() => {
+    const stored = readStoredHeight(heightKey, storageKey);
     if (stored == null) return null;
     return clamp(stored, STRUCTURAL_CHART_HEIGHT_MIN, STRUCTURAL_CHART_HEIGHT_MAX);
   });
 
-  const chartHeight = override ?? autoHeight;
-  const isCustomized = override != null;
+  const chartWidth = widthOverride ?? Math.max(STRUCTURAL_CHART_WIDTH_MIN, parentWidth);
+  const autoHeight = useMemo(() => defaultChartHeight(chartWidth), [chartWidth]);
+  const chartHeight = heightOverride ?? autoHeight;
+  const isCustomized = widthOverride != null || heightOverride != null;
+
+  const setChartWidth = useCallback(
+    (next: number) => {
+      const clamped = clamp(next, STRUCTURAL_CHART_WIDTH_MIN, STRUCTURAL_CHART_WIDTH_MAX);
+      setWidthOverride(clamped);
+      writeStored(widthKey, clamped);
+    },
+    [widthKey],
+  );
 
   const setChartHeight = useCallback(
     (next: number) => {
       const clamped = clamp(next, STRUCTURAL_CHART_HEIGHT_MIN, STRUCTURAL_CHART_HEIGHT_MAX);
-      setOverride(clamped);
-      writeStoredHeight(storageKey, clamped);
+      setHeightOverride(clamped);
+      writeStored(heightKey, clamped);
     },
-    [storageKey],
+    [heightKey],
   );
 
-  const resetChartHeight = useCallback(() => {
-    setOverride(null);
-    writeStoredHeight(storageKey, null);
-  }, [storageKey]);
+  const resetChartSize = useCallback(() => {
+    setWidthOverride(null);
+    setHeightOverride(null);
+    writeStored(widthKey, null);
+    writeStored(heightKey, null);
+    writeStored(storageKey, null);
+  }, [widthKey, heightKey, storageKey]);
 
-  const onResizePointerDown = useCallback(
+  const onResizeHeightPointerDown = useCallback(
     (event: ReactPointerEvent<HTMLButtonElement>) => {
       event.preventDefault();
       const startY = event.clientY;
@@ -81,18 +111,75 @@ export function useTrajectoryChartResize(storageKey: string | undefined, contain
     [chartHeight, setChartHeight],
   );
 
+  const onResizeWidthPointerDown = useCallback(
+    (event: ReactPointerEvent<HTMLButtonElement>) => {
+      event.preventDefault();
+      const startX = event.clientX;
+      const startWidth = chartWidth;
+
+      const onMove = (moveEvent: PointerEvent) => {
+        setChartWidth(startWidth + (moveEvent.clientX - startX));
+      };
+
+      const onUp = () => {
+        window.removeEventListener("pointermove", onMove);
+        window.removeEventListener("pointerup", onUp);
+      };
+
+      window.addEventListener("pointermove", onMove);
+      window.addEventListener("pointerup", onUp);
+    },
+    [chartWidth, setChartWidth],
+  );
+
+  const onResizeCornerPointerDown = useCallback(
+    (event: ReactPointerEvent<HTMLButtonElement>) => {
+      event.preventDefault();
+      const startX = event.clientX;
+      const startY = event.clientY;
+      const startWidth = chartWidth;
+      const startHeight = chartHeight;
+
+      const onMove = (moveEvent: PointerEvent) => {
+        setChartWidth(startWidth + (moveEvent.clientX - startX));
+        setChartHeight(startHeight + (moveEvent.clientY - startY));
+      };
+
+      const onUp = () => {
+        window.removeEventListener("pointermove", onMove);
+        window.removeEventListener("pointerup", onUp);
+      };
+
+      window.addEventListener("pointermove", onMove);
+      window.addEventListener("pointerup", onUp);
+    },
+    [chartWidth, chartHeight, setChartWidth, setChartHeight],
+  );
+
   useEffect(() => {
-    if (override == null) return;
-    const clamped = clamp(override, STRUCTURAL_CHART_HEIGHT_MIN, STRUCTURAL_CHART_HEIGHT_MAX);
-    if (clamped !== override) setOverride(clamped);
-  }, [override]);
+    if (widthOverride == null) return;
+    const clamped = clamp(widthOverride, STRUCTURAL_CHART_WIDTH_MIN, STRUCTURAL_CHART_WIDTH_MAX);
+    if (clamped !== widthOverride) setWidthOverride(clamped);
+  }, [widthOverride]);
+
+  useEffect(() => {
+    if (heightOverride == null) return;
+    const clamped = clamp(heightOverride, STRUCTURAL_CHART_HEIGHT_MIN, STRUCTURAL_CHART_HEIGHT_MAX);
+    if (clamped !== heightOverride) setHeightOverride(clamped);
+  }, [heightOverride]);
 
   return {
+    chartWidth,
     chartHeight,
+    setChartWidth,
     setChartHeight,
-    resetChartHeight,
+    resetChartSize,
     isCustomized,
-    onResizePointerDown,
+    onResizeHeightPointerDown,
+    onResizeWidthPointerDown,
+    onResizeCornerPointerDown,
+    minWidth: STRUCTURAL_CHART_WIDTH_MIN,
+    maxWidth: STRUCTURAL_CHART_WIDTH_MAX,
     minHeight: STRUCTURAL_CHART_HEIGHT_MIN,
     maxHeight: STRUCTURAL_CHART_HEIGHT_MAX,
   };

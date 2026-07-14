@@ -12,6 +12,8 @@ export const STRUCTURAL_MIN_PLOT_HEIGHT = 100;
 export const STRUCTURAL_PLOT_ASPECT = 3.2;
 export const STRUCTURAL_CHART_HEIGHT_MIN = 120;
 export const STRUCTURAL_CHART_HEIGHT_MAX = 480;
+export const STRUCTURAL_CHART_WIDTH_MIN = 280;
+export const STRUCTURAL_CHART_WIDTH_MAX = 1400;
 export const STRUCTURAL_CORRIDOR_HALF_WIDTH = 10;
 /** Tick labels — 33% smaller than original 13px. */
 export const STRUCTURAL_MIN_TICK_FONT = 9;
