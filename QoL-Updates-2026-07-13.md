@@ -355,18 +355,31 @@ Replace the portfolio-only landing experience with a **graphic-first Executive S
   - *"vs STIMPEE 7 (J=1.0): 23 elevated; 3 isolated concern zones at 2100–2150 m MD."*
 - CTA: Water-Risk Explorer with focus well pre-selected (`sessionStorage` keys from `useWellSelection.ts`).
 
-> **Phase D update:** Panels A/B/C switch analog ranking from **Jaccard** to **hierarchical-clustering cosine similarity** (`stats/clusters.json`). Jaccard heatmaps remain on `/compare`; executive summary uses cluster neighbours.
+> **Phase D update (incremental — does not replace Phase C layout):** Keep the existing executive comparison panels (focus track + comparison track, depth/risk-flag plot, stat tiles, portfolio strip, table). **Only change:** the **comparison (non-focus) well dropdown** is ranked by **hierarchical-clustering cosine similarity** instead of Jaccard. **Add:** Panel C (`JENA31_DUAL`) and the **distribution histogram** panel. Jaccard heatmaps remain on `/compare`.
 
 ---
 
 ## 5. Phase D — Dual lateral Jena, clustering analogs & distribution histograms
 
+### 5.0 Scope — what changes vs what stays
+
+| Stays the same (Phase C layout) | Changes in Phase D |
+|--------------------------------|-------------------|
+| Hero executive section above portfolio table | — |
+| Panels A/B: focus well + side-by-side **depth / concern-zone tracks** with risk-flag markers | Comparison-well dropdown **ranking method** only |
+| Stat tiles (elevated, high, isolated / non-isolated) | Badge shows **cosine sim** instead of Jaccard **J** |
+| Portfolio elevated strip + collapsible well table | `JENA31_DUAL` row + badge on strip |
+| Isolation band overlay on MD tracks | Panel C dual-lateral **colour-by-lateral** on single MD axis |
+| — | **New:** distribution histogram panel (Well A / Well B / property) |
+
+**Do not** redesign or remove the Phase C panel structure. Phase D is an **additive + comparison-method swap**, not a layout replacement.
+
 ### 5.1 Objective
 
-1. **Panel C (Executive Summary):** Treat **JENA 31 + JENA 31DW1** as one **dual-lateral virtual well** (single wellhead, shared production) and compare it to its **closest cluster analogue** — same layout as Panels A/B.
-2. **Pipeline:** Export merged statistics for alias **`JENA31_DUAL`** without adding it to Well Detail or Water-Risk Explorer pickers.
-3. **Analog source:** Replace Jaccard-based executive comparison with **cosine similarity** from hierarchical clustering (`clusters.json` → `cosine_similarity` matrix).
-4. **Distribution panel:** New executive module — pick **Well A**, **Well B**, and a **property**; render overlaid or side-by-side **histograms** of interval-level distributions.
+1. **Panel C (Executive Summary):** Add **`JENA31_DUAL`** — merged JENA 31 + JENA 31DW1 (single wellhead, shared production) — **same panel anatomy as A/B**, compared to its top **cluster cosine** neighbour.
+2. **Pipeline:** Export virtual well **`JENA31_DUAL`** without adding it to Well Detail or Water-Risk Explorer pickers.
+3. **Comparison well dropdown (Panels A/B/C):** Options **ordered by cluster cosine similarity** (`clusters.json` → `cosine_similarity`), not Jaccard. User can still pick any well; list default sort = cluster rank.
+4. **Distribution panel (new):** Below panels — **Well A**, **Well B**, **property** → histogram of interval-level distributions.
 
 ### 5.2 Virtual well `JENA31_DUAL`
 
@@ -382,7 +395,7 @@ Replace the portfolio-only landing experience with a **graphic-first Executive S
 
 1. Concatenate enriched intervals from JENA31 + JENA31DW1 (preserve `source_lateral` field: `"JENA31"` \| `"JENA31DW1"` on each interval).
 2. Write `site/public/data/intervals/JENA31_DUAL.json`, `water_risk/JENA31_DUAL.json`, `zones/JENA31_DUAL.json` (zones = union of both).
-3. Append row to `wells.json` with aggregated counts (`elevated_risk_count`, `high_risk_count`, `pay_pct` weighted by lateral length, etc.).
+3. Append row to `wells.json` with aggregated counts. **`pay_pct` = sum(pay MD) / sum(lateral length)** across both constituents (not a length-weighted average of individual pay %).
 4. Recompute inter-well stats to include `JENA31_DUAL` in:
    - `stats/clusters.json` (feature vector + cosine matrix + `cluster_ids`)
    - `stats/jaccard.json` (optional — for `/compare` only)
@@ -391,49 +404,74 @@ Replace the portfolio-only landing experience with a **graphic-first Executive S
 
 **UI exclusion:** `useWells({ includeDualLateral: false })` on Well Detail + Water-Risk; `includeDualLateral: true` on Executive Summary + Compare + histogram panel.
 
-### 5.3 Executive layout after Phase D
+### 5.3 Executive layout after Phase D *(extends Phase C — not a replacement)*
+
+Phase C wireframe (§4.2) remains the base. Phase D **adds** Panel C + histogram and **updates** the comparison dropdown label/sort:
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│  PANEL A — Focus JENA31    vs cluster analog (cosine sim)               │
-│  PANEL B — Focus JENA31DW1 vs cluster analog                            │
-│  PANEL C — Focus JENA31_DUAL vs cluster analog   ← dual lateral         │
+│  McKinlay Water-Risk Review — Executive Summary        [unchanged hero] │
 ├──────────────────────────────────────────────────────────────────────────┤
-│  DISTRIBUTION COMPARISON                                                  │
-│  Well A [▼]  Well B [▼]  Property [▼]   [histogram chart]                │
-│  Properties: pct_ss, grain_ordinal, avg_GR, avg_RES_DEEP, fluor, gas,   │
-│              RQI, WRCI (from intervals JSON; align with KS_PROPERTIES)    │
+│  PANEL A (Phase C layout preserved)                                      │
+│  Focus: [JENA 31 ▼]     Compare: [STIMPEE 7 ▼]   cos=0.75  ← cluster  │
+│  ┌─ Focus — MD concern track ─────┐ ┌─ Compare — MD concern track ────┐ │
+│  │ Elevated/High markers, flags   │ │ Same plot style as Phase C      │ │
+│  │ isolation bands (high contrast)│ │ Dropdown sorted by cluster rank │ │
+│  └────────────────────────────────┘ └─────────────────────────────────┘ │
+│  Stat tiles unchanged                                                    │
 ├──────────────────────────────────────────────────────────────────────────┤
-│  Portfolio strip + table (unchanged)                                    │
+│  PANEL B — same layout; focus JENA31DW1; compare well from cluster list  │
+├──────────────────────────────────────────────────────────────────────────┤
+│  PANEL C — NEW; focus JENA31_DUAL                                        │
+│  Single MD track: colour-by-lateral (JENA31 vs JENA31DW1) + compare track│
+├──────────────────────────────────────────────────────────────────────────┤
+│  DISTRIBUTION COMPARISON — NEW (below panels)                            │
+│  Well A [JENA31 ▼]  Well B [JENA31_DUAL ▼]  Property [RQI ▼]          │
+│  [histogram — default as stakeholder specified]                          │
+├──────────────────────────────────────────────────────────────────────────┤
+│  Portfolio strip + table (unchanged from Phase C)                        │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 5.4 Cluster analog selection (replaces Jaccard on executive)
+**Panel C dual-lateral track (stakeholder decision):** **One MD axis**; interval markers / fill **coloured by `source_lateral`** (`JENA31` vs `JENA31DW1`). Legend: two lateral colours + concern markers + isolation bands.
+
+### 5.4 Cluster comparison dropdown (executive only — replaces Jaccard sort)
 
 ```ts
 // site/src/lib/clusterAnalogs.ts
 rankClusterAnalogs(focusAlias, clustersPayload) → { alias, cosine }[]
-// Sort cosine_similarity[focusIdx][j] descending; exclude self; skip dual_lateral=false only
+// Sort cosine_similarity[focusIdx][j] descending; exclude self
+// Dropdown: default option [0]; full well list sorted by cosine (cluster order)
 ```
 
-Default analog label: `STIMPEE 7 (cos=0.75)` not `J = 1.00`.
+- **Badge:** `STIMPEE 7 (cos=0.75)` — not `J = 1.00`
+- **Jaccard** remains on `/compare` heatmaps only; executive comparison dropdown uses **cluster cosine**
 
 ### 5.5 Distribution histogram panel
 
-| Control | Source |
-|---------|--------|
-| Well A / B | All wells **including** `JENA31_DUAL`; exclude `data_missing` |
-| Property | `DIST_HISTOGRAM_PROPERTIES` in `config.ts` — mirror `KS_PROPERTIES` + `RQI`, `WRCI` |
-| Chart | Recharts `BarChart` or SVG bins (12–20 bins, auto domain from data) |
-| Legend | Colour by well; show n per well |
+| Control | Source | Default (stakeholder) |
+|---------|--------|---------------------|
+| Well A / B | All wells **including** `JENA31_DUAL`; exclude `data_missing` | **JENA31** vs **JENA31_DUAL** |
+| Property | `DIST_HISTOGRAM_PROPERTIES` in `config.ts` — `KS_PROPERTIES` + `RQI`, `WRCI` | **RQI** |
+| Chart | Recharts `BarChart` or SVG bins (12–20 bins, auto domain) | Overlaid or grouped bars |
+| Legend | Colour by well; show n per well | — |
 
-Place on **`/` Executive Summary** below Panel C (or collapsible **Methods — distribution comparison** card on same page).
+Place **below Panel C** on `/` Executive Summary (new card; does not displace existing panels).
 
-### 5.6 Acceptance
+### 5.6 Stakeholder decisions (locked)
 
-- `JENA31_DUAL` appears in `wells.json`, `clusters.json`, executive Panel C — **not** in Well Detail / Water-Risk dropdowns.
-- Panels A/B/C default analogs from `cluster_analog_ranking` / cosine matrix.
-- Histogram renders JENA31 vs JENA31_DUAL for `WRCI` without errors.
+| Question | Decision |
+|----------|----------|
+| `JENA31_DUAL` pay % | **Sum pay MD ÷ sum lateral** across both laterals |
+| Histogram defaults | Well A = **JENA31**, Well B = **JENA31_DUAL**, property = **RQI** |
+| Dual-lateral MD axis | **Single MD track**, **colour by lateral** (`source_lateral`) |
+
+### 5.7 Acceptance
+
+- Phase C executive layout **still present**; comparison dropdown uses cluster cosine ordering.
+- `JENA31_DUAL` in `wells.json`, `clusters.json`, Panel C — **not** in Well Detail / Water-Risk dropdowns.
+- Panel C shows single MD track with JENA31 vs JENA31DW1 colours.
+- Histogram defaults: JENA31 vs JENA31_DUAL, property RQI.
 - Deploy pipeline regenerates dual-lateral JSON when `scripts/**` changes.
 
 ---
@@ -512,7 +550,7 @@ Apply on executive concern tracks, intersection view (B1), and optional Well Det
 | **B1** | Intersection — trajectory + flags + OWC + isolation (no grid) | `phase-b1-design.md` | 1 session | **No** |
 | **B2** | Grid overlay + separation | `phase-b2-design.md` | 1 session | **Yes** — grid XYZ pending |
 | **C** | Executive Analog Concern Hub (Jaccard analogs — superseded by D for ranking) | `phase-c-design.md` | 1 session | **No** |
-| **D** | `JENA31_DUAL` pipeline + Panel C + cluster analogs + histogram | `phase-d-design.md` | 1 session | **No** |
+| **D** | Add Panel C + histogram; cluster comparison dropdown (keep Phase C layout) | `phase-d-design.md` | 1 session | **No** |
 | **E** | Readability & popovers (site-wide) | — | **1 combined session** | **No** |
 
 **Recommended session order:**
@@ -649,13 +687,13 @@ Load UI/UX Pro Max skill. Run:
   python3 .cursor/skills/ui-ux-pro-max/scripts/search.py "dual well comparison histogram clustering analytics dashboard" --design-system -p "McKinlay Phase D"
 
 Deliver: docs/qol-design/phase-d-design.md containing:
-1. Panel C wireframe — JENA31_DUAL vs cluster analog (same anatomy as A/B)
-2. Dual-lateral track encoding — colour or lane for JENA31 vs JENA31DW1 intervals on combined track
-3. Cluster analog dropdown — cosine score label format; reset rules when focus changes
-4. Distribution comparison panel — Well A/B/property controls, histogram layout (overlay vs grouped bars), bin count, legend
-5. wells.json row treatment for JENA31_DUAL in portfolio strip (badge "Dual lateral")
-6. Data contract for cluster_analog_ranking.json and intervals source_lateral field
-7. Exclusion rules — where JENA31_DUAL must NOT appear (Well Detail, Water-Risk)
+1. **Explicit:** Phase C panel layout is preserved — document what is additive only
+2. Panel C wireframe — JENA31_DUAL; **single MD track, colour-by-lateral** + compare track (cluster dropdown)
+3. Comparison-well dropdown — sorted by **cluster cosine**; badge format `cos=0.75`; pluggable ranking helper
+4. Distribution panel — defaults: JENA31 vs JENA31_DUAL, property **RQI**; histogram layout
+5. `pay_pct` for JENA31_DUAL: **sum pay MD / sum lateral**
+6. `source_lateral` colour legend for dual-lateral track
+7. Exclusion rules — JENA31_DUAL not in Well Detail / Water-Risk
 
 Commit design doc to main only.
 ```
@@ -792,13 +830,17 @@ Pipeline:
 5. Hook into deploy pipeline (scripts/** path filter already covers this)
 
 Site:
-6. Panel C on executive summary — focus JENA31_DUAL, default top cosine analog
-7. Switch Panels A/B/C analog ranking from Jaccard to cluster cosine (site/src/lib/clusterAnalogs.ts)
-8. Distribution histogram panel — Well A, Well B, property select; Recharts histogram from intervals JSON
-9. useWells({ includeDualLateral: false }) on Well Detail + Water-Risk; true on executive + compare + histogram
-10. Portfolio strip highlights JENA31_DUAL with dual-lateral badge
+6. **Preserve** Phase C executive layout — do not replace panels A/B
+7. Add Panel C — focus JENA31_DUAL; **single MD track coloured by source_lateral**; compare track + cluster-sorted dropdown
+8. Panels A/B/C: comparison-well dropdown **ordered by cluster cosine** (site/src/lib/clusterAnalogs.ts); badge `cos=` not `J=`
+9. Distribution histogram — defaults: Well A **JENA31**, Well B **JENA31_DUAL**, property **RQI**
+10. useWells({ includeDualLateral: false }) on Well Detail + Water-Risk; true on executive + histogram
+11. Portfolio strip: JENA31_DUAL badge "Dual lateral"
+
+pay_pct for JENA31_DUAL: sum(constituent pay MD) / sum(constituent lateral length).
 
 Constraints:
+- Do NOT replace or redesign Phase C executive panel structure
 - Do NOT add JENA31_DUAL to Well Detail or Water-Risk Explorer dropdowns
 - npm test && npm run build; run export_web_data.py locally to validate JSON
 - python3 scripts/test_zoi.py scripts/test_owc.py as smoke tests
@@ -870,11 +912,27 @@ Commit to main.
 3. **Geosteering_Guide:** Which files to copy into this repo for intersection projection?  
 4. **Grid delivery format:** CSV XYZ, GeoJSON, or Petrel export?  
 5. **Hard floor +3 m:** Confirm **−1195 m TVDss** when OWC = −1198.  
-6. **Phase C analog ranking:** Generalise Jaccard ranking to any focus well at runtime, or precompute in export? (**Superseded by Phase D** — use cosine from `clusters.json`.)  
-7. **Intersection default well:** JENA31 on first load?  
-8. **JENA31_DUAL pay %:** Length-weighted average of both laterals, or sum pay MD / sum lateral?  
-9. **Histogram default wells:** JENA31 vs JENA31_DUAL with property WRCI?  
-10. **Dual-lateral MD axis:** Single MD track with colour-by-lateral, or normalised lateral position (0–1)?
+6. **Intersection default well:** JENA31 on first load?
+
+### Resolved (Phase D — 2026-07-14)
+
+| Question | Decision |
+|----------|----------|
+| Replace executive layout? | **No** — keep Phase C; swap comparison ranking + add Panel C + histogram |
+| `JENA31_DUAL` pay % | Sum pay MD ÷ sum lateral |
+| Histogram defaults | JENA31 vs JENA31_DUAL, property **RQI** |
+| Dual-lateral MD axis | Single MD track, colour by lateral |
+
+---
+
+## 12. Jaccard vs cluster cosine — what each compares
+
+| Method | What it compares | **Not** the same as |
+|--------|------------------|---------------------|
+| **Jaccard** (Method 4) | Whether two wells share the same **binary feature vocabulary** — each feature (e.g. `ZOI`, `lowres_over_good`, `good_rock`) is “on” if it fires on ≥10% of that well’s intervals. \(J = \|A \cap B\| / \|A \cup B\|\). | **Count of elevated zones** — a well with 57 elevated intervals and one with 10 can still score \(J=1\) if the same feature *types* are present often enough. |
+| **Cluster cosine** (Method 5) | **Continuous aggregate well properties** after standardisation: mean %SS, mean GR, mean RES_DEEP, pay %, mean WRCI, % high risk, % ZOI, etc. Cosine similarity = angle between these 8-D vectors. | Flag-by-flag identity — two wells can have similar *average* petrophysics but different flag patterns. |
+
+**Executive summary (Phase D):** use **cluster cosine** for the comparison-well dropdown — “which well has the most similar **overall property fingerprint**?” Jaccard stays on **`/compare`** for “which well shows the same **kinds of risk features**?”
 
 ---
 
@@ -905,4 +963,4 @@ Commit to main.
 |------|--------|
 | 2026-07-13 | Initial QoL + intersection + executive summary plan |
 | 2026-07-14 | Design→Implement workflow; UI/UX Pro Max; Phase A5 methodology dropdown; Phase C reimagined as Analog Concern Hub; separate design/impl prompts; updated Jena stats + isolation |
-| 2026-07-14b | Phase D (JENA31_DUAL, cluster analogs, histogram); Phase E combined readability prompt; executive clustering switch; popover + isolation contrast specs |
+| 2026-07-14c | Phase D clarified: preserve Phase C layout; cluster dropdown only; locked pay/histogram/MD-axis decisions; Jaccard vs cosine explainer |
