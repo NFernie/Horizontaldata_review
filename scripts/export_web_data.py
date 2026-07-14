@@ -37,6 +37,7 @@ from owc import (  # noqa: E402
     owc_severity,
 )
 from isolation import attach_isolation, load_isolation_by_alias  # noqa: E402
+from trajectory import load_trajectory_stations  # noqa: E402
 from process_mckinlay_wells import (  # noqa: E402
     WELLS,
     process_well,
@@ -832,6 +833,46 @@ def write_dual_well_json(alias, dual_meta, dual_rows, isolation_depths):
     )
 
 
+def export_trajectory_json(cfg, meta):
+    """Export well trajectory stations for structural executive tracks (Phase F / B1)."""
+    traj_file = cfg.get("trajectory")
+    if not traj_file:
+        return
+
+    alias = cfg["alias"]
+    stations = load_trajectory_stations(traj_file)
+    owc_mtvds = owc_for_alias(alias)
+    hard_floor = (owc_mtvds + 3.0) if owc_mtvds is not None else None
+
+    write_json(
+        os.path.join(DATA_ROOT, "trajectory", f"{alias}.json"),
+        {
+            "alias": alias,
+            "field": field_for_alias(alias),
+            "owc_mtvds": clean_scalar(owc_mtvds),
+            "hard_floor_mtvds": clean_scalar(hard_floor),
+            "stations": [
+                {
+                    "md": round(s["md"], 4),
+                    "mtvds": round(s["mtvds"], 4),
+                    **(
+                        {"x": round(s["x"], 4), "y": round(s["y"], 4)}
+                        if "x" in s and "y" in s
+                        else {}
+                    ),
+                    **({"incl": round(s["incl"], 4)} if "incl" in s else {}),
+                }
+                for s in stations
+            ],
+            "lateral_window": {
+                "md_start": round(float(meta["dc30_top"]), 2),
+                "md_end": round(float(meta["mck_end"]), 2),
+                "incl_min": 80,
+            },
+        },
+    )
+
+
 def main():
     dc30_df = pd.read_excel(os.path.join(WORKSPACE, "DC30.xlsx"))
     mck_murta_df = pd.read_excel(os.path.join(WORKSPACE, "Mck_Murta.xlsx"))
@@ -909,6 +950,8 @@ def main():
                 "flagged_zones": water_risk_payload(rows),
             },
         )
+
+        export_trajectory_json(cfg, meta)
 
     meta_by_alias = {m["cfg"]["alias"]: m for m in well_metas}
 

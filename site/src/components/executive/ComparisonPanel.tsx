@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { WellSelect } from "@/components/WellSelect";
 import { StatTile } from "@/components/StatTile";
 import { CompareWellSelect } from "@/components/executive/CompareWellSelect";
-import { ConcernTrack } from "@/components/executive/ConcernTrack";
+import { StructuralConcernTrack } from "@/components/executive/StructuralConcernTrack";
 import {
   computeConcernStats,
   formatCompareBullet,
@@ -16,6 +16,7 @@ import {
 import { pageStateKey, usePersistedState } from "@/hooks/usePageState";
 import { fetchJson } from "@/lib/utils";
 import type { IntervalsPayload } from "@/types/intervals";
+import type { TrajectoryPayload } from "@/types/trajectory";
 import type { ClustersPayload } from "@/types/stats";
 import type { WellRecord } from "@/types/wells";
 
@@ -25,6 +26,14 @@ interface ComparisonPanelProps {
   wells: WellRecord[];
   clusters: ClustersPayload;
   onSelectionChange?: (focus: string, compare: string) => void;
+}
+
+function wellWindow(wells: WellRecord[], alias: string) {
+  const well = wells.find((w) => w.alias === alias);
+  return {
+    mdStart: well?.dc30 ?? undefined,
+    mdEnd: well?.td ?? undefined,
+  };
 }
 
 export function ComparisonPanel({
@@ -41,6 +50,8 @@ export function ComparisonPanel({
   const [compareAlias, setCompareAlias] = usePersistedState(compareKey, "");
   const [focusData, setFocusData] = useState<IntervalsPayload | null>(null);
   const [compareData, setCompareData] = useState<IntervalsPayload | null>(null);
+  const [focusTrajectory, setFocusTrajectory] = useState<TrajectoryPayload | null>(null);
+  const [compareTrajectory, setCompareTrajectory] = useState<TrajectoryPayload | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const prevFocusRef = useRef(focusAlias);
@@ -84,11 +95,15 @@ export function ComparisonPanel({
     Promise.all([
       fetchJson<IntervalsPayload>(`data/intervals/${focusAlias}.json`),
       fetchJson<IntervalsPayload>(`data/intervals/${compareAlias}.json`),
+      fetchJson<TrajectoryPayload>(`data/trajectory/${focusAlias}.json`).catch(() => null),
+      fetchJson<TrajectoryPayload>(`data/trajectory/${compareAlias}.json`).catch(() => null),
     ])
-      .then(([focus, compare]) => {
+      .then(([focus, compare, focusTraj, compareTraj]) => {
         if (cancelled) return;
         setFocusData(focus);
         setCompareData(compare);
+        setFocusTrajectory(focusTraj);
+        setCompareTrajectory(compareTraj);
       })
       .catch((err: Error) => {
         if (cancelled) return;
@@ -116,6 +131,8 @@ export function ComparisonPanel({
   const compareDisplay = compareData?.display ?? compareAlias;
   const focusHasIso = (focusData?.isolation_depths?.length ?? 0) > 0;
   const compareHasIso = (compareData?.isolation_depths?.length ?? 0) > 0;
+  const focusWindow = wellWindow(wells, focusAlias);
+  const compareWindow = wellWindow(wells, compareAlias);
 
   const bullets = [
     formatConcernBullet(focusDisplay, focusStats, focusHasIso),
@@ -163,18 +180,26 @@ export function ComparisonPanel({
       </header>
 
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
-      {loading ? <p className="mb-3 text-sm text-text-muted">Loading concern tracks…</p> : null}
+      {loading ? <p className="mb-3 text-sm text-text-muted">Loading structural tracks…</p> : null}
 
       <div className="grid gap-6 max-md:grid-cols-1 md:grid-cols-2">
-        <ConcernTrack
+        <StructuralConcernTrack
           label={`Focus — ${focusDisplay}`}
           intervals={focusData?.intervals ?? []}
           isolationDepths={focusData?.isolation_depths}
+          trajectory={focusTrajectory}
+          owcMtvds={focusData?.owc_mtvds}
+          mdStart={focusWindow.mdStart}
+          mdEnd={focusWindow.mdEnd}
         />
-        <ConcernTrack
+        <StructuralConcernTrack
           label={`Compare — ${compareDisplay}`}
           intervals={compareData?.intervals ?? []}
           isolationDepths={compareData?.isolation_depths}
+          trajectory={compareTrajectory}
+          owcMtvds={compareData?.owc_mtvds}
+          mdStart={compareWindow.mdStart}
+          mdEnd={compareWindow.mdEnd}
         />
       </div>
 
