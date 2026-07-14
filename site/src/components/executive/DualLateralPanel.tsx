@@ -149,9 +149,8 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
       {loading ? <p className="mb-3 text-sm text-text-muted">Loading dual lateral tracks…</p> : null}
 
-      <div className="flex min-h-[420px] flex-col gap-3">
+      <div className="flex flex-col gap-4">
         <DualLateralTrack
-          className="min-h-0 flex-1"
           label="Dual lateral — colour by source"
           intervals={focusData?.intervals ?? []}
           wells={wells}
@@ -159,7 +158,6 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
           owcMtvds={focusData?.owc_mtvds}
         />
         <StructuralConcernTrack
-          className="min-h-0 flex-1"
           label={`Compare — ${compareDisplay}`}
           intervals={compareData?.intervals ?? []}
           isolationDepths={compareData?.isolation_depths}
