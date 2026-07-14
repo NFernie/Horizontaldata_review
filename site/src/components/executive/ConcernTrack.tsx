@@ -1,10 +1,16 @@
 import { useMemo } from "react";
-import type { IntervalRecord, IsolationDepth } from "@/types/intervals";
+import { FlagExplainContent } from "@/components/FlagExplainPopover";
+import { SvgPopoverAnchor } from "@/components/Popover";
+import { explainInterval } from "@/lib/flagExplain";
 import { isConcernInterval } from "@/lib/concernZones";
+import type { IntervalRecord, IsolationDepth } from "@/types/intervals";
 import { cn } from "@/lib/utils";
 
-const TRACK_HEIGHT = 56;
+const SVG_WIDTH = 320;
+const TRACK_HEIGHT = 120;
 const PADDING_X = 8;
+const BASELINE_Y = TRACK_HEIGHT + 12;
+const MARKER_Y = TRACK_HEIGHT - 36;
 
 interface ConcernTrackProps {
   label: string;
@@ -31,109 +37,113 @@ export function ConcernTrack({
   const hasConcerns = concerns.length > 0;
   const hasIsolation = isolationDepths.length > 0;
 
-  const toX = (md: number, width: number) => {
-    const inner = width - PADDING_X * 2;
+  const toX = (md: number) => {
+    const inner = SVG_WIDTH - PADDING_X * 2;
     const t = (md - depthMin) / (depthMax - depthMin || 1);
     return PADDING_X + t * inner;
   };
 
+  const viewHeight = BASELINE_Y + 28;
+
   return (
-    <div className={cn("rounded-card border border-border bg-surface-2 p-3", className)}>
-      <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-text-muted">{label}</p>
+    <div
+      className={cn(
+        "flex min-h-[280px] flex-col rounded-card border border-border bg-surface-2 p-4",
+        className,
+      )}
+    >
+      <p className="mb-3 text-sm font-semibold text-text">{label}</p>
 
       {!intervals.length ? (
-        <p className="py-6 text-center text-xs text-text-muted">No interval data</p>
+        <p className="flex flex-1 items-center justify-center text-sm text-text-muted">
+          No interval data
+        </p>
       ) : (
-        <div className="overflow-x-auto">
+        <div className="flex flex-1 flex-col justify-center overflow-x-auto">
           <svg
-            viewBox="0 0 320 88"
-            className="h-[88px] w-full min-w-[280px]"
+            viewBox={`0 0 ${SVG_WIDTH} ${viewHeight}`}
+            className="h-[140px] w-full min-w-[300px]"
             role="img"
             aria-label={`${label} concern zones along measured depth`}
           >
-            <defs>
-              <pattern
-                id={`iso-hatch-${label.replace(/\s+/g, "-")}`}
-                patternUnits="userSpaceOnUse"
-                width="6"
-                height="6"
-                patternTransform="rotate(45)"
-              >
-                <line
-                  x1="0"
-                  y1="0"
-                  x2="0"
-                  y2="6"
-                  stroke="rgba(147,161,176,0.55)"
-                  strokeWidth="2"
-                />
-              </pattern>
-            </defs>
-
-            {/* Baseline */}
             <line
               x1={PADDING_X}
-              y1={TRACK_HEIGHT}
-              x2={320 - PADDING_X}
-              y2={TRACK_HEIGHT}
+              y1={BASELINE_Y}
+              x2={SVG_WIDTH - PADDING_X}
+              y2={BASELINE_Y}
               stroke="var(--border)"
-              strokeWidth="1"
+              strokeWidth="1.5"
             />
 
-            {/* Isolation bands */}
             {isolationDepths.map((band) => {
-              const x1 = toX(band.top_md, 320);
-              const x2 = toX(band.bot_md, 320);
+              const x1 = toX(band.top_md);
+              const x2 = toX(band.bot_md);
               return (
                 <rect
                   key={`${band.top_md}-${band.bot_md}`}
                   x={Math.min(x1, x2)}
-                  y={TRACK_HEIGHT - 28}
-                  width={Math.max(Math.abs(x2 - x1), 2)}
-                  height={28}
-                  fill={`url(#iso-hatch-${label.replace(/\s+/g, "-")})`}
-                  opacity={0.9}
+                  y={TRACK_HEIGHT - 52}
+                  width={Math.max(Math.abs(x2 - x1), 3)}
+                  height={52}
+                  fill="var(--isolation-band-fill)"
+                  stroke="var(--isolation-band-stroke)"
+                  strokeWidth="2"
+                  strokeDasharray="5 3"
+                  rx={2}
                 />
               );
             })}
 
-            {/* Concern markers */}
             {concerns.map((iv) => {
               const mid = (iv.top + iv.bot) / 2;
-              const x = toX(mid, 320);
+              const x = toX(mid);
               const isHigh = iv.risk_class === "High";
               const isIsolated = iv.isolated === true;
               const color = isHigh ? "var(--risk-high)" : "var(--risk-elev)";
-              const radius = isHigh ? 5 : 4;
+              const radius = isHigh ? 8 : 6;
+              const explain = explainInterval(iv);
 
               return (
                 <g key={`${iv.depth}-${iv.top}`}>
+                  <SvgPopoverAnchor
+                    x={x}
+                    y={MARKER_Y}
+                    radius={radius}
+                    label={`${iv.depth} m MD — ${iv.risk_class} risk`}
+                    content={<FlagExplainContent explain={explain} />}
+                  />
                   {isIsolated ? (
-                    <circle cx={x} cy={TRACK_HEIGHT - 14} r={radius} fill={color} />
+                    <circle cx={x} cy={MARKER_Y} r={radius} fill={color} pointerEvents="none" />
                   ) : (
                     <circle
                       cx={x}
-                      cy={TRACK_HEIGHT - 14}
+                      cy={MARKER_Y}
                       r={radius}
                       fill="var(--surface-2)"
                       stroke={color}
-                      strokeWidth="2"
+                      strokeWidth="2.5"
+                      pointerEvents="none"
                     />
                   )}
                 </g>
               );
             })}
 
-            {/* Depth labels */}
-            <text x={PADDING_X} y={80} fill="var(--text-muted)" fontSize="9" fontFamily="monospace">
+            <text
+              x={PADDING_X}
+              y={viewHeight - 4}
+              fill="var(--text-muted)"
+              fontSize="11"
+              fontFamily="JetBrains Mono, monospace"
+            >
               {depthMin.toFixed(0)} m
             </text>
             <text
-              x={320 - PADDING_X}
-              y={80}
+              x={SVG_WIDTH - PADDING_X}
+              y={viewHeight - 4}
               fill="var(--text-muted)"
-              fontSize="9"
-              fontFamily="monospace"
+              fontSize="11"
+              fontFamily="JetBrains Mono, monospace"
               textAnchor="end"
             >
               {depthMax.toFixed(0)} m MD
@@ -143,10 +153,10 @@ export function ConcernTrack({
       )}
 
       {!hasConcerns ? (
-        <p className="mt-1 text-xs text-text-muted">No Elevated or High intervals</p>
+        <p className="mt-2 text-sm text-text-muted">No Elevated or High intervals</p>
       ) : null}
       {!hasIsolation && intervals.length > 0 ? (
-        <p className="mt-1 text-xs text-text-muted/80">No isolation on file</p>
+        <p className="mt-1 text-xs text-text-muted/80">No mechanical isolation on file</p>
       ) : null}
     </div>
   );

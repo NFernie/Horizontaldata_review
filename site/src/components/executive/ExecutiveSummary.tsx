@@ -112,9 +112,9 @@ export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
           { label: "High", color: "var(--risk-high)", description: "larger marker" },
           { label: "Isolated concern", color: "var(--risk-high)", description: "filled ●" },
           {
-            label: "Isolation band",
-            color: "rgba(147,161,176,0.45)",
-            description: "hatched MD range",
+            label: "Mechanical isolation",
+            color: "var(--isolation-band-stroke)",
+            description: "amber dashed band",
           },
           { label: "JENA 31 lateral", color: "var(--lateral-jena31)" },
           { label: "JENA 31DW1 lateral", color: "var(--lateral-jena31dw1)" },

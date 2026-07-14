@@ -126,7 +126,7 @@ export function ComparisonPanel({
 
   return (
     <section
-      className="rounded-card border border-border bg-surface p-4 shadow-card sm:p-5"
+      className="min-h-[360px] rounded-card border border-border bg-surface p-5 shadow-card"
       aria-labelledby={`panel-${panelId}-title`}
     >
       <header className="mb-4 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
@@ -165,7 +165,7 @@ export function ComparisonPanel({
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
       {loading ? <p className="mb-3 text-sm text-text-muted">Loading concern tracks…</p> : null}
 
-      <div className="grid gap-3 max-md:grid-cols-1 md:grid-cols-2">
+      <div className="grid gap-6 max-md:grid-cols-1 md:grid-cols-2">
         <ConcernTrack
           label={`Focus — ${focusDisplay}`}
           intervals={focusData?.intervals ?? []}

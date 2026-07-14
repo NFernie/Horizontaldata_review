@@ -1,7 +1,7 @@
 # QoL & Visualisation Updates — Implementation Plan
 
 **Date:** 2026-07-13 (rev. 2026-07-14b)  
-**Status:** Approved — Phases **A**, **C**, **D** implemented (2026-07-14); **B1/B2/E** pending  
+**Status:** Approved — Phases **A**, **C**, **D**, **E** implemented (2026-07-14); **B1/B2** pending  
 **Repo:** `NFernie/Horizontaldata_review`  
 **Baseline:** Post–Phase 6 pipeline (`updated-plan-2026-07-10.md`) — **23 wells**, RQI v2, WRCI v2, ZOI, OWC, mechanical isolation, no ΔRes  
 **UI skill:** `.cursor/skills/ui-ux-pro-max/SKILL.md` — **required for all Design agents**  
@@ -81,6 +81,7 @@ Each phase (**A**, **B1**, **B2**, **C**, **D**) runs as **two separate agent se
 | **A** | RQI/WRCI threshold tints, sticky `DataTable`, `usePageState`, methodology accordion (Methods 2–5), AppShell 23 wells |
 | **C** | Executive Summary on `/` — Panels A/B, concern MD tracks, portfolio strip, Water-Risk CTA |
 | **D** | Virtual `JENA31_DUAL`, Panel C dual-lateral track, distribution histogram, cluster cosine compare dropdowns (`cos=`), `cluster_analog_ranking.json` |
+| **E** | Readability pass — legibility audit, executive track sizing, flag/risk popovers, dendrogram + cluster cards, isolation band tokens |
 
 ### ⚠️ Remaining gaps
 
@@ -89,7 +90,7 @@ Each phase (**A**, **B1**, **B2**, **C**, **D**) runs as **two separate agent se
 | **Intersection window** | Not implemented (Phase B1) |
 | **Structural grids** | Not in repo — **pending delivery** (Phase B2) |
 | **Trajectory for viz** | Only `mTVDss` on intervals — **no X/Y/INCL** exported to `site/public/data/` |
-| **Readability popovers** | Phase E not started |
+| **Readability popovers** | ✅ Phase E — flag/risk popovers, dendrogram, isolation bands |
 | **Geosteering_Guide** | Private repo — **not readable** by agents without access or copied modules |
 
 ### Jena focus wells — live stats (`wells.json`)
@@ -563,9 +564,9 @@ Apply on executive concern tracks, intersection view (B1), and optional Well Det
 | **A** | ✅ **Complete** | MetricCell, sticky tables, `usePageState`, methodology Methods 2–5, well count 23 |
 | **C** | ✅ **Complete** | Executive Analog Concern Hub — Panels A/B, portfolio strip, collapsible table |
 | **D** | ✅ **Complete** | `JENA31_DUAL` pipeline + Panel C + histogram; cluster `cos=` compare dropdowns |
+| **E** | ✅ **Complete** | Legibility audit, executive popovers, risk explain badges, dendrogram + cluster cards, isolation bands |
 | **B1** | Pending | Intersection viewer — design doc not started |
 | **B2** | Blocked | Grid XYZ pending |
-| **E** | Pending | Readability & popovers |
 
 **Recommended session order:**
 

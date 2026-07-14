@@ -5,7 +5,7 @@ import { CorrelationMatrix } from "@/components/CorrelationMatrix";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
 import { Legend } from "@/components/Legend";
 import { MetricCell } from "@/components/MetricCell";
-import { RiskBadge } from "@/components/RiskBadge";
+import { RiskExplainBadge } from "@/components/RiskExplainBadge";
 import { WellSelect } from "@/components/WellSelect";
 import { JENA31_DUAL_ALIAS } from "@/config";
 import { useScrollRestore } from "@/hooks/usePageState";
@@ -87,7 +87,7 @@ export function IntraWellStats() {
         key: "risk",
         header: "Risk",
         align: "center",
-        render: (r) => <RiskBadge risk={r.risk_class} />,
+        render: (r) => <RiskExplainBadge interval={r} />,
       },
     ],
     [],
