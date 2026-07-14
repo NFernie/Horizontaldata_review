@@ -1,7 +1,7 @@
 # QoL & Visualisation Updates — Implementation Plan
 
 **Date:** 2026-07-13 (rev. 2026-07-14b)  
-**Status:** Approved — Phases **A**, **C**, **D**, **E** implemented (2026-07-14); **F** spec drafted; **B1/B2** pending  
+**Status:** Approved — Phases **A**, **C**, **D**, **E** implemented; **F** ready (§7.8 locked); **B1/B2** pending  
 **Repo:** `NFernie/Horizontaldata_review`  
 **Baseline:** Post–Phase 6 pipeline (`updated-plan-2026-07-10.md`) — **23 wells**, RQI v2, WRCI v2, ZOI, OWC, mechanical isolation, no ΔRes  
 **UI skill:** `.cursor/skills/ui-ux-pro-max/SKILL.md` — **required for all Design agents**  
@@ -548,7 +548,7 @@ Apply on executive concern tracks, intersection view (B1), and optional Well Det
 
 ## 7. Phase F — Structural executive depth tracks (pseudo-section view)
 
-**Status:** Spec drafted — **awaiting stakeholder answers** (§11 Phase F questions) before implement  
+**Status:** Approved — **stakeholder decisions locked** (§7.8, §13); ready for combined implement session  
 **Session type:** **One combined** design + implement session (no separate `phase-f-design.md`)  
 **Scope:** Replace flat MD-only `ConcernTrack` / compare tracks in Executive Summary Panels **A**, **B**, and Panel **C** compare side with a **structural pseudo-section**: risk flags positioned in **MD × mTVDss** space, full-width tracks, OWC + hard-floor horizons, trajectory polyline, revised isolation styling.
 
@@ -565,36 +565,56 @@ Give executives a **well-execution / structural** read of where Elevated and Hig
 
 ### 7.2 Requested visual changes (stakeholder brief)
 
-| # | Change | Proposed interpretation (pending confirm) |
-|---|--------|-------------------------------------------|
+| # | Change | Locked spec |
+|---|--------|-------------|
 | F1 | Stretch depth tracks to **full panel width** | Responsive SVG (`width: 100%`, `viewBox` from container); no fixed 320px viewBox |
 | F2 | Increase panel height **×1.5** | `min-h-[280px]` → **`min-h-[420px]`**; plot area ~**210px** (from ~140px) |
-| F3 | **OWC** + **hard floor** lines | Horizontal lines at `owc_mtvds` and `owc_mtvds + 3` (shallower = less negative Z) |
-| F4 | Risk flags in **Z (mTVDss)** | Y-position from interval `mTVDss` (or trajectory interpolate at interval MD) |
-| F5 | **X-axis** = MD, larger tick labels | MD axis bottom; tick font ≥ **13px**; sensible step (50–200 m) |
-| F6 | **Y-axis** = mTVDss | Left axis; geoscience convention **increasing depth downward** (more negative TVDss lower on chart) |
-| F7 | **Trajectory line** between flags | Polyline through trajectory stations in lateral MD window (preferred) or through concern-interval (MD, mTVDss) points |
-| F8 | **Isolation** restyle | Light grey → white **hatched** fill; **no border** (replaces Phase E amber dashed on executive tracks only) |
+| F3 | **OWC** + **hard floor** lines | Horizontal lines at `owc_mtvds` and `owc_mtvds + 3` (shallower = less negative TVDss) |
+| F4 | Risk flags in **Z (mTVDss)** | Y from interval **`mTVDss`** in JSON (no re-interpolation) |
+| F5 | **X-axis** = MD, larger tick labels | MD axis bottom; tick font ≥ **13px**; auto step from lateral span |
+| F6 | **Y-axis** = mTVDss | Left axis; **depth increases downward** (more negative mTVDss toward bottom) |
+| F7 | **Trajectory line** | **Full lateral path** — polyline through all trajectory stations **dc30→TD** |
+| F8 | **Isolation** restyle | Light grey → white **hatched** fill; **no border**; **site-wide** (executive + Well Detail + elsewhere) |
 | F9 | Preserve Phase E **flag popovers** | `FlagExplainPopover` / `explainInterval` on markers |
 
-### 7.3 Proposed chart model (default assumption — confirm)
+### 7.3 Chart model (locked)
 
 ```
-        mTVDss (Y, down = deeper)
-          ↑
-    -1195 ┄┄┄ Hard floor (OWC + 3 m shallower)
-    -1198 ━━━ OWC
-          │    ╭──●──╮  ← trajectory polyline (MD vs mTVDss)
-          │   ●    ○   ← concern markers (Y = mTVDss, X = MD)
-          │  ░░░░░░░   ← isolation hatch (MD span, full Y band or clip to path)
-          └──────────────────→ MD (X)
-           dc30            TD
+   mTVDss (Y) — shallower ↑  deeper ↓
+   (top)  max(trajectory mTVDss) + 3 m  ─── upper Y bound (per well)
+          ┄┄┄ Hard floor (OWC + 3 m shallower)     e.g. −1195
+          ━━━ OWC (field)                            e.g. −1198
+          │    ╭── trajectory (full lateral) ──╮
+          │   ●    ○   concern flags (MD, mTVDss)
+          │    ░░░  isolation hatch (narrow corridor along path)
+          └──────────────────────────────→ MD (X)
+           dc30                          TD
+   (bottom Y bound = field OWC mTVDss — deepest line on chart)
 ```
 
-- **Markers:** `(x = md_mid, y = mTVDss)` per concern interval (`isConcernInterval`).
-- **Trajectory:** Load `site/public/data/trajectory/{ALIAS}.json` stations filtered to McKinlay lateral MD range (`dc30`–`td` from `wells.json`), plot `(md, mtvds)`.
-- **OWC / hard floor:** Span full plot width at constant Y.
-- **Linked axes (open):** Focus and compare tracks in one panel — same mTVDss range? same MD range per well or normalize?
+- **Markers:** `(x = md_mid, y = interval.mTVDss)` per concern interval (`isConcernInterval`).
+- **Trajectory:** `site/public/data/trajectory/{ALIAS}.json` — plot **all stations** in lateral MD window (`dc30`–`td`).
+- **OWC / hard floor:** Horizontal lines at field `owc_mtvds` and `owc_mtvds + 3` (shallower).
+- **Y-scale (per well, independent):** Each track computes its own range — wells sit on different structures:
+  - **Y max (top, shallower):** `max(mTVDss)` over lateral trajectory stations **+ 3 m** structurally shallower (less negative)
+  - **Y min (bottom, deeper):** field **`owc_mtvds`**
+  - Focus and compare tracks in the **same panel row do not share** Y-range (or MD-range).
+- **Isolation:** Hatch in a **narrow corridor along the trajectory path** (not full plot height), MD span from `isolation_depths[]`.
+
+### 7.8 Stakeholder decisions locked (2026-07-14)
+
+| ID | Question | **Decision** |
+|----|----------|--------------|
+| **F-Q1** | Axes X = MD, Y = mTVDss? | **Yes** |
+| **F-Q2** | Deeper = lower on chart? | **Yes** — standard geoscience section |
+| **F-Q3** | Trajectory: full path vs flag connectors? | **Full lateral path** (dc30→TD stations) |
+| **F-Q4** | Marker Y source? | **Interval `mTVDss`** from JSON |
+| **F-Q5** | Linked Y-scale focus vs compare? | **No** — per-well Y-range: **field OWC** (bottom) → **max trajectory mTVDss + 3 m** (top) |
+| **F-Q6** | Hard floor OWC + 3 m shallower? | **Confirmed** (−1198 → −1195 m TVDss Jena) |
+| **F-Q7** | Isolation hatch extent? | **Narrow corridor along trajectory path** |
+| **F-Q8** | Panel C dual-lateral focus? | **Keep split lateral columns** (add mTVDss Y per column; not one merged chart) |
+| **F-Q9** | Trajectory export script? | **Extend `export_web_data.py`** (single CI pass; recommended) |
+| **F-Q10** | Isolation restyle scope? | **Site-wide** — replace Phase E amber isolation everywhere |
 
 ### 7.4 Data dependencies
 
@@ -606,16 +626,17 @@ Give executives a **well-execution / structural** read of where Elevated and Hig
 | `isolation_depths[]` | ✅ intervals payload | Hatch bands (MD → X only, or MD+TVD?) |
 | Full trajectory polyline | ❌ not in `site/public/data/` | **New export** — see §3.3 / B1 schema |
 | Petrel `*_trajectory` at repo root | ✅ 23 files | Pipeline input |
-| `JENA31_DUAL` | ✅ merged intervals + `source_lateral` | **Panel C focus** needs dual-path or split view (open) |
+| `JENA31_DUAL` | ✅ merged intervals + `source_lateral` | Panel C focus: **split lateral columns** + mTVDss Y per constituent (`JENA31`, `JENA31DW1`) |
 
-**Pipeline (recommended):** extend `export_web_data.py` or add `export_trajectory_web.py` → `site/public/data/trajectory/{ALIAS}.json`; hook `deploy.yml` path filter (`**/*_trajectory` already listed).
+**Pipeline (locked):** extend **`export_web_data.py`** → `site/public/data/trajectory/{ALIAS}.json` (+ constituents for dual); `deploy.yml` path filter (`**/*_trajectory` already listed).
 
 ### 7.5 Components to refactor
 
 | File | Action |
 |------|--------|
 | `site/src/components/executive/ConcernTrack.tsx` | Replace with `StructuralConcernTrack` (MD×mTVDss SVG) |
-| `site/src/components/executive/DualLateralTrack.tsx` | Panel C focus — dual-lateral structural view (TBD after Q8) |
+| `site/src/components/executive/DualLateralTrack.tsx` | Panel C focus — **keep split columns**; add MD×mTVDss structural view per lateral |
+| `site/src/components/DepthTracks.tsx` | Site-wide isolation hatch (F-Q10) |
 | `site/src/components/executive/ComparisonPanel.tsx` | Pass `owc_mtvds`, trajectory URL; full-width layout |
 | `site/src/components/executive/DualLateralPanel.tsx` | Same for Panel C |
 | `site/src/components/executive/ExecutiveSummary.tsx` | Update legend (OWC, hard floor, trajectory, isolation hatch) |
@@ -625,21 +646,22 @@ Give executives a **well-execution / structural** read of where Elevated and Hig
 ### 7.6 Out of scope (Phase F)
 
 - Structural **grid** overlay (Phase B2)
-- `/intersection` route (Phase B1 — may share `StructuralSectionChart` lib later)
-- Well Detail depth tracks (optional follow-up)
+- `/intersection` route (Phase B1 — may share `structuralChart.ts` lib later)
 - Changing comparison dropdown ranking (stays cluster cosine)
 
-### 7.7 Acceptance criteria (draft — finalize after §11 answers)
+### 7.7 Acceptance criteria (locked)
 
 - [ ] Panels A/B focus + compare tracks span **100%** of panel column width
 - [ ] Panel track area ≥ **420px** min-height (1.5× Phase E)
-- [ ] OWC and hard-floor lines visible on JENA31 focus track with correct mTVDss labels
-- [ ] Concern markers at **(MD, mTVDss)**; Y-axis labelled mTVDss; X-axis MD with readable ticks
-- [ ] Trajectory polyline drawn for lateral MD range
-- [ ] Isolation = grey/white hatch, no stroke
-- [ ] Phase E flag popovers still work on markers
-- [ ] `npm test && npm run build`; trajectory export in CI when pipeline runs
-- [ ] Mobile: tracks scroll horizontally if needed; panels stack (no layout regression)
+- [ ] Per-well Y-range: **OWC (bottom)** to **max(trajectory mTVDss) + 3 m (top)** — focus ≠ compare scale
+- [ ] OWC and hard-floor lines on JENA31 (e.g. −1198 / −1195 m TVDss)
+- [ ] Concern markers at **(MD, interval mTVDss)**; axes labelled; MD ticks ≥13px
+- [ ] **Full lateral** trajectory polyline (dc30→TD)
+- [ ] Isolation = grey/white hatch in **path corridor**, no stroke — **site-wide**
+- [ ] Panel C dual focus: **split lateral columns** with structural axes
+- [ ] Phase E flag popovers still work (e.g. 2500 m MD OWC zone)
+- [ ] `npm test && npm run build`; trajectory JSON from extended `export_web_data.py`
+- [ ] Mobile: horizontal scroll OK; panels stack
 
 ---
 
@@ -653,7 +675,7 @@ Give executives a **well-execution / structural** read of where Elevated and Hig
 | **C** | Executive Analog Concern Hub (Jaccard analogs — superseded by D for ranking) | `phase-c-design.md` | 1 session | **No** |
 | **D** | Add Panel C + histogram; cluster comparison dropdown (keep Phase C layout) | `phase-d-design.md` | 1 session | **No** |
 | **E** | Readability & popovers (site-wide) | — | **1 combined session** | **No** |
-| **F** | Structural executive depth tracks (MD×mTVDss, OWC, trajectory) | — | **1 combined session** | **Partial** — trajectory web export |
+| **F** | Structural executive depth tracks (MD×mTVDss, OWC, trajectory) | — | **1 combined session** | **No** — extend `export_web_data.py` |
 
 ### Implementation status (2026-07-14)
 
@@ -663,7 +685,7 @@ Give executives a **well-execution / structural** read of where Elevated and Hig
 | **C** | ✅ **Complete** | Executive Analog Concern Hub — Panels A/B, portfolio strip, collapsible table |
 | **D** | ✅ **Complete** | `JENA31_DUAL` pipeline + Panel C + histogram; cluster `cos=` compare dropdowns |
 | **E** | ✅ **Complete** | Legibility audit, executive popovers, risk explain badges, dendrogram + cluster cards, isolation bands |
-| **F** | **Pending** | Structural executive tracks — awaiting §11 Phase F answers |
+| **F** | **Ready** | Structural executive tracks — §7.8 decisions locked; trajectory export via `export_web_data.py` |
 | **B1** | Pending | Intersection viewer — design doc not started |
 | **B2** | Blocked | Grid XYZ pending |
 
@@ -1025,15 +1047,14 @@ Commit to main.
 ```
 DESIGN AND IMPLEMENT in one session — Phase F structural executive depth tracks.
 
-Prerequisite: Phase E complete on main; read stakeholder answers to §11 Phase F questions
-(if unanswered, implement marked DEFAULT assumptions in §7.3 and document in PR).
+Prerequisite: Phase E complete on main. **All stakeholder decisions locked in §7.8** — implement exactly; do not re-open defaults.
 
 Read:
-- QoL-Updates-2026-07-13.md §7 (Phase F — full spec)
-- QoL-Updates-2026-07-13.md §11 Phase F open questions
+- QoL-Updates-2026-07-13.md §7 (Phase F spec + §7.8 locked decisions)
 - site/src/components/executive/ConcernTrack.tsx, DualLateralTrack.tsx, ComparisonPanel.tsx, DualLateralPanel.tsx
+- site/src/components/DepthTracks.tsx (site-wide isolation restyle)
 - site/src/components/Popover.tsx, FlagExplainPopover.tsx, site/src/lib/flagExplain.ts (preserve popovers)
-- scripts/trajectory.py, sample Jena_31_trajectory, Oil_Water_Contact.csv
+- scripts/trajectory.py, scripts/export_web_data.py, sample Jena_31_trajectory, Oil_Water_Contact.csv
 - site/public/data/intervals/JENA31.json (mTVDss, owc_mtvds, isolation_depths)
 - QoL §3.3 trajectory JSON schema (B1 — reuse for export)
 - .cursor/skills/ui-ux-pro-max/SKILL.md
@@ -1043,65 +1064,75 @@ Load UI/UX Pro Max skill. Run:
 
 Do NOT write a separate design doc — apply recommendations directly in code.
 
-─── PIPELINE (if not already present) ───
-1. Export site/public/data/trajectory/{ALIAS}.json per §3.3:
-   stations: { md, mtvds, incl, x, y }[]; owc_mtvds; hard_floor_mtvds (= owc + 3 m shallower)
-2. Hook into deploy.yml (path filter **/*_trajectory already exists)
-3. JENA31_DUAL: export merged trajectory or dual constituents per §11 Q8 answer
+─── LOCKED DECISIONS (§7.8) ───
+- Axes: X = MD (m), Y = mTVDss; deeper = lower on chart
+- Y-scale PER WELL (focus ≠ compare): yTop = max(trajectory mTVDss in lateral) + 3 m shallower; yBottom = field owc_mtvds
+- Trajectory: FULL lateral polyline dc30→TD from trajectory/{ALIAS}.json
+- Markers: (md_mid, interval.mTVDss) — use JSON mTVDss, no re-interpolation
+- OWC + hard floor: owc_mtvds and owc_mtvds + 3 (e.g. Jena −1198 / −1195)
+- Isolation: grey/white hatch, NO border, NARROW CORRIDOR along trajectory path
+- Isolation restyle: SITE-WIDE (executive + Well Detail DepthTracks + any other isolation bands)
+- Panel C dual focus: KEEP SPLIT LATERAL COLUMNS (structural MD×mTVDss per column, not one merged chart)
+- Pipeline: extend export_web_data.py → site/public/data/trajectory/{ALIAS}.json (single CI pass)
+
+─── PIPELINE ───
+1. Extend export_web_data.py — export trajectory JSON per §3.3:
+   { alias, field, owc_mtvds, hard_floor_mtvds, stations: [{ md, mtvds, incl, x, y }], lateral_window: { md_start, md_end } }
+2. Include JENA31 + JENA31DW1 trajectory files for Panel C (not a merged JENA31_DUAL trajectory file unless useful for compare)
+3. Regenerate site/public/data/trajectory/*.json; deploy.yml **/*_trajectory filter already present
 
 ─── STRUCTURAL CONCERN TRACK (F1–F9) ───
 Replace flat MD-only ConcernTrack with StructuralConcernTrack (or refactor in place):
 
 Layout:
 - Full width of parent panel column (ResizeObserver or 100% SVG + viewBox)
-- Panel min-height 420px (1.5× Phase E 280px); plot area ~210px minimum
+- Panel min-height 420px (1.5× Phase E); plot area ~210px minimum
 - Margins: left Y-axis (mTVDss), bottom X-axis (MD), room for axis labels
 
-Axes:
-- X = MD (m); ticks ≥13px; auto step from lateral span
-- Y = mTVDss (m TVDss); **depth increases downward** (more negative lower)
-- Y-axis label "mTVDss"; X-axis label "MD (m)"
+Axes (per well):
+- X = MD (m); ticks ≥13px; range = that well's dc30–td (or interval span)
+- Y = mTVDss; depth increases downward; range = [owc_mtvds .. max(traj mTVDss)+3] per §7.8 F-Q5
+- Each track in a panel row has its OWN Y-scale (wells on different structures)
 
 Horizons:
-- OWC: horizontal line at owc_mtvds (from intervals payload or trajectory JSON)
-- Hard floor: horizontal at owc_mtvds + 3 (structurally shallower — less negative TVDss)
-- Label lines in legend + on-chart micro-labels
+- OWC horizontal at owc_mtvds; hard floor at owc_mtvds + 3 (shallower)
+- Label in legend + on-chart micro-labels
 
 Trajectory:
-- Fetch trajectory/{alias}.json; plot polyline (md, mtvds) for lateral MD window (dc30–td)
-- Stroke: muted accent; behind markers
+- Full lateral polyline from trajectory/{alias}.json stations in lateral_window
+- Stroke behind markers
 
 Concern markers:
-- Position at (md_mid, mTVDss) — prefer interval mTVDss; fallback trajectory interpolate at MD
-- Keep Elevated/High radii 6px/8px; isolated filled vs open stroke
-- Keep Phase E FlagExplainPopover on hover/focus
+- (md_mid, interval.mTVDss); radii 6px/8px; Phase E FlagExplainPopover preserved
 
-Isolation bands:
-- MD span from isolation_depths[]; fill light grey→white diagonal hatch; **no border**
-- New tokens: --isolation-hatch-fill (override executive --isolation-band-* amber from Phase E)
-- Clip optional: full-height band vs path corridor (per §11 Q7)
+Isolation:
+- Narrow corridor along trajectory path (clip hatch to path buffer ~8–12px SVG units)
+- Light grey→white diagonal hatch; no stroke
+- Apply same tokens on DepthTracks Iso column (replace Phase E amber)
 
 Panels:
-- ComparisonPanel A/B: both focus + compare tracks use StructuralConcernTrack
-- DualLateralPanel: Panel C focus per §11 Q8; compare side uses standard structural track
-- ExecutiveSummary legend: add OWC, Hard floor (+3 m), Trajectory, Isolation hatch
+- ComparisonPanel A/B: StructuralConcernTrack on focus + compare (independent Y-scales)
+- DualLateralPanel: Panel C focus = DualLateralTrack with split columns + mTVDss Y each lateral
+- Panel C compare = standard StructuralConcernTrack
+- ExecutiveSummary legend: OWC, Hard floor (+3 m), Trajectory, Isolation hatch (corridor)
 
 Shared lib (recommended):
-- site/src/lib/structuralChart.ts — scales, tick generation, owc/hard-floor Y
+- site/src/lib/structuralChart.ts — per-well Y-range helper, MD/mTVDss scales, path-corridor clip, ticks
 - site/src/components/executive/StructuralConcernTrack.tsx
 
 Tests:
-- structuralChart.test.ts — scale monotonicity, hard floor = owc + 3, marker (md, mtvds)
+- structuralChart.test.ts — yRange(owc, stations), hard floor = owc + 3, scales monotonic
 
 Acceptance:
-- JENA31 Panel A focus: OWC −1198 and hard floor −1195 visible; markers at TVDss not flat Y
-- Trajectory visible through lateral; isolation hatch grey/white, no stroke
-- Tracks span panel width; height ≥1.5× prior
-- Popovers still work (e.g. 2500 m MD OWC zone)
+- JENA31 Panel A: OWC −1198, hard floor −1195; markers at varying mTVDss Y; full trajectory visible
+- Focus vs compare in same panel can have different Y-axis tick ranges
+- Isolation corridor follows path; grey/white hatch site-wide; no amber isolation left
+- Panel C dual: two lateral columns, not merged chart
+- Popovers work at 2500 m MD OWC zone
 - npm test && npm run build
-- python3 scripts/export_web_data.py (or trajectory export) + smoke tests if pipeline touched
+- python3 scripts/export_web_data.py + test_zoi.py + test_owc.py if pipeline touched
 
-Commit to main (include site/public/data/trajectory/*.json if pipeline added).
+Commit to main (include site/public/data/trajectory/*.json when pipeline added).
 ```
 
 ---
@@ -1112,8 +1143,23 @@ Commit to main (include site/public/data/trajectory/*.json if pipeline added).
 2. **WRCI binary vs three-band:** Elevated band (40–66) — green or amber? (Plan uses binary per spec.)  
 3. **Geosteering_Guide:** Which files to copy into this repo for intersection projection?  
 4. **Grid delivery format:** CSV XYZ, GeoJSON, or Petrel export?  
-5. **Hard floor +3 m:** Confirm **−1195 m TVDss** when OWC = −1198.  
+5. **Hard floor +3 m:** ✅ Resolved — **−1195 m TVDss** when OWC = −1198 (Phase F §7.8 F-Q6).  
 6. **Intersection default well:** JENA31 on first load?
+
+### Resolved (Phase F — 2026-07-14)
+
+| ID | Decision |
+|----|----------|
+| **F-Q1** | X = **MD**, Y = **mTVDss** |
+| **F-Q2** | Deeper = **lower** on chart (standard section) |
+| **F-Q3** | **Full lateral** trajectory polyline (dc30→TD) |
+| **F-Q4** | Marker Y = **interval `mTVDss`** from JSON |
+| **F-Q5** | **Independent per-well Y-range:** bottom = field **OWC**; top = **max(trajectory mTVDss) + 3 m** shallower — focus and compare do **not** share scale |
+| **F-Q6** | Hard floor **OWC + 3 m** shallower — **confirmed** |
+| **F-Q7** | Isolation hatch = **narrow corridor along trajectory path** |
+| **F-Q8** | Panel C dual focus = **keep split lateral columns** (structural axes per column) |
+| **F-Q9** | Trajectory export via **`export_web_data.py`** extension |
+| **F-Q10** | Isolation grey/white hatch **site-wide** (not executive-only) |
 
 ### Resolved (Phase D — 2026-07-14)
 
@@ -1123,21 +1169,6 @@ Commit to main (include site/public/data/trajectory/*.json if pipeline added).
 | `JENA31_DUAL` pay % | Sum pay MD ÷ sum lateral |
 | Histogram defaults | JENA31 vs JENA31_DUAL, property **RQI** |
 | Dual-lateral MD axis | Single MD track, colour by lateral |
-
-### Phase F — structural executive tracks (open — 2026-07-14)
-
-| # | Question | Default if unanswered |
-|---|----------|------------------------|
-| **F-Q1** | **Chart axes:** Confirm X = **MD**, Y = **mTVDss** (not horizontal distance / section X from B1)? | Yes — MD × mTVDss pseudo-section |
-| **F-Q2** | **Y-axis direction:** Depth **increases downward** (more negative mTVDss toward bottom of chart)? | Yes — standard geoscience section |
-| **F-Q3** | **Trajectory polyline:** Full lateral stations from `trajectory/{ALIAS}.json`, or only line segments **connecting concern flags**? | Full lateral trajectory (stations dc30–td) |
-| **F-Q4** | **Marker Y source:** Interval `mTVDss` from JSON, or re-interpolate from trajectory at sample MD? | Interval `mTVDss` (already from `trajectory.py` at export) |
-| **F-Q5** | **Linked scales:** Within a panel row, should focus + compare share the **same mTVDss Y-range** (and/or MD range) for visual comparison? | Same mTVDss range per panel row; MD range per well |
-| **F-Q6** | **Hard floor:** Confirm **+3 m structurally shallower** than OWC (−1198 → **−1195** m TVDss for Jena)? | Yes — per §3.1 / prior open Q5 |
-| **F-Q7** | **Isolation hatch:** Full vertical band across plot height at MD span, or narrow corridor around trajectory? | Full-height MD band |
-| **F-Q8** | **Panel C dual-lateral focus:** One combined MD×mTVDss chart with two trajectory paths (JENA31 + JENA31DW1), or keep separate lateral columns? | Two trajectories, colour by `source_lateral` |
-| **F-Q9** | **Trajectory export:** Extend `export_web_data.py` vs separate `export_trajectory_web.py`? | Extend `export_web_data.py` (single CI pass) |
-| **F-Q10** | **Phase E isolation tokens:** Replace amber executive isolation with grey/white hatch **only on executive tracks**, keep amber elsewhere? | Executive only |
 
 ---
 
@@ -1180,4 +1211,5 @@ Commit to main (include site/public/data/trajectory/*.json if pipeline added).
 |------|--------|
 | 2026-07-13 | Initial QoL + intersection + executive summary plan |
 | 2026-07-14 | Design→Implement workflow; UI/UX Pro Max; Phase A5 methodology dropdown; Phase C reimagined as Analog Concern Hub; separate design/impl prompts; updated Jena stats + isolation |
-| 2026-07-14d | Phase F spec + combined prompt; structural executive MD×mTVDss tracks; §11 Phase F open questions |
+| 2026-07-14e | Phase F stakeholder decisions locked (§7.8); per-well Y-range; path-corridor isolation; site-wide hatch; §12 prompt updated |
+| 2026-07-14d | Phase F spec + combined prompt; structural executive MD×mTVDss tracks |
