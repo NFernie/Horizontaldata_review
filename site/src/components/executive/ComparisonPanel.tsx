@@ -182,7 +182,7 @@ export function ComparisonPanel({
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
       {loading ? <p className="mb-3 text-sm text-text-muted">Loading structural tracks…</p> : null}
 
-      <div className="grid gap-6 max-md:grid-cols-1 md:grid-cols-2">
+      <div className="flex flex-col gap-4">
         <StructuralConcernTrack
           label={`Focus — ${focusDisplay}`}
           intervals={focusData?.intervals ?? []}

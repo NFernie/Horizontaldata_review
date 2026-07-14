@@ -1,16 +1,20 @@
 import type { TrajectoryStation } from "@/types/trajectory";
 
 export const STRUCTURAL_MARGIN = {
-  left: 56,
-  right: 16,
-  top: 22,
-  bottom: 40,
+  left: 44,
+  right: 12,
+  top: 14,
+  bottom: 28,
 } as const;
 
-export const STRUCTURAL_PLOT_HEIGHT = 210;
-export const STRUCTURAL_MIN_PLOT_HEIGHT = 160;
+export const STRUCTURAL_PLOT_HEIGHT = 140;
+export const STRUCTURAL_MIN_PLOT_HEIGHT = 100;
+export const STRUCTURAL_PLOT_ASPECT = 3.2;
 export const STRUCTURAL_CORRIDOR_HALF_WIDTH = 10;
-export const STRUCTURAL_MIN_TICK_FONT = 13;
+/** Tick labels — 33% smaller than original 13px. */
+export const STRUCTURAL_MIN_TICK_FONT = 9;
+export const STRUCTURAL_AXIS_LABEL_FONT = 7;
+export const STRUCTURAL_MICRO_LABEL_FONT = 7;
 
 export interface ChartPoint {
   x: number;
@@ -235,9 +239,13 @@ export function computePlotArea(width: number, height: number) {
   const plotLeft = STRUCTURAL_MARGIN.left;
   const plotRight = Math.max(plotLeft + 40, width - STRUCTURAL_MARGIN.right);
   const plotTop = STRUCTURAL_MARGIN.top;
-  const plotBottom = Math.max(
-    plotTop + STRUCTURAL_PLOT_HEIGHT,
-    height - STRUCTURAL_MARGIN.bottom,
+  const plotWidth = plotRight - plotLeft;
+  const heightBudget = Math.max(
+    STRUCTURAL_MIN_PLOT_HEIGHT,
+    height - plotTop - STRUCTURAL_MARGIN.bottom,
   );
+  const heightByAspect = plotWidth / STRUCTURAL_PLOT_ASPECT;
+  const plotHeight = Math.min(heightBudget, heightByAspect);
+  const plotBottom = plotTop + plotHeight;
   return { plotLeft, plotRight, plotTop, plotBottom };
 }

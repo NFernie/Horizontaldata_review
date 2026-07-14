@@ -4,6 +4,8 @@ import { SvgPopoverAnchor } from "@/components/Popover";
 import { explainInterval } from "@/lib/flagExplain";
 import { isConcernInterval } from "@/lib/concernZones";
 import {
+  STRUCTURAL_AXIS_LABEL_FONT,
+  STRUCTURAL_MICRO_LABEL_FONT,
   STRUCTURAL_MIN_TICK_FONT,
   computePlotArea,
   computeYRange,
@@ -134,24 +136,29 @@ export function StructuralConcernTrack({
 
   const shellClass = embedded
     ? "flex min-h-0 flex-col"
-    : "flex min-h-[420px] flex-col rounded-card border border-border bg-surface-2 p-4";
+    : "flex flex-col rounded-card border border-border bg-surface-2 p-3";
 
   return (
     <div className={cn(shellClass, className)}>
-      <p className={cn("font-semibold text-text", embedded ? "mb-2 text-xs" : "mb-3 text-sm")}>
+      <p
+        className={cn(
+          "font-semibold text-text",
+          embedded ? "mb-1 text-[8px]" : "mb-2 text-[9px]",
+        )}
+      >
         {label}
       </p>
 
       {!intervals.length ? (
-        <p className="flex flex-1 items-center justify-center text-sm text-text-muted">
+        <p className="flex flex-1 items-center justify-center text-[9px] text-text-muted">
           No interval data
         </p>
       ) : owc == null || !chart ? (
-        <p className="flex flex-1 items-center justify-center text-sm text-text-muted">
+        <p className="flex flex-1 items-center justify-center text-[9px] text-text-muted">
           Trajectory / OWC data unavailable
         </p>
       ) : (
-        <div ref={ref} className="min-h-[210px] w-full flex-1">
+        <div ref={ref} className="aspect-[3.2/1] w-full max-h-[220px]">
           <svg
             viewBox={`0 0 ${width} ${height}`}
             className="block h-full w-full"
@@ -216,7 +223,7 @@ export function StructuralConcernTrack({
               y={(chart.plotTop + chart.plotBottom) / 2}
               textAnchor="middle"
               fill="var(--text-muted)"
-              fontSize="11"
+              fontSize={STRUCTURAL_AXIS_LABEL_FONT}
               fontWeight="600"
               transform={`rotate(-90 12 ${(chart.plotTop + chart.plotBottom) / 2})`}
             >
@@ -238,7 +245,7 @@ export function StructuralConcernTrack({
               y={chart.yScale(chart.hardFloor) - 4}
               textAnchor="end"
               fill="var(--hard-floor-line)"
-              fontSize="10"
+              fontSize={STRUCTURAL_MICRO_LABEL_FONT}
               fontWeight="600"
             >
               Hard +3m
@@ -258,7 +265,7 @@ export function StructuralConcernTrack({
               y={chart.yScale(chart.owc) - 4}
               textAnchor="end"
               fill="var(--owc-line)"
-              fontSize="10"
+              fontSize={STRUCTURAL_MICRO_LABEL_FONT}
               fontWeight="600"
             >
               OWC
@@ -305,7 +312,7 @@ export function StructuralConcernTrack({
                 (iv.risk_class === "High" ? "var(--risk-high)" : "var(--risk-elev)");
               const isHigh = iv.risk_class === "High";
               const isIsolated = iv.isolated === true;
-              const radius = isHigh ? 8 : 6;
+              const radius = isHigh ? 5 : 4;
               const explain = explainInterval(iv);
               const { x, y } = markerPosition(
                 mid,
@@ -380,7 +387,7 @@ export function StructuralConcernTrack({
               y={height - 4}
               textAnchor="middle"
               fill="var(--text-muted)"
-              fontSize="11"
+              fontSize={STRUCTURAL_AXIS_LABEL_FONT}
               fontWeight="600"
             >
               MD (m)
@@ -390,10 +397,10 @@ export function StructuralConcernTrack({
       )}
 
       {!hasConcerns ? (
-        <p className="mt-2 text-sm text-text-muted">No Elevated or High intervals</p>
+        <p className="mt-1.5 text-[9px] text-text-muted">No Elevated or High intervals</p>
       ) : null}
       {!hasIsolation && intervals.length > 0 ? (
-        <p className="mt-1 text-xs text-text-muted/80">No mechanical isolation on file</p>
+        <p className="mt-1 text-[8px] text-text-muted/80">No mechanical isolation on file</p>
       ) : null}
     </div>
   );

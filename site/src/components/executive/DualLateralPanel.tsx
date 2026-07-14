@@ -149,7 +149,7 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
       {loading ? <p className="mb-3 text-sm text-text-muted">Loading dual lateral tracks…</p> : null}
 
-      <div className="grid gap-6 max-md:grid-cols-1 md:grid-cols-2">
+      <div className="flex flex-col gap-4">
         <DualLateralTrack
           label="Dual lateral — colour by source"
           intervals={focusData?.intervals ?? []}
