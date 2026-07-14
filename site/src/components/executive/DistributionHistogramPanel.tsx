@@ -9,8 +9,8 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { Card } from "@/components/Card";
 import { WellSelect } from "@/components/WellSelect";
+import { CollapsiblePanel } from "@/components/executive/CollapsiblePanel";
 import {
   DIST_HISTOGRAM_PROPERTIES,
   JENA31_DUAL_ALIAS,
@@ -78,7 +78,11 @@ export function DistributionHistogramPanel({ wells }: DistributionHistogramPanel
   const displayB = dataB?.display ?? wellB;
 
   return (
-    <Card title="Distribution comparison" description="Interval-level property histogram">
+    <CollapsiblePanel
+      panelId="distHist"
+      title="Distribution comparison"
+      subtitle="Interval-level property histogram"
+    >
       <div className="mb-4 grid gap-3 sm:grid-cols-3">
         <WellSelect
           wells={wells}
@@ -147,6 +151,6 @@ export function DistributionHistogramPanel({ wells }: DistributionHistogramPanel
         n={valuesA.length} ({displayA}) · n={valuesB.length} ({displayB}) · 16 bins · property{" "}
         {property}
       </p>
-    </Card>
+    </CollapsiblePanel>
   );
 }

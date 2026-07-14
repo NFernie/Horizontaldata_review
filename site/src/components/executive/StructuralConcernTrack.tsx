@@ -62,6 +62,10 @@ interface StructuralConcernTrackProps {
   resizeKey?: string;
   /** Dual-lateral column — suppress outer card chrome when nested */
   embedded?: boolean;
+  /** When false, hide Elevated risk markers on the trajectory */
+  showElevated?: boolean;
+  /** When false, hide High risk markers on the trajectory */
+  showHigh?: boolean;
 }
 
 export function StructuralConcernTrack({
@@ -76,6 +80,8 @@ export function StructuralConcernTrack({
   className,
   resizeKey,
   embedded = false,
+  showElevated = true,
+  showHigh = true,
 }: StructuralConcernTrackProps) {
   const uid = useId().replace(/:/g, "");
   const { ref: parentRef, parentWidth } = useParentWidth();
@@ -95,7 +101,15 @@ export function StructuralConcernTrack({
     maxHeight,
   } = useTrajectoryChartResize(resizeKey, parentWidth);
 
-  const concerns = useMemo(() => intervals.filter(isConcernInterval), [intervals]);
+  const concerns = useMemo(
+    () =>
+      intervals.filter(isConcernInterval).filter((iv) => {
+        if (iv.risk_class === "Elevated" && !showElevated) return false;
+        if (iv.risk_class === "High" && !showHigh) return false;
+        return true;
+      }),
+    [intervals, showElevated, showHigh],
+  );
   const hasConcerns = concerns.length > 0;
   const hasIsolation = isolationDepths.length > 0;
 
@@ -158,7 +172,7 @@ export function StructuralConcernTrack({
         <p
           className={cn(
             "font-semibold text-text",
-            embedded ? "text-[8px]" : "text-[9px]",
+            embedded ? "text-[8px]" : "text-[18px]",
           )}
         >
           {label}

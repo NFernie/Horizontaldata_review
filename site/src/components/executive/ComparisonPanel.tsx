@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { WellSelect } from "@/components/WellSelect";
 import { StatTile } from "@/components/StatTile";
 import { CompareWellSelect } from "@/components/executive/CompareWellSelect";
+import { CollapsiblePanel } from "@/components/executive/CollapsiblePanel";
 import { StructuralConcernTrack } from "@/components/executive/StructuralConcernTrack";
 import {
   computeConcernStats,
@@ -26,6 +27,8 @@ interface ComparisonPanelProps {
   wells: WellRecord[];
   clusters: ClustersPayload;
   onSelectionChange?: (focus: string, compare: string) => void;
+  showElevated?: boolean;
+  showHigh?: boolean;
 }
 
 function wellWindow(wells: WellRecord[], alias: string) {
@@ -42,6 +45,8 @@ export function ComparisonPanel({
   wells,
   clusters,
   onSelectionChange,
+  showElevated = true,
+  showHigh = true,
 }: ComparisonPanelProps) {
   const focusKey = pageStateKey("/", `execPanel${panelId}:focus`);
   const compareKey = pageStateKey("/", `execPanel${panelId}:analog`);
@@ -142,20 +147,15 @@ export function ComparisonPanel({
   const compareRankings = rankings.map((r) => ({ alias: r.alias, score: r.cosine }));
 
   return (
-    <section
-      className="min-h-[360px] rounded-card border border-border bg-surface p-5 shadow-card"
-      aria-labelledby={`panel-${panelId}-title`}
-    >
-      <header className="mb-4 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-        <div>
-          <h3 id={`panel-${panelId}-title`} className="text-base font-semibold text-text">
-            Panel {panelId}
-          </h3>
-          {cosineScore != null ? (
-            <p className="mt-0.5 font-mono text-sm text-accent">cos={cosineScore.toFixed(2)}</p>
-          ) : null}
-        </div>
-
+    <CollapsiblePanel
+      panelId={panelId}
+      title={`Panel ${panelId}`}
+      subtitle={
+        cosineScore != null ? (
+          <p className="font-mono text-accent">cos={cosineScore.toFixed(2)}</p>
+        ) : null
+      }
+      headerExtra={
         <div className="grid w-full gap-3 sm:grid-cols-2 lg:max-w-xl">
           <WellSelect
             wells={wells}
@@ -177,8 +177,8 @@ export function ComparisonPanel({
             className="w-full"
           />
         </div>
-      </header>
-
+      }
+    >
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
       {loading ? <p className="mb-3 text-sm text-text-muted">Loading structural tracks…</p> : null}
 
@@ -192,6 +192,8 @@ export function ComparisonPanel({
           owcMtvds={focusData?.owc_mtvds}
           mdStart={focusWindow.mdStart}
           mdEnd={focusWindow.mdEnd}
+          showElevated={showElevated}
+          showHigh={showHigh}
         />
         <StructuralConcernTrack
           resizeKey={pageStateKey("/", `execPanel${panelId}:compareHeight`)}
@@ -202,6 +204,8 @@ export function ComparisonPanel({
           owcMtvds={compareData?.owc_mtvds}
           mdStart={compareWindow.mdStart}
           mdEnd={compareWindow.mdEnd}
+          showElevated={showElevated}
+          showHigh={showHigh}
         />
       </div>
 
@@ -221,6 +225,6 @@ export function ComparisonPanel({
           <li key={bullet}>{bullet}</li>
         ))}
       </ul>
-    </section>
+    </CollapsiblePanel>
   );
 }

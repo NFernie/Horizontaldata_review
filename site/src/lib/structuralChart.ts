@@ -15,10 +15,10 @@ export const STRUCTURAL_CHART_HEIGHT_MAX = 480;
 export const STRUCTURAL_CHART_WIDTH_MIN = 280;
 export const STRUCTURAL_CHART_WIDTH_MAX = 1400;
 export const STRUCTURAL_CORRIDOR_HALF_WIDTH = 10;
-/** Tick labels — 33% smaller than original 13px. */
-export const STRUCTURAL_MIN_TICK_FONT = 9;
-export const STRUCTURAL_AXIS_LABEL_FONT = 7;
-export const STRUCTURAL_MICRO_LABEL_FONT = 7;
+/** Tick labels — 20% larger than prior 9px / 7px executive sizing. */
+export const STRUCTURAL_MIN_TICK_FONT = 11;
+export const STRUCTURAL_AXIS_LABEL_FONT = 8;
+export const STRUCTURAL_MICRO_LABEL_FONT = 8;
 
 export interface ChartPoint {
   x: number;

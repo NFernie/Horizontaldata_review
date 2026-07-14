@@ -12,6 +12,7 @@ import {
   writeStoredWaterRiskRight,
   writeStoredWell,
 } from "@/hooks/useWellSelection";
+import { pageStateKey, usePersistedState } from "@/hooks/usePageState";
 import { fetchJson } from "@/lib/utils";
 import type { ClustersPayload } from "@/types/stats";
 import type { WellRecord } from "@/types/wells";
@@ -30,6 +31,14 @@ export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
   const [panelA, setPanelA] = useState<PanelSelection>({ focus: "JENA31", compare: "" });
   const [panelB, setPanelB] = useState<PanelSelection>({ focus: "JENA31DW1", compare: "" });
   const [panelCCompare, setPanelCCompare] = useState("");
+  const [showElevated, setShowElevated] = usePersistedState(
+    pageStateKey("/", "execShowElevatedFlags"),
+    true,
+  );
+  const [showHigh, setShowHigh] = usePersistedState(
+    pageStateKey("/", "execShowHighFlags"),
+    true,
+  );
 
   useEffect(() => {
     fetchJson<ClustersPayload>("data/stats/clusters.json")
@@ -79,34 +88,8 @@ export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
         </p>
       </header>
 
-      <ComparisonPanel
-        panelId="A"
-        defaultFocus="JENA31"
-        wells={wells}
-        clusters={clusters}
-        onSelectionChange={handlePanelAChange}
-      />
-
-      <ComparisonPanel
-        panelId="B"
-        defaultFocus="JENA31DW1"
-        wells={wells}
-        clusters={clusters}
-        onSelectionChange={handlePanelBChange}
-      />
-
-      <DualLateralPanel
-        wells={wells}
-        clusters={clusters}
-        onSelectionChange={setPanelCCompare}
-      />
-
-      <DistributionHistogramPanel wells={wells} />
-
-      <PortfolioElevatedStrip wells={wells} highlightAliases={highlightAliases} />
-
       <Legend
-        title="Concern track legend"
+        title="Track Legend"
         items={[
           { label: "Elevated", color: "var(--risk-elev)", description: "open circle ○" },
           { label: "High", color: "var(--risk-high)", description: "larger marker" },
@@ -123,6 +106,66 @@ export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
           { label: "JENA 31DW1 lateral", color: "var(--lateral-jena31dw1)" },
         ]}
       />
+
+      <div
+        className="flex flex-wrap items-center gap-x-6 gap-y-2 rounded-card border border-border bg-surface-2 px-4 py-3"
+        role="group"
+        aria-label="Trajectory flag visibility"
+      >
+        <p className="text-xs font-semibold uppercase tracking-wide text-text-muted">
+          Show on trajectory
+        </p>
+        <label className="flex cursor-pointer items-center gap-2 text-sm text-text">
+          <input
+            type="checkbox"
+            checked={showElevated}
+            onChange={(e) => setShowElevated(e.target.checked)}
+            className="h-4 w-4 cursor-pointer accent-accent"
+          />
+          Elevated flags
+        </label>
+        <label className="flex cursor-pointer items-center gap-2 text-sm text-text">
+          <input
+            type="checkbox"
+            checked={showHigh}
+            onChange={(e) => setShowHigh(e.target.checked)}
+            className="h-4 w-4 cursor-pointer accent-accent"
+          />
+          High flags
+        </label>
+      </div>
+
+      <ComparisonPanel
+        panelId="A"
+        defaultFocus="JENA31"
+        wells={wells}
+        clusters={clusters}
+        onSelectionChange={handlePanelAChange}
+        showElevated={showElevated}
+        showHigh={showHigh}
+      />
+
+      <ComparisonPanel
+        panelId="B"
+        defaultFocus="JENA31DW1"
+        wells={wells}
+        clusters={clusters}
+        onSelectionChange={handlePanelBChange}
+        showElevated={showElevated}
+        showHigh={showHigh}
+      />
+
+      <DualLateralPanel
+        wells={wells}
+        clusters={clusters}
+        onSelectionChange={setPanelCCompare}
+        showElevated={showElevated}
+        showHigh={showHigh}
+      />
+
+      <DistributionHistogramPanel wells={wells} />
+
+      <PortfolioElevatedStrip wells={wells} highlightAliases={highlightAliases} />
 
       <div className="flex flex-col gap-3 sm:flex-row">
         <Link
