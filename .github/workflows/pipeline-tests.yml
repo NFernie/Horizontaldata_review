@@ -38,6 +38,7 @@ jobs:
 
       - name: Run pipeline unit tests
         run: |
+          python3 scripts/test_grain_ordinal.py
           python3 scripts/test_zoi.py
           python3 scripts/test_owc.py
           python3 scripts/test_pay_overburden.py

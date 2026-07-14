@@ -1,6 +1,6 @@
 # MCKINLAY 21 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 23:16 UTC  
+**Generated:** 2026-07-14 05:21 UTC  
 **Well:** MCKINLAY 21 (MCKINLAY 21)  
 **TD:** 2417 m MD  
 
@@ -71,6 +71,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 50.0 |
 | Grain Size | Siltstone, 50% (max: nan) |
+| Grain Ordinal | 0 |
 | Porosity Class | fr-gd |
 | Hardness | hd (0.20) |
 | Sorting | v pr (0.00) |

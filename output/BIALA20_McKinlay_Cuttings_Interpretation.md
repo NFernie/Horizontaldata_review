@@ -1,6 +1,6 @@
 # BIALA 20 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 23:14 UTC  
+**Generated:** 2026-07-14 05:19 UTC  
 **Well:** BIALA 20 (BIALA 20)  
 **TD:** 3315 m MD  
 
@@ -78,6 +78,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 0.0 |
 | Grain Size | nan (max: nan) |
+| Grain Ordinal | 0 |
 | Porosity Class | fr |
 | Hardness | fri (0.70) |
 | Sorting | mod (0.40) |
@@ -108,6 +109,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | fri (0.70) |
 | Sorting | mod (0.40) |
@@ -139,6 +141,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | vf-f, rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | mod hd (0.30) |
 | Sorting | mod (0.40) |
@@ -170,6 +173,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f, rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | mod hd (0.30) |
 | Sorting | mod wl (0.60) |
@@ -201,6 +205,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | mod hd (0.30) |
 | Sorting | mod wl (0.60) |
@@ -232,6 +237,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | mod hd (0.30) |
 | Sorting | mod wl (0.60) |
@@ -263,6 +269,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -294,6 +301,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -325,6 +333,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -356,6 +365,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | wl (0.80) |
@@ -387,6 +397,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -418,6 +429,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -449,6 +461,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod (0.40) |
@@ -480,6 +493,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f, rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -511,6 +525,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -542,6 +557,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -573,6 +589,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -604,6 +621,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -635,6 +653,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -666,6 +685,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -697,6 +717,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | f, rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -728,6 +749,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f, rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -759,6 +781,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med,tr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -790,6 +813,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -821,6 +845,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -852,6 +877,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f, rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -915,6 +941,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -946,6 +973,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod (0.40) |
@@ -977,6 +1005,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod (0.40) |
@@ -1008,6 +1037,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, occ crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod (0.40) |
@@ -1039,6 +1069,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-f,occ crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod (0.40) |
@@ -1070,6 +1101,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-vf,rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1101,6 +1133,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | v-vf,mnr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | p-fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1132,6 +1165,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1163,6 +1197,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f, rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1194,6 +1229,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1225,6 +1261,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1256,6 +1293,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 70.0 |
 | Grain Size | f, rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1288,6 +1326,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -1319,6 +1358,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -1350,6 +1390,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -1382,6 +1423,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -1414,6 +1456,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 75.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | wl (0.80) |
@@ -1446,6 +1489,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | wl (0.80) |
@@ -1478,6 +1522,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | wl (0.80) |
@@ -1510,6 +1555,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -1542,6 +1588,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | f-vf,rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1574,6 +1621,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 85.0 |
 | Grain Size | f-vf,rr med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1606,6 +1654,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-vf,mnr med,rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -1669,6 +1718,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod (0.40) |
@@ -1700,6 +1750,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -1731,6 +1782,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -1762,6 +1814,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | pr (0.20) |
@@ -1794,6 +1847,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -1826,6 +1880,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -1858,6 +1913,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -1890,6 +1946,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -1921,6 +1978,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -1952,6 +2010,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med, rr f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -1984,6 +2043,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med, rr f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2016,6 +2076,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | med, rr f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2047,6 +2108,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2078,6 +2140,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -2109,6 +2172,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2140,6 +2204,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-crs, dom med (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2172,6 +2237,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f,occ med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2204,6 +2270,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f,occ med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2236,6 +2303,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2267,6 +2335,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2298,6 +2367,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2329,6 +2399,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, tr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -2360,6 +2431,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med-f (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -2391,6 +2463,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-f (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -2422,6 +2495,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med,mnr vf (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -2453,6 +2527,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med,mnr vf (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -2484,6 +2559,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med-f,occ vf (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -2515,6 +2591,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med-f,occ vf (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -2546,6 +2623,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med-f,occ vf (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -2577,6 +2655,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med-f,occ vf (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -2608,6 +2687,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-f (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -2639,6 +2719,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | med-f (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | wl (0.80) |
@@ -2670,6 +2751,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | med-f (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | wl (0.80) |
@@ -2701,6 +2783,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med-f (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | lse (1.00) |
 | Sorting | wl (0.80) |
@@ -2731,6 +2814,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med-f (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | wl (0.80) |
@@ -2762,6 +2846,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med-f,occ vf (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -2793,6 +2878,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med,occ vf (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -2824,6 +2910,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-f,rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -2855,6 +2942,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-f,occ crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -2886,6 +2974,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med,mnr vf,rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | pr (0.20) |
@@ -2917,6 +3006,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2948,6 +3038,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -2980,6 +3071,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3012,6 +3104,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3044,6 +3137,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3075,6 +3169,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med, rr f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3107,6 +3202,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-rr med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3138,6 +3234,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | wl (0.80) |
@@ -3170,6 +3267,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | wl (0.80) |
@@ -3202,6 +3300,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -3233,6 +3332,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -3264,6 +3364,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -3295,6 +3396,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -3326,6 +3428,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3357,6 +3460,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3388,6 +3492,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -3419,6 +3524,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-v crs (max: C) |
+| Grain Ordinal | 5 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -3450,6 +3556,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -3481,6 +3588,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | pr (0.20) |
@@ -3512,6 +3620,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | pr (0.20) |
@@ -3543,6 +3652,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | pr (0.20) |
@@ -3574,6 +3684,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, occ crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | pr (0.20) |
@@ -3605,6 +3716,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3636,6 +3748,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -3667,6 +3780,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-f,occ crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -3698,6 +3812,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -3729,6 +3844,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | fri-mod hd (0.55) |
 | Sorting | mod wl (0.60) |
@@ -3760,6 +3876,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -3791,6 +3908,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -3822,6 +3940,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3853,6 +3972,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-f, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3884,6 +4004,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3915,6 +4036,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -3946,6 +4068,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, tr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -3977,6 +4100,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -4008,6 +4132,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4039,6 +4164,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 90.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4070,6 +4196,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | vf-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4101,6 +4228,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4132,6 +4260,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med, rr f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4163,6 +4292,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 60.0 |
 | Grain Size | vf-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | pr (0.20) |
@@ -4194,6 +4324,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 80.0 |
 | Grain Size | vf-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4225,6 +4356,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-v crs (max: C) |
+| Grain Ordinal | 5 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4256,6 +4388,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4287,6 +4420,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4318,6 +4452,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4349,6 +4484,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod wl (0.60) |
@@ -4380,6 +4516,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -4411,6 +4548,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-crs, rr f (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | uncons (0.85) |
 | Sorting | mod (0.40) |
@@ -4442,6 +4580,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 95.0 |
 | Grain Size | med-crs, rr f (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4473,6 +4612,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4504,6 +4644,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-crs, rr f (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4535,6 +4676,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med, rr f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4566,6 +4708,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med, rr f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4597,6 +4740,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-crs,rr vf (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod (0.40) |
@@ -4628,6 +4772,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med, rr f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4659,6 +4804,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4690,6 +4836,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | vf-med,occ crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4721,6 +4868,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-vf,mnr med,rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4752,6 +4900,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med, rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4783,6 +4932,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med (max: M) |
+| Grain Ordinal | 3 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4814,6 +4964,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-vf,occ med,rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4845,6 +4996,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-vf,occ med,rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4876,6 +5028,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | med-f,rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | mod wl (0.60) |
@@ -4907,6 +5060,7 @@ Each section: depth interval, spreadsheet sample, mudlog cuttings, wireline log 
 |----------|-------|
 | % Sandstone | 100.0 |
 | Grain Size | f-med,occ vf,rr crs (max: C) |
+| Grain Ordinal | 4 |
 | Porosity Class | fr-gd |
 | Hardness | lse (1.00) |
 | Sorting | pr (0.20) |

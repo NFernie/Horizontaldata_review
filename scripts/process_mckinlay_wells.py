@@ -689,6 +689,21 @@ def _grain_token_ordinal(token):
     if not isinstance(token, str) or not token.strip():
         return 0
     t = token.strip().lower()
+    # Common cuttings abbreviations (Excel Max Grain column: F, M, C, VF, VC, …)
+    _SINGLE = {
+        "vf": 1,
+        "f": 2,
+        "fine": 2,
+        "m": 3,
+        "med": 3,
+        "medium": 3,
+        "c": 4,
+        "crs": 4,
+        "coarse": 4,
+        "vc": 5,
+    }
+    if t in _SINGLE:
+        return _SINGLE[t]
     if re.search(r"\bvc\b|very\s*coarse|v\s*crs", t):
         return 5
     if re.search(r"\bcrs\b|\bcoarse\b", t) and "very" not in t:
@@ -706,16 +721,21 @@ def grain_ordinal(grain, max_grain=None):
     """
     Convert grain-size text to ordinal 0..5.
 
-    Uses max_grain when present, otherwise the finest grain token found in grain text.
-    Ordinal scale: vf=1, f=2, m=3, c=4, vc=5; 0 = unknown.
+    Parses both grain-size text and max-grain fields; returns the coarsest
+    ordinal found (vf=1 … vc=5). Returns 0 when unknown.
     """
-    primary = max_grain if pd.notna(max_grain) and str(max_grain).strip() else grain
-    if not isinstance(primary, str) or not primary.strip():
-        return 0
-    tokens = re.split(r"[,/()\-]|to", primary)
-    ordinals = [_grain_token_ordinal(tok) for tok in tokens]
-    ordinals = [o for o in ordinals if o > 0]
-    return max(ordinals) if ordinals else _grain_token_ordinal(primary)
+    candidates: list[int] = []
+    for raw in (grain, max_grain):
+        if raw is None or (isinstance(raw, float) and pd.isna(raw)):
+            continue
+        if not isinstance(raw, str) or not raw.strip():
+            continue
+        tokens = re.split(r"[,/()\-]|to", raw)
+        for tok in tokens:
+            o = _grain_token_ordinal(tok)
+            if o > 0:
+                candidates.append(o)
+    return max(candidates) if candidates else 0
 
 
 def _interval_descriptor_text(long_desc, mud_matches):
@@ -1427,8 +1447,12 @@ def write_interpretation(meta, path):
         if pd.notna(item["pct_ss"]):
             lines.append(f"| % Sandstone | {item['pct_ss']} |")
         lines.append(f"| Grain Size | {item['grain']} (max: {item['max_grain']}) |")
-        if item.get("grain_ordinal"):
-            lines.append(f"| Grain Ordinal | {item['grain_ordinal']} |")
+        go = item.get("grain_ordinal")
+        if go is None or (isinstance(go, float) and pd.isna(go)):
+            go_disp = "—"
+        else:
+            go_disp = int(go)
+        lines.append(f"| Grain Ordinal | {go_disp} |")
         poro = item.get("poro_class")
         lines.append(f"| Porosity Class | {poro if poro else '—'} |")
         if item.get("hardness_class"):
