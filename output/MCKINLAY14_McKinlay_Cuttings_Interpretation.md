@@ -1,6 +1,6 @@
 # MCKINLAY 14 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 23:22 UTC  
+**Generated:** 2026-07-14 02:26 UTC  
 **Well:** MCKINLAY 14 (MCKINLAY 14)  
 **TD:** 2644 m MD  
 

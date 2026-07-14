@@ -11,6 +11,8 @@ export interface WellRecord {
   elevated_risk_count: number;
   cluster_id: number | null;
   data_missing: boolean;
+  dual_lateral?: boolean;
+  constituents?: string[];
 }
 
 export interface WellsPayload {

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-13 23:23 UTC",
-  "well_count": 23,
+  "generated": "2026-07-14 02:27 UTC",
+  "well_count": 24,
   "wells": [
     {
       "alias": "JENA31",
@@ -13,7 +13,7 @@
       "pay_pct": 80.4,
       "high_risk_count": 1,
       "elevated_risk_count": 32,
-      "cluster_id": 3,
+      "cluster_id": 4,
       "data_missing": false
     },
     {
@@ -27,7 +27,7 @@
       "pay_pct": 73.56,
       "high_risk_count": 1,
       "elevated_risk_count": 17,
-      "cluster_id": 2,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -41,7 +41,7 @@
       "pay_pct": 78.81,
       "high_risk_count": 3,
       "elevated_risk_count": 92,
-      "cluster_id": 2,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -55,7 +55,7 @@
       "pay_pct": 69.45,
       "high_risk_count": 0,
       "elevated_risk_count": 25,
-      "cluster_id": 2,
+      "cluster_id": 4,
       "data_missing": false
     },
     {
@@ -69,7 +69,7 @@
       "pay_pct": 55.25,
       "high_risk_count": 18,
       "elevated_risk_count": 34,
-      "cluster_id": 2,
+      "cluster_id": 4,
       "data_missing": false
     },
     {
@@ -83,7 +83,7 @@
       "pay_pct": 79.48,
       "high_risk_count": 2,
       "elevated_risk_count": 201,
-      "cluster_id": 2,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -97,7 +97,7 @@
       "pay_pct": 83.29,
       "high_risk_count": 0,
       "elevated_risk_count": 38,
-      "cluster_id": 3,
+      "cluster_id": 4,
       "data_missing": false
     },
     {
@@ -125,7 +125,7 @@
       "pay_pct": 57.21,
       "high_risk_count": 0,
       "elevated_risk_count": 20,
-      "cluster_id": 4,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -139,7 +139,7 @@
       "pay_pct": 54.58,
       "high_risk_count": 2,
       "elevated_risk_count": 49,
-      "cluster_id": 4,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -153,7 +153,7 @@
       "pay_pct": 61.79,
       "high_risk_count": 2,
       "elevated_risk_count": 6,
-      "cluster_id": 4,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -167,7 +167,7 @@
       "pay_pct": 60.08,
       "high_risk_count": 0,
       "elevated_risk_count": 69,
-      "cluster_id": 4,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -181,7 +181,7 @@
       "pay_pct": 93.26,
       "high_risk_count": 0,
       "elevated_risk_count": 26,
-      "cluster_id": 2,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -195,7 +195,7 @@
       "pay_pct": 56.45,
       "high_risk_count": 12,
       "elevated_risk_count": 20,
-      "cluster_id": 4,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -209,7 +209,7 @@
       "pay_pct": 74.15,
       "high_risk_count": 0,
       "elevated_risk_count": 7,
-      "cluster_id": 3,
+      "cluster_id": 4,
       "data_missing": false
     },
     {
@@ -223,7 +223,7 @@
       "pay_pct": 62.3,
       "high_risk_count": 0,
       "elevated_risk_count": 25,
-      "cluster_id": 2,
+      "cluster_id": 4,
       "data_missing": false
     },
     {
@@ -237,7 +237,7 @@
       "pay_pct": 43.45,
       "high_risk_count": 50,
       "elevated_risk_count": 43,
-      "cluster_id": 1,
+      "cluster_id": 2,
       "data_missing": false
     },
     {
@@ -265,7 +265,7 @@
       "pay_pct": 66.24,
       "high_risk_count": 0,
       "elevated_risk_count": 0,
-      "cluster_id": 3,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -279,7 +279,7 @@
       "pay_pct": 60.91,
       "high_risk_count": 2,
       "elevated_risk_count": 13,
-      "cluster_id": 3,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -293,7 +293,7 @@
       "pay_pct": 66.92,
       "high_risk_count": 0,
       "elevated_risk_count": 0,
-      "cluster_id": 3,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -307,7 +307,7 @@
       "pay_pct": 52.42,
       "high_risk_count": 3,
       "elevated_risk_count": 61,
-      "cluster_id": 3,
+      "cluster_id": 1,
       "data_missing": false
     },
     {
@@ -323,6 +323,25 @@
       "elevated_risk_count": 16,
       "cluster_id": 1,
       "data_missing": false
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "display": "JENA 31 Dual Lateral",
+      "tops_name": "JENA 31 Dual Lateral",
+      "dc30": null,
+      "td": null,
+      "lateral": 2741.5,
+      "interval_count": 362,
+      "pay_pct": 76.4,
+      "high_risk_count": 2,
+      "elevated_risk_count": 49,
+      "cluster_id": 4,
+      "data_missing": false,
+      "dual_lateral": true,
+      "constituents": [
+        "JENA31",
+        "JENA31DW1"
+      ]
     },
     {
       "alias": "HOBBES4",
@@ -341,6 +360,7 @@
   ],
   "notes": {
     "hobbes4": "HOBBES 4 has no data files in repository; marked data_missing.",
-    "exclusions": "All statistics exclude overburden intervals via exclusion_zones."
+    "exclusions": "All statistics exclude overburden intervals via exclusion_zones.",
+    "jena31_dual": "JENA31_DUAL merges JENA31 + JENA31DW1 intervals; pay_pct = sum(matching pay MD) / sum(lateral length)."
   }
 }

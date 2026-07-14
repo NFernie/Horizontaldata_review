@@ -41,11 +41,16 @@ export function PortfolioElevatedStrip({
         {sorted.map((well) => {
           const highlighted = highlightAliases.has(well.alias);
           const barPct = (well.elevated_risk_count / maxElevated) * 100;
+          const to = well.dual_lateral ? "/#executive-summary" : `/well/${well.alias}`;
+          const shortName = well.display
+            .replace("MCKINLAY", "MCK")
+            .replace("FROSTILLICUS", "FROST")
+            .replace("JENA 31 Dual Lateral", "JENA DUAL");
 
           return (
             <Link
               key={well.alias}
-              to={`/well/${well.alias}`}
+              to={to}
               role="listitem"
               className={cn(
                 "group flex min-w-[3.25rem] flex-col items-center rounded-card border px-1.5 py-2 transition-colors",
@@ -67,12 +72,17 @@ export function PortfolioElevatedStrip({
               </div>
               <span
                 className={cn(
-                  "mt-1 max-w-full truncate text-[9px] font-medium leading-tight",
+                  "mt-1 max-w-full truncate text-center text-[9px] font-medium leading-tight",
                   highlighted ? "text-accent" : "text-text-muted",
                 )}
               >
-                {well.display.replace("MCKINLAY", "MCK").replace("FROSTILLICUS", "FROST")}
+                {shortName}
               </span>
+              {well.dual_lateral ? (
+                <span className="mt-0.5 rounded px-1 text-[8px] font-semibold uppercase tracking-wide text-bg bg-[var(--lateral-dual-badge)]">
+                  Dual
+                </span>
+              ) : null}
               <span className="font-mono text-[10px] text-text">
                 {formatNumber(well.elevated_risk_count, 0)}
               </span>
@@ -82,7 +92,8 @@ export function PortfolioElevatedStrip({
       </div>
 
       <p className="mt-2 text-xs text-text-muted">
-        Accent highlight = current focus or analog wells in panels above.
+        Accent highlight = current focus or compare wells in panels above. Dual lateral links to
+        executive summary.
       </p>
     </div>
   );

@@ -63,22 +63,29 @@ export function formatConcernBullet(
   return `${display}: ${parts.join("; ")}; ${isolation}.`;
 }
 
+export function formatCompareBullet(
+  display: string,
+  score: number | null,
+  stats: ConcernStats,
+  _hasIsolationOnFile: boolean,
+  scorePrefix: "cos" | "J" = "cos",
+): string {
+  const scoreLabel = score != null ? `${scorePrefix}=${score.toFixed(2)}` : `${scorePrefix}=—`;
+  const concernPart =
+    stats.totalConcerns === 0
+      ? "no concern zones"
+      : `${stats.elevated} elevated; ${stats.high} high${
+          stats.isolatedConcerns > 0 ? `; ${stats.isolatedConcerns} isolated concern zones` : ""
+        }`;
+  return `vs ${display} (${scoreLabel}): ${concernPart}.`;
+}
+
+/** @deprecated Use formatCompareBullet with scorePrefix */
 export function formatAnalogBullet(
   display: string,
   jaccard: number | null,
   stats: ConcernStats,
   hasIsolationOnFile: boolean,
 ): string {
-  const score = jaccard != null ? `J=${jaccard.toFixed(2)}` : "J=—";
-  const concernPart =
-    stats.totalConcerns === 0
-      ? "no concern zones"
-      : `${stats.elevated} elevated; ${stats.high} high${
-          stats.isolatedConcerns > 0
-            ? `; ${stats.isolatedConcerns} isolated concern zones`
-            : hasIsolationOnFile
-              ? ""
-              : ""
-        }`;
-  return `vs ${display} (${score}): ${concernPart}.`;
+  return formatCompareBullet(display, jaccard, stats, hasIsolationOnFile, "J");
 }

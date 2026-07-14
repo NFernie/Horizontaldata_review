@@ -1,8 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { fetchJson } from "@/lib/utils";
-import type { WellsPayload } from "@/types/wells";
+import type { WellsPayload, WellRecord } from "@/types/wells";
 
-export function useWells() {
+interface UseWellsOptions {
+  includeDualLateral?: boolean;
+}
+
+export function useWells(options: UseWellsOptions = {}) {
+  const { includeDualLateral = false } = options;
   const [wells, setWells] = useState<WellsPayload | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -14,5 +19,17 @@ export function useWells() {
       .finally(() => setLoading(false));
   }, []);
 
-  return { wells, loading, error, activeWells: wells?.wells.filter((w) => !w.data_missing) ?? [] };
+  const activeWells = useMemo<WellRecord[]>(() => {
+    return (
+      wells?.wells.filter(
+        (w) => !w.data_missing && (includeDualLateral || !w.dual_lateral),
+      ) ?? []
+    );
+  }, [wells, includeDualLateral]);
+
+  const executiveWells = useMemo<WellRecord[]>(() => {
+    return wells?.wells.filter((w) => !w.data_missing) ?? [];
+  }, [wells]);
+
+  return { wells, loading, error, activeWells, executiveWells };
 }

@@ -1,6 +1,6 @@
 # MCKINLAY 21 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 23:16 UTC  
+**Generated:** 2026-07-14 02:20 UTC  
 **Well:** MCKINLAY 21 (MCKINLAY 21)  
 **TD:** 2417 m MD  
 

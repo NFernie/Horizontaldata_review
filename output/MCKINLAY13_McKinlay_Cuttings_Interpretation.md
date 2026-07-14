@@ -1,6 +1,6 @@
 # MCKINLAY 13 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 23:21 UTC  
+**Generated:** 2026-07-14 02:25 UTC  
 **Well:** MCKINLAY 13 (MCKINLAY 13)  
 **TD:** 3229 m MD  
 

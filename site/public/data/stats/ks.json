@@ -572,31 +572,57 @@
           "D": 0.568,
           "p_value": 0.0
         }
+      },
+      "JENA31_DUAL": {
+        "pct_ss": {
+          "D": 0.0248,
+          "p_value": 0.999992
+        },
+        "grain_ordinal": {
+          "D": 0.4088,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2308,
+          "p_value": 2e-06
+        },
+        "avg_RES_DEEP": {
+          "D": 0.1847,
+          "p_value": 0.00029
+        },
+        "fluor": {
+          "D": 0.0833,
+          "p_value": 0.316943
+        },
+        "WRCI": {
+          "D": 0.1134,
+          "p_value": 0.068049
+        }
       }
     },
     "vs_portfolio": {
       "pct_ss": {
-        "D": 0.3546,
+        "D": 0.3245,
         "p_value": 0.0
       },
       "grain_ordinal": {
-        "D": 0.415,
+        "D": 0.4133,
         "p_value": 0.0
       },
       "avg_GR": {
-        "D": 0.249,
+        "D": 0.2431,
         "p_value": 0.0
       },
       "avg_RES_DEEP": {
-        "D": 0.1876,
-        "p_value": 3e-06
+        "D": 0.1825,
+        "p_value": 6e-06
       },
       "fluor": {
-        "D": 0.3484,
+        "D": 0.325,
         "p_value": 0.0
       },
       "WRCI": {
-        "D": 0.2892,
+        "D": 0.2602,
         "p_value": 0.0
       }
     }
@@ -1174,31 +1200,685 @@
           "D": 0.6657,
           "p_value": 0.0
         }
+      },
+      "JENA31_DUAL": {
+        "pct_ss": {
+          "D": 0.0296,
+          "p_value": 0.999884
+        },
+        "grain_ordinal": {
+          "D": 0.488,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2761,
+          "p_value": 0.0
+        },
+        "avg_RES_DEEP": {
+          "D": 0.2221,
+          "p_value": 2.4e-05
+        },
+        "fluor": {
+          "D": 0.0994,
+          "p_value": 0.19593
+        },
+        "WRCI": {
+          "D": 0.1354,
+          "p_value": 0.027814
+        }
       }
     },
     "vs_portfolio": {
       "pct_ss": {
-        "D": 0.3272,
+        "D": 0.2971,
         "p_value": 0.0
       },
       "grain_ordinal": {
-        "D": 0.5549,
+        "D": 0.549,
         "p_value": 0.0
       },
       "avg_GR": {
-        "D": 0.324,
+        "D": 0.317,
         "p_value": 0.0
       },
       "avg_RES_DEEP": {
-        "D": 0.3054,
+        "D": 0.297,
         "p_value": 0.0
       },
       "fluor": {
-        "D": 0.1658,
-        "p_value": 0.000291
+        "D": 0.1423,
+        "p_value": 0.002878
       },
       "WRCI": {
-        "D": 0.39,
+        "D": 0.3607,
+        "p_value": 0.0
+      }
+    }
+  },
+  "JENA31_DUAL": {
+    "vs_analogs": {
+      "JENA31": {
+        "pct_ss": {
+          "D": 0.0248,
+          "p_value": 0.999992
+        },
+        "grain_ordinal": {
+          "D": 0.4088,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2308,
+          "p_value": 2e-06
+        },
+        "avg_RES_DEEP": {
+          "D": 0.1847,
+          "p_value": 0.00029
+        },
+        "fluor": {
+          "D": 0.0833,
+          "p_value": 0.316943
+        },
+        "WRCI": {
+          "D": 0.1134,
+          "p_value": 0.068049
+        }
+      },
+      "JENA31DW1": {
+        "pct_ss": {
+          "D": 0.0296,
+          "p_value": 0.999884
+        },
+        "grain_ordinal": {
+          "D": 0.488,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2761,
+          "p_value": 0.0
+        },
+        "avg_RES_DEEP": {
+          "D": 0.2221,
+          "p_value": 2.4e-05
+        },
+        "fluor": {
+          "D": 0.0994,
+          "p_value": 0.19593
+        },
+        "WRCI": {
+          "D": 0.1354,
+          "p_value": 0.027814
+        }
+      },
+      "BIALA19": {
+        "pct_ss": {
+          "D": 0.2537,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.5566,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.1377,
+          "p_value": 0.008023
+        },
+        "avg_RES_DEEP": {
+          "D": 0.1151,
+          "p_value": 0.04151
+        },
+        "fluor": {
+          "D": 0.1293,
+          "p_value": 0.014853
+        },
+        "WRCI": {
+          "D": 0.6894,
+          "p_value": 0.0
+        }
+      },
+      "BIALA20": {
+        "pct_ss": {
+          "D": 0.3726,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.5148,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2743,
+          "p_value": 0.0
+        },
+        "avg_RES_DEEP": {
+          "D": 0.3082,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.0867,
+          "p_value": 0.359374
+        },
+        "WRCI": {
+          "D": 0.3911,
+          "p_value": 0.0
+        }
+      },
+      "BIALA21": {
+        "pct_ss": {
+          "D": 0.1368,
+          "p_value": 0.045873
+        },
+        "grain_ordinal": {
+          "D": 0.4392,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2927,
+          "p_value": 0.0
+        },
+        "avg_RES_DEEP": {
+          "D": 0.2551,
+          "p_value": 5e-06
+        },
+        "fluor": {
+          "D": 0.17,
+          "p_value": 0.006014
+        },
+        "WRCI": {
+          "D": 0.5123,
+          "p_value": 0.0
+        }
+      },
+      "FROSTILLICUS2": {
+        "pct_ss": {
+          "D": 0.4128,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.4779,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.1522,
+          "p_value": 0.000358
+        },
+        "avg_RES_DEEP": {
+          "D": 0.5454,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.1198,
+          "p_value": 0.009084
+        },
+        "WRCI": {
+          "D": 0.4734,
+          "p_value": 0.0
+        }
+      },
+      "GRANCHIO4": {
+        "pct_ss": {
+          "D": 0.6023,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.4392,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2278,
+          "p_value": 0.000103
+        },
+        "avg_RES_DEEP": {
+          "D": 0.4735,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.2355,
+          "p_value": 4.5e-05
+        },
+        "WRCI": {
+          "D": 0.2829,
+          "p_value": 0.0
+        }
+      },
+      "HOBBES5": {
+        "pct_ss": {
+          "D": 0.1483,
+          "p_value": 0.063164
+        },
+        "grain_ordinal": {
+          "D": 0.3976,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2831,
+          "p_value": 7e-06
+        },
+        "avg_RES_DEEP": {
+          "D": 0.5292,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.4437,
+          "p_value": 0.0
+        },
+        "WRCI": {
+          "D": 0.2739,
+          "p_value": 1.6e-05
+        }
+      },
+      "HOBBES6": {
+        "pct_ss": {
+          "D": 0.1794,
+          "p_value": 0.027678
+        },
+        "grain_ordinal": {
+          "D": 0.2529,
+          "p_value": 0.000418
+        },
+        "avg_GR": {
+          "D": 0.1865,
+          "p_value": 0.020845
+        },
+        "avg_RES_DEEP": {
+          "D": 0.3326,
+          "p_value": 1e-06
+        },
+        "fluor": {
+          "D": 0.3925,
+          "p_value": 0.0
+        },
+        "WRCI": {
+          "D": 0.4827,
+          "p_value": 0.0
+        }
+      },
+      "MCKINLAY20": {
+        "pct_ss": {
+          "D": 0.0921,
+          "p_value": 0.130056
+        },
+        "grain_ordinal": {
+          "D": 0.4724,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.1888,
+          "p_value": 2.7e-05
+        },
+        "avg_RES_DEEP": {
+          "D": 0.3966,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.2012,
+          "p_value": 5e-06
+        },
+        "WRCI": {
+          "D": 0.3217,
+          "p_value": 0.0
+        }
+      },
+      "MCKINLAY21": {
+        "pct_ss": {
+          "D": 0.1536,
+          "p_value": 0.022388
+        },
+        "grain_ordinal": {
+          "D": 0.4643,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2494,
+          "p_value": 1.9e-05
+        },
+        "avg_RES_DEEP": {
+          "D": 0.2166,
+          "p_value": 0.000294
+        },
+        "fluor": {
+          "D": 0.3893,
+          "p_value": 0.0
+        },
+        "WRCI": {
+          "D": 0.3677,
+          "p_value": 0.0
+        }
+      },
+      "MCKINLAY22": {
+        "pct_ss": {
+          "D": 0.1711,
+          "p_value": 9.6e-05
+        },
+        "grain_ordinal": {
+          "D": 0.4141,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.1609,
+          "p_value": 0.000332
+        },
+        "avg_RES_DEEP": {
+          "D": 0.4862,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.1919,
+          "p_value": 7e-06
+        },
+        "WRCI": {
+          "D": 0.2774,
+          "p_value": 0.0
+        }
+      },
+      "MCKINLAY23": {
+        "pct_ss": {
+          "D": 0.569,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.4779,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2018,
+          "p_value": 8.9e-05
+        },
+        "avg_RES_DEEP": {
+          "D": 0.2268,
+          "p_value": 6e-06
+        },
+        "fluor": {
+          "D": 0.0641,
+          "p_value": 0.668043
+        },
+        "WRCI": {
+          "D": 0.1979,
+          "p_value": 0.000117
+        }
+      },
+      "MCKINLAY24": {
+        "pct_ss": {
+          "D": 0.1808,
+          "p_value": 0.001047
+        },
+        "grain_ordinal": {
+          "D": 0.4724,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.1573,
+          "p_value": 0.006977
+        },
+        "avg_RES_DEEP": {
+          "D": 0.3235,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.1322,
+          "p_value": 0.034619
+        },
+        "WRCI": {
+          "D": 0.3771,
+          "p_value": 0.0
+        }
+      },
+      "STIMPEE6": {
+        "pct_ss": {
+          "D": 0.2688,
+          "p_value": 1e-06
+        },
+        "grain_ordinal": {
+          "D": 0.27,
+          "p_value": 1e-06
+        },
+        "avg_GR": {
+          "D": 0.1621,
+          "p_value": 0.012204
+        },
+        "avg_RES_DEEP": {
+          "D": 0.4343,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.0386,
+          "p_value": 0.997489
+        },
+        "WRCI": {
+          "D": 0.1893,
+          "p_value": 0.001759
+        }
+      },
+      "STIMPEE7": {
+        "pct_ss": {
+          "D": 0.5292,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.4392,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.1995,
+          "p_value": 0.007808
+        },
+        "avg_RES_DEEP": {
+          "D": 0.3786,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.1704,
+          "p_value": 0.034477
+        },
+        "WRCI": {
+          "D": 0.3028,
+          "p_value": 5e-06
+        }
+      },
+      "TERINGIE6": {
+        "pct_ss": {
+          "D": 0.6766,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.4392,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.202,
+          "p_value": 0.000218
+        },
+        "avg_RES_DEEP": {
+          "D": 0.5769,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.4129,
+          "p_value": 0.0
+        },
+        "WRCI": {
+          "D": 0.6573,
+          "p_value": 0.0
+        }
+      },
+      "MCKINLAY10": {
+        "pct_ss": {
+          "D": 0.3574,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.5276,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2413,
+          "p_value": 0.000228
+        },
+        "avg_RES_DEEP": {
+          "D": 0.5436,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.0492,
+          "p_value": 0.991892
+        },
+        "WRCI": {
+          "D": 0.2191,
+          "p_value": 0.001107
+        }
+      },
+      "MCKINLAY11": {
+        "pct_ss": {
+          "D": 0.7721,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.5276,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.2978,
+          "p_value": 4.8e-05
+        },
+        "avg_RES_DEEP": {
+          "D": 0.5108,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.8526,
+          "p_value": 0.0
+        },
+        "WRCI": {
+          "D": 0.2961,
+          "p_value": 4.8e-05
+        }
+      },
+      "MCKINLAY12": {
+        "pct_ss": {
+          "D": 0.8149,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.5276,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.1954,
+          "p_value": 0.000235
+        },
+        "avg_RES_DEEP": {
+          "D": 0.1701,
+          "p_value": 0.00207
+        },
+        "fluor": {
+          "D": 0.7649,
+          "p_value": 0.0
+        },
+        "WRCI": {
+          "D": 0.4067,
+          "p_value": 0.0
+        }
+      },
+      "MCKINLAY13": {
+        "pct_ss": {
+          "D": 0.8149,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.5276,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.3849,
+          "p_value": 0.0
+        },
+        "avg_RES_DEEP": {
+          "D": 0.2348,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.8812,
+          "p_value": 0.0
+        },
+        "WRCI": {
+          "D": 0.3377,
+          "p_value": 0.0
+        }
+      },
+      "MCKINLAY14": {
+        "pct_ss": {
+          "D": 0.8149,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.5276,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.3302,
+          "p_value": 0.0
+        },
+        "avg_RES_DEEP": {
+          "D": 0.2617,
+          "p_value": 1.2e-05
+        },
+        "fluor": {
+          "D": 0.8812,
+          "p_value": 0.0
+        },
+        "WRCI": {
+          "D": 0.6551,
+          "p_value": 0.0
+        }
+      },
+      "MCKINLAY15": {
+        "pct_ss": {
+          "D": 0.8149,
+          "p_value": 0.0
+        },
+        "grain_ordinal": {
+          "D": 0.5276,
+          "p_value": 0.0
+        },
+        "avg_GR": {
+          "D": 0.5224,
+          "p_value": 0.0
+        },
+        "avg_RES_DEEP": {
+          "D": 0.4851,
+          "p_value": 0.0
+        },
+        "fluor": {
+          "D": 0.9309,
+          "p_value": 0.0
+        },
+        "WRCI": {
+          "D": 0.6073,
+          "p_value": 0.0
+        }
+      }
+    },
+    "vs_portfolio": {
+      "pct_ss": {
+        "D": 0.312,
+        "p_value": 0.0
+      },
+      "grain_ordinal": {
+        "D": 0.0629,
+        "p_value": 0.136906
+      },
+      "avg_GR": {
+        "D": 0.0925,
+        "p_value": 0.006637
+      },
+      "avg_RES_DEEP": {
+        "D": 0.1192,
+        "p_value": 0.000153
+      },
+      "fluor": {
+        "D": 0.2417,
+        "p_value": 0.0
+      },
+      "WRCI": {
+        "D": 0.3033,
         "p_value": 0.0
       }
     }

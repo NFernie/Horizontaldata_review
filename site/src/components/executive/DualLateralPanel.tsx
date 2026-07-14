@@ -1,8 +1,9 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { WellSelect } from "@/components/WellSelect";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { StatTile } from "@/components/StatTile";
 import { CompareWellSelect } from "@/components/executive/CompareWellSelect";
 import { ConcernTrack } from "@/components/executive/ConcernTrack";
+import { DualLateralTrack } from "@/components/executive/DualLateralTrack";
+import { JENA31_DUAL_ALIAS } from "@/config";
 import {
   computeConcernStats,
   formatCompareBullet,
@@ -19,70 +20,54 @@ import type { IntervalsPayload } from "@/types/intervals";
 import type { ClustersPayload } from "@/types/stats";
 import type { WellRecord } from "@/types/wells";
 
-interface ComparisonPanelProps {
-  panelId: "A" | "B";
-  defaultFocus: string;
+interface DualLateralPanelProps {
   wells: WellRecord[];
   clusters: ClustersPayload;
-  onSelectionChange?: (focus: string, compare: string) => void;
+  onSelectionChange?: (compare: string) => void;
 }
 
-export function ComparisonPanel({
-  panelId,
-  defaultFocus,
-  wells,
-  clusters,
-  onSelectionChange,
-}: ComparisonPanelProps) {
-  const focusKey = pageStateKey("/", `execPanel${panelId}:focus`);
-  const compareKey = pageStateKey("/", `execPanel${panelId}:analog`);
-
-  const [focusAlias, setFocusAlias] = usePersistedState(focusKey, defaultFocus);
+export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLateralPanelProps) {
+  const compareKey = pageStateKey("/", "execPanelC:compare");
   const [compareAlias, setCompareAlias] = usePersistedState(compareKey, "");
   const [focusData, setFocusData] = useState<IntervalsPayload | null>(null);
   const [compareData, setCompareData] = useState<IntervalsPayload | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const prevFocusRef = useRef(focusAlias);
+  const initializedRef = useRef(false);
 
   const rankings = useMemo(
-    () => rankClusterAnalogs(focusAlias, clusters),
-    [focusAlias, clusters],
-  );
-
-  const resolveCompare = useCallback(
-    (focus: string, stored: string) => {
-      const ranked = rankClusterAnalogs(focus, clusters);
-      const valid = ranked.some((r) => r.alias === stored);
-      if (valid && stored) return stored;
-      return topClusterAnalog(focus, clusters) ?? ranked[0]?.alias ?? "";
-    },
+    () => rankClusterAnalogs(JENA31_DUAL_ALIAS, clusters),
     [clusters],
   );
 
   useEffect(() => {
-    if (!compareAlias || prevFocusRef.current !== focusAlias) {
-      const next = resolveCompare(focusAlias, compareAlias);
-      if (next && next !== compareAlias) {
-        setCompareAlias(next);
+    if (initializedRef.current) return;
+    if (!compareAlias) {
+      const top = topClusterAnalog(JENA31_DUAL_ALIAS, clusters);
+      if (top) setCompareAlias(top);
+    } else {
+      const valid = rankings.some((r) => r.alias === compareAlias);
+      if (!valid) {
+        const top = topClusterAnalog(JENA31_DUAL_ALIAS, clusters);
+        if (top) setCompareAlias(top);
       }
-      prevFocusRef.current = focusAlias;
     }
-  }, [focusAlias, compareAlias, resolveCompare, setCompareAlias]);
+    initializedRef.current = true;
+  }, [compareAlias, clusters, rankings, setCompareAlias]);
 
   useEffect(() => {
-    if (!focusAlias || !compareAlias) return;
-    onSelectionChange?.(focusAlias, compareAlias);
-  }, [focusAlias, compareAlias, onSelectionChange]);
+    if (!compareAlias) return;
+    onSelectionChange?.(compareAlias);
+  }, [compareAlias, onSelectionChange]);
 
   useEffect(() => {
-    if (!focusAlias || !compareAlias) return;
+    if (!compareAlias) return;
     let cancelled = false;
     setLoading(true);
     setError(null);
 
     Promise.all([
-      fetchJson<IntervalsPayload>(`data/intervals/${focusAlias}.json`),
+      fetchJson<IntervalsPayload>(`data/intervals/${JENA31_DUAL_ALIAS}.json`),
       fetchJson<IntervalsPayload>(`data/intervals/${compareAlias}.json`),
     ])
       .then(([focus, compare]) => {
@@ -101,24 +86,17 @@ export function ComparisonPanel({
     return () => {
       cancelled = true;
     };
-  }, [focusAlias, compareAlias]);
+  }, [compareAlias]);
 
-  const handleFocusChange = (alias: string) => {
-    setFocusAlias(alias);
-    const nextCompare = topClusterAnalog(alias, clusters);
-    if (nextCompare) setCompareAlias(nextCompare);
-  };
-
-  const cosineScore = getCosineScore(focusAlias, compareAlias, clusters);
+  const cosineScore = getCosineScore(JENA31_DUAL_ALIAS, compareAlias, clusters);
   const focusStats = computeConcernStats(focusData?.intervals ?? []);
   const compareStats = computeConcernStats(compareData?.intervals ?? []);
-  const focusDisplay = focusData?.display ?? focusAlias;
   const compareDisplay = compareData?.display ?? compareAlias;
   const focusHasIso = (focusData?.isolation_depths?.length ?? 0) > 0;
   const compareHasIso = (compareData?.isolation_depths?.length ?? 0) > 0;
 
   const bullets = [
-    formatConcernBullet(focusDisplay, focusStats, focusHasIso),
+    formatConcernBullet("JENA 31 Dual Lateral", focusStats, focusHasIso),
     formatCompareBullet(compareDisplay, cosineScore, compareStats, compareHasIso, "cos"),
   ];
 
@@ -127,48 +105,42 @@ export function ComparisonPanel({
   return (
     <section
       className="rounded-card border border-border bg-surface p-4 shadow-card sm:p-5"
-      aria-labelledby={`panel-${panelId}-title`}
+      aria-labelledby="panel-c-title"
     >
       <header className="mb-4 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <h3 id={`panel-${panelId}-title`} className="text-base font-semibold text-text">
-            Panel {panelId}
+          <h3 id="panel-c-title" className="text-base font-semibold text-text">
+            Panel C — Dual Lateral
           </h3>
+          <p className="mt-0.5 text-sm text-text-muted">
+            JENA 31 Dual Lateral · single wellhead · commingled production
+          </p>
           {cosineScore != null ? (
             <p className="mt-0.5 font-mono text-sm text-accent">cos={cosineScore.toFixed(2)}</p>
           ) : null}
         </div>
 
-        <div className="grid w-full gap-3 sm:grid-cols-2 lg:max-w-xl">
-          <WellSelect
-            wells={wells}
-            value={focusAlias}
-            onChange={handleFocusChange}
-            label="Focus well"
-            id={`exec-focus-${panelId}`}
-            className="w-full"
-          />
-          <CompareWellSelect
-            wells={wells}
-            focusAlias={focusAlias}
-            value={compareAlias}
-            onChange={setCompareAlias}
-            rankings={compareRankings}
-            scorePrefix="cos"
-            label="Compare well"
-            id={`exec-compare-${panelId}`}
-            className="w-full"
-          />
-        </div>
+        <CompareWellSelect
+          wells={wells}
+          focusAlias={JENA31_DUAL_ALIAS}
+          value={compareAlias}
+          onChange={setCompareAlias}
+          rankings={compareRankings}
+          scorePrefix="cos"
+          label="Compare well"
+          id="exec-compare-C"
+          className="w-full lg:max-w-sm"
+        />
       </header>
 
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
-      {loading ? <p className="mb-3 text-sm text-text-muted">Loading concern tracks…</p> : null}
+      {loading ? <p className="mb-3 text-sm text-text-muted">Loading dual lateral tracks…</p> : null}
 
       <div className="grid gap-3 max-md:grid-cols-1 md:grid-cols-2">
-        <ConcernTrack
-          label={`Focus — ${focusDisplay}`}
+        <DualLateralTrack
+          label="Dual lateral — colour by source"
           intervals={focusData?.intervals ?? []}
+          wells={wells}
           isolationDepths={focusData?.isolation_depths}
         />
         <ConcernTrack
@@ -182,11 +154,7 @@ export function ComparisonPanel({
         <StatTile label="Elevated" value={focusStats.elevated} variant="risk" />
         <StatTile label="High" value={focusStats.high} variant="risk" />
         <StatTile label="Isolated concerns" value={focusStats.isolatedConcerns} variant="accent" />
-        <StatTile
-          label="Open concerns"
-          value={focusStats.nonIsolatedConcerns}
-          hint="Focus well"
-        />
+        <StatTile label="Open concerns" value={focusStats.nonIsolatedConcerns} hint="Dual lateral" />
       </div>
 
       <ul className="mt-4 list-disc space-y-1 pl-5 text-sm text-text-muted">

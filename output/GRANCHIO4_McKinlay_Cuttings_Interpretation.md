@@ -1,6 +1,6 @@
 # GRANCHIO 4 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 23:15 UTC  
+**Generated:** 2026-07-14 02:19 UTC  
 **Well:** GRANCHIO 4 (GRANCHIO 4)  
 **TD:** 2825 m MD  
 

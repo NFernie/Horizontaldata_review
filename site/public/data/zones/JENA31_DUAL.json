@@ -1,0 +1,48 @@
+{
+  "alias": "JENA31_DUAL",
+  "display": "JENA 31 Dual Lateral",
+  "zones": [
+    {
+      "entry": 2794.81,
+      "murta": 2794.65,
+      "re_entry": 2842.67,
+      "length": 47.86000000000013,
+      "default_reentry": false
+    },
+    {
+      "entry": 3197.73,
+      "murta": 3197.73,
+      "re_entry": 3238.04,
+      "length": 40.309999999999945,
+      "default_reentry": false
+    },
+    {
+      "entry": 3332.41,
+      "murta": 3331.56,
+      "re_entry": 3382.41,
+      "length": 50.0,
+      "default_reentry": true
+    },
+    {
+      "entry": 2377.57,
+      "murta": 2375.43,
+      "re_entry": 2407.51,
+      "length": 29.940000000000055,
+      "default_reentry": false
+    },
+    {
+      "entry": 2965.71,
+      "murta": 2967.84,
+      "re_entry": 3243.73,
+      "length": 278.02,
+      "default_reentry": false
+    },
+    {
+      "entry": 3369.92,
+      "murta": 3365.64,
+      "re_entry": 3410.55,
+      "length": 40.63000000000011,
+      "default_reentry": false
+    }
+  ]
+}

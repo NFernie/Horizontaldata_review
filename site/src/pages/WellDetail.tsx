@@ -1,5 +1,5 @@
+import { Link, Navigate, useParams } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
-import { useParams, Link } from "react-router-dom";
 import { Card } from "@/components/Card";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
 import { DepthTracks } from "@/components/DepthTracks";
@@ -7,6 +7,7 @@ import { Legend } from "@/components/Legend";
 import { MetricCell } from "@/components/MetricCell";
 import { RiskBadge } from "@/components/RiskBadge";
 import { WellSelect } from "@/components/WellSelect";
+import { JENA31_DUAL_ALIAS } from "@/config";
 import { useScrollRestore } from "@/hooks/usePageState";
 import { useWells } from "@/hooks/useWells";
 import { readStoredWell, writeStoredWell } from "@/hooks/useWellSelection";
@@ -155,6 +156,10 @@ export function WellDetail() {
 
   if (wellsLoading || loading) {
     return <p className="text-text-muted">Loading well data…</p>;
+  }
+
+  if (routeAlias === JENA31_DUAL_ALIAS || alias === JENA31_DUAL_ALIAS) {
+    return <Navigate to="/well/JENA31" replace />;
   }
 
   if (error || !intervals || !zones) {

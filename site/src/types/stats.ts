@@ -19,6 +19,13 @@ export interface ClustersPayload {
   cluster_ids: Record<string, number>;
 }
 
+export interface ClusterAnalogRankEntry {
+  alias: string;
+  cosine: number;
+}
+
+export type ClusterAnalogRankingPayload = Record<string, ClusterAnalogRankEntry[]>;
+
 export interface KsResult {
   D: number;
   p_value: number;

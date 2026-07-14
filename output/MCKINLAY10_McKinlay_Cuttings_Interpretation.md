@@ -1,6 +1,6 @@
 # MCKINLAY 10 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 23:18 UTC  
+**Generated:** 2026-07-14 02:22 UTC  
 **Well:** MCKINLAY 10 (MCKINLAY 10)  
 **TD:** 2111 m MD  
 

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { Card } from "@/components/Card";
 import { CorrelationMatrix } from "@/components/CorrelationMatrix";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
@@ -7,6 +7,7 @@ import { Legend } from "@/components/Legend";
 import { MetricCell } from "@/components/MetricCell";
 import { RiskBadge } from "@/components/RiskBadge";
 import { WellSelect } from "@/components/WellSelect";
+import { JENA31_DUAL_ALIAS } from "@/config";
 import { useScrollRestore } from "@/hooks/usePageState";
 import { useWells } from "@/hooks/useWells";
 import { readStoredWell, writeStoredWell } from "@/hooks/useWellSelection";
@@ -96,6 +97,10 @@ export function IntraWellStats() {
 
   if (wellsLoading || loading) {
     return <p className="text-text-muted">Loading intra-well statistics…</p>;
+  }
+
+  if (routeAlias === JENA31_DUAL_ALIAS || alias === JENA31_DUAL_ALIAS) {
+    return <Navigate to="/intra/JENA31" replace />;
   }
 
   if (error) {

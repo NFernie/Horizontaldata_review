@@ -3,6 +3,7 @@ import { MetricCell } from "@/components/MetricCell";
 import { RiskBadge } from "@/components/RiskBadge";
 import { StatTile } from "@/components/StatTile";
 import { WellSelect } from "@/components/WellSelect";
+import { JENA31_DUAL_ALIAS } from "@/config";
 import { useWells } from "@/hooks/useWells";
 import {
   readStoredWaterRiskLeft,
@@ -27,6 +28,7 @@ import {
 } from "recharts";
 
 function resolveAlias(alias: string, activeAliases: Set<string>, fallback: string): string {
+  if (alias === JENA31_DUAL_ALIAS) return fallback;
   return activeAliases.has(alias) ? alias : fallback;
 }
 

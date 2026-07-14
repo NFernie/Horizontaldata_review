@@ -1,6 +1,6 @@
 # MCKINLAY 22 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-13 23:16 UTC  
+**Generated:** 2026-07-14 02:20 UTC  
 **Well:** MCKINLAY 22 (MCKINLAY 22)  
 **TD:** 3206 m MD  
 

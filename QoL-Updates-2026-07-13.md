@@ -1,7 +1,7 @@
 # QoL & Visualisation Updates — Implementation Plan
 
 **Date:** 2026-07-13 (rev. 2026-07-14b)  
-**Status:** Approved — **Design → Implement** two-stage workflow per phase  
+**Status:** Approved — Phases **A**, **C**, **D** implemented (2026-07-14); **B1/B2/E** pending  
 **Repo:** `NFernie/Horizontaldata_review`  
 **Baseline:** Post–Phase 6 pipeline (`updated-plan-2026-07-10.md`) — **23 wells**, RQI v2, WRCI v2, ZOI, OWC, mechanical isolation, no ΔRes  
 **UI skill:** `.cursor/skills/ui-ux-pro-max/SKILL.md` — **required for all Design agents**  
@@ -72,21 +72,24 @@ Each phase (**A**, **B1**, **B2**, **C**, **D**) runs as **two separate agent se
 | Pay / overburden | ✅ | Exclusion logic unchanged; 23-well pay summaries |
 | CI | ✅ | Single-pass `export_web_data.py` + path filters (`deploy.yml`) |
 | RQI in tables | ✅ | Well Detail + Water-Risk show RQI alongside WRCI |
-| Well selection persistence | **Partial** | `sessionStorage` for Well Detail alias + Water-Risk left/right wells only |
+| Well selection persistence | ✅ | `sessionStorage` for wells, executive panels, scroll, histogram |
 
-### ⚠️ Stale / gaps (motivation for this plan)
+### ✅ QoL Phases A / C / D (2026-07-14)
+
+| Phase | Delivered |
+|-------|-----------|
+| **A** | RQI/WRCI threshold tints, sticky `DataTable`, `usePageState`, methodology accordion (Methods 2–5), AppShell 23 wells |
+| **C** | Executive Summary on `/` — Panels A/B, concern MD tracks, portfolio strip, Water-Risk CTA |
+| **D** | Virtual `JENA31_DUAL`, Panel C dual-lateral track, distribution histogram, cluster cosine compare dropdowns (`cos=`), `cluster_analog_ranking.json` |
+
+### ⚠️ Remaining gaps
 
 | Gap | Current behaviour |
 |-----|-------------------|
-| **RQI / WRCI cell colours** | Plain monospace text — no threshold colouring |
-| **Full page state** | Navigating away loses scroll, Compare matrix mode, Intra-well well, filters |
-| **Sticky table columns** | `DataTable` scrolls entire table — label column scrolls off-screen |
-| **AppShell header** | May still show stale well count — verify **23** |
-| **Methodology — Other methods** | Brief formula blocks only — no per-method dropdown, low detail |
+| **Intersection window** | Not implemented (Phase B1) |
+| **Structural grids** | Not in repo — **pending delivery** (Phase B2) |
 | **Trajectory for viz** | Only `mTVDss` on intervals — **no X/Y/INCL** exported to `site/public/data/` |
-| **Structural grids** | Not in repo — **pending delivery** |
-| **Intersection window** | Not implemented |
-| **Executive front page** | Portfolio table only — no concern-zone / analog comparison hub |
+| **Readability popovers** | Phase E not started |
 | **Geosteering_Guide** | Private repo — **not readable** by agents without access or copied modules |
 
 ### Jena focus wells — live stats (`wells.json`)
@@ -552,6 +555,17 @@ Apply on executive concern tracks, intersection view (B1), and optional Well Det
 | **C** | Executive Analog Concern Hub (Jaccard analogs — superseded by D for ranking) | `phase-c-design.md` | 1 session | **No** |
 | **D** | Add Panel C + histogram; cluster comparison dropdown (keep Phase C layout) | `phase-d-design.md` | 1 session | **No** |
 | **E** | Readability & popovers (site-wide) | — | **1 combined session** | **No** |
+
+### Implementation status (2026-07-14)
+
+| Phase | Status | Notes |
+|-------|--------|-------|
+| **A** | ✅ **Complete** | MetricCell, sticky tables, `usePageState`, methodology Methods 2–5, well count 23 |
+| **C** | ✅ **Complete** | Executive Analog Concern Hub — Panels A/B, portfolio strip, collapsible table |
+| **D** | ✅ **Complete** | `JENA31_DUAL` pipeline + Panel C + histogram; cluster `cos=` compare dropdowns |
+| **B1** | Pending | Intersection viewer — design doc not started |
+| **B2** | Blocked | Grid XYZ pending |
+| **E** | Pending | Readability & popovers |
 
 **Recommended session order:**
 
