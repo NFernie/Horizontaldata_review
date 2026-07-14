@@ -54,7 +54,7 @@ export function DataTable<T>({
                   key={col.key}
                   scope="col"
                   className={cn(
-                    "px-3 py-2.5 text-left text-xs font-semibold uppercase tracking-wide text-text-muted",
+                    "px-3 py-2.5 text-left text-sm font-semibold text-text-muted",
                     col.align === "right" && "text-right",
                     col.align === "center" && "text-center",
                     stickyFirstColumn && colIndex === 0 && stickyMinWidth,

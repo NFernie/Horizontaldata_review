@@ -15,15 +15,65 @@ WORKSPACE = (
 
 HEADER_RE = re.compile(r"^\s*MD\b", re.I)
 
+COLUMN_ALIASES: dict[str, tuple[str, ...]] = {
+    "md": ("md",),
+    "x": ("x",),
+    "y": ("y",),
+    "z": ("z", "tvd_z", "mtvds"),
+    "tvd": ("tvd",),
+    "incl": ("incl", "inc"),
+    "azim": ("azim_tn", "azim_gn", "azim"),
+}
 
-def load_trajectory(path: str) -> tuple[np.ndarray, np.ndarray]:
-    """Load MD (m) and Z / mTVDss (m subsea) from a Petrel *_trajectory file."""
+
+def _resolve_column_indices(parts: list[str]) -> dict[str, int | None]:
+    lowered = [p.lower() for p in parts]
+    indices: dict[str, int | None] = {}
+    for key, aliases in COLUMN_ALIASES.items():
+        idx = None
+        for alias in aliases:
+            if alias in lowered:
+                idx = lowered.index(alias)
+                break
+        indices[key] = idx
+    return indices
+
+
+def _read_station_row(parts: list[str], indices: dict[str, int | None]) -> dict[str, float] | None:
+    md_idx = indices.get("md")
+    z_idx = indices.get("z")
+    if md_idx is None or z_idx is None:
+        return None
+    try:
+        md = float(parts[md_idx])
+        z = float(parts[z_idx])
+    except (IndexError, ValueError):
+        return None
+
+    def _optional(key: str) -> float | None:
+        idx = indices.get(key)
+        if idx is None or idx >= len(parts):
+            return None
+        try:
+            return float(parts[idx])
+        except ValueError:
+            return None
+
+    station: dict[str, float] = {"md": md, "mtvds": z}
+    for key in ("x", "y", "tvd", "incl", "azim"):
+        val = _optional(key)
+        if val is not None:
+            station[key] = val
+    return station
+
+
+def load_trajectory_stations(path: str) -> list[dict[str, float]]:
+    """Load full trajectory stations (MD, mTVDss/Z, X, Y, INCL, …) from Petrel export."""
     if not os.path.isabs(path):
         path = os.path.join(WORKSPACE, path)
 
-    md_vals: list[float] = []
-    z_vals: list[float] = []
-    md_idx = z_idx = None
+    stations: list[dict[str, float]] = []
+    indices: dict[str, int | None] | None = None
 
     with open(path, encoding="utf-8", errors="replace") as f:
         for line in f:
@@ -34,35 +84,35 @@ def load_trajectory(path: str) -> tuple[np.ndarray, np.ndarray]:
                 continue
             parts = stripped.split()
             if HEADER_RE.match(stripped):
-                lowered = [p.lower() for p in parts]
-                md_idx = lowered.index("md") if "md" in lowered else 0
-                z_idx = lowered.index("z") if "z" in lowered else None
-                if z_idx is None:
-                    raise ValueError(f"Trajectory file missing Z column: {path}")
+                indices = _resolve_column_indices(parts)
+                if indices.get("md") is None or indices.get("z") is None:
+                    raise ValueError(f"Trajectory file missing MD/Z columns: {path}")
                 continue
-            if md_idx is None:
+            if indices is None:
                 continue
-            try:
-                md = float(parts[md_idx])
-                z = float(parts[z_idx])
-            except (IndexError, ValueError):
-                continue
-            md_vals.append(md)
-            z_vals.append(z)
+            station = _read_station_row(parts, indices)
+            if station is not None:
+                stations.append(station)
 
-    if not md_vals:
+    if not stations:
         raise ValueError(f"No trajectory samples parsed from {path}")
 
-    md_arr = np.array(md_vals, dtype=float)
-    z_arr = np.array(z_vals, dtype=float)
-    order = np.argsort(md_arr)
-    md_arr = md_arr[order]
-    z_arr = z_arr[order]
+    stations.sort(key=lambda s: s["md"])
+    # Collapse duplicate MD (keep last sample)
+    deduped: dict[float, dict[str, float]] = {}
+    for station in stations:
+        deduped[station["md"]] = station
+    return [deduped[md] for md in sorted(deduped)]
 
-    # Collapse duplicate MD (keep last)
-    uniq_md, uniq_idx = np.unique(md_arr, return_index=True)
-    z_arr = z_arr[uniq_idx]
-    md_arr = uniq_md
+
+def load_trajectory(path: str) -> tuple[np.ndarray, np.ndarray]:
+    """Load MD (m) and Z / mTVDss (m subsea) from a Petrel *_trajectory file."""
+    if not os.path.isabs(path):
+        path = os.path.join(WORKSPACE, path)
+
+    stations = load_trajectory_stations(path)
+    md_arr = np.array([s["md"] for s in stations], dtype=float)
+    z_arr = np.array([s["mtvds"] for s in stations], dtype=float)
     return md_arr, z_arr
 
 

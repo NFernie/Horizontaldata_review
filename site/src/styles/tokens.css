@@ -21,7 +21,16 @@
   --metric-rqi-low: var(--risk-low);
   --metric-wrci-high: var(--risk-high);
   --metric-wrci-low: var(--risk-low);
-  --metric-bg-alpha: 0.14;
+  --lateral-jena31: var(--accent);
+  --lateral-jena31dw1: #a78bfa;
+  --lateral-dual-badge: var(--rock-quality-start);
+  --isolation-hatch-fill: #e2e8f0;
+  --isolation-hatch-stripe: #94a3b8;
+  --isolation-band-fill: var(--isolation-hatch-fill);
+  --isolation-band-stroke: transparent;
+  --owc-line: #38bdf8;
+  --hard-floor-line: #fbbf24;
+  --trajectory-line: color-mix(in srgb, var(--accent) 65%, var(--text-muted));
   --metric-border-alpha: 0.35;
   --radius-card: 12px;
   --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4);

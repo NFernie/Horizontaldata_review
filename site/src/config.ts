@@ -123,6 +123,21 @@ export const KS_PROPERTIES = [
 export const KS_FOCUS_ALIASES = ["JENA31", "JENA31DW1"] as const;
 export const HOBBES4_ALIAS = "HOBBES4";
 
+export const JENA31_DUAL_ALIAS = "JENA31_DUAL";
+export const JENA31_DUAL_CONSTITUENTS = ["JENA31", "JENA31DW1"] as const;
+
+export const DIST_HISTOGRAM_PROPERTIES = [
+  "RQI",
+  "WRCI",
+  "pct_ss",
+  "grain_ordinal",
+  "avg_GR",
+  "avg_RES_DEEP",
+  "fluor",
+] as const;
+
+export type DistHistogramProperty = (typeof DIST_HISTOGRAM_PROPERTIES)[number];
+
 export const RISK_LABELS = {
   High: "High water risk",
   Elevated: "Elevated water risk",

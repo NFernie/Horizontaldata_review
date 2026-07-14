@@ -33,6 +33,15 @@ interface DepthHover {
   y: number;
 }
 
+interface TrackHover {
+  label: string;
+  unit?: string;
+  value: string;
+  depth: number;
+  x: number;
+  y: number;
+}
+
 function clamp(n: number, lo: number, hi: number) {
   return Math.max(lo, Math.min(hi, n));
 }
@@ -101,6 +110,7 @@ interface DepthTracksProps {
 
 export function DepthTracks({ intervals, zones, isolationDepths = [], className }: DepthTracksProps) {
   const [hover, setHover] = useState<DepthHover | null>(null);
+  const [trackHover, setTrackHover] = useState<TrackHover | null>(null);
   const domains = useMemo(() => computeDomains(intervals), [intervals]);
 
   const depthMin = useMemo(() => Math.min(...intervals.map((i) => i.top)), [intervals]);
@@ -214,8 +224,56 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
     });
   };
 
+  const formatTrackValue = (track: TrackDef, iv: IntervalRecord): string => {
+    const primary = track.getPrimary(iv);
+    const secondary = track.getSecondary?.(iv);
+    if (track.riskTrack) {
+      return iv.WRCI != null ? `${formatNumber(iv.WRCI, 1)} (${iv.risk_class})` : iv.risk_class;
+    }
+    if (track.id === "res" && primary != null && secondary != null) {
+      return `D ${formatNumber(primary, 1)} / S ${formatNumber(secondary, 1)}`;
+    }
+    if (primary != null) return formatNumber(primary, track.id === "grain" ? 0 : 1);
+    if (secondary != null) return formatNumber(secondary, 1);
+    return "—";
+  };
+
+  const showTrackHover = (
+    track: TrackDef,
+    iv: IntervalRecord,
+    event: React.MouseEvent<SVGRectElement | SVGGElement>,
+  ) => {
+    const svg = event.currentTarget.ownerSVGElement;
+    if (!svg) return;
+    const rect = svg.getBoundingClientRect();
+    const mid = (iv.top + iv.bot) / 2;
+    setTrackHover({
+      label: track.label,
+      unit: track.unit,
+      value: formatTrackValue(track, iv),
+      depth: mid,
+      x: event.clientX - rect.left + 12,
+      y: event.clientY - rect.top - 8,
+    });
+  };
+
   return (
     <div className={cn("relative overflow-x-auto rounded-card border border-border bg-surface", className)}>
+      {trackHover ? (
+        <div
+          className="pointer-events-none absolute z-10 rounded-card border border-border bg-surface-2 px-2.5 py-1.5 text-sm shadow-lg"
+          style={{ left: trackHover.x, top: Math.max(8, trackHover.y - 48) }}
+        >
+          <p className="font-mono text-xs font-semibold text-accent">
+            {trackHover.depth.toFixed(0)} m MD
+          </p>
+          <p className="font-medium text-text">
+            {trackHover.label}
+            {trackHover.unit ? ` (${trackHover.unit})` : ""}:{" "}
+            <span className="font-mono tabular-nums">{trackHover.value}</span>
+          </p>
+        </div>
+      ) : null}
       {hover ? (
         <div
           className="pointer-events-none absolute z-10 rounded-card border border-border bg-surface-2 px-2 py-1.5 font-mono text-xs text-text shadow-lg"
@@ -234,6 +292,18 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
         aria-label="Depth tracks for wireline and cuttings properties"
         className="min-w-full"
       >
+        <defs>
+          <pattern
+            id="depth-tracks-iso-hatch"
+            patternUnits="userSpaceOnUse"
+            width="8"
+            height="8"
+            patternTransform="rotate(45)"
+          >
+            <rect width="4" height="8" fill="var(--isolation-hatch-stripe)" />
+            <rect x="4" width="4" height="8" fill="var(--isolation-hatch-fill)" />
+          </pattern>
+        </defs>
         <g>
           {zones.map((z) => (
             <rect
@@ -249,8 +319,8 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
           ))}
         </g>
 
-        <g fontSize={9} fill="var(--text-muted)" fontFamily="JetBrains Mono, monospace">
-          <text x={8} y={14} fontSize={11} fill="var(--text)" fontWeight={600}>
+        <g fontSize={11} fill="var(--text-muted)" fontFamily="JetBrains Mono, monospace">
+          <text x={8} y={16} fontSize={12} fill="var(--text)" fontWeight={600}>
             Depth
           </text>
           {ticks.map((d) => {
@@ -301,9 +371,9 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
               />
               <text
                 x={x + TRACK_WIDTH / 2}
-                y={12}
+                y={14}
                 textAnchor="middle"
-                fontSize={10}
+                fontSize={11}
                 fontWeight={600}
                 fill="var(--text)"
               >
@@ -312,9 +382,9 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
               {track.unit ? (
                 <text
                   x={x + TRACK_WIDTH / 2}
-                  y={22}
+                  y={24}
                   textAnchor="middle"
-                  fontSize={8}
+                  fontSize={10}
                   fill="var(--text-muted)"
                 >
                   {track.unit}
@@ -349,6 +419,10 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
                       fill={fill}
                       fillOpacity={opacity}
                       rx={1}
+                      className="cursor-crosshair"
+                      onMouseEnter={(e) => showTrackHover(track, iv, e)}
+                      onMouseMove={(e) => showTrackHover(track, iv, e)}
+                      onMouseLeave={() => setTrackHover(null)}
                     />
                   );
                 }
@@ -370,7 +444,13 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
 
                 if (track.id === "res" && secondary != null && primary != null) {
                   return (
-                    <g key={`${track.id}-${iv.depth}`}>
+                    <g
+                      key={`${track.id}-${iv.depth}`}
+                      className="cursor-crosshair"
+                      onMouseEnter={(e) => showTrackHover(track, iv, e)}
+                      onMouseMove={(e) => showTrackHover(track, iv, e)}
+                      onMouseLeave={() => setTrackHover(null)}
+                    >
                       <rect
                         x={x + 2}
                         y={y0}
@@ -416,6 +496,10 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
                     height={h}
                     fill={fill}
                     rx={1}
+                    className="cursor-crosshair"
+                    onMouseEnter={(e) => showTrackHover(track, iv, e)}
+                    onMouseMove={(e) => showTrackHover(track, iv, e)}
+                    onMouseLeave={() => setTrackHover(null)}
                   />
                 );
               })}
@@ -455,15 +539,16 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
               y={depthToY(iso.top_md)}
               width={ISOLATION_TRACK_WIDTH - 2}
               height={Math.max(1, depthToY(iso.bot_md) - depthToY(iso.top_md))}
-              fill="rgba(52,211,153,0.72)"
+              fill="url(#depth-tracks-iso-hatch)"
+              stroke="none"
               rx={1}
             />
           ))}
         </g>
       </svg>
-      <p className="border-t border-border px-3 py-2 text-xs text-text-muted">
-        Depth axis: MD and TVDss on separate lines — hover the axis for exact values. Grey bands =
-        overburden exclusion; green Iso track (right of WRCI) = mechanical isolation.
+      <p className="border-t border-border px-3 py-2.5 text-sm text-text-muted">
+        Hover depth axis for MD/TVDss; hover any log track cell for property values. Grey bands =
+        overburden; hatched Iso track = mechanical isolation.
       </p>
     </div>
   );

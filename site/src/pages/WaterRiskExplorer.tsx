@@ -1,8 +1,9 @@
 import { Card } from "@/components/Card";
 import { MetricCell } from "@/components/MetricCell";
-import { RiskBadge } from "@/components/RiskBadge";
+import { RiskExplainBadge, FlagExplainBadge } from "@/components/RiskExplainBadge";
 import { StatTile } from "@/components/StatTile";
 import { WellSelect } from "@/components/WellSelect";
+import { JENA31_DUAL_ALIAS } from "@/config";
 import { useWells } from "@/hooks/useWells";
 import {
   readStoredWaterRiskLeft,
@@ -27,6 +28,7 @@ import {
 } from "recharts";
 
 function resolveAlias(alias: string, activeAliases: Set<string>, fallback: string): string {
+  if (alias === JENA31_DUAL_ALIAS) return fallback;
   return activeAliases.has(alias) ? alias : fallback;
 }
 
@@ -43,7 +45,7 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
             {zone.top.toFixed(0)} – {zone.bot.toFixed(0)} m MD
           </p>
         </div>
-        <RiskBadge risk={zone.risk_class} />
+        <RiskExplainBadge zone={zone} />
         {zone.isolated ? (
           <span className="rounded px-1.5 py-0.5 text-xs font-medium text-emerald-400">Isolated</span>
         ) : null}
@@ -51,7 +53,7 @@ function ZoneCard({ zone }: { zone: FlaggedZone }) {
 
       <div className="mt-3 flex flex-wrap gap-1.5">
         {(zone.flags ?? []).length > 0 ? (
-          zone.flags.map((f) => <RiskBadge key={f} flag={f} />)
+          zone.flags.map((f) => <FlagExplainBadge key={f} flag={f} zone={zone} />)
         ) : (
           <span className="text-xs text-text-muted">No red flags (elevated by WRCI)</span>
         )}

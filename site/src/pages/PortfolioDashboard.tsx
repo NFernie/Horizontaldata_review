@@ -8,11 +8,13 @@ import { RiskBadge } from "@/components/RiskBadge";
 import { StatTile } from "@/components/StatTile";
 import { WRCI_ELEVATED_THRESHOLD, WRCI_HIGH_THRESHOLD } from "@/config";
 import { pageStateKey, usePersistedState, useScrollRestore } from "@/hooks/usePageState";
+import { useWells } from "@/hooks/useWells";
 import { fetchJson, formatNumber, formatPercent } from "@/lib/utils";
 import type { WellRecord, WellsPayload } from "@/types/wells";
 
 export function PortfolioDashboard() {
   useScrollRestore();
+  const { executiveWells, loading: wellsLoading } = useWells({ includeDualLateral: true });
   const [payload, setPayload] = useState<WellsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -28,23 +30,23 @@ export function PortfolioDashboard() {
       .finally(() => setLoading(false));
   }, []);
 
-  const activeWells = useMemo(
+  const allWells = useMemo(
     () => (payload?.wells ?? []).filter((w) => !w.data_missing),
     [payload],
   );
 
   const summary = useMemo(() => {
-    if (!activeWells.length) {
+    if (!allWells.length) {
       return { avgPay: 0, totalHighRisk: 0, totalElevated: 0, avgLateral: 0 };
     }
     const avgPay =
-      activeWells.reduce((sum, w) => sum + (w.pay_pct ?? 0), 0) / activeWells.length;
-    const totalHighRisk = activeWells.reduce((sum, w) => sum + w.high_risk_count, 0);
-    const totalElevated = activeWells.reduce((sum, w) => sum + w.elevated_risk_count, 0);
+      allWells.reduce((sum, w) => sum + (w.pay_pct ?? 0), 0) / allWells.length;
+    const totalHighRisk = allWells.reduce((sum, w) => sum + w.high_risk_count, 0);
+    const totalElevated = allWells.reduce((sum, w) => sum + w.elevated_risk_count, 0);
     const avgLateral =
-      activeWells.reduce((sum, w) => sum + (w.lateral ?? 0), 0) / activeWells.length;
+      allWells.reduce((sum, w) => sum + (w.lateral ?? 0), 0) / allWells.length;
     return { avgPay, totalHighRisk, totalElevated, avgLateral };
-  }, [activeWells]);
+  }, [allWells]);
 
   const columns: DataTableColumn<WellRecord>[] = [
     {
@@ -119,7 +121,7 @@ export function PortfolioDashboard() {
     },
   ];
 
-  if (loading) {
+  if (loading || wellsLoading) {
     return <p className="text-text-muted">Loading portfolio data…</p>;
   }
 
@@ -143,10 +145,10 @@ export function PortfolioDashboard() {
         </p>
       </header>
 
-      <ExecutiveSummary wells={activeWells} />
+      <ExecutiveSummary wells={executiveWells} />
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-        <StatTile label="Active wells" value={activeWells.length} hint="Excludes data-missing" />
+        <StatTile label="Active wells" value={allWells.length} hint="Includes dual lateral" />
         <StatTile
           label="Avg matching pay"
           value={summary.avgPay}
@@ -178,7 +180,7 @@ export function PortfolioDashboard() {
           <div>
             <h2 className="text-lg font-semibold text-text">Full portfolio table</h2>
             <p className="mt-1 text-sm text-text-muted">
-              {activeWells.length} wells with McKinlay interval statistics
+              {allWells.length} wells with McKinlay interval statistics
             </p>
           </div>
           <span className="text-accent" aria-hidden>
@@ -189,7 +191,7 @@ export function PortfolioDashboard() {
           <div className="border-t border-border px-4 pb-4 pt-2 sm:px-5">
             <DataTable
               columns={columns}
-              rows={activeWells}
+              rows={allWells}
               rowKey={(row) => row.alias}
               caption="McKinlay horizontal well portfolio comparison"
               stickyFirstColumn

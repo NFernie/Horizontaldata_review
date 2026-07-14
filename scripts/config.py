@@ -257,6 +257,24 @@ KS_PROPERTIES = (
 KS_FOCUS_ALIASES = ("JENA31", "JENA31DW1")
 """Jena wells tested against analogs and portfolio."""
 
+JENA31_DUAL_ALIAS = "JENA31_DUAL"
+"""Virtual merged well — JENA 31 + JENA 31DW1 single wellhead."""
+
+JENA31_DUAL_DISPLAY = "JENA 31 Dual Lateral"
+
+JENA31_DUAL_CONSTITUENTS = ("JENA31", "JENA31DW1")
+
+DIST_HISTOGRAM_PROPERTIES = (
+    "RQI",
+    "WRCI",
+    "pct_ss",
+    "grain_ordinal",
+    "avg_GR",
+    "avg_RES_DEEP",
+    "fluor",
+)
+"""Interval properties for executive distribution histogram."""
+
 # ---------------------------------------------------------------------------
 # Portfolio
 # ---------------------------------------------------------------------------

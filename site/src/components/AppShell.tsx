@@ -49,7 +49,7 @@ export function AppShell({ children }: AppShellProps) {
         <div className="border-b border-border px-5 py-5">
           <p className="text-xs font-semibold uppercase tracking-widest text-accent">McKinlay</p>
           <h1 className="mt-1 text-lg font-semibold leading-tight text-text">Water Risk Review</h1>
-          <p className="mt-1 text-xs text-text-muted">23 horizontal wells</p>
+          <p className="mt-1 text-xs text-text-muted">24 wells (incl. dual lateral)</p>
         </div>
 
         <nav className="flex-1 space-y-1 p-3" aria-label="Site sections">

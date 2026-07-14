@@ -1,12 +1,13 @@
+import { Link, Navigate, useParams } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
-import { useParams, Link } from "react-router-dom";
 import { Card } from "@/components/Card";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
 import { DepthTracks } from "@/components/DepthTracks";
 import { Legend } from "@/components/Legend";
 import { MetricCell } from "@/components/MetricCell";
-import { RiskBadge } from "@/components/RiskBadge";
+import { RiskExplainBadge, FlagExplainBadge } from "@/components/RiskExplainBadge";
 import { WellSelect } from "@/components/WellSelect";
+import { JENA31_DUAL_ALIAS } from "@/config";
 import { useScrollRestore } from "@/hooks/usePageState";
 import { useWells } from "@/hooks/useWells";
 import { readStoredWell, writeStoredWell } from "@/hooks/useWellSelection";
@@ -124,7 +125,7 @@ export function WellDetail() {
         key: "risk",
         header: "Risk",
         align: "center",
-        render: (r) => <RiskBadge risk={r.risk_class} />,
+        render: (r) => <RiskExplainBadge interval={r} />,
       },
       {
         key: "isolated",
@@ -143,7 +144,7 @@ export function WellDetail() {
         render: (r) => (
           <div className="flex flex-wrap gap-1">
             {(r.flags ?? []).map((f) => (
-              <RiskBadge key={f} flag={f} />
+              <FlagExplainBadge key={f} flag={f} interval={r} />
             ))}
             {!r.flags?.length ? <span className="text-text-muted">—</span> : null}
           </div>
@@ -155,6 +156,10 @@ export function WellDetail() {
 
   if (wellsLoading || loading) {
     return <p className="text-text-muted">Loading well data…</p>;
+  }
+
+  if (routeAlias === JENA31_DUAL_ALIAS || alias === JENA31_DUAL_ALIAS) {
+    return <Navigate to="/well/JENA31" replace />;
   }
 
   if (error || !intervals || !zones) {
@@ -210,7 +215,7 @@ export function WellDetail() {
         title="Track legend"
         items={[
           { label: "Overburden", color: "rgba(147,161,176,0.35)", description: "excluded zones" },
-          { label: "Isolation", color: "rgba(52,211,153,0.35)", description: "mechanical isolation" },
+          { label: "Mechanical isolation", color: "var(--isolation-hatch-stripe)", description: "grey/white hatch (Iso track)" },
           { label: "RES deep", color: "var(--res-high)" },
           { label: "RES shallow", color: "var(--res-low)" },
           { label: "WRCI High", color: "var(--risk-high)" },

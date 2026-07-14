@@ -37,6 +37,7 @@ from owc import (  # noqa: E402
     owc_severity,
 )
 from isolation import attach_isolation, load_isolation_by_alias  # noqa: E402
+from trajectory import load_trajectory_stations  # noqa: E402
 from process_mckinlay_wells import (  # noqa: E402
     WELLS,
     process_well,
@@ -631,7 +632,7 @@ def cosine_similarity_matrix(mat):
 def serialize_interval(row):
     log = row.get("log") or {}
     clean_log = {k: clean_scalar(v) for k, v in log.items()}
-    return {
+    payload = {
         "depth": row["depth"],
         "top": row["top"],
         "bot": row["bot"],
@@ -661,6 +662,9 @@ def serialize_interval(row):
         "z_scores": {k: clean_scalar(v) for k, v in row.get("z_scores", {}).items()},
         "anomalies": row.get("anomalies", []),
     }
+    if row.get("source_lateral"):
+        payload["source_lateral"] = row["source_lateral"]
+    return payload
 
 
 def water_risk_payload(rows):
@@ -704,7 +708,11 @@ def run_ks_tests(all_rows_by_alias):
     for rows in all_rows_by_alias.values():
         portfolio.extend(rows)
 
-    for focus in config.KS_FOCUS_ALIASES:
+    focus_aliases = list(config.KS_FOCUS_ALIASES)
+    if config.JENA31_DUAL_ALIAS in all_rows_by_alias:
+        focus_aliases.append(config.JENA31_DUAL_ALIAS)
+
+    for focus in focus_aliases:
         focus_rows = all_rows_by_alias.get(focus, [])
         results[focus] = {"vs_analogs": {}, "vs_portfolio": {}}
         for prop in config.KS_PROPERTIES:
@@ -724,6 +732,145 @@ def run_ks_tests(all_rows_by_alias):
                         "p_value": round(float(p), 6),
                     }
     return results
+
+
+def build_jena31_dual(enriched_by_alias, meta_by_alias, isolation_by_alias):
+    """Merge JENA31 + JENA31DW1 into virtual JENA31_DUAL well."""
+    alias = config.JENA31_DUAL_ALIAS
+    dual_rows = []
+    pay_md_sum = 0.0
+    lateral_sum = 0.0
+    zone_details = []
+    isolation_depths = []
+
+    for constituent in config.JENA31_DUAL_CONSTITUENTS:
+        rows = enriched_by_alias.get(constituent, [])
+        meta = meta_by_alias[constituent]
+        for row in rows:
+            tagged = dict(row)
+            tagged["source_lateral"] = constituent
+            dual_rows.append(tagged)
+        pay_md_sum += float(meta["pay"]["matching"]["md"])
+        lateral_sum += float(meta["pay"]["lateral_length"])
+        zone_details.extend(meta.get("zone_details", []))
+        isolation_depths.extend(isolation_by_alias.get(constituent, []))
+
+    dual_rows.sort(key=lambda r: r["depth"])
+    dual_pay_pct = round(float(pct_of_lateral(pay_md_sum, lateral_sum)), 1)
+
+    dual_meta = {
+        "cfg": {"alias": alias, "display": config.JENA31_DUAL_DISPLAY},
+        "tops_name": config.JENA31_DUAL_DISPLAY,
+        "dc30_top": min(meta_by_alias[c]["dc30_top"] for c in config.JENA31_DUAL_CONSTITUENTS),
+        "mck_start": min(meta_by_alias[c]["mck_start"] for c in config.JENA31_DUAL_CONSTITUENTS),
+        "mck_end": max(meta_by_alias[c]["mck_end"] for c in config.JENA31_DUAL_CONSTITUENTS),
+        "enriched_rows": dual_rows,
+        "zone_details": zone_details,
+        "pay": {
+            "matching": {"md": pay_md_sum, "intervals": [], "no_res": 0},
+            "lateral_length": lateral_sum,
+        },
+        "dual_lateral": True,
+        "constituents": list(config.JENA31_DUAL_CONSTITUENTS),
+    }
+
+    return alias, dual_rows, dual_meta, dual_pay_pct, lateral_sum, isolation_depths
+
+
+def cluster_analog_ranking(aliases, cos_sim):
+    ranking = {}
+    n = len(aliases)
+    for i, focus in enumerate(aliases):
+        scores = [
+            (aliases[j], float(cos_sim[i][j]))
+            for j in range(n)
+            if aliases[j] != focus
+        ]
+        scores.sort(key=lambda x: (-x[1], x[0]))
+        ranking[focus] = [{"alias": a, "cosine": round(s, 4)} for a, s in scores]
+    return ranking
+
+
+def write_dual_well_json(alias, dual_meta, dual_rows, isolation_depths):
+    write_json(
+        os.path.join(DATA_ROOT, "intervals", f"{alias}.json"),
+        {
+            "alias": alias,
+            "display": config.JENA31_DUAL_DISPLAY,
+            "interval_count": len(dual_rows),
+            "dual_lateral": True,
+            "constituents": list(config.JENA31_DUAL_CONSTITUENTS),
+            "owc_field": field_for_alias("JENA31"),
+            "owc_mtvds": clean_scalar(owc_for_alias("JENA31")),
+            "isolation_depths": isolation_depths,
+            "intervals": [serialize_interval(r) for r in dual_rows],
+        },
+    )
+    write_json(
+        os.path.join(DATA_ROOT, "zones", f"{alias}.json"),
+        {
+            "alias": alias,
+            "display": config.JENA31_DUAL_DISPLAY,
+            "zones": [
+                {
+                    "entry": zd["entry"],
+                    "murta": zd["murta"],
+                    "re_entry": zd["re_entry"],
+                    "length": zd["length"],
+                    "default_reentry": zd.get("default_reentry", False),
+                }
+                for zd in dual_meta.get("zone_details", [])
+            ],
+        },
+    )
+    write_json(
+        os.path.join(DATA_ROOT, "water_risk", f"{alias}.json"),
+        {
+            "alias": alias,
+            "display": config.JENA31_DUAL_DISPLAY,
+            "flagged_zones": water_risk_payload(dual_rows),
+        },
+    )
+
+
+def export_trajectory_json(cfg, meta):
+    """Export well trajectory stations for structural executive tracks (Phase F / B1)."""
+    traj_file = cfg.get("trajectory")
+    if not traj_file:
+        return
+
+    alias = cfg["alias"]
+    stations = load_trajectory_stations(traj_file)
+    owc_mtvds = owc_for_alias(alias)
+    hard_floor = (owc_mtvds + 3.0) if owc_mtvds is not None else None
+
+    write_json(
+        os.path.join(DATA_ROOT, "trajectory", f"{alias}.json"),
+        {
+            "alias": alias,
+            "field": field_for_alias(alias),
+            "owc_mtvds": clean_scalar(owc_mtvds),
+            "hard_floor_mtvds": clean_scalar(hard_floor),
+            "stations": [
+                {
+                    "md": round(s["md"], 4),
+                    "mtvds": round(s["mtvds"], 4),
+                    **(
+                        {"x": round(s["x"], 4), "y": round(s["y"], 4)}
+                        if "x" in s and "y" in s
+                        else {}
+                    ),
+                    **({"incl": round(s["incl"], 4)} if "incl" in s else {}),
+                }
+                for s in stations
+            ],
+            "lateral_window": {
+                "md_start": round(float(meta["dc30_top"]), 2),
+                "md_end": round(float(meta["mck_end"]), 2),
+                "incl_min": 80,
+            },
+        },
+    )
 
 
 def main():
@@ -804,6 +951,19 @@ def main():
             },
         )
 
+        export_trajectory_json(cfg, meta)
+
+    meta_by_alias = {m["cfg"]["alias"]: m for m in well_metas}
+
+    # Virtual dual-lateral JENA31 + JENA31DW1
+    dual_alias, dual_rows, dual_meta, dual_pay_pct, dual_lateral, dual_isolation = (
+        build_jena31_dual(enriched_by_alias, meta_by_alias, isolation_by_alias)
+    )
+    enriched_by_alias[dual_alias] = dual_rows
+    jaccard_feature_sets[dual_alias] = jaccard_sets(dual_rows)
+    well_metas.append(dual_meta)
+    write_dual_well_json(dual_alias, dual_meta, dual_rows, dual_isolation)
+
     # Spearman correlations per well
     correlations = {}
     for meta in well_metas:
@@ -853,18 +1013,23 @@ def main():
         },
     )
 
+    meta_by_alias = {m["cfg"]["alias"]: m for m in well_metas}
+
     # Clustering
     pay_pcts = {}
     vectors = []
     for meta in well_metas:
         alias = meta["cfg"]["alias"]
-        pay_md = meta["pay"]["matching"]["md"]
-        lat = meta["pay"]["lateral_length"]
-        pay_pct = pct_of_lateral(pay_md, lat)
-        if pd.isna(pay_pct):
-            pay_pct = 0.0
+        if alias == config.JENA31_DUAL_ALIAS:
+            pay_pct = dual_pay_pct
+        else:
+            pay_md = meta["pay"]["matching"]["md"]
+            lat = meta["pay"]["lateral_length"]
+            pay_pct = pct_of_lateral(pay_md, lat)
+            if pd.isna(pay_pct):
+                pay_pct = 0.0
         pay_pcts[alias] = round(float(pay_pct), 2)
-        vectors.append(well_cluster_vector(meta["enriched_rows"], pay_pct))
+        vectors.append(well_cluster_vector(meta["enriched_rows"], pay_pcts[alias]))
 
     std_mat, feat_mean, feat_std = standardize_matrix(vectors)
     cos_sim = cosine_similarity_matrix(std_mat)
@@ -875,6 +1040,9 @@ def main():
 
     cluster_ids = fcluster(link, n_clusters, criterion="maxclust")
     cluster_by_alias = {aliases[i]: int(cluster_ids[i]) for i in range(n)}
+
+    analog_ranking = cluster_analog_ranking(aliases, cos_sim)
+    write_json(os.path.join(DATA_ROOT, "stats", "cluster_analog_ranking.json"), analog_ranking)
 
     write_json(
         os.path.join(DATA_ROOT, "stats", "clusters.json"),
@@ -901,22 +1069,27 @@ def main():
         rows = meta["enriched_rows"]
         high_risk = sum(1 for r in rows if r.get("risk_class") == "High")
         elevated = sum(1 for r in rows if r.get("risk_class") == "Elevated")
-        wells_index.append(
-            {
-                "alias": alias,
-                "display": cfg["display"],
-                "tops_name": meta["tops_name"],
-                "dc30": round(meta["dc30_top"], 2),
-                "td": round(meta["mck_end"], 1),
-                "lateral": round(meta["pay"]["lateral_length"], 1),
-                "interval_count": len(rows),
-                "pay_pct": pay_pcts[alias],
-                "high_risk_count": high_risk,
-                "elevated_risk_count": elevated,
-                "cluster_id": cluster_by_alias[alias],
-                "data_missing": False,
-            }
-        )
+        entry = {
+            "alias": alias,
+            "display": cfg["display"],
+            "tops_name": meta.get("tops_name"),
+            "dc30": round(meta["dc30_top"], 2) if alias != config.JENA31_DUAL_ALIAS else None,
+            "td": round(meta["mck_end"], 1) if alias != config.JENA31_DUAL_ALIAS else None,
+            "lateral": round(
+                meta["pay"]["lateral_length"] if alias != config.JENA31_DUAL_ALIAS else dual_lateral,
+                1,
+            ),
+            "interval_count": len(rows),
+            "pay_pct": pay_pcts[alias],
+            "high_risk_count": high_risk,
+            "elevated_risk_count": elevated,
+            "cluster_id": cluster_by_alias[alias],
+            "data_missing": False,
+        }
+        if meta.get("dual_lateral"):
+            entry["dual_lateral"] = True
+            entry["constituents"] = meta.get("constituents", list(config.JENA31_DUAL_CONSTITUENTS))
+        wells_index.append(entry)
 
     wells_index.append(
         {
@@ -939,11 +1112,15 @@ def main():
         os.path.join(DATA_ROOT, "wells.json"),
         {
             "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-            "well_count": len(WELLS),
+            "well_count": len(WELLS) + 1,
             "wells": wells_index,
             "notes": {
                 "hobbes4": "HOBBES 4 has no data files in repository; marked data_missing.",
                 "exclusions": "All statistics exclude overburden intervals via exclusion_zones.",
+                "jena31_dual": (
+                    "JENA31_DUAL merges JENA31 + JENA31DW1 intervals; "
+                    "pay_pct = sum(matching pay MD) / sum(lateral length)."
+                ),
             },
         },
     )

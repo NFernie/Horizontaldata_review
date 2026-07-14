@@ -1,14 +1,17 @@
 import { useEffect, useMemo, useState } from "react";
 import { Card } from "@/components/Card";
+import { ClusterAnalogCards, ClusterAssignmentTable } from "@/components/ClusterAnalogCards";
 import { Dendrogram } from "@/components/Dendrogram";
 import { JaccardHeatmap } from "@/components/JaccardHeatmap";
 import { KsGrid } from "@/components/KsGrid";
 import { Legend } from "@/components/Legend";
-import { StatTile } from "@/components/StatTile";
-import { KS_FOCUS_ALIASES, JACCARD_PRESENCE_PCT } from "@/config";
+import { JENA31_DUAL_ALIAS, KS_FOCUS_ALIASES, JACCARD_PRESENCE_PCT } from "@/config";
 import { pageStateKey, usePersistedState, useScrollRestore } from "@/hooks/usePageState";
 import { fetchJson } from "@/lib/utils";
 import type { ClustersPayload, JaccardPayload, KsPayload } from "@/types/stats";
+import type { WellsPayload } from "@/types/wells";
+
+const CLUSTER_FOCUS = [...KS_FOCUS_ALIASES, JENA31_DUAL_ALIAS] as const;
 
 export function CompareInterWell() {
   useScrollRestore();
@@ -21,17 +24,20 @@ export function CompareInterWell() {
   const [jaccard, setJaccard] = useState<JaccardPayload | null>(null);
   const [clusters, setClusters] = useState<ClustersPayload | null>(null);
   const [ks, setKs] = useState<KsPayload | null>(null);
+  const [wellsPayload, setWellsPayload] = useState<WellsPayload | null>(null);
 
   useEffect(() => {
     Promise.all([
       fetchJson<JaccardPayload>("data/stats/jaccard.json"),
       fetchJson<ClustersPayload>("data/stats/clusters.json"),
       fetchJson<KsPayload>("data/stats/ks.json"),
+      fetchJson<WellsPayload>("data/wells.json"),
     ])
-      .then(([j, c, k]) => {
+      .then(([j, c, k, w]) => {
         setJaccard(j);
         setClusters(c);
         setKs(k);
+        setWellsPayload(w);
       })
       .catch((err: Error) => setError(err.message))
       .finally(() => setLoading(false));
@@ -41,6 +47,14 @@ export function CompareInterWell() {
     if (!jaccard) return [];
     return jaccard.aliases.filter((a) => !KS_FOCUS_ALIASES.includes(a as (typeof KS_FOCUS_ALIASES)[number]));
   }, [jaccard]);
+
+  const displayNames = useMemo(() => {
+    const map: Record<string, string> = {};
+    for (const w of wellsPayload?.wells ?? []) {
+      map[w.alias] = w.display;
+    }
+    return map;
+  }, [wellsPayload]);
 
   if (loading) return <p className="text-text-muted">Loading inter-well comparison data…</p>;
 
@@ -138,16 +152,25 @@ export function CompareInterWell() {
       </Card>
 
       <Card title="Hierarchical clustering" description="Ward linkage on standardized well feature vectors">
+        <ClusterAnalogCards
+          clusters={clusters}
+          focusAliases={[...CLUSTER_FOCUS]}
+          displayNames={displayNames}
+          className="mb-6"
+        />
         <Dendrogram
           aliases={clusters.aliases}
           linkage={clusters.linkage}
           clusterIds={clusters.cluster_ids}
+          cosineSimilarity={clusters.cosine_similarity}
+          displayNames={displayNames}
         />
-        <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          {Object.entries(clusters.cluster_ids).slice(0, 8).map(([alias, cid]) => (
-            <StatTile key={alias} label={alias.replace("MCKINLAY", "MCK")} value={`C${cid}`} />
-          ))}
-        </div>
+        <h3 className="mb-2 mt-6 text-sm font-semibold text-text">Cluster assignments</h3>
+        <ClusterAssignmentTable
+          aliases={clusters.aliases}
+          clusterIds={clusters.cluster_ids}
+          displayNames={displayNames}
+        />
       </Card>
 
       {KS_FOCUS_ALIASES.map((focus) => (

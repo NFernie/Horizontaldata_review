@@ -34,6 +34,7 @@ export interface IntervalRecord {
   owc_distance_m?: number | null;
   owc_near?: "High" | "Elevated" | "Low" | null;
   isolated?: boolean;
+  source_lateral?: "JENA31" | "JENA31DW1";
   z_scores: Record<string, number | null>;
   anomalies: string[];
 }

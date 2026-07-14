@@ -2390,5 +2390,109 @@
       }
     },
     "decoupling_score": 0.6406
+  },
+  "JENA31_DUAL": {
+    "n": 362,
+    "rho": {
+      "pct_ss": {
+        "pct_ss": 1.0,
+        "grain_ordinal": -0.0396,
+        "avg_GR": -0.1553,
+        "avg_RES_DEEP": 0.0117,
+        "fluor": 0.1811,
+        "gas": 0.0479
+      },
+      "grain_ordinal": {
+        "pct_ss": -0.0396,
+        "grain_ordinal": 1.0,
+        "avg_GR": -0.4149,
+        "avg_RES_DEEP": -0.3517,
+        "fluor": -0.2279,
+        "gas": -0.1788
+      },
+      "avg_GR": {
+        "pct_ss": -0.1553,
+        "grain_ordinal": -0.4149,
+        "avg_GR": 1.0,
+        "avg_RES_DEEP": -0.0605,
+        "fluor": 0.1159,
+        "gas": -0.0627
+      },
+      "avg_RES_DEEP": {
+        "pct_ss": 0.0117,
+        "grain_ordinal": -0.3517,
+        "avg_GR": -0.0605,
+        "avg_RES_DEEP": 1.0,
+        "fluor": 0.0335,
+        "gas": 0.3609
+      },
+      "fluor": {
+        "pct_ss": 0.1811,
+        "grain_ordinal": -0.2279,
+        "avg_GR": 0.1159,
+        "avg_RES_DEEP": 0.0335,
+        "fluor": 1.0,
+        "gas": 0.1913
+      },
+      "gas": {
+        "pct_ss": 0.0479,
+        "grain_ordinal": -0.1788,
+        "avg_GR": -0.0627,
+        "avg_RES_DEEP": 0.3609,
+        "fluor": 0.1913,
+        "gas": 1.0
+      }
+    },
+    "p_value": {
+      "pct_ss": {
+        "pct_ss": 0.0,
+        "grain_ordinal": 0.452751,
+        "avg_GR": 0.00321,
+        "avg_RES_DEEP": 0.824487,
+        "fluor": 0.000535,
+        "gas": 0.364848
+      },
+      "grain_ordinal": {
+        "pct_ss": 0.452751,
+        "grain_ordinal": 0.0,
+        "avg_GR": 0.0,
+        "avg_RES_DEEP": 0.0,
+        "fluor": 1.2e-05,
+        "gas": 0.000656
+      },
+      "avg_GR": {
+        "pct_ss": 0.00321,
+        "grain_ordinal": 0.0,
+        "avg_GR": 0.0,
+        "avg_RES_DEEP": 0.253812,
+        "fluor": 0.028326,
+        "gas": 0.236578
+      },
+      "avg_RES_DEEP": {
+        "pct_ss": 0.824487,
+        "grain_ordinal": 0.0,
+        "avg_GR": 0.253812,
+        "avg_RES_DEEP": 0.0,
+        "fluor": 0.526899,
+        "gas": 0.0
+      },
+      "fluor": {
+        "pct_ss": 0.000535,
+        "grain_ordinal": 1.2e-05,
+        "avg_GR": 0.028326,
+        "avg_RES_DEEP": 0.526899,
+        "fluor": 0.0,
+        "gas": 0.000262
+      },
+      "gas": {
+        "pct_ss": 0.364848,
+        "grain_ordinal": 0.000656,
+        "avg_GR": 0.236578,
+        "avg_RES_DEEP": 0.0,
+        "fluor": 0.000262,
+        "gas": 0.0
+      }
+    },
+    "decoupling_score": 0.2371
   }
 }
