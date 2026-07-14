@@ -182,8 +182,9 @@ export function ComparisonPanel({
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
       {loading ? <p className="mb-3 text-sm text-text-muted">Loading structural tracks…</p> : null}
 
-      <div className="grid gap-6 max-md:grid-cols-1 md:grid-cols-2">
+      <div className="grid min-h-[420px] gap-4 max-md:grid-cols-1 md:grid-cols-2 md:items-stretch">
         <StructuralConcernTrack
+          className="h-full"
           label={`Focus — ${focusDisplay}`}
           intervals={focusData?.intervals ?? []}
           isolationDepths={focusData?.isolation_depths}
@@ -193,6 +194,7 @@ export function ComparisonPanel({
           mdEnd={focusWindow.mdEnd}
         />
         <StructuralConcernTrack
+          className="h-full"
           label={`Compare — ${compareDisplay}`}
           intervals={compareData?.intervals ?? []}
           isolationDepths={compareData?.isolation_depths}

@@ -8,6 +8,7 @@ export const STRUCTURAL_MARGIN = {
 } as const;
 
 export const STRUCTURAL_PLOT_HEIGHT = 210;
+export const STRUCTURAL_MIN_PLOT_HEIGHT = 160;
 export const STRUCTURAL_CORRIDOR_HALF_WIDTH = 10;
 export const STRUCTURAL_MIN_TICK_FONT = 13;
 
@@ -226,6 +227,17 @@ export function markerPosition(
   return { x: xScale(mdMid), y: yScale(mtvds) };
 }
 
-export function structuralViewHeight(): number {
-  return STRUCTURAL_MARGIN.top + STRUCTURAL_PLOT_HEIGHT + STRUCTURAL_MARGIN.bottom;
+export function structuralViewHeight(plotHeight = STRUCTURAL_PLOT_HEIGHT): number {
+  return STRUCTURAL_MARGIN.top + plotHeight + STRUCTURAL_MARGIN.bottom;
+}
+
+export function computePlotArea(width: number, height: number) {
+  const plotLeft = STRUCTURAL_MARGIN.left;
+  const plotRight = Math.max(plotLeft + 40, width - STRUCTURAL_MARGIN.right);
+  const plotTop = STRUCTURAL_MARGIN.top;
+  const plotBottom = Math.max(
+    plotTop + STRUCTURAL_MIN_PLOT_HEIGHT,
+    height - STRUCTURAL_MARGIN.bottom,
+  );
+  return { plotLeft, plotRight, plotTop, plotBottom };
 }

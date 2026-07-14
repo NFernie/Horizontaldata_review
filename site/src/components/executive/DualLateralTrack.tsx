@@ -86,21 +86,22 @@ export function DualLateralTrack({
   return (
     <div
       className={cn(
-        "flex min-h-[420px] flex-col rounded-card border border-border bg-surface-2 p-4",
+        "flex min-h-[420px] flex-col overflow-hidden rounded-card border border-border bg-surface-2",
         className,
       )}
     >
-      <p className="mb-3 text-sm font-semibold text-text">{label}</p>
+      <p className="shrink-0 px-3 pb-1 pt-3 text-sm font-semibold text-text">{label}</p>
 
       {!intervals.length ? (
-        <p className="flex flex-1 items-center justify-center text-sm text-text-muted">
+        <p className="flex flex-1 items-center justify-center px-3 text-sm text-text-muted">
           No interval data
         </p>
       ) : (
-        <div className="grid flex-1 gap-3 md:grid-cols-2">
+        <div className="grid min-h-0 flex-1 grid-cols-1 gap-px bg-border md:grid-cols-2">
           {lateralData.map((lat) => (
             <StructuralConcernTrack
               key={lat.alias}
+              className="min-h-[320px] bg-surface-2"
               label={lat.display}
               intervals={lat.intervals}
               isolationDepths={lat.isolationDepths}
@@ -116,10 +117,12 @@ export function DualLateralTrack({
       )}
 
       {!hasConcerns ? (
-        <p className="mt-2 text-sm text-text-muted">No Elevated or High intervals</p>
+        <p className="shrink-0 px-3 pb-2 pt-1 text-sm text-text-muted">No Elevated or High intervals</p>
       ) : null}
       {!hasIsolation && intervals.length > 0 ? (
-        <p className="mt-1 text-xs text-text-muted/80">No mechanical isolation on file</p>
+        <p className="shrink-0 px-3 pb-2 text-xs text-text-muted/80">
+          No mechanical isolation on file
+        </p>
       ) : null}
     </div>
   );
