@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { StatTile } from "@/components/StatTile";
 import { CompareWellSelect } from "@/components/executive/CompareWellSelect";
+import { CollapsiblePanel } from "@/components/executive/CollapsiblePanel";
 import { DualLateralTrack } from "@/components/executive/DualLateralTrack";
 import { StructuralConcernTrack } from "@/components/executive/StructuralConcernTrack";
 import { JENA31_DUAL_ALIAS } from "@/config";
@@ -25,6 +26,8 @@ interface DualLateralPanelProps {
   wells: WellRecord[];
   clusters: ClustersPayload;
   onSelectionChange?: (compare: string) => void;
+  showElevated?: boolean;
+  showHigh?: boolean;
 }
 
 function wellWindow(wells: WellRecord[], alias: string) {
@@ -35,7 +38,13 @@ function wellWindow(wells: WellRecord[], alias: string) {
   };
 }
 
-export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLateralPanelProps) {
+export function DualLateralPanel({
+  wells,
+  clusters,
+  onSelectionChange,
+  showElevated = true,
+  showHigh = true,
+}: DualLateralPanelProps) {
   const compareKey = pageStateKey("/", "execPanelC:compare");
   const [compareAlias, setCompareAlias] = usePersistedState(compareKey, "");
   const [focusData, setFocusData] = useState<IntervalsPayload | null>(null);
@@ -116,23 +125,18 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
   const compareRankings = rankings.map((r) => ({ alias: r.alias, score: r.cosine }));
 
   return (
-    <section
-      className="min-h-[360px] rounded-card border border-border bg-surface p-5 shadow-card"
-      aria-labelledby="panel-c-title"
-    >
-      <header className="mb-4 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-        <div>
-          <h3 id="panel-c-title" className="text-base font-semibold text-text">
-            Panel C — Dual Lateral
-          </h3>
-          <p className="mt-0.5 text-sm text-text-muted">
-            JENA 31 Dual Lateral · single wellhead · commingled production
-          </p>
+    <CollapsiblePanel
+      panelId="C"
+      title="Panel C — Dual Lateral"
+      subtitle={
+        <>
+          <p>JENA 31 Dual Lateral · single wellhead · commingled production</p>
           {cosineScore != null ? (
-            <p className="mt-0.5 font-mono text-sm text-accent">cos={cosineScore.toFixed(2)}</p>
+            <p className="font-mono text-accent">cos={cosineScore.toFixed(2)}</p>
           ) : null}
-        </div>
-
+        </>
+      }
+      headerExtra={
         <CompareWellSelect
           wells={wells}
           focusAlias={JENA31_DUAL_ALIAS}
@@ -144,8 +148,8 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
           id="exec-compare-C"
           className="w-full lg:max-w-sm"
         />
-      </header>
-
+      }
+    >
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
       {loading ? <p className="mb-3 text-sm text-text-muted">Loading dual lateral tracks…</p> : null}
 
@@ -157,6 +161,8 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
           wells={wells}
           isolationDepths={focusData?.isolation_depths}
           owcMtvds={focusData?.owc_mtvds}
+          showElevated={showElevated}
+          showHigh={showHigh}
         />
         <StructuralConcernTrack
           resizeKey={pageStateKey("/", "execPanelC:compareHeight")}
@@ -167,6 +173,8 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
           owcMtvds={compareData?.owc_mtvds}
           mdStart={compareWindow.mdStart}
           mdEnd={compareWindow.mdEnd}
+          showElevated={showElevated}
+          showHigh={showHigh}
         />
       </div>
 
@@ -182,6 +190,6 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
           <li key={bullet}>{bullet}</li>
         ))}
       </ul>
-    </section>
+    </CollapsiblePanel>
   );
 }

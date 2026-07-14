@@ -20,6 +20,8 @@ interface DualLateralTrackProps {
   owcMtvds?: number | null;
   className?: string;
   resizeKeyPrefix?: string;
+  showElevated?: boolean;
+  showHigh?: boolean;
 }
 
 function wellExtents(wells: WellRecord[], alias: string) {
@@ -38,6 +40,8 @@ export function DualLateralTrack({
   owcMtvds,
   className,
   resizeKeyPrefix,
+  showElevated = true,
+  showHigh = true,
 }: DualLateralTrackProps) {
   const [trajectories, setTrajectories] = useState<Record<string, TrajectoryPayload | null>>({});
 
@@ -113,6 +117,8 @@ export function DualLateralTrack({
               markerColor={() => LATERAL_COLOURS[lat.alias] ?? "var(--accent)"}
               resizeKey={resizeKeyPrefix ? `${resizeKeyPrefix}:${lat.alias}` : undefined}
               embedded
+              showElevated={showElevated}
+              showHigh={showHigh}
             />
           ))}
         </div>
