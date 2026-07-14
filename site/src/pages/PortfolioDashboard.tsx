@@ -7,7 +7,7 @@ import { Legend } from "@/components/Legend";
 import { RiskBadge } from "@/components/RiskBadge";
 import { StatTile } from "@/components/StatTile";
 import { WRCI_ELEVATED_THRESHOLD, WRCI_HIGH_THRESHOLD } from "@/config";
-import { useScrollRestore } from "@/hooks/usePageState";
+import { pageStateKey, usePersistedState, useScrollRestore } from "@/hooks/usePageState";
 import { fetchJson, formatNumber, formatPercent } from "@/lib/utils";
 import type { WellRecord, WellsPayload } from "@/types/wells";
 
@@ -16,7 +16,10 @@ export function PortfolioDashboard() {
   const [payload, setPayload] = useState<WellsPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  const [tableOpen, setTableOpen] = useState(false);
+  const [tableOpen, setTableOpen] = usePersistedState(
+    pageStateKey("/", "portfolioTableExpanded"),
+    false,
+  );
 
   useEffect(() => {
     fetchJson<WellsPayload>("data/wells.json")

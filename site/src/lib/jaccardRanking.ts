@@ -5,6 +5,12 @@ export interface JaccardRankEntry {
   jaccard: number;
 }
 
+/** Stakeholder tie-break among equal top Jaccard scores; fallback when in top 5 at J ≥ 0.8 */
+const PREFERRED_ANALOG: Record<string, string> = {
+  JENA31: "STIMPEE7",
+  JENA31DW1: "BIALA19",
+};
+
 /**
  * Rank analog wells for any focus alias using the feature Jaccard matrix.
  * Excludes self-comparison; sorts by score descending, then alias ascending.
@@ -40,5 +46,20 @@ export function topJaccardAnalog(
   focusAlias: string,
   payload: JaccardPayload,
 ): string | null {
-  return rankJaccardAnalogs(focusAlias, payload)[0]?.alias ?? null;
+  const ranked = rankJaccardAnalogs(focusAlias, payload);
+  if (!ranked.length) return null;
+
+  const maxJ = ranked[0]!.jaccard;
+  const ties = ranked.filter((r) => r.jaccard === maxJ);
+  const preferred = PREFERRED_ANALOG[focusAlias];
+
+  if (preferred) {
+    if (ties.some((t) => t.alias === preferred)) return preferred;
+    const prefEntry = ranked.find((r) => r.alias === preferred);
+    if (prefEntry && prefEntry.jaccard >= 0.8 && ranked.indexOf(prefEntry) < 5) {
+      return preferred;
+    }
+  }
+
+  return ranked[0]!.alias;
 }

@@ -34,8 +34,8 @@ export function ComparisonPanel({
   jaccard,
   onSelectionChange,
 }: ComparisonPanelProps) {
-  const focusKey = pageStateKey("/", `execPanel${panelId}Focus`);
-  const analogKey = pageStateKey("/", `execPanel${panelId}Analog`);
+  const focusKey = pageStateKey("/", `execPanel${panelId}:focus`);
+  const analogKey = pageStateKey("/", `execPanel${panelId}:analog`);
 
   const [focusAlias, setFocusAlias] = usePersistedState(focusKey, defaultFocus);
   const [analogAlias, setAnalogAlias] = usePersistedState(analogKey, "");
@@ -164,7 +164,7 @@ export function ComparisonPanel({
       {error ? <p className="mb-3 text-sm text-risk-high">{error}</p> : null}
       {loading ? <p className="mb-3 text-sm text-text-muted">Loading concern tracks…</p> : null}
 
-      <div className="grid gap-3 md:grid-cols-2">
+      <div className="grid gap-3 max-md:grid-cols-1 md:grid-cols-2">
         <ConcernTrack
           label={`Focus — ${focusDisplay}`}
           intervals={focusData?.intervals ?? []}
@@ -182,7 +182,7 @@ export function ComparisonPanel({
         <StatTile label="High" value={focusStats.high} variant="risk" />
         <StatTile label="Isolated concerns" value={focusStats.isolatedConcerns} variant="accent" />
         <StatTile
-          label="Non-isolated concerns"
+          label="Open concerns"
           value={focusStats.nonIsolatedConcerns}
           hint="Focus well"
         />

@@ -32,6 +32,20 @@ describe("topJaccardAnalog", () => {
   it("returns highest-ranked analog", () => {
     expect(topJaccardAnalog("JENA31", miniPayload)).toBe("STIMPEE7");
   });
+
+  it("prefers stakeholder analog among ties", () => {
+    const tiedPayload: JaccardPayload = {
+      ...miniPayload,
+      aliases: ["JENA31", "HOBBES5", "STIMPEE7", "BIALA19"],
+      matrix: [
+        [1, 1, 1, 0.5],
+        [1, 1, 1, 0.3],
+        [1, 1, 1, 0.3],
+        [0.5, 0.3, 0.3, 1],
+      ],
+    };
+    expect(topJaccardAnalog("JENA31", tiedPayload)).toBe("STIMPEE7");
+  });
 });
 
 describe("getJaccardScore", () => {

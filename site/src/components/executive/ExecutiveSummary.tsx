@@ -8,6 +8,7 @@ import {
   writeStoredWaterRiskRight,
   writeStoredWell,
 } from "@/hooks/useWellSelection";
+import { topJaccardAnalog } from "@/lib/jaccardRanking";
 import { fetchJson } from "@/lib/utils";
 import type { JaccardPayload } from "@/types/stats";
 import type { WellRecord } from "@/types/wells";
@@ -50,8 +51,9 @@ export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
   }, []);
 
   const openWaterRisk = () => {
+    if (!jaccard) return;
     const left = panelA.focus || "JENA31";
-    const right = panelB.focus !== left ? panelB.focus : panelA.analog || panelB.focus;
+    const right = panelA.analog || topJaccardAnalog(left, jaccard) || left;
     writeStoredWell(left);
     writeStoredWaterRiskLeft(left);
     writeStoredWaterRiskRight(right);
