@@ -184,6 +184,7 @@ export function ComparisonPanel({
 
       <div className="flex flex-col gap-4">
         <StructuralConcernTrack
+          resizeKey={pageStateKey("/", `execPanel${panelId}:focusHeight`)}
           label={`Focus — ${focusDisplay}`}
           intervals={focusData?.intervals ?? []}
           isolationDepths={focusData?.isolation_depths}
@@ -193,6 +194,7 @@ export function ComparisonPanel({
           mdEnd={focusWindow.mdEnd}
         />
         <StructuralConcernTrack
+          resizeKey={pageStateKey("/", `execPanel${panelId}:compareHeight`)}
           label={`Compare — ${compareDisplay}`}
           intervals={compareData?.intervals ?? []}
           isolationDepths={compareData?.isolation_depths}

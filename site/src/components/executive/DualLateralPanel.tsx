@@ -151,6 +151,7 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
 
       <div className="flex flex-col gap-4">
         <DualLateralTrack
+          resizeKeyPrefix={pageStateKey("/", "execPanelC:focus")}
           label="Dual lateral — colour by source"
           intervals={focusData?.intervals ?? []}
           wells={wells}
@@ -158,6 +159,7 @@ export function DualLateralPanel({ wells, clusters, onSelectionChange }: DualLat
           owcMtvds={focusData?.owc_mtvds}
         />
         <StructuralConcernTrack
+          resizeKey={pageStateKey("/", "execPanelC:compareHeight")}
           label={`Compare — ${compareDisplay}`}
           intervals={compareData?.intervals ?? []}
           isolationDepths={compareData?.isolation_depths}

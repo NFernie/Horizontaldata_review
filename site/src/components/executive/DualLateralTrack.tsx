@@ -19,6 +19,7 @@ interface DualLateralTrackProps {
   isolationDepths?: IsolationDepth[];
   owcMtvds?: number | null;
   className?: string;
+  resizeKeyPrefix?: string;
 }
 
 function wellExtents(wells: WellRecord[], alias: string) {
@@ -36,6 +37,7 @@ export function DualLateralTrack({
   isolationDepths = [],
   owcMtvds,
   className,
+  resizeKeyPrefix,
 }: DualLateralTrackProps) {
   const [trajectories, setTrajectories] = useState<Record<string, TrajectoryPayload | null>>({});
 
@@ -109,6 +111,7 @@ export function DualLateralTrack({
               mdStart={lat.dc30}
               mdEnd={lat.td}
               markerColor={() => LATERAL_COLOURS[lat.alias] ?? "var(--accent)"}
+              resizeKey={resizeKeyPrefix ? `${resizeKeyPrefix}:${lat.alias}` : undefined}
               embedded
             />
           ))}

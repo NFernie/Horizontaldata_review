@@ -1,11 +1,14 @@
 import { describe, expect, it } from "vitest";
 import {
+  STRUCTURAL_CHART_HEIGHT_MAX,
+  STRUCTURAL_CHART_HEIGHT_MIN,
   computeYRange,
   createLinearScale,
   createMtvdsScale,
   filterLateralStations,
   hardFloorMtvds,
   interpolateMtvdsAtMd,
+  defaultChartHeight,
   markerPosition,
 } from "./structuralChart";
 import type { TrajectoryStation } from "@/types/trajectory";
@@ -54,5 +57,11 @@ describe("structuralChart", () => {
     expect(mtvds).not.toBeNull();
     expect(mtvds!).toBeLessThan(-1190);
     expect(mtvds!).toBeGreaterThan(-1195);
+  });
+
+  it("default chart height follows wide aspect from container width", () => {
+    const h = defaultChartHeight(640);
+    expect(h).toBeGreaterThan(STRUCTURAL_CHART_HEIGHT_MIN);
+    expect(h).toBeLessThan(STRUCTURAL_CHART_HEIGHT_MAX);
   });
 });

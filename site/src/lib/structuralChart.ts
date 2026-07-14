@@ -10,6 +10,8 @@ export const STRUCTURAL_MARGIN = {
 export const STRUCTURAL_PLOT_HEIGHT = 140;
 export const STRUCTURAL_MIN_PLOT_HEIGHT = 100;
 export const STRUCTURAL_PLOT_ASPECT = 3.2;
+export const STRUCTURAL_CHART_HEIGHT_MIN = 120;
+export const STRUCTURAL_CHART_HEIGHT_MAX = 480;
 export const STRUCTURAL_CORRIDOR_HALF_WIDTH = 10;
 /** Tick labels — 33% smaller than original 13px. */
 export const STRUCTURAL_MIN_TICK_FONT = 9;
@@ -235,17 +237,22 @@ export function structuralViewHeight(plotHeight = STRUCTURAL_PLOT_HEIGHT): numbe
   return STRUCTURAL_MARGIN.top + plotHeight + STRUCTURAL_MARGIN.bottom;
 }
 
+export function defaultChartHeight(containerWidth: number): number {
+  const innerW = Math.max(
+    80,
+    containerWidth - STRUCTURAL_MARGIN.left - STRUCTURAL_MARGIN.right,
+  );
+  const plotH = innerW / STRUCTURAL_PLOT_ASPECT;
+  return Math.round(structuralViewHeight(plotH));
+}
+
 export function computePlotArea(width: number, height: number) {
   const plotLeft = STRUCTURAL_MARGIN.left;
   const plotRight = Math.max(plotLeft + 40, width - STRUCTURAL_MARGIN.right);
   const plotTop = STRUCTURAL_MARGIN.top;
-  const plotWidth = plotRight - plotLeft;
-  const heightBudget = Math.max(
-    STRUCTURAL_MIN_PLOT_HEIGHT,
-    height - plotTop - STRUCTURAL_MARGIN.bottom,
+  const plotBottom = Math.max(
+    plotTop + STRUCTURAL_MIN_PLOT_HEIGHT,
+    height - STRUCTURAL_MARGIN.bottom,
   );
-  const heightByAspect = plotWidth / STRUCTURAL_PLOT_ASPECT;
-  const plotHeight = Math.min(heightBudget, heightByAspect);
-  const plotBottom = plotTop + plotHeight;
   return { plotLeft, plotRight, plotTop, plotBottom };
 }

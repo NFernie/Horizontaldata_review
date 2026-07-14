@@ -1,6 +1,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { FlagExplainContent } from "@/components/FlagExplainPopover";
 import { SvgPopoverAnchor } from "@/components/Popover";
+import { useTrajectoryChartResize } from "@/hooks/useTrajectoryChartResize";
 import { explainInterval } from "@/lib/flagExplain";
 import { isConcernInterval } from "@/lib/concernZones";
 import {
@@ -17,7 +18,6 @@ import {
   hardFloorMtvds,
   isolationCorridorPath,
   markerPosition,
-  structuralViewHeight,
   trajectoryPolyline,
 } from "@/lib/structuralChart";
 import type { IntervalRecord, IsolationDepth } from "@/types/intervals";
@@ -25,7 +25,6 @@ import type { TrajectoryPayload } from "@/types/trajectory";
 import { cn } from "@/lib/utils";
 
 const MIN_CHART_WIDTH = 280;
-const DEFAULT_VIEW_HEIGHT = structuralViewHeight();
 
 interface StructuralConcernTrackProps {
   label: string;
@@ -37,24 +36,22 @@ interface StructuralConcernTrackProps {
   mdEnd?: number;
   markerColor?: (interval: IntervalRecord) => string;
   className?: string;
+  /** sessionStorage key for user-resized chart height */
+  resizeKey?: string;
   /** Dual-lateral column — suppress outer card chrome when nested */
   embedded?: boolean;
 }
 
-function useChartSize() {
+function useContainerWidth() {
   const ref = useRef<HTMLDivElement>(null);
-  const [size, setSize] = useState({ width: MIN_CHART_WIDTH, height: DEFAULT_VIEW_HEIGHT });
+  const [width, setWidth] = useState(MIN_CHART_WIDTH);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
     const update = () => {
-      const width = Math.max(MIN_CHART_WIDTH, Math.round(el.clientWidth));
-      const height = Math.max(DEFAULT_VIEW_HEIGHT, Math.round(el.clientHeight));
-      setSize((prev) =>
-        prev.width === width && prev.height === height ? prev : { width, height },
-      );
+      setWidth(Math.max(MIN_CHART_WIDTH, Math.round(el.clientWidth)));
     };
 
     const observer = new ResizeObserver(update);
@@ -63,7 +60,7 @@ function useChartSize() {
     return () => observer.disconnect();
   }, []);
 
-  return { ref, ...size };
+  return { ref, width };
 }
 
 export function StructuralConcernTrack({
@@ -76,10 +73,20 @@ export function StructuralConcernTrack({
   mdEnd,
   markerColor,
   className,
+  resizeKey,
   embedded = false,
 }: StructuralConcernTrackProps) {
   const uid = useId().replace(/:/g, "");
-  const { ref, width, height } = useChartSize();
+  const { ref: widthRef, width } = useContainerWidth();
+  const {
+    chartHeight,
+    setChartHeight,
+    resetChartHeight,
+    isCustomized,
+    onResizePointerDown,
+    minHeight,
+    maxHeight,
+  } = useTrajectoryChartResize(resizeKey, width);
 
   const concerns = useMemo(() => intervals.filter(isConcernInterval), [intervals]);
   const hasConcerns = concerns.length > 0;
@@ -105,7 +112,7 @@ export function StructuralConcernTrack({
   const chart = useMemo(() => {
     if (owc == null) return null;
 
-    const { plotLeft, plotRight, plotTop, plotBottom } = computePlotArea(width, height);
+    const { plotLeft, plotRight, plotTop, plotBottom } = computePlotArea(width, chartHeight);
     const { yMin, yMax } = computeYRange(owc, lateralStations);
     const xScale = createLinearScale(
       [lateralWindow.mdStart, lateralWindow.mdEnd],
@@ -132,7 +139,7 @@ export function StructuralConcernTrack({
       yMin,
       yMax,
     };
-  }, [owc, lateralStations, lateralWindow, width, height]);
+  }, [owc, lateralStations, lateralWindow, width, chartHeight]);
 
   const shellClass = embedded
     ? "flex min-h-0 flex-col"
@@ -140,14 +147,46 @@ export function StructuralConcernTrack({
 
   return (
     <div className={cn(shellClass, className)}>
-      <p
-        className={cn(
-          "font-semibold text-text",
-          embedded ? "mb-1 text-[8px]" : "mb-2 text-[9px]",
-        )}
-      >
-        {label}
-      </p>
+      <div className="mb-2 flex items-center justify-between gap-2">
+        <p
+          className={cn(
+            "font-semibold text-text",
+            embedded ? "text-[8px]" : "text-[9px]",
+          )}
+        >
+          {label}
+        </p>
+        {intervals.length > 0 && owc != null ? (
+          <div className="flex shrink-0 items-center gap-1.5">
+            <label
+              htmlFor={`${uid}-height`}
+              className="sr-only"
+            >
+              Trajectory chart height
+            </label>
+            <input
+              id={`${uid}-height`}
+              type="range"
+              min={minHeight}
+              max={maxHeight}
+              step={4}
+              value={chartHeight}
+              onChange={(e) => setChartHeight(Number(e.target.value))}
+              className="h-1 w-16 cursor-pointer accent-accent"
+              aria-label="Trajectory chart height"
+            />
+            {isCustomized ? (
+              <button
+                type="button"
+                onClick={resetChartHeight}
+                className="text-[8px] text-accent hover:underline"
+              >
+                Reset
+              </button>
+            ) : null}
+          </div>
+        ) : null}
+      </div>
 
       {!intervals.length ? (
         <p className="flex flex-1 items-center justify-center text-[9px] text-text-muted">
@@ -158,10 +197,12 @@ export function StructuralConcernTrack({
           Trajectory / OWC data unavailable
         </p>
       ) : (
-        <div ref={ref} className="aspect-[3.2/1] w-full max-h-[220px]">
+        <div ref={widthRef} className="relative w-full" style={{ height: chartHeight }}>
           <svg
-            viewBox={`0 0 ${width} ${height}`}
-            className="block h-full w-full"
+            viewBox={`0 0 ${width} ${chartHeight}`}
+            width={width}
+            height={chartHeight}
+            className="block w-full"
             role="img"
             aria-label={`${label} structural concern track MD versus mTVDss`}
           >
@@ -178,7 +219,6 @@ export function StructuralConcernTrack({
               </pattern>
             </defs>
 
-            {/* Plot frame */}
             <rect
               x={chart.plotLeft}
               y={chart.plotTop}
@@ -190,7 +230,6 @@ export function StructuralConcernTrack({
               rx="2"
             />
 
-            {/* Y-axis ticks + labels */}
             {chart.mtvdsTicks.map((tick) => {
               const y = chart.yScale(tick);
               return (
@@ -230,7 +269,6 @@ export function StructuralConcernTrack({
               mTVDss
             </text>
 
-            {/* Hard floor */}
             <line
               x1={chart.plotLeft}
               x2={chart.plotRight}
@@ -251,7 +289,6 @@ export function StructuralConcernTrack({
               Hard +3m
             </text>
 
-            {/* OWC */}
             <line
               x1={chart.plotLeft}
               x2={chart.plotRight}
@@ -271,7 +308,6 @@ export function StructuralConcernTrack({
               OWC
             </text>
 
-            {/* Isolation corridors along trajectory */}
             {isolationDepths.map((band) => {
               const corridor = isolationCorridorPath(
                 lateralStations.length ? lateralStations : stations,
@@ -291,7 +327,6 @@ export function StructuralConcernTrack({
               );
             })}
 
-            {/* Trajectory polyline */}
             {chart.trajPath ? (
               <path
                 d={chart.trajPath}
@@ -304,7 +339,6 @@ export function StructuralConcernTrack({
               />
             ) : null}
 
-            {/* Concern markers */}
             {concerns.map((iv) => {
               const mid = (iv.top + iv.bot) / 2;
               const color =
@@ -348,7 +382,6 @@ export function StructuralConcernTrack({
               );
             })}
 
-            {/* X-axis baseline + ticks */}
             <line
               x1={chart.plotLeft}
               x2={chart.plotRight}
@@ -384,7 +417,7 @@ export function StructuralConcernTrack({
             })}
             <text
               x={(chart.plotLeft + chart.plotRight) / 2}
-              y={height - 4}
+              y={chartHeight - 4}
               textAnchor="middle"
               fill="var(--text-muted)"
               fontSize={STRUCTURAL_AXIS_LABEL_FONT}
@@ -393,6 +426,15 @@ export function StructuralConcernTrack({
               MD (m)
             </text>
           </svg>
+
+          <button
+            type="button"
+            className="absolute inset-x-0 bottom-0 flex h-4 cursor-ns-resize items-end justify-center border-0 bg-transparent pb-0.5"
+            aria-label="Drag to resize trajectory chart height"
+            onPointerDown={onResizePointerDown}
+          >
+            <span className="h-1 w-12 rounded-full bg-border transition-colors hover:bg-text-muted" />
+          </button>
         </div>
       )}
 
