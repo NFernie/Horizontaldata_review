@@ -6,6 +6,7 @@ import { isConcernInterval } from "@/lib/concernZones";
 import {
   STRUCTURAL_AXIS_LABEL_FONT,
   STRUCTURAL_MICRO_LABEL_FONT,
+  STRUCTURAL_MIN_PLOT_HEIGHT,
   STRUCTURAL_MIN_TICK_FONT,
   computePlotArea,
   computeYRange,
@@ -25,7 +26,7 @@ import type { TrajectoryPayload } from "@/types/trajectory";
 import { cn } from "@/lib/utils";
 
 const MIN_CHART_WIDTH = 280;
-const DEFAULT_VIEW_HEIGHT = structuralViewHeight();
+const MIN_CHART_HEIGHT = structuralViewHeight(STRUCTURAL_MIN_PLOT_HEIGHT);
 
 interface StructuralConcernTrackProps {
   label: string;
@@ -43,7 +44,7 @@ interface StructuralConcernTrackProps {
 
 function useChartSize() {
   const ref = useRef<HTMLDivElement>(null);
-  const [size, setSize] = useState({ width: MIN_CHART_WIDTH, height: DEFAULT_VIEW_HEIGHT });
+  const [size, setSize] = useState({ width: MIN_CHART_WIDTH, height: MIN_CHART_HEIGHT });
 
   useEffect(() => {
     const el = ref.current;
@@ -51,7 +52,7 @@ function useChartSize() {
 
     const update = () => {
       const width = Math.max(MIN_CHART_WIDTH, Math.round(el.clientWidth));
-      const height = Math.max(DEFAULT_VIEW_HEIGHT, Math.round(el.clientHeight));
+      const height = Math.max(MIN_CHART_HEIGHT, Math.round(el.clientHeight));
       setSize((prev) =>
         prev.width === width && prev.height === height ? prev : { width, height },
       );
@@ -135,8 +136,8 @@ export function StructuralConcernTrack({
   }, [owc, lateralStations, lateralWindow, width, height]);
 
   const shellClass = embedded
-    ? "flex min-h-0 flex-col"
-    : "flex flex-col rounded-card border border-border bg-surface-2 p-3";
+    ? "flex min-h-0 flex-1 flex-col"
+    : "flex min-h-0 flex-1 flex-col rounded-card border border-border bg-surface-2 p-3";
 
   return (
     <div className={cn(shellClass, className)}>
@@ -158,7 +159,7 @@ export function StructuralConcernTrack({
           Trajectory / OWC data unavailable
         </p>
       ) : (
-        <div ref={ref} className="aspect-[3.2/1] w-full max-h-[220px]">
+        <div ref={ref} className="min-h-0 w-full flex-1">
           <svg
             viewBox={`0 0 ${width} ${height}`}
             className="block h-full w-full"

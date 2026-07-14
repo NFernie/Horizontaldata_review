@@ -239,13 +239,9 @@ export function computePlotArea(width: number, height: number) {
   const plotLeft = STRUCTURAL_MARGIN.left;
   const plotRight = Math.max(plotLeft + 40, width - STRUCTURAL_MARGIN.right);
   const plotTop = STRUCTURAL_MARGIN.top;
-  const plotWidth = plotRight - plotLeft;
-  const heightBudget = Math.max(
-    STRUCTURAL_MIN_PLOT_HEIGHT,
-    height - plotTop - STRUCTURAL_MARGIN.bottom,
+  const plotBottom = Math.max(
+    plotTop + STRUCTURAL_MIN_PLOT_HEIGHT,
+    height - STRUCTURAL_MARGIN.bottom,
   );
-  const heightByAspect = plotWidth / STRUCTURAL_PLOT_ASPECT;
-  const plotHeight = Math.min(heightBudget, heightByAspect);
-  const plotBottom = plotTop + plotHeight;
   return { plotLeft, plotRight, plotTop, plotBottom };
 }

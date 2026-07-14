@@ -86,7 +86,7 @@ export function DualLateralTrack({
   return (
     <div
       className={cn(
-        "flex flex-col rounded-card border border-border bg-surface-2 p-3",
+        "flex min-h-0 flex-1 flex-col rounded-card border border-border bg-surface-2 p-3",
         className,
       )}
     >
@@ -97,10 +97,11 @@ export function DualLateralTrack({
           No interval data
         </p>
       ) : (
-        <div className="grid gap-2 md:grid-cols-2">
+        <div className="grid min-h-0 flex-1 gap-2 md:grid-cols-2">
           {lateralData.map((lat) => (
             <StructuralConcernTrack
               key={lat.alias}
+              className="min-h-0 flex-1"
               label={lat.display}
               intervals={lat.intervals}
               isolationDepths={lat.isolationDepths}
