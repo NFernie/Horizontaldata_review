@@ -423,14 +423,17 @@ def prepare_output_dirs() -> None:
             f.write(readme)
 
 
+def is_corpus_indexable(well: dict) -> bool:
+    """Virtual dual-lateral wells have merged JSON but no interpretation MD."""
+    return not well.get("data_missing") and not well.get("dual_lateral")
+
+
 def validate_corpus(
     wells: list[dict],
     interval_payloads: dict[str, dict],
     chunk_counts: dict[str, int],
 ) -> None:
-    expected_intervals = sum(
-        well.get("interval_count", 0) for well in wells if not well.get("data_missing")
-    )
+    expected_intervals = sum(well.get("interval_count", 0) for well in wells)
     min_summary_chunks = 34
     min_method_chunks = 5
 
@@ -452,8 +455,6 @@ def validate_corpus(
         )
 
     for well in wells:
-        if well.get("data_missing"):
-            continue
         alias = well["alias"]
         payload = interval_payloads.get(alias)
         if payload is None:
@@ -475,7 +476,14 @@ def validate_corpus(
 
 def main() -> int:
     wells_payload = load_json(os.path.join(DATA_ROOT, "wells.json"))
-    wells = [w for w in wells_payload.get("wells", []) if not w.get("data_missing")]
+    all_wells = [w for w in wells_payload.get("wells", []) if not w.get("data_missing")]
+    corpus_wells = [w for w in all_wells if is_corpus_indexable(w)]
+    for well in all_wells:
+        if well.get("dual_lateral"):
+            print(
+                f"Skipping corpus index for virtual well {well['alias']} "
+                "(no interpretation MD; see constituent wells)"
+            )
 
     prepare_output_dirs()
 
@@ -489,7 +497,7 @@ def main() -> int:
     all_chunks.extend(method_chunks)
     chunk_counts["method"] = len(method_chunks)
 
-    for well in wells:
+    for well in corpus_wells:
         alias = well["alias"]
         display = well["display"]
         print(f"Indexing {display} ({alias})...")
@@ -546,7 +554,7 @@ def main() -> int:
             }
         )
 
-    stats_index = build_stats_index(wells)
+    stats_index = build_stats_index(all_wells)
     write_json(os.path.join(CORPUS_ROOT, "stats", "index.json"), stats_index)
 
     chunks_path = os.path.join(CORPUS_ROOT, "chunks.jsonl")
@@ -565,7 +573,7 @@ def main() -> int:
     search_index = build_bm25_index(all_chunks)
     write_json(os.path.join(CORPUS_ROOT, "search-index.json"), search_index)
 
-    validate_corpus(wells, interval_payloads, chunk_counts)
+    validate_corpus(corpus_wells, interval_payloads, chunk_counts)
 
     print(f"\nWrote corpus index to {CORPUS_ROOT}/")
     print(
