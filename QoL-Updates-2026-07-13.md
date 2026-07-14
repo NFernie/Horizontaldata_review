@@ -1,14 +1,58 @@
 # QoL & Visualisation Updates — Implementation Plan
 
-**Date:** 2026-07-13  
-**Status:** Approved for implementation — QoL items ready; Intersection Windows **blocked on grid data**  
+**Date:** 2026-07-13 (rev. 2026-07-14)  
+**Status:** Approved — **Design → Implement** two-stage workflow per phase  
 **Repo:** `NFernie/Horizontaldata_review`  
-**Baseline:** Post–Phase 6 pipeline (`updated-plan-2026-07-10.md`) — **23 wells**, RQI v2, WRCI v2, ZOI, OWC, no ΔRes  
+**Baseline:** Post–Phase 6 pipeline (`updated-plan-2026-07-10.md`) — **23 wells**, RQI v2, WRCI v2, ZOI, OWC, mechanical isolation, no ΔRes  
+**UI skill:** `.cursor/skills/ui-ux-pro-max/SKILL.md` — **required for all Design agents**  
 **Reference (private):** [NFernie/Geosteering_Guide](https://github.com/NFernie/Geosteering_Guide) — intersection window UX (static adaptation)
 
 ---
 
-## 1. Current implementation review (as of 2026-07-13)
+## 0. Agent workflow — Design then Implement
+
+Each phase (**A**, **B1**, **B2**, **C**) runs as **two separate agent sessions**:
+
+| Stage | Agent type | Delivers | Does **not** do |
+|-------|------------|----------|-----------------|
+| **Design** | UI/UX designer | Written spec in `docs/qol-design/phase-{X}-design.md` | No production code commits |
+| **Implement** | Engineer | React/scripts per spec + design doc | No redesign without updating design doc |
+
+### Design agent checklist (all phases)
+
+1. Read this document’s phase section + linked data/method docs.
+2. Load **UI/UX Pro Max** skill (`.cursor/skills/ui-ux-pro-max/SKILL.md`).
+3. Run design-system search for context, e.g.  
+   `python3 .cursor/skills/ui-ux-pro-max/scripts/search.py "oil gas geoscience dashboard water risk analytics" --design-system -p "McKinlay Water-Risk Review"`
+4. Produce `docs/qol-design/phase-{X}-design.md` containing:
+   - Layout wireframe (ASCII or described regions)
+   - Component inventory (new vs reused)
+   - Colour / typography / spacing tokens (map to existing CSS vars in `site/src/index.css`)
+   - Interaction states (hover, focus, selected, empty, loading)
+   - Responsive behaviour (mobile / tablet / desktop)
+   - Accessibility notes (contrast, keyboard, `prefers-reduced-motion`)
+   - Data bindings (exact JSON paths)
+5. **Commit design doc only** to `main` (or hand off path to implement agent).
+
+### Implement agent checklist (all phases)
+
+1. Read phase section here + **`docs/qol-design/phase-{X}-design.md`** (must exist).
+2. Implement exactly per design spec; flag conflicts back to stakeholder.
+3. `npm test && npm run build` must pass.
+4. Commit production code to `main`.
+
+### Design output paths
+
+| Phase | Design doc |
+|-------|------------|
+| A | `docs/qol-design/phase-a-design.md` |
+| B1 | `docs/qol-design/phase-b1-design.md` |
+| B2 | `docs/qol-design/phase-b2-design.md` |
+| C | `docs/qol-design/phase-c-design.md` |
+
+---
+
+## 1. Current implementation review (as of 2026-07-14)
 
 ### ✅ Delivered (updated-plan Phases 1–6)
 
@@ -18,11 +62,12 @@
 | RQI v2 | ✅ | 8 components; `scripts/config.py` + `site/src/config.ts` |
 | WRCI v2 | ✅ | `0.40·RQI + 0.20·lowres + 0.20·lowfluor + 0.20·owc_severity` |
 | Flags | ✅ | `lowres`, `lowfluor`, `low_GR` (<70 gAPI), `ZOI`, `owc_near` / `owc_elevated` |
+| Mechanical isolation | ✅ | `isolated` per interval + `isolation_depths[]` from `Isolation_Depths.xlsx` |
 | ΔRes / `highperm` | ✅ Removed | Absent from JSON, site, stats |
 | Trajectory | ✅ `mTVDss` per interval | `scripts/trajectory.py`; Petrel `*_trajectory` at repo root |
 | OWC | ✅ | `Oil_Water_Contact.csv`; distance + severity in WRCI |
 | Pay / overburden | ✅ | Exclusion logic unchanged; 23-well pay summaries |
-| CI | ✅ | `compute_pay_summary.py` in deploy workflow |
+| CI | ✅ | Single-pass `export_web_data.py` + path filters (`deploy.yml`) |
 | RQI in tables | ✅ | Well Detail + Water-Risk show RQI alongside WRCI |
 | Well selection persistence | **Partial** | `sessionStorage` for Well Detail alias + Water-Risk left/right wells only |
 
@@ -33,26 +78,27 @@
 | **RQI / WRCI cell colours** | Plain monospace text — no threshold colouring |
 | **Full page state** | Navigating away loses scroll, Compare matrix mode, Intra-well well, filters |
 | **Sticky table columns** | `DataTable` scrolls entire table — label column scrolls off-screen |
-| **AppShell header** | Still says **"17 horizontal wells"** — should be **23** |
+| **AppShell header** | May still show stale well count — verify **23** |
+| **Methodology — Other methods** | Brief formula blocks only — no per-method dropdown, low detail |
 | **Trajectory for viz** | Only `mTVDss` on intervals — **no X/Y/INCL** exported to `site/public/data/` |
 | **Structural grids** | Not in repo — **pending delivery** |
 | **Intersection window** | Not implemented |
-| **Executive front page** | Portfolio table only — no Jena-focused graphic summary |
+| **Executive front page** | Portfolio table only — no concern-zone / analog comparison hub |
 | **Geosteering_Guide** | Private repo — **not readable** by agents without access or copied modules |
 
-### Jena focus wells — live stats (post–Phase 6)
+### Jena focus wells — live stats (`wells.json`)
 
-| Metric | JENA 31 | JENA 31DW1 | Portfolio avg (22 others) |
-|--------|---------|------------|---------------------------|
-| Elevated risk intervals | **25** | **18** | ~12 (varies) |
-| High risk | 0 | 0 | 0 |
-| Pay % | **80.4%** | **73.6%** | ~72% |
-| Lateral (m) | 1144 | 1597 | — |
-| Cluster | 1 | 2 | — |
-| OWC field | Jena −1198 m TVDss | Jena −1198 | — |
-| Spot @ 2500 m | RQI 0.66, OWC dist **3.8 m High** | — | — |
+| Metric | JENA 31 | JENA 31DW1 | Notes |
+|--------|---------|------------|-------|
+| Elevated risk intervals | **57** | **69** | `elevated_risk_count` |
+| High risk | 0 | 0 | Portfolio-wide |
+| Pay % | **80.4%** | **73.6%** | |
+| Lateral (m) | 1144 | 1597 | |
+| Cluster | 1 | 2 | `stats/clusters.json` |
+| Isolation depths | **none** | **none** | `isolation_depths: []` |
+| Default Jaccard analog #1 | **STIMPEE 7** (J=1.0) | **BIALA 19** (J=1.0) | `stats/jaccard.json` → `jena_analog_ranking` |
 
-Use these figures in the executive summary graphic (§6).
+Use these figures in Phase C graphics and copy.
 
 ---
 
@@ -100,12 +146,12 @@ Use `WRCI_HIGH_THRESHOLD` (66) from config. Apply everywhere WRCI is rendered (s
 
 | Route | State to persist |
 |-------|------------------|
-| `/` Portfolio | Scroll Y (optional) |
+| `/` Portfolio | Scroll Y (optional); executive panel dropdown selections (Phase C) |
 | `/well/:alias` | Selected well alias ✅ (exists); **scroll position** |
 | `/water-risk` | Left/right well ✅ (exists); **scroll** |
 | `/compare` | `matrixMode` (`feature` \| `depth`); scroll |
 | `/intra/:alias` | Selected well; scroll |
-| `/methodology` | Scroll / expanded sections (optional) |
+| `/methodology` | Scroll; **expanded method accordion id** (A5) |
 | **Global** | Assistant panel open/closed (optional) |
 
 **Implementation:**
@@ -136,6 +182,30 @@ Use `WRCI_HIGH_THRESHOLD` (66) from config. Apply everywhere WRCI is rendered (s
 
 ---
 
+### A5 — Methodology: detailed “Other Statistical Methods” (dropdown per method)
+
+**Requirement:** Replace the brief grid on **Methodology → Other statistical methods** with **high-detail, selectable method panels**.
+
+**Source of truth for content:** `New Statistical Methods.md` (Methods 2–5). WRCI (Method 1) remains in the existing top card; Methods 2–5 move into the enhanced section.
+
+| Method | Title | Must include in panel |
+|--------|-------|------------------------|
+| **2** | Robust Z-Score Anomaly Detection | Objective; metrics list (`ZSCORE_METRICS`); MAD formula with 0.6745 constant; threshold \|z\| > 3.5; diagnostic patterns; JSON path; site route |
+| **3** | Spearman Rank-Correlation | Variables (`SPEARMAN_VARS`); ρ and p-value definition; interpretation table (decoupling patterns); caveats on small n |
+| **4** | Jaccard Similarity | Feature vocabulary (`JACCARD_FEATURES`); presence rule (≥10%); J(A,B) equation; depth-binned variant (20 bins); analog ranking purpose |
+| **5** | Clustering + KS | Feature vector list (`CLUSTER_FEATURES`); Ward linkage; cosine/Euclidean; KS properties (`KS_PROPERTIES`); D and p-value meaning |
+
+**UI pattern (design + implement):**
+
+- **Single-select dropdown** or **vertical accordion** — one method visible at a time (user picks from list).
+- Each panel: **Objective** → **Inputs / properties** → **Equations** (monospace `FormulaBlock`) → **Outputs & JSON** → **Site route** → **Water-risk mapping** (1–2 sentences).
+- Pull numeric constants from `@/config` — do not duplicate hardcoded values.
+- Persist expanded/selected method id via `usePageState` (A3).
+
+**Acceptance:** A geoscientist can read Method 4 alone and understand Jaccard features, equation, and how Jena analogs are ranked — without opening the markdown file.
+
+---
+
 ## 3. Intersection Windows (Phase B — partial; grid data pending)
 
 ### 3.1 Objective
@@ -147,6 +217,7 @@ Static **intersection window** per well (selectable filter):
 - **Risk flags** coloured along trajectory by sample MD
 - **OWC** horizon at field contact (mTVDss from `Oil_Water_Contact.csv`)
 - **Hard floor** at **OWC + 3 m** (3 m structurally above contact → less negative TVDss, e.g. −1198 → **−1195**)
+- **Isolation bands** (optional B1): shaded MD intervals from `isolation_depths[]`
 
 Adapt UX from **Geosteering_Guide** as a **static** view (no live steering).
 
@@ -158,8 +229,6 @@ Adapt UX from **Geosteering_Guide** as a **static** view (no live steering).
 |--------|--------|
 | **Recommended** | Copy intersection/SVG modules into `site/src/lib/geosteering/` or grant repo read access |
 | **Fallback** | Implement from spec below without Guide code |
-
-**Ask stakeholder:** Export 1–2 key files from Geosteering_Guide (section projection, flag overlay) into this repo.
 
 ### 3.3 Data pipeline (new build-time export)
 
@@ -179,50 +248,11 @@ site/public/data/trajectory/{ALIAS}.json
 }
 ```
 
-Parse columns from `*_trajectory`: `MD`, `TVD`, `Z`, `X`, `Y`, `INCL` (and `AZIM_TN` if needed).
-
-**Grid data (pending):**
-
-```
-site/public/data/grids/{FIELD}.json   # or per-well
-{
-  "field": "Jena",
-  "crs": "MGA2020-54",
-  "points": [ { "x", "y", "z" } ],   # depth grid in XYZ
-  "metadata": { "source", "generated_at" }
-}
-```
-
-**Build step when grids arrive:**
-
-1. Determine **section plane** from trajectory tangent at lateral midpoint (or max inclination)
-2. Project grid points → 2D `(distance_along_section, mtvds)`
-3. Project trajectory stations → same 2D frame
-4. Compute **separation** = normal distance from trajectory to nearest grid point (optional contour)
+**Grid data (pending):** `site/public/data/grids/{FIELD}.json` per §3.3 schema in prior revision.
 
 ### 3.4 Viewer (static React)
 
-**New route:** `/intersection` or `/section` (add to `AppShell` nav)
-
-| Component | Role |
-|-----------|------|
-| `IntersectionExplorer.tsx` | Well filter (`WellSelect`); loads trajectory + intervals + optional grid |
-| `SectionSvg.tsx` | SVG: Y = mTVDss (inverted depth axis), X = horizontal distance along section |
-| `FlagOverlay.tsx` | Circles/markers at interval MD → projected (x, mtvds); colour by flag type |
-| `OwcLines.tsx` | Horizontal lines at OWC and OWC+3 m |
-| `GridPoints.tsx` | Scatter/contour of projected grid (light grey) |
-
-**Flag colours (suggested):**
-
-| Flag | Colour |
-|------|--------|
-| `owc_near` High | `--risk-high` |
-| `ZOI` | `--accent` |
-| `low_GR` | `#a78bfa` |
-| `lowres` / `lowfluor` | `--risk-elev` |
-| Elevated WRCI (no flag) | muted |
-
-**Lateral filter:** Only render stations where `INCL ≥ 80°` and `MD` between lateral entry (DC30 / first McKinlay) and TD.
+**New route:** `/intersection` — `IntersectionExplorer.tsx`, `SectionSvg.tsx`, `FlagOverlay.tsx`, `OwcLines.tsx`, `GridPoints.tsx` (B2).
 
 ### 3.5 Phase B gating
 
@@ -231,147 +261,310 @@ site/public/data/grids/{FIELD}.json   # or per-well
 | Trajectory files at repo root | ✅ |
 | Interval flags in JSON | ✅ |
 | OWC CSV | ✅ |
+| Isolation depths in interval JSON | ✅ |
 | **Grid XYZ point sets per field** | ❌ **Pending** |
 | Geosteering_Guide modules | ❌ **Need copy or access** |
 
 **Deliver Phase B in two sub-phases:**
 
-- **B1 (now):** Trajectory export + static section **without grid** — trajectory + flags + OWC lines only  
+- **B1 (now):** Trajectory export + static section **without grid** — trajectory + flags + OWC + isolation bands  
 - **B2 (when grids arrive):** Grid overlay + separation metric
 
 ---
 
-## 4. Executive summary front page (Phase C)
+## 4. Executive summary — Analog Concern Hub (Phase C)
 
-### 4.1 Objective
+### 4.1 Objective (revised)
 
-Replace or augment **`/` Portfolio** with a **graphic-first executive summary** emphasising **Jena 31** and **Jena 31DW1** vs the portfolio — minimal prose, maximum visual scan.
+Replace the portfolio-only landing experience with a **graphic-first Executive Summary** that answers:
 
-### 4.2 Recommended layout (single viewport hero)
+1. **Where are zones of concern?** (Elevated and High `risk_class` intervals on focus wells)
+2. **Which portfolio wells look most similar?** (Jaccard analogs — **not** Jena 31 vs Jena 31DW1 by default)
+3. **What is mechanically isolated vs open?** (`isolated` flag + `isolation_depths` MD bands)
+
+**Default focus wells:** JENA 31 and JENA 31DW1 each get an **independent comparison row** against their **closest Jaccard analog**, swappable via dropdowns.
+
+### 4.2 Core UX — two independent comparison panels
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  McKinlay Water-Risk Review — Executive Summary                 │
-├──────────────────────────────┬──────────────────────────────────┤
-│  JENA 31 vs JENA 31DW1       │  Portfolio context (23 wells)    │
-│  ┌─────────┐ ┌─────────┐     │  ┌────────────────────────────┐  │
-│  │ radial  │ │ radial  │     │  │ strip chart: elevated risk │  │
-│  │  gauge  │ │  gauge  │     │  │ per well (Jena highlighted)│  │
-│  │ WRCI/RQI│ │ WRCI/RQI│     │  └────────────────────────────┘  │
-│  └─────────┘ └─────────┘     │  ┌────────────────────────────┐  │
-│  OWC proximity mini-tracks    │  │ Jaccard analog bars        │  │
-│  (lateral MD → owc_distance)  │  │ (top 5 analogs to Jena 31) │  │
-├──────────────────────────────┴──────────────────────────────────┤
-│  Key callouts (3 StatTiles): Elevated count | OWC High band | ZOI │
-│  [ View Jena 31 ]  [ View Jena 31DW1 ]  [ Full portfolio table ▼ ]│
-└─────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────┐
+│  McKinlay Water-Risk Review — Executive Summary                         │
+├──────────────────────────────────────────────────────────────────────────┤
+│  PANEL A                                                                 │
+│  Focus: [JENA 31 ▼]     Analog: [STIMPEE 7 ▼]   Jaccard: 1.00          │
+│  ┌─ Focus — concern zones ─────────┐ ┌─ Analog — concern zones ────────┐ │
+│  │ MD track: Elevated/High markers │ │ Same MD-normalized or separate  │ │
+│  │ ░░ isolation MD bands (grey)    │ │ scales; isolation bands if any  │ │
+│  │ ● isolated concern  ○ not      │ │ Legend shared                   │ │
+│  └─────────────────────────────────┘ └─────────────────────────────────┘ │
+│  Tiles: Elevated | High | Isolated concerns | Non-isolated concerns      │
+├──────────────────────────────────────────────────────────────────────────┤
+│  PANEL B  (independent — NOT paired with Panel A)                        │
+│  Focus: [JENA 31DW1 ▼]   Analog: [BIALA 19 ▼]   Jaccard: 1.00            │
+│  (same layout as Panel A)                                                │
+├──────────────────────────────────────────────────────────────────────────┤
+│  Portfolio context: ranked strip — elevated count all 23 wells           │
+│  (focus wells + current analogs highlighted in accent)                 │
+├──────────────────────────────────────────────────────────────────────────┤
+│  [ Open in Water-Risk Explorer ]   [ Full portfolio table ▼ ]            │
+└──────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 4.3 Graphic modules (implement with Recharts + SVG)
+### 4.3 Dropdown behaviour
 
-| # | Graphic | Data source | Insight |
-|---|---------|-------------|---------|
-| 1 | **Dual radial gauges** | `wells.json` + aggregate intervals | Jena 31 vs 31DW1: mean WRCI, % intervals RQI>0.6 |
-| 2 | **Portfolio strip / lollipop chart** | `wells.json` `elevated_risk_count` | All wells ranked; **Jena wells highlighted** in accent |
-| 3 | **OWC distance mini-tracks** | `intervals/JENA31.json`, `JENA31DW1.json` | MD vs `owc_distance_m` — show proximity to −1198 contact |
-| 4 | **Flag composition stacked bar** | interval flags aggregated | Jena vs portfolio: % with ZOI, owc_near, low_GR |
-| 5 | **Jaccard analog ranking** | `stats/jaccard.json` `jena_analog_ranking` | Top analog wells to Jena 31 (horizontal bars) |
+| Control | Options | Default | Rules |
+|---------|---------|---------|-------|
+| **Focus well** | All 23 active wells | Panel A → `JENA31`; Panel B → `JENA31DW1` | Changing focus resets analog to **top Jaccard rank** for that focus |
+| **Analog well** | All wells **except** focus | `jena_analog_ranking[focus][0].alias` | Show `display` + Jaccard score in option label; exclude self-comparison |
+| **Portfolio strip highlight** | — | Both focus wells + their selected analogs | Accent border / fill |
 
-### 4.4 Routing options
+**Data:** `site/public/data/stats/jaccard.json` → `jena_analog_ranking` (works for any focus if extended at runtime by computing from `matrix` + `aliases`, or precomputed for Jena wells only — **implement agent**: generalise ranking helper for any focus alias using feature Jaccard matrix).
 
-| Option | Pros |
-|--------|------|
-| **A. Replace `/`** | Executive summary is landing page; portfolio table moves to `/portfolio` |
-| **B. Split `/`** | Hero graphic top half; collapsible existing portfolio table below (**recommended** — no nav churn) |
+### 4.4 Concern zone definition
 
-### 4.5 Copy tone
+| Term | Rule | Data |
+|------|------|------|
+| **Concern zone** | `risk_class === 'Elevated'` **or** `'High'` | `intervals/{alias}.json` |
+| **Isolated concern** | Concern zone **and** `isolated === true` | per-interval |
+| **Non-isolated concern** | Concern zone **and** `isolated === false` | per-interval |
+| **Isolation band** | MD range from `isolation_depths[].top_md`–`bot_md` | well-level overlay on MD track |
 
-- 3 short bullets auto-generated from data, e.g.  
-  - *"Jena 31: 25 elevated-risk intervals; 0 high — OWC proximity dominates flags."*  
-  - *"Jena 31DW1: longer lateral (1597 m), fewer elevated zones than Jena 31."*  
-- Link to Water-Risk Explorer with Jena wells pre-selected.
+### 4.5 Graphic modules
+
+| # | Module | Data | Insight |
+|---|--------|------|---------|
+| 1 | **Dual MD concern tracks** (×2 panels) | `intervals/{focus}.json`, `intervals/{analog}.json` | Side-by-side concern distribution; isolation shading |
+| 2 | **Concern stat tiles** (×2 panels) | aggregated counts | Elevated / High / isolated split |
+| 3 | **Portfolio elevated strip** | `wells.json` `elevated_risk_count` | Context; highlight focus + analog |
+| 4 | **Flag composition mini-bars** (optional) | interval `flags[]` on concern zones only | ZOI vs OWC vs lowres on focus vs analog |
+| 5 | **Analog similarity badge** | Jaccard score + shared features from `jaccard.json` `feature_sets` | Why this analog was chosen |
+
+### 4.6 Routing
+
+| Option | Recommendation |
+|--------|----------------|
+| **B. Split `/`** | Hero executive hub **above** existing portfolio table (**recommended** — no nav churn) |
+
+### 4.7 Copy tone
+
+- Max **2 auto bullets per panel**, data-driven, e.g.  
+  - *"Jena 31: 57 elevated intervals; 0 high; no mechanical isolation on file."*  
+  - *"vs STIMPEE 7 (J=1.0): 23 elevated; 3 isolated concern zones at 2100–2150 m MD."*
+- CTA: Water-Risk Explorer with focus well pre-selected (`sessionStorage` keys from `useWellSelection.ts`).
 
 ---
 
 ## 5. Phased execution summary
 
-| Phase | Scope | Blocked? | Agent sessions |
-|-------|--------|----------|----------------|
-| **A** | QoL 1–4 (colour, state, sticky cols, fix "23 wells") | **No** | **1** |
-| **B1** | Intersection window — trajectory + flags + OWC (no grid) | **No** | **1** |
-| **B2** | Grid overlay + separation | **Yes** — grid XYZ pending | 1 (after data) |
-| **C** | Executive summary front page | **No** (uses existing JSON) | **1** |
+| Phase | Scope | Design doc | Implement | Blocked? |
+|-------|--------|------------|-----------|----------|
+| **A** | QoL A1–A5 (colour, state, sticky, methodology dropdown, well count) | `phase-a-design.md` | 1 session | **No** |
+| **B1** | Intersection — trajectory + flags + OWC + isolation (no grid) | `phase-b1-design.md` | 1 session | **No** |
+| **B2** | Grid overlay + separation | `phase-b2-design.md` | 1 session | **Yes** — grid XYZ pending |
+| **C** | Executive Analog Concern Hub | `phase-c-design.md` | 1 session | **No** |
 
-**Parallelism:**
+**Recommended session order:**
 
-| Can run together? | Phases |
-|-------------------|--------|
-| **Yes** | **A ∥ C** (disjoint UI files — A touches shared `DataTable`, C new components; **mild conflict risk** on `PortfolioDashboard.tsx` if C embeds there) |
-| **Yes** | **B1 ∥ A** if B1 is mostly new files (`export_trajectory_web.py`, `IntersectionExplorer.tsx`) |
-| **No** | **C** replacing `/` layout while **A** edits same Portfolio — **sequence A then C** or single combined prompt |
-| **Recommended** | **Session 1:** A + fix AppShell well count. **Session 2:** C. **Session 3:** B1. **Session 4:** B2 when grids arrive. |
+1. **Design A** → **Implement A**  
+2. **Design C** → **Implement C** (after A merged — shares `DataTable`, `usePageState`, tokens)  
+3. **Design B1** → **Implement B1** (can parallel Design with C after A)  
+4. **Design B2** → **Implement B2** when grids arrive  
 
-**Maximum simultaneous agents: 1–2** (2 only if B1 export script is isolated from A's `DataTable` work).
+**Maximum simultaneous agents: 1** per stage (design OR implement, not both on same files).
 
-**Debugging agent:** **Recommended, not required** — after Phase A (colour contrast / a11y) and after B1 (trajectory projection spot-check at INCL>80°).
+**Debugging agent:** Recommended after Implement A (colour contrast / a11y) and Implement B1 (trajectory projection spot-check at INCL>80°).
 
 ---
 
-## 6. Implementation agent prompts
+## 6. Design agent prompts
 
-### Prompt — Phase A: QoL (colour, state, sticky tables)
+### Prompt — Phase A Design
 
 ```
-Execute QoL-Updates-2026-07-13.md Phase A only.
+DESIGN ONLY — do not write production React code.
 
-Read: site/src/config.ts (RQI_THRESHOLD, WRCI_HIGH_THRESHOLD), existing useWellSelection.ts.
+Read:
+- QoL-Updates-2026-07-13.md §2 (Phase A, items A1–A5)
+- site/src/pages/Methodology.tsx (current layout)
+- New Statistical Methods.md (Methods 2–5 — content source for A5)
+- site/src/config.ts, site/src/index.css (existing tokens)
+- .cursor/skills/ui-ux-pro-max/SKILL.md
+
+Load UI/UX Pro Max skill. Run:
+  python3 .cursor/skills/ui-ux-pro-max/scripts/search.py "geoscience petrophysics dashboard data table methodology" --design-system -p "McKinlay Water-Risk Review"
+
+Deliver: docs/qol-design/phase-a-design.md containing:
+1. RQI/WRCI MetricCell colour spec (red/green semantics + tooltip copy)
+2. DataTable sticky-first-column behaviour (shadow, z-index, scroll container)
+3. usePageState key map per route (including methodology accordion id)
+4. Methodology §A5: dropdown/accordion IA for Methods 2–5 — wireframe each panel sections
+5. Component list: MetricCell, MethodSelector, MethodDetailPanel (names flexible)
+6. Accessibility: contrast on coloured metrics, keyboard for method selector
+
+Commit design doc to main only.
+```
+
+---
+
+### Prompt — Phase C Design
+
+```
+DESIGN ONLY — do not write production React code.
+
+Read:
+- QoL-Updates-2026-07-13.md §4 (Executive Analog Concern Hub)
+- site/public/data/wells.json, stats/jaccard.json, intervals/JENA31.json, intervals/MCKINLAY10.json (isolation example)
+- site/src/pages/PortfolioDashboard.tsx
+- docs/qol-design/phase-a-design.md (if exists — align tokens)
+- .cursor/skills/ui-ux-pro-max/SKILL.md
+
+Load UI/UX Pro Max skill. Run:
+  python3 .cursor/skills/ui-ux-pro-max/scripts/search.py "executive dashboard comparison analytics oil gas risk" --design-system -p "McKinlay Executive Summary"
+
+Deliver: docs/qol-design/phase-c-design.md containing:
+1. Full wireframe for dual comparison panels + portfolio strip + collapsed table
+2. WellSelect / analog Select interaction spec (defaults, reset rules, labels with Jaccard score)
+3. MD concern track visual design: Elevated vs High markers, isolation band hatching, isolated vs open glyph
+4. Stat tile definitions (4 per panel)
+5. Colour legend and highlight rules for portfolio strip
+6. Empty states (no concern zones; no isolation on file)
+7. Mobile: stack focus above analog; dropdowns full-width
+8. sessionStorage keys for panel focus/analog selections
+
+Commit design doc to main only.
+```
+
+---
+
+### Prompt — Phase B1 Design
+
+```
+DESIGN ONLY — do not write production React code.
+
+Read:
+- QoL-Updates-2026-07-13.md §3 (Intersection Windows)
+- scripts/trajectory.py, Oil_Water_Contact.csv
+- site/public/data/intervals/JENA31.json (flags, isolation_depths)
+- .cursor/skills/ui-ux-pro-max/SKILL.md
+
+Load UI/UX Pro Max skill. Run:
+  python3 .cursor/skills/ui-ux-pro-max/scripts/search.py "geoscience cross section trajectory wellbore SVG" --design-system -p "McKinlay Intersection"
+
+Deliver: docs/qol-design/phase-b1-design.md containing:
+1. /intersection page layout — WellSelect, legend, SVG viewport
+2. Section axes spec (X = distance along section, Y = mTVDss inverted)
+3. Flag colour map (ZOI, owc_near, low_GR, lowres, lowfluor)
+4. OWC + hard floor line styles; isolation MD band overlay
+5. Tooltip content on interval marker hover
+6. Default well on first load (JENA31)
+
+Commit design doc to main only.
+```
+
+---
+
+### Prompt — Phase B2 Design
+
+```
+DESIGN ONLY — prerequisite: phase-b1-design.md on main; grid schema in QoL §3.3.
+
+Read:
+- QoL-Updates-2026-07-13.md §3, docs/qol-design/phase-b1-design.md
+- .cursor/skills/ui-ux-pro-max/SKILL.md
+
+Deliver: docs/qol-design/phase-b2-design.md — grid scatter/contour layer, legend, separation metric placement, colour hierarchy (grid behind trajectory).
+
+Commit design doc to main only.
+```
+
+---
+
+## 7. Implementation agent prompts
+
+### Prompt — Phase A Implement
+
+```
+IMPLEMENT — Phase A only.
+
+Read:
+- QoL-Updates-2026-07-13.md §2 (A1–A5)
+- docs/qol-design/phase-a-design.md (REQUIRED — do not improvise layout)
+- site/src/config.ts, site/src/hooks/useWellSelection.ts, site/src/components/DataTable.tsx
+- New Statistical Methods.md (Methods 2–5 content for Methodology panels)
 
 Tasks:
-1. Add site/src/lib/rqiWrciStyle.ts — rqiCellClass (red if >0.6, green otherwise), wrciCellClass (red if >66, green otherwise)
-2. Apply RQI/WRCI colouring on Well Detail table, Water-Risk Explorer, any other WRCI/RQI cells
-3. Extend DataTable: stickyFirstColumn (default true), vertical scroll container for long tables
-4. Add usePageState.ts + useScrollRestore; persist compare matrixMode, intra well, scroll per route (sessionStorage)
-5. Fix AppShell "17 horizontal wells" → "23 horizontal wells"
+1. site/src/lib/rqiWrciStyle.ts — rqiCellClass, wrciCellClass per A1/A2
+2. Apply metric colouring on Well Detail, Water-Risk, other RQI/WRCI surfaces
+3. DataTable: stickyFirstColumn + vertical scroll container (A4)
+4. usePageState.ts + useScrollRestore; wire all routes in A3
+5. Methodology A5: method dropdown/accordion for Methods 2–5 with high-detail content (equations, properties, outputs) from New Statistical Methods.md + @/config constants
+6. Fix AppShell well count → 23 if stale
 
 Constraints:
-- Use CSS tokens (--risk-high, --risk-low); respect prefers-reduced-motion
+- Match phase-a-design.md tokens and copy
 - Do not change WRCI/RQI calculation logic
 - npm test && npm run build must pass
 
-Acceptance:
-- JENA31 Well Detail: RQI>0.6 rows show red RQI text; WRCI>66 red
-- First column sticky on vertical scroll
-- Navigate Portfolio → Well Detail → back restores scroll/compare state
-- No console errors
-
 Commit to main.
 ```
 
 ---
 
-### Prompt — Phase C: Executive summary front page
+### Prompt — Phase C Implement
 
 ```
-Execute QoL-Updates-2026-07-13.md Phase C only.
+IMPLEMENT — Phase C only.
 
-Prerequisite: Phase A merged (shared DataTable/styling OK).
+Prerequisite: Phase A on main; docs/qol-design/phase-c-design.md exists.
 
-Read: site/public/data/wells.json, intervals/JENA31.json, stats/jaccard.json, QoL doc §4.
+Read:
+- QoL-Updates-2026-07-13.md §4
+- docs/qol-design/phase-c-design.md (REQUIRED)
+- site/public/data/wells.json, stats/jaccard.json, intervals/*.json
+- site/src/pages/PortfolioDashboard.tsx, site/src/hooks/useWellSelection.ts
 
 Tasks:
-1. Add ExecutiveSummary hero section to PortfolioDashboard (option B: top half graphic, bottom half existing table)
-2. Implement graphics per §4.3: Jena dual gauges, portfolio elevated-risk strip, OWC distance mini-tracks, Jaccard analog bars
-3. StatTiles: Jena 31 / 31DW1 elevated counts, OWC-high band count, ZOI count (aggregate from intervals JSON)
-4. CTA links to /water-risk with Jena wells pre-selected (use existing sessionStorage keys)
+1. ExecutiveSummary section above portfolio table on / (option B)
+2. Two independent ComparisonPanel components (NOT Jena vs Jena default):
+   - Panel A default: focus JENA31, analog top jaccard (STIMPEE7)
+   - Panel B default: focus JENA31DW1, analog top jaccard (BIALA19)
+3. Focus + Analog WellSelect dropdowns; analog excludes focus; reset analog on focus change
+4. MD concern tracks: Elevated/High intervals; isolation_depths bands; isolated vs non-isolated glyph
+5. Per-panel StatTiles: elevated count, high count, isolated concerns, non-isolated concerns
+6. Portfolio elevated strip with highlight for focus + selected analogs
+7. Persist panel selections via usePageState; CTA to /water-risk
+
+Helper: generalise Jaccard analog ranking for any focus alias from jaccard.json matrix (not only jena_analog_ranking).
 
 Constraints:
-- Graphic-first, minimal prose (3 auto bullets max)
-- Highlight JENA31 and JENA31DW1 in accent colour on portfolio charts
-- Recharts + existing Card/StatTile components; load UI/UX Pro Max skill for polish
+- Graphic-first, minimal prose (≤2 bullets per panel)
+- Load UI/UX Pro Max polish per phase-c-design.md
+- npm test && npm run build must pass
+
+Commit to main.
+```
+
+---
+
+### Prompt — Phase B1 Implement
+
+```
+IMPLEMENT — Phase B1 only.
+
+Read:
+- QoL-Updates-2026-07-13.md §3
+- docs/qol-design/phase-b1-design.md (REQUIRED)
+- scripts/trajectory.py, Oil_Water_Contact.csv
+
+Tasks:
+1. scripts/export_trajectory_web.py → site/public/data/trajectory/{ALIAS}.json
+2. Hook into deploy workflow (pipeline step after export_web_data.py) when trajectory inputs change
+3. Route /intersection + IntersectionExplorer + SectionSvg per design doc
+4. Trajectory polyline (INCL≥80), OWC + hard floor, flag markers, isolation bands
+5. AppShell nav item
 
 Acceptance:
-- / loads executive graphic above portfolio table
-- Jena wells visually distinct from portfolio
+- /intersection?well=JENA31 renders section; OWC −1198, floor −1195
 - npm run build clean
 
 Commit to main.
@@ -379,82 +572,54 @@ Commit to main.
 
 ---
 
-### Prompt — Phase B1: Intersection window (trajectory + flags, no grid)
+### Prompt — Phase B2 Implement
 
 ```
-Execute QoL-Updates-2026-07-13.md Phase B1 only.
+IMPLEMENT — Phase B2 only.
 
-Read: scripts/trajectory.py, *_trajectory format, Oil_Water_Contact.csv, QoL doc §3.
+Prerequisite: B1 on main; docs/qol-design/phase-b2-design.md; grids at site/public/data/grids/{FIELD}.json
 
-Tasks:
-1. scripts/export_trajectory_web.py → site/public/data/trajectory/{ALIAS}.json (MD,TVD,mtvds,X,Y,INCL, lateral_window incl>=80)
-2. Hook into deploy workflow after export_web_data.py
-3. New route /intersection + IntersectionExplorer page with WellSelect
-4. SectionSvg: static SVG — X = distance along section, Y = mTVDss (inverted)
-   - Trajectory polyline (INCL>=80 segment only)
-   - OWC horizontal line + hard floor (OWC + 3 m TVDss)
-   - Interval markers coloured by dominant flag (ZOI, owc_near, low_GR, etc.)
-5. Add nav item in AppShell
-
-If Geosteering_Guide code is not in repo, implement from QoL spec only.
-
-Acceptance:
-- /intersection?well=JENA31 renders lateral section with OWC at -1198 and floor at -1195
-- Flag markers align with known elevated intervals (~2500 m MD)
-- npm run build clean
+Read design doc + QoL §3. Implement grid layer + optional separation metric.
 
 Commit to main.
 ```
 
 ---
 
-### Prompt — Phase B2: Grid overlay (when grid data delivered)
+## 8. Open questions
 
-```
-Execute QoL-Updates-2026-07-13.md Phase B2.
-
-Prerequisite: B1 on main; grid files placed at site/public/data/grids/{FIELD}.json per §3.3 schema.
-
-Tasks:
-1. Ingest grid XYZ; project to section plane used in B1
-2. Render grid points/contours behind trajectory in SectionSvg
-3. Optional: compute/display mean normal separation trajectory-to-grid in lateral window
-4. Field filter auto-matches well field (Jena, McKinlay, etc.)
-
-Acceptance:
-- JENA31 section shows grid + trajectory in same frame
-- Legend explains grid vs wellbore
-
-Commit to main.
-```
-
----
-
-## 7. Open questions
-
-1. **RQI red / green semantics:** Confirm tooltips on Methodology — red = high RQI good rock (attention), not error.  
+1. **RQI red / green semantics:** Tooltips on Methodology — red = high RQI good rock (attention), not error.  
 2. **WRCI binary vs three-band:** Elevated band (40–66) — green or amber? (Plan uses binary per spec.)  
 3. **Geosteering_Guide:** Which files to copy into this repo for intersection projection?  
-4. **Grid delivery format:** CSV XYZ, GeoJSON, or Petrel export? One file per field or per well?  
-5. **Hard floor +3 m:** Confirm **−1195 m TVDss** when OWC = −1198 (structurally above contact).  
-6. **Executive summary:** Replace `/` entirely or hero + table (recommended B)?  
+4. **Grid delivery format:** CSV XYZ, GeoJSON, or Petrel export?  
+5. **Hard floor +3 m:** Confirm **−1195 m TVDss** when OWC = −1198.  
+6. **Phase C analog ranking:** Generalise Jaccard ranking to any focus well at runtime, or precompute in export? (Plan: runtime helper acceptable.)  
 7. **Intersection default well:** JENA31 on first load?
 
 ---
 
-## 8. Related documents
+## 9. Related documents
 
 | Doc | Role |
 |-----|------|
+| `QoL-Updates-2026-07-13.md` | **This file** — scope, prompts, acceptance |
+| `docs/qol-design/phase-{a,b1,b2,c}-design.md` | **Design agent outputs** — implement agents must read |
+| `.cursor/skills/ui-ux-pro-max/SKILL.md` | UI/UX Pro Max skill — **Design agents** |
+| `New Statistical Methods.md` | Canonical method text for Methodology A5 + corpus |
 | `updated-plan-2026-07-10.md` | Completed pipeline baseline |
-| `site/src/config.ts` | Thresholds for colouring |
+| `site/src/config.ts` | Thresholds for colouring + method constants |
+| `site/public/data/stats/jaccard.json` | Analog rankings for Phase C |
+| `site/public/data/intervals/{ALIAS}.json` | `risk_class`, `isolated`, `isolation_depths` |
+| `Isolation_Depths.xlsx` | Mechanical isolation source |
 | `Oil_Water_Contact.csv` | OWC + hard floor |
 | `scripts/trajectory.py` | MD → mTVDss (extend for web export) |
+| `.github/workflows/deploy.yml` | Deploy + pipeline path filters |
 
 ---
 
-## 9. Revision history
+## 10. Revision history
 
 | Date | Change |
 |------|--------|
 | 2026-07-13 | Initial QoL + intersection + executive summary plan |
+| 2026-07-14 | Design→Implement workflow; UI/UX Pro Max; Phase A5 methodology dropdown; Phase C reimagined as Analog Concern Hub; separate design/impl prompts; updated Jena stats + isolation |
