@@ -292,6 +292,18 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
         aria-label="Depth tracks for wireline and cuttings properties"
         className="min-w-full"
       >
+        <defs>
+          <pattern
+            id="depth-tracks-iso-hatch"
+            patternUnits="userSpaceOnUse"
+            width="8"
+            height="8"
+            patternTransform="rotate(45)"
+          >
+            <rect width="4" height="8" fill="var(--isolation-hatch-stripe)" />
+            <rect x="4" width="4" height="8" fill="var(--isolation-hatch-fill)" />
+          </pattern>
+        </defs>
         <g>
           {zones.map((z) => (
             <rect
@@ -527,10 +539,8 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
               y={depthToY(iso.top_md)}
               width={ISOLATION_TRACK_WIDTH - 2}
               height={Math.max(1, depthToY(iso.bot_md) - depthToY(iso.top_md))}
-              fill="var(--isolation-band-fill)"
-              stroke="var(--isolation-band-stroke)"
-              strokeWidth={1.5}
-              strokeDasharray="4 2"
+              fill="url(#depth-tracks-iso-hatch)"
+              stroke="none"
               rx={1}
             />
           ))}
@@ -538,7 +548,7 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
       </svg>
       <p className="border-t border-border px-3 py-2.5 text-sm text-text-muted">
         Hover depth axis for MD/TVDss; hover any log track cell for property values. Grey bands =
-        overburden; amber Iso track = mechanical isolation.
+        overburden; hatched Iso track = mechanical isolation.
       </p>
     </div>
   );
