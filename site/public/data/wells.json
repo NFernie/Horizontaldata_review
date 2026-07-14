@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-14 05:28 UTC",
-  "well_count": 23,
+  "generated": "2026-07-14 06:32 UTC",
+  "well_count": 24,
   "wells": [
     {
       "alias": "JENA31",
@@ -325,6 +325,25 @@
       "data_missing": false
     },
     {
+      "alias": "JENA31_DUAL",
+      "display": "JENA 31 Dual Lateral",
+      "tops_name": "JENA 31 Dual Lateral",
+      "dc30": null,
+      "td": null,
+      "lateral": 2741.5,
+      "interval_count": 362,
+      "pay_pct": 76.4,
+      "high_risk_count": 2,
+      "elevated_risk_count": 77,
+      "cluster_id": 1,
+      "data_missing": false,
+      "dual_lateral": true,
+      "constituents": [
+        "JENA31",
+        "JENA31DW1"
+      ]
+    },
+    {
       "alias": "HOBBES4",
       "display": "HOBBES 4",
       "tops_name": null,
@@ -341,6 +360,7 @@
   ],
   "notes": {
     "hobbes4": "HOBBES 4 has no data files in repository; marked data_missing.",
-    "exclusions": "All statistics exclude overburden intervals via exclusion_zones."
+    "exclusions": "All statistics exclude overburden intervals via exclusion_zones.",
+    "jena31_dual": "JENA31_DUAL merges JENA31 + JENA31DW1 intervals; pay_pct = sum(matching pay MD) / sum(lateral length)."
   }
 }

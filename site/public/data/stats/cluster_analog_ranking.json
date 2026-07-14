@@ -1,2258 +1,2258 @@
 {
   "JENA31": [
     {
+      "alias": "JENA31_DUAL",
+      "cosine": 0.7197
+    },
+    {
       "alias": "STIMPEE6",
-      "cosine": 0.7356
+      "cosine": 0.6987
     },
     {
       "alias": "GRANCHIO4",
-      "cosine": 0.6802
-    },
-    {
-      "alias": "MCKINLAY11",
-      "cosine": 0.6742
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": 0.6431
-    },
-    {
-      "alias": "MCKINLAY10",
-      "cosine": 0.4575
-    },
-    {
-      "alias": "MCKINLAY13",
-      "cosine": 0.4274
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": 0.225
-    },
-    {
-      "alias": "BIALA20",
-      "cosine": 0.1645
+      "cosine": 0.6618
     },
     {
       "alias": "FROSTILLICUS2",
-      "cosine": 0.1464
+      "cosine": 0.6213
     },
     {
-      "alias": "MCKINLAY23",
-      "cosine": 0.1319
-    },
-    {
-      "alias": "MCKINLAY14",
-      "cosine": 0.0406
-    },
-    {
-      "alias": "MCKINLAY12",
-      "cosine": -0.1585
+      "alias": "BIALA20",
+      "cosine": 0.4226
     },
     {
       "alias": "BIALA19",
-      "cosine": -0.228
+      "cosine": 0.3668
+    },
+    {
+      "alias": "STIMPEE7",
+      "cosine": 0.2789
+    },
+    {
+      "alias": "MCKINLAY23",
+      "cosine": 0.2045
+    },
+    {
+      "alias": "MCKINLAY10",
+      "cosine": 0.1764
+    },
+    {
+      "alias": "MCKINLAY11",
+      "cosine": 0.0896
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.23
+      "cosine": 0.0353
     },
     {
-      "alias": "JENA31DW1",
-      "cosine": -0.2571
+      "alias": "MCKINLAY13",
+      "cosine": 0.0021
     },
     {
       "alias": "HOBBES6",
-      "cosine": -0.2601
+      "cosine": -0.0727
+    },
+    {
+      "alias": "JENA31DW1",
+      "cosine": -0.1266
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.1567
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": -0.2851
-    },
-    {
-      "alias": "MCKINLAY15",
-      "cosine": -0.3631
+      "cosine": -0.2036
     },
     {
       "alias": "MCKINLAY22",
-      "cosine": -0.3733
-    },
-    {
-      "alias": "HOBBES5",
-      "cosine": -0.4904
+      "cosine": -0.4572
     },
     {
       "alias": "TERINGIE6",
-      "cosine": -0.5096
+      "cosine": -0.4624
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": -0.5094
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": -0.5338
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": -0.5246
+      "cosine": -0.5538
+    },
+    {
+      "alias": "HOBBES5",
+      "cosine": -0.563
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": -0.7175
+      "cosine": -0.6922
     }
   ],
   "JENA31DW1": [
     {
       "alias": "MCKINLAY23",
-      "cosine": 0.7448
-    },
-    {
-      "alias": "FROSTILLICUS2",
-      "cosine": 0.6284
+      "cosine": 0.6948
     },
     {
       "alias": "JENA31_DUAL",
-      "cosine": 0.5742
+      "cosine": 0.597
     },
     {
-      "alias": "MCKINLAY20",
-      "cosine": 0.5489
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": 0.539
-    },
-    {
-      "alias": "MCKINLAY24",
-      "cosine": 0.4716
-    },
-    {
-      "alias": "BIALA19",
-      "cosine": 0.3193
-    },
-    {
-      "alias": "MCKINLAY21",
-      "cosine": 0.2854
+      "alias": "FROSTILLICUS2",
+      "cosine": 0.525
     },
     {
       "alias": "STIMPEE6",
-      "cosine": 0.2666
+      "cosine": 0.5124
     },
     {
-      "alias": "BIALA21",
-      "cosine": 0.0803
+      "alias": "MCKINLAY20",
+      "cosine": 0.4389
     },
     {
-      "alias": "GRANCHIO4",
-      "cosine": 0.0593
+      "alias": "MCKINLAY22",
+      "cosine": 0.4342
     },
     {
       "alias": "BIALA20",
-      "cosine": 0.0344
+      "cosine": 0.4199
+    },
+    {
+      "alias": "MCKINLAY24",
+      "cosine": 0.3206
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": 0.2269
     },
     {
       "alias": "STIMPEE7",
-      "cosine": 0.0339
+      "cosine": 0.2057
+    },
+    {
+      "alias": "BIALA21",
+      "cosine": 0.174
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": 0.1531
+    },
+    {
+      "alias": "MCKINLAY21",
+      "cosine": 0.0773
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": -0.1574
-    },
-    {
-      "alias": "HOBBES6",
-      "cosine": -0.163
-    },
-    {
-      "alias": "MCKINLAY12",
-      "cosine": -0.2545
+      "cosine": -0.1154
     },
     {
       "alias": "JENA31",
-      "cosine": -0.2571
+      "cosine": -0.1266
     },
     {
-      "alias": "TERINGIE6",
-      "cosine": -0.3994
+      "alias": "MCKINLAY12",
+      "cosine": -0.1338
     },
     {
-      "alias": "HOBBES5",
-      "cosine": -0.4041
+      "alias": "HOBBES6",
+      "cosine": -0.152
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": -0.4582
+      "cosine": -0.309
+    },
+    {
+      "alias": "HOBBES5",
+      "cosine": -0.3657
+    },
+    {
+      "alias": "TERINGIE6",
+      "cosine": -0.3956
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": -0.5615
+      "cosine": -0.4491
     },
     {
       "alias": "MCKINLAY15",
-      "cosine": -0.6681
+      "cosine": -0.6811
     },
     {
       "alias": "MCKINLAY14",
-      "cosine": -0.8435
+      "cosine": -0.8207
     }
   ],
   "BIALA19": [
     {
-      "alias": "FROSTILLICUS2",
-      "cosine": 0.6879
+      "alias": "STIMPEE7",
+      "cosine": 0.8295
     },
     {
       "alias": "BIALA20",
-      "cosine": 0.5188
+      "cosine": 0.795
     },
     {
       "alias": "BIALA21",
-      "cosine": 0.4283
-    },
-    {
-      "alias": "JENA31DW1",
-      "cosine": 0.3193
-    },
-    {
-      "alias": "MCKINLAY23",
-      "cosine": 0.2902
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": 0.1823
-    },
-    {
-      "alias": "MCKINLAY24",
-      "cosine": 0.1612
-    },
-    {
-      "alias": "HOBBES6",
-      "cosine": 0.08
+      "cosine": 0.6217
     },
     {
       "alias": "GRANCHIO4",
-      "cosine": 0.0575
+      "cosine": 0.5538
     },
     {
-      "alias": "JENA31_DUAL",
-      "cosine": 0.051
-    },
-    {
-      "alias": "TERINGIE6",
-      "cosine": -0.0153
-    },
-    {
-      "alias": "MCKINLAY21",
-      "cosine": -0.0184
-    },
-    {
-      "alias": "MCKINLAY20",
-      "cosine": -0.147
-    },
-    {
-      "alias": "JENA31",
-      "cosine": -0.228
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": -0.2357
-    },
-    {
-      "alias": "MCKINLAY14",
-      "cosine": -0.2564
+      "alias": "FROSTILLICUS2",
+      "cosine": 0.5518
     },
     {
       "alias": "STIMPEE6",
-      "cosine": -0.2745
+      "cosine": 0.4128
     },
     {
-      "alias": "MCKINLAY15",
-      "cosine": -0.4183
+      "alias": "JENA31_DUAL",
+      "cosine": 0.3981
     },
     {
-      "alias": "MCKINLAY13",
-      "cosine": -0.4769
+      "alias": "JENA31",
+      "cosine": 0.3668
     },
     {
-      "alias": "MCKINLAY10",
-      "cosine": -0.4928
+      "alias": "MCKINLAY23",
+      "cosine": 0.1808
     },
     {
-      "alias": "MCKINLAY12",
-      "cosine": -0.4939
+      "alias": "JENA31DW1",
+      "cosine": 0.1531
+    },
+    {
+      "alias": "HOBBES6",
+      "cosine": 0.0903
+    },
+    {
+      "alias": "TERINGIE6",
+      "cosine": -0.0315
     },
     {
       "alias": "HOBBES5",
-      "cosine": -0.5442
+      "cosine": -0.3708
+    },
+    {
+      "alias": "MCKINLAY24",
+      "cosine": -0.4107
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.4131
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": -0.4892
+    },
+    {
+      "alias": "MCKINLAY13",
+      "cosine": -0.4948
+    },
+    {
+      "alias": "MCKINLAY21",
+      "cosine": -0.5161
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": -0.5766
+      "cosine": -0.5281
+    },
+    {
+      "alias": "MCKINLAY20",
+      "cosine": -0.5491
+    },
+    {
+      "alias": "MCKINLAY10",
+      "cosine": -0.5602
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": -0.5769
+    },
+    {
+      "alias": "MCKINLAY22",
+      "cosine": -0.5911
     }
   ],
   "BIALA20": [
     {
       "alias": "STIMPEE7",
-      "cosine": 0.8626
-    },
-    {
-      "alias": "BIALA21",
-      "cosine": 0.6968
-    },
-    {
-      "alias": "BIALA19",
-      "cosine": 0.5188
+      "cosine": 0.9404
     },
     {
       "alias": "GRANCHIO4",
-      "cosine": 0.4709
+      "cosine": 0.7974
     },
     {
-      "alias": "STIMPEE6",
-      "cosine": 0.2049
+      "alias": "BIALA19",
+      "cosine": 0.795
     },
     {
       "alias": "FROSTILLICUS2",
-      "cosine": 0.1821
+      "cosine": 0.7145
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": 0.6935
     },
     {
       "alias": "JENA31_DUAL",
-      "cosine": 0.1655
+      "cosine": 0.6409
+    },
+    {
+      "alias": "BIALA21",
+      "cosine": 0.6112
     },
     {
       "alias": "JENA31",
-      "cosine": 0.1645
+      "cosine": 0.4226
     },
     {
       "alias": "JENA31DW1",
-      "cosine": 0.0344
+      "cosine": 0.4199
     },
     {
       "alias": "MCKINLAY23",
-      "cosine": -0.0177
-    },
-    {
-      "alias": "MCKINLAY11",
-      "cosine": -0.0505
+      "cosine": 0.3335
     },
     {
       "alias": "HOBBES6",
-      "cosine": -0.1294
+      "cosine": -0.2944
+    },
+    {
+      "alias": "MCKINLAY11",
+      "cosine": -0.3152
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": -0.1505
-    },
-    {
-      "alias": "MCKINLAY12",
-      "cosine": -0.1522
-    },
-    {
-      "alias": "MCKINLAY13",
-      "cosine": -0.202
+      "cosine": -0.3294
     },
     {
       "alias": "TERINGIE6",
-      "cosine": -0.2749
+      "cosine": -0.3705
     },
     {
-      "alias": "MCKINLAY14",
-      "cosine": -0.2975
-    },
-    {
-      "alias": "HOBBES5",
-      "cosine": -0.4628
-    },
-    {
-      "alias": "MCKINLAY15",
-      "cosine": -0.4683
+      "alias": "MCKINLAY12",
+      "cosine": -0.4211
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": -0.5028
+      "cosine": -0.4617
     },
     {
-      "alias": "MCKINLAY21",
-      "cosine": -0.6274
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": -0.6784
+      "alias": "MCKINLAY13",
+      "cosine": -0.4729
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": -0.6834
+      "cosine": -0.5038
+    },
+    {
+      "alias": "MCKINLAY22",
+      "cosine": -0.5488
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.5839
+    },
+    {
+      "alias": "HOBBES5",
+      "cosine": -0.5961
+    },
+    {
+      "alias": "MCKINLAY21",
+      "cosine": -0.6563
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": -0.7204
     }
   ],
   "BIALA21": [
     {
-      "alias": "BIALA20",
-      "cosine": 0.6968
+      "alias": "BIALA19",
+      "cosine": 0.6217
     },
     {
-      "alias": "BIALA19",
-      "cosine": 0.4283
+      "alias": "BIALA20",
+      "cosine": 0.6112
     },
     {
       "alias": "STIMPEE7",
-      "cosine": 0.4169
+      "cosine": 0.6
     },
     {
       "alias": "TERINGIE6",
-      "cosine": 0.2353
-    },
-    {
-      "alias": "HOBBES6",
-      "cosine": 0.1734
-    },
-    {
-      "alias": "JENA31DW1",
-      "cosine": 0.0803
-    },
-    {
-      "alias": "MCKINLAY24",
-      "cosine": 0.0682
-    },
-    {
-      "alias": "MCKINLAY10",
-      "cosine": 0.032
-    },
-    {
-      "alias": "HOBBES5",
-      "cosine": 0.0265
+      "cosine": 0.2128
     },
     {
       "alias": "GRANCHIO4",
-      "cosine": -0.0146
+      "cosine": 0.1973
     },
     {
-      "alias": "FROSTILLICUS2",
-      "cosine": -0.0154
+      "alias": "JENA31DW1",
+      "cosine": 0.174
+    },
+    {
+      "alias": "HOBBES6",
+      "cosine": 0.156
     },
     {
       "alias": "JENA31_DUAL",
-      "cosine": -0.1301
+      "cosine": 0.1559
     },
     {
-      "alias": "JENA31",
-      "cosine": -0.23
+      "alias": "FROSTILLICUS2",
+      "cosine": 0.1157
+    },
+    {
+      "alias": "MCKINLAY24",
+      "cosine": 0.0828
+    },
+    {
+      "alias": "HOBBES5",
+      "cosine": 0.0789
     },
     {
       "alias": "STIMPEE6",
-      "cosine": -0.2789
+      "cosine": 0.0402
+    },
+    {
+      "alias": "JENA31",
+      "cosine": 0.0353
+    },
+    {
+      "alias": "MCKINLAY10",
+      "cosine": -0.1232
     },
     {
       "alias": "MCKINLAY23",
-      "cosine": -0.3189
-    },
-    {
-      "alias": "MCKINLAY15",
-      "cosine": -0.3199
-    },
-    {
-      "alias": "MCKINLAY21",
-      "cosine": -0.3649
+      "cosine": -0.2691
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": -0.4091
+      "cosine": -0.3882
     },
     {
-      "alias": "MCKINLAY12",
-      "cosine": -0.4286
+      "alias": "MCKINLAY21",
+      "cosine": -0.416
     },
     {
-      "alias": "MCKINLAY14",
-      "cosine": -0.434
+      "alias": "MCKINLAY15",
+      "cosine": -0.4241
     },
     {
       "alias": "MCKINLAY22",
-      "cosine": -0.4751
+      "cosine": -0.4807
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": -0.5708
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.579
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": -0.5734
+      "cosine": -0.6708
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": -0.6595
+      "cosine": -0.7389
     }
   ],
   "FROSTILLICUS2": [
     {
-      "alias": "MCKINLAY23",
-      "cosine": 0.7313
-    },
-    {
-      "alias": "BIALA19",
-      "cosine": 0.6879
-    },
-    {
-      "alias": "JENA31DW1",
-      "cosine": 0.6284
+      "alias": "STIMPEE6",
+      "cosine": 0.8732
     },
     {
       "alias": "JENA31_DUAL",
-      "cosine": 0.6181
+      "cosine": 0.8667
     },
     {
       "alias": "GRANCHIO4",
-      "cosine": 0.4274
-    },
-    {
-      "alias": "STIMPEE6",
-      "cosine": 0.2681
+      "cosine": 0.8418
     },
     {
       "alias": "BIALA20",
-      "cosine": 0.1821
+      "cosine": 0.7145
+    },
+    {
+      "alias": "MCKINLAY23",
+      "cosine": 0.7107
     },
     {
       "alias": "JENA31",
-      "cosine": 0.1464
+      "cosine": 0.6213
     },
     {
-      "alias": "MCKINLAY24",
-      "cosine": 0.1256
+      "alias": "BIALA19",
+      "cosine": 0.5518
     },
     {
       "alias": "STIMPEE7",
-      "cosine": 0.0842
+      "cosine": 0.537
     },
     {
-      "alias": "MCKINLAY20",
-      "cosine": 0.0774
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": 0.0283
-    },
-    {
-      "alias": "MCKINLAY21",
-      "cosine": 0.0273
+      "alias": "JENA31DW1",
+      "cosine": 0.525
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.0154
-    },
-    {
-      "alias": "MCKINLAY10",
-      "cosine": -0.2691
+      "cosine": 0.1157
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": -0.2753
+      "cosine": -0.1738
+    },
+    {
+      "alias": "MCKINLAY10",
+      "cosine": -0.258
+    },
+    {
+      "alias": "MCKINLAY22",
+      "cosine": -0.288
+    },
+    {
+      "alias": "MCKINLAY20",
+      "cosine": -0.2958
     },
     {
       "alias": "HOBBES6",
-      "cosine": -0.3243
-    },
-    {
-      "alias": "TERINGIE6",
-      "cosine": -0.3416
+      "cosine": -0.313
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": -0.4012
+      "cosine": -0.3503
     },
     {
-      "alias": "MCKINLAY14",
-      "cosine": -0.4327
+      "alias": "TERINGIE6",
+      "cosine": -0.3953
     },
     {
       "alias": "MCKINLAY12",
-      "cosine": -0.5097
+      "cosine": -0.4309
     },
     {
-      "alias": "MCKINLAY15",
-      "cosine": -0.7024
+      "alias": "MCKINLAY21",
+      "cosine": -0.4477
+    },
+    {
+      "alias": "MCKINLAY24",
+      "cosine": -0.4705
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.5346
     },
     {
       "alias": "HOBBES5",
-      "cosine": -0.8115
+      "cosine": -0.6821
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": -0.8639
     }
   ],
   "GRANCHIO4": [
     {
-      "alias": "STIMPEE6",
-      "cosine": 0.7568
-    },
-    {
-      "alias": "JENA31",
-      "cosine": 0.6802
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": 0.6676
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": 0.6213
-    },
-    {
-      "alias": "MCKINLAY11",
-      "cosine": 0.5291
+      "alias": "FROSTILLICUS2",
+      "cosine": 0.8418
     },
     {
       "alias": "BIALA20",
-      "cosine": 0.4709
+      "cosine": 0.7974
     },
     {
-      "alias": "FROSTILLICUS2",
-      "cosine": 0.4274
+      "alias": "STIMPEE6",
+      "cosine": 0.7653
     },
     {
-      "alias": "MCKINLAY23",
-      "cosine": 0.4106
+      "alias": "JENA31_DUAL",
+      "cosine": 0.6925
     },
     {
-      "alias": "MCKINLAY13",
-      "cosine": 0.1561
+      "alias": "STIMPEE7",
+      "cosine": 0.6855
     },
     {
-      "alias": "MCKINLAY12",
-      "cosine": 0.0797
-    },
-    {
-      "alias": "JENA31DW1",
-      "cosine": 0.0593
+      "alias": "JENA31",
+      "cosine": 0.6618
     },
     {
       "alias": "BIALA19",
-      "cosine": 0.0575
+      "cosine": 0.5538
+    },
+    {
+      "alias": "MCKINLAY23",
+      "cosine": 0.5134
+    },
+    {
+      "alias": "JENA31DW1",
+      "cosine": 0.2269
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.0146
+      "cosine": 0.1973
+    },
+    {
+      "alias": "MCKINLAY11",
+      "cosine": 0.1468
+    },
+    {
+      "alias": "MCKINLAY13",
+      "cosine": -0.0837
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": -0.0238
+      "cosine": -0.1784
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": -0.1941
     },
     {
       "alias": "MCKINLAY14",
-      "cosine": -0.0781
+      "cosine": -0.2498
     },
     {
       "alias": "TERINGIE6",
-      "cosine": -0.3831
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": -0.559
-    },
-    {
-      "alias": "MCKINLAY15",
-      "cosine": -0.5919
-    },
-    {
-      "alias": "MCKINLAY20",
-      "cosine": -0.6144
+      "cosine": -0.42
     },
     {
       "alias": "HOBBES6",
-      "cosine": -0.6957
+      "cosine": -0.5795
     },
     {
-      "alias": "MCKINLAY24",
-      "cosine": -0.7238
+      "alias": "MCKINLAY22",
+      "cosine": -0.633
+    },
+    {
+      "alias": "MCKINLAY20",
+      "cosine": -0.6782
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": -0.7025
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": -0.7391
+      "cosine": -0.7392
+    },
+    {
+      "alias": "MCKINLAY24",
+      "cosine": -0.7668
     },
     {
       "alias": "HOBBES5",
-      "cosine": -0.7627
+      "cosine": -0.8079
     }
   ],
   "HOBBES5": [
     {
-      "alias": "MCKINLAY15",
-      "cosine": 0.8013
-    },
-    {
       "alias": "TERINGIE6",
-      "cosine": 0.5216
-    },
-    {
-      "alias": "HOBBES6",
-      "cosine": 0.4165
+      "cosine": 0.7683
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": 0.4043
+      "cosine": 0.6943
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": 0.6338
+    },
+    {
+      "alias": "HOBBES6",
+      "cosine": 0.48
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": 0.3232
-    },
-    {
-      "alias": "MCKINLAY14",
-      "cosine": 0.3229
+      "cosine": 0.3826
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": 0.2984
+      "cosine": 0.3098
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": 0.2217
     },
     {
       "alias": "MCKINLAY22",
-      "cosine": 0.2625
-    },
-    {
-      "alias": "MCKINLAY10",
-      "cosine": 0.2351
-    },
-    {
-      "alias": "MCKINLAY12",
-      "cosine": 0.2173
-    },
-    {
-      "alias": "MCKINLAY13",
-      "cosine": 0.0554
+      "cosine": 0.2162
     },
     {
       "alias": "BIALA21",
-      "cosine": 0.0265
+      "cosine": 0.0789
     },
     {
-      "alias": "MCKINLAY11",
-      "cosine": -0.1383
+      "alias": "MCKINLAY10",
+      "cosine": -0.0001
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": -0.1037
+    },
+    {
+      "alias": "MCKINLAY13",
+      "cosine": -0.2218
     },
     {
       "alias": "JENA31DW1",
-      "cosine": -0.4041
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": -0.4265
-    },
-    {
-      "alias": "BIALA20",
-      "cosine": -0.4628
-    },
-    {
-      "alias": "JENA31",
-      "cosine": -0.4904
+      "cosine": -0.3657
     },
     {
       "alias": "BIALA19",
-      "cosine": -0.5442
+      "cosine": -0.3708
     },
     {
-      "alias": "STIMPEE6",
-      "cosine": -0.581
+      "alias": "MCKINLAY11",
+      "cosine": -0.398
+    },
+    {
+      "alias": "STIMPEE7",
+      "cosine": -0.4412
+    },
+    {
+      "alias": "JENA31",
+      "cosine": -0.563
+    },
+    {
+      "alias": "BIALA20",
+      "cosine": -0.5961
     },
     {
       "alias": "MCKINLAY23",
-      "cosine": -0.7232
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": -0.7253
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": -0.7627
+      "cosine": -0.6714
     },
     {
       "alias": "FROSTILLICUS2",
-      "cosine": -0.8115
+      "cosine": -0.6821
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": -0.7035
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": -0.7315
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.8079
     }
   ],
   "HOBBES6": [
     {
       "alias": "MCKINLAY21",
-      "cosine": 0.6182
-    },
-    {
-      "alias": "MCKINLAY10",
-      "cosine": 0.4316
+      "cosine": 0.5833
     },
     {
       "alias": "HOBBES5",
-      "cosine": 0.4165
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": 0.3345
+      "cosine": 0.48
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": 0.2938
+      "cosine": 0.3533
+    },
+    {
+      "alias": "MCKINLAY22",
+      "cosine": 0.318
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": 0.2517
+      "cosine": 0.3137
     },
     {
-      "alias": "MCKINLAY15",
-      "cosine": 0.2461
-    },
-    {
-      "alias": "BIALA21",
-      "cosine": 0.1734
-    },
-    {
-      "alias": "BIALA19",
-      "cosine": 0.08
+      "alias": "MCKINLAY10",
+      "cosine": 0.2356
     },
     {
       "alias": "TERINGIE6",
-      "cosine": 0.0606
+      "cosine": 0.1743
     },
     {
-      "alias": "MCKINLAY14",
-      "cosine": 0.0041
+      "alias": "BIALA21",
+      "cosine": 0.156
     },
     {
-      "alias": "BIALA20",
-      "cosine": -0.1294
+      "alias": "MCKINLAY15",
+      "cosine": 0.143
     },
     {
-      "alias": "JENA31DW1",
-      "cosine": -0.163
-    },
-    {
-      "alias": "MCKINLAY13",
-      "cosine": -0.248
+      "alias": "BIALA19",
+      "cosine": 0.0903
     },
     {
       "alias": "JENA31",
-      "cosine": -0.2601
+      "cosine": -0.0727
     },
     {
-      "alias": "FROSTILLICUS2",
-      "cosine": -0.3243
+      "alias": "MCKINLAY14",
+      "cosine": -0.1123
     },
     {
-      "alias": "MCKINLAY12",
-      "cosine": -0.3311
+      "alias": "JENA31DW1",
+      "cosine": -0.152
     },
     {
       "alias": "JENA31_DUAL",
-      "cosine": -0.3519
+      "cosine": -0.1647
     },
     {
       "alias": "STIMPEE7",
-      "cosine": -0.4591
+      "cosine": -0.2266
     },
     {
-      "alias": "MCKINLAY11",
-      "cosine": -0.4717
+      "alias": "BIALA20",
+      "cosine": -0.2944
     },
     {
-      "alias": "MCKINLAY23",
-      "cosine": -0.5174
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.313
     },
     {
       "alias": "STIMPEE6",
-      "cosine": -0.603
+      "cosine": -0.3873
+    },
+    {
+      "alias": "MCKINLAY13",
+      "cosine": -0.402
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": -0.4556
+    },
+    {
+      "alias": "MCKINLAY23",
+      "cosine": -0.5065
+    },
+    {
+      "alias": "MCKINLAY11",
+      "cosine": -0.5723
     },
     {
       "alias": "GRANCHIO4",
-      "cosine": -0.6957
+      "cosine": -0.5795
     }
   ],
   "MCKINLAY20": [
     {
       "alias": "MCKINLAY22",
-      "cosine": 0.9685
+      "cosine": 0.9616
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": 0.8194
+      "cosine": 0.7772
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": 0.7538
+      "cosine": 0.7585
     },
     {
       "alias": "JENA31DW1",
-      "cosine": 0.5489
+      "cosine": 0.4389
     },
     {
       "alias": "HOBBES5",
-      "cosine": 0.3232
+      "cosine": 0.3826
     },
     {
       "alias": "HOBBES6",
-      "cosine": 0.2938
-    },
-    {
-      "alias": "MCKINLAY23",
-      "cosine": 0.2516
+      "cosine": 0.3533
     },
     {
       "alias": "MCKINLAY15",
-      "cosine": 0.1575
-    },
-    {
-      "alias": "FROSTILLICUS2",
-      "cosine": 0.0774
+      "cosine": 0.2374
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": 0.0439
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": -0.0046
+      "cosine": 0.1563
     },
     {
       "alias": "MCKINLAY12",
-      "cosine": -0.0222
+      "cosine": 0.152
     },
     {
-      "alias": "TERINGIE6",
-      "cosine": -0.0852
-    },
-    {
-      "alias": "BIALA19",
-      "cosine": -0.147
-    },
-    {
-      "alias": "STIMPEE6",
-      "cosine": -0.2249
+      "alias": "MCKINLAY23",
+      "cosine": 0.1053
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": -0.2334
+      "cosine": -0.0572
     },
     {
-      "alias": "MCKINLAY14",
-      "cosine": -0.2645
+      "alias": "TERINGIE6",
+      "cosine": -0.0746
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": -0.1366
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": -0.3863
+      "cosine": -0.1463
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.1907
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": -0.2029
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.2958
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.4091
-    },
-    {
-      "alias": "JENA31",
-      "cosine": -0.5246
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": -0.6144
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": -0.6283
+      "cosine": -0.3882
     },
     {
       "alias": "BIALA20",
-      "cosine": -0.6834
+      "cosine": -0.5038
+    },
+    {
+      "alias": "STIMPEE7",
+      "cosine": -0.549
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": -0.5491
+    },
+    {
+      "alias": "JENA31",
+      "cosine": -0.5538
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.6782
     }
   ],
   "MCKINLAY21": [
     {
       "alias": "MCKINLAY22",
-      "cosine": 0.8514
+      "cosine": 0.8567
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": 0.8194
-    },
-    {
-      "alias": "MCKINLAY24",
-      "cosine": 0.6576
+      "cosine": 0.7772
     },
     {
       "alias": "HOBBES6",
-      "cosine": 0.6182
+      "cosine": 0.5833
     },
     {
-      "alias": "HOBBES5",
-      "cosine": 0.2984
-    },
-    {
-      "alias": "JENA31DW1",
-      "cosine": 0.2854
+      "alias": "MCKINLAY24",
+      "cosine": 0.5576
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": 0.1922
+      "cosine": 0.3906
+    },
+    {
+      "alias": "HOBBES5",
+      "cosine": 0.3098
     },
     {
       "alias": "MCKINLAY15",
-      "cosine": 0.1805
-    },
-    {
-      "alias": "MCKINLAY23",
-      "cosine": 0.0926
-    },
-    {
-      "alias": "FROSTILLICUS2",
-      "cosine": 0.0273
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": -0.0162
-    },
-    {
-      "alias": "BIALA19",
-      "cosine": -0.0184
+      "cosine": 0.3076
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": -0.1028
+      "cosine": 0.1774
     },
     {
-      "alias": "TERINGIE6",
-      "cosine": -0.1204
-    },
-    {
-      "alias": "MCKINLAY14",
-      "cosine": -0.174
-    },
-    {
-      "alias": "JENA31",
-      "cosine": -0.2851
+      "alias": "JENA31DW1",
+      "cosine": 0.0773
     },
     {
       "alias": "MCKINLAY12",
-      "cosine": -0.2859
-    },
-    {
-      "alias": "STIMPEE6",
-      "cosine": -0.3161
-    },
-    {
-      "alias": "BIALA21",
-      "cosine": -0.3649
+      "cosine": 0.0497
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": -0.3828
+      "cosine": -0.0045
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.0261
+    },
+    {
+      "alias": "MCKINLAY23",
+      "cosine": -0.0827
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": -0.1126
+    },
+    {
+      "alias": "TERINGIE6",
+      "cosine": -0.1775
+    },
+    {
+      "alias": "JENA31",
+      "cosine": -0.2036
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": -0.2472
+    },
+    {
+      "alias": "BIALA21",
+      "cosine": -0.416
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.4477
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": -0.5161
     },
     {
       "alias": "BIALA20",
-      "cosine": -0.6274
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": -0.7391
+      "cosine": -0.6563
     },
     {
       "alias": "STIMPEE7",
-      "cosine": -0.8023
+      "cosine": -0.7201
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.7392
     }
   ],
   "MCKINLAY22": [
     {
       "alias": "MCKINLAY20",
-      "cosine": 0.9685
+      "cosine": 0.9616
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": 0.8514
+      "cosine": 0.8567
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": 0.6374
+      "cosine": 0.6625
     },
     {
       "alias": "JENA31DW1",
-      "cosine": 0.539
+      "cosine": 0.4342
     },
     {
       "alias": "HOBBES6",
-      "cosine": 0.3345
-    },
-    {
-      "alias": "MCKINLAY23",
-      "cosine": 0.3029
-    },
-    {
-      "alias": "HOBBES5",
-      "cosine": 0.2625
+      "cosine": 0.318
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": 0.1345
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": 0.1128
-    },
-    {
-      "alias": "MCKINLAY15",
-      "cosine": 0.0842
-    },
-    {
-      "alias": "FROSTILLICUS2",
-      "cosine": 0.0283
+      "cosine": 0.272
     },
     {
       "alias": "MCKINLAY12",
-      "cosine": 0.02
+      "cosine": 0.2459
     },
     {
-      "alias": "STIMPEE6",
-      "cosine": -0.0849
+      "alias": "HOBBES5",
+      "cosine": 0.2162
+    },
+    {
+      "alias": "MCKINLAY23",
+      "cosine": 0.1911
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": 0.1906
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": -0.1191
-    },
-    {
-      "alias": "TERINGIE6",
-      "cosine": -0.2137
-    },
-    {
-      "alias": "BIALA19",
-      "cosine": -0.2357
+      "cosine": 0.1033
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": -0.2642
+      "cosine": 0.0248
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": -0.0663
     },
     {
       "alias": "MCKINLAY14",
-      "cosine": -0.3026
+      "cosine": -0.1523
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": -0.1636
+    },
+    {
+      "alias": "TERINGIE6",
+      "cosine": -0.2198
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.288
     },
     {
       "alias": "JENA31",
-      "cosine": -0.3733
+      "cosine": -0.4572
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.4751
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": -0.559
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": -0.6241
+      "cosine": -0.4807
     },
     {
       "alias": "BIALA20",
-      "cosine": -0.6784
+      "cosine": -0.5488
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": -0.5911
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.633
+    },
+    {
+      "alias": "STIMPEE7",
+      "cosine": -0.6373
     }
   ],
   "MCKINLAY23": [
     {
-      "alias": "JENA31DW1",
-      "cosine": 0.7448
-    },
-    {
       "alias": "FROSTILLICUS2",
-      "cosine": 0.7313
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": 0.6919
+      "cosine": 0.7107
     },
     {
       "alias": "STIMPEE6",
-      "cosine": 0.5619
+      "cosine": 0.7065
+    },
+    {
+      "alias": "JENA31DW1",
+      "cosine": 0.6948
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": 0.6395
     },
     {
       "alias": "GRANCHIO4",
-      "cosine": 0.4106
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": 0.3029
-    },
-    {
-      "alias": "BIALA19",
-      "cosine": 0.2902
-    },
-    {
-      "alias": "MCKINLAY20",
-      "cosine": 0.2516
-    },
-    {
-      "alias": "JENA31",
-      "cosine": 0.1319
-    },
-    {
-      "alias": "MCKINLAY24",
-      "cosine": 0.1108
-    },
-    {
-      "alias": "MCKINLAY21",
-      "cosine": 0.0926
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": 0.0701
-    },
-    {
-      "alias": "MCKINLAY11",
-      "cosine": 0.0499
-    },
-    {
-      "alias": "MCKINLAY12",
-      "cosine": 0.0161
-    },
-    {
-      "alias": "MCKINLAY13",
-      "cosine": -0.0153
+      "cosine": 0.5134
     },
     {
       "alias": "BIALA20",
-      "cosine": -0.0177
+      "cosine": 0.3335
+    },
+    {
+      "alias": "JENA31",
+      "cosine": 0.2045
+    },
+    {
+      "alias": "MCKINLAY22",
+      "cosine": 0.1911
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": 0.1808
+    },
+    {
+      "alias": "MCKINLAY11",
+      "cosine": 0.1501
+    },
+    {
+      "alias": "STIMPEE7",
+      "cosine": 0.1322
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": 0.1246
+    },
+    {
+      "alias": "MCKINLAY20",
+      "cosine": 0.1053
+    },
+    {
+      "alias": "MCKINLAY13",
+      "cosine": 0.0814
+    },
+    {
+      "alias": "MCKINLAY21",
+      "cosine": -0.0827
+    },
+    {
+      "alias": "MCKINLAY24",
+      "cosine": -0.1182
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.3189
+      "cosine": -0.2691
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": -0.4274
-    },
-    {
-      "alias": "TERINGIE6",
-      "cosine": -0.4381
+      "cosine": -0.365
     },
     {
       "alias": "MCKINLAY14",
-      "cosine": -0.4807
+      "cosine": -0.3982
+    },
+    {
+      "alias": "TERINGIE6",
+      "cosine": -0.4319
     },
     {
       "alias": "HOBBES6",
-      "cosine": -0.5174
+      "cosine": -0.5065
     },
     {
       "alias": "MCKINLAY15",
-      "cosine": -0.6482
+      "cosine": -0.6176
     },
     {
       "alias": "HOBBES5",
-      "cosine": -0.7232
+      "cosine": -0.6714
     }
   ],
   "MCKINLAY24": [
     {
       "alias": "MCKINLAY20",
-      "cosine": 0.7538
-    },
-    {
-      "alias": "MCKINLAY21",
-      "cosine": 0.6576
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": 0.6374
-    },
-    {
-      "alias": "JENA31DW1",
-      "cosine": 0.4716
+      "cosine": 0.7585
     },
     {
       "alias": "HOBBES5",
-      "cosine": 0.4043
+      "cosine": 0.6943
+    },
+    {
+      "alias": "MCKINLAY22",
+      "cosine": 0.6625
+    },
+    {
+      "alias": "MCKINLAY21",
+      "cosine": 0.5576
     },
     {
       "alias": "TERINGIE6",
-      "cosine": 0.3821
+      "cosine": 0.4066
+    },
+    {
+      "alias": "JENA31DW1",
+      "cosine": 0.3206
     },
     {
       "alias": "HOBBES6",
-      "cosine": 0.2517
-    },
-    {
-      "alias": "BIALA19",
-      "cosine": 0.1612
+      "cosine": 0.3137
     },
     {
       "alias": "MCKINLAY15",
-      "cosine": 0.132
-    },
-    {
-      "alias": "FROSTILLICUS2",
-      "cosine": 0.1256
-    },
-    {
-      "alias": "MCKINLAY23",
-      "cosine": 0.1108
+      "cosine": 0.2454
     },
     {
       "alias": "BIALA21",
-      "cosine": 0.0682
-    },
-    {
-      "alias": "MCKINLAY10",
-      "cosine": -0.1803
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": -0.2326
+      "cosine": 0.0828
     },
     {
       "alias": "MCKINLAY12",
-      "cosine": -0.298
+      "cosine": -0.0129
+    },
+    {
+      "alias": "MCKINLAY10",
+      "cosine": -0.0181
+    },
+    {
+      "alias": "MCKINLAY23",
+      "cosine": -0.1182
     },
     {
       "alias": "MCKINLAY14",
-      "cosine": -0.317
-    },
-    {
-      "alias": "BIALA20",
-      "cosine": -0.5028
+      "cosine": -0.2905
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": -0.5232
+      "cosine": -0.2935
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": -0.3325
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": -0.4107
     },
     {
       "alias": "STIMPEE6",
-      "cosine": -0.5448
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": -0.6517
-    },
-    {
-      "alias": "JENA31",
-      "cosine": -0.7175
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": -0.7238
+      "cosine": -0.4177
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": -0.7454
+      "cosine": -0.4224
+    },
+    {
+      "alias": "BIALA20",
+      "cosine": -0.4617
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.4705
+    },
+    {
+      "alias": "STIMPEE7",
+      "cosine": -0.4913
+    },
+    {
+      "alias": "JENA31",
+      "cosine": -0.6922
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.7668
     }
   ],
   "STIMPEE6": [
     {
       "alias": "JENA31_DUAL",
-      "cosine": 0.8366
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": 0.7568
-    },
-    {
-      "alias": "JENA31",
-      "cosine": 0.7356
-    },
-    {
-      "alias": "MCKINLAY11",
-      "cosine": 0.656
-    },
-    {
-      "alias": "MCKINLAY23",
-      "cosine": 0.5619
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": 0.4618
-    },
-    {
-      "alias": "MCKINLAY13",
-      "cosine": 0.351
+      "cosine": 0.9258
     },
     {
       "alias": "FROSTILLICUS2",
-      "cosine": 0.2681
+      "cosine": 0.8732
     },
     {
-      "alias": "JENA31DW1",
-      "cosine": 0.2666
+      "alias": "GRANCHIO4",
+      "cosine": 0.7653
+    },
+    {
+      "alias": "MCKINLAY23",
+      "cosine": 0.7065
+    },
+    {
+      "alias": "JENA31",
+      "cosine": 0.6987
     },
     {
       "alias": "BIALA20",
-      "cosine": 0.2049
+      "cosine": 0.6935
     },
     {
-      "alias": "MCKINLAY10",
-      "cosine": 0.1707
+      "alias": "JENA31DW1",
+      "cosine": 0.5124
     },
     {
-      "alias": "MCKINLAY12",
-      "cosine": 0.1344
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": -0.0849
-    },
-    {
-      "alias": "MCKINLAY20",
-      "cosine": -0.2249
+      "alias": "STIMPEE7",
+      "cosine": 0.4898
     },
     {
       "alias": "BIALA19",
-      "cosine": -0.2745
+      "cosine": 0.4128
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.2789
+      "cosine": 0.0402
+    },
+    {
+      "alias": "MCKINLAY11",
+      "cosine": -0.0206
+    },
+    {
+      "alias": "MCKINLAY13",
+      "cosine": -0.1476
+    },
+    {
+      "alias": "MCKINLAY22",
+      "cosine": -0.1636
+    },
+    {
+      "alias": "MCKINLAY10",
+      "cosine": -0.1652
+    },
+    {
+      "alias": "MCKINLAY20",
+      "cosine": -0.2029
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": -0.3161
-    },
-    {
-      "alias": "MCKINLAY14",
-      "cosine": -0.3281
-    },
-    {
-      "alias": "MCKINLAY24",
-      "cosine": -0.5448
-    },
-    {
-      "alias": "MCKINLAY15",
-      "cosine": -0.5529
-    },
-    {
-      "alias": "HOBBES5",
-      "cosine": -0.581
+      "cosine": -0.2472
     },
     {
       "alias": "HOBBES6",
-      "cosine": -0.603
+      "cosine": -0.3873
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": -0.3899
+    },
+    {
+      "alias": "MCKINLAY24",
+      "cosine": -0.4177
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.5543
     },
     {
       "alias": "TERINGIE6",
-      "cosine": -0.7217
+      "cosine": -0.6543
+    },
+    {
+      "alias": "HOBBES5",
+      "cosine": -0.7315
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": -0.7427
     }
   ],
   "STIMPEE7": [
     {
       "alias": "BIALA20",
-      "cosine": 0.8626
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": 0.6676
-    },
-    {
-      "alias": "STIMPEE6",
-      "cosine": 0.4618
-    },
-    {
-      "alias": "BIALA21",
-      "cosine": 0.4169
-    },
-    {
-      "alias": "MCKINLAY11",
-      "cosine": 0.2906
-    },
-    {
-      "alias": "JENA31",
-      "cosine": 0.225
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": 0.222
-    },
-    {
-      "alias": "MCKINLAY12",
-      "cosine": 0.2137
+      "cosine": 0.9404
     },
     {
       "alias": "BIALA19",
-      "cosine": 0.1823
+      "cosine": 0.8295
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": 0.6855
+    },
+    {
+      "alias": "BIALA21",
+      "cosine": 0.6
     },
     {
       "alias": "FROSTILLICUS2",
-      "cosine": 0.0842
+      "cosine": 0.537
     },
     {
-      "alias": "MCKINLAY23",
-      "cosine": 0.0701
+      "alias": "STIMPEE6",
+      "cosine": 0.4898
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": 0.3761
+    },
+    {
+      "alias": "JENA31",
+      "cosine": 0.2789
     },
     {
       "alias": "JENA31DW1",
-      "cosine": 0.0339
+      "cosine": 0.2057
     },
     {
-      "alias": "MCKINLAY13",
-      "cosine": 0.0295
-    },
-    {
-      "alias": "MCKINLAY10",
-      "cosine": -0.1676
-    },
-    {
-      "alias": "MCKINLAY14",
-      "cosine": -0.1724
+      "alias": "MCKINLAY23",
+      "cosine": 0.1322
     },
     {
       "alias": "TERINGIE6",
-      "cosine": -0.3595
-    },
-    {
-      "alias": "MCKINLAY15",
-      "cosine": -0.3602
-    },
-    {
-      "alias": "HOBBES5",
-      "cosine": -0.4265
+      "cosine": -0.2135
     },
     {
       "alias": "HOBBES6",
-      "cosine": -0.4591
+      "cosine": -0.2266
     },
     {
-      "alias": "MCKINLAY22",
-      "cosine": -0.6241
+      "alias": "MCKINLAY12",
+      "cosine": -0.3195
     },
     {
-      "alias": "MCKINLAY20",
-      "cosine": -0.6283
+      "alias": "MCKINLAY11",
+      "cosine": -0.3213
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.3637
+    },
+    {
+      "alias": "MCKINLAY13",
+      "cosine": -0.4145
+    },
+    {
+      "alias": "HOBBES5",
+      "cosine": -0.4412
+    },
+    {
+      "alias": "MCKINLAY10",
+      "cosine": -0.4546
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": -0.4758
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": -0.6517
+      "cosine": -0.4913
+    },
+    {
+      "alias": "MCKINLAY20",
+      "cosine": -0.549
+    },
+    {
+      "alias": "MCKINLAY22",
+      "cosine": -0.6373
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": -0.8023
+      "cosine": -0.7201
     }
   ],
   "TERINGIE6": [
     {
       "alias": "HOBBES5",
-      "cosine": 0.5216
-    },
-    {
-      "alias": "MCKINLAY15",
-      "cosine": 0.4908
-    },
-    {
-      "alias": "MCKINLAY14",
-      "cosine": 0.4504
+      "cosine": 0.7683
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": 0.3821
+      "cosine": 0.4066
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": 0.38
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": 0.2826
     },
     {
       "alias": "BIALA21",
-      "cosine": 0.2353
-    },
-    {
-      "alias": "MCKINLAY12",
-      "cosine": 0.1274
+      "cosine": 0.2128
     },
     {
       "alias": "HOBBES6",
-      "cosine": 0.0606
+      "cosine": 0.1743
     },
     {
       "alias": "BIALA19",
-      "cosine": -0.0153
+      "cosine": -0.0315
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": -0.0336
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": -0.0852
+      "cosine": -0.0746
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": -0.1204
-    },
-    {
-      "alias": "MCKINLAY13",
-      "cosine": -0.149
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": -0.2137
-    },
-    {
-      "alias": "BIALA20",
-      "cosine": -0.2749
-    },
-    {
-      "alias": "MCKINLAY10",
-      "cosine": -0.2985
-    },
-    {
-      "alias": "MCKINLAY11",
-      "cosine": -0.3238
-    },
-    {
-      "alias": "FROSTILLICUS2",
-      "cosine": -0.3416
+      "cosine": -0.1775
     },
     {
       "alias": "STIMPEE7",
-      "cosine": -0.3595
+      "cosine": -0.2135
     },
     {
-      "alias": "GRANCHIO4",
-      "cosine": -0.3831
+      "alias": "MCKINLAY22",
+      "cosine": -0.2198
+    },
+    {
+      "alias": "MCKINLAY13",
+      "cosine": -0.2284
+    },
+    {
+      "alias": "MCKINLAY10",
+      "cosine": -0.3442
+    },
+    {
+      "alias": "MCKINLAY11",
+      "cosine": -0.3637
+    },
+    {
+      "alias": "BIALA20",
+      "cosine": -0.3705
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.3953
     },
     {
       "alias": "JENA31DW1",
-      "cosine": -0.3994
+      "cosine": -0.3956
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.42
     },
     {
       "alias": "MCKINLAY23",
-      "cosine": -0.4381
+      "cosine": -0.4319
     },
     {
       "alias": "JENA31",
-      "cosine": -0.5096
+      "cosine": -0.4624
     },
     {
       "alias": "STIMPEE6",
-      "cosine": -0.7217
+      "cosine": -0.6543
     },
     {
       "alias": "JENA31_DUAL",
-      "cosine": -0.7544
+      "cosine": -0.6552
     }
   ],
   "MCKINLAY10": [
     {
-      "alias": "JENA31",
-      "cosine": 0.4575
-    },
-    {
-      "alias": "HOBBES6",
-      "cosine": 0.4316
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": 0.2751
-    },
-    {
-      "alias": "HOBBES5",
-      "cosine": 0.2351
-    },
-    {
       "alias": "MCKINLAY21",
-      "cosine": 0.1922
-    },
-    {
-      "alias": "STIMPEE6",
-      "cosine": 0.1707
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": 0.1345
+      "cosine": 0.3906
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": 0.0936
+      "cosine": 0.3087
+    },
+    {
+      "alias": "MCKINLAY22",
+      "cosine": 0.272
+    },
+    {
+      "alias": "HOBBES6",
+      "cosine": 0.2356
+    },
+    {
+      "alias": "JENA31",
+      "cosine": 0.1764
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": 0.0439
-    },
-    {
-      "alias": "BIALA21",
-      "cosine": 0.032
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": -0.0238
-    },
-    {
-      "alias": "MCKINLAY15",
-      "cosine": -0.061
+      "cosine": 0.1563
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": -0.1254
+      "cosine": 0.1185
     },
     {
-      "alias": "BIALA20",
-      "cosine": -0.1505
+      "alias": "JENA31_DUAL",
+      "cosine": 0.07
+    },
+    {
+      "alias": "MCKINLAY15",
+      "cosine": 0.0693
     },
     {
       "alias": "MCKINLAY14",
-      "cosine": -0.154
+      "cosine": 0.0526
     },
     {
-      "alias": "JENA31DW1",
-      "cosine": -0.1574
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": -0.1676
+      "alias": "HOBBES5",
+      "cosine": -0.0001
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": -0.1803
-    },
-    {
-      "alias": "FROSTILLICUS2",
-      "cosine": -0.2691
-    },
-    {
-      "alias": "TERINGIE6",
-      "cosine": -0.2985
+      "cosine": -0.0181
     },
     {
       "alias": "MCKINLAY12",
-      "cosine": -0.3854
+      "cosine": -0.0331
+    },
+    {
+      "alias": "JENA31DW1",
+      "cosine": -0.1154
+    },
+    {
+      "alias": "BIALA21",
+      "cosine": -0.1232
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": -0.1652
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.1784
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.258
+    },
+    {
+      "alias": "BIALA20",
+      "cosine": -0.3294
+    },
+    {
+      "alias": "TERINGIE6",
+      "cosine": -0.3442
     },
     {
       "alias": "MCKINLAY23",
-      "cosine": -0.4274
+      "cosine": -0.365
+    },
+    {
+      "alias": "STIMPEE7",
+      "cosine": -0.4546
     },
     {
       "alias": "BIALA19",
-      "cosine": -0.4928
+      "cosine": -0.5602
     }
   ],
   "MCKINLAY11": [
     {
       "alias": "MCKINLAY13",
-      "cosine": 0.8782
-    },
-    {
-      "alias": "JENA31",
-      "cosine": 0.6742
-    },
-    {
-      "alias": "STIMPEE6",
-      "cosine": 0.656
+      "cosine": 0.9194
     },
     {
       "alias": "MCKINLAY12",
-      "cosine": 0.5781
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": 0.5291
+      "cosine": 0.7562
     },
     {
       "alias": "MCKINLAY14",
-      "cosine": 0.4655
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": 0.2906
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": 0.2095
+      "cosine": 0.6457
     },
     {
       "alias": "MCKINLAY15",
-      "cosine": 0.1803
+      "cosine": 0.3416
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": 0.0936
+      "cosine": 0.3087
     },
     {
       "alias": "MCKINLAY23",
-      "cosine": 0.0499
+      "cosine": 0.1501
     },
     {
-      "alias": "BIALA20",
-      "cosine": -0.0505
+      "alias": "GRANCHIO4",
+      "cosine": 0.1468
     },
     {
-      "alias": "HOBBES5",
-      "cosine": -0.1383
+      "alias": "JENA31",
+      "cosine": 0.0896
     },
     {
       "alias": "MCKINLAY22",
-      "cosine": -0.2642
-    },
-    {
-      "alias": "FROSTILLICUS2",
-      "cosine": -0.2753
-    },
-    {
-      "alias": "TERINGIE6",
-      "cosine": -0.3238
+      "cosine": 0.0248
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": -0.3828
+      "cosine": -0.0045
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": -0.0206
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": -0.3863
+      "cosine": -0.1463
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": -0.1481
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.1738
     },
     {
       "alias": "JENA31DW1",
-      "cosine": -0.4582
+      "cosine": -0.309
     },
     {
-      "alias": "HOBBES6",
-      "cosine": -0.4717
+      "alias": "BIALA20",
+      "cosine": -0.3152
     },
     {
-      "alias": "BIALA21",
-      "cosine": -0.5734
+      "alias": "STIMPEE7",
+      "cosine": -0.3213
     },
     {
-      "alias": "BIALA19",
-      "cosine": -0.5766
+      "alias": "TERINGIE6",
+      "cosine": -0.3637
+    },
+    {
+      "alias": "HOBBES5",
+      "cosine": -0.398
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": -0.7454
+      "cosine": -0.4224
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": -0.5281
+    },
+    {
+      "alias": "HOBBES6",
+      "cosine": -0.5723
+    },
+    {
+      "alias": "BIALA21",
+      "cosine": -0.6708
     }
   ],
   "MCKINLAY12": [
     {
       "alias": "MCKINLAY13",
-      "cosine": 0.6456
+      "cosine": 0.774
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": 0.5781
+      "cosine": 0.7562
     },
     {
       "alias": "MCKINLAY14",
-      "cosine": 0.4782
+      "cosine": 0.6243
     },
     {
       "alias": "MCKINLAY15",
-      "cosine": 0.4473
-    },
-    {
-      "alias": "HOBBES5",
-      "cosine": 0.2173
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": 0.2137
-    },
-    {
-      "alias": "STIMPEE6",
-      "cosine": 0.1344
-    },
-    {
-      "alias": "TERINGIE6",
-      "cosine": 0.1274
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": 0.0797
+      "cosine": 0.5217
     },
     {
       "alias": "MCKINLAY22",
-      "cosine": 0.02
-    },
-    {
-      "alias": "MCKINLAY23",
-      "cosine": 0.0161
+      "cosine": 0.2459
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": -0.0222
+      "cosine": 0.152
     },
     {
-      "alias": "BIALA20",
-      "cosine": -0.1522
-    },
-    {
-      "alias": "JENA31",
-      "cosine": -0.1585
-    },
-    {
-      "alias": "JENA31DW1",
-      "cosine": -0.2545
+      "alias": "MCKINLAY23",
+      "cosine": 0.1246
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": -0.2859
+      "cosine": 0.0497
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": -0.298
-    },
-    {
-      "alias": "HOBBES6",
-      "cosine": -0.3311
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": -0.3406
+      "cosine": -0.0129
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": -0.3854
+      "cosine": -0.0331
     },
     {
-      "alias": "BIALA21",
-      "cosine": -0.4286
+      "alias": "TERINGIE6",
+      "cosine": -0.0336
     },
     {
-      "alias": "BIALA19",
-      "cosine": -0.4939
+      "alias": "HOBBES5",
+      "cosine": -0.1037
+    },
+    {
+      "alias": "JENA31DW1",
+      "cosine": -0.1338
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.1941
+    },
+    {
+      "alias": "STIMPEE7",
+      "cosine": -0.3195
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": -0.3899
+    },
+    {
+      "alias": "BIALA20",
+      "cosine": -0.4211
     },
     {
       "alias": "FROSTILLICUS2",
-      "cosine": -0.5097
+      "cosine": -0.4309
+    },
+    {
+      "alias": "HOBBES6",
+      "cosine": -0.4556
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": -0.4892
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": -0.5333
+    },
+    {
+      "alias": "JENA31",
+      "cosine": -0.5338
+    },
+    {
+      "alias": "BIALA21",
+      "cosine": -0.5708
     }
   ],
   "MCKINLAY13": [
     {
       "alias": "MCKINLAY11",
-      "cosine": 0.8782
+      "cosine": 0.9194
     },
     {
       "alias": "MCKINLAY12",
-      "cosine": 0.6456
+      "cosine": 0.774
     },
     {
       "alias": "MCKINLAY14",
-      "cosine": 0.6279
+      "cosine": 0.7519
     },
     {
       "alias": "MCKINLAY15",
-      "cosine": 0.4536
-    },
-    {
-      "alias": "JENA31",
-      "cosine": 0.4274
-    },
-    {
-      "alias": "STIMPEE6",
-      "cosine": 0.351
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": 0.1561
-    },
-    {
-      "alias": "HOBBES5",
-      "cosine": 0.0554
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": 0.0295
-    },
-    {
-      "alias": "MCKINLAY23",
-      "cosine": -0.0153
-    },
-    {
-      "alias": "JENA31_DUAL",
-      "cosine": -0.0867
+      "cosine": 0.5404
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": -0.1028
-    },
-    {
-      "alias": "MCKINLAY22",
-      "cosine": -0.1191
+      "cosine": 0.1774
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": -0.1254
+      "cosine": 0.1185
     },
     {
-      "alias": "TERINGIE6",
-      "cosine": -0.149
+      "alias": "MCKINLAY22",
+      "cosine": 0.1033
     },
     {
-      "alias": "BIALA20",
-      "cosine": -0.202
+      "alias": "MCKINLAY23",
+      "cosine": 0.0814
+    },
+    {
+      "alias": "JENA31",
+      "cosine": 0.0021
     },
     {
       "alias": "MCKINLAY20",
-      "cosine": -0.2334
+      "cosine": -0.0572
     },
     {
-      "alias": "HOBBES6",
-      "cosine": -0.248
+      "alias": "GRANCHIO4",
+      "cosine": -0.0837
     },
     {
-      "alias": "FROSTILLICUS2",
-      "cosine": -0.4012
+      "alias": "STIMPEE6",
+      "cosine": -0.1476
     },
     {
-      "alias": "BIALA19",
-      "cosine": -0.4769
+      "alias": "HOBBES5",
+      "cosine": -0.2218
+    },
+    {
+      "alias": "TERINGIE6",
+      "cosine": -0.2284
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": -0.5232
+      "cosine": -0.2935
+    },
+    {
+      "alias": "JENA31_DUAL",
+      "cosine": -0.3201
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.3503
+    },
+    {
+      "alias": "HOBBES6",
+      "cosine": -0.402
+    },
+    {
+      "alias": "STIMPEE7",
+      "cosine": -0.4145
     },
     {
       "alias": "JENA31DW1",
-      "cosine": -0.5615
+      "cosine": -0.4491
+    },
+    {
+      "alias": "BIALA20",
+      "cosine": -0.4729
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": -0.4948
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.6595
+      "cosine": -0.7389
     }
   ],
   "MCKINLAY14": [
     {
       "alias": "MCKINLAY15",
-      "cosine": 0.7721
+      "cosine": 0.7904
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": 0.6279
-    },
-    {
-      "alias": "MCKINLAY12",
-      "cosine": 0.4782
+      "cosine": 0.7519
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": 0.4655
+      "cosine": 0.6457
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": 0.6243
     },
     {
       "alias": "TERINGIE6",
-      "cosine": 0.4504
+      "cosine": 0.2826
     },
     {
       "alias": "HOBBES5",
-      "cosine": 0.3229
-    },
-    {
-      "alias": "JENA31",
-      "cosine": 0.0406
-    },
-    {
-      "alias": "HOBBES6",
-      "cosine": 0.0041
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": -0.0781
+      "cosine": 0.2217
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": -0.154
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": -0.1724
+      "cosine": 0.0526
     },
     {
       "alias": "MCKINLAY21",
-      "cosine": -0.174
+      "cosine": -0.0261
     },
     {
-      "alias": "BIALA19",
-      "cosine": -0.2564
-    },
-    {
-      "alias": "MCKINLAY20",
-      "cosine": -0.2645
-    },
-    {
-      "alias": "BIALA20",
-      "cosine": -0.2975
+      "alias": "HOBBES6",
+      "cosine": -0.1123
     },
     {
       "alias": "MCKINLAY22",
-      "cosine": -0.3026
+      "cosine": -0.1523
+    },
+    {
+      "alias": "JENA31",
+      "cosine": -0.1567
+    },
+    {
+      "alias": "MCKINLAY20",
+      "cosine": -0.1907
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.2498
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": -0.317
+      "cosine": -0.2905
     },
     {
-      "alias": "STIMPEE6",
-      "cosine": -0.3281
-    },
-    {
-      "alias": "FROSTILLICUS2",
-      "cosine": -0.4327
-    },
-    {
-      "alias": "BIALA21",
-      "cosine": -0.434
+      "alias": "STIMPEE7",
+      "cosine": -0.3637
     },
     {
       "alias": "MCKINLAY23",
-      "cosine": -0.4807
+      "cosine": -0.3982
+    },
+    {
+      "alias": "BIALA19",
+      "cosine": -0.4131
+    },
+    {
+      "alias": "FROSTILLICUS2",
+      "cosine": -0.5346
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": -0.5543
+    },
+    {
+      "alias": "BIALA21",
+      "cosine": -0.579
+    },
+    {
+      "alias": "BIALA20",
+      "cosine": -0.5839
     },
     {
       "alias": "JENA31_DUAL",
-      "cosine": -0.6357
+      "cosine": -0.7048
     },
     {
       "alias": "JENA31DW1",
-      "cosine": -0.8435
+      "cosine": -0.8207
     }
   ],
   "MCKINLAY15": [
     {
-      "alias": "HOBBES5",
-      "cosine": 0.8013
-    },
-    {
       "alias": "MCKINLAY14",
-      "cosine": 0.7721
+      "cosine": 0.7904
     },
     {
-      "alias": "TERINGIE6",
-      "cosine": 0.4908
+      "alias": "HOBBES5",
+      "cosine": 0.6338
     },
     {
       "alias": "MCKINLAY13",
-      "cosine": 0.4536
+      "cosine": 0.5404
     },
     {
       "alias": "MCKINLAY12",
-      "cosine": 0.4473
+      "cosine": 0.5217
     },
     {
-      "alias": "HOBBES6",
-      "cosine": 0.2461
-    },
-    {
-      "alias": "MCKINLAY21",
-      "cosine": 0.1805
+      "alias": "TERINGIE6",
+      "cosine": 0.38
     },
     {
       "alias": "MCKINLAY11",
-      "cosine": 0.1803
+      "cosine": 0.3416
     },
     {
-      "alias": "MCKINLAY20",
-      "cosine": 0.1575
+      "alias": "MCKINLAY21",
+      "cosine": 0.3076
     },
     {
       "alias": "MCKINLAY24",
-      "cosine": 0.132
+      "cosine": 0.2454
+    },
+    {
+      "alias": "MCKINLAY20",
+      "cosine": 0.2374
     },
     {
       "alias": "MCKINLAY22",
-      "cosine": 0.0842
+      "cosine": 0.1906
+    },
+    {
+      "alias": "HOBBES6",
+      "cosine": 0.143
     },
     {
       "alias": "MCKINLAY10",
-      "cosine": -0.061
+      "cosine": 0.0693
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.3199
+      "cosine": -0.4241
     },
     {
       "alias": "STIMPEE7",
-      "cosine": -0.3602
+      "cosine": -0.4758
     },
     {
       "alias": "JENA31",
-      "cosine": -0.3631
+      "cosine": -0.5094
     },
     {
       "alias": "BIALA19",
-      "cosine": -0.4183
-    },
-    {
-      "alias": "BIALA20",
-      "cosine": -0.4683
-    },
-    {
-      "alias": "STIMPEE6",
-      "cosine": -0.5529
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": -0.5919
+      "cosine": -0.5769
     },
     {
       "alias": "MCKINLAY23",
-      "cosine": -0.6482
+      "cosine": -0.6176
     },
     {
       "alias": "JENA31DW1",
-      "cosine": -0.6681
+      "cosine": -0.6811
+    },
+    {
+      "alias": "GRANCHIO4",
+      "cosine": -0.7025
+    },
+    {
+      "alias": "BIALA20",
+      "cosine": -0.7204
+    },
+    {
+      "alias": "STIMPEE6",
+      "cosine": -0.7427
     },
     {
       "alias": "FROSTILLICUS2",
-      "cosine": -0.7024
+      "cosine": -0.8639
     },
     {
       "alias": "JENA31_DUAL",
-      "cosine": -0.8299
+      "cosine": -0.8832
     }
   ],
   "JENA31_DUAL": [
     {
       "alias": "STIMPEE6",
-      "cosine": 0.8366
-    },
-    {
-      "alias": "MCKINLAY23",
-      "cosine": 0.6919
-    },
-    {
-      "alias": "JENA31",
-      "cosine": 0.6431
-    },
-    {
-      "alias": "GRANCHIO4",
-      "cosine": 0.6213
+      "cosine": 0.9258
     },
     {
       "alias": "FROSTILLICUS2",
-      "cosine": 0.6181
+      "cosine": 0.8667
     },
     {
-      "alias": "JENA31DW1",
-      "cosine": 0.5742
+      "alias": "JENA31",
+      "cosine": 0.7197
     },
     {
-      "alias": "MCKINLAY10",
-      "cosine": 0.2751
-    },
-    {
-      "alias": "STIMPEE7",
-      "cosine": 0.222
-    },
-    {
-      "alias": "MCKINLAY11",
-      "cosine": 0.2095
+      "alias": "GRANCHIO4",
+      "cosine": 0.6925
     },
     {
       "alias": "BIALA20",
-      "cosine": 0.1655
+      "cosine": 0.6409
     },
     {
-      "alias": "MCKINLAY22",
-      "cosine": 0.1128
+      "alias": "MCKINLAY23",
+      "cosine": 0.6395
+    },
+    {
+      "alias": "JENA31DW1",
+      "cosine": 0.597
     },
     {
       "alias": "BIALA19",
-      "cosine": 0.051
+      "cosine": 0.3981
     },
     {
-      "alias": "MCKINLAY20",
-      "cosine": -0.0046
-    },
-    {
-      "alias": "MCKINLAY21",
-      "cosine": -0.0162
-    },
-    {
-      "alias": "MCKINLAY13",
-      "cosine": -0.0867
+      "alias": "STIMPEE7",
+      "cosine": 0.3761
     },
     {
       "alias": "BIALA21",
-      "cosine": -0.1301
+      "cosine": 0.1559
     },
     {
-      "alias": "MCKINLAY24",
-      "cosine": -0.2326
+      "alias": "MCKINLAY10",
+      "cosine": 0.07
     },
     {
-      "alias": "MCKINLAY12",
-      "cosine": -0.3406
+      "alias": "MCKINLAY22",
+      "cosine": -0.0663
+    },
+    {
+      "alias": "MCKINLAY21",
+      "cosine": -0.1126
+    },
+    {
+      "alias": "MCKINLAY20",
+      "cosine": -0.1366
+    },
+    {
+      "alias": "MCKINLAY11",
+      "cosine": -0.1481
     },
     {
       "alias": "HOBBES6",
-      "cosine": -0.3519
+      "cosine": -0.1647
     },
     {
-      "alias": "MCKINLAY14",
-      "cosine": -0.6357
+      "alias": "MCKINLAY13",
+      "cosine": -0.3201
     },
     {
-      "alias": "HOBBES5",
-      "cosine": -0.7253
+      "alias": "MCKINLAY24",
+      "cosine": -0.3325
+    },
+    {
+      "alias": "MCKINLAY12",
+      "cosine": -0.5333
     },
     {
       "alias": "TERINGIE6",
-      "cosine": -0.7544
+      "cosine": -0.6552
+    },
+    {
+      "alias": "HOBBES5",
+      "cosine": -0.7035
+    },
+    {
+      "alias": "MCKINLAY14",
+      "cosine": -0.7048
     },
     {
       "alias": "MCKINLAY15",
-      "cosine": -0.8299
+      "cosine": -0.8832
     }
   ]
 }
