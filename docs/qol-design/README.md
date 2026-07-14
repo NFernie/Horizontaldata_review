@@ -6,6 +6,7 @@ Design agents write phase specs here **before** implementation agents touch prod
 |------|-------|------------|
 | `phase-a-design.md` | A — QoL + Methodology dropdown | Design agent (prompt in `QoL-Updates-2026-07-13.md` §6) |
 | `phase-c-design.md` | C — Executive Analog Concern Hub | Design agent |
+| `phase-d-design.md` | D — Dual lateral, cluster analogs, histogram | Design agent |
 | `phase-b1-design.md` | B1 — Intersection window (no grid) | Design agent |
 | `phase-b2-design.md` | B2 — Grid overlay | Design agent |
 

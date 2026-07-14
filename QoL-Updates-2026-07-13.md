@@ -1,6 +1,6 @@
 # QoL & Visualisation Updates — Implementation Plan
 
-**Date:** 2026-07-13 (rev. 2026-07-14)  
+**Date:** 2026-07-13 (rev. 2026-07-14b)  
 **Status:** Approved — **Design → Implement** two-stage workflow per phase  
 **Repo:** `NFernie/Horizontaldata_review`  
 **Baseline:** Post–Phase 6 pipeline (`updated-plan-2026-07-10.md`) — **23 wells**, RQI v2, WRCI v2, ZOI, OWC, mechanical isolation, no ΔRes  
@@ -11,7 +11,8 @@
 
 ## 0. Agent workflow — Design then Implement
 
-Each phase (**A**, **B1**, **B2**, **C**) runs as **two separate agent sessions**:
+Each phase (**A**, **B1**, **B2**, **C**, **D**) runs as **two separate agent sessions**.  
+**Phase E** (readability) uses a **single combined** design+implementation session.
 
 | Stage | Agent type | Delivers | Does **not** do |
 |-------|------------|----------|-----------------|
@@ -49,6 +50,8 @@ Each phase (**A**, **B1**, **B2**, **C**) runs as **two separate agent sessions*
 | B1 | `docs/qol-design/phase-b1-design.md` |
 | B2 | `docs/qol-design/phase-b2-design.md` |
 | C | `docs/qol-design/phase-c-design.md` |
+| D | `docs/qol-design/phase-d-design.md` |
+| E | *(combined prompt §10 — no separate design doc required)* |
 
 ---
 
@@ -352,31 +355,182 @@ Replace the portfolio-only landing experience with a **graphic-first Executive S
   - *"vs STIMPEE 7 (J=1.0): 23 elevated; 3 isolated concern zones at 2100–2150 m MD."*
 - CTA: Water-Risk Explorer with focus well pre-selected (`sessionStorage` keys from `useWellSelection.ts`).
 
+> **Phase D update:** Panels A/B/C switch analog ranking from **Jaccard** to **hierarchical-clustering cosine similarity** (`stats/clusters.json`). Jaccard heatmaps remain on `/compare`; executive summary uses cluster neighbours.
+
 ---
 
-## 5. Phased execution summary
+## 5. Phase D — Dual lateral Jena, clustering analogs & distribution histograms
+
+### 5.1 Objective
+
+1. **Panel C (Executive Summary):** Treat **JENA 31 + JENA 31DW1** as one **dual-lateral virtual well** (single wellhead, shared production) and compare it to its **closest cluster analogue** — same layout as Panels A/B.
+2. **Pipeline:** Export merged statistics for alias **`JENA31_DUAL`** without adding it to Well Detail or Water-Risk Explorer pickers.
+3. **Analog source:** Replace Jaccard-based executive comparison with **cosine similarity** from hierarchical clustering (`clusters.json` → `cosine_similarity` matrix).
+4. **Distribution panel:** New executive module — pick **Well A**, **Well B**, and a **property**; render overlaid or side-by-side **histograms** of interval-level distributions.
+
+### 5.2 Virtual well `JENA31_DUAL`
+
+| Field | Value |
+|-------|-------|
+| `alias` | `JENA31_DUAL` |
+| `display` | `JENA 31 Dual Lateral` |
+| `constituents` | `["JENA31", "JENA31DW1"]` |
+| `dual_lateral` | `true` |
+| `notes` | Single wellhead; production commingled — interval populations merged for portfolio statistics |
+
+**Pipeline tasks** (`scripts/export_web_data.py` or `scripts/export_dual_lateral.py`):
+
+1. Concatenate enriched intervals from JENA31 + JENA31DW1 (preserve `source_lateral` field: `"JENA31"` \| `"JENA31DW1"` on each interval).
+2. Write `site/public/data/intervals/JENA31_DUAL.json`, `water_risk/JENA31_DUAL.json`, `zones/JENA31_DUAL.json` (zones = union of both).
+3. Append row to `wells.json` with aggregated counts (`elevated_risk_count`, `high_risk_count`, `pay_pct` weighted by lateral length, etc.).
+4. Recompute inter-well stats to include `JENA31_DUAL` in:
+   - `stats/clusters.json` (feature vector + cosine matrix + `cluster_ids`)
+   - `stats/jaccard.json` (optional — for `/compare` only)
+   - `stats/ks.json` (add `JENA31_DUAL` as optional KS focus or vs-analog row)
+5. Export `stats/cluster_analog_ranking.json` (new): per-alias ranked list from cosine similarity — used by executive panels.
+
+**UI exclusion:** `useWells({ includeDualLateral: false })` on Well Detail + Water-Risk; `includeDualLateral: true` on Executive Summary + Compare + histogram panel.
+
+### 5.3 Executive layout after Phase D
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│  PANEL A — Focus JENA31    vs cluster analog (cosine sim)               │
+│  PANEL B — Focus JENA31DW1 vs cluster analog                            │
+│  PANEL C — Focus JENA31_DUAL vs cluster analog   ← dual lateral         │
+├──────────────────────────────────────────────────────────────────────────┤
+│  DISTRIBUTION COMPARISON                                                  │
+│  Well A [▼]  Well B [▼]  Property [▼]   [histogram chart]                │
+│  Properties: pct_ss, grain_ordinal, avg_GR, avg_RES_DEEP, fluor, gas,   │
+│              RQI, WRCI (from intervals JSON; align with KS_PROPERTIES)    │
+├──────────────────────────────────────────────────────────────────────────┤
+│  Portfolio strip + table (unchanged)                                    │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
+### 5.4 Cluster analog selection (replaces Jaccard on executive)
+
+```ts
+// site/src/lib/clusterAnalogs.ts
+rankClusterAnalogs(focusAlias, clustersPayload) → { alias, cosine }[]
+// Sort cosine_similarity[focusIdx][j] descending; exclude self; skip dual_lateral=false only
+```
+
+Default analog label: `STIMPEE 7 (cos=0.75)` not `J = 1.00`.
+
+### 5.5 Distribution histogram panel
+
+| Control | Source |
+|---------|--------|
+| Well A / B | All wells **including** `JENA31_DUAL`; exclude `data_missing` |
+| Property | `DIST_HISTOGRAM_PROPERTIES` in `config.ts` — mirror `KS_PROPERTIES` + `RQI`, `WRCI` |
+| Chart | Recharts `BarChart` or SVG bins (12–20 bins, auto domain from data) |
+| Legend | Colour by well; show n per well |
+
+Place on **`/` Executive Summary** below Panel C (or collapsible **Methods — distribution comparison** card on same page).
+
+### 5.6 Acceptance
+
+- `JENA31_DUAL` appears in `wells.json`, `clusters.json`, executive Panel C — **not** in Well Detail / Water-Risk dropdowns.
+- Panels A/B/C default analogs from `cluster_analog_ranking` / cosine matrix.
+- Histogram renders JENA31 vs JENA31_DUAL for `WRCI` without errors.
+- Deploy pipeline regenerates dual-lateral JSON when `scripts/**` changes.
+
+---
+
+## 6. Phase E — Readability & interaction pass
+
+Cross-cutting UX fixes after Phases A–D. **One agent session** — design decisions inline, ship code immediately (no separate design doc).
+
+### E1 — Site-wide legibility audit
+
+| Area | Target |
+|------|--------|
+| Body text | ≥ `text-sm` (14px); table cells ≥ `text-sm`; avoid 9px except axis micro-labels |
+| Table rows | `py-2.5` minimum; sticky column solid background + right-edge shadow |
+| Headings | Clear hierarchy `h1` → `h2` → card titles; max line length ~72ch for prose |
+| Monospace metrics | `tabular-nums`; sufficient contrast on coloured RQI/WRCI |
+| All routes | Portfolio, Well Detail, Water-Risk, Compare, Intra-well, Methodology, Executive |
+
+### E2 — Executive focus panels — larger & digestible
+
+| Change | Spec |
+|--------|------|
+| Panel min-height | ≥ `min-h-[280px]` per concern track (desktop); ≥ `360px` full panel row |
+| Track height | SVG / chart area ≥ **120px**; marker radius ≥ **6px** (8px High) |
+| Dropdowns | Full labels (no truncated alias); `text-sm` |
+| Spacing | `gap-6` between focus vs analog tracks; panel padding `p-5` |
+
+### E3 — Focus panel node hover — risk flag popover
+
+On **concern zone markers** (Elevated/High nodes) in executive focus/analog tracks:
+
+- **Hover** (and **focus** for keyboard): floating popover (`FlagExplainPopover`)
+- Content: depth MD, `risk_class`, each `flags[]` with **plain-language reason** from thresholds + `evidence` (reuse `water_risk` evidence shape)
+- Example: *"owc_high — OWC distance 3.8 m (&lt;4 m), good rock RQI 0.66"*
+- Implement `site/src/lib/flagExplain.ts` — single source for flag copy; import `@/config` cutoffs
+
+### E4 — Risk column popover (all zone tables)
+
+On **Well Detail**, **Water-Risk Explorer** zone lists, and any executive zone table:
+
+- **Risk** column (`RiskBadge`) is hoverable when `risk_class` is Elevated or High (or flags present)
+- Popover explains **why** flagged: WRCI value + rule summary + per-flag explanations
+- Empty/Low risk: no popover (cursor default)
+
+### E5 — Hierarchical clustering — easier to digest
+
+Redesign `/compare` clustering block + shared `Dendrogram.tsx`:
+
+| Issue | Fix |
+|-------|-----|
+| Cramped labels | `leafSpacing` ≥ 44px; SVG min-width 100%; horizontal scroll |
+| Tiny text | Label `fontSize` ≥ 11px; show `display` name where short |
+| No interaction | Hover leaf → tooltip: cluster id, cosine-sim to JENA31 / JENA31DW1 |
+| Stat grid truncated | Full cluster assignment table (sortable) below dendrogram |
+| Colour | Distinct cluster palette; WCAG AA contrast on background |
+
+Add **cluster analog summary cards** (cosine top-5) for JENA31, JENA31DW1, JENA31_DUAL — mirrors executive logic.
+
+### E6 — Isolation band visibility
+
+| Token | Value |
+|-------|-------|
+| `--isolation-band-fill` | `color-mix(in srgb, #f59e0b 35%, transparent)` (amber) |
+| `--isolation-band-stroke` | `#f59e0b` 2px dashed |
+| `--isolation-band-label` | "Mechanical isolation" chip in legend |
+
+Apply on executive concern tracks, intersection view (B1), and optional Well Detail depth track overlay.
+
+---
+
+## 7. Phased execution summary
 
 | Phase | Scope | Design doc | Implement | Blocked? |
 |-------|--------|------------|-----------|----------|
 | **A** | QoL A1–A5 (colour, state, sticky, methodology dropdown, well count) | `phase-a-design.md` | 1 session | **No** |
 | **B1** | Intersection — trajectory + flags + OWC + isolation (no grid) | `phase-b1-design.md` | 1 session | **No** |
 | **B2** | Grid overlay + separation | `phase-b2-design.md` | 1 session | **Yes** — grid XYZ pending |
-| **C** | Executive Analog Concern Hub | `phase-c-design.md` | 1 session | **No** |
+| **C** | Executive Analog Concern Hub (Jaccard analogs — superseded by D for ranking) | `phase-c-design.md` | 1 session | **No** |
+| **D** | `JENA31_DUAL` pipeline + Panel C + cluster analogs + histogram | `phase-d-design.md` | 1 session | **No** |
+| **E** | Readability & popovers (site-wide) | — | **1 combined session** | **No** |
 
 **Recommended session order:**
 
 1. **Design A** → **Implement A**  
-2. **Design C** → **Implement C** (after A merged — shares `DataTable`, `usePageState`, tokens)  
-3. **Design B1** → **Implement B1** (can parallel Design with C after A)  
-4. **Design B2** → **Implement B2** when grids arrive  
+2. **Design C** → **Implement C**  
+3. **Design D** → **Implement D** (cluster analogs + dual lateral + histogram)  
+4. **Phase E combined** (readability — after C/D executive components exist)  
+5. **Design B1** → **Implement B1**  
+6. **Design B2** → **Implement B2** when grids arrive  
 
 **Maximum simultaneous agents: 1** per stage (design OR implement, not both on same files).
 
-**Debugging agent:** Recommended after Implement A (colour contrast / a11y) and Implement B1 (trajectory projection spot-check at INCL>80°).
+**Debugging agent:** Recommended after Phase E (popover copy, contrast) and Implement B1 (trajectory projection spot-check at INCL>80°).
 
 ---
 
-## 6. Design agent prompts
+## 8. Design agent prompts
 
 ### Prompt — Phase A Design
 
@@ -479,7 +633,36 @@ Commit design doc to main only.
 
 ---
 
-## 7. Implementation agent prompts
+### Prompt — Phase D Design
+
+```
+DESIGN ONLY — do not write production React code.
+
+Read:
+- QoL-Updates-2026-07-13.md §5 (Phase D — dual lateral, clustering, histogram)
+- site/public/data/stats/clusters.json (cosine_similarity matrix)
+- site/public/data/wells.json, intervals/JENA31.json, intervals/JENA31DW1.json
+- docs/qol-design/phase-c-design.md (if exists — extend Panel C + swap analog badge to cosine)
+- .cursor/skills/ui-ux-pro-max/SKILL.md
+
+Load UI/UX Pro Max skill. Run:
+  python3 .cursor/skills/ui-ux-pro-max/scripts/search.py "dual well comparison histogram clustering analytics dashboard" --design-system -p "McKinlay Phase D"
+
+Deliver: docs/qol-design/phase-d-design.md containing:
+1. Panel C wireframe — JENA31_DUAL vs cluster analog (same anatomy as A/B)
+2. Dual-lateral track encoding — colour or lane for JENA31 vs JENA31DW1 intervals on combined track
+3. Cluster analog dropdown — cosine score label format; reset rules when focus changes
+4. Distribution comparison panel — Well A/B/property controls, histogram layout (overlay vs grouped bars), bin count, legend
+5. wells.json row treatment for JENA31_DUAL in portfolio strip (badge "Dual lateral")
+6. Data contract for cluster_analog_ranking.json and intervals source_lateral field
+7. Exclusion rules — where JENA31_DUAL must NOT appear (Well Detail, Water-Risk)
+
+Commit design doc to main only.
+```
+
+---
+
+## 9. Implementation agent prompts
 
 ### Prompt — Phase A Implement
 
@@ -535,6 +718,7 @@ Tasks:
 7. Persist panel selections via usePageState; CTA to /water-risk
 
 Helper: generalise Jaccard analog ranking for any focus alias from jaccard.json matrix (not only jena_analog_ranking).
+Note: Phase D will replace Jaccard with cluster cosine ranking on executive panels — build analog selector so the ranking source is pluggable.
 
 Constraints:
 - Graphic-first, minimal prose (≤2 bullets per panel)
@@ -586,24 +770,122 @@ Commit to main.
 
 ---
 
-## 8. Open questions
+### Prompt — Phase D Implement
+
+```
+IMPLEMENT — Phase D only.
+
+Prerequisite: Phase C executive components on main; docs/qol-design/phase-d-design.md exists.
+
+Read:
+- QoL-Updates-2026-07-13.md §5
+- docs/qol-design/phase-d-design.md (REQUIRED)
+- scripts/export_web_data.py, scripts/config.py
+- site/src/pages/PortfolioDashboard.tsx (or ExecutiveSummary components)
+- site/src/hooks/useWells.ts, site/src/pages/CompareInterWell.tsx
+
+Pipeline:
+1. Export virtual well JENA31_DUAL — merge JENA31 + JENA31DW1 intervals; tag source_lateral
+2. Update wells.json, intervals/, water_risk/, zones/ for JENA31_DUAL
+3. Recompute stats/clusters.json (+ jaccard/ks if needed) including JENA31_DUAL
+4. Add stats/cluster_analog_ranking.json from cosine_similarity matrix
+5. Hook into deploy pipeline (scripts/** path filter already covers this)
+
+Site:
+6. Panel C on executive summary — focus JENA31_DUAL, default top cosine analog
+7. Switch Panels A/B/C analog ranking from Jaccard to cluster cosine (site/src/lib/clusterAnalogs.ts)
+8. Distribution histogram panel — Well A, Well B, property select; Recharts histogram from intervals JSON
+9. useWells({ includeDualLateral: false }) on Well Detail + Water-Risk; true on executive + compare + histogram
+10. Portfolio strip highlights JENA31_DUAL with dual-lateral badge
+
+Constraints:
+- Do NOT add JENA31_DUAL to Well Detail or Water-Risk Explorer dropdowns
+- npm test && npm run build; run export_web_data.py locally to validate JSON
+- python3 scripts/test_zoi.py scripts/test_owc.py as smoke tests
+
+Commit to main (include regenerated site/public/data if pipeline outputs changed).
+```
+
+---
+
+## 10. Combined prompt — Phase E (Design + Implement)
+
+```
+DESIGN AND IMPLEMENT in one session — Phase E readability & interaction pass.
+
+Read:
+- QoL-Updates-2026-07-13.md §6 (Phase E — E1–E6)
+- All site routes: site/src/pages/*.tsx
+- site/src/components/Dendrogram.tsx, DataTable.tsx, executive comparison components (Phase C/D)
+- site/public/data/water_risk/JENA31.json (evidence object for popover copy)
+- site/src/config.ts, site/src/index.css
+- .cursor/skills/ui-ux-pro-max/SKILL.md
+
+Load UI/UX Pro Max skill. Run:
+  python3 .cursor/skills/ui-ux-pro-max/scripts/search.py "data dense dashboard readability tooltip accessibility contrast" --design-system -p "McKinlay Readability"
+
+Do NOT write a separate design doc — apply UI/UX Pro Max recommendations directly in code.
+
+─── SITE-WIDE LEGIBILITY (E1) ───
+Audit every page. Fix: font sizes, table row padding, heading hierarchy, contrast on metric colours,
+truncation, horizontal scroll labels. Minimum table body text-sm; tabular-nums on numeric columns.
+
+─── EXECUTIVE FOCUS PANELS (E2) ───
+Increase ComparisonPanel / concern track size: min-h-[280px] tracks, marker radius ≥6px (8px High),
+gap-6 between focus and analog, p-5 panel padding. Ensure dual-lateral Panel C readable at a glance.
+
+─── FLAG POPOVERS ON TRACK NODES (E3) ───
+Create site/src/lib/flagExplain.ts + components/FlagExplainPopover.tsx.
+Hover/focus on executive concern markers → popover with risk_class, flags[], human explanations
+from evidence + config thresholds (OWC distance, RES_DEEP, fluor, ZOI, etc.).
+
+─── RISK COLUMN POPOVERS (E4) ───
+Well Detail + Water-Risk zone tables: wrap RiskBadge (Elevated/High or flagged) with popover
+explaining why the zone was classified — WRCI, rule path, per-flag detail from interval or water_risk evidence.
+
+─── HIERARCHICAL CLUSTERING (E5) ───
+Redesign Dendrogram + /compare clustering section: wider leaf spacing (≥44px), larger labels (≥11px),
+horizontal scroll, hover tooltips (cluster id, cosine to Jena wells), full cluster assignment table.
+Add cluster analog summary cards for JENA31, JENA31DW1, JENA31_DUAL (top-5 cosine).
+
+─── ISOLATION BANDS (E6) ───
+Add CSS tokens --isolation-band-fill, --isolation-band-stroke (high-contrast amber dashed).
+Apply on executive tracks, Compare if relevant, legend entry "Mechanical isolation".
+
+Acceptance:
+- Executive markers show flag popover on hover with OWC example at 2500 m MD
+- Well Detail Risk badge popover explains at least one Elevated zone
+- Dendrogram readable without zoom; isolation bands obvious vs background
+- npm test && npm run build pass; no layout regressions on mobile (stack panels)
+
+Commit to main.
+```
+
+---
+
+## 11. Open questions
 
 1. **RQI red / green semantics:** Tooltips on Methodology — red = high RQI good rock (attention), not error.  
 2. **WRCI binary vs three-band:** Elevated band (40–66) — green or amber? (Plan uses binary per spec.)  
 3. **Geosteering_Guide:** Which files to copy into this repo for intersection projection?  
 4. **Grid delivery format:** CSV XYZ, GeoJSON, or Petrel export?  
 5. **Hard floor +3 m:** Confirm **−1195 m TVDss** when OWC = −1198.  
-6. **Phase C analog ranking:** Generalise Jaccard ranking to any focus well at runtime, or precompute in export? (Plan: runtime helper acceptable.)  
-7. **Intersection default well:** JENA31 on first load?
+6. **Phase C analog ranking:** Generalise Jaccard ranking to any focus well at runtime, or precompute in export? (**Superseded by Phase D** — use cosine from `clusters.json`.)  
+7. **Intersection default well:** JENA31 on first load?  
+8. **JENA31_DUAL pay %:** Length-weighted average of both laterals, or sum pay MD / sum lateral?  
+9. **Histogram default wells:** JENA31 vs JENA31_DUAL with property WRCI?  
+10. **Dual-lateral MD axis:** Single MD track with colour-by-lateral, or normalised lateral position (0–1)?
 
 ---
 
-## 9. Related documents
+## 12. Related documents
 
 | Doc | Role |
 |-----|------|
 | `QoL-Updates-2026-07-13.md` | **This file** — scope, prompts, acceptance |
-| `docs/qol-design/phase-{a,b1,b2,c}-design.md` | **Design agent outputs** — implement agents must read |
+| `docs/qol-design/phase-{a,b1,b2,c,d}-design.md` | **Design agent outputs** — implement agents must read |
+| `site/public/data/stats/cluster_analog_ranking.json` | Phase D — executive cluster analog defaults |
+| `site/public/data/intervals/JENA31_DUAL.json` | Phase D — merged dual-lateral intervals |
 | `.cursor/skills/ui-ux-pro-max/SKILL.md` | UI/UX Pro Max skill — **Design agents** |
 | `New Statistical Methods.md` | Canonical method text for Methodology A5 + corpus |
 | `updated-plan-2026-07-10.md` | Completed pipeline baseline |
@@ -617,9 +899,10 @@ Commit to main.
 
 ---
 
-## 10. Revision history
+## 13. Revision history
 
 | Date | Change |
 |------|--------|
 | 2026-07-13 | Initial QoL + intersection + executive summary plan |
 | 2026-07-14 | Design→Implement workflow; UI/UX Pro Max; Phase A5 methodology dropdown; Phase C reimagined as Analog Concern Hub; separate design/impl prompts; updated Jena stats + isolation |
+| 2026-07-14b | Phase D (JENA31_DUAL, cluster analogs, histogram); Phase E combined readability prompt; executive clustering switch; popover + isolation contrast specs |
