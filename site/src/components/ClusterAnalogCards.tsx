@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { ExpandableRankingList } from "@/components/ExpandableRankingList";
 import { rankClusterAnalogs } from "@/lib/clusterAnalogs";
 import type { ClustersPayload } from "@/types/stats";
 import { cn } from "@/lib/utils";
@@ -19,7 +20,7 @@ export function ClusterAnalogCards({
   return (
     <div className={cn("grid gap-4 lg:grid-cols-3", className)}>
       {focusAliases.map((focus) => {
-        const top5 = rankClusterAnalogs(focus, clusters).slice(0, 5);
+        const ranked = rankClusterAnalogs(focus, clusters);
         const title = displayNames?.[focus] ?? focus;
         return (
           <div
@@ -27,25 +28,15 @@ export function ClusterAnalogCards({
             className="rounded-card border border-border bg-surface-2 p-4"
           >
             <h3 className="text-sm font-semibold text-text">{title}</h3>
-            <p className="mt-0.5 text-xs text-text-muted">Top-5 cluster cosine analogs</p>
-            <ol className="mt-3 space-y-2">
-              {top5.map((item, idx) => (
-                <li
-                  key={item.alias}
-                  className="flex items-center justify-between rounded-card border border-border bg-surface px-3 py-2 text-sm"
-                >
-                  <span>
-                    <span className="mr-2 font-mono text-text-muted">{idx + 1}.</span>
-                    <span className="font-medium text-text">
-                      {displayNames?.[item.alias] ?? item.alias}
-                    </span>
-                  </span>
-                  <span className="font-mono tabular-nums text-accent">
-                    cos={item.cosine.toFixed(2)}
-                  </span>
-                </li>
-              ))}
-            </ol>
+            <p className="mt-0.5 text-xs text-text-muted">Top cluster cosine analogs</p>
+            <ExpandableRankingList
+              listId={`cluster-analog-${focus}`}
+              className="mt-3"
+              items={ranked.map((item) => ({ alias: item.alias, score: item.cosine }))}
+              displayNames={displayNames}
+              scorePrefix="cos="
+              formatScore={(score) => score.toFixed(2)}
+            />
           </div>
         );
       })}

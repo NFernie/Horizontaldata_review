@@ -52,7 +52,7 @@ function CompareRouteLink() {
 
 function Method2Panel() {
   return (
-    <div className="space-y-4 text-sm text-text-muted">
+    <div className="space-y-4 text-[15.4px] leading-relaxed text-text-muted">
       <div>
         <SectionHeading>Objective</SectionHeading>
         <p className="mt-1">
@@ -114,7 +114,7 @@ function Method2Panel() {
 
 function Method3Panel() {
   return (
-    <div className="space-y-4 text-sm text-text-muted">
+    <div className="space-y-4 text-[15.4px] leading-relaxed text-text-muted">
       <div>
         <SectionHeading>Objective</SectionHeading>
         <p className="mt-1">
@@ -194,7 +194,7 @@ function Method3Panel() {
 
 function Method4Panel() {
   return (
-    <div className="space-y-4 text-sm text-text-muted">
+    <div className="space-y-4 text-[15.4px] leading-relaxed text-text-muted">
       <div>
         <SectionHeading>Objective</SectionHeading>
         <p className="mt-1">
@@ -248,7 +248,7 @@ function Method4Panel() {
 
 function Method5Panel() {
   return (
-    <div className="space-y-4 text-sm text-text-muted">
+    <div className="space-y-4 text-[15.4px] leading-relaxed text-text-muted">
       <div>
         <SectionHeading>Objective</SectionHeading>
         <p className="mt-1">

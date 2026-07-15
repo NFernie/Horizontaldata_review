@@ -87,7 +87,7 @@ function computeDomains(intervals: IntervalRecord[]) {
   };
 }
 
-function nearestInterval(intervals: IntervalRecord[], md: number): IntervalRecord | null {
+export function nearestInterval(intervals: IntervalRecord[], md: number): IntervalRecord | null {
   let best: IntervalRecord | null = null;
   let bestDist = Infinity;
   for (const iv of intervals) {
@@ -106,9 +106,10 @@ interface DepthTracksProps {
   zones: ExclusionZone[];
   isolationDepths?: IsolationDepth[];
   className?: string;
+  onDepthSelect?: (md: number) => void;
 }
 
-export function DepthTracks({ intervals, zones, isolationDepths = [], className }: DepthTracksProps) {
+export function DepthTracks({ intervals, zones, isolationDepths = [], className, onDepthSelect }: DepthTracksProps) {
   const [hover, setHover] = useState<DepthHover | null>(null);
   const [trackHover, setTrackHover] = useState<TrackHover | null>(null);
   const domains = useMemo(() => computeDomains(intervals), [intervals]);
@@ -222,6 +223,28 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
       x: event.clientX - rect.left + 12,
       y: event.clientY - rect.top - 36,
     });
+  };
+
+  const depthFromPointer = (event: React.MouseEvent<SVGElement>) => {
+    const svg = event.currentTarget.ownerSVGElement;
+    if (!svg) return null;
+    const rect = svg.getBoundingClientRect();
+    const y = event.clientY - rect.top;
+    if (y < HEADER_HEIGHT || y > HEADER_HEIGHT + PLOT_HEIGHT) return null;
+    return yToDepth(y);
+  };
+
+  const handleDepthSelect = (md: number) => {
+    onDepthSelect?.(md);
+  };
+
+  const handleAxisClick = (event: React.MouseEvent<SVGRectElement>) => {
+    const md = depthFromPointer(event);
+    if (md != null) handleDepthSelect(md);
+  };
+
+  const handleIntervalClick = (iv: IntervalRecord) => {
+    handleDepthSelect((iv.top + iv.bot) / 2);
   };
 
   const formatTrackValue = (track: TrackDef, iv: IntervalRecord): string => {
@@ -354,8 +377,12 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
           width={DEPTH_AXIS_WIDTH}
           height={PLOT_HEIGHT}
           fill="transparent"
+          className={onDepthSelect ? "cursor-pointer" : undefined}
+          role={onDepthSelect ? "button" : undefined}
+          aria-label={onDepthSelect ? "Depth axis — click to jump to interval table" : undefined}
           onMouseMove={handleAxisMove}
           onMouseLeave={() => setHover(null)}
+          onClick={onDepthSelect ? handleAxisClick : undefined}
         />
 
         {tracks.map((track, idx) => {
@@ -420,9 +447,16 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
                       fillOpacity={opacity}
                       rx={1}
                       className="cursor-crosshair"
+                      role={onDepthSelect ? "button" : undefined}
+                      aria-label={
+                        onDepthSelect
+                          ? `${track.label} at ${((iv.top + iv.bot) / 2).toFixed(0)} m MD — jump to interval`
+                          : undefined
+                      }
                       onMouseEnter={(e) => showTrackHover(track, iv, e)}
                       onMouseMove={(e) => showTrackHover(track, iv, e)}
                       onMouseLeave={() => setTrackHover(null)}
+                      onClick={onDepthSelect ? () => handleIntervalClick(iv) : undefined}
                     />
                   );
                 }
@@ -447,9 +481,16 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
                     <g
                       key={`${track.id}-${iv.depth}`}
                       className="cursor-crosshair"
+                      role={onDepthSelect ? "button" : undefined}
+                      aria-label={
+                        onDepthSelect
+                          ? `${track.label} at ${((iv.top + iv.bot) / 2).toFixed(0)} m MD — jump to interval`
+                          : undefined
+                      }
                       onMouseEnter={(e) => showTrackHover(track, iv, e)}
                       onMouseMove={(e) => showTrackHover(track, iv, e)}
                       onMouseLeave={() => setTrackHover(null)}
+                      onClick={onDepthSelect ? () => handleIntervalClick(iv) : undefined}
                     >
                       <rect
                         x={x + 2}
@@ -497,9 +538,16 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
                     fill={fill}
                     rx={1}
                     className="cursor-crosshair"
+                    role={onDepthSelect ? "button" : undefined}
+                    aria-label={
+                      onDepthSelect
+                        ? `${track.label} at ${((iv.top + iv.bot) / 2).toFixed(0)} m MD — jump to interval`
+                        : undefined
+                    }
                     onMouseEnter={(e) => showTrackHover(track, iv, e)}
                     onMouseMove={(e) => showTrackHover(track, iv, e)}
                     onMouseLeave={() => setTrackHover(null)}
+                    onClick={onDepthSelect ? () => handleIntervalClick(iv) : undefined}
                   />
                 );
               })}
@@ -547,8 +595,9 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className 
         </g>
       </svg>
       <p className="border-t border-border px-3 py-2.5 text-sm text-text-muted">
-        Hover depth axis for MD/TVDss; hover any log track cell for property values. Grey bands =
-        overburden; hatched Iso track = mechanical isolation.
+        Hover depth axis for MD/TVDss; hover any log track cell for property values. Click a track
+        cell or depth axis to jump to that depth in the interval table. Grey bands = overburden;
+        hatched Iso track = mechanical isolation.
       </p>
     </div>
   );

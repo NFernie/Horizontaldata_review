@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { getJaccardScore, rankJaccardAnalogs, topJaccardAnalog } from "@/lib/jaccardRanking";
+import {
+  getJaccardScore,
+  rankDepthBinnedJaccardAnalogs,
+  rankJaccardAnalogs,
+  topJaccardAnalog,
+} from "@/lib/jaccardRanking";
 import type { JaccardPayload } from "@/types/stats";
 
 const miniPayload: JaccardPayload = {
@@ -12,7 +17,11 @@ const miniPayload: JaccardPayload = {
     [1, 1, 0.3],
     [0.5, 0.3, 1],
   ],
-  depth_binned_matrix: [],
+  depth_binned_matrix: [
+    [1, 0.2, 0.1],
+    [0.2, 1, 0.4],
+    [0.1, 0.4, 1],
+  ],
   jena_analog_ranking: {},
 };
 
@@ -25,6 +34,14 @@ describe("rankJaccardAnalogs", () => {
 
   it("returns empty for unknown focus", () => {
     expect(rankJaccardAnalogs("UNKNOWN", miniPayload)).toEqual([]);
+  });
+});
+
+describe("rankDepthBinnedJaccardAnalogs", () => {
+  it("uses depth_binned_matrix instead of feature matrix", () => {
+    const ranks = rankDepthBinnedJaccardAnalogs("JENA31", miniPayload);
+    expect(ranks.map((r) => r.alias)).toEqual(["STIMPEE7", "BIALA19"]);
+    expect(ranks[0]?.jaccard).toBe(0.2);
   });
 });
 

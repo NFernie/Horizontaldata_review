@@ -2,7 +2,7 @@ import { Link, Navigate, useParams } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { Card } from "@/components/Card";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
-import { DepthTracks } from "@/components/DepthTracks";
+import { DepthTracks, nearestInterval } from "@/components/DepthTracks";
 import { Legend } from "@/components/Legend";
 import { MetricCell } from "@/components/MetricCell";
 import { RiskExplainBadge, FlagExplainBadge } from "@/components/RiskExplainBadge";
@@ -24,6 +24,7 @@ export function WellDetail() {
   const [zones, setZones] = useState<ZonesPayload | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [highlightRowKey, setHighlightRowKey] = useState<string | null>(null);
 
   useEffect(() => {
     if (routeAlias) {
@@ -51,6 +52,12 @@ export function WellDetail() {
   const handleWellChange = (next: string) => {
     setAlias(next);
     writeStoredWell(next);
+  };
+
+  const handleDepthSelect = (md: number) => {
+    if (!intervals?.intervals.length) return;
+    const nearest = nearestInterval(intervals.intervals, md);
+    if (nearest) setHighlightRowKey(String(nearest.depth));
   };
 
   const columns: DataTableColumn<IntervalRecord>[] = useMemo(
@@ -209,6 +216,7 @@ export function WellDetail() {
         intervals={intervals.intervals}
         zones={zones.zones}
         isolationDepths={intervals.isolation_depths}
+        onDepthSelect={handleDepthSelect}
       />
 
       <Legend
@@ -236,6 +244,7 @@ export function WellDetail() {
           caption={`${intervals.display} McKinlay intervals`}
           stickyFirstColumn
           scrollMaxHeight="70vh"
+          highlightRowKey={highlightRowKey}
         />
       </Card>
     </div>

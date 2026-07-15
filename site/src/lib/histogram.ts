@@ -93,3 +93,77 @@ export function buildHistogramBins(
   assign(valuesB, "countB");
   return bins;
 }
+
+export const HISTOGRAM_STAT_DECIMALS = 3;
+
+export interface DescriptiveStats {
+  mean: number | null;
+  median: number | null;
+  mode: number | null;
+  stdDev: number | null;
+  n: number;
+}
+
+function roundStat(value: number): number {
+  const factor = 10 ** HISTOGRAM_STAT_DECIMALS;
+  return Math.round(value * factor) / factor;
+}
+
+export function computeMean(values: number[]): number | null {
+  if (!values.length) return null;
+  return roundStat(values.reduce((sum, v) => sum + v, 0) / values.length);
+}
+
+export function computeMedian(values: number[]): number | null {
+  if (!values.length) return null;
+  const sorted = [...values].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  const median =
+    sorted.length % 2 === 0
+      ? (sorted[mid - 1]! + sorted[mid]!) / 2
+      : sorted[mid]!;
+  return roundStat(median);
+}
+
+export function computeStdDev(values: number[]): number | null {
+  if (!values.length) return null;
+  const mean = values.reduce((sum, v) => sum + v, 0) / values.length;
+  const variance = values.reduce((sum, v) => sum + (v - mean) ** 2, 0) / values.length;
+  return roundStat(Math.sqrt(variance));
+}
+
+export function computeModeFromBins(
+  bins: HistogramBin[],
+  countKey: "countA" | "countB",
+): number | null {
+  let maxCount = 0;
+  let modeBin: HistogramBin | null = null;
+  for (const bin of bins) {
+    const count = bin[countKey];
+    if (count > maxCount) {
+      maxCount = count;
+      modeBin = bin;
+    }
+  }
+  if (!modeBin || maxCount === 0) return null;
+  return roundStat((modeBin.lo + modeBin.hi) / 2);
+}
+
+export function computeDescriptiveStats(
+  values: number[],
+  bins: HistogramBin[],
+  countKey: "countA" | "countB",
+): DescriptiveStats {
+  return {
+    mean: computeMean(values),
+    median: computeMedian(values),
+    mode: computeModeFromBins(bins, countKey),
+    stdDev: computeStdDev(values),
+    n: values.length,
+  };
+}
+
+export function formatHistogramStat(value: number | null): string {
+  if (value == null) return "—";
+  return value.toFixed(HISTOGRAM_STAT_DECIMALS);
+}

@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 export interface DataTableColumn<T> {
@@ -21,7 +21,11 @@ interface DataTableProps<T> {
   scrollMaxHeight?: string;
   /** First-column min-width class when sticky (depth vs well name). */
   stickyMinWidth?: string;
+  /** When set, scrolls to and briefly highlights the matching row. */
+  highlightRowKey?: string | null;
 }
+
+const HIGHLIGHT_MS = 2000;
 
 export function DataTable<T>({
   columns,
@@ -33,12 +37,28 @@ export function DataTable<T>({
   stickyFirstColumn = false,
   scrollMaxHeight,
   stickyMinWidth = "min-w-[7.5rem]",
+  highlightRowKey = null,
 }: DataTableProps<T>) {
   const scrollStyle = scrollMaxHeight ? { maxHeight: scrollMaxHeight } : undefined;
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [activeHighlight, setActiveHighlight] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!highlightRowKey || !scrollRef.current) return;
+    const rowEl = scrollRef.current.querySelector<HTMLTableRowElement>(
+      `[data-row-key="${CSS.escape(highlightRowKey)}"]`,
+    );
+    if (!rowEl) return;
+    rowEl.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    setActiveHighlight(highlightRowKey);
+    const timer = window.setTimeout(() => setActiveHighlight(null), HIGHLIGHT_MS);
+    return () => window.clearTimeout(timer);
+  }, [highlightRowKey]);
 
   return (
     <div className={cn("rounded-card border border-border", className)}>
       <div
+        ref={scrollRef}
         className={cn(
           "data-table-scroll overflow-auto",
           stickyFirstColumn && "data-table-sticky-first",
@@ -73,25 +93,36 @@ export function DataTable<T>({
                 </td>
               </tr>
             ) : (
-              rows.map((row) => (
-                <tr key={rowKey(row)} className="transition-colors hover:bg-surface-2/60">
-                  {columns.map((col, colIndex) => (
-                    <td
-                      key={col.key}
-                      scope={stickyFirstColumn && colIndex === 0 ? "row" : undefined}
-                      className={cn(
-                        "px-3 py-2.5 text-text",
-                        col.mono && "font-mono tabular-nums",
-                        col.align === "right" && "text-right",
-                        col.align === "center" && "text-center",
-                        stickyFirstColumn && colIndex === 0 && stickyMinWidth,
-                      )}
-                    >
-                      {col.render(row)}
-                    </td>
-                  ))}
-                </tr>
-              ))
+              rows.map((row) => {
+                const key = rowKey(row);
+                const highlighted = activeHighlight === key;
+                return (
+                  <tr
+                    key={key}
+                    data-row-key={key}
+                    className={cn(
+                      "transition-colors hover:bg-surface-2/60",
+                      highlighted && "bg-accent/15 ring-1 ring-inset ring-accent/40",
+                    )}
+                  >
+                    {columns.map((col, colIndex) => (
+                      <td
+                        key={col.key}
+                        scope={stickyFirstColumn && colIndex === 0 ? "row" : undefined}
+                        className={cn(
+                          "px-3 py-2.5 text-text",
+                          col.mono && "font-mono tabular-nums",
+                          col.align === "right" && "text-right",
+                          col.align === "center" && "text-center",
+                          stickyFirstColumn && colIndex === 0 && stickyMinWidth,
+                        )}
+                      >
+                        {col.render(row)}
+                      </td>
+                    ))}
+                  </tr>
+                );
+              })
             )}
           </tbody>
         </table>
