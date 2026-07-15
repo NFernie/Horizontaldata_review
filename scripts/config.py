@@ -234,13 +234,13 @@ COARSE_GRAIN_ORDINAL = 4
 # ---------------------------------------------------------------------------
 CLUSTER_FEATURES = (
     "mean_pct_ss",
-    "mean_grain_ordinal",
     "mean_avg_GR",
     "mean_RES_DEEP",
     "pay_pct",
     "mean_WRCI",
-    "pct_high_risk",
-    "pct_zoi",
+    "fluorescence_pct",
+    "total_gas",
+    "RQI",
 )
 """Per-well aggregate features for cosine/Euclidean clustering."""
 

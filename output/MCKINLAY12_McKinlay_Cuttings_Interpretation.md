@@ -1,6 +1,6 @@
 # MCKINLAY 12 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-14 05:26 UTC  
+**Generated:** 2026-07-15 03:34 UTC  
 **Well:** MCKINLAY 12 (MCKINLAY 12)  
 **TD:** 2904 m MD  
 

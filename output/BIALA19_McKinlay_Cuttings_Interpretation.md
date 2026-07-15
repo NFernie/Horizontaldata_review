@@ -1,6 +1,6 @@
 # BIALA 19 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-14 05:19 UTC  
+**Generated:** 2026-07-15 03:27 UTC  
 **Well:** BIALA 19 (BIALA 19)  
 **TD:** 3730 m MD  
 

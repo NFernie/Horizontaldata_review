@@ -590,27 +590,34 @@ def depth_binned_jaccard(rows_a, meta_a, rows_b, meta_b):
     return intersection / union if union else 0.0
 
 
-def well_cluster_vector(rows, pay_pct):
-    def mean_of(key):
-        vals = pd.Series([r.get(key) for r in rows], dtype=float).dropna()
-        return float(vals.mean()) if len(vals) else 0.0
+def _cluster_scalar_feature(rows, key):
+    vals = pd.to_numeric(pd.Series([r.get(key) for r in rows]), errors="coerce").dropna()
+    return float(vals.mean()) if len(vals) else 0.0
 
+
+def well_cluster_vector(rows, pay_pct):
+    n = len(rows) or 1
     high_risk = sum(1 for r in rows if r.get("risk_class") == "High")
     zoi = sum(1 for r in rows if r.get("flag_zoi"))
-    n = len(rows) or 1
-    return np.array(
-        [
-            mean_of("pct_ss"),
-            mean_of("grain_ordinal"),
-            mean_of("avg_GR"),
-            mean_of("avg_RES_DEEP"),
-            pay_pct,
-            mean_of("WRCI"),
-            100.0 * high_risk / n,
-            100.0 * zoi / n,
-        ],
-        dtype=float,
-    )
+    builders = {
+        "mean_pct_ss": lambda: _cluster_scalar_feature(rows, "pct_ss"),
+        "mean_grain_ordinal": lambda: _cluster_scalar_feature(rows, "grain_ordinal"),
+        "mean_avg_GR": lambda: _cluster_scalar_feature(rows, "avg_GR"),
+        "mean_RES_DEEP": lambda: _cluster_scalar_feature(rows, "avg_RES_DEEP"),
+        "pay_pct": lambda: float(pay_pct),
+        "mean_WRCI": lambda: _cluster_scalar_feature(rows, "WRCI"),
+        "pct_high_risk": lambda: 100.0 * high_risk / n,
+        "pct_zoi": lambda: 100.0 * zoi / n,
+        "fluorescence_pct": lambda: _cluster_scalar_feature(rows, "fluor"),
+        "total_gas": lambda: _cluster_scalar_feature(rows, "gas"),
+        "RQI": lambda: _cluster_scalar_feature(rows, "RQI"),
+    }
+    values = []
+    for feature in config.CLUSTER_FEATURES:
+        if feature not in builders:
+            raise ValueError(f"Unknown CLUSTER_FEATURES entry: {feature}")
+        values.append(builders[feature]())
+    return np.array(values, dtype=float)
 
 
 def standardize_matrix(vectors):

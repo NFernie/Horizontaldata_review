@@ -1,6 +1,6 @@
 # JENA 31DW1 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-14 05:18 UTC  
+**Generated:** 2026-07-15 03:26 UTC  
 **Well:** JENA 31DW1 (JENA 31DW1)  
 **TD:** 3658 m MD  
 

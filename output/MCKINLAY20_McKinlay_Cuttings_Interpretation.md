@@ -1,6 +1,6 @@
 # MCKINLAY 20 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-14 05:21 UTC  
+**Generated:** 2026-07-15 03:29 UTC  
 **Well:** MCKINLAY 20 (MCKINLAY 20)  
 **TD:** 3000 m MD  
 

@@ -1,6 +1,6 @@
 # STIMPEE 6 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-14 05:22 UTC  
+**Generated:** 2026-07-15 03:30 UTC  
 **Well:** STIMPEE 6 (STIMPEE 6)  
 **TD:** 3186 m MD  
 

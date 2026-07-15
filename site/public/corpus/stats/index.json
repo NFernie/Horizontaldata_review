@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13 23:23 UTC",
+  "generated_at": "2026-07-15 03:36 UTC",
   "entries": [
     {
       "id": "stats:correlations",
@@ -185,6 +185,13 @@
       "path": "data/water_risk/MCKINLAY15.json",
       "type": "stats",
       "alias": "MCKINLAY15"
+    },
+    {
+      "id": "water_risk:JENA31_DUAL",
+      "label": "Water-risk flagged zones — JENA 31 Dual Lateral",
+      "path": "data/water_risk/JENA31_DUAL.json",
+      "type": "stats",
+      "alias": "JENA31_DUAL"
     }
   ]
 }
