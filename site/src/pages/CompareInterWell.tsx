@@ -2,16 +2,62 @@ import { useEffect, useMemo, useState } from "react";
 import { Card } from "@/components/Card";
 import { ClusterAnalogCards, ClusterAssignmentTable } from "@/components/ClusterAnalogCards";
 import { Dendrogram } from "@/components/Dendrogram";
+import { ExpandableRankingList } from "@/components/ExpandableRankingList";
 import { JaccardHeatmap } from "@/components/JaccardHeatmap";
 import { KsGrid } from "@/components/KsGrid";
 import { Legend } from "@/components/Legend";
-import { JENA31_DUAL_ALIAS, KS_FOCUS_ALIASES, JACCARD_PRESENCE_PCT } from "@/config";
+import {
+  JENA31_DUAL_ALIAS,
+  JACCARD_DEPTH_BINS,
+  JACCARD_PRESENCE_PCT,
+  KS_FOCUS_ALIASES,
+} from "@/config";
 import { pageStateKey, usePersistedState, useScrollRestore } from "@/hooks/usePageState";
+import { rankDepthBinnedJaccardAnalogs, rankJaccardAnalogs } from "@/lib/jaccardRanking";
 import { fetchJson } from "@/lib/utils";
 import type { ClustersPayload, JaccardPayload, KsPayload } from "@/types/stats";
 import type { WellsPayload } from "@/types/wells";
 
 const CLUSTER_FOCUS = [...KS_FOCUS_ALIASES, JENA31_DUAL_ALIAS] as const;
+
+function JaccardModeTabs({
+  matrixMode,
+  onChange,
+}: {
+  matrixMode: "feature" | "depth";
+  onChange: (mode: "feature" | "depth") => void;
+}) {
+  return (
+    <div className="flex flex-wrap gap-2" role="tablist" aria-label="Jaccard matrix mode">
+      <button
+        type="button"
+        role="tab"
+        aria-selected={matrixMode === "feature"}
+        onClick={() => onChange("feature")}
+        className={`cursor-pointer rounded-card border px-3 py-1.5 text-sm transition-colors ${
+          matrixMode === "feature"
+            ? "border-accent bg-surface-2 text-accent"
+            : "border-border text-text-muted hover:text-text"
+        }`}
+      >
+        Feature sets
+      </button>
+      <button
+        type="button"
+        role="tab"
+        aria-selected={matrixMode === "depth"}
+        onClick={() => onChange("depth")}
+        className={`cursor-pointer rounded-card border px-3 py-1.5 text-sm transition-colors ${
+          matrixMode === "depth"
+            ? "border-accent bg-surface-2 text-accent"
+            : "border-border text-text-muted hover:text-text"
+        }`}
+      >
+        Depth-binned ({JACCARD_DEPTH_BINS} bins)
+      </button>
+    </div>
+  );
+}
 
 export function CompareInterWell() {
   useScrollRestore();
@@ -56,6 +102,15 @@ export function CompareInterWell() {
     return map;
   }, [wellsPayload]);
 
+  const jaccardRankings = useMemo(() => {
+    if (!jaccard) return {} as Record<string, ReturnType<typeof rankJaccardAnalogs>>;
+    const rankFn =
+      matrixMode === "feature" ? rankJaccardAnalogs : rankDepthBinnedJaccardAnalogs;
+    return Object.fromEntries(
+      KS_FOCUS_ALIASES.map((focus) => [focus, rankFn(focus, jaccard)]),
+    ) as Record<(typeof KS_FOCUS_ALIASES)[number], ReturnType<typeof rankJaccardAnalogs>>;
+  }, [jaccard, matrixMode]);
+
   if (loading) return <p className="text-text-muted">Loading inter-well comparison data…</p>;
 
   if (error || !jaccard || !clusters || !ks) {
@@ -67,6 +122,14 @@ export function CompareInterWell() {
   }
 
   const matrix = matrixMode === "feature" ? jaccard.matrix : jaccard.depth_binned_matrix;
+  const rankingDescription =
+    matrixMode === "feature"
+      ? `Ranked by Jaccard similarity on feature-set presence (≥ ${JACCARD_PRESENCE_PCT}% of intervals)`
+      : `Ranked by depth-binned Jaccard similarity (${JACCARD_DEPTH_BINS} normalized lateral bins)`;
+  const matrixDescription =
+    matrixMode === "feature"
+      ? `Feature presence ≥ ${JACCARD_PRESENCE_PCT}% of intervals per well`
+      : `Depth-binned feature flags across ${JACCARD_DEPTH_BINS} normalized lateral bins`;
 
   return (
     <div className="space-y-6">
@@ -78,67 +141,30 @@ export function CompareInterWell() {
         </p>
       </header>
 
+      <JaccardModeTabs matrixMode={matrixMode} onChange={setMatrixMode} />
+
       <div className="grid gap-4 lg:grid-cols-2">
         {KS_FOCUS_ALIASES.map((focus) => (
           <Card
             key={focus}
-            title={`${focus} — top analog wells`}
-            description="Ranked by Jaccard similarity on feature-set presence"
+            title={`${displayNames[focus] ?? focus} — top analog wells`}
+            description={rankingDescription}
           >
-            <ol className="space-y-2">
-              {(jaccard.jena_analog_ranking[focus] ?? []).map((item, idx) => (
-                <li
-                  key={item.alias}
-                  className="flex items-center justify-between rounded-card border border-border bg-surface-2 px-3 py-2 text-sm"
-                >
-                  <span>
-                    <span className="mr-2 font-mono text-text-muted">{idx + 1}.</span>
-                    <span className="font-medium text-text">{item.alias}</span>
-                  </span>
-                  <span className="font-mono text-accent">J = {item.jaccard.toFixed(3)}</span>
-                </li>
-              ))}
-            </ol>
+            <ExpandableRankingList
+              listId={`jaccard-ranking-${focus}`}
+              items={(jaccardRankings[focus] ?? []).map((item) => ({
+                alias: item.alias,
+                score: item.jaccard,
+              }))}
+              displayNames={displayNames}
+              scorePrefix="J = "
+              formatScore={(score) => score.toFixed(3)}
+            />
           </Card>
         ))}
       </div>
 
-      <Card
-        title="Jaccard similarity matrix"
-        description={`Feature presence ≥ ${JACCARD_PRESENCE_PCT}% of intervals per well`}
-      >
-        <div
-          className="mb-4 flex gap-2"
-          role="tablist"
-          aria-label="Jaccard matrix mode"
-        >
-          <button
-            type="button"
-            role="tab"
-            aria-selected={matrixMode === "feature"}
-            onClick={() => setMatrixMode("feature")}
-            className={`cursor-pointer rounded-card border px-3 py-1.5 text-sm transition-colors ${
-              matrixMode === "feature"
-                ? "border-accent bg-surface-2 text-accent"
-                : "border-border text-text-muted hover:text-text"
-            }`}
-          >
-            Feature sets
-          </button>
-          <button
-            type="button"
-            role="tab"
-            aria-selected={matrixMode === "depth"}
-            onClick={() => setMatrixMode("depth")}
-            className={`cursor-pointer rounded-card border px-3 py-1.5 text-sm transition-colors ${
-              matrixMode === "depth"
-                ? "border-accent bg-surface-2 text-accent"
-                : "border-border text-text-muted hover:text-text"
-            }`}
-          >
-            Depth-binned (20 bins)
-          </button>
-        </div>
+      <Card title="Jaccard similarity matrix" description={matrixDescription}>
         <JaccardHeatmap aliases={jaccard.aliases} matrix={matrix} />
         <Legend
           className="mt-4"

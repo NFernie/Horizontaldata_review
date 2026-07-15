@@ -18,6 +18,7 @@ const PREFERRED_ANALOG: Record<string, string> = {
 export function rankJaccardAnalogs(
   focusAlias: string,
   payload: JaccardPayload,
+  matrix: number[][] = payload.matrix,
 ): JaccardRankEntry[] {
   const focusIdx = payload.aliases.indexOf(focusAlias);
   if (focusIdx === -1) return [];
@@ -25,10 +26,18 @@ export function rankJaccardAnalogs(
   return payload.aliases
     .map((alias, idx) => ({
       alias,
-      jaccard: payload.matrix[focusIdx]?.[idx] ?? 0,
+      jaccard: matrix[focusIdx]?.[idx] ?? 0,
     }))
     .filter((entry) => entry.alias !== focusAlias)
     .sort((a, b) => b.jaccard - a.jaccard || a.alias.localeCompare(b.alias));
+}
+
+/** Rank analog wells using the depth-binned Jaccard matrix. */
+export function rankDepthBinnedJaccardAnalogs(
+  focusAlias: string,
+  payload: JaccardPayload,
+): JaccardRankEntry[] {
+  return rankJaccardAnalogs(focusAlias, payload, payload.depth_binned_matrix);
 }
 
 export function getJaccardScore(

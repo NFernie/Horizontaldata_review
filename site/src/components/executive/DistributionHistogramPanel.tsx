@@ -17,7 +17,7 @@ import {
   type DistHistogramProperty,
 } from "@/config";
 import { pageStateKey, usePersistedState } from "@/hooks/usePageState";
-import { buildHistogramBins, getIntervalPropertyValue } from "@/lib/histogram";
+import { buildHistogramBins, computeDescriptiveStats, formatHistogramStat, getIntervalPropertyValue } from "@/lib/histogram";
 import { fetchJson } from "@/lib/utils";
 import type { IntervalsPayload } from "@/types/intervals";
 import type { WellRecord } from "@/types/wells";
@@ -72,6 +72,15 @@ export function DistributionHistogramPanel({ wells }: DistributionHistogramPanel
   const chartData = useMemo(
     () => buildHistogramBins(valuesA, valuesB, property),
     [valuesA, valuesB, property],
+  );
+
+  const statsA = useMemo(
+    () => computeDescriptiveStats(valuesA, chartData, "countA"),
+    [valuesA, chartData],
+  );
+  const statsB = useMemo(
+    () => computeDescriptiveStats(valuesB, chartData, "countB"),
+    [valuesB, chartData],
   );
 
   const displayA = dataA?.display ?? wellA;
@@ -145,6 +154,49 @@ export function DistributionHistogramPanel({ wells }: DistributionHistogramPanel
             />
           </BarChart>
         </ResponsiveContainer>
+      </div>
+
+      <div className="mt-3 overflow-x-auto rounded-card border border-border">
+        <table className="min-w-full text-sm">
+          <caption className="sr-only">
+            Descriptive statistics for {displayA} and {displayB} — property {property}
+          </caption>
+          <thead className="bg-surface-2">
+            <tr>
+              <th scope="col" className="px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide text-text-muted">
+                Statistic
+              </th>
+              <th scope="col" className="px-3 py-2 text-right text-xs font-semibold uppercase tracking-wide text-text-muted">
+                {displayA}
+              </th>
+              <th scope="col" className="px-3 py-2 text-right text-xs font-semibold uppercase tracking-wide text-text-muted">
+                {displayB}
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-border bg-surface">
+            {(
+              [
+                ["Mean", statsA.mean, statsB.mean],
+                ["Median", statsA.median, statsB.median],
+                ["Mode", statsA.mode, statsB.mode],
+                ["Std Dev", statsA.stdDev, statsB.stdDev],
+              ] as const
+            ).map(([label, valA, valB]) => (
+              <tr key={label}>
+                <th scope="row" className="px-3 py-2 text-left font-medium text-text">
+                  {label}
+                </th>
+                <td className="px-3 py-2 text-right font-mono tabular-nums text-text">
+                  {formatHistogramStat(valA)}
+                </td>
+                <td className="px-3 py-2 text-right font-mono tabular-nums text-text">
+                  {formatHistogramStat(valB)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       <p className="mt-2 text-xs text-text-muted">

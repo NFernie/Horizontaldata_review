@@ -35,7 +35,7 @@ export function Methodology() {
     <div className="space-y-6">
       <header>
         <h1 className="text-xl font-semibold text-text sm:text-2xl">Methodology</h1>
-        <p className="mt-1 max-w-3xl text-sm text-text-muted">
+        <p className="mt-1 max-w-3xl text-[15.4px] leading-relaxed text-text-muted">
           Statistical methods for the McKinlay Member water-risk review —{" "}
           <strong className="font-normal text-text">23 horizontal wells</strong>, RQI v2 (8 components),
           WRCI v2 (OWC-aware), ZOI along-wellbore flags, and pay summaries with overburden exclusion.
@@ -45,7 +45,7 @@ export function Methodology() {
       </header>
 
       <Card title="Pipeline overview" description="updated-plan-2026-07-10 — Phases 1–6">
-        <ol className="list-decimal space-y-2 pl-5 text-sm text-text-muted">
+        <ol className="list-decimal space-y-2 pl-5 text-[15.4px] leading-relaxed text-text-muted">
           <li>
             <strong className="text-text">Process</strong> — mudlog + cuttings + LAS + trajectory →
             interpretation markdown and interval records (McKinlay 10–15 via litho/gas ingest).
@@ -63,7 +63,7 @@ export function Methodology() {
             comparison views consume exported JSON.
           </li>
         </ol>
-        <p className="mt-3 text-sm text-text-muted">
+        <p className="mt-3 text-[15.4px] leading-relaxed text-text-muted">
           Retired: ΔRes (<code className="text-accent">res_sep</code>) and{" "}
           <code className="text-accent">highperm</code> permeability proxy — suspended per stakeholder
           decision (see <code className="text-accent">updated-plan-2026-07-10.md</code>).
@@ -71,7 +71,7 @@ export function Methodology() {
       </Card>
 
       <Card title="Water-Risk Composite Index (WRCI)" description="updated-plan §3B — intra-well scoring">
-        <div className="space-y-4 text-sm text-text-muted">
+        <div className="space-y-4 text-[15.4px] leading-relaxed text-text-muted">
           <FormulaBlock title="Step A — Rock Quality Index (RQI), 0–1">
             <p>
               RQI = {RQI_WEIGHTS.pct_ss}·norm(%SS) + {RQI_WEIGHTS.low_gr}·norm(1−GR) +{" "}
@@ -146,7 +146,7 @@ export function Methodology() {
       </Card>
 
       <Card title="Metric colour legend" description="RQI and WRCI threshold tints in tables">
-        <p className="text-sm text-text-muted">
+        <p className="text-[15.4px] leading-relaxed text-text-muted">
           <span className="metric-cell metric-cell--rqi-high inline-block rounded-md px-2 py-0.5 font-mono text-sm">
             RQI red
           </span>{" "}
@@ -165,7 +165,7 @@ export function Methodology() {
       </Card>
 
       <Card title="Pay cutoffs & overburden">
-        <ul className="list-disc space-y-1 pl-5 text-sm text-text-muted">
+        <ul className="list-disc space-y-1 pl-5 text-[15.4px] leading-relaxed text-text-muted">
           <li>% Sandstone &gt; {SS_CUTOFF}% (cuttings pay)</li>
           <li>% Fluorescence &gt; {FLUOR_CUTOFF}% (cuttings pay)</li>
           <li>RES_DEEP &gt; {RES_DEEP_CUTOFF} ohm.m (resistivity and matching pay)</li>
@@ -178,7 +178,7 @@ export function Methodology() {
       </Card>
 
       <Card title="Data quality caveats" description="OpusPlanR1 §6">
-        <ul className="space-y-3 text-sm text-text-muted">
+        <ul className="space-y-3 text-[15.4px] leading-relaxed text-text-muted">
           <li>
             <strong className="text-text">LAS curve order</strong> — mnemonic-based parsing required;
             fixed column order corrupts GR/RES for several wells including Jena 31DW1.

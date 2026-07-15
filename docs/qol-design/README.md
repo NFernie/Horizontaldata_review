@@ -9,6 +9,7 @@ Design agents write phase specs here **before** implementation agents touch prod
 | `phase-d-design.md` | D — Dual lateral, cluster analogs, histogram | Design agent |
 | `phase-b1-design.md` | B1 — Intersection window (no grid) | Design agent |
 | `phase-b2-design.md` | B2 — Grid overlay | Design agent |
+| `phase-g-design.md` | G — Histogram stats, compare expand, log click, methodology prose (G6 light mode → Phase 2) | Design agent |
 
 **Source plan:** [`QoL-Updates-2026-07-13.md`](../QoL-Updates-2026-07-13.md)  
 **UI skill:** `.cursor/skills/ui-ux-pro-max/SKILL.md`

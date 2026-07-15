@@ -20,7 +20,7 @@ export function MethodologyMethodsSection() {
 
   return (
     <div className="space-y-4">
-      <p className="text-sm text-text-muted">
+      <p className="text-[15.4px] leading-relaxed text-text-muted">
         Select one method for full detail. Constants from{" "}
         <code className="text-accent">@/config</code>.
       </p>
