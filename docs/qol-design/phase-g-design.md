@@ -125,12 +125,41 @@ Apply via wrapper class `methodology-prose` on `Methodology.tsx` root content (c
 
 ---
 
-## 7. Phase 2 preview (G6 — not implemented in Phase 1)
+## 7. Phase G2 — Light mode (G6)
 
-- Default: **dark** on first visit.
-- Toggle in `AppShell` sidebar (replace static “Dark theme” badge).
-- Persist via `localStorage` (`hr-theme:mode`).
-- Palette: light geoscience (muted blues/greys, readable risk colours).
+### Behaviour
+
+| Setting | Value |
+|---------|-------|
+| **Default** | Dark on first visit |
+| **Toggle** | Header (≥ sm) + sidebar footer — replaces static “Dark theme” badge |
+| **Persistence** | `localStorage` key `hr-theme:mode` (`dark` \| `light`) |
+| **FOUC guard** | Inline script in `index.html` sets `data-theme` before React mount |
+
+### Token architecture
+
+- `[data-theme="dark"]` and `[data-theme="light"]` on `<html>`
+- Semantic tokens (`--bg`, `--surface`, `--accent`, risk colours, etc.) swap per theme
+- Shared derived tokens: `--scrim`, `--overburden-zone-fill`, `--track-fluor`, `--sticky-col-shadow`, `--metric-bg-alpha`
+- `color-scheme` set per theme for native controls
+
+### Light geoscience palette
+
+Muted blue-grey surfaces (`#e9eef3` bg, white cards), slate text (`#1a2332`), sky accent (`#0369a1`), readable risk reds/ambers/greens. Chart/track hardcoded rgba replaced with theme tokens where needed.
+
+### Files (Phase G2)
+
+| File | Change |
+|------|--------|
+| `site/src/styles/tokens.css` | Light + dark token sets |
+| `site/src/lib/theme.ts` | Storage + apply helpers |
+| `site/src/hooks/useTheme.ts` | React hook |
+| `site/src/components/ThemeToggle.tsx` | Sun/moon toggle button |
+| `site/src/components/AppShell.tsx` | Toggle in header + sidebar |
+| `site/index.html` | Early theme init script |
+| `site/src/main.tsx` | `initTheme()` |
+| `site/src/index.css` | Sticky shadow token |
+| `site/tailwind.config.js` | `shadow-card` → CSS var |
 
 ---
 
@@ -155,9 +184,19 @@ Apply via wrapper class `methodology-prose` on `Methodology.tsx` root content (c
 
 ## 9. Acceptance checklist
 
+### Phase 1
 - [ ] Histogram stats table updates on well/property change; `—` when empty.
 - [ ] Log track click scrolls + highlights nearest interval row.
 - [ ] Compare ranking mode syncs cards + heatmap; Jaccard expand shows all wells.
 - [ ] Cluster cards expand to full cosine-ranked list.
 - [ ] Methodology body prose ~15.4px; title and equations unchanged.
+- [ ] `npm test && npm run build` pass.
+
+### Phase G2 (light mode)
+
+- [ ] Default theme is dark on first visit.
+- [ ] Toggle switches light ↔ dark; choice persists across reloads.
+- [ ] No flash of wrong theme on initial load (inline script).
+- [ ] Primary text readable in both themes (contrast ≥ 4.5:1).
+- [ ] Depth tracks, heatmaps, tables, assistant scrim use semantic tokens.
 - [ ] `npm test && npm run build` pass.

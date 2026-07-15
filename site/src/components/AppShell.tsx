@@ -1,6 +1,8 @@
 import { useState, type ReactNode } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { AssistantWidget } from "@/components/assistant/AssistantWidget";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { useTheme } from "@/hooks/useTheme";
 import { cn } from "@/lib/utils";
 
 interface NavItem {
@@ -23,6 +25,7 @@ interface AppShellProps {
 
 export function AppShell({ children }: AppShellProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="flex min-h-screen bg-bg">
@@ -33,7 +36,7 @@ export function AppShell({ children }: AppShellProps) {
       {sidebarOpen ? (
         <button
           type="button"
-          className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+          className="fixed inset-0 z-40 bg-[var(--scrim)] lg:hidden"
           aria-label="Close navigation menu"
           onClick={() => setSidebarOpen(false)}
         />
@@ -86,6 +89,7 @@ export function AppShell({ children }: AppShellProps) {
         </nav>
 
         <div className="border-t border-border p-4 text-xs text-text-muted">
+          <ThemeToggle theme={theme} onToggle={toggleTheme} compact className="mb-3 w-full justify-center" />
           <p>Horizontal Data Review</p>
           <p className="mt-1 font-mono">GitHub Pages</p>
         </div>
@@ -106,9 +110,7 @@ export function AppShell({ children }: AppShellProps) {
             <p className="truncate text-sm text-text-muted">McKinlay Member — portfolio overview</p>
           </div>
           <div className="hidden items-center gap-2 sm:flex">
-            <span className="rounded-full border border-border bg-surface-2 px-2.5 py-1 text-xs text-text-muted">
-              Dark theme
-            </span>
+            <ThemeToggle theme={theme} onToggle={toggleTheme} />
           </div>
         </header>
 

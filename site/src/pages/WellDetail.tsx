@@ -222,7 +222,7 @@ export function WellDetail() {
       <Legend
         title="Track legend"
         items={[
-          { label: "Overburden", color: "rgba(147,161,176,0.35)", description: "excluded zones" },
+          { label: "Overburden", color: "var(--overburden-zone-fill)", description: "excluded zones" },
           { label: "Mechanical isolation", color: "var(--isolation-hatch-stripe)", description: "grey/white hatch (Iso track)" },
           { label: "RES deep", color: "var(--res-high)" },
           { label: "RES shallow", color: "var(--res-low)" },
