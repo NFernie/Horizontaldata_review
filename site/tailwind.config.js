@@ -31,7 +31,7 @@ export default {
         card: "12px",
       },
       boxShadow: {
-        card: "0 1px 3px rgba(0,0,0,.4)",
+        card: "var(--shadow-card)",
       },
       spacing: {
         18: "4.5rem",

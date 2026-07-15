@@ -154,7 +154,7 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className,
         scale: "linear",
         domain: [0, 100],
         getPrimary: (i) => toNumeric(i.fluor),
-        primaryColor: "#a78bfa",
+        primaryColor: "var(--track-fluor)",
       },
       {
         id: "grain",
@@ -335,8 +335,8 @@ export function DepthTracks({ intervals, zones, isolationDepths = [], className,
               y={depthToY(z.entry)}
               width={plotWidth}
               height={Math.max(1, depthToY(z.re_entry) - depthToY(z.entry))}
-              fill="rgba(147,161,176,0.18)"
-              stroke="rgba(147,161,176,0.35)"
+              fill="var(--overburden-zone-fill)"
+              stroke="var(--overburden-zone-stroke)"
               strokeWidth={0.5}
             />
           ))}

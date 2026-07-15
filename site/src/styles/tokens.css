@@ -1,8 +1,10 @@
 /* Design tokens — McKinlay Water Risk (UI/UX Pro Max + OpusPlanR1 §3.2 fallback)
  * Skill: .cursor/skills/ui-ux-pro-max/SKILL.md
- * Dark geoscience UI; Inter + JetBrains Mono; 4px grid; accessible contrast.
+ * Dark + light geoscience themes via data-theme on <html>.
  */
-:root {
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
   --bg: #0b0f14;
   --surface: #131a22;
   --surface-2: #1b2530;
@@ -32,9 +34,56 @@
   --hard-floor-line: #fbbf24;
   --trajectory-line: color-mix(in srgb, var(--accent) 65%, var(--text-muted));
   --overburden-corridor: #166534;
+  --overburden-zone-fill: rgba(147, 161, 176, 0.18);
+  --overburden-zone-stroke: rgba(147, 161, 176, 0.35);
+  --track-fluor: #a78bfa;
+  --scrim: rgba(0, 0, 0, 0.5);
+  --sticky-col-shadow: 4px 0 8px -2px rgba(0, 0, 0, 0.45);
+  --metric-bg-alpha: 0.15;
   --metric-border-alpha: 0.35;
   --radius-card: 12px;
   --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #e9eef3;
+  --surface: #ffffff;
+  --surface-2: #f4f7fa;
+  --border: #c5d0dc;
+  --text: #1a2332;
+  --text-muted: #5c6b7a;
+  --accent: #0369a1;
+  --risk-high: #dc2626;
+  --risk-elev: #d97706;
+  --risk-low: #16a34a;
+  --rock-quality-start: #0f766e;
+  --rock-quality-end: #d97706;
+  --res-low: #2563eb;
+  --res-high: #dc2626;
+  --metric-rqi-high: var(--risk-high);
+  --metric-rqi-low: var(--risk-low);
+  --metric-wrci-high: var(--risk-high);
+  --metric-wrci-low: var(--risk-low);
+  --lateral-jena31: var(--accent);
+  --lateral-jena31dw1: #6d28d9;
+  --lateral-dual-badge: var(--rock-quality-start);
+  --isolation-hatch-fill: #f8fafc;
+  --isolation-hatch-stripe: #64748b;
+  --isolation-band-fill: var(--isolation-hatch-fill);
+  --isolation-band-stroke: #94a3b8;
+  --owc-line: #0369a1;
+  --hard-floor-line: #ca8a04;
+  --trajectory-line: color-mix(in srgb, var(--accent) 55%, var(--text-muted));
+  --overburden-corridor: #15803d;
+  --overburden-zone-fill: color-mix(in srgb, var(--text-muted) 18%, transparent);
+  --overburden-zone-stroke: color-mix(in srgb, var(--text-muted) 35%, transparent);
+  --track-fluor: #7c3aed;
+  --scrim: rgba(15, 23, 42, 0.45);
+  --sticky-col-shadow: 4px 0 8px -2px rgba(15, 23, 42, 0.12);
+  --metric-bg-alpha: 0.12;
+  --metric-border-alpha: 0.4;
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.06);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -53,7 +53,7 @@ export function AssistantPanel({
         type="button"
         aria-label="Close corpus assistant"
         className={cn(
-          "fixed inset-0 z-[65] bg-black/50 transition-opacity duration-200",
+          "fixed inset-0 z-[65] bg-[var(--scrim)] transition-opacity duration-200",
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
         )}
         onClick={onClose}
