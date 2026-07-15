@@ -84,18 +84,22 @@ export const SPEARMAN_VARS = [
   "gas",
 ] as const;
 
-export const JACCARD_PRESENCE_PCT = 10.0;
+export const JACCARD_PRESENCE_PCT = 25.0;
 export const JACCARD_DEPTH_BINS = 20;
+export const JACCARD_HIGH_GAS = 100.0;
+export const RQI_STRONG_THRESHOLD = 0.75;
 
 export const JACCARD_FEATURES = [
-  "good_rock",
+  "good_rock_moderate",
+  "good_rock_strong",
   "lowres_over_good",
   "lowfluor_over_good",
   "low_GR",
-  "ZOI",
   "matching_pay",
-  "coarse_grain",
-  "loose_hardness",
+  "owc_high",
+  "owc_elevated",
+  "elevated_risk",
+  "high_gas",
 ] as const;
 
 export const COARSE_GRAIN_ORDINAL = 4;

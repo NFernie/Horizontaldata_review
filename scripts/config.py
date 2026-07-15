@@ -88,6 +88,9 @@ LOOSE_HARDNESS_SCORE = 0.7
 RQI_THRESHOLD = 0.6
 """Intervals with RQI >= this value are considered 'good rock' for red-flag logic."""
 
+RQI_STRONG_THRESHOLD = 0.75
+"""Intervals with RQI >= this value count as good_rock_strong for Jaccard."""
+
 PORO_SCORES = {
     "none": 0.0,
     "poor": 0.0,
@@ -208,21 +211,26 @@ SPEARMAN_VARS = (
 # ---------------------------------------------------------------------------
 # Jaccard similarity — OpusPlanR1 §1.4
 # ---------------------------------------------------------------------------
-JACCARD_PRESENCE_PCT = 10.0
+JACCARD_PRESENCE_PCT = 25.0
 """Feature must fire on >= this % of a well's intervals to enter its Jaccard set."""
 
 JACCARD_DEPTH_BINS = 20
 """Number of bins for depth-binned Jaccard (normalised lateral position 0–1)."""
 
+JACCARD_HIGH_GAS = 100.0
+"""Total gas (units) >= this value counts as high_gas for Jaccard."""
+
 JACCARD_FEATURES = (
-    "good_rock",
+    "good_rock_moderate",
+    "good_rock_strong",
     "lowres_over_good",
     "lowfluor_over_good",
     "low_GR",
-    "ZOI",
     "matching_pay",
-    "coarse_grain",
-    "loose_hardness",
+    "owc_high",
+    "owc_elevated",
+    "elevated_risk",
+    "high_gas",
 )
 """Binary feature vocabulary for inter-well Jaccard similarity."""
 

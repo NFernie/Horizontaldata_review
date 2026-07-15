@@ -530,6 +530,16 @@ def spearman_matrix(rows):
     return {"n": n, "rho": matrix, "p_value": p_matrix, "decoupling_score": decoupling}
 
 
+def _interval_high_gas(row):
+    gas = pd.to_numeric(row.get("gas"), errors="coerce")
+    return gas is not None and not pd.isna(gas) and float(gas) >= config.JACCARD_HIGH_GAS
+
+
+def _owc_tier_flag(row, tier):
+    flag_name = "owc_high" if tier == "High" else "owc_elevated"
+    return row.get("owc_tier") == tier or flag_name in (row.get("flags") or [])
+
+
 def jaccard_sets(rows):
     n = len(rows)
     if n == 0:
@@ -542,14 +552,16 @@ def jaccard_sets(rows):
         return sum(1 for r in rows if predicate(r)) / n
 
     checks = {
-        "good_rock": lambda r: (r.get("RQI") or 0) >= config.RQI_THRESHOLD,
+        "good_rock_moderate": lambda r: (r.get("RQI") or 0) >= config.RQI_THRESHOLD,
+        "good_rock_strong": lambda r: (r.get("RQI") or 0) >= config.RQI_STRONG_THRESHOLD,
         "lowres_over_good": lambda r: r.get("flag_lowres"),
         "lowfluor_over_good": lambda r: r.get("flag_lowfluor"),
         "low_GR": lambda r: r.get("flag_low_gr"),
-        "ZOI": lambda r: r.get("flag_zoi"),
         "matching_pay": lambda r: r.get("matching_pay"),
-        "coarse_grain": lambda r: (r.get("grain_ordinal") or 0) >= config.COARSE_GRAIN_ORDINAL,
-        "loose_hardness": lambda r: r.get("flag_loose_hardness"),
+        "owc_high": lambda r: _owc_tier_flag(r, "High"),
+        "owc_elevated": lambda r: _owc_tier_flag(r, "Elevated"),
+        "elevated_risk": lambda r: r.get("risk_class") == "Elevated",
+        "high_gas": _interval_high_gas,
     }
     for feat, fn in checks.items():
         if pct_true(fn) >= thresholds:
