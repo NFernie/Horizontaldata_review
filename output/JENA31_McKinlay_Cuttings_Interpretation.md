@@ -1,6 +1,6 @@
 # JENA 31 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-14 05:18 UTC  
+**Generated:** 2026-07-15 05:41 UTC  
 **Well:** JENA 31 (JENA 31 OPS)  
 **TD:** 3394 m MD  
 

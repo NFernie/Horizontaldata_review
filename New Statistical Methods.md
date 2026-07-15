@@ -230,13 +230,13 @@ Group wells by aggregate petrophysical signature and test whether Jena wells’ 
 Per-well aggregate feature vector (standardised):
 
 - `mean_pct_ss`
-- `mean_grain_ordinal`
 - `mean_avg_GR`
 - `mean_RES_DEEP`
 - `pay_pct`
 - `mean_WRCI`
-- `pct_high_risk`
-- `pct_zoi`
+- `fluorescence_pct` (mean interval fluorescence %)
+- `total_gas` (mean interval total gas)
+- `RQI` (mean Rock Quality Index)
 
 **Method:**
 

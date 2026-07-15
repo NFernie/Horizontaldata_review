@@ -1,6 +1,6 @@
 # HOBBES 5 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-14 05:20 UTC  
+**Generated:** 2026-07-15 05:43 UTC  
 **Well:** HOBBES 5 (HOBBES 5)  
 **TD:** 2590 m MD  
 

@@ -1,6 +1,6 @@
 # MCKINLAY 15 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-14 05:28 UTC  
+**Generated:** 2026-07-15 05:51 UTC  
 **Well:** MCKINLAY 15 (MCKINLAY 15)  
 **TD:** 2589 m MD  
 

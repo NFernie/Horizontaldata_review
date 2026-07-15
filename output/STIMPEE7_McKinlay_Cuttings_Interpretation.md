@@ -1,6 +1,6 @@
 # STIMPEE 7 — McKinlay Member Cuttings & Log Interpretation
 
-**Generated:** 2026-07-14 05:22 UTC  
+**Generated:** 2026-07-15 05:45 UTC  
 **Well:** STIMPEE 7 (STIMPEE 7)  
 **TD:** 2840 m MD  
 

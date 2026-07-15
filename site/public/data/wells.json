@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14 06:32 UTC",
+  "generated": "2026-07-15 05:51 UTC",
   "well_count": 24,
   "wells": [
     {
@@ -111,7 +111,7 @@
       "pay_pct": 28.8,
       "high_risk_count": 15,
       "elevated_risk_count": 16,
-      "cluster_id": 2,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -125,7 +125,7 @@
       "pay_pct": 57.21,
       "high_risk_count": 0,
       "elevated_risk_count": 27,
-      "cluster_id": 4,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -153,7 +153,7 @@
       "pay_pct": 61.79,
       "high_risk_count": 2,
       "elevated_risk_count": 6,
-      "cluster_id": 4,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -167,7 +167,7 @@
       "pay_pct": 60.08,
       "high_risk_count": 0,
       "elevated_risk_count": 69,
-      "cluster_id": 4,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
@@ -195,7 +195,7 @@
       "pay_pct": 56.45,
       "high_risk_count": 12,
       "elevated_risk_count": 20,
-      "cluster_id": 4,
+      "cluster_id": 3,
       "data_missing": false
     },
     {
