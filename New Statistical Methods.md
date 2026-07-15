@@ -174,16 +174,18 @@ Measure how similar two wells are in the **character of their flagged / geologic
 
 ### Feature vocabulary
 
-Each well is represented as a set of binary features that are “present” if they fire on ≥ **10%** of that well’s intervals:
+Each well is represented as a set of binary features that are “present” if they fire on ≥ **25%** of that well’s intervals:
 
-- `good_rock` (RQI ≥ 0.6)
+- `good_rock_moderate` (RQI ≥ 0.6)
+- `good_rock_strong` (RQI ≥ 0.75)
 - `lowres_over_good`
 - `lowfluor_over_good`
 - `low_GR` (GR < 70 gAPI on good rock)
-- `ZOI`
 - `matching_pay`
-- `coarse_grain` (grain_ordinal ≥ 4)
-- `loose_hardness`
+- `owc_high` (OWC proximity tier High)
+- `owc_elevated` (OWC proximity tier Elevated)
+- `elevated_risk` (WRCI risk class Elevated)
+- `high_gas` (total gas ≥ 100 units)
 
 ### Formula
 
