@@ -4,7 +4,7 @@ import { ClusterAnalogCards, ClusterAssignmentTable } from "@/components/Cluster
 import { Dendrogram } from "@/components/Dendrogram";
 import { ExpandableRankingList } from "@/components/ExpandableRankingList";
 import { JaccardHeatmap } from "@/components/JaccardHeatmap";
-import { KsGrid } from "@/components/KsGrid";
+import { KsRankedAnalogPanel } from "@/components/KsRankedAnalogPanel";
 import { Legend } from "@/components/Legend";
 import {
   JENA31_DUAL_ALIAS,
@@ -19,6 +19,8 @@ import type { ClustersPayload, JaccardPayload, KsPayload } from "@/types/stats";
 import type { WellsPayload } from "@/types/wells";
 
 const CLUSTER_FOCUS = [...KS_FOCUS_ALIASES, JENA31_DUAL_ALIAS] as const;
+const KS_FOCUS_WELLS = [...KS_FOCUS_ALIASES, JENA31_DUAL_ALIAS] as const;
+const KS_EXCLUDE_ANALOGS = [...KS_FOCUS_ALIASES, JENA31_DUAL_ALIAS] as const;
 
 function JaccardModeTabs({
   matrixMode,
@@ -88,11 +90,6 @@ export function CompareInterWell() {
       .catch((err: Error) => setError(err.message))
       .finally(() => setLoading(false));
   }, []);
-
-  const analogAliases = useMemo(() => {
-    if (!jaccard) return [];
-    return jaccard.aliases.filter((a) => !KS_FOCUS_ALIASES.includes(a as (typeof KS_FOCUS_ALIASES)[number]));
-  }, [jaccard]);
 
   const displayNames = useMemo(() => {
     const map: Record<string, string> = {};
@@ -199,10 +196,15 @@ export function CompareInterWell() {
         />
       </Card>
 
-      {KS_FOCUS_ALIASES.map((focus) => (
-        <Card key={focus} title={`KS significance — ${focus}`} description="D-statistic and p-value per property">
-          <KsGrid data={ks} focusAlias={focus} analogAliases={analogAliases.slice(0, 8)} />
-        </Card>
+      {KS_FOCUS_WELLS.map((focus) => (
+        <KsRankedAnalogPanel
+          key={focus}
+          focusAlias={focus}
+          focusTitle={displayNames[focus] ?? focus}
+          data={ks}
+          displayNames={displayNames}
+          excludeAliases={KS_EXCLUDE_ANALOGS}
+        />
       ))}
     </div>
   );
