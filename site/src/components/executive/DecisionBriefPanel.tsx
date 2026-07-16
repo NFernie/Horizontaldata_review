@@ -1,5 +1,6 @@
 import { useCallback } from "react";
 import { Link } from "react-router-dom";
+import { AnalogComparisonTable } from "@/components/executive/AnalogComparisonTable";
 import { Card } from "@/components/Card";
 import {
   buildWsoExportJson,
@@ -44,6 +45,9 @@ export function DecisionBriefPanel({ brief }: DecisionBriefPanelProps) {
     downloadTextFile("wso_candidates_jena_dual.csv", wsoCandidatesToCsv(combined));
   }, [brief]);
 
+  const q1 = brief.questions.find((q) => q.id === "q1");
+  const q2q3 = brief.questions.filter((q) => q.id !== "q1");
+
   return (
     <section
       id="decision-brief"
@@ -58,6 +62,7 @@ export function DecisionBriefPanel({ brief }: DecisionBriefPanelProps) {
           <p className="mt-1 max-w-3xl text-sm text-text-muted">
             Three executive questions with auto-filled stats from exported water-risk and
             inter-well data. Advisory only — no production rates.
+            {brief.generated ? ` Data generated ${brief.generated}.` : null}
           </p>
         </div>
         <Link
@@ -68,8 +73,58 @@ export function DecisionBriefPanel({ brief }: DecisionBriefPanelProps) {
         </Link>
       </header>
 
-      <div className="grid gap-4 lg:grid-cols-3">
-        {brief.questions.map((q) => (
+      {q1 ? (
+        <Card title={q1.title} className="flex flex-col">
+          <p className="mb-3 text-sm font-medium text-text">{q1.question}</p>
+          <ul className="mb-4 list-disc space-y-2 pl-5 text-sm text-text">
+            {q1.answerBullets.map((bullet) => (
+              <li key={bullet.slice(0, 56)}>{bullet}</li>
+            ))}
+          </ul>
+
+          <div className="mb-4 space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-wide text-text-muted">
+              Lateral verdicts
+            </p>
+            <ul className="grid gap-2 sm:grid-cols-3">
+              {brief.lateralAssessments.map((assessment) => (
+                <li
+                  key={assessment.focusAlias}
+                  className="rounded-card border border-border/60 bg-surface-2/40 px-3 py-2 text-xs text-text"
+                >
+                  <p className="font-semibold text-text">{assessment.focusDisplay}</p>
+                  <p className="mt-1 text-text-muted">
+                    KS → {assessment.ksAnalogAlias} · Cluster →{" "}
+                    {assessment.clusterAnalogAlias}
+                  </p>
+                  <p className="mt-1.5 text-text">{assessment.verdict}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="mb-4">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-text-muted">
+              Pay vs concern — focus wells and nominated analogs
+            </p>
+            <AnalogComparisonTable rows={brief.analogTable} />
+          </div>
+
+          <div className="mt-auto rounded-card border border-border/60 bg-surface-2/50 px-3 py-2">
+            <p className="text-xs font-semibold uppercase tracking-wide text-text-muted">
+              Caveats
+            </p>
+            <ul className="mt-1 list-disc space-y-1 pl-4 text-xs text-text-muted">
+              {q1.caveats.map((caveat) => (
+                <li key={caveat.slice(0, 40)}>{caveat}</li>
+              ))}
+            </ul>
+          </div>
+        </Card>
+      ) : null}
+
+      <div className="grid gap-4 lg:grid-cols-2">
+        {q2q3.map((q) => (
           <Card key={q.id} title={q.title} className="flex flex-col">
             <p className="mb-3 text-sm font-medium text-text">{q.question}</p>
             <ul className="mb-4 list-disc space-y-2 pl-5 text-sm text-text">

@@ -2,6 +2,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import { AppShell } from "@/components/AppShell";
 import { CompareInterWell } from "@/pages/CompareInterWell";
 import { DecisionBriefPrint } from "@/pages/DecisionBriefPrint";
+import { ExecutiveDecisionBriefPage } from "@/pages/ExecutiveDecisionBriefPage";
 import { IntraWellStats } from "@/pages/IntraWellStats";
 import { Methodology } from "@/pages/Methodology";
 import { PortfolioDashboard } from "@/pages/PortfolioDashboard";
@@ -15,6 +16,7 @@ export function App() {
         <Route path="decision-brief/print" element={<DecisionBriefPrint />} />
         <Route element={<AppShell />}>
           <Route index element={<PortfolioDashboard />} />
+          <Route path="executive-summary" element={<ExecutiveDecisionBriefPage />} />
           <Route path="well/:alias" element={<WellDetail />} />
           <Route path="water-risk" element={<WaterRiskExplorer />} />
           <Route path="compare" element={<CompareInterWell />} />

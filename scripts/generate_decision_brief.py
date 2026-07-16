@@ -13,6 +13,12 @@ DATA = ROOT / "site" / "public" / "data"
 EXPORTS = DATA / "exports"
 DOCS = ROOT / "docs"
 
+JENA31_KS_ANALOG = "BIALA20"
+JENA31_CLUSTER_ANALOG = "FROSTILLICUS2"
+JENA31DW1_KS_ANALOG = "FROSTILLICUS2"
+JENA31DW1_CLUSTER_ANALOG = "MCKINLAY23"
+JENA_DUAL_ANALOG = "STIMPEE6"
+
 JENA_ALIASES = {
     "JENA31": {
         "display": "JENA 31",
@@ -107,14 +113,16 @@ def is_owc_proximate(zone: dict) -> bool:
     return owc in ("High", "Elevated") or "owc_high" in flags or "owc_elevated" in flags
 
 
-def burden(zones: list[dict], wso: list[dict]) -> dict:
+def burden(zones: list[dict], wso: list[dict], lateral_m: float | None = None) -> dict:
     open_z = [z for z in zones if is_open_concern(z)]
+    lat = lateral_m if lateral_m and lateral_m > 0 else None
     return {
         "openElevatedHigh": len(open_z),
         "owcProximate": sum(1 for z in open_z if is_owc_proximate(z)),
         "highOpen": sum(1 for z in open_z if z["risk_class"] == "High"),
         "tierA": sum(1 for c in wso if c["tier"] == "A"),
         "tierB": sum(1 for c in wso if c["tier"] == "B"),
+        "concernPer100m": (len(open_z) / lat * 100) if lat else 0,
     }
 
 
@@ -221,6 +229,104 @@ def appendix_shortcomings(interpretations: list[dict]) -> str:
     return "\n\n".join(blocks)
 
 
+def concern_intervals(well: dict) -> int:
+    return well["elevated_risk_count"] + well["high_risk_count"]
+
+
+def portfolio_medians(wells: dict) -> dict:
+    active = [w for w in wells["wells"] if not w.get("data_missing")]
+    pays = sorted(w["pay_pct"] for w in active if w.get("pay_pct") is not None)
+    concerns = sorted(concern_intervals(w) for w in active)
+
+    def median(vals: list[float]) -> float:
+        if not vals:
+            return 0.0
+        mid = len(vals) // 2
+        return vals[mid] if len(vals) % 2 else (vals[mid - 1] + vals[mid]) / 2
+
+    return {"payPct": median(pays), "concernIntervals": median(concerns)}
+
+
+def build_analog_rows(well_by: dict, burdens: dict, water_risk_paths: dict) -> list[dict]:
+    active = [w for w in well_by.values() if not w.get("data_missing")]
+    aliases = [
+        "JENA31",
+        "JENA31DW1",
+        "JENA31_DUAL",
+        JENA31_KS_ANALOG,
+        JENA31_CLUSTER_ANALOG,
+        JENA31DW1_KS_ANALOG,
+        JENA31DW1_CLUSTER_ANALOG,
+        JENA_DUAL_ANALOG,
+    ]
+    unique = list(dict.fromkeys(aliases))
+    rows = []
+    for alias in unique:
+        w = well_by.get(alias)
+        if not w:
+            continue
+        b = burdens.get(alias, {})
+        pay_sorted = sorted(active, key=lambda x: x.get("pay_pct") or 0, reverse=True)
+        concern_sorted = sorted(active, key=concern_intervals, reverse=True)
+        pay_rank = next(i + 1 for i, x in enumerate(pay_sorted) if x["alias"] == alias)
+        concern_rank = next(i + 1 for i, x in enumerate(concern_sorted) if x["alias"] == alias)
+        rows.append(
+            {
+                "alias": alias,
+                "display": w["display"],
+                "role": "focus" if alias in ("JENA31", "JENA31DW1", "JENA31_DUAL") else "analog",
+                "payPct": w.get("pay_pct"),
+                "payRank": pay_rank,
+                "payRankTotal": len(active),
+                "concernIntervals": concern_intervals(w),
+                "concernRank": concern_rank,
+                "concernRankTotal": len(active),
+                "openConcernZones": b.get("openElevatedHigh", 0),
+                "owcProximate": b.get("owcProximate", 0),
+                "concernPer100m": b.get("concernPer100m", 0),
+                "clusterId": w.get("cluster_id"),
+            }
+        )
+    return rows
+
+
+def analog_table_md(rows: list[dict]) -> str:
+    lines = [
+        "| Well | Role | Pay % | Pay rank | Concern | Concern rank | Open /100 m | OWC-prox | Cluster |",
+        "|------|------|------:|---------:|--------:|-------------:|------------:|---------:|--------:|",
+    ]
+    for r in rows:
+        pay = f"{r['payPct']:.1f}" if r["payPct"] is not None else "—"
+        lines.append(
+            f"| {r['display']} | {r['role']} | {pay} | #{r['payRank']}/{r['payRankTotal']} | "
+            f"{r['concernIntervals']} | #{r['concernRank']}/{r['concernRankTotal']} | "
+            f"{r['concernPer100m']:.2f} | {r['owcProximate']} | {r['clusterId'] or '—'} |"
+        )
+    return "\n".join(lines)
+
+
+def build_executive_paragraph(stats: dict) -> str:
+    b31 = stats["burden"]["JENA31"]
+    bdw = stats["burden"]["JENA31DW1"]
+    bd = stats["burden"]["JENA31_DUAL"]
+    pay = stats["pay"]
+    stim = next(r for r in stats["analogRows"] if r["alias"] == JENA_DUAL_ANALOG)
+    frost = next(r for r in stats["analogRows"] if r["alias"] == JENA31_CLUSTER_ANALOG)
+    cos_dual = cluster_cosine(stats["clusters"], "JENA31_DUAL", JENA_DUAL_ANALOG)
+    return (
+        f"On static evidence, drilling Jena was geologically acceptable: pay is top-quartile "
+        f"({pay['JENA31']:.1f}% / {pay['JENA31DW1']:.1f}% / {pay['JENA31_DUAL']:.1f}% merged), "
+        f"and the commingled asset most resembles {stim['display']} — similar pay, cluster 1, cosine {cos_dual:.3f}. "
+        f"JENA 31DW1 alone looks like a well we would happily drill again (concern density {bdw['concernPer100m']:.2f}/100 m). "
+        f"JENA 31 alone is acceptable only if the pre-drill thesis explicitly accepted OWC-proximate elevated concern "
+        f"({b31['owcProximate']}/{b31['openElevatedHigh']} open zones OWC-proximate) in exchange for exceptional pay — "
+        f"the pattern is heavy but far below {frost['display']} ({frost['concernPer100m']:.2f}/100 m). "
+        f"The dual-lateral program is acceptable if stakeholders understood commingling would merge a clean bore with a concern-heavy one — "
+        f"merged density {bd['concernPer100m']:.2f}/100 m vs {stim['concernPer100m']:.2f} for {stim['display']}. "
+        f"BIALA 20 (KS #2) is the preferred JENA 31 property analog — not HOBBES5 (low pay, cluster 3)."
+    )
+
+
 def build_markdown(stats: dict) -> str:
     b31 = stats["burden"]["JENA31"]
     bd1 = stats["burden"]["JENA31DW1"]
@@ -228,16 +334,59 @@ def build_markdown(stats: dict) -> str:
     w31 = stats["wso"]["JENA31"][:5]
     wd1 = stats["wso"]["JENA31DW1"][:5]
     gen = stats["generated"]
+    med = stats["medians"]
+    stim_row = next(r for r in stats["analogRows"] if r["alias"] == JENA_DUAL_ANALOG)
+    dual_vs_stim = bd["concernPer100m"] / max(stim_row["concernPer100m"], 0.01)
+    exec_para = stats["executiveParagraph"]
 
     return f"""# JENA 31 Dual Lateral — Executive Decision Brief
 
 **Generated:** {gen}  
 **Audience:** Stakeholder review (advisory — cuttings & log evidence only)  
-**Site:** Portfolio → Decision Brief panel · Print view at `/#/decision-brief/print`
+**Site:** `/#/executive-summary` · Print view at `/#/decision-brief/print`
 
 ---
 
-## Slide 1 — WSO shortlist (where to act)
+## Slide 1 — Drill acceptability (was drilling Jena acceptable?)
+
+**Headline:** Top-quartile pay supports the drill decision; acceptability is lateral-dependent and asymmetric.
+
+**Bullets:**
+- Portfolio median: **{med['payPct']:.1f}%** pay · **{med['concernIntervals']:.0f}** concern intervals
+- **JENA 31** — pay **{stats['pay']['JENA31']:.1f}%** (#3/24); **{b31['openElevatedHigh']}** open zones (**{b31['concernPer100m']:.2f}/100 m**; {b31['owcProximate']} OWC-proximate). vs **BIALA 20** (KS #2): lower pay, much lower density. vs **FROSTILLICUS 2** (cluster lead): proves high pay can coexist with extreme flags — Jena 31 is far lighter.
+- **JENA 31DW1** — pay **{stats['pay']['JENA31DW1']:.1f}%**; **{bd1['openElevatedHigh']}** open zones (**{bd1['concernPer100m']:.2f}/100 m**). Strongest drill case — resembles **STIMPEE 6** density more than Frostillicus.
+- **JENA 31 Dual** — pay **{stats['pay']['JENA31_DUAL']:.1f}%**; **{bd['openElevatedHigh']}** open zones (**{bd['concernPer100m']:.2f}/100 m**). vs **STIMPEE 6** (cos {stats['clusterTop']['JENA31_DUAL'][1]:.3f}): best whole-asset analog but ~{dual_vs_stim:.1f}× more open concern per metre.
+
+**Analog comparison table:**
+
+{analog_table_md(stats['analogRows'])}
+
+**Speaker note:** HOBBES5 is KS #1 for JENA 31 but a poor drill analog (28.8% pay, cluster 3) — **BIALA 20** used instead. Drill acceptability ≠ WSO planning.
+
+**Caveats (on slide):**
+- Cuttings-based advisory only — no production or rate data
+- Statistical similarity does not guarantee outcomes
+
+---
+
+## Slide 2 — Lateral similarity (share intervention logic?)
+
+**Headline:** Laterals share cluster ID but diverge on Jaccard, KS, and cosine — do not share intervention logic blindly.
+
+**Bullets:**
+- Feature Jaccard (JENA 31 ↔ 31DW1): **{stats['jaccardFeature']:.3f}** · depth-binned: **{stats['jaccardDepthBinned']:.3f}**
+- KS mean p between laterals: **{stats['ksMeanPBetweenLaterals']:.3f}** · cluster cosine: **{stats['clusterCosineBetweenLaterals']:.3f}**
+- JENA 31 ↔ **BIALA 20** (KS #2) · 31DW1 ↔ **FROSTILLICUS 2** (KS) / **MCKINLAY 23** (cluster) · Dual ↔ **STIMPEE 6**
+
+**Speaker note:** Jaccard on `/compare`; executive compare uses cluster cosine.
+
+**Caveats:**
+- Read Jaccard (binary features) and KS (continuous properties) together
+- Negative cluster cosine between laterals means aggregate vectors point apart
+
+---
+
+## Slide 3 — WSO shortlist (where to act)
 
 **Headline:** JENA 31 carries most open water-risk windows; 31DW1 has fewer but deep Tier A clusters.
 
@@ -247,47 +396,17 @@ def build_markdown(stats: dict) -> str:
 - Top JENA 31 windows: {format_top_wso(stats['wso']['JENA31'])}
 - Top 31DW1 windows: {format_top_wso(stats['wso']['JENA31DW1'])}
 
-**Speaker note:** Tier A/B ranks OWC proximity, ZOI, and WRCI on **open** intervals. Isolated zones are deprioritised. No production or rate data informs this list.
+**Speaker note:** Tier A/B ranks OWC proximity, ZOI, and WRCI on open intervals. Commingled totals mask per-lateral intervention needs.
 
-**Caveats (on slide):**
-- Cuttings-based advisory only
+**Caveats:**
 - Confirm with completion geometry & field logs before WSO
-
----
-
-## Slide 2 — Lateral similarity (share intervention logic?)
-
-**Headline:** Laterals share cluster ID but diverge on feature Jaccard, KS, and cosine signature.
-
-**Bullets:**
-- Feature Jaccard (JENA 31 ↔ 31DW1): **{stats['jaccardFeature']:.3f}** · depth-binned: **{stats['jaccardDepthBinned']:.3f}**
-- KS mean p (distributions): **{stats['ksMeanPBetweenLaterals']:.3f}** · cluster cosine: **{stats['clusterCosineBetweenLaterals']:.3f}**
-- Top KS analog — JENA 31: **{stats['ksTop']['JENA31'][0]}** (mean p={stats['ksTop']['JENA31'][1]:.3f})
-- Top KS analog — 31DW1: **{stats['ksTop']['JENA31DW1'][0]}** (mean p={stats['ksTop']['JENA31DW1'][1]:.3f})
-
-**Speaker note:** Statistical similarity ≠ interchangeable WSO targets. Jaccard is on `/compare`; executive compare uses cluster cosine.
-
-**Caveats:**
-- Read Jaccard (binary features) and KS (continuous properties) together
-- Negative cluster cosine means aggregate petrophysical vectors point apart
-
----
-
-## Slide 3 — Commingled dual-lateral asset
-
-**Headline:** Merged view shows **{bd['openElevatedHigh']}** open concern windows — masking per-lateral concentration.
-
-**Bullets:**
-- JENA 31 Dual Lateral: **{bd['openElevatedHigh']}** open Elevated/High · **{bd['owcProximate']}** OWC-proximate · **{bd['highOpen']}** High
-- Pay %: **{stats['pay']['JENA31_DUAL']:.1f}%** merged ({stats['pay']['JENA31']:.1f}% JENA 31 · {stats['pay']['JENA31DW1']:.1f}% 31DW1)
-- Top cluster analog (dual): **{stats['clusterTop']['JENA31_DUAL'][0]}** (cos={stats['clusterTop']['JENA31_DUAL'][1]:.3f})
-- Top KS analog (dual): **{stats['ksTop']['JENA31_DUAL'][0]}** (mean p={stats['ksTop']['JENA31_DUAL'][1]:.3f})
-
-**Speaker note:** Single wellhead / commingled production limits attribution. Virtual `JENA31_DUAL` is for analysis — not a routable well page.
-
-**Caveats:**
 - No water-cut or rate data
-- Per-lateral detail in Well Detail & Water-Risk Explorer
+
+---
+
+## Executive answer (markdown only — not shown on site)
+
+{exec_para}
 
 ---
 
@@ -317,6 +436,7 @@ def build_markdown(stats: dict) -> str:
 
 | Asset | Path |
 |-------|------|
+| Executive Summary page | `/#/executive-summary` |
 | Water risk | `site/public/data/water_risk/JENA31*.json` |
 | WSO export | `site/public/data/exports/wso_candidates_jena.json` |
 | Print context | `site/public/data/exports/decision_brief_context.json` |
@@ -340,11 +460,34 @@ def main() -> None:
         wr = load_json(DATA / f"water_risk/{alias}.json")
         ranked = rank_wso(alias, meta["display"], wr["flagged_zones"])
         wso[alias] = ranked
-        burdens[alias] = burden(wr["flagged_zones"], ranked)
+        lat = well_by[alias].get("lateral")
+        burdens[alias] = burden(wr["flagged_zones"], ranked, lat)
 
     dual_wr = load_json(DATA / "water_risk/JENA31_DUAL.json")
     dual_wso = wso["JENA31"] + wso["JENA31DW1"]
-    burdens["JENA31_DUAL"] = burden(dual_wr["flagged_zones"], dual_wso)
+    burdens["JENA31_DUAL"] = burden(
+        dual_wr["flagged_zones"],
+        dual_wso,
+        well_by["JENA31_DUAL"].get("lateral"),
+    )
+
+    # Analog well burdens for comparison table
+    for analog_alias in (
+        JENA31_KS_ANALOG,
+        JENA31_CLUSTER_ANALOG,
+        JENA31DW1_KS_ANALOG,
+        JENA31DW1_CLUSTER_ANALOG,
+        JENA_DUAL_ANALOG,
+    ):
+        if analog_alias in burdens:
+            continue
+        wr = load_json(DATA / f"water_risk/{analog_alias}.json")
+        ranked = rank_wso(analog_alias, well_by[analog_alias]["display"], wr["flagged_zones"])
+        burdens[analog_alias] = burden(
+            wr["flagged_zones"],
+            ranked,
+            well_by[analog_alias].get("lateral"),
+        )
 
     jf, jd = jaccard_pair(jaccard, "JENA31", "JENA31DW1")
     ks_between = ks_mean_p(ks["JENA31"]["vs_analogs"].get("JENA31DW1"))
@@ -372,6 +515,8 @@ def main() -> None:
         )
 
     generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    analog_rows = build_analog_rows(well_by, burdens, {})
+    medians = portfolio_medians(wells)
     stats = {
         "generated": generated,
         "burden": burdens,
@@ -388,7 +533,11 @@ def main() -> None:
             "JENA31_DUAL": well_by["JENA31_DUAL"]["pay_pct"],
         },
         "interpretations": interpretations,
+        "analogRows": analog_rows,
+        "medians": medians,
+        "clusters": clusters,
     }
+    stats["executiveParagraph"] = build_executive_paragraph(stats)
 
     EXPORTS.mkdir(parents=True, exist_ok=True)
     (EXPORTS / "wso_candidates_jena.json").write_text(
