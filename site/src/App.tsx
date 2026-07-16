@@ -1,6 +1,7 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { AppShell } from "@/components/AppShell";
 import { CompareInterWell } from "@/pages/CompareInterWell";
+import { DecisionBriefPrint } from "@/pages/DecisionBriefPrint";
 import { IntraWellStats } from "@/pages/IntraWellStats";
 import { Methodology } from "@/pages/Methodology";
 import { PortfolioDashboard } from "@/pages/PortfolioDashboard";
@@ -11,6 +12,7 @@ export function App() {
   return (
     <HashRouter>
       <Routes>
+        <Route path="decision-brief/print" element={<DecisionBriefPrint />} />
         <Route element={<AppShell />}>
           <Route index element={<PortfolioDashboard />} />
           <Route path="well/:alias" element={<WellDetail />} />
