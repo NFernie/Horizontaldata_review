@@ -1,0 +1,1621 @@
+{
+  "generated": "2026-07-15 05:51 UTC",
+  "laterals": [
+    {
+      "alias": "JENA31",
+      "display": "JENA 31",
+      "candidates": [
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 94.0,
+          "depth": 2500,
+          "top": 2497.5,
+          "bot": 2502.5,
+          "mdSpan": "2498\u20132502 m",
+          "mTVDss": -1194.2114310649076,
+          "WRCI": 51.87,
+          "RQI": 0.7967745804519035,
+          "risk_class": "High",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 1
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 84.7,
+          "depth": 2455,
+          "top": 2452.5,
+          "bot": 2457.5,
+          "mdSpan": "2452\u20132458 m",
+          "mTVDss": -1194.1816423141593,
+          "WRCI": 30.87,
+          "RQI": 0.7716666666666667,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "ZOI",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 2
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 83.3,
+          "depth": 2495,
+          "top": 2492.5,
+          "bot": 2497.5,
+          "mdSpan": "2492\u20132498 m",
+          "mTVDss": -1194.3074213023747,
+          "WRCI": 49.32,
+          "RQI": 0.7329551376894895,
+          "risk_class": "Elevated",
+          "flags": [
+            "ZOI",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 3
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 71.1,
+          "depth": 2465,
+          "top": 2462.5,
+          "bot": 2467.5,
+          "mdSpan": "2462\u20132468 m",
+          "mTVDss": -1194.353548840708,
+          "WRCI": 32.26,
+          "RQI": 0.8065383005991559,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 4
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 71.1,
+          "depth": 2470,
+          "top": 2467.5,
+          "bot": 2472.5,
+          "mdSpan": "2468\u20132472 m",
+          "mTVDss": -1194.4395021039822,
+          "WRCI": 32.4,
+          "RQI": 0.8100824896773551,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 5
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 71.0,
+          "depth": 2450,
+          "top": 2447.5,
+          "bot": 2452.5,
+          "mdSpan": "2448\u20132452 m",
+          "mTVDss": -1194.0917136029802,
+          "WRCI": 31.87,
+          "RQI": 0.7966666666666667,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 6
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 70.8,
+          "depth": 2345,
+          "top": 2342.5,
+          "bot": 2347.5,
+          "mdSpan": "2342\u20132348 m",
+          "mTVDss": -1194.1522408375,
+          "WRCI": 31.1,
+          "RQI": 0.7776190476190477,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 7
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 70.8,
+          "depth": 2350,
+          "top": 2347.5,
+          "bot": 2352.5,
+          "mdSpan": "2348\u20132352 m",
+          "mTVDss": -1194.1400236499999,
+          "WRCI": 31.1,
+          "RQI": 0.7776190476190477,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 8
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 70.6,
+          "depth": 2360,
+          "top": 2357.5,
+          "bot": 2362.5,
+          "mdSpan": "2358\u20132362 m",
+          "mTVDss": -1194.0874555592416,
+          "WRCI": 30.33,
+          "RQI": 0.7583333333333333,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 9
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 70.6,
+          "depth": 2460,
+          "top": 2457.5,
+          "bot": 2462.5,
+          "mdSpan": "2458\u20132462 m",
+          "mTVDss": -1194.2675955774337,
+          "WRCI": 30.49,
+          "RQI": 0.7622504053941018,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 10
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 70.3,
+          "depth": 2355,
+          "top": 2352.5,
+          "bot": 2357.5,
+          "mdSpan": "2352\u20132358 m",
+          "mTVDss": -1194.1278064624998,
+          "WRCI": 29.3,
+          "RQI": 0.7326190476190476,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 11
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 70.3,
+          "depth": 2365,
+          "top": 2362.5,
+          "bot": 2367.5,
+          "mdSpan": "2362\u20132368 m",
+          "mTVDss": -1194.0185171706162,
+          "WRCI": 29.33,
+          "RQI": 0.7333333333333334,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 12
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 69.6,
+          "depth": 2335,
+          "top": 2332.5,
+          "bot": 2337.5,
+          "mdSpan": "2332\u20132338 m",
+          "mTVDss": -1194.1587124949708,
+          "WRCI": 26.5,
+          "RQI": 0.6626190476190477,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 13
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 69.6,
+          "depth": 2340,
+          "top": 2337.5,
+          "bot": 2342.5,
+          "mdSpan": "2338\u20132342 m",
+          "mTVDss": -1194.164458025,
+          "WRCI": 26.5,
+          "RQI": 0.6626190476190477,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 14
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 69.2,
+          "depth": 2475,
+          "top": 2472.5,
+          "bot": 2477.5,
+          "mdSpan": "2472\u20132478 m",
+          "mTVDss": -1194.437397107317,
+          "WRCI": 24.62,
+          "RQI": 0.6153780203684437,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 15
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 68.8,
+          "depth": 2510,
+          "top": 2507.5,
+          "bot": 2512.5,
+          "mdSpan": "2508\u20132512 m",
+          "mTVDss": -1194.0194505899738,
+          "WRCI": 47.16,
+          "RQI": 0.6788819340363341,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 16
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 68.4,
+          "depth": 2505,
+          "top": 2502.5,
+          "bot": 2507.5,
+          "mdSpan": "2502\u20132508 m",
+          "mTVDss": -1194.1154408274406,
+          "WRCI": 45.76,
+          "RQI": 0.6438882778632503,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 17
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 64.6,
+          "depth": 3295,
+          "top": 3292.5,
+          "bot": 3297.5,
+          "mdSpan": "3292\u20133298 m",
+          "mTVDss": -1194.350421845238,
+          "WRCI": 30.33,
+          "RQI": 0.7083409483990656,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 18
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 64.6,
+          "depth": 3300,
+          "top": 3297.5,
+          "bot": 3302.5,
+          "mdSpan": "3298\u20133302 m",
+          "mTVDss": -1194.3547849404763,
+          "WRCI": 30.49,
+          "RQI": 0.7123055609723699,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 19
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 64.3,
+          "depth": 3275,
+          "top": 3272.5,
+          "bot": 3277.5,
+          "mdSpan": "3272\u20133278 m",
+          "mTVDss": -1194.0485176510526,
+          "WRCI": 29.37,
+          "RQI": 0.7341544895038091,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 20
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 64.2,
+          "depth": 3280,
+          "top": 3277.5,
+          "bot": 3282.5,
+          "mdSpan": "3278\u20133282 m",
+          "mTVDss": -1194.1370879142105,
+          "WRCI": 28.73,
+          "RQI": 0.7183652354331547,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 21
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 63.7,
+          "depth": 3285,
+          "top": 3282.5,
+          "bot": 3287.5,
+          "mdSpan": "3282\u20133288 m",
+          "mTVDss": -1194.2256581773684,
+          "WRCI": 26.66,
+          "RQI": 0.6665979967513794,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 22
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 63.6,
+          "depth": 3290,
+          "top": 3287.5,
+          "bot": 3292.5,
+          "mdSpan": "3288\u20133292 m",
+          "mTVDss": -1194.3142284405262,
+          "WRCI": 26.49,
+          "RQI": 0.6623658438911236,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 23
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 63.4,
+          "depth": 3305,
+          "top": 3302.5,
+          "bot": 3307.5,
+          "mdSpan": "3302\u20133308 m",
+          "mTVDss": -1194.3591480357143,
+          "WRCI": 25.59,
+          "RQI": 0.6397095708458013,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 24
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 63.3,
+          "depth": 3320,
+          "top": 3317.5,
+          "bot": 3322.5,
+          "mdSpan": "3318\u20133322 m",
+          "mTVDss": -1194.3062698935066,
+          "WRCI": 25.16,
+          "RQI": 0.6291087039862551,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 25
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "A",
+          "score": 63.0,
+          "depth": 3310,
+          "top": 3307.5,
+          "bot": 3312.5,
+          "mdSpan": "3308\u20133312 m",
+          "mTVDss": -1194.3635111309525,
+          "WRCI": 24.01,
+          "RQI": 0.6002839003423651,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 26
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 61.0,
+          "depth": 2600,
+          "top": 2597.5,
+          "bot": 2602.5,
+          "mdSpan": "2598\u20132602 m",
+          "mTVDss": -1193.147100035343,
+          "WRCI": 36.09,
+          "RQI": 0.6500346771536109,
+          "risk_class": "Elevated",
+          "flags": [
+            "lowres",
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 27
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 56.0,
+          "depth": 2445,
+          "top": 2442.5,
+          "bot": 2447.5,
+          "mdSpan": "2442\u20132448 m",
+          "mTVDss": -1193.9983434592868,
+          "WRCI": 31.87,
+          "RQI": 0.7966666666666667,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 28
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.8,
+          "depth": 2560,
+          "top": 2557.5,
+          "bot": 2562.5,
+          "mdSpan": "2558\u20132562 m",
+          "mTVDss": -1193.4694489531332,
+          "WRCI": 39.18,
+          "RQI": 0.7295042926463209,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 29
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.7,
+          "depth": 2555,
+          "top": 2552.5,
+          "bot": 2557.5,
+          "mdSpan": "2552\u20132558 m",
+          "mTVDss": -1193.50828202317,
+          "WRCI": 38.64,
+          "RQI": 0.7160102878567322,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 30
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.6,
+          "depth": 2575,
+          "top": 2572.5,
+          "bot": 2577.5,
+          "mdSpan": "2572\u20132578 m",
+          "mTVDss": -1193.3549861579497,
+          "WRCI": 38.34,
+          "RQI": 0.7084705221627836,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 31
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.5,
+          "depth": 2580,
+          "top": 2577.5,
+          "bot": 2582.5,
+          "mdSpan": "2578\u20132582 m",
+          "mTVDss": -1193.317461837866,
+          "WRCI": 38.13,
+          "RQI": 0.7031369367279768,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 32
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.4,
+          "depth": 2545,
+          "top": 2542.5,
+          "bot": 2547.5,
+          "mdSpan": "2542\u20132548 m",
+          "mTVDss": -1193.5994790202526,
+          "WRCI": 37.55,
+          "RQI": 0.6888130026267962,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 33
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.4,
+          "depth": 2550,
+          "top": 2547.5,
+          "bot": 2552.5,
+          "mdSpan": "2548\u20132552 m",
+          "mTVDss": -1193.547115093207,
+          "WRCI": 37.55,
+          "RQI": 0.6886890578647142,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 34
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.4,
+          "depth": 2565,
+          "top": 2562.5,
+          "bot": 2567.5,
+          "mdSpan": "2562\u20132568 m",
+          "mTVDss": -1193.4306158830964,
+          "WRCI": 37.73,
+          "RQI": 0.693270913515318,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 35
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.4,
+          "depth": 2570,
+          "top": 2567.5,
+          "bot": 2572.5,
+          "mdSpan": "2568\u20132572 m",
+          "mTVDss": -1193.3925104780335,
+          "WRCI": 37.4,
+          "RQI": 0.6850268396782115,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 36
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.4,
+          "depth": 2585,
+          "top": 2582.5,
+          "bot": 2587.5,
+          "mdSpan": "2582\u20132588 m",
+          "mTVDss": -1193.2799375177824,
+          "WRCI": 37.72,
+          "RQI": 0.6931226551842116,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 37
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.4,
+          "depth": 2590,
+          "top": 2587.5,
+          "bot": 2592.5,
+          "mdSpan": "2588\u20132592 m",
+          "mTVDss": -1193.2369836112266,
+          "WRCI": 37.44,
+          "RQI": 0.6860670524485608,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 38
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.2,
+          "depth": 2525,
+          "top": 2522.5,
+          "bot": 2527.5,
+          "mdSpan": "2522\u20132528 m",
+          "mTVDss": -1193.8385936967386,
+          "WRCI": 36.84,
+          "RQI": 0.6709053352967058,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 39
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.2,
+          "depth": 2535,
+          "top": 2532.5,
+          "bot": 2537.5,
+          "mdSpan": "2532\u20132538 m",
+          "mTVDss": -1193.7190363584955,
+          "WRCI": 36.65,
+          "RQI": 0.6663185949027206,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 40
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.1,
+          "depth": 2520,
+          "top": 2517.5,
+          "bot": 2522.5,
+          "mdSpan": "2518\u20132522 m",
+          "mTVDss": -1193.89837236586,
+          "WRCI": 36.53,
+          "RQI": 0.6633720933148423,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 41
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.1,
+          "depth": 2530,
+          "top": 2527.5,
+          "bot": 2532.5,
+          "mdSpan": "2528\u20132532 m",
+          "mTVDss": -1193.7788150276172,
+          "WRCI": 36.33,
+          "RQI": 0.6581898364721892,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 42
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 51.1,
+          "depth": 2540,
+          "top": 2537.5,
+          "bot": 2542.5,
+          "mdSpan": "2538\u20132542 m",
+          "mTVDss": -1193.659257689374,
+          "WRCI": 36.42,
+          "RQI": 0.6604731474558979,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 43
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 50.9,
+          "depth": 2595,
+          "top": 2592.5,
+          "bot": 2597.5,
+          "mdSpan": "2592\u20132598 m",
+          "mTVDss": -1193.1920418232849,
+          "WRCI": 35.58,
+          "RQI": 0.6395775072473572,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 44
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 50.8,
+          "depth": 2515,
+          "top": 2512.5,
+          "bot": 2517.5,
+          "mdSpan": "2512\u20132518 m",
+          "mTVDss": -1193.9581510349817,
+          "WRCI": 35.29,
+          "RQI": 0.6321420409184978,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 45
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 50.5,
+          "depth": 2610,
+          "top": 2607.5,
+          "bot": 2612.5,
+          "mdSpan": "2608\u20132612 m",
+          "mTVDss": -1193.0533565563674,
+          "WRCI": 34.17,
+          "RQI": 0.6042784829079709,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 46
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 49.7,
+          "depth": 3265,
+          "top": 3262.5,
+          "bot": 3267.5,
+          "mdSpan": "3262\u20133268 m",
+          "mTVDss": -1193.7695011471963,
+          "WRCI": 30.9,
+          "RQI": 0.7726120194407761,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 47
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 49.4,
+          "depth": 2370,
+          "top": 2367.5,
+          "bot": 2372.5,
+          "mdSpan": "2368\u20132372 m",
+          "mTVDss": -1193.9495787819906,
+          "WRCI": 29.43,
+          "RQI": 0.7356800945054531,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 48
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 49.4,
+          "depth": 2440,
+          "top": 2437.5,
+          "bot": 2442.5,
+          "mdSpan": "2438\u20132442 m",
+          "mTVDss": -1193.9049733155932,
+          "WRCI": 29.51,
+          "RQI": 0.7376582667432534,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 49
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 49.3,
+          "depth": 3270,
+          "top": 3267.5,
+          "bot": 3272.5,
+          "mdSpan": "3268\u20133272 m",
+          "mTVDss": -1193.9226315989097,
+          "WRCI": 29.2,
+          "RQI": 0.7300145067361291,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 50
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 49.2,
+          "depth": 2385,
+          "top": 2382.5,
+          "bot": 2387.5,
+          "mdSpan": "2382\u20132388 m",
+          "mTVDss": -1193.7094275370266,
+          "WRCI": 28.82,
+          "RQI": 0.7203984255934274,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 51
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 49.1,
+          "depth": 2375,
+          "top": 2372.5,
+          "bot": 2377.5,
+          "mdSpan": "2372\u20132378 m",
+          "mTVDss": -1193.880640393365,
+          "WRCI": 28.52,
+          "RQI": 0.7130153056784467,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 52
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 49.1,
+          "depth": 2380,
+          "top": 2377.5,
+          "bot": 2382.5,
+          "mdSpan": "2378\u20132382 m",
+          "mTVDss": -1193.7979984810627,
+          "WRCI": 28.58,
+          "RQI": 0.7144479913796827,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 53
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 49.0,
+          "depth": 2390,
+          "top": 2387.5,
+          "bot": 2392.5,
+          "mdSpan": "2388\u20132392 m",
+          "mTVDss": -1193.6208565929903,
+          "WRCI": 27.87,
+          "RQI": 0.6968650820346577,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 54
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 49.0,
+          "depth": 3260,
+          "top": 3257.5,
+          "bot": 3262.5,
+          "mdSpan": "3258\u20133262 m",
+          "mTVDss": -1193.6163706954828,
+          "WRCI": 27.84,
+          "RQI": 0.696021413808381,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 55
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 48.5,
+          "depth": 2435,
+          "top": 2432.5,
+          "bot": 2437.5,
+          "mdSpan": "2432\u20132438 m",
+          "mTVDss": -1193.8116031718998,
+          "WRCI": 25.85,
+          "RQI": 0.6462107670742508,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 56
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 48.5,
+          "depth": 3250,
+          "top": 3247.5,
+          "bot": 3252.5,
+          "mdSpan": "3248\u20133252 m",
+          "mTVDss": -1193.310109792056,
+          "WRCI": 25.84,
+          "RQI": 0.645952380952381,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 57
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 48.2,
+          "depth": 3245,
+          "top": 3242.5,
+          "bot": 3247.5,
+          "mdSpan": "3242\u20133248 m",
+          "mTVDss": -1193.1569793403426,
+          "WRCI": 24.84,
+          "RQI": 0.620952380952381,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 58
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 48.1,
+          "depth": 2430,
+          "top": 2427.5,
+          "bot": 2432.5,
+          "mdSpan": "2428\u20132432 m",
+          "mTVDss": -1193.7324840316974,
+          "WRCI": 24.38,
+          "RQI": 0.6094901832858562,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 59
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 48.1,
+          "depth": 3255,
+          "top": 3252.5,
+          "bot": 3257.5,
+          "mdSpan": "3252\u20133258 m",
+          "mTVDss": -1193.4632402437694,
+          "WRCI": 24.29,
+          "RQI": 0.6071951629228693,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 60
+        },
+        {
+          "alias": "JENA31",
+          "display": "JENA 31",
+          "tier": "B",
+          "score": 34.9,
+          "depth": 2885,
+          "top": 2882.5,
+          "bot": 2887.5,
+          "mdSpan": "2882\u20132888 m",
+          "mTVDss": -1191.1982120063292,
+          "WRCI": 27.64,
+          "RQI": 0.6910945600560277,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 61
+        }
+      ]
+    },
+    {
+      "alias": "JENA31DW1",
+      "display": "JENA 31DW1",
+      "candidates": [
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "A",
+          "score": 92.4,
+          "depth": 3600.0,
+          "top": 3595.0,
+          "bot": 3605.0,
+          "mdSpan": "3595\u20133605 m",
+          "mTVDss": -1194.0803651803963,
+          "WRCI": 45.62,
+          "RQI": 0.6405971144992932,
+          "risk_class": "High",
+          "flags": [
+            "low_GR",
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 1
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "A",
+          "score": 68.1,
+          "depth": 3610.0,
+          "top": 3605.0,
+          "bot": 3612.5,
+          "mdSpan": "3605\u20133612 m",
+          "mTVDss": -1194.3124897893638,
+          "WRCI": 44.58,
+          "RQI": 0.614569805703834,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_high"
+          ],
+          "isolated": false,
+          "owc_near": "High",
+          "rank": 2
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 57.2,
+          "depth": 3580.0,
+          "top": 3575.0,
+          "bot": 3585.0,
+          "mdSpan": "3575\u20133585 m",
+          "mTVDss": -1193.272371340314,
+          "WRCI": 36.84,
+          "RQI": 0.670941249550397,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 3
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 56.8,
+          "depth": 3590.0,
+          "top": 3585.0,
+          "bot": 3595.0,
+          "mdSpan": "3585\u20133595 m",
+          "mTVDss": -1193.6931592984292,
+          "WRCI": 35.37,
+          "RQI": 0.6343021356354415,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 4
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 51.5,
+          "depth": 2170.0,
+          "top": 2165.0,
+          "bot": 2175.0,
+          "mdSpan": "2165\u20132175 m",
+          "mTVDss": -1192.1920208514855,
+          "WRCI": 38.03,
+          "RQI": 0.8508333333333333,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "ZOI"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 5
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 51.3,
+          "depth": 2610.0,
+          "top": 2607.5,
+          "bot": 2612.5,
+          "mdSpan": "2608\u20132612 m",
+          "mTVDss": -1193.1874709082472,
+          "WRCI": 37.2,
+          "RQI": 0.6799246695432938,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 6
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 50.6,
+          "depth": 2140.0,
+          "top": 2135.0,
+          "bot": 2145.0,
+          "mdSpan": "2135\u20132145 m",
+          "mTVDss": -1193.1700510766987,
+          "WRCI": 34.4,
+          "RQI": 0.6099240906642492,
+          "risk_class": "Elevated",
+          "flags": [
+            "owc_elevated"
+          ],
+          "isolated": false,
+          "owc_near": "Elevated",
+          "rank": 7
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 48.6,
+          "depth": 2210.0,
+          "top": 2205.0,
+          "bot": 2212.5,
+          "mdSpan": "2205\u20132212 m",
+          "mTVDss": -1190.9230041763453,
+          "WRCI": 26.53,
+          "RQI": 0.6133333333333334,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "ZOI"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 8
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 48.3,
+          "depth": 2215.0,
+          "top": 2212.5,
+          "bot": 2217.5,
+          "mdSpan": "2212\u20132218 m",
+          "mTVDss": -1190.7445499941396,
+          "WRCI": 25.01,
+          "RQI": 0.6253357173837408,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR",
+            "ZOI"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 9
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 36.5,
+          "depth": 2180.0,
+          "top": 2175.0,
+          "bot": 2185.0,
+          "mdSpan": "2175\u20132185 m",
+          "mTVDss": -1191.8915136391258,
+          "WRCI": 34.03,
+          "RQI": 0.7508333333333334,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 10
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 36.5,
+          "depth": 2190.0,
+          "top": 2185.0,
+          "bot": 2195.0,
+          "mdSpan": "2185\u20132195 m",
+          "mTVDss": -1191.582663878901,
+          "WRCI": 34.03,
+          "RQI": 0.7508333333333334,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 11
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 36.4,
+          "depth": 2760.0,
+          "top": 2755.0,
+          "bot": 2765.0,
+          "mdSpan": "2755\u20132765 m",
+          "mTVDss": -1192.9031303020517,
+          "WRCI": 33.78,
+          "RQI": 0.8445894863647797,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 12
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 35.5,
+          "depth": 2200.0,
+          "top": 2195.0,
+          "bot": 2205.0,
+          "mdSpan": "2195\u20132205 m",
+          "mTVDss": -1191.261692492769,
+          "WRCI": 29.83,
+          "RQI": 0.6458333333333334,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 13
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 34.8,
+          "depth": 3340.0,
+          "top": 3335.0,
+          "bot": 3345.0,
+          "mdSpan": "3335\u20133345 m",
+          "mTVDss": -1192.3468528214178,
+          "WRCI": 27.01,
+          "RQI": 0.6753315649015044,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 14
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 34.7,
+          "depth": 2460.0,
+          "top": 2455.0,
+          "bot": 2465.0,
+          "mdSpan": "2455\u20132465 m",
+          "mTVDss": -1192.8775723565618,
+          "WRCI": 26.91,
+          "RQI": 0.6226721804933404,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 15
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 34.6,
+          "depth": 2750.0,
+          "top": 2745.0,
+          "bot": 2755.0,
+          "mdSpan": "2745\u20132755 m",
+          "mTVDss": -1192.979916998195,
+          "WRCI": 26.44,
+          "RQI": 0.6608836851872382,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 16
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 34.5,
+          "depth": 3350.0,
+          "top": 3345.0,
+          "bot": 3355.0,
+          "mdSpan": "3345\u20133355 m",
+          "mTVDss": -1192.0675878671598,
+          "WRCI": 26.07,
+          "RQI": 0.6517810646354841,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 17
+        },
+        {
+          "alias": "JENA31DW1",
+          "display": "JENA 31DW1",
+          "tier": "B",
+          "score": 34.4,
+          "depth": 3330.0,
+          "top": 3325.0,
+          "bot": 3335.0,
+          "mdSpan": "3325\u20133335 m",
+          "mTVDss": -1192.6231324585694,
+          "WRCI": 25.76,
+          "RQI": 0.6439022063345791,
+          "risk_class": "Elevated",
+          "flags": [
+            "low_GR"
+          ],
+          "isolated": false,
+          "owc_near": "Low",
+          "rank": 18
+        }
+      ]
+    }
+  ]
+}

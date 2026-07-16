@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { ComparisonPanel } from "@/components/executive/ComparisonPanel";
+import { DecisionBriefPanel } from "@/components/executive/DecisionBriefPanel";
 import { DistributionHistogramPanel } from "@/components/executive/DistributionHistogramPanel";
 import { DualLateralPanel } from "@/components/executive/DualLateralPanel";
 import { PortfolioElevatedStrip } from "@/components/executive/PortfolioElevatedStrip";
@@ -14,7 +15,10 @@ import {
 } from "@/hooks/useWellSelection";
 import { pageStateKey, usePersistedState } from "@/hooks/usePageState";
 import { fetchJson } from "@/lib/utils";
-import type { ClustersPayload } from "@/types/stats";
+import { buildDecisionBrief, type DecisionBriefPayload } from "@/lib/decisionBrief";
+import type { ClustersPayload, JaccardPayload, KsPayload } from "@/types/stats";
+import type { WaterRiskPayload } from "@/types/waterRisk";
+import type { WellsPayload } from "@/types/wells";
 import type { WellRecord } from "@/types/wells";
 
 interface ExecutiveSummaryProps {
@@ -28,6 +32,7 @@ interface PanelSelection {
 
 export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
   const [clusters, setClusters] = useState<ClustersPayload | null>(null);
+  const [decisionBrief, setDecisionBrief] = useState<DecisionBriefPayload | null>(null);
   const [panelA, setPanelA] = useState<PanelSelection>({ focus: "JENA31", compare: "" });
   const [panelB, setPanelB] = useState<PanelSelection>({ focus: "JENA31DW1", compare: "" });
   const [panelCCompare, setPanelCCompare] = useState("");
@@ -41,9 +46,31 @@ export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
   );
 
   useEffect(() => {
-    fetchJson<ClustersPayload>("data/stats/clusters.json")
-      .then(setClusters)
-      .catch(() => setClusters(null));
+    Promise.all([
+      fetchJson<ClustersPayload>("data/stats/clusters.json"),
+      fetchJson<WellsPayload>("data/wells.json"),
+      fetchJson<WaterRiskPayload>("data/water_risk/JENA31.json"),
+      fetchJson<WaterRiskPayload>("data/water_risk/JENA31DW1.json"),
+      fetchJson<WaterRiskPayload>("data/water_risk/JENA31_DUAL.json"),
+      fetchJson<JaccardPayload>("data/stats/jaccard.json"),
+      fetchJson<KsPayload>("data/stats/ks.json"),
+    ])
+      .then(([clustersPayload, wellsPayload, j31, jdw1, dual, jaccard, ks]) => {
+        setClusters(clustersPayload);
+        setDecisionBrief(
+          buildDecisionBrief({
+            wells: wellsPayload,
+            waterRisk: { JENA31: j31, JENA31DW1: jdw1, JENA31_DUAL: dual },
+            jaccard,
+            ks,
+            clusters: clustersPayload,
+          }),
+        );
+      })
+      .catch(() => {
+        setClusters(null);
+        setDecisionBrief(null);
+      });
   }, []);
 
   const highlightAliases = useMemo(() => {
@@ -171,6 +198,8 @@ export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
       <DistributionHistogramPanel wells={wells} />
 
       <PortfolioElevatedStrip wells={wells} highlightAliases={highlightAliases} />
+
+      {decisionBrief ? <DecisionBriefPanel brief={decisionBrief} /> : null}
 
       <div className="flex flex-col gap-3 sm:flex-row">
         <Link
