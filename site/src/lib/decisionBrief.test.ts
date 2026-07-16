@@ -1,7 +1,12 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
-import { buildDecisionBrief } from "@/lib/decisionBrief";
+import {
+  buildDecisionBrief,
+  buildExecutiveAnswerParagraph,
+  JENA31_KS_ANALOG,
+  JENA_DUAL_ANALOG,
+} from "@/lib/decisionBrief";
 import type { ClustersPayload, JaccardPayload, KsPayload } from "@/types/stats";
 import type { WaterRiskPayload } from "@/types/waterRisk";
 import type { WellsPayload } from "@/types/wells";
@@ -13,7 +18,7 @@ function loadJson<T>(path: string): T {
 }
 
 describe("buildDecisionBrief", () => {
-  it("populates three questions from exported site data", () => {
+  it("populates reframed questions from exported site data", () => {
     const wells = loadJson<WellsPayload>("wells.json");
     const waterRisk = {
       JENA31: loadJson<WaterRiskPayload>("water_risk/JENA31.json"),
@@ -27,11 +32,19 @@ describe("buildDecisionBrief", () => {
     const brief = buildDecisionBrief({ wells, waterRisk, jaccard, ks, clusters });
 
     expect(brief.questions).toHaveLength(3);
+    expect(brief.questions[0]?.id).toBe("q1");
+    expect(brief.questions[0]?.title).toBe("Drill acceptability");
+    expect(brief.questions[2]?.title).toBe("WSO shortlist");
     expect(brief.jaccardFeature).toBeCloseTo(0.5, 2);
     expect(brief.burden.JENA31.openElevatedHigh).toBe(61);
     expect(brief.burden.JENA31DW1.openElevatedHigh).toBe(18);
     expect(brief.wsoByLateral.JENA31[0]?.tier).toBe("A");
-    expect(brief.ksTopAnalog.JENA31?.alias).toBe("HOBBES5");
-    expect(brief.ksTopAnalog.JENA31DW1?.alias).toBe("FROSTILLICUS2");
+    expect(brief.analogTable.some((r) => r.alias === JENA31_KS_ANALOG)).toBe(true);
+    expect(brief.analogTable.find((r) => r.alias === JENA_DUAL_ANALOG)?.role).toBe("analog");
+    expect(brief.lateralAssessments).toHaveLength(3);
+
+    const paragraph = buildExecutiveAnswerParagraph(brief);
+    expect(paragraph).toContain("BIALA 20");
+    expect(paragraph).not.toContain("shown on site");
   });
 });

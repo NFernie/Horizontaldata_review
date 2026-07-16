@@ -13,6 +13,7 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   { to: "/", label: "Portfolio" },
+  { to: "/executive-summary", label: "Executive Summary" },
   { to: "/well/JENA31DW1", label: "Well Detail" },
   { to: "/water-risk", label: "Water Risk" },
   { to: "/compare", label: "Compare" },

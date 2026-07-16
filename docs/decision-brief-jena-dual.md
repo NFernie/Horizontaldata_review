@@ -1,12 +1,59 @@
 # JENA 31 Dual Lateral — Executive Decision Brief
 
-**Generated:** 2026-07-16 02:43 UTC  
+**Generated:** 2026-07-16 03:35 UTC  
 **Audience:** Stakeholder review (advisory — cuttings & log evidence only)  
-**Site:** Portfolio → Decision Brief panel · Print view at `/#/decision-brief/print`
+**Site:** `/#/executive-summary` · Print view at `/#/decision-brief/print`
 
 ---
 
-## Slide 1 — WSO shortlist (where to act)
+## Slide 1 — Drill acceptability (was drilling Jena acceptable?)
+
+**Headline:** Top-quartile pay supports the drill decision; acceptability is lateral-dependent and asymmetric.
+
+**Bullets:**
+- Portfolio median: **62.0%** pay · **32** concern intervals
+- **JENA 31** — pay **80.4%** (#3/24); **61** open zones (**5.33/100 m**; 60 OWC-proximate). vs **BIALA 20** (KS #2): lower pay, much lower density. vs **FROSTILLICUS 2** (cluster lead): proves high pay can coexist with extreme flags — Jena 31 is far lighter.
+- **JENA 31DW1** — pay **73.6%**; **18** open zones (**1.13/100 m**). Strongest drill case — resembles **STIMPEE 6** density more than Frostillicus.
+- **JENA 31 Dual** — pay **76.4%**; **79** open zones (**2.88/100 m**). vs **STIMPEE 6** (cos 0.825): best whole-asset analog but ~1.9× more open concern per metre.
+
+**Analog comparison table:**
+
+| Well | Role | Pay % | Pay rank | Concern | Concern rank | Open /100 m | OWC-prox | Cluster |
+|------|------|------:|---------:|--------:|-------------:|------------:|---------:|--------:|
+| JENA 31 | focus | 80.4 | #3/24 | 61 | #8/24 | 5.33 | 60 | 1 |
+| JENA 31DW1 | focus | 73.6 | #8/24 | 18 | #19/24 | 1.13 | 6 | 1 |
+| JENA 31 Dual Lateral | focus | 76.4 | #6/24 | 79 | #4/24 | 2.88 | 66 | 1 |
+| BIALA 20 | analog | 69.5 | #9/24 | 25 | #16/24 | 1.27 | 0 | 1 |
+| FROSTILLICUS 2 | analog | 79.5 | #4/24 | 203 | #1/24 | 9.34 | 194 | 1 |
+| MCKINLAY 23 | analog | 93.3 | #1/24 | 26 | #15/24 | 2.52 | 0 | 1 |
+| STIMPEE 6 | analog | 74.2 | #7/24 | 23 | #17/24 | 1.48 | 19 | 1 |
+
+**Speaker note:** HOBBES5 is KS #1 for JENA 31 but a poor drill analog (28.8% pay, cluster 3) — **BIALA 20** used instead. Drill acceptability ≠ WSO planning.
+
+**Caveats (on slide):**
+- Cuttings-based advisory only — no production or rate data
+- Statistical similarity does not guarantee outcomes
+
+---
+
+## Slide 2 — Lateral similarity (share intervention logic?)
+
+**Headline:** Laterals share cluster ID but diverge on Jaccard, KS, and cosine — do not share intervention logic blindly.
+
+**Bullets:**
+- Feature Jaccard (JENA 31 ↔ 31DW1): **0.500** · depth-binned: **0.176**
+- KS mean p between laterals: **0.156** · cluster cosine: **-0.158**
+- JENA 31 ↔ **BIALA 20** (KS #2) · 31DW1 ↔ **FROSTILLICUS 2** (KS) / **MCKINLAY 23** (cluster) · Dual ↔ **STIMPEE 6**
+
+**Speaker note:** Jaccard on `/compare`; executive compare uses cluster cosine.
+
+**Caveats:**
+- Read Jaccard (binary features) and KS (continuous properties) together
+- Negative cluster cosine between laterals means aggregate vectors point apart
+
+---
+
+## Slide 3 — WSO shortlist (where to act)
 
 **Headline:** JENA 31 carries most open water-risk windows; 31DW1 has fewer but deep Tier A clusters.
 
@@ -16,47 +63,17 @@
 - Top JENA 31 windows: 2498–2502 m (Tier A, score 94.0); 2452–2458 m (Tier A, score 84.7); 2492–2498 m (Tier A, score 83.3)
 - Top 31DW1 windows: 3595–3605 m (Tier A, score 92.4); 3605–3612 m (Tier A, score 68.1); 3575–3585 m (Tier B, score 57.2)
 
-**Speaker note:** Tier A/B ranks OWC proximity, ZOI, and WRCI on **open** intervals. Isolated zones are deprioritised. No production or rate data informs this list.
+**Speaker note:** Tier A/B ranks OWC proximity, ZOI, and WRCI on open intervals. Commingled totals mask per-lateral intervention needs.
 
-**Caveats (on slide):**
-- Cuttings-based advisory only
+**Caveats:**
 - Confirm with completion geometry & field logs before WSO
-
----
-
-## Slide 2 — Lateral similarity (share intervention logic?)
-
-**Headline:** Laterals share cluster ID but diverge on feature Jaccard, KS, and cosine signature.
-
-**Bullets:**
-- Feature Jaccard (JENA 31 ↔ 31DW1): **0.500** · depth-binned: **0.176**
-- KS mean p (distributions): **0.156** · cluster cosine: **-0.158**
-- Top KS analog — JENA 31: **HOBBES5** (mean p=0.184)
-- Top KS analog — 31DW1: **FROSTILLICUS2** (mean p=0.248)
-
-**Speaker note:** Statistical similarity ≠ interchangeable WSO targets. Jaccard is on `/compare`; executive compare uses cluster cosine.
-
-**Caveats:**
-- Read Jaccard (binary features) and KS (continuous properties) together
-- Negative cluster cosine means aggregate petrophysical vectors point apart
-
----
-
-## Slide 3 — Commingled dual-lateral asset
-
-**Headline:** Merged view shows **79** open concern windows — masking per-lateral concentration.
-
-**Bullets:**
-- JENA 31 Dual Lateral: **79** open Elevated/High · **66** OWC-proximate · **2** High
-- Pay %: **76.4%** merged (80.4% JENA 31 · 73.6% 31DW1)
-- Top cluster analog (dual): **STIMPEE6** (cos=0.825)
-- Top KS analog (dual): **STIMPEE6** (mean p=0.216)
-
-**Speaker note:** Single wellhead / commingled production limits attribution. Virtual `JENA31_DUAL` is for analysis — not a routable well page.
-
-**Caveats:**
 - No water-cut or rate data
-- Per-lateral detail in Well Detail & Water-Risk Explorer
+
+---
+
+## Executive answer (markdown only — not shown on site)
+
+On static evidence, drilling Jena was geologically acceptable: pay is top-quartile (80.4% / 73.6% / 76.4% merged), and the commingled asset most resembles STIMPEE 6 — similar pay, cluster 1, cosine 0.825. JENA 31DW1 alone looks like a well we would happily drill again (concern density 1.13/100 m). JENA 31 alone is acceptable only if the pre-drill thesis explicitly accepted OWC-proximate elevated concern (60/61 open zones OWC-proximate) in exchange for exceptional pay — the pattern is heavy but far below FROSTILLICUS 2 (9.34/100 m). The dual-lateral program is acceptable if stakeholders understood commingling would merge a clean bore with a concern-heavy one — merged density 2.88/100 m vs 1.48 for STIMPEE 6. BIALA 20 (KS #2) is the preferred JENA 31 property analog — not HOBBES5 (low pay, cluster 3).
 
 ---
 
@@ -106,6 +123,7 @@
 
 | Asset | Path |
 |-------|------|
+| Executive Summary page | `/#/executive-summary` |
 | Water risk | `site/public/data/water_risk/JENA31*.json` |
 | WSO export | `site/public/data/exports/wso_candidates_jena.json` |
 | Print context | `site/public/data/exports/decision_brief_context.json` |

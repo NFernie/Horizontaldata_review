@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { buildDecisionBrief, type DecisionBriefPayload } from "@/lib/decisionBrief";
+import { AnalogComparisonTable } from "@/components/executive/AnalogComparisonTable";
+import { useDecisionBrief } from "@/hooks/useDecisionBrief";
 import { fetchJson } from "@/lib/utils";
-import type { ClustersPayload, JaccardPayload, KsPayload } from "@/types/stats";
-import type { WaterRiskPayload } from "@/types/waterRisk";
-import type { WellsPayload } from "@/types/wells";
+import { useEffect, useState } from "react";
 
 export interface DecisionBriefContext {
   generated: string;
@@ -18,49 +16,13 @@ export interface DecisionBriefContext {
 }
 
 export function DecisionBriefPrint() {
-  const [brief, setBrief] = useState<DecisionBriefPayload | null>(null);
+  const { brief, loading, error } = useDecisionBrief();
   const [context, setContext] = useState<DecisionBriefContext | null>(null);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    Promise.all([
-      fetchJson<WellsPayload>("data/wells.json"),
-      fetchJson<WaterRiskPayload>("data/water_risk/JENA31.json"),
-      fetchJson<WaterRiskPayload>("data/water_risk/JENA31DW1.json"),
-      fetchJson<WaterRiskPayload>("data/water_risk/JENA31_DUAL.json"),
-      fetchJson<JaccardPayload>("data/stats/jaccard.json"),
-      fetchJson<KsPayload>("data/stats/ks.json"),
-      fetchJson<ClustersPayload>("data/stats/clusters.json"),
-      fetchJson<DecisionBriefContext>("data/exports/decision_brief_context.json"),
-    ])
-      .then(
-        ([
-          wells,
-          jena31Wr,
-          jena31dw1Wr,
-          dualWr,
-          jaccard,
-          ks,
-          clusters,
-          briefContext,
-        ]) => {
-          setBrief(
-            buildDecisionBrief({
-              wells,
-              waterRisk: {
-                JENA31: jena31Wr,
-                JENA31DW1: jena31dw1Wr,
-                JENA31_DUAL: dualWr,
-              },
-              jaccard,
-              ks,
-              clusters,
-            }),
-          );
-          setContext(briefContext);
-        },
-      )
-      .catch((err: Error) => setError(err.message));
+    fetchJson<DecisionBriefContext>("data/exports/decision_brief_context.json")
+      .then(setContext)
+      .catch(() => setContext(null));
   }, []);
 
   if (error) {
@@ -71,7 +33,7 @@ export function DecisionBriefPrint() {
     );
   }
 
-  if (!brief || !context) {
+  if (loading || !brief) {
     return (
       <div className="print-page mx-auto max-w-3xl p-8 text-text-muted">
         Loading decision brief…
@@ -82,8 +44,8 @@ export function DecisionBriefPrint() {
   return (
     <div className="print-root min-h-screen bg-bg text-text">
       <div className="print-toolbar mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-3">
-        <Link to="/" className="text-sm text-accent hover:underline">
-          ← Portfolio
+        <Link to="/executive-summary" className="text-sm text-accent hover:underline">
+          ← Executive Summary
         </Link>
         <button
           type="button"
@@ -103,8 +65,8 @@ export function DecisionBriefPrint() {
             JENA 31 Dual Lateral — Executive Decision Brief
           </h1>
           <p className="mt-2 text-sm text-text-muted">
-            Data generated {brief.generated ?? context.generated}. Cuttings and log interpretation
-            only — no production or rate data.
+            Data generated {brief.generated ?? context?.generated ?? "—"}. Cuttings and log
+            interpretation only — no production or rate data.
           </p>
         </header>
 
@@ -120,6 +82,11 @@ export function DecisionBriefPrint() {
                   <li key={bullet.slice(0, 48)}>{bullet}</li>
                 ))}
               </ul>
+              {q.id === "q1" ? (
+                <div className="mt-3 text-[10px]">
+                  <AnalogComparisonTable rows={brief.analogTable} />
+                </div>
+              ) : null}
               <p className="mt-2 text-xs text-text-muted">
                 <span className="font-semibold">Caveats:</span> {q.caveats.join(" ")}
               </p>
@@ -148,24 +115,26 @@ export function DecisionBriefPrint() {
           </div>
         </section>
 
-        <section className="mt-6 break-inside-avoid border-t border-border pt-4">
-          <h2 className="text-sm font-bold uppercase tracking-wide text-accent">
-            Interpretation context
-          </h2>
-          {context.interpretations.map((interp) => (
-            <div key={interp.alias} className="mt-3">
-              <p className="text-sm font-semibold text-text">
-                {interp.display} · TD {interp.td}
-              </p>
-              <p className="text-xs text-text-muted">{interp.analysisWindow}</p>
-              <ul className="mt-1 list-disc space-y-0.5 pl-4 text-xs text-text-muted">
-                {interp.shortcomings.slice(0, 4).map((line) => (
-                  <li key={line.slice(0, 40)}>{line}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </section>
+        {context ? (
+          <section className="mt-6 break-inside-avoid border-t border-border pt-4">
+            <h2 className="text-sm font-bold uppercase tracking-wide text-accent">
+              Interpretation context
+            </h2>
+            {context.interpretations.map((interp) => (
+              <div key={interp.alias} className="mt-3">
+                <p className="text-sm font-semibold text-text">
+                  {interp.display} · TD {interp.td}
+                </p>
+                <p className="text-xs text-text-muted">{interp.analysisWindow}</p>
+                <ul className="mt-1 list-disc space-y-0.5 pl-4 text-xs text-text-muted">
+                  {interp.shortcomings.slice(0, 4).map((line) => (
+                    <li key={line.slice(0, 40)}>{line}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </section>
+        ) : null}
 
         <footer className="mt-6 border-t border-border pt-3 text-[10px] text-text-muted">
           Source: site/public/data exports + output/*_Interpretation.md excerpts. WSO tiers are
