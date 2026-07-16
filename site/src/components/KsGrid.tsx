@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { KS_PROPERTIES } from "@/config";
+import { dStatisticColor } from "@/lib/ksGridStyle";
 import {
   formatKsColumnHeader,
   formatKsColumnTooltip,
@@ -15,12 +16,6 @@ interface KsGridProps {
   showPortfolio?: boolean;
   showRankInHeader?: boolean;
   className?: string;
-}
-
-function significanceColor(p: number) {
-  if (p < 0.01) return "color-mix(in srgb, var(--risk-high) 35%, var(--surface))";
-  if (p < 0.05) return "color-mix(in srgb, var(--risk-elev) 30%, var(--surface))";
-  return "var(--surface-2)";
 }
 
 export function KsGrid({
@@ -80,7 +75,7 @@ export function KsGrid({
                     key={entry.alias}
                     className="border border-border p-2 text-center font-mono"
                     style={{
-                      backgroundColor: cell ? significanceColor(cell.p_value) : undefined,
+                      backgroundColor: cell ? dStatisticColor(cell.D) : undefined,
                     }}
                     title={cell ? `D=${cell.D}, p=${cell.p_value}` : "—"}
                   >
@@ -102,7 +97,7 @@ export function KsGrid({
                   className="border border-border p-2 text-center font-mono"
                   style={{
                     backgroundColor: focus.vs_portfolio[prop]
-                      ? significanceColor(focus.vs_portfolio[prop].p_value)
+                      ? dStatisticColor(focus.vs_portfolio[prop].D)
                       : undefined,
                   }}
                 >

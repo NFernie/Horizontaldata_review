@@ -100,8 +100,8 @@ export function KsRankedAnalogPanel({
           </button>
         ) : null}
         <p className="mt-2 text-xs text-text-muted">
-          Kolmogorov–Smirnov two-sample test: {focusTitle} vs analog / portfolio. Warm cells = p
-          &lt; 0.05 (distributions differ).
+          Kolmogorov–Smirnov two-sample test: {focusTitle} vs analog / portfolio. Cell tint: green
+          (low D, similar distributions) → red (high D, 0.1 steps).
         </p>
       </Card>
 
