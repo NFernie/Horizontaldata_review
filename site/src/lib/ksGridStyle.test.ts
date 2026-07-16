@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { dStatisticColor, quantizeKsD } from "./ksGridStyle";
+import { dStatisticColor, quantizeKsD, redMixPercent } from "./ksGridStyle";
 
 describe("quantizeKsD", () => {
   it("snaps to 0.1 steps within [0, 1]", () => {
@@ -26,11 +26,14 @@ describe("dStatisticColor", () => {
     expect(dStatisticColor(0.81)).toBe(dStatisticColor(0.84));
   });
 
-  it("ramps red more strongly at high D", () => {
-    const mid = dStatisticColor(0.5);
-    const high = dStatisticColor(1);
-    const midRed = Number(mid.match(/var\(--risk-high\) (\d+)%/)?.[1] ?? 0);
-    const highRed = Number(high.match(/var\(--risk-high\) (\d+)%/)?.[1] ?? 0);
-    expect(highRed).toBeGreaterThan(midRed);
+  it("ramps red quickly above D=0.5", () => {
+    const atHalf = redMixPercent(dStatisticColor(0.5));
+    const aboveHalf = redMixPercent(dStatisticColor(0.6));
+    const high = redMixPercent(dStatisticColor(1));
+
+    expect(atHalf).toBeLessThan(20);
+    expect(aboveHalf).toBeGreaterThan(atHalf + 8);
+    expect(high).toBeGreaterThan(55);
+    expect(redMixPercent(dStatisticColor(0.8))).toBeGreaterThan(40);
   });
 });
