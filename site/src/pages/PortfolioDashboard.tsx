@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Card } from "@/components/Card";
 import { DataTable, type DataTableColumn } from "@/components/DataTable";
 import { ExecutiveSummary } from "@/components/executive/ExecutiveSummary";
@@ -9,6 +9,11 @@ import { StatTile } from "@/components/StatTile";
 import { WRCI_ELEVATED_THRESHOLD, WRCI_HIGH_THRESHOLD } from "@/config";
 import { pageStateKey, usePersistedState, useScrollRestore } from "@/hooks/usePageState";
 import { useWells } from "@/hooks/useWells";
+import {
+  exportElementAsImage,
+  portfolioTableFilename,
+  type TableImageFormat,
+} from "@/lib/exportTableImage";
 import { fetchJson, formatNumber, formatPercent } from "@/lib/utils";
 import type { WellRecord, WellsPayload } from "@/types/wells";
 
@@ -21,6 +26,30 @@ export function PortfolioDashboard() {
   const [tableOpen, setTableOpen] = usePersistedState(
     pageStateKey("/", "portfolioTableExpanded"),
     false,
+  );
+  const tableRef = useRef<HTMLDivElement>(null);
+  const [exporting, setExporting] = useState<TableImageFormat | null>(null);
+  const [exportError, setExportError] = useState<string | null>(null);
+
+  const handleTableExport = useCallback(
+    async (format: TableImageFormat) => {
+      const node = tableRef.current;
+      if (!node) return;
+      setExportError(null);
+      setExporting(format);
+      try {
+        await exportElementAsImage(
+          node,
+          portfolioTableFilename(format, payload?.generated),
+          format,
+        );
+      } catch (err) {
+        setExportError(err instanceof Error ? err.message : "Export failed");
+      } finally {
+        setExporting(null);
+      }
+    },
+    [payload?.generated],
   );
 
   useEffect(() => {
@@ -189,7 +218,31 @@ export function PortfolioDashboard() {
         </button>
         {tableOpen ? (
           <div className="border-t border-border px-4 pb-4 pt-2 sm:px-5">
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                disabled={exporting !== null}
+                onClick={() => handleTableExport("png")}
+                className="rounded-card border border-border bg-surface-2 px-3 py-1.5 text-sm font-medium text-text transition-colors hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                {exporting === "png" ? "Exporting PNG…" : "Export PNG"}
+              </button>
+              <button
+                type="button"
+                disabled={exporting !== null}
+                onClick={() => handleTableExport("jpeg")}
+                className="rounded-card border border-border bg-surface-2 px-3 py-1.5 text-sm font-medium text-text transition-colors hover:border-accent/40 hover:text-accent disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                {exporting === "jpeg" ? "Exporting JPG…" : "Export JPG"}
+              </button>
+              {exportError ? (
+                <p className="text-xs text-risk-high" role="alert">
+                  {exportError}
+                </p>
+              ) : null}
+            </div>
             <DataTable
+              ref={tableRef}
               columns={columns}
               rows={allWells}
               rowKey={(row) => row.alias}

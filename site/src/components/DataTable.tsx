@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { forwardRef, useEffect, useRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 export interface DataTableColumn<T> {
@@ -27,18 +27,21 @@ interface DataTableProps<T> {
 
 const HIGHLIGHT_MS = 2000;
 
-export function DataTable<T>({
-  columns,
-  rows,
-  rowKey,
-  caption,
-  emptyMessage = "No data available.",
-  className,
-  stickyFirstColumn = false,
-  scrollMaxHeight,
-  stickyMinWidth = "min-w-[7.5rem]",
-  highlightRowKey = null,
-}: DataTableProps<T>) {
+export const DataTable = forwardRef(function DataTable<T>(
+  {
+    columns,
+    rows,
+    rowKey,
+    caption,
+    emptyMessage = "No data available.",
+    className,
+    stickyFirstColumn = false,
+    scrollMaxHeight,
+    stickyMinWidth = "min-w-[7.5rem]",
+    highlightRowKey = null,
+  }: DataTableProps<T>,
+  ref: React.ForwardedRef<HTMLDivElement>,
+) {
   const scrollStyle = scrollMaxHeight ? { maxHeight: scrollMaxHeight } : undefined;
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeHighlight, setActiveHighlight] = useState<string | null>(null);
@@ -56,7 +59,7 @@ export function DataTable<T>({
   }, [highlightRowKey]);
 
   return (
-    <div className={cn("rounded-card border border-border", className)}>
+    <div ref={ref} className={cn("rounded-card border border-border", className)}>
       <div
         ref={scrollRef}
         className={cn(
@@ -129,4 +132,6 @@ export function DataTable<T>({
       </div>
     </div>
   );
-}
+}) as <T>(
+  props: DataTableProps<T> & React.RefAttributes<HTMLDivElement>,
+) => React.ReactElement | null;
