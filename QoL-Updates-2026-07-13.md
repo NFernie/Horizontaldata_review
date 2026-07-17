@@ -1,7 +1,7 @@
 # QoL & Visualisation Updates — Implementation Plan
 
 **Date:** 2026-07-13 (rev. 2026-07-14b)  
-**Status:** Approved — Phases **A**, **C**, **D**, **E** implemented; **F** ready (§7.8 locked); **B1/B2** pending  
+**Status:** Approved — Phases **A**, **C**, **D**, **E** implemented; **F** ready (§7.8 locked); **H** ready (§8.1); **B1/B2** pending  
 **Repo:** `NFernie/Horizontaldata_review`  
 **Baseline:** Post–Phase 6 pipeline (`updated-plan-2026-07-10.md`) — **23 wells**, RQI v2, WRCI v2, ZOI, OWC, mechanical isolation, no ΔRes  
 **UI skill:** `.cursor/skills/ui-ux-pro-max/SKILL.md` — **required for all Design agents**  
@@ -52,6 +52,7 @@ Each phase (**A**, **B1**, **B2**, **C**, **D**) runs as **two separate agent se
 | C | `docs/qol-design/phase-c-design.md` |
 | D | `docs/qol-design/phase-d-design.md` |
 | E | *(combined prompt §10 — no separate design doc required)* |
+| H | `docs/qol-design/phase-h-design.md` |
 
 ---
 
@@ -676,6 +677,7 @@ Give executives a **well-execution / structural** read of where Elevated and Hig
 | **D** | Add Panel C + histogram; cluster comparison dropdown (keep Phase C layout) | `phase-d-design.md` | 1 session | **No** |
 | **E** | Readability & popovers (site-wide) | — | **1 combined session** | **No** |
 | **F** | Structural executive depth tracks (MD×mTVDss, OWC, trajectory) | — | **1 combined session** | **No** — extend `export_web_data.py` |
+| **H** | Data Relationships — scatter, multi-well histogram, filters | `phase-h-design.md` | 1 session | **No** |
 
 ### Implementation status (2026-07-14)
 
@@ -686,6 +688,7 @@ Give executives a **well-execution / structural** read of where Elevated and Hig
 | **D** | ✅ **Complete** | `JENA31_DUAL` pipeline + Panel C + histogram; cluster `cos=` compare dropdowns |
 | **E** | ✅ **Complete** | Legibility audit, executive popovers, risk explain badges, dendrogram + cluster cards, isolation bands |
 | **F** | **Ready** | Structural executive tracks — §7.8 decisions locked; trajectory export via `export_web_data.py` |
+| **H** | **Ready** | Data Relationships page — histogram move + scatter/regression; `phase-h-design.md` |
 | **B1** | Pending | Intersection viewer — design doc not started |
 | **B2** | Blocked | Grid XYZ pending |
 
@@ -702,6 +705,76 @@ Give executives a **well-execution / structural** read of where Elevated and Hig
 **Maximum simultaneous agents: 1** per stage (design OR implement, not both on same files).
 
 **Debugging agent:** Recommended after Phase E (popover copy, contrast) and Implement B1 (trajectory projection spot-check at INCL>80°).
+
+---
+
+## 8.1 Phase H — Data Relationships (ready)
+
+**Design doc:** `docs/qol-design/phase-h-design.md`  
+**Route:** `/#/data-relationships`  
+**Nav:** Below **Compare**, above **Methodology**  
+**Pipeline:** **No re-run** — uses existing `site/public/data/intervals/{alias}.json`
+
+### H1 — New page
+
+Dedicated **Data Relationships** page for interval-level property exploration:
+
+| Panel | Behaviour |
+|-------|-----------|
+| **Well toggles** | All 24 wells (incl. `JENA31_DUAL`); select all / clear all; colour per well |
+| **Filters** | Risk class (High/Elevated/Low), pay-only (`matching_pay`), flag checkboxes |
+| **Scatter** | X/Y property selects + swap; one point per interval; opacity 0.35; hover sync with well list |
+| **Regression** | Pooled Pearson **r**, **R²**, OLS `y = mx + b` across visible points; drop if either axis null |
+| **Histogram** | Moved from Portfolio; same well toggles + filters; overlaid bars per enabled well |
+
+### H2 — Properties (histogram + scatter axes)
+
+| Label | Key |
+|-------|-----|
+| Gr | `avg_GR` |
+| Deep Res | `avg_RES_DEEP` |
+| HAFWL | `hafwl_m` (m above OWC) |
+| RQI | `RQI` |
+| WRCI | `WRCI` |
+| Flour % | `fluor` |
+| SS% | `pct_ss` |
+| Grain | `grain_ordinal` |
+| TGas | `gas` |
+
+### H3 — Portfolio change
+
+Remove `DistributionHistogramPanel` from `ExecutiveSummary` on `/` (Portfolio).
+
+### H4 — Persistence
+
+`sessionStorage` keys under `/data-relationships`: enabled wells, histogram property, scatter X/Y, filters, panel expand state.
+
+### H5 — Acceptance
+
+- [ ] Nav + route live; histogram absent from Portfolio
+- [ ] Multi-well histogram + scatter with filters and hover sync
+- [ ] Pooled regression stats update when wells/filters/axes change
+- [ ] `npm test && npm run build` pass
+
+### Prompt — Phase H Implement
+
+```
+IMPLEMENT — Phase H Data Relationships
+
+Read:
+- QoL-Updates-2026-07-13.md §8.1
+- docs/qol-design/phase-h-design.md
+- site/src/components/executive/DistributionHistogramPanel.tsx (refactor target)
+- site/src/lib/histogram.ts, site/src/config.ts
+
+Deliver:
+1. /#/data-relationships page with WellToggleList, RelationshipFilterBar, ScatterPlotPanel, refactored histogram
+2. Remove histogram from ExecutiveSummary
+3. DATA_RELATIONSHIP_PROPERTIES (+ TGas, HAFWL, grain_ordinal) in config
+4. Client-side Pearson/OLS in site/src/lib/dataRelationships.ts + tests
+5. Session persistence on /data-relationships
+6. npm test && npm run build
+```
 
 ---
 
@@ -1188,7 +1261,7 @@ Commit to main (include site/public/data/trajectory/*.json when pipeline added).
 | Doc | Role |
 |-----|------|
 | `QoL-Updates-2026-07-13.md` | **This file** — scope, prompts, acceptance |
-| `docs/qol-design/phase-{a,b1,b2,c,d}-design.md` | **Design agent outputs** — implement agents must read |
+| `docs/qol-design/phase-{a,b1,b2,c,d,h}-design.md` | **Design agent outputs** — implement agents must read |
 | `site/public/data/stats/cluster_analog_ranking.json` | Phase D — executive cluster analog defaults |
 | `site/public/data/intervals/JENA31_DUAL.json` | Phase D — merged dual-lateral intervals |
 | `.cursor/skills/ui-ux-pro-max/SKILL.md` | UI/UX Pro Max skill — **Design agents** |
@@ -1212,4 +1285,5 @@ Commit to main (include site/public/data/trajectory/*.json when pipeline added).
 | 2026-07-13 | Initial QoL + intersection + executive summary plan |
 | 2026-07-14 | Design→Implement workflow; UI/UX Pro Max; Phase A5 methodology dropdown; Phase C reimagined as Analog Concern Hub; separate design/impl prompts; updated Jena stats + isolation |
 | 2026-07-14e | Phase F stakeholder decisions locked (§7.8); per-well Y-range; path-corridor isolation; site-wide hatch; §12 prompt updated |
+| 2026-07-17 | Phase H — Data Relationships page spec (histogram move, scatter/regression, filters); `phase-h-design.md` |
 | 2026-07-14d | Phase F spec + combined prompt; structural executive MD×mTVDss tracks |

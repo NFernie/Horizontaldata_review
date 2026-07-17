@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { ComparisonPanel } from "@/components/executive/ComparisonPanel";
-import { DistributionHistogramPanel } from "@/components/executive/DistributionHistogramPanel";
 import { DualLateralPanel } from "@/components/executive/DualLateralPanel";
 import { PortfolioElevatedStrip } from "@/components/executive/PortfolioElevatedStrip";
 import { Legend } from "@/components/Legend";
@@ -167,8 +166,6 @@ export function ExecutiveSummary({ wells }: ExecutiveSummaryProps) {
         showElevated={showElevated}
         showHigh={showHigh}
       />
-
-      <DistributionHistogramPanel wells={wells} />
 
       <PortfolioElevatedStrip wells={wells} highlightAliases={highlightAliases} />
 

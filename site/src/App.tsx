@@ -1,6 +1,7 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { AppShell } from "@/components/AppShell";
 import { CompareInterWell } from "@/pages/CompareInterWell";
+import { DataRelationshipsPage } from "@/pages/DataRelationshipsPage";
 import { DecisionBriefPrint } from "@/pages/DecisionBriefPrint";
 import { ExecutiveDecisionBriefPage } from "@/pages/ExecutiveDecisionBriefPage";
 import { IntraWellStats } from "@/pages/IntraWellStats";
@@ -20,6 +21,7 @@ export function App() {
           <Route path="well/:alias" element={<WellDetail />} />
           <Route path="water-risk" element={<WaterRiskExplorer />} />
           <Route path="compare" element={<CompareInterWell />} />
+          <Route path="data-relationships" element={<DataRelationshipsPage />} />
           <Route path="intra/:alias" element={<IntraWellStats />} />
           <Route path="methodology" element={<Methodology />} />
         </Route>
