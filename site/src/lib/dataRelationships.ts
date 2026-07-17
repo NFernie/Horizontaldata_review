@@ -195,6 +195,7 @@ export function formatRegressionEquation(
 }
 
 export function formatAxisValue(property: DataRelationshipProperty, value: number): string {
+  if (property === "depth") return value.toFixed(1);
   if (property === "RQI") return value.toFixed(3);
   if (property === "WRCI" || property === "pct_ss" || property === "fluor") return value.toFixed(1);
   if (property === "grain_ordinal") return value.toFixed(0);
@@ -229,6 +230,7 @@ export function axisSliderStep(property: DataRelationshipProperty, extent: AxisR
   const span = Math.max(extent.max - extent.min, 1e-6);
   if (property === "RQI") return span / 200;
   if (property === "grain_ordinal") return 1;
+  if (property === "depth") return Math.max(1, span / 200);
   if (property === "WRCI" || property === "pct_ss" || property === "fluor") return span / 100;
   return span / 100;
 }

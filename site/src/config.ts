@@ -131,6 +131,7 @@ export const JENA31_DUAL_ALIAS = "JENA31_DUAL";
 export const JENA31_DUAL_CONSTITUENTS = ["JENA31", "JENA31DW1"] as const;
 
 export const DIST_HISTOGRAM_PROPERTIES = [
+  "depth",
   "avg_GR",
   "avg_RES_DEEP",
   "hafwl_m",
@@ -149,6 +150,7 @@ export const DATA_RELATIONSHIP_PROPERTIES = DIST_HISTOGRAM_PROPERTIES;
 export type DataRelationshipProperty = DistHistogramProperty;
 
 export const DATA_RELATIONSHIP_PROPERTY_LABELS: Record<DataRelationshipProperty, string> = {
+  depth: "MD",
   avg_GR: "Gr",
   avg_RES_DEEP: "Deep Res",
   hafwl_m: "HAFWL",
