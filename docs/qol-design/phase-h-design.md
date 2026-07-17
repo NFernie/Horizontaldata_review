@@ -109,7 +109,7 @@ Filters apply to **both** histogram and scatter.
 | Opacity | `0.35` default; `0.9` when row/point hovered |
 | Regression | **One pooled** OLS line across all visible points (Pearson) |
 | Stats | Pearson **r**, **R²**, equation `y = {m}x + {b}` with axis labels |
-| Controls | X select, Y select, **Swap axes** button |
+| Controls | X select, Y select, **Swap axes** button, **min/max sliders** per axis, **Reset zoom** |
 | Tooltip | Well display name, X/Y formatted values, MD depth |
 | Height | `h-80` (320px) |
 | Empty | “No data points match current filters.” |

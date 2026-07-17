@@ -1,6 +1,8 @@
 import { describe, expect, it } from "vitest";
 import {
   buildScatterPoints,
+  clampAxisRange,
+  computeAxisExtent,
   computeLinearRegression,
   computePearsonR,
   filterIntervals,
@@ -122,5 +124,18 @@ describe("dataRelationships", () => {
     });
     expect(filtered).toHaveLength(1);
     expect(filtered[0]?.risk_class).toBe("High");
+  });
+
+  it("computes axis extent with padding", () => {
+    const extent = computeAxisExtent([10, 20, 30]);
+    expect(extent.min).toBeLessThan(10);
+    expect(extent.max).toBeGreaterThan(30);
+  });
+
+  it("clamps axis range within data extent", () => {
+    const extent = { min: 0, max: 100 };
+    const clamped = clampAxisRange({ min: -10, max: 150 }, extent);
+    expect(clamped.min).toBeGreaterThanOrEqual(0);
+    expect(clamped.max).toBeLessThanOrEqual(100);
   });
 });
