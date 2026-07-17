@@ -3,11 +3,20 @@ import type { IntervalRecord } from "@/types/intervals";
 
 const BIN_COUNT = 16;
 
+function histogramBinLabel(property: DistHistogramProperty, value: number): string {
+  if (property === "WRCI" || property === "depth" || property === "grain_ordinal") {
+    return value.toFixed(0);
+  }
+  return value.toFixed(2);
+}
+
 export function getIntervalPropertyValue(
   interval: IntervalRecord,
   property: DistHistogramProperty,
 ): number | null {
   switch (property) {
+    case "depth":
+      return interval.depth ?? null;
     case "RQI":
       return interval.RQI ?? null;
     case "WRCI":
@@ -75,7 +84,7 @@ export function buildMultiWellHistogramBins(
     const binLo = lo + i * width;
     const binHi = i === BIN_COUNT - 1 ? hi : lo + (i + 1) * width;
     return {
-      label: binLo.toFixed(property === "WRCI" ? 0 : 2),
+      label: histogramBinLabel(property, binLo),
       lo: binLo,
       hi: binHi,
       counts: Object.fromEntries(aliases.map((alias) => [alias, 0])),
@@ -163,7 +172,7 @@ export function buildHistogramBins(
     const binLo = lo + i * width;
     const binHi = i === BIN_COUNT - 1 ? hi : lo + (i + 1) * width;
     return {
-      label: binLo.toFixed(property === "WRCI" ? 0 : 2),
+      label: histogramBinLabel(property, binLo),
       lo: binLo,
       hi: binHi,
       countA: 0,

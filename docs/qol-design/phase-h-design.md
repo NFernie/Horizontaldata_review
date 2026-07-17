@@ -60,6 +60,7 @@
 
 | Label | Key | Interval field | Unit hint |
 |-------|-----|----------------|-----------|
+| MD | `depth` | `depth` | m |
 | Gr | `avg_GR` | `log.avg_GR` | gAPI |
 | Deep Res | `avg_RES_DEEP` | `log.avg_RES_DEEP` | Ω·m |
 | HAFWL | `hafwl_m` | `hafwl_m` | m |

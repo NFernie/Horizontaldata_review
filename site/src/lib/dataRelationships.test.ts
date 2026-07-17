@@ -126,6 +126,25 @@ describe("dataRelationships", () => {
     expect(filtered[0]?.risk_class).toBe("High");
   });
 
+  it("reads MD from interval depth", () => {
+    const intervals = [
+      sampleInterval({ depth: 2510.5 }),
+    ];
+    const points = buildScatterPoints(
+      { JENA31: { display: "JENA 31", intervals } },
+      ["JENA31"],
+      "depth",
+      "RQI",
+      {
+        riskClasses: ["Elevated", "High", "Low"],
+        payOnly: false,
+        selectedFlags: [],
+      },
+    );
+    expect(points).toHaveLength(1);
+    expect(points[0]?.x).toBe(2510.5);
+  });
+
   it("computes axis extent with padding", () => {
     const extent = computeAxisExtent([10, 20, 30]);
     expect(extent.min).toBeLessThan(10);
