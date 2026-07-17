@@ -131,16 +131,45 @@ export const JENA31_DUAL_ALIAS = "JENA31_DUAL";
 export const JENA31_DUAL_CONSTITUENTS = ["JENA31", "JENA31DW1"] as const;
 
 export const DIST_HISTOGRAM_PROPERTIES = [
-  "RQI",
-  "WRCI",
-  "pct_ss",
-  "grain_ordinal",
   "avg_GR",
   "avg_RES_DEEP",
+  "hafwl_m",
+  "RQI",
+  "WRCI",
   "fluor",
+  "pct_ss",
+  "grain_ordinal",
+  "gas",
 ] as const;
 
 export type DistHistogramProperty = (typeof DIST_HISTOGRAM_PROPERTIES)[number];
+
+/** Alias for histogram + scatter property keys (Phase H). */
+export const DATA_RELATIONSHIP_PROPERTIES = DIST_HISTOGRAM_PROPERTIES;
+export type DataRelationshipProperty = DistHistogramProperty;
+
+export const DATA_RELATIONSHIP_PROPERTY_LABELS: Record<DataRelationshipProperty, string> = {
+  avg_GR: "Gr",
+  avg_RES_DEEP: "Deep Res",
+  hafwl_m: "HAFWL",
+  RQI: "RQI",
+  WRCI: "WRCI",
+  fluor: "Flour %",
+  pct_ss: "SS%",
+  grain_ordinal: "Grain",
+  gas: "TGas",
+};
+
+export const DATA_RELATIONSHIP_FLAG_OPTIONS = [
+  "lowres",
+  "lowfluor",
+  "low_GR",
+  "ZOI",
+  "owc_high",
+  "owc_elevated",
+] as const;
+
+export type DataRelationshipFlagOption = (typeof DATA_RELATIONSHIP_FLAG_OPTIONS)[number];
 
 export const RISK_LABELS = {
   High: "High water risk",

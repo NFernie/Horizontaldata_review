@@ -17,6 +17,7 @@ const NAV_ITEMS: NavItem[] = [
   { to: "/well/JENA31DW1", label: "Well Detail" },
   { to: "/water-risk", label: "Water Risk" },
   { to: "/compare", label: "Compare" },
+  { to: "/data-relationships", label: "Data Relationships" },
   { to: "/methodology", label: "Methodology" },
 ];
 

@@ -22,15 +22,106 @@ export function getIntervalPropertyValue(
       return interval.log?.avg_RES_DEEP ?? null;
     case "fluor":
       return interval.fluor ?? null;
+    case "hafwl_m":
+      return interval.hafwl_m ?? null;
+    case "gas":
+      return interval.gas ?? null;
     default:
       return null;
   }
 }
 
-export function propertyDomain(property: DistHistogramProperty): [number, number] {
+export function propertyDomain(property: DistHistogramProperty): [number, number] | null {
   if (property === "RQI") return [0, 1];
   if (property === "WRCI") return [0, 100];
-  return [0, 1];
+  return null;
+}
+
+export interface MultiWellHistogramBin {
+  label: string;
+  lo: number;
+  hi: number;
+  counts: Record<string, number>;
+}
+
+export function buildMultiWellHistogramBins(
+  valuesByAlias: Record<string, number[]>,
+  property: DistHistogramProperty,
+): MultiWellHistogramBin[] {
+  const aliases = Object.keys(valuesByAlias);
+  const all = aliases.flatMap((alias) => valuesByAlias[alias] ?? []);
+
+  if (!all.length) {
+    return Array.from({ length: BIN_COUNT }, (_, i) => ({
+      label: `${i}`,
+      lo: 0,
+      hi: 0,
+      counts: Object.fromEntries(aliases.map((alias) => [alias, 0])),
+    }));
+  }
+
+  let lo = Math.min(...all);
+  let hi = Math.max(...all);
+  const preset = propertyDomain(property);
+  if (preset) {
+    lo = preset[0];
+    hi = preset[1];
+  } else if (hi <= lo) {
+    hi = lo + 1;
+  }
+
+  const width = (hi - lo) / BIN_COUNT;
+  const bins: MultiWellHistogramBin[] = Array.from({ length: BIN_COUNT }, (_, i) => {
+    const binLo = lo + i * width;
+    const binHi = i === BIN_COUNT - 1 ? hi : lo + (i + 1) * width;
+    return {
+      label: binLo.toFixed(property === "WRCI" ? 0 : 2),
+      lo: binLo,
+      hi: binHi,
+      counts: Object.fromEntries(aliases.map((alias) => [alias, 0])),
+    };
+  });
+
+  for (const alias of aliases) {
+    for (const value of valuesByAlias[alias] ?? []) {
+      let idx = Math.floor((value - lo) / width);
+      if (idx >= BIN_COUNT) idx = BIN_COUNT - 1;
+      if (idx < 0) idx = 0;
+      bins[idx]!.counts[alias] = (bins[idx]!.counts[alias] ?? 0) + 1;
+    }
+  }
+
+  return bins;
+}
+
+export function computeModeFromMultiBins(
+  bins: MultiWellHistogramBin[],
+  alias: string,
+): number | null {
+  let maxCount = 0;
+  let modeBin: MultiWellHistogramBin | null = null;
+  for (const bin of bins) {
+    const count = bin.counts[alias] ?? 0;
+    if (count > maxCount) {
+      maxCount = count;
+      modeBin = bin;
+    }
+  }
+  if (!modeBin || maxCount === 0) return null;
+  return roundStat((modeBin.lo + modeBin.hi) / 2);
+}
+
+export function multiBinToChartRows(
+  bins: MultiWellHistogramBin[],
+  aliases: string[],
+): Record<string, string | number>[] {
+  return bins.map((bin) => {
+    const row: Record<string, string | number> = { label: bin.label };
+    for (const alias of aliases) {
+      row[`count_${alias}`] = bin.counts[alias] ?? 0;
+    }
+    return row;
+  });
 }
 
 export interface HistogramBin {
@@ -60,7 +151,7 @@ export function buildHistogramBins(
   let lo = Math.min(...all);
   let hi = Math.max(...all);
   const preset = propertyDomain(property);
-  if (property === "RQI" || property === "WRCI") {
+  if (preset) {
     lo = preset[0];
     hi = preset[1];
   } else if (hi <= lo) {

@@ -8,6 +8,7 @@ interface CollapsiblePanelProps {
   subtitle?: ReactNode;
   headerExtra?: ReactNode;
   defaultOpen?: boolean;
+  statePath?: string;
   children: ReactNode;
   className?: string;
   contentClassName?: string;
@@ -19,14 +20,16 @@ export function CollapsiblePanel({
   subtitle,
   headerExtra,
   defaultOpen = true,
+  statePath = "/",
   children,
   className,
   contentClassName,
 }: CollapsiblePanelProps) {
-  const [open, setOpen] = usePersistedState(
-    pageStateKey("/", `execPanel${panelId}:expanded`),
-    defaultOpen,
-  );
+  const expandKey =
+    statePath === "/"
+      ? pageStateKey(statePath, `execPanel${panelId}:expanded`)
+      : pageStateKey(statePath, `panel:${panelId}:expanded`);
+  const [open, setOpen] = usePersistedState(expandKey, defaultOpen);
 
   return (
     <section
