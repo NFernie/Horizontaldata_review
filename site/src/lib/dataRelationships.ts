@@ -200,3 +200,59 @@ export function formatAxisValue(property: DataRelationshipProperty, value: numbe
   if (property === "grain_ordinal") return value.toFixed(0);
   return value.toFixed(2);
 }
+
+export interface AxisRange {
+  min: number;
+  max: number;
+}
+
+const AXIS_PADDING_RATIO = 0.02;
+const MIN_AXIS_SPAN_RATIO = 0.01;
+
+export function computeAxisExtent(values: number[]): AxisRange {
+  if (!values.length) return { min: 0, max: 1 };
+
+  let min = Math.min(...values);
+  let max = Math.max(...values);
+  if (min === max) {
+    const delta = Math.max(Math.abs(min) * 0.05, 1);
+    min -= delta;
+    max += delta;
+  }
+
+  const span = max - min;
+  const pad = span * AXIS_PADDING_RATIO;
+  return { min: min - pad, max: max + pad };
+}
+
+export function axisSliderStep(property: DataRelationshipProperty, extent: AxisRange): number {
+  const span = Math.max(extent.max - extent.min, 1e-6);
+  if (property === "RQI") return span / 200;
+  if (property === "grain_ordinal") return 1;
+  if (property === "WRCI" || property === "pct_ss" || property === "fluor") return span / 100;
+  return span / 100;
+}
+
+export function clampAxisRange(range: AxisRange, extent: AxisRange): AxisRange {
+  const span = Math.max(extent.max - extent.min, 1e-6);
+  const minSpan = span * MIN_AXIS_SPAN_RATIO;
+
+  let min = Math.max(extent.min, Math.min(range.min, extent.max));
+  let max = Math.min(extent.max, Math.max(range.max, extent.min));
+
+  if (max - min < minSpan) {
+    const mid = (min + max) / 2;
+    min = Math.max(extent.min, mid - minSpan / 2);
+    max = Math.min(extent.max, mid + minSpan / 2);
+  }
+
+  if (min >= max) {
+    return { ...extent };
+  }
+
+  return { min, max };
+}
+
+export function rangesEqual(a: AxisRange, b: AxisRange, epsilon = 1e-9): boolean {
+  return Math.abs(a.min - b.min) < epsilon && Math.abs(a.max - b.max) < epsilon;
+}

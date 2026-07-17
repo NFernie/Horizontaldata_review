@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import {
   CartesianGrid,
   Line,
@@ -10,24 +10,32 @@ import {
   YAxis,
   ZAxis,
 } from "recharts";
+import { AxisScaleControl } from "@/components/data-relationships/AxisScaleControl";
 import {
   DATA_RELATIONSHIP_PROPERTIES,
   type DataRelationshipProperty,
 } from "@/config";
+import { pageStateKey, usePersistedState } from "@/hooks/usePageState";
 import {
   buildScatterPoints,
+  clampAxisRange,
+  computeAxisExtent,
   computeLinearRegression,
   formatAxisValue,
   formatRegressionCoefficient,
   formatRegressionEquation,
   getWellColor,
   propertyLabel,
+  rangesEqual,
   regressionLinePoints,
+  type AxisRange,
   type RelationshipFilters,
   type ScatterPoint,
 } from "@/lib/dataRelationships";
 import type { IntervalRecord } from "@/types/intervals";
 import type { WellRecord } from "@/types/wells";
+
+const ROUTE = "/data-relationships";
 
 interface ScatterPlotPanelProps {
   wells: WellRecord[];
@@ -102,15 +110,56 @@ export function ScatterPlotPanel({
     [intervalsByAlias, enabledAliases, xProperty, yProperty, filters],
   );
 
+  const xExtent = useMemo(
+    () => computeAxisExtent(points.map((point) => point.x)),
+    [points],
+  );
+  const yExtent = useMemo(
+    () => computeAxisExtent(points.map((point) => point.y)),
+    [points],
+  );
+
+  const [xRangeOverride, setXRangeOverride] = usePersistedState<AxisRange | null>(
+    pageStateKey(ROUTE, `scatterZoom:${xProperty}`),
+    null,
+  );
+  const [yRangeOverride, setYRangeOverride] = usePersistedState<AxisRange | null>(
+    pageStateKey(ROUTE, `scatterZoom:${yProperty}`),
+    null,
+  );
+
+  const xRange = useMemo(
+    () => (xRangeOverride ? clampAxisRange(xRangeOverride, xExtent) : xExtent),
+    [xRangeOverride, xExtent],
+  );
+  const yRange = useMemo(
+    () => (yRangeOverride ? clampAxisRange(yRangeOverride, yExtent) : yExtent),
+    [yRangeOverride, yExtent],
+  );
+
+  const prevXProperty = useRef(xProperty);
+  const prevYProperty = useRef(yProperty);
+
+  useEffect(() => {
+    if (prevXProperty.current !== xProperty) {
+      setXRangeOverride(null);
+      prevXProperty.current = xProperty;
+    }
+  }, [xProperty, setXRangeOverride]);
+
+  useEffect(() => {
+    if (prevYProperty.current !== yProperty) {
+      setYRangeOverride(null);
+      prevYProperty.current = yProperty;
+    }
+  }, [yProperty, setYRangeOverride]);
+
   const regression = useMemo(() => computeLinearRegression(points), [points]);
 
-  const linePoints = useMemo(() => {
-    if (!points.length) return [];
-    const xs = points.map((point) => point.x);
-    const xMin = Math.min(...xs);
-    const xMax = Math.max(...xs);
-    return regressionLinePoints(regression, xMin, xMax);
-  }, [points, regression]);
+  const linePoints = useMemo(
+    () => regressionLinePoints(regression, xRange.min, xRange.max),
+    [regression, xRange],
+  );
 
   const pointsByAlias = useMemo(() => {
     const grouped = new Map<string, ScatterPoint[]>();
@@ -123,6 +172,13 @@ export function ScatterPlotPanel({
   }, [points]);
 
   const activeAlias = hoveredAlias ?? highlightedAlias;
+  const zoomedX = xRangeOverride != null && !rangesEqual(xRange, xExtent);
+  const zoomedY = yRangeOverride != null && !rangesEqual(yRange, yExtent);
+
+  const handleResetZoom = () => {
+    setXRangeOverride(null);
+    setYRangeOverride(null);
+  };
 
   return (
     <div className="rounded-card border border-border bg-surface p-4">
@@ -170,67 +226,100 @@ export function ScatterPlotPanel({
         >
           Swap axes ↔
         </button>
+
+        {points.length > 0 && (zoomedX || zoomedY) ? (
+          <button
+            type="button"
+            onClick={handleResetZoom}
+            className="min-h-[44px] cursor-pointer rounded-card border border-border bg-surface-2 px-4 py-2 text-sm font-medium text-text transition-colors hover:border-accent/50"
+          >
+            Reset zoom
+          </button>
+        ) : null}
       </div>
 
       {points.length === 0 ? (
         <p className="text-sm text-text-muted">No data points match current filters.</p>
       ) : (
-        <div className="h-80 rounded-card border border-border bg-surface-2 p-2">
-          <ResponsiveContainer width="100%" height="100%">
-            <ScatterChart margin={{ top: 8, right: 12, left: 4, bottom: 4 }}>
-              <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" />
-              <XAxis
-                type="number"
-                dataKey="x"
-                name={propertyLabel(xProperty)}
-                tick={{ fill: "var(--text-muted)", fontSize: 10 }}
-                tickFormatter={(value: number) => formatAxisValue(xProperty, value)}
-              />
-              <YAxis
-                type="number"
-                dataKey="y"
-                name={propertyLabel(yProperty)}
-                tick={{ fill: "var(--text-muted)", fontSize: 10 }}
-                width={42}
-                tickFormatter={(value: number) => formatAxisValue(yProperty, value)}
-              />
-              <ZAxis range={[40, 40]} />
-              <Tooltip
-                content={<ScatterTooltip xProperty={xProperty} yProperty={yProperty} />}
-                cursor={{ strokeDasharray: "3 3" }}
-              />
-              {linePoints.length === 2 ? (
-                <Line
-                  data={linePoints}
-                  dataKey="y"
-                  stroke="var(--risk-elev)"
-                  strokeWidth={2}
-                  dot={false}
-                  isAnimationActive={false}
-                  legendType="none"
+        <>
+          <div className="mb-3 grid gap-3 sm:grid-cols-2">
+            <AxisScaleControl
+              axisLabel="X"
+              property={xProperty}
+              dataExtent={xExtent}
+              range={xRange}
+              onChange={(range) => setXRangeOverride(clampAxisRange(range, xExtent))}
+            />
+            <AxisScaleControl
+              axisLabel="Y"
+              property={yProperty}
+              dataExtent={yExtent}
+              range={yRange}
+              onChange={(range) => setYRangeOverride(clampAxisRange(range, yExtent))}
+            />
+          </div>
+
+          <div className="h-80 rounded-card border border-border bg-surface-2 p-2">
+            <ResponsiveContainer width="100%" height="100%">
+              <ScatterChart margin={{ top: 8, right: 12, left: 4, bottom: 4 }}>
+                <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" />
+                <XAxis
+                  type="number"
+                  dataKey="x"
+                  name={propertyLabel(xProperty)}
+                  domain={[xRange.min, xRange.max]}
+                  allowDataOverflow
+                  tick={{ fill: "var(--text-muted)", fontSize: 10 }}
+                  tickFormatter={(value: number) => formatAxisValue(xProperty, value)}
                 />
-              ) : null}
-              {enabledAliases.map((alias) => {
-                const data = pointsByAlias.get(alias) ?? [];
-                if (!data.length) return null;
-                const index = wellIndexByAlias.get(alias) ?? 0;
-                const emphasized = activeAlias === alias;
-                return (
-                  <Scatter
-                    key={alias}
-                    name={data[0]?.display ?? alias}
-                    data={data}
-                    fill={getWellColor(alias, index)}
-                    fillOpacity={emphasized ? 0.9 : 0.35}
-                    onMouseEnter={() => onPointHover(alias)}
-                    onMouseLeave={() => onPointHover(null)}
+                <YAxis
+                  type="number"
+                  dataKey="y"
+                  name={propertyLabel(yProperty)}
+                  domain={[yRange.min, yRange.max]}
+                  allowDataOverflow
+                  tick={{ fill: "var(--text-muted)", fontSize: 10 }}
+                  width={42}
+                  tickFormatter={(value: number) => formatAxisValue(yProperty, value)}
+                />
+                <ZAxis range={[40, 40]} />
+                <Tooltip
+                  content={<ScatterTooltip xProperty={xProperty} yProperty={yProperty} />}
+                  cursor={{ strokeDasharray: "3 3" }}
+                />
+                {linePoints.length === 2 ? (
+                  <Line
+                    data={linePoints}
+                    dataKey="y"
+                    stroke="var(--risk-elev)"
+                    strokeWidth={2}
+                    dot={false}
                     isAnimationActive={false}
+                    legendType="none"
                   />
-                );
-              })}
-            </ScatterChart>
-          </ResponsiveContainer>
-        </div>
+                ) : null}
+                {enabledAliases.map((alias) => {
+                  const data = pointsByAlias.get(alias) ?? [];
+                  if (!data.length) return null;
+                  const index = wellIndexByAlias.get(alias) ?? 0;
+                  const emphasized = activeAlias === alias;
+                  return (
+                    <Scatter
+                      key={alias}
+                      name={data[0]?.display ?? alias}
+                      data={data}
+                      fill={getWellColor(alias, index)}
+                      fillOpacity={emphasized ? 0.9 : 0.35}
+                      onMouseEnter={() => onPointHover(alias)}
+                      onMouseLeave={() => onPointHover(null)}
+                      isAnimationActive={false}
+                    />
+                  );
+                })}
+              </ScatterChart>
+            </ResponsiveContainer>
+          </div>
+        </>
       )}
 
       <dl className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
